@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css';
 
 export const STOP_TYPES = {
   overnachting: { label: 'Overnachting', icon: '⛺', color: '#2f6f73' },
-  bezienswaardigheid: { label: 'Bezienswaardigheid', icon: '📍', color: '#c2553a' },
+  bezienswaardigheid: { label: 'Bezienswaardigheid', icon: '📍', color: '#be123c' },
   eten: { label: 'Eten & drinken', icon: '🍽️', color: '#b7791f' },
   activiteit: { label: 'Activiteit', icon: '🥾', color: '#4b7a3a' },
   highlight: { label: 'Highlight', icon: '⭐', color: '#7a4bb0' },
@@ -13,13 +13,25 @@ export function stopType(type) {
   return STOP_TYPES[type] || { label: 'Stop', icon: '•', color: '#555' };
 }
 
-export function createMap(el, options = {}) {
+// tiles: 'osm' (OpenStreetMap, veel detail) of 'gray' (lichtgrijs, zoals route-the-americas).
+export function createMap(el, { tiles = 'osm', ...options } = {}) {
   const map = L.map(el, { zoomControl: false, ...options });
   L.control.zoom({ position: 'bottomleft' }).addTo(map);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }).addTo(map);
+  map.attributionControl.setPosition('bottomleft'); // rechtsonder valt hij onder het zijpaneel
+  if (tiles === 'gray') {
+    const esri = (layer) => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${layer}/MapServer/tile/{z}/{y}/{x}`;
+    L.tileLayer(esri('World_Light_Gray_Base'), {
+      maxZoom: 18,
+      maxNativeZoom: 16,
+      attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+    }).addTo(map);
+    L.tileLayer(esri('World_Light_Gray_Reference'), { maxZoom: 18, maxNativeZoom: 16 }).addTo(map);
+  } else {
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+  }
   return map;
 }
 

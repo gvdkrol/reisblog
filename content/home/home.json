@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Gerhard & Lesley",
+  "title": "Onze reizen",
+  "subtitle": "Waar we geweest zijn, stop voor stop: met de route op de kaart en bij elke plek een kort verhaal en foto's.",
+  "linksTitle": "Meer van ons",
+  "links": [
+    {
+      "title": "Route The Americas",
+      "url": "https://gvdkrol.github.io/route-the-americas/",
+      "description": "Vijftien maanden onderweg van Baltimore tot Panama.",
+      "image": ""
+    },
+    {
+      "title": "Rondjewereld.nl",
+      "url": "https://rondjewereld.nl/",
+      "description": "Ons reisblog.",
+      "image": ""
+    }
+  ]
+}

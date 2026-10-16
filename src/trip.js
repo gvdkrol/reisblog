@@ -39,12 +39,12 @@ $('start')?.addEventListener('click', () => openStop(0));
 const map = createMap('map');
 const legLayers = legLatLngs(trip).map(({ leg, to, latlngs, routed }) => {
   const line = L.polyline(latlngs, {
-    color: '#c2553a',
+    color: '#c2410c',
     weight: 5,
     opacity: 0.85,
     dashArray: routed ? null : '6 8',
   }).addTo(map);
-  if (leg) line.bindTooltip(`${formatKm(leg.km)} · ${formatDuration(leg.minutes)}`, { sticky: true, className: 'leg-tip' });
+  if (leg?.polyline) line.bindTooltip(`${formatKm(leg.km)} · ${formatDuration(leg.minutes)}`, { sticky: true, className: 'leg-tip' });
   return { line, to };
 });
 
@@ -65,6 +65,7 @@ const allBounds = L.latLngBounds(trip.stops.map((s) => [s.lat, s.lng]));
 legLayers.forEach(({ line }) => allBounds.extend(line.getBounds()));
 const fitAll = () => map.fitBounds(allBounds, { padding: [60, 60] });
 if (allBounds.isValid()) fitAll();
+else map.setView([50, 5], 5);
 
 // ---------- Paneel ----------
 let current = -1;
@@ -144,8 +145,8 @@ function renderPanel(stop) {
   const next = trip.stops[stop.index + 1];
   $('prev').disabled = !prevStop;
   $('next').disabled = !next;
-  $('prev').textContent = prevStop ? `← ${prevStop.name}` : '←';
-  $('next').textContent = next ? `${next.name} →` : '→';
+  $('prev').innerHTML = `<small>← Vorige stop</small><b>${prevStop ? escapeHtml(prevStop.name) : '–'}</b>`;
+  $('next').innerHTML = `<small>Volgende stop →</small><b>${next ? escapeHtml(next.name) : 'Einde van de reis'}</b>`;
 }
 
 $('prev').addEventListener('click', () => openStop(current - 1));

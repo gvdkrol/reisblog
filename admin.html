@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor · Reisblog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>" />
+  </head>
+  <body class="admin">
+    <aside class="sidebar">
+      <header class="side-head">
+        <div class="brand">Reisblog <span>editor</span></div>
+        <div class="tabs" role="tablist">
+          <button id="tab-trips" class="tab active" type="button" role="tab">Reizen</button>
+          <button id="tab-home" class="tab" type="button" role="tab">Homepage</button>
+        </div>
+        <div class="trip-picker" id="trip-picker">
+          <select id="trip-select" aria-label="Reis kiezen"></select>
+          <button id="new-trip" class="btn small" type="button">＋ Nieuwe reis</button>
+        </div>
+      </header>
+
+      <div class="side-scroll">
+        <div id="home-view" hidden>
+          <section class="block">
+            <h3>Kop</h3>
+            <label>Bovenschrift<input id="h-eyebrow" placeholder="bijv. Gerhard &amp; Lesley" /></label>
+            <label>Titel <span class="hint">het laatste woord wordt oranje</span><input id="h-title" /></label>
+            <label>Introductie<textarea id="h-subtitle" rows="3"></textarea></label>
+          </section>
+          <section class="block">
+            <h3>Links</h3>
+            <label>Kop boven de links<input id="h-links-title" placeholder="bijv. Meer van ons" /></label>
+            <p id="links-empty" class="empty" hidden>Nog geen links.</p>
+            <ol id="link-list" class="link-list"></ol>
+            <button id="add-link" class="btn small" type="button">＋ Link toevoegen</button>
+          </section>
+        </div>
+
+        <div id="trip-view">
+        <section class="block" id="trip-block">
+          <h3>Reis</h3>
+          <label>Titel<input id="f-title" /></label>
+          <label>Korte omschrijving<textarea id="f-summary" rows="2"></textarea></label>
+          <div class="cover-row">
+            <div id="cover" class="cover"></div>
+            <label class="check"><input type="checkbox" id="f-draft" /> Concept<span class="hint">wordt niet gepubliceerd</span></label>
+          </div>
+        </section>
+
+        <section class="block">
+          <h3>Stops</h3>
+          <form id="search-form" class="search">
+            <input id="search" placeholder="Zoek een plaats om toe te voegen…" autocomplete="off" />
+            <button class="btn small" type="submit">Zoek</button>
+          </form>
+          <ul id="search-results" class="search-results" hidden></ul>
+          <p class="hint">Of klik op de kaart om een stop toe te voegen. Sleep markers om ze te verplaatsen, en ⠿ om de volgorde te wijzigen.</p>
+          <p id="stops-empty" class="empty" hidden>Nog geen stops.</p>
+          <ol id="stops" class="stops"></ol>
+        </section>
+        </div>
+      </div>
+
+      <footer class="side-foot">
+        <div class="foot-info">
+          <div id="stats" class="stats-line"></div>
+          <div id="status" class="status"></div>
+        </div>
+        <a id="view-link" class="btn small" target="_blank" rel="noopener">Bekijken ↗</a>
+        <button id="save" class="btn primary" type="button" disabled>Opslaan</button>
+      </footer>
+    </aside>
+
+    <div id="map"></div>
+    <iframe id="home-preview" class="home-preview" title="Voorbeeld van de homepage" hidden></iframe>
+
+    <script type="module" src="/src/admin/admin.js"></script>
+  </body>
+</html>

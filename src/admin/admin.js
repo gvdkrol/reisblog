@@ -1,0 +1,721 @@
+import '../style.css';
+import './admin.css';
+import { marked } from 'marked';
+import { createMap, stopType, STOP_TYPES, decodePolyline, L } from '../map.js';
+import { slugify } from '../slugify.js';
+import { formatDate, formatKm, formatDuration, escapeHtml as esc } from '../format.js';
+
+const $ = (id) => document.getElementById(id);
+const round = (n) => Math.round(n * 1e5) / 1e5;
+const today = () => new Date().toISOString().slice(0, 10);
+const legKey = (a, b) => `${a.lat},${a.lng};${b.lat},${b.lng}`; // gelijk aan scripts/routing.mjs
+const photoUrl = (src) => `/content/trips/${trip.slug}/${src}`;
+const NOMINATIM = 'https://nominatim.openstreetmap.org';
+
+let trip = null;
+let selectedId = null;
+let dirty = false;
+let view = 'trips'; // 'trips' of 'home'
+let home = null;
+
+async function api(path, options = {}) {
+  const res = await fetch(`/api${path}`, options);
+  const json = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(json.error || res.statusText);
+  return json;
+}
+const jsonBody = (method, data) => ({ method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+
+function setStatus(message, kind = '') {
+  const el = $('status');
+  el.textContent = message;
+  el.className = `status ${kind}`;
+}
+
+function setDirty(value = true) {
+  dirty = value;
+  $('save').disabled = !value;
+  document.title = `${value ? '● ' : ''}Editor · Reisblog`;
+  if (value) setStatus('Niet-opgeslagen wijzigingen');
+  updateStats();
+}
+
+function updateStats() {
+  if (view === 'home') return ($('stats').textContent = home ? `${home.links.length} link${home.links.length === 1 ? '' : 's'}` : '');
+  if (!trip) return ($('stats').textContent = '');
+  const legs = new Map(trip.legs.map((l) => [l.key, l]));
+  let km = 0, minutes = 0, missing = 0;
+  trip.stops.forEach((a, i) => {
+    const b = trip.stops[i + 1];
+    if (!b) return;
+    const leg = legs.get(legKey(a, b));
+    if (leg?.polyline) { km += leg.km; minutes += leg.minutes; } else missing++;
+  });
+  const parts = [`${trip.stops.length} stops`];
+  if (km) parts.push(formatKm(km), `${formatDuration(minutes)} rijden`);
+  if (missing) parts.push(`${missing} traject${missing > 1 ? 'en' : ''} nog te berekenen`);
+  $('stats').textContent = parts.join(' · ');
+}
+
+// ---------- Reizen laden ----------
+async function loadTripList(selectSlug) {
+  const trips = await api('/trips');
+  $('trip-select').innerHTML = trips
+    .map((t) => `<option value="${esc(t.slug)}">${esc(t.title)}${t.draft ? ' (concept)' : ''}</option>`)
+    .join('');
+  const wanted = selectSlug || new URLSearchParams(location.search).get('reis');
+  const slug = trips.some((t) => t.slug === wanted) ? wanted : trips[0]?.slug;
+  if (slug) await openTrip(slug, { force: true });
+}
+
+async function openTrip(slug, { force = false } = {}) {
+  if (!force && dirty && !confirm('Je hebt niet-opgeslagen wijzigingen. Toch wisselen?')) {
+    $('trip-select').value = trip.slug;
+    return;
+  }
+  trip = await api(`/trips/${slug}`);
+  trip.legs ||= [];
+  selectedId = null;
+  $('trip-select').value = slug;
+  history.replaceState(null, '', `?reis=${slug}`);
+  renderAll();
+  setDirty(false);
+  setStatus('');
+  fitTrip();
+}
+
+function renderAll() {
+  renderTripFields();
+  renderStops();
+  renderMap();
+}
+
+// ---------- Reisgegevens ----------
+function renderTripFields() {
+  $('f-title').value = trip.title || '';
+  $('f-summary').value = trip.summary || '';
+  $('f-draft').checked = !!trip.draft;
+  $('cover').innerHTML = trip.cover
+    ? `<img src="${photoUrl(trip.cover)}" alt="Omslagfoto" />`
+    : '<span class="hint">Kies een omslag met ★ bij een foto</span>';
+  $('view-link').href = `/trip.html?reis=${encodeURIComponent(trip.slug)}`;
+}
+
+$('f-title').addEventListener('input', (e) => { trip.title = e.target.value; setDirty(); });
+$('f-summary').addEventListener('input', (e) => { trip.summary = e.target.value; setDirty(); });
+$('f-draft').addEventListener('change', (e) => { trip.draft = e.target.checked; setDirty(); });
+$('trip-select').addEventListener('change', (e) => openTrip(e.target.value));
+
+$('new-trip').addEventListener('click', async () => {
+  if (dirty && !confirm('Je hebt niet-opgeslagen wijzigingen. Toch een nieuwe reis maken?')) return;
+  const title = prompt('Titel van de nieuwe reis:');
+  if (!title?.trim()) return;
+  try {
+    const created = await api('/trips', jsonBody('POST', { title }));
+    await loadTripList(created.slug);
+    setStatus('Nieuwe reis aangemaakt (als concept). Voeg nu stops toe.', 'ok');
+  } catch (err) {
+    setStatus(`Fout: ${err.message}`, 'error');
+  }
+});
+
+// ---------- Stops: lijst ----------
+const list = $('stops');
+
+function headHtml(s, i) {
+  const t = stopType(s.type);
+  const photos = s.photos.length === 1 ? '1 foto' : `${s.photos.length} foto's`;
+  return `<div class="stop-head" data-action="toggle">
+      <span class="handle" title="Sleep om de volgorde te wijzigen">⠿</span>
+      <span class="badge" style="--c:${t.color}">${i + 1}</span>
+      <span class="stop-title"><b>${esc(s.name) || 'Naamloos'}</b><small>${t.icon} ${s.date ? formatDate(s.date) : 'geen datum'} · ${photos}</small></span>
+      <span class="chev">▾</span>
+    </div>`;
+}
+
+function photoHtml(p, j) {
+  return `<figure class="photo" data-p="${j}">
+      <img src="${photoUrl(p.src)}" alt="" loading="lazy" />
+      <input data-pfield="caption" value="${esc(p.caption)}" placeholder="Onderschrift" />
+      <div class="pbtns">
+        <button type="button" data-action="pleft" title="Naar voren">◀</button>
+        <button type="button" data-action="pright" title="Naar achteren">▶</button>
+        <button type="button" data-action="pcover" class="${p.src === trip.cover ? 'on' : ''}" title="Omslagfoto van de reis">★</button>
+        <button type="button" data-action="pdel" title="Foto verwijderen">✕</button>
+      </div>
+    </figure>`;
+}
+
+function formHtml(s) {
+  const types = Object.entries(STOP_TYPES)
+    .map(([key, t]) => `<option value="${key}"${key === s.type ? ' selected' : ''}>${t.icon} ${t.label}</option>`)
+    .join('');
+  return `<div class="stop-form">
+      <label>Naam<input data-field="name" value="${esc(s.name)}" /></label>
+      <div class="row">
+        <label>Datum<input type="date" data-field="date" value="${esc(s.date)}" /></label>
+        <label>Type<select data-field="type">${types}</select></label>
+      </div>
+      <label>Verhaal <span class="hint">**vet**, *schuin*, lege regel = nieuwe alinea</span>
+        <textarea data-field="text" rows="7">${esc(s.text)}</textarea></label>
+      <button type="button" class="link" data-action="preview">Voorbeeld tonen</button>
+      <div class="preview story" hidden></div>
+      <div class="photos">${s.photos.map(photoHtml).join('')}</div>
+      <label class="dropzone">
+        <input type="file" accept="image/*" multiple data-action="upload" hidden />
+        📷 Foto's toevoegen
+        <span class="hint">klik of sleep foto's hierheen · ze worden verkleind naar max. 1600px</span>
+      </label>
+      <div class="stop-actions">
+        <button type="button" class="btn small" data-action="zoom">Toon op kaart</button>
+        <button type="button" class="btn small danger" data-action="delete">Stop verwijderen</button>
+      </div>
+    </div>`;
+}
+
+function stopHtml(s, i) {
+  return `<li class="stop${s.id === selectedId ? ' open' : ''}" data-id="${esc(s.id)}">${headHtml(s, i)}${s.id === selectedId ? formHtml(s) : ''}</li>`;
+}
+
+function renderStops() {
+  $('stops-empty').hidden = trip.stops.length > 0;
+  list.innerHTML = trip.stops.map(stopHtml).join('');
+}
+
+function rerenderStop(stop) {
+  const li = list.querySelector(`.stop[data-id="${CSS.escape(stop.id)}"]`);
+  if (li) li.outerHTML = stopHtml(stop, trip.stops.indexOf(stop));
+}
+
+function selectStop(id, { pan = true } = {}) {
+  selectedId = id;
+  renderStops();
+  renderMap();
+  const stop = trip.stops.find((s) => s.id === id);
+  if (stop && pan) map.panTo([stop.lat, stop.lng]);
+  list.querySelector(`.stop[data-id="${CSS.escape(id)}"]`)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+}
+
+function uniqueStopId(name) {
+  const base = slugify(name) || 'stop';
+  let id = base;
+  for (let n = 2; trip.stops.some((s) => s.id === id); n++) id = `${base}-${n}`;
+  return id;
+}
+
+function addStop({ name, lat, lng }) {
+  const last = trip.stops.at(-1);
+  const stop = {
+    id: uniqueStopId(name),
+    name,
+    lat: round(lat),
+    lng: round(lng),
+    date: last?.date || today(),
+    type: 'bezienswaardigheid',
+    text: '',
+    photos: [],
+  };
+  trip.stops.push(stop);
+  setDirty();
+  selectStop(stop.id);
+  list.querySelector('.stop.open [data-field="text"]')?.focus();
+}
+
+const stopOf = (el) => {
+  const li = el.closest('.stop');
+  return li ? { li, stop: trip.stops.find((s) => s.id === li.dataset.id) } : {};
+};
+
+function updatePreview(li, stop) {
+  const box = li.querySelector('.preview');
+  if (box && !box.hidden) box.innerHTML = marked.parse(stop.text || '*(nog geen tekst)*');
+}
+
+list.addEventListener('input', (e) => {
+  const { li, stop } = stopOf(e.target);
+  if (!stop) return;
+  const field = e.target.dataset.field;
+  if (field) {
+    stop[field] = e.target.value;
+    if (field === 'text') updatePreview(li, stop);
+    else {
+      li.querySelector('.stop-head').outerHTML = headHtml(stop, trip.stops.indexOf(stop));
+      if (field === 'type') renderMap();
+    }
+    setDirty();
+  } else if (e.target.dataset.pfield) {
+    stop.photos[Number(e.target.closest('.photo').dataset.p)].caption = e.target.value;
+    setDirty();
+  }
+});
+
+list.addEventListener('change', (e) => {
+  if (e.target.dataset.action !== 'upload') return;
+  const { stop } = stopOf(e.target);
+  uploadPhotos(stop, [...e.target.files]);
+  e.target.value = '';
+});
+
+list.addEventListener('click', (e) => {
+  const el = e.target.closest('[data-action]');
+  if (!el || el.tagName === 'INPUT') return;
+  const { li, stop } = stopOf(el);
+  if (!stop) return;
+  const j = el.closest('.photo') ? Number(el.closest('.photo').dataset.p) : -1;
+
+  switch (el.dataset.action) {
+    case 'toggle':
+      if (selectedId === stop.id) {
+        selectedId = null;
+        renderStops();
+        renderMap();
+      } else selectStop(stop.id);
+      break;
+    case 'preview': {
+      const box = li.querySelector('.preview');
+      box.hidden = !box.hidden;
+      el.textContent = box.hidden ? 'Voorbeeld tonen' : 'Voorbeeld verbergen';
+      updatePreview(li, stop);
+      break;
+    }
+    case 'zoom':
+      map.flyTo([stop.lat, stop.lng], 13);
+      break;
+    case 'delete':
+      if (!confirm(`Stop "${stop.name}" met ${stop.photos.length} foto('s) verwijderen?`)) return;
+      if (stop.photos.some((p) => p.src === trip.cover)) trip.cover = '';
+      trip.stops.splice(trip.stops.indexOf(stop), 1);
+      selectedId = null;
+      setDirty();
+      renderAll();
+      break;
+    case 'pleft':
+    case 'pright': {
+      const k = j + (el.dataset.action === 'pleft' ? -1 : 1);
+      if (k < 0 || k >= stop.photos.length) return;
+      [stop.photos[j], stop.photos[k]] = [stop.photos[k], stop.photos[j]];
+      setDirty();
+      rerenderStop(stop);
+      break;
+    }
+    case 'pcover':
+      trip.cover = stop.photos[j].src;
+      setDirty();
+      rerenderStop(stop);
+      renderTripFields();
+      break;
+    case 'pdel':
+      if (trip.cover === stop.photos[j].src) trip.cover = '';
+      stop.photos.splice(j, 1);
+      setDirty();
+      rerenderStop(stop);
+      renderTripFields();
+      break;
+  }
+});
+
+// Volgorde wijzigen door te slepen aan ⠿; foto's slepen op het formulier uploadt ze.
+let dragId = null;
+const clearDropMarks = () => list.querySelectorAll('.drop-before, .drop-after').forEach((x) => x.classList.remove('drop-before', 'drop-after'));
+
+list.addEventListener('mousedown', (e) => {
+  const li = e.target.closest('.stop');
+  if (li) li.draggable = !!e.target.closest('.handle');
+});
+list.addEventListener('dragstart', (e) => {
+  const li = e.target.closest('.stop');
+  if (!li?.draggable) return;
+  dragId = li.dataset.id;
+  li.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', dragId);
+});
+list.addEventListener('dragover', (e) => {
+  if (e.dataTransfer.types.includes('Files')) {
+    const form = e.target.closest('.stop-form');
+    if (form) {
+      e.preventDefault();
+      form.classList.add('dragover');
+    }
+    return;
+  }
+  if (!dragId) return;
+  e.preventDefault();
+  clearDropMarks();
+  const li = e.target.closest('.stop');
+  if (!li || li.dataset.id === dragId) return;
+  const r = li.getBoundingClientRect();
+  li.classList.add(e.clientY < r.top + r.height / 2 ? 'drop-before' : 'drop-after');
+});
+list.addEventListener('dragleave', (e) => e.target.closest?.('.stop-form')?.classList.remove('dragover'));
+list.addEventListener('drop', (e) => {
+  e.preventDefault();
+  if (e.dataTransfer.files.length) {
+    const { li, stop } = stopOf(e.target);
+    li?.querySelector('.stop-form')?.classList.remove('dragover');
+    if (stop) uploadPhotos(stop, [...e.dataTransfer.files]);
+    return;
+  }
+  const target = list.querySelector('.drop-before, .drop-after');
+  if (!dragId || !target) return;
+  const [moved] = trip.stops.splice(trip.stops.findIndex((s) => s.id === dragId), 1);
+  let to = trip.stops.findIndex((s) => s.id === target.dataset.id);
+  if (target.classList.contains('drop-after')) to++;
+  trip.stops.splice(to, 0, moved);
+  setDirty();
+});
+list.addEventListener('dragend', () => {
+  if (!dragId) return;
+  dragId = null;
+  renderStops();
+  renderMap();
+});
+// Losgelaten bestanden buiten een stop niet door de browser laten openen.
+window.addEventListener('dragover', (e) => e.preventDefault());
+window.addEventListener('drop', (e) => e.preventDefault());
+
+// ---------- Foto's ----------
+async function resizeImage(file, max = 1600, quality = 0.82) {
+  const bitmap = await createImageBitmap(file); // houdt rekening met EXIF-rotatie
+  const scale = Math.min(1, max / Math.max(bitmap.width, bitmap.height));
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.round(bitmap.width * scale);
+  canvas.height = Math.round(bitmap.height * scale);
+  canvas.getContext('2d').drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+  bitmap.close();
+  return new Promise((resolve, reject) =>
+    canvas.toBlob((blob) => (blob ? resolve(blob) : reject(new Error('converteren mislukt'))), 'image/webp', quality)
+  );
+}
+
+async function uploadPhotos(stop, files) {
+  const images = files.filter((f) => f.type.startsWith('image/') || /\.(heic|heif)$/i.test(f.name));
+  if (!images.length) return;
+  const failed = [];
+  for (const [n, file] of images.entries()) {
+    setStatus(`Foto ${n + 1} van ${images.length} verwerken…`);
+    try {
+      const blob = await resizeImage(file);
+      const name = `${stop.id}-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}.webp`;
+      const { src } = await api(`/trips/${trip.slug}/photos?name=${name}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'image/webp' },
+        body: blob,
+      });
+      stop.photos.push({ src, caption: '' });
+      if (!trip.cover) trip.cover = src;
+    } catch (err) {
+      failed.push(`${file.name} (${/heic|heif/i.test(file.name) ? 'HEIC wordt niet ondersteund, exporteer als JPG' : err.message})`);
+    }
+  }
+  setDirty();
+  rerenderStop(stop);
+  renderTripFields();
+  if (failed.length) setStatus(`Niet gelukt: ${failed.join(', ')}`, 'error');
+  else setStatus(`${images.length} foto('s) toegevoegd. Vergeet niet op te slaan.`);
+}
+
+// ---------- Zoeken & plaatsnamen (OpenStreetMap Nominatim) ----------
+async function searchPlaces(q) {
+  const res = await fetch(`${NOMINATIM}/search?format=jsonv2&limit=6&accept-language=nl&q=${encodeURIComponent(q)}`);
+  if (!res.ok) throw new Error('Zoeken mislukt');
+  return res.json();
+}
+
+async function reverseGeocode({ lat, lng }) {
+  const res = await fetch(`${NOMINATIM}/reverse?format=jsonv2&zoom=14&accept-language=nl&lat=${lat}&lon=${lng}`);
+  if (!res.ok) return null;
+  const json = await res.json();
+  const a = json.address || {};
+  return a.village || a.town || a.city || a.municipality || a.hamlet || json.name || null;
+}
+
+$('search-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const q = $('search').value.trim();
+  const box = $('search-results');
+  if (!q || !trip) return;
+  box.hidden = false;
+  box.innerHTML = '<li class="muted">Zoeken…</li>';
+  try {
+    const results = await searchPlaces(q);
+    const label = (r) => r.name || r.display_name.split(',')[0];
+    box.innerHTML = results.length
+      ? results.map((r, i) => `<li><button type="button" data-i="${i}"><b>${esc(label(r))}</b><small>${esc(r.display_name)}</small></button></li>`).join('')
+      : '<li class="muted">Niets gevonden</li>';
+    box.onclick = (ev) => {
+      const b = ev.target.closest('button[data-i]');
+      if (!b) return;
+      const r = results[b.dataset.i];
+      box.hidden = true;
+      $('search').value = '';
+      addStop({ name: label(r), lat: Number(r.lat), lng: Number(r.lon) });
+    };
+  } catch (err) {
+    box.innerHTML = `<li class="muted">${esc(err.message)}</li>`;
+  }
+});
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#search-results, #search-form')) $('search-results').hidden = true;
+});
+
+// ---------- Kaart ----------
+const map = createMap('map');
+map.setView([50, 5], 5);
+const routeLayer = L.layerGroup().addTo(map);
+const markerLayer = L.layerGroup().addTo(map);
+
+function renderMap() {
+  routeLayer.clearLayers();
+  markerLayer.clearLayers();
+  if (!trip) return;
+  const legs = new Map(trip.legs.map((l) => [l.key, l]));
+
+  trip.stops.forEach((a, i) => {
+    const b = trip.stops[i + 1];
+    if (!b) return;
+    const leg = legs.get(legKey(a, b));
+    if (leg?.polyline) {
+      L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', weight: 5, opacity: 0.85 })
+        .bindTooltip(`${formatKm(leg.km)} · ${formatDuration(leg.minutes)}`, { sticky: true })
+        .addTo(routeLayer);
+    } else {
+      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: '#66727a', weight: 3, dashArray: '6 8' })
+        .bindTooltip('Route wordt berekend bij opslaan', { sticky: true })
+        .addTo(routeLayer);
+    }
+  });
+
+  trip.stops.forEach((stop, i) => {
+    const t = stopType(stop.type);
+    const marker = L.marker([stop.lat, stop.lng], {
+      draggable: true,
+      title: stop.name,
+      icon: L.divIcon({
+        className: `stop-marker${stop.id === selectedId ? ' active' : ''}`,
+        html: `<div class="stop-pin" style="--c:${t.color}">${t.icon}<span class="num">${i + 1}</span></div>`,
+        iconSize: [34, 34],
+        iconAnchor: [17, 17],
+      }),
+    }).addTo(markerLayer);
+    marker.on('click', () => selectStop(stop.id, { pan: false }));
+    marker.on('dragend', () => {
+      const ll = marker.getLatLng();
+      stop.lat = round(ll.lat);
+      stop.lng = round(ll.lng);
+      setDirty();
+      renderMap();
+    });
+  });
+}
+
+function fitTrip() {
+  if (!trip.stops.length) return map.setView([50, 5], 5);
+  map.fitBounds(L.latLngBounds(trip.stops.map((s) => [s.lat, s.lng])), { padding: [60, 60], maxZoom: 11 });
+}
+
+map.on('click', (e) => {
+  if (!trip) return;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'btn small primary';
+  btn.textContent = '＋ Stop hier toevoegen';
+  const popup = L.popup().setLatLng(e.latlng).setContent(btn).openOn(map);
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    btn.textContent = 'Plaatsnaam opzoeken…';
+    const name = await reverseGeocode(e.latlng).catch(() => null);
+    map.closePopup(popup);
+    addStop({ name: name || 'Nieuwe stop', lat: e.latlng.lat, lng: e.latlng.lng });
+  });
+});
+
+// ---------- Opslaan ----------
+async function save() {
+  if (view === 'home') return saveHome();
+  if (!trip || !dirty) return;
+  $('save').disabled = true;
+  setStatus('Opslaan en route berekenen…');
+  try {
+    const result = await api(`/trips/${trip.slug}`, jsonBody('PUT', trip));
+    trip = result.trip;
+    renderAll();
+    setDirty(false);
+    if (result.warnings.length) setStatus(`Opgeslagen, maar: ${result.warnings.join('; ')}`, 'error');
+    else setStatus(`Opgeslagen om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`, 'ok');
+    const option = $('trip-select').querySelector(`option[value="${CSS.escape(trip.slug)}"]`);
+    if (option) option.textContent = `${trip.title}${trip.draft ? ' (concept)' : ''}`;
+  } catch (err) {
+    $('save').disabled = false;
+    setStatus(`Opslaan mislukt: ${err.message}`, 'error');
+  }
+}
+
+$('save').addEventListener('click', save);
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+    e.preventDefault();
+    save();
+  }
+});
+window.addEventListener('beforeunload', (e) => {
+  if (dirty) e.preventDefault();
+});
+
+// ---------- Homepage ----------
+const linkList = $('link-list');
+const homeImageUrl = (src) => `/content/home/${src}`;
+
+async function switchView(next) {
+  if (next === view) return;
+  if (dirty && !confirm('Je hebt niet-opgeslagen wijzigingen. Toch wisselen?')) return;
+  const discarded = dirty;
+  view = next;
+  const isHome = view === 'home';
+  $('tab-trips').classList.toggle('active', !isHome);
+  $('tab-home').classList.toggle('active', isHome);
+  $('trip-view').hidden = isHome;
+  $('trip-picker').hidden = isHome;
+  $('home-view').hidden = !isHome;
+  $('map').hidden = isHome;
+  $('home-preview').hidden = !isHome;
+  $('view-link').hidden = isHome;
+  if (isHome) return openHome();
+  if (discarded && trip) await openTrip(trip.slug, { force: true });
+  else {
+    setDirty(false);
+    setStatus('');
+  }
+  map.invalidateSize();
+}
+
+$('tab-trips').addEventListener('click', () => switchView('trips'));
+$('tab-home').addEventListener('click', () => switchView('home'));
+
+async function openHome() {
+  home = await api('/home');
+  renderHome();
+  setDirty(false);
+  setStatus('Rechts zie je de homepage zoals hij nu is opgeslagen.');
+  $('home-preview').src = `/?t=${Date.now()}`;
+}
+
+function renderHome() {
+  $('h-eyebrow').value = home.eyebrow || '';
+  $('h-title').value = home.title || '';
+  $('h-subtitle').value = home.subtitle || '';
+  $('h-links-title').value = home.linksTitle || '';
+  renderLinks();
+}
+
+function linkHtml(link, i) {
+  return `<li class="link-item" data-i="${i}">
+      <div class="link-image">
+        ${link.image ? `<img src="${homeImageUrl(link.image)}" alt="" />` : '<span class="hint">Geen afbeelding</span>'}
+        <label class="btn small">📷 ${link.image ? 'Wijzigen' : 'Afbeelding'}<input type="file" accept="image/*" data-action="limage" hidden /></label>
+        ${link.image ? '<button type="button" class="link" data-action="limgdel">verwijderen</button>' : ''}
+      </div>
+      <div class="link-fields">
+        <label>Titel<input data-lfield="title" value="${esc(link.title)}" /></label>
+        <label>Adres (URL)<input type="url" data-lfield="url" value="${esc(link.url)}" placeholder="https://…" /></label>
+        <label>Omschrijving<textarea data-lfield="description" rows="2">${esc(link.description)}</textarea></label>
+        <div class="link-actions">
+          <button type="button" class="btn small" data-action="lup" title="Omhoog">▲</button>
+          <button type="button" class="btn small" data-action="ldown" title="Omlaag">▼</button>
+          <button type="button" class="btn small danger" data-action="ldel">Verwijderen</button>
+        </div>
+      </div>
+    </li>`;
+}
+
+function renderLinks() {
+  $('links-empty').hidden = home.links.length > 0;
+  linkList.innerHTML = home.links.map(linkHtml).join('');
+}
+
+for (const [id, field] of [['h-eyebrow', 'eyebrow'], ['h-title', 'title'], ['h-subtitle', 'subtitle'], ['h-links-title', 'linksTitle']]) {
+  $(id).addEventListener('input', (e) => {
+    home[field] = e.target.value;
+    setDirty();
+  });
+}
+
+$('add-link').addEventListener('click', () => {
+  home.links.push({ title: '', url: '', description: '', image: '' });
+  setDirty();
+  renderLinks();
+  linkList.lastElementChild?.querySelector('[data-lfield="title"]').focus();
+});
+
+const linkOf = (el) => home.links[Number(el.closest('.link-item')?.dataset.i)];
+
+linkList.addEventListener('input', (e) => {
+  const field = e.target.dataset.lfield;
+  if (!field) return;
+  linkOf(e.target)[field] = e.target.value;
+  setDirty();
+});
+
+linkList.addEventListener('change', async (e) => {
+  if (e.target.dataset.action !== 'limage' || !e.target.files.length) return;
+  const link = linkOf(e.target);
+  const file = e.target.files[0];
+  setStatus('Afbeelding verwerken…');
+  try {
+    const blob = await resizeImage(file, 1200);
+    const name = `link-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}.webp`;
+    const { src } = await api(`/home/images?name=${name}`, { method: 'POST', headers: { 'Content-Type': 'image/webp' }, body: blob });
+    link.image = src;
+    setDirty();
+    renderLinks();
+    setStatus('Afbeelding toegevoegd. Vergeet niet op te slaan.');
+  } catch (err) {
+    setStatus(`Afbeelding niet gelukt: ${/heic|heif/i.test(file.name) ? 'HEIC wordt niet ondersteund, exporteer als JPG' : err.message}`, 'error');
+  }
+});
+
+linkList.addEventListener('click', (e) => {
+  const el = e.target.closest('[data-action]');
+  if (!el || el.tagName === 'INPUT') return;
+  const i = Number(el.closest('.link-item').dataset.i);
+  const link = home.links[i];
+  switch (el.dataset.action) {
+    case 'lup':
+    case 'ldown': {
+      const k = i + (el.dataset.action === 'lup' ? -1 : 1);
+      if (k < 0 || k >= home.links.length) return;
+      [home.links[i], home.links[k]] = [home.links[k], home.links[i]];
+      break;
+    }
+    case 'limgdel':
+      link.image = '';
+      break;
+    case 'ldel':
+      if (!confirm(`Link "${link.title || link.url || 'zonder titel'}" verwijderen?`)) return;
+      home.links.splice(i, 1);
+      break;
+    default:
+      return;
+  }
+  setDirty();
+  renderLinks();
+});
+
+async function saveHome() {
+  if (!home || !dirty) return;
+  $('save').disabled = true;
+  setStatus('Opslaan…');
+  try {
+    home = await api('/home', jsonBody('PUT', home));
+    renderHome();
+    setDirty(false);
+    setStatus(`Opgeslagen om ${new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`, 'ok');
+    $('home-preview').src = `/?t=${Date.now()}`;
+  } catch (err) {
+    $('save').disabled = false;
+    setStatus(`Opslaan mislukt: ${err.message}`, 'error');
+  }
+}
+
+loadTripList().catch((err) => setStatus(`Laden mislukt: ${err.message}`, 'error'));
+

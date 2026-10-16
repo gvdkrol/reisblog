@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reisblog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Reisblog</h1>
-      <p>Onze reizen, stop voor stop.</p>
-    </header>
-    <div id="overview-map" class="overview-map"></div>
-    <main id="trips" class="trip-grid"></main>
+    <div class="wrap">
+      <header class="site-header" id="site-header"></header>
+      <div class="kpis" id="kpis"></div>
+      <div id="overview-map" class="overview-map"></div>
+
+      <div class="section-title"><h2>Reizen</h2><span id="trip-count"></span></div>
+      <main id="trips" class="trip-grid"></main>
+
+      <section id="links" hidden></section>
+
+      <footer class="site-footer" id="site-footer"></footer>
+    </div>
     <script type="module" src="/src/overview.js"></script>
   </body>
 </html>

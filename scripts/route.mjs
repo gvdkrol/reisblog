@@ -1,41 +1,24 @@
-// Berekent de route over de weg tussen alle stops van een reis (via OSRM)
+// Berekent de route over de weg tussen alle stops van een reis opnieuw (via OSRM)
 // en slaat afstand, reistijd en geometrie per traject op in trip.json.
+// De editor doet dit automatisch bij opslaan; dit script is voor handmatig gebruik.
 //
 // Gebruik: npm run route -- <reis-slug>      (of zonder slug: alle reizen)
 
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { routeLegs } from './routing.mjs';
 
 const TRIPS_DIR = fileURLToPath(new URL('../content/trips/', import.meta.url));
-const OSRM = 'https://router.project-osrm.org/route/v1';
-
-async function routeLeg(profile, a, b) {
-  const url = `${OSRM}/${profile}/${a.lng},${a.lat};${b.lng},${b.lat}?overview=full&geometries=polyline`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`OSRM ${res.status} voor ${a.name} → ${b.name}`);
-  const json = await res.json();
-  if (json.code !== 'Ok') throw new Error(`OSRM: ${json.code} voor ${a.name} → ${b.name}`);
-  const r = json.routes[0];
-  return {
-    from: a.id,
-    to: b.id,
-    km: Math.round(r.distance / 100) / 10,
-    minutes: Math.round(r.duration / 60),
-    polyline: r.geometry,
-  };
-}
 
 async function routeTrip(slug) {
   const file = join(TRIPS_DIR, slug, 'trip.json');
   const trip = JSON.parse(await readFile(file, 'utf8'));
-  const profile = trip.profile || 'driving';
-  const legs = [];
-  for (let i = 0; i < trip.stops.length - 1; i++) {
-    const leg = await routeLeg(profile, trip.stops[i], trip.stops[i + 1]);
-    console.log(`  ${trip.stops[i].name} → ${trip.stops[i + 1].name}: ${leg.km} km, ${leg.minutes} min`);
-    legs.push(leg);
+  const { legs, warnings } = await routeLegs(trip, { force: true });
+  for (const leg of legs) {
+    console.log(`  ${leg.from} → ${leg.to}: ${leg.polyline ? `${leg.km} km, ${leg.minutes} min` : 'geen route'}`);
   }
+  warnings.forEach((w) => console.warn(`  ⚠ ${w}`));
   trip.legs = legs;
   await writeFile(file, JSON.stringify(trip, null, 2) + '\n');
 }
