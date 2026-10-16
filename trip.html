@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reis · Reisblog</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>" />
+  </head>
+  <body class="trip-page">
+    <div id="map"></div>
+
+    <div class="trip-card-float" id="trip-info"></div>
+
+    <aside class="panel" id="panel" aria-hidden="true">
+      <button class="panel-close" id="panel-close" aria-label="Sluiten">×</button>
+      <div class="panel-scroll" id="panel-content"></div>
+      <nav class="panel-nav">
+        <button class="prev" id="prev"></button>
+        <button class="next" id="next"></button>
+      </nav>
+    </aside>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+      <button class="lb-close" aria-label="Sluiten">×</button>
+      <button class="lb-prev" aria-label="Vorige foto">‹</button>
+      <img alt="" />
+      <div class="lb-caption"></div>
+      <button class="lb-next" aria-label="Volgende foto">›</button>
+    </div>
+
+    <script type="module" src="/src/trip.js"></script>
+  </body>
+</html>

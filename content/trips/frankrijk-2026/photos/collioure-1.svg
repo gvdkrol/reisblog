@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d365"/><stop offset="1" stop-color="#fda085"/></linearGradient></defs>
+<rect width="800" height="533" fill="url(#g)"/>
+<circle cx="631" cy="140" r="54" fill="#fff" opacity=".7"/>
+<path d="M0 363 L180 243 L330 343 L480 203 L640 323 L800 253 V533 H0Z" fill="#6a8caf" opacity=".55"/>
+<path d="M0 417 L220 327 L420 397 L600 347 L800 407 V533 H0Z" fill="#6a8caf"/>
+<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Collioure · De haven van Collioure</text>
+</svg>

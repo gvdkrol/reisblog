@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffecd2"/><stop offset="1" stop-color="#fcb69f"/></linearGradient></defs>
+<rect width="800" height="533" fill="url(#g)"/>
+<circle cx="675" cy="140" r="54" fill="#fff" opacity=".7"/>
+<path d="M0 375 L180 255 L330 355 L480 215 L640 335 L800 265 V533 H0Z" fill="#7d5a50" opacity=".55"/>
+<path d="M0 415 L220 325 L420 395 L600 345 L800 405 V533 H0Z" fill="#7d5a50"/>
+<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Vallon-Pont-d'Arc · De Pont d'Arc</text>
+</svg>

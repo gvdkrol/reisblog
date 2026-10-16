@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d365"/><stop offset="1" stop-color="#fda085"/></linearGradient></defs>
+<rect width="800" height="533" fill="url(#g)"/>
+<circle cx="617" cy="140" r="54" fill="#fff" opacity=".7"/>
+<path d="M0 301 L180 181 L330 281 L480 141 L640 261 L800 191 V533 H0Z" fill="#6a8caf" opacity=".55"/>
+<path d="M0 449 L220 359 L420 429 L600 379 L800 439 V533 H0Z" fill="#6a8caf"/>
+<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Annecy · Suppen op het Lac d'Annecy</text>
+</svg>
