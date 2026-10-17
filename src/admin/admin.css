@@ -1,11 +1,32 @@
 .admin {
+  /* Twee keer zo breed als eerst, maar er blijft altijd een stuk kaart zichtbaar. */
+  --editor-w: clamp(460px, calc(100vw - 420px), 920px);
   display: grid;
-  grid-template-columns: 460px 1fr;
+  grid-template-columns: var(--editor-w) 1fr;
   height: 100dvh;
   overflow: hidden;
   font-size: 15px;
 }
-.admin #map { position: relative; inset: auto; height: 100%; }
+.map-area { position: relative; min-width: 0; height: 100%; overflow: hidden; }
+.map-area[hidden] { display: none; }
+.admin #map { position: absolute; inset: 0; }
+
+/* Voorbeeld van het zijpaneel, zoals op de site */
+.preview-panel { width: min(600px, 100%); z-index: 1100; }
+.preview-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  font: 600 0.68rem var(--font);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.preview-panel .panel-hero { cursor: default; }
 
 .sidebar {
   display: flex;
@@ -199,7 +220,7 @@ label .hint { display: inline; margin-left: 6px; }
 .preview { border: 1px dashed var(--line); border-radius: 8px; padding: 10px 12px; margin: 8px 0 0; font-size: 0.95rem; }
 .preview p { margin: 0 0 0.6em; }
 
-.photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 12px 0 8px; }
+.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px; margin: 12px 0 8px; }
 .photo { margin: 0; background: var(--bg); border-radius: 8px; overflow: hidden; }
 .photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .photo input { margin: 0; border-radius: 0; border-width: 1px 0; font-size: 0.82rem; padding: 5px 8px; }
@@ -223,6 +244,29 @@ label .hint { display: inline; margin-left: 6px; }
 .dropzone.busy { opacity: 0.6; pointer-events: none; }
 .stop-actions { display: flex; justify-content: space-between; margin-top: 12px; }
 
+/* Tekst van rondjewereld.nl */
+.wp-box { margin: 12px 0 4px; padding: 10px 12px; border-radius: 10px; background: var(--soft); }
+.wp-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.wp-head .hint { margin: 0; }
+.wp-results { margin-top: 10px; }
+.wp-results > .hint { margin: 0 0 6px; }
+.wp-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; max-height: 340px; overflow-y: auto; }
+.wp-list li { display: flex; gap: 6px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.wp-list li.same-day { border-color: var(--accent); }
+.wp-list label { flex: 1; display: flex; align-items: flex-start; gap: 8px; margin: 0; font-weight: 400; cursor: pointer; }
+.wp-list input { width: auto; margin: 3px 0 0; flex: none; }
+.wp-list b { display: block; font-size: 0.9rem; }
+.wp-list small { display: block; color: var(--muted); font-size: 0.75rem; }
+.wp-list em { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-style: normal; font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+.wp-list a { text-decoration: none; color: var(--accent); font-weight: 700; padding: 0 2px; }
+.wp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
+.wp-articles { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.wp-articles li { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+.wp-articles a { color: var(--accent); font-weight: 600; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wp-articles small { color: var(--muted); white-space: nowrap; }
+.wp-articles button { margin-left: auto; border: 0; background: none; color: var(--muted); }
+.wp-articles button:hover { color: #b42318; }
+
 /* Voettekst */
 .side-foot {
   display: flex;
@@ -242,5 +286,5 @@ label .hint { display: inline; margin-left: 6px; }
 
 @media (max-width: 800px) {
   .admin { grid-template-columns: 1fr; grid-template-rows: 1fr 40dvh; }
-  .admin #map { grid-row: 2; }
+  .map-area { grid-row: 2; }
 }

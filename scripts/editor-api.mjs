@@ -10,11 +10,13 @@
 //   GET  /api/home                   homepage (titel, intro, links)
 //   PUT  /api/home                   homepage opslaan (+ ongebruikte afbeeldingen opruimen)
 //   POST /api/home/images?name=x.webp          afbeelding voor een link uploaden
+//   GET  /api/wordpress?date=YYYY-MM-DD&days=5  berichten van rondjewereld.nl rond een datum
 
 import { readFile, writeFile, readdir, mkdir, unlink } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { routeLegs } from './routing.mjs';
+import { postsAround } from './wordpress.mjs';
 import { slugify } from '../src/slugify.js';
 
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -73,6 +75,10 @@ export function editorApi({ root }) {
         type: String(s.type || 'bezienswaardigheid'),
         text: String(s.text || ''),
         photos: (s.photos || []).map((p) => ({ src: String(p.src), caption: String(p.caption || '') })),
+        // Gekoppelde blogberichten op rondjewereld.nl (link onder het verhaal).
+        articles: (s.articles || [])
+          .filter((a) => /^https?:\/\//i.test(a.url || ''))
+          .map((a) => ({ title: String(a.title || ''), url: String(a.url), date: String(a.date || '') })),
       })),
       legs: Array.isArray(input.legs) ? input.legs : [],
     };
@@ -144,6 +150,10 @@ export function editorApi({ root }) {
   async function handle(req, res) {
     const url = new URL(req.url, 'http://localhost');
     const [, resource, slug, sub] = url.pathname.split('/').filter(Boolean);
+    if (resource === 'wordpress' && req.method === 'GET') {
+      const days = Math.min(Math.max(Number(url.searchParams.get('days')) || 5, 0), 30);
+      return send(res, 200, await postsAround(url.searchParams.get('date'), days));
+    }
     if (resource === 'home') {
       if (!slug && req.method === 'GET') return send(res, 200, await readHome());
       if (!slug && req.method === 'PUT') return send(res, 200, await saveHome(JSON.parse(await readBody(req))));

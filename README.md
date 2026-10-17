@@ -17,6 +17,7 @@ Open http://localhost:5173 voor de site en http://localhost:5173/admin voor de e
 2. **＋ Nieuwe reis** maakt een reis aan als *concept*; die verschijnt niet op de gepubliceerde site.
 3. Voeg stops toe via het zoekveld of door op de kaart te klikken. Sleep markers om ze te verplaatsen en ⠿ om de volgorde te wijzigen.
 4. Klik een stop open voor naam, datum, type, verhaal (Markdown) en foto's. Foto's worden in de browser verkleind tot max. 1600px (WebP). ★ maakt een foto de omslag van de reis.
+   Met **📰 Tekst van rondjewereld.nl** haal je blogberichten op die tot 5 dagen voor of na de datum van de stop zijn geplaatst. Vink er een of meer aan en kies *Tekst toevoegen*, *Verhaal vervangen* of *Alleen link*. De gekozen berichten komen als link "Lees meer op rondjewereld.nl" onder het verhaal.
 5. **Opslaan** (of Ctrl+S) schrijft `trip.json`, berekent de route voor gewijzigde trajecten en verwijdert foto's die niet meer gebruikt worden.
 6. Klaar? Zet het vinkje *Concept* uit, sla op en publiceer:
 

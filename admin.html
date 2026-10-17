@@ -75,7 +75,14 @@
       </footer>
     </aside>
 
-    <div id="map"></div>
+    <div class="map-area" id="map-area">
+      <div id="map"></div>
+      <aside class="panel preview-panel" id="preview-panel" aria-hidden="true">
+        <span class="preview-badge">Voorbeeld</span>
+        <button class="panel-close" id="preview-close" type="button" aria-label="Voorbeeld sluiten">×</button>
+        <div class="panel-scroll" id="preview-content"></div>
+      </aside>
+    </div>
     <iframe id="home-preview" class="home-preview" title="Voorbeeld van de homepage" hidden></iframe>
 
     <script type="module" src="/src/admin/admin.js"></script>

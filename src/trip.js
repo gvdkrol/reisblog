@@ -1,8 +1,8 @@
 import './style.css';
-import { marked } from 'marked';
 import { getTrip, asset } from './data.js';
 import { createMap, legLatLngs, stopType, L } from './map.js';
-import { formatDate, formatRange, formatKm, formatDuration, escapeHtml } from './format.js';
+import { formatRange, formatKm, formatDuration, escapeHtml } from './format.js';
+import { stopPanelHtml, bindPanelPhotos } from './panel.js';
 
 const params = new URLSearchParams(location.search);
 const embed = params.has('embed');
@@ -109,38 +109,18 @@ function focusOn(stop, animate = true) {
 }
 
 function renderPanel(stop) {
-  const t = stopType(stop.type);
   const photos = stop.photos || [];
   const prevStop = trip.stops[stop.index - 1];
-  const leg = stop.legIn;
+  const content = $('panel-content');
 
-  $('panel-content').innerHTML = `
-    ${photos.length ? `<img class="panel-hero" id="hero" src="${asset(trip, photos[0].src)}" alt="${escapeHtml(photos[0].caption)}" />` : ''}
-    ${photos.length > 1 ? `<div class="panel-thumbs">${photos.map((p, j) => `<img data-i="${j}" class="${j === 0 ? 'current' : ''}" src="${asset(trip, p.src)}" alt="${escapeHtml(p.caption)}" loading="lazy" />`).join('')}</div>` : ''}
-    ${photos[0]?.caption ? `<div class="caption" id="hero-caption">${escapeHtml(photos[0].caption)}</div>` : ''}
-    <div class="panel-body">
-      <div class="meta">
-        ${stop.day ? `<span>Dag ${stop.day}</span><span>·</span>` : ''}
-        ${stop.date ? `<span>${formatDate(stop.date)}</span>` : ''}
-        <span class="type-chip" style="--c:${t.color}">${t.icon} ${t.label}</span>
-      </div>
-      <h2>${escapeHtml(stop.name)}</h2>
-      ${leg && prevStop ? `<div class="leg-info">🚐 ${formatKm(leg.km)} · ${formatDuration(leg.minutes)} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
-      <div class="story">${marked.parse(stop.text || '')}</div>
-    </div>
-  `;
-  $('panel-content').scrollTop = 0;
-
-  let photoIndex = 0;
-  $('hero')?.addEventListener('click', () => openLightbox(photos, photoIndex));
-  $('panel-content').querySelectorAll('.panel-thumbs img').forEach((img) =>
-    img.addEventListener('click', () => {
-      photoIndex = Number(img.dataset.i);
-      $('hero').src = img.src;
-      $('hero-caption').textContent = photos[photoIndex].caption || '';
-      $('panel-content').querySelectorAll('.panel-thumbs img').forEach((x) => x.classList.toggle('current', x === img));
-    })
-  );
+  content.innerHTML = stopPanelHtml(stop, {
+    photoUrl: (src) => asset(trip, src),
+    day: stop.day,
+    leg: stop.legIn,
+    prevStop,
+  });
+  content.scrollTop = 0;
+  bindPanelPhotos(content, photos, { onOpen: (index) => openLightbox(photos, index) });
 
   const next = trip.stops[stop.index + 1];
   $('prev').disabled = !prevStop;
