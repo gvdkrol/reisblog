@@ -1,16 +1,27 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { decodePolyline } from './polyline.js';
+
+export { decodePolyline };
 
 export const STOP_TYPES = {
-  overnachting: { label: 'Overnachting', icon: '⛺', color: '#2f6f73' },
+  camping: { label: 'Camping', icon: '🚐', color: '#2f6f73' },
+  hotel: { label: 'Hotel', icon: '🏨', color: '#1d4ed8' },
   bezienswaardigheid: { label: 'Bezienswaardigheid', icon: '📍', color: '#be123c' },
   eten: { label: 'Eten & drinken', icon: '🍽️', color: '#b7791f' },
   activiteit: { label: 'Activiteit', icon: '🥾', color: '#4b7a3a' },
   highlight: { label: 'Highlight', icon: '⭐', color: '#7a4bb0' },
+  // Via: alleen een rood stipje op de route; niet aanklikbaar en zonder nummer.
+  via: { label: 'Via (alleen punt op de route)', icon: '•', color: '#dc2626' },
 };
 
+// Oude typenamen die nog in bestaande bestanden kunnen staan.
+const TYPE_ALIASES = { overnachting: 'camping' };
+
+export const isVia = (stop) => stop?.type === 'via';
+
 export function stopType(type) {
-  return STOP_TYPES[type] || { label: 'Stop', icon: '•', color: '#555' };
+  return STOP_TYPES[TYPE_ALIASES[type] || type] || { label: 'Stop', icon: '•', color: '#555' };
 }
 
 // tiles: 'osm' (OpenStreetMap, veel detail) of 'gray' (lichtgrijs, zoals route-the-americas).
@@ -47,26 +58,6 @@ export function legLatLngs(trip) {
     result.push({ leg, from: byId[a.id], to: byId[b.id], latlngs, routed: !!leg?.polyline });
   }
   return result;
-}
-
-// Google/OSRM "encoded polyline" (precisie 5) → [[lat, lng], ...]
-export function decodePolyline(str) {
-  const points = [];
-  let index = 0, lat = 0, lng = 0;
-  while (index < str.length) {
-    for (const axis of [0, 1]) {
-      let result = 0, shift = 0, b;
-      do {
-        b = str.charCodeAt(index++) - 63;
-        result |= (b & 0x1f) << shift;
-        shift += 5;
-      } while (b >= 0x20);
-      const delta = result & 1 ? ~(result >> 1) : result >> 1;
-      if (axis === 0) lat += delta; else lng += delta;
-    }
-    points.push([lat / 1e5, lng / 1e5]);
-  }
-  return points;
 }
 
 export { L };

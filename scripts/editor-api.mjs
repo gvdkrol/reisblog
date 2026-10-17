@@ -5,6 +5,7 @@
 //   GET  /api/trips                  lijst van reizen
 //   POST /api/trips                  nieuwe reis  { title }
 //   GET  /api/trips/:slug            één reis
+//   DELETE /api/trips/:slug          reis met alle stops en foto's verwijderen
 //   PUT  /api/trips/:slug            reis opslaan (+ route berekenen, ongebruikte foto's opruimen)
 //   POST /api/trips/:slug/photos?name=x.webp   foto uploaden (body = afbeelding)
 //   GET  /api/home                   homepage (titel, intro, links)
@@ -12,7 +13,7 @@
 //   POST /api/home/images?name=x.webp          afbeelding voor een link uploaden
 //   GET  /api/wordpress?date=YYYY-MM-DD&days=5  berichten van rondjewereld.nl rond een datum
 
-import { readFile, writeFile, readdir, mkdir, unlink } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, unlink, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { routeLegs } from './routing.mjs';
@@ -73,6 +74,7 @@ export function editorApi({ root }) {
         lng: Number(s.lng),
         date: String(s.date || ''),
         type: String(s.type || 'bezienswaardigheid'),
+        ...(s.draft ? { draft: true } : {}), // concept-stop: niet publiceren
         text: String(s.text || ''),
         photos: (s.photos || []).map((p) => ({ src: String(p.src), caption: String(p.caption || '') })),
         // Gekoppelde blogberichten op rondjewereld.nl (link onder het verhaal).
@@ -172,6 +174,11 @@ export function editorApi({ root }) {
       return send(res, 201, await createTrip(title));
     }
     if (slug && !sub && req.method === 'GET') return send(res, 200, await readTrip(slug));
+    if (slug && !sub && req.method === 'DELETE') {
+      await readTrip(slug); // bestaat de reis?
+      await rm(join(tripsDir, slug), { recursive: true, force: true });
+      return send(res, 200, { deleted: slug });
+    }
     if (slug && !sub && req.method === 'PUT') return send(res, 200, await saveTrip(slug, JSON.parse(await readBody(req))));
     if (slug && sub === 'photos' && req.method === 'POST') {
       return send(res, 201, await savePhoto(slug, url.searchParams.get('name'), await readBody(req, MAX_PHOTO_BYTES, true)));

@@ -2,7 +2,7 @@
 // voorbeeld in de editor, zodat die er precies hetzelfde uitzien.
 import { marked } from 'marked';
 import { stopType } from './map.js';
-import { formatDate, formatKm, formatDuration, escapeHtml } from './format.js';
+import { formatDate, formatLeg, escapeHtml } from './format.js';
 
 // photoUrl(src) → URL van een foto; day = dagnummer; leg/prevStop = traject vanaf de vorige stop.
 export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
@@ -19,9 +19,10 @@ export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
         ${day ? `<span>Dag ${day}</span><span>·</span>` : ''}
         ${stop.date ? `<span>${formatDate(stop.date)}</span>` : ''}
         <span class="type-chip" style="--c:${t.color}">${t.icon} ${t.label}</span>
+        ${stop.draft ? '<span class="draft-chip">concept · niet gepubliceerd</span>' : ''}
       </div>
       <h2>${escapeHtml(stop.name)}</h2>
-      ${leg?.polyline && prevStop ? `<div class="leg-info">🚐 ${formatKm(leg.km)} · ${formatDuration(leg.minutes)} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
+      ${leg?.polyline && prevStop ? `<div class="leg-info">🛣️ ${formatLeg(leg)} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
       <div class="story">${marked.parse(stop.text || '')}</div>
       ${articles.length ? `
         <div class="articles">

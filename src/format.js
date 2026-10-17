@@ -32,3 +32,8 @@ export function formatDuration(minutes) {
 export function escapeHtml(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
+
+// "339 km · 3u 26m", of alleen "339 km" als de rijtijd onbekend is (bijv. GPS-spoor uit Polarsteps).
+export function formatLeg(leg) {
+  return Number.isFinite(leg?.minutes) ? `${formatKm(leg.km)} · ${formatDuration(leg.minutes)}` : formatKm(leg.km);
+}

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fddb92"/><stop offset="1" stop-color="#d1fdff"/></linearGradient></defs>
-<rect width="800" height="533" fill="url(#g)"/>
-<circle cx="588" cy="140" r="54" fill="#fff" opacity=".7"/>
-<path d="M0 344 L180 224 L330 324 L480 184 L640 304 L800 234 V533 H0Z" fill="#2f6f73" opacity=".55"/>
-<path d="M0 396 L220 306 L420 376 L600 326 L800 386 V533 H0Z" fill="#2f6f73"/>
-<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Beaune · Proeverij bij een klein domein</text>
-</svg>

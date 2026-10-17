@@ -21,7 +21,7 @@ document.getElementById('site-header').innerHTML = `
 `;
 
 // ---------- Kerncijfers ----------
-const totalStops = trips.reduce((n, t) => n + t.stops.length, 0);
+const totalStops = trips.reduce((n, t) => n + t.stopCount, 0);
 const totalKm = trips.reduce((n, t) => n + t.totalKm, 0);
 const totalDays = trips.reduce((n, t) => {
   if (!t.startDate || !t.endDate) return n;
@@ -48,7 +48,7 @@ document.getElementById('trips').innerHTML = trips
         <div class="dates">${formatRange(trip.startDate, trip.endDate)}</div>
         <p class="summary">${escapeHtml(trip.summary)}</p>
         <div class="stats">
-          <span class="stat">${trip.stops.length} stops</span>
+          <span class="stat">${trip.stopCount} stops</span>
           ${trip.totalKm ? `<span class="stat">${formatKm(trip.totalKm)}</span>` : ''}
         </div>
       </div>
@@ -103,7 +103,7 @@ trips.forEach((trip, i) => {
   const group = L.featureGroup().addTo(map);
 
   legLatLngs(trip).forEach(({ latlngs }) => L.polyline(latlngs, { color, weight: 4, opacity: 0.9 }).addTo(group));
-  trip.stops.forEach((s) =>
+  trip.visibleStops.forEach((s) =>
     L.circleMarker([s.lat, s.lng], { radius: 5, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 }).addTo(group)
   );
 

@@ -1,7 +1,7 @@
 import './style.css';
 import { getTrip, asset } from './data.js';
-import { createMap, legLatLngs, stopType, L } from './map.js';
-import { formatRange, formatKm, formatDuration, escapeHtml } from './format.js';
+import { createMap, legLatLngs, stopType, isVia, L } from './map.js';
+import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
 import { stopPanelHtml, bindPanelPhotos } from './panel.js';
 
 const params = new URLSearchParams(location.search);
@@ -27,11 +27,11 @@ $('trip-info').innerHTML = `
   <h1>${escapeHtml(trip.title)}</h1>
   <div class="dates">${formatRange(trip.startDate, trip.endDate)}</div>
   <div class="stats">
-    <span class="stat">${trip.stops.length} stops</span>
+    <span class="stat">${trip.stopCount} stops</span>
     ${trip.totalKm ? `<span class="stat">${formatKm(trip.totalKm)}</span>` : ''}
     ${trip.totalMinutes ? `<span class="stat">${formatDuration(trip.totalMinutes)} rijden</span>` : ''}
   </div>
-  ${trip.stops.length ? `<button class="start" id="start">Start bij ${escapeHtml(trip.stops[0].name)} →</button>` : ''}
+  ${trip.visibleStops.length ? `<button class="start" id="start">Start bij ${escapeHtml(trip.visibleStops[0].name)} →</button>` : ''}
 `;
 $('start')?.addEventListener('click', () => openStop(0));
 
@@ -44,15 +44,23 @@ const legLayers = legLatLngs(trip).map(({ leg, to, latlngs, routed }) => {
     opacity: 0.85,
     dashArray: routed ? null : '6 8',
   }).addTo(map);
-  if (leg?.polyline) line.bindTooltip(`${formatKm(leg.km)} · ${formatDuration(leg.minutes)}`, { sticky: true, className: 'leg-tip' });
+  if (leg?.polyline) line.bindTooltip(formatLeg(leg), { sticky: true, className: 'leg-tip' });
   return { line, to };
 });
 
-const markers = trip.stops.map((stop, i) => {
+// Via-punten: klein rood stipje op de route, alleen met de naam bij hover.
+trip.stops.filter(isVia).forEach((stop) =>
+  L.circleMarker([stop.lat, stop.lng], { radius: 4, color: '#fff', weight: 1.5, fillColor: '#dc2626', fillOpacity: 1 })
+    .bindTooltip(escapeHtml(stop.name), { direction: 'top', className: 'leg-tip' })
+    .addTo(map)
+);
+
+const stops = trip.visibleStops;
+const markers = stops.map((stop, i) => {
   const t = stopType(stop.type);
   const icon = L.divIcon({
-    className: 'stop-marker',
-    html: `<div class="stop-pin" style="--c:${t.color}">${t.icon}<span class="num">${i + 1}</span></div>`,
+    className: `stop-marker${stop.draft ? ' draft' : ''}`,
+    html: `<div class="stop-pin" style="--c:${t.color}">${t.icon}<span class="num">${stop.number}</span></div>`,
     iconSize: [34, 34],
     iconAnchor: [17, 17],
   });
@@ -71,7 +79,7 @@ else map.setView([50, 5], 5);
 let current = -1;
 
 function openStop(i, { animate = true } = {}) {
-  const stop = trip.stops[i];
+  const stop = stops[i];
   if (!stop) return;
   current = i;
   renderPanel(stop);
@@ -82,7 +90,12 @@ function openStop(i, { animate = true } = {}) {
   history.replaceState(null, '', `#stop-${stop.id}`);
 
   markers.forEach((m, j) => m.getElement()?.classList.toggle('active', j === i));
-  legLayers.forEach(({ line, to }) => line.setStyle({ weight: to.id === stop.id ? 8 : 5, opacity: to.id === stop.id ? 1 : 0.7 }));
+  // Trajecten vanaf de vorige stop (eventueel via via-punten) uitlichten.
+  const from = stop.prevStop ? stop.prevStop.index : stop.index;
+  legLayers.forEach(({ line, to }) => {
+    const active = to.index > from && to.index <= stop.index;
+    line.setStyle({ weight: active ? 8 : 5, opacity: active ? 1 : 0.7 });
+  });
 
   focusOn(stop, animate);
 }
@@ -110,7 +123,7 @@ function focusOn(stop, animate = true) {
 
 function renderPanel(stop) {
   const photos = stop.photos || [];
-  const prevStop = trip.stops[stop.index - 1];
+  const { prevStop, nextStop: next } = stop;
   const content = $('panel-content');
 
   content.innerHTML = stopPanelHtml(stop, {
@@ -122,7 +135,6 @@ function renderPanel(stop) {
   content.scrollTop = 0;
   bindPanelPhotos(content, photos, { onOpen: (index) => openLightbox(photos, index) });
 
-  const next = trip.stops[stop.index + 1];
   $('prev').disabled = !prevStop;
   $('next').disabled = !next;
   $('prev').innerHTML = `<small>← Vorige stop</small><b>${prevStop ? escapeHtml(prevStop.name) : '–'}</b>`;
@@ -174,5 +186,5 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ---------- Deeplink #stop-<id> ----------
-const fromHash = trip.stops.findIndex((s) => `#stop-${s.id}` === location.hash);
+const fromHash = stops.findIndex((s) => `#stop-${s.id}` === location.hash);
 if (fromHash >= 0) openStop(fromHash, { animate: false });

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fddb92"/><stop offset="1" stop-color="#d1fdff"/></linearGradient></defs>
-<rect width="800" height="533" fill="url(#g)"/>
-<circle cx="602" cy="140" r="54" fill="#fff" opacity=".7"/>
-<path d="M0 326 L180 206 L330 306 L480 166 L640 286 L800 216 V533 H0Z" fill="#2f6f73" opacity=".55"/>
-<path d="M0 434 L220 344 L420 414 L600 364 L800 424 V533 H0Z" fill="#2f6f73"/>
-<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Carcassonne · Cassoulet</text>
-</svg>

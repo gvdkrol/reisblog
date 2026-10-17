@@ -1,0 +1,3168 @@
+{
+  "title": "Noorwegen 2023",
+  "slug": "noorwegen-2023",
+  "summary": "A summer roadtrip.",
+  "cover": "photos/emden-1.jpg",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "emden",
+      "name": "Emden",
+      "lat": 53.34337,
+      "lng": 7.1862,
+      "date": "2023-07-01",
+      "type": "camping",
+      "text": "Ingescheept op de MS Romantica. Een minicruise richting Kristiansand, 19 uur varen.",
+      "photos": [
+        {
+          "src": "photos/emden-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/emden-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/emden-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "wakker-worden-op-het-skagerrak",
+      "name": "Wakker worden op het Skagerrak",
+      "lat": 57.70513,
+      "lng": 8.02075,
+      "date": "2023-07-02",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/wakker-worden-op-het-skagerrak-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/wakker-worden-op-het-skagerrak-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kristiansand",
+      "name": "Kristiansand",
+      "lat": 58.12032,
+      "lng": 8.06508,
+      "date": "2023-07-02",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kristiansand-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "lindesnes",
+      "name": "Lindesnes",
+      "lat": 57.98503,
+      "lng": 7.0481,
+      "date": "2023-07-03",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/lindesnes-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/lindesnes-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "flekkefjord",
+      "name": "Flekkefjord",
+      "lat": 58.29003,
+      "lng": 6.71613,
+      "date": "2023-07-03",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/flekkefjord-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/flekkefjord-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "lunch",
+      "name": "Lunch",
+      "lat": 58.28088,
+      "lng": 6.48131,
+      "date": "2023-07-04",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/lunch-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/lunch-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sokndal",
+      "name": "Sokndal",
+      "lat": 58.32781,
+      "lng": 6.35203,
+      "date": "2023-07-04",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sokndal-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "egersund",
+      "name": "Egersund",
+      "lat": 58.47889,
+      "lng": 5.99623,
+      "date": "2023-07-04",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/egersund-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/egersund-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "stavanger",
+      "name": "Stavanger",
+      "lat": 58.97121,
+      "lng": 5.73085,
+      "date": "2023-07-05",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/stavanger-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "preikestolen",
+      "name": "Preikestolen",
+      "lat": 58.98743,
+      "lng": 6.18921,
+      "date": "2023-07-06",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/preikestolen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/preikestolen-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/preikestolen-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sauda",
+      "name": "Sauda",
+      "lat": 59.64097,
+      "lng": 6.31209,
+      "date": "2023-07-07",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sauda-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sauda-2",
+      "name": "Sauda",
+      "lat": 59.73001,
+      "lng": 6.61312,
+      "date": "2023-07-08",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sauda-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "odda",
+      "name": "Odda",
+      "lat": 60.06918,
+      "lng": 6.54571,
+      "date": "2023-07-08",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/odda-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kvinnherad",
+      "name": "Kvinnherad",
+      "lat": 60.09272,
+      "lng": 6.28382,
+      "date": "2023-07-08",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kvinnherad-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kvinnherad-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ullensvang",
+      "name": "Ullensvang",
+      "lat": 60.28692,
+      "lng": 6.21977,
+      "date": "2023-07-09",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/ullensvang-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kvam",
+      "name": "Kvam",
+      "lat": 60.37166,
+      "lng": 6.10651,
+      "date": "2023-07-09",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kvam-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bergen",
+      "name": "Bergen",
+      "lat": 60.39492,
+      "lng": 5.32332,
+      "date": "2023-07-09",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bergen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bergen-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bergen-2",
+      "name": "Bergen",
+      "lat": 60.37253,
+      "lng": 5.45914,
+      "date": "2023-07-10",
+      "type": "bezienswaardigheid",
+      "text": "Rainy day at the campsite",
+      "photos": [
+        {
+          "src": "photos/bergen-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "flam",
+      "name": "Flam",
+      "lat": 60.86279,
+      "lng": 7.11285,
+      "date": "2023-07-10",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/flam-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "aurland",
+      "name": "Aurland",
+      "lat": 60.90668,
+      "lng": 6.87098,
+      "date": "2023-07-11",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/aurland-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sognefjord",
+      "name": "Sognefjord",
+      "lat": 61.12368,
+      "lng": 7.12392,
+      "date": "2023-07-11",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sognefjord-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sogndal",
+      "name": "Sogndal",
+      "lat": 61.18213,
+      "lng": 7.24925,
+      "date": "2023-07-11",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sogndal-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sogndal-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sogndal-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sogndal-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "loen",
+      "name": "Loen",
+      "lat": 61.85082,
+      "lng": 6.91269,
+      "date": "2023-07-12",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/loen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/loen-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/loen-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "stryn",
+      "name": "Stryn",
+      "lat": 61.88524,
+      "lng": 6.83359,
+      "date": "2023-07-13",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/stryn-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/stryn-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/stryn-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "geiranger",
+      "name": "Geiranger",
+      "lat": 62.11463,
+      "lng": 7.1854,
+      "date": "2023-07-13",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/geiranger-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "stranda",
+      "name": "Stranda",
+      "lat": 62.11119,
+      "lng": 7.17981,
+      "date": "2023-07-14",
+      "type": "camping",
+      "text": "**Hellesylt**: Room with a view",
+      "photos": [
+        {
+          "src": "photos/stranda-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/stranda-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/stranda-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/stranda-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sykkylven",
+      "name": "Sykkylven",
+      "lat": 62.41064,
+      "lng": 6.54458,
+      "date": "2023-07-15",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sykkylven-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sykkylven-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "aalesund",
+      "name": "Aalesund",
+      "lat": 62.46891,
+      "lng": 6.1309,
+      "date": "2023-07-15",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/aalesund-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/aalesund-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rauma",
+      "name": "Rauma",
+      "lat": 62.45377,
+      "lng": 7.6642,
+      "date": "2023-07-16",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rauma-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/rauma-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/rauma-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "molde-jazz-festival",
+      "name": "Molde Jazz Festival",
+      "lat": 62.73459,
+      "lng": 7.15568,
+      "date": "2023-07-17",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/molde-jazz-festival-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bud",
+      "name": "Bud",
+      "lat": 62.90795,
+      "lng": 6.90546,
+      "date": "2023-07-17",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bud-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "atlantic-ocean-road",
+      "name": "Atlantic Ocean Road",
+      "lat": 63.0215,
+      "lng": 7.38054,
+      "date": "2023-07-18",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/atlantic-ocean-road-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "valsoya",
+      "name": "Valsoya",
+      "lat": 63.14213,
+      "lng": 8.53216,
+      "date": "2023-07-18",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/valsoya-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "trondheim",
+      "name": "Trondheim",
+      "lat": 63.45012,
+      "lng": 10.20117,
+      "date": "2023-07-19",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/trondheim-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/trondheim-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/trondheim-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/trondheim-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "verdal",
+      "name": "Verdal",
+      "lat": 63.77429,
+      "lng": 11.45639,
+      "date": "2023-07-20",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/verdal-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "steinkjer",
+      "name": "Steinkjer",
+      "lat": 63.99257,
+      "lng": 11.5287,
+      "date": "2023-07-21",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/steinkjer-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "namsos",
+      "name": "Namsos",
+      "lat": 64.4754,
+      "lng": 11.58137,
+      "date": "2023-07-21",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/namsos-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/namsos-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rorvik",
+      "name": "Rorvik",
+      "lat": 64.86007,
+      "lng": 11.2344,
+      "date": "2023-07-22",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rorvik-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bindal",
+      "name": "Bindal",
+      "lat": 65.18295,
+      "lng": 12.10508,
+      "date": "2023-07-22",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bindal-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bronnoy",
+      "name": "Bronnoy",
+      "lat": 65.39378,
+      "lng": 12.10072,
+      "date": "2023-07-22",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bronnoy-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bronnoy-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bronnoy-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "leirfjord",
+      "name": "Leirfjord",
+      "lat": 66.15284,
+      "lng": 13.07883,
+      "date": "2023-07-23",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/leirfjord-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/leirfjord-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nesna",
+      "name": "Nesna",
+      "lat": 66.2022,
+      "lng": 13.02693,
+      "date": "2023-07-23",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nesna-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "r-d-y",
+      "name": "Rødøy",
+      "lat": 66.49473,
+      "lng": 13.22986,
+      "date": "2023-07-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/r-d-y-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "crossing-the-arctic-circle",
+      "name": "Crossing the Arctic Circle",
+      "lat": 66.55318,
+      "lng": 13.1921,
+      "date": "2023-07-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/crossing-the-arctic-circle-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "furoy",
+      "name": "Furoy",
+      "lat": 66.73873,
+      "lng": 13.50155,
+      "date": "2023-07-24",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/furoy-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "mel-y",
+      "name": "Meløy",
+      "lat": 66.70298,
+      "lng": 13.73484,
+      "date": "2023-07-25",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/mel-y-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/mel-y-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/mel-y-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "storvika",
+      "name": "Storvika",
+      "lat": 66.95991,
+      "lng": 13.8033,
+      "date": "2023-07-26",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/storvika-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/storvika-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "saltstraumen",
+      "name": "Saltstraumen",
+      "lat": 67.23204,
+      "lng": 14.61594,
+      "date": "2023-07-26",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/saltstraumen-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bodo",
+      "name": "Bodo",
+      "lat": 67.28857,
+      "lng": 14.38581,
+      "date": "2023-07-27",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bodo-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "lofoten-in-zicht",
+      "name": "Lofoten in zicht",
+      "lat": 67.8267,
+      "lng": 13.21414,
+      "date": "2023-07-27",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/lofoten-in-zicht-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "lofoten-beach-camp",
+      "name": "Lofoten Beach Camp",
+      "lat": 68.10306,
+      "lng": 13.29006,
+      "date": "2023-07-27",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/lofoten-beach-camp-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nusfjord",
+      "name": "Nusfjord",
+      "lat": 68.02914,
+      "lng": 13.35698,
+      "date": "2023-07-28",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nusfjord-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "vestvagoy",
+      "name": "Vestvagoy",
+      "lat": 68.20452,
+      "lng": 13.8831,
+      "date": "2023-07-28",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/vestvagoy-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "magic-ice-svolvaer",
+      "name": "Magic Ice - Svolvaer",
+      "lat": 68.2293,
+      "lng": 14.56483,
+      "date": "2023-07-29",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/magic-ice-svolvaer-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "norwegian-sea",
+      "name": "Norwegian Sea",
+      "lat": 68.45561,
+      "lng": 14.83968,
+      "date": "2023-07-29",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/norwegian-sea-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "stokmarknes",
+      "name": "Stokmarknes",
+      "lat": 68.57203,
+      "lng": 14.92725,
+      "date": "2023-07-29",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/stokmarknes-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "hadsel",
+      "name": "Hadsel",
+      "lat": 68.56268,
+      "lng": 14.61825,
+      "date": "2023-07-30",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/hadsel-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sortland",
+      "name": "Sortland",
+      "lat": 68.68815,
+      "lng": 15.33746,
+      "date": "2023-07-31",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sortland-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "andenes",
+      "name": "Andenes",
+      "lat": 69.30506,
+      "lng": 16.06898,
+      "date": "2023-07-31",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/andenes-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/andenes-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "norwegian-sea-2",
+      "name": "Norwegian Sea",
+      "lat": 69.32965,
+      "lng": 16.27398,
+      "date": "2023-08-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/norwegian-sea-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "senja",
+      "name": "Senja",
+      "lat": 69.44391,
+      "lng": 17.3037,
+      "date": "2023-08-01",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/senja-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "senja-2",
+      "name": "Senja",
+      "lat": 69.47848,
+      "lng": 17.38523,
+      "date": "2023-08-02",
+      "type": "bezienswaardigheid",
+      "text": "Ferry net vol, 2 uur wachten.",
+      "photos": [
+        {
+          "src": "photos/senja-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/senja-2-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "tromso",
+      "name": "Tromso",
+      "lat": 69.65121,
+      "lng": 18.95518,
+      "date": "2023-08-02",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/tromso-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "troms",
+      "name": "Tromsø",
+      "lat": 69.63495,
+      "lng": 18.99122,
+      "date": "2023-08-04",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/troms-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "troms-2",
+      "name": "Tromsø",
+      "lat": 69.66956,
+      "lng": 19.6487,
+      "date": "2023-08-05",
+      "type": "bezienswaardigheid",
+      "text": "Waiting line for ferry",
+      "photos": [
+        {
+          "src": "photos/troms-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kafjord",
+      "name": "Kåfjord",
+      "lat": 69.59482,
+      "lng": 20.41537,
+      "date": "2023-08-05",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kafjord-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nordreisa",
+      "name": "Nordreisa",
+      "lat": 69.83955,
+      "lng": 21.20728,
+      "date": "2023-08-05",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nordreisa-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kvaenangen",
+      "name": "Kvaenangen",
+      "lat": 69.89649,
+      "lng": 21.61964,
+      "date": "2023-08-06",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kvaenangen-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "alta",
+      "name": "Alta",
+      "lat": 69.92994,
+      "lng": 23.26172,
+      "date": "2023-08-06",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/alta-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "porsanger",
+      "name": "Porsanger",
+      "lat": 70.66818,
+      "lng": 25.38989,
+      "date": "2023-08-07",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/porsanger-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nordkapp",
+      "name": "Nordkapp",
+      "lat": 71.16837,
+      "lng": 25.77926,
+      "date": "2023-08-07",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nordkapp-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/nordkapp-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nordkapp-2",
+      "name": "Nordkapp",
+      "lat": 71.05661,
+      "lng": 25.76343,
+      "date": "2023-08-08",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nordkapp-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "alta-2",
+      "name": "Alta",
+      "lat": 70.02761,
+      "lng": 22.28442,
+      "date": "2023-08-08",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/alta-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kvaenangen-2",
+      "name": "Kvaenangen",
+      "lat": 69.85903,
+      "lng": 21.80155,
+      "date": "2023-08-09",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kvaenangen-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "gaivuotna",
+      "name": "Gaivuotna",
+      "lat": 69.74552,
+      "lng": 20.49034,
+      "date": "2023-08-09",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/gaivuotna-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "storfjord",
+      "name": "Storfjord",
+      "lat": 69.45576,
+      "lng": 20.31792,
+      "date": "2023-08-10",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/storfjord-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "narvik",
+      "name": "Narvik",
+      "lat": 68.4313,
+      "lng": 17.44925,
+      "date": "2023-08-10",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/narvik-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "vestfjord",
+      "name": "Vestfjord",
+      "lat": 68.23865,
+      "lng": 16.15859,
+      "date": "2023-08-11",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/vestfjord-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "hamar-y",
+      "name": "Hamarøy",
+      "lat": 67.90655,
+      "lng": 15.87547,
+      "date": "2023-08-11",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/hamar-y-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "s-rfold",
+      "name": "Sørfold",
+      "lat": 67.35178,
+      "lng": 15.59185,
+      "date": "2023-08-12",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/s-rfold-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rana",
+      "name": "Rana",
+      "lat": 66.55247,
+      "lng": 15.3228,
+      "date": "2023-08-12",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rana-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/rana-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "mosjoen",
+      "name": "Mosjoen",
+      "lat": 65.83895,
+      "lng": 13.18589,
+      "date": "2023-08-13",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/mosjoen-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "grane",
+      "name": "Grane",
+      "lat": 65.62498,
+      "lng": 13.29172,
+      "date": "2023-08-13",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/grane-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "grong",
+      "name": "Grong",
+      "lat": 64.46044,
+      "lng": 12.3138,
+      "date": "2023-08-13",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/grong-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "steinkjer-2",
+      "name": "Steinkjer",
+      "lat": 63.86977,
+      "lng": 10.80044,
+      "date": "2023-08-14",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/steinkjer-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rland",
+      "name": "Ørland",
+      "lat": 63.67218,
+      "lng": 9.58794,
+      "date": "2023-08-14",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rland-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rland-2",
+      "name": "Ørland",
+      "lat": 63.70832,
+      "lng": 9.72259,
+      "date": "2023-08-15",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rland-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "norwegian-sea-3",
+      "name": "Norwegian Sea",
+      "lat": 63.06405,
+      "lng": 8.1838,
+      "date": "2023-08-15",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/norwegian-sea-3-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "tingvoll",
+      "name": "Tingvoll",
+      "lat": 63.06329,
+      "lng": 7.97968,
+      "date": "2023-08-15",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/tingvoll-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "norwegian-sea-4",
+      "name": "Norwegian Sea",
+      "lat": 62.69093,
+      "lng": 7.09142,
+      "date": "2023-08-16",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/norwegian-sea-4-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "refviksanden",
+      "name": "Refviksanden",
+      "lat": 62.00269,
+      "lng": 5.085,
+      "date": "2023-08-16",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/refviksanden-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kinn",
+      "name": "Kinn",
+      "lat": 62.03433,
+      "lng": 4.99358,
+      "date": "2023-08-17",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kinn-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "blalidneset",
+      "name": "Blålidneset",
+      "lat": 61.91501,
+      "lng": 5.11903,
+      "date": "2023-08-17",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/blalidneset-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/blalidneset-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "floro",
+      "name": "Floro",
+      "lat": 61.59361,
+      "lng": 5.07252,
+      "date": "2023-08-17",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/floro-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "h-yanger",
+      "name": "Høyanger",
+      "lat": 61.09256,
+      "lng": 5.49838,
+      "date": "2023-08-18",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/h-yanger-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "espeland",
+      "name": "Espeland",
+      "lat": 60.37361,
+      "lng": 5.45796,
+      "date": "2023-08-18",
+      "type": "camping",
+      "text": "Not all #vanlife is Instagrammable",
+      "photos": [
+        {
+          "src": "photos/espeland-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bergen-3",
+      "name": "Bergen",
+      "lat": 60.39132,
+      "lng": 5.31241,
+      "date": "2023-08-19",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bergen-3-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bergen-3-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "north-sea",
+      "name": "North Sea",
+      "lat": 59.54287,
+      "lng": 5.20138,
+      "date": "2023-08-19",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/north-sea-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sola",
+      "name": "Sola",
+      "lat": 58.92168,
+      "lng": 5.53955,
+      "date": "2023-08-19",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sola-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "skagerrak",
+      "name": "Skagerrak",
+      "lat": 57.6355,
+      "lng": 9.7459,
+      "date": "2023-08-20",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/skagerrak-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "frederikshavn-municipality",
+      "name": "Frederikshavn Municipality",
+      "lat": 57.74807,
+      "lng": 10.6469,
+      "date": "2023-08-20",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/frederikshavn-municipality-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/frederikshavn-municipality-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "aalborg",
+      "name": "Aalborg",
+      "lat": 57.05018,
+      "lng": 9.92601,
+      "date": "2023-08-21",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/aalborg-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "lindholm-hoje",
+      "name": "Lindholm Hoje",
+      "lat": 57.07754,
+      "lng": 9.91201,
+      "date": "2023-08-22",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/lindholm-hoje-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "thisted",
+      "name": "Thisted",
+      "lat": 57.15614,
+      "lng": 9.02701,
+      "date": "2023-08-22",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/thisted-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/thisted-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "monsted-kalkgruberne",
+      "name": "Monsted Kalkgruberne",
+      "lat": 56.45651,
+      "lng": 9.16622,
+      "date": "2023-08-23",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/monsted-kalkgruberne-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "silkeborg",
+      "name": "Silkeborg",
+      "lat": 56.17102,
+      "lng": 9.57559,
+      "date": "2023-08-23",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/silkeborg-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "himmelbjerg",
+      "name": "Himmelbjerg",
+      "lat": 56.10528,
+      "lng": 9.68502,
+      "date": "2023-08-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/himmelbjerg-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/himmelbjerg-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ebeltoft",
+      "name": "Ebeltoft",
+      "lat": 56.21361,
+      "lng": 10.67549,
+      "date": "2023-08-24",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/ebeltoft-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "fregatten-jylland",
+      "name": "Fregatten Jylland",
+      "lat": 56.19945,
+      "lng": 10.67395,
+      "date": "2023-08-25",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/fregatten-jylland-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/fregatten-jylland-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "aarhus-aros-museum",
+      "name": "Aarhus - Aros Museum",
+      "lat": 56.15294,
+      "lng": 10.19578,
+      "date": "2023-08-26",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/aarhus-aros-museum-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/aarhus-aros-museum-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "jelling",
+      "name": "Jelling",
+      "lat": 55.75598,
+      "lng": 9.41935,
+      "date": "2023-08-26",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/jelling-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "billund",
+      "name": "Billund",
+      "lat": 55.7308,
+      "lng": 9.1148,
+      "date": "2023-08-27",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/billund-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "oksby",
+      "name": "Oksby",
+      "lat": 55.54551,
+      "lng": 8.13688,
+      "date": "2023-08-27",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/oksby-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "tirpitz-bunker",
+      "name": "Tirpitz Bunker",
+      "lat": 55.55005,
+      "lng": 8.1726,
+      "date": "2023-08-28",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/tirpitz-bunker-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ribe",
+      "name": "Ribe",
+      "lat": 55.32962,
+      "lng": 8.76215,
+      "date": "2023-08-29",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/ribe-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ribe-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kolding",
+      "name": "Kolding",
+      "lat": 55.41257,
+      "lng": 9.59527,
+      "date": "2023-08-29",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kolding-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kolding-2",
+      "name": "Kolding",
+      "lat": 55.49078,
+      "lng": 9.47296,
+      "date": "2023-08-30",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kolding-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "s-nderborg",
+      "name": "Sønderborg",
+      "lat": 54.90162,
+      "lng": 9.79742,
+      "date": "2023-08-30",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/s-nderborg-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sonderborg",
+      "name": "Sonderborg",
+      "lat": 54.91418,
+      "lng": 9.78354,
+      "date": "2023-08-31",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/sonderborg-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "grafstenen-slot",
+      "name": "Grafstenen Slot",
+      "lat": 54.92668,
+      "lng": 9.59411,
+      "date": "2023-08-31",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/grafstenen-slot-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "schleswig",
+      "name": "Schleswig",
+      "lat": 54.51013,
+      "lng": 9.58391,
+      "date": "2023-09-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/schleswig-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "neu-wulmstorf",
+      "name": "Neu Wulmstorf",
+      "lat": 53.37061,
+      "lng": 9.80075,
+      "date": "2023-09-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/neu-wulmstorf-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "emstek",
+      "name": "Emstek",
+      "lat": 52.84212,
+      "lng": 8.10809,
+      "date": "2023-09-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/emstek-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "zwartemeer",
+      "name": "Zwartemeer",
+      "lat": 52.73043,
+      "lng": 7.03832,
+      "date": "2023-09-01",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/zwartemeer-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "emden",
+      "to": "wakker-worden-op-het-skagerrak",
+      "key": "53.34337,7.1862;57.70513,8.02075",
+      "km": 531.2,
+      "polyline": "asqdIwpzj@zg@bH__@gB~^dBdGlZdMxEs_c@`znAiFfN}|EjwMajJlli@maJz}RucLxaA_{BnRwa@]qiRiuAcsCte@}n_@blCcvIut@gwJozAgsxQ_qcHokHe`CotHeeCsoNqrEemm@opLuVkBuyFcy@mRmClRlC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "wakker-worden-op-het-skagerrak",
+      "to": "kristiansand",
+      "key": "57.70513,8.02075;58.12032,8.06508",
+      "km": 85.5,
+      "polyline": "ape_Jup}o@k_Dcc@ycDce@e_NglBsrOk}AqjAaEcpEiNyfTox@c|@tj@utLfmApdBp{Jap@~vAiy@ibAwn@}mDtgF_gG`KmHnJtJ}HaHvLzBgK}CySzFsjBgjAeo@ltC{~A~lBnkA~aDhi@xm@bHho@oGoEpY{Q}mAkg@uJkE}r@{iFlTobCrnBelArfCf~@`KlElFtFsFjG{KwSfJjCf@Q",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kristiansand",
+      "to": "lindesnes",
+      "key": "58.12032,8.06508;57.98503,7.0481",
+      "km": 70.6,
+      "polyline": "_svaJwefp@iJuBogAas@yGL`mB~uk@boBftSpX~qSplKfl\\}yFxdZfwClsNkTncBoQhfMjiFz_LrfE~pJ`JrFsLs@??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "lindesnes",
+      "to": "flekkefjord",
+      "key": "57.98503,7.0481;58.29003,6.71613",
+      "km": 48.6,
+      "polyline": "me|`Jsq_j@iCuMcqIeeJqzC}_Dgy@gw@y`EtgHssE~iDs_KvlE_fBn}HsnBxdTe}EniYcsBzzC_EgB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "flekkefjord",
+      "to": "lunch",
+      "key": "58.29003,6.71613;58.28088,6.48131",
+      "km": 15.3,
+      "polyline": "uwwbJyv~g@s@}BhGzEw`@|kHwHnJaMdUlGnCnMkWqNnZjhAj`PlSnpPfHnRkA}B",
+      "source": "polarsteps"
+    },
+    {
+      "from": "lunch",
+      "to": "sokndal",
+      "key": "58.28088,6.48131;58.32781,6.35203",
+      "km": 10,
+      "polyline": "o~ubJe{pf@bJpDuoCdxHw{Ab~KojAtx@dDrKhBxB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sokndal",
+      "to": "egersund",
+      "key": "58.32781,6.35203;58.47889,5.99623",
+      "km": 29.9,
+      "polyline": "yc_cJeswe@_H_O{J~Yi`Bd}CtGx`@quDvaOsoAhmZiiDfiMi~@zc@eb@z\\yWnEcc@rTok@tL{zDtw@sHhBDZ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "egersund",
+      "to": "stavanger",
+      "key": "58.47889,5.99623;58.97121,5.73085",
+      "km": 78.9,
+      "polyline": "at|cJmcrc@tHeBlnCs`@jQtJ|IoJcJsA{CvQ}`AfFocBtLvD`SmDkTaJwElJnG}Azi@_IxrVgeEl}Jiy@nr@aeIzn[{|RteKiwBc_Aa`IqdEsoJ_xIwf@{v@mpNspBktAjoAmdHugAqDoKeiAqcBwObBgZbF}BgUhGiKtCva@qBiE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "stavanger",
+      "to": "preikestolen",
+      "key": "58.97121,5.73085;58.98743,6.18921",
+      "km": 35.6,
+      "polyline": "ay|fJyh~a@aDc@uHmTbXhSxzA|aAbMl]HU|@pKw@_KSZjAbJ??yAkGs@d~@D_Py`@qeBe{Kgg}@|p@e_@pkBwtGbA{OyDgsCkAas@vv@qu@}EkWtAsNxJ_`@~DqU{G{}@s@eO{CmZxFeWpFcMoBmh@~@u^`IqR",
+      "source": "polarsteps"
+    },
+    {
+      "from": "preikestolen",
+      "to": "sauda",
+      "key": "58.98743,6.18921;59.64097,6.31209",
+      "km": 110.2,
+      "polyline": "m~_gJqywd@sHzFUx`@Rzg@uF~WeFz[|CpP`Bhe@~Evb@QhT_IvZsHnXhBdRky@|QhOd}FpChhAaqDreHs_B~~Ssf@rXemC}gPeLauAiiE_rZ}sGikDukEfdIw|HkqC}{Em{Au}E_n\\yoDlxNgsD|gI{NnDosFzwAsbApzKkpU{tXsqGygGkiIaFX|Ph@}Oi|AokBkBaOHS",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sauda",
+      "to": "sauda-2",
+      "key": "59.64097,6.31209;59.73001,6.61312",
+      "km": 22.2,
+      "polyline": "as_kJqyoe@uKrRpIcCBoP`Bp@e@jAFm@QBsBvEtEdI}j@s`Kq`@erQurBerD}bBurAq~CafGgfBmrJeByS??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sauda-2",
+      "to": "odda",
+      "key": "59.73001,6.61312;60.06918,6.54571",
+      "km": 46.2,
+      "polyline": "q_qkJ_sjg@{@qBsj@_vFqwB{iJ{yEwsHykDv_AqwPhbZqpAtoCuSlm@qZxFe\\cv@suBfx@_fM|`BmmGphCtHcXC?",
+      "source": "polarsteps"
+    },
+    {
+      "from": "odda",
+      "to": "kvinnherad",
+      "key": "60.06918,6.54571;60.09272,6.28382",
+      "km": 20.6,
+      "polyline": "kgsmJum}f@qCzQysJzpj@dpAjrHqGjKpGaKjg@g@rYgQrZ_k@hYqZb[lF",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kvinnherad",
+      "to": "ullensvang",
+      "key": "60.09272,6.28382;60.28692,6.21977",
+      "km": 23.7,
+      "polyline": "ozwmJ{hje@uyC|wAwCmM{iEykAcjVrrGub@ggAnJ|MqJyJeo@dpC}Sfs@Pi@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ullensvang",
+      "to": "kvam",
+      "key": "60.28692,6.21977;60.37166,6.10651",
+      "km": 15.4,
+      "polyline": "gx}nJqx}d@sDnNkoAtvGilCknBsaBuyCunDtmLiQzrF{@bPyF}K",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kvam",
+      "to": "bergen",
+      "key": "60.37166,6.10651;60.39492,5.32332",
+      "km": 58.9,
+      "polyline": "{inoJutgd@xH{F|e@lxGovCtjPnj@||TcbAh_C~GpEiqA`gVeQfhp@lmEtbA{SkTxNp\\ftIhgSoaFeg@{\\br@cpCnmBq`@TsBvh@wQ~LIK{KtDND",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bergen",
+      "to": "bergen-2",
+      "key": "60.39492,5.32332;60.37253,5.45914",
+      "km": 22.1,
+      "polyline": "g{roJwun_@c\\p\\pKwVzOmOpBaRsKgAv@_UnGaaAvDoKvM{NmTh}@kBzRmBjUj^yOxFxFhFiLtMjHrjAww@vnAs}@dzEr\\je@yZvWcW}_F}qNseCcoCnH}E}A]HN",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bergen-2",
+      "to": "flam",
+      "key": "60.37253,5.45914;60.86279,7.11285",
+      "km": 122.2,
+      "polyline": "ionoJsfi`@_LdHuGeAmiHquST{~KugRynQcKeBwgPi|Tcw@sjFitBi}`@dNg{Wf\\ulHiqJkyn@mHcJsbP_bB}M_vMe_@c^wyCi`V}eH{{VqnEajo@lqEalHcIySkEmLfFzK_ImH`Coc@jAdK",
+      "source": "polarsteps"
+    },
+    {
+      "from": "flam",
+      "to": "aurland",
+      "key": "60.86279,7.11285;60.90668,6.87098",
+      "km": 49.2,
+      "polyline": "mgnrJiflj@lCvYjvFkdAllNygApy@hu@qy@eu@_S}TebGxrF_aIodD_rCzp@jExj@uFoGx@tIrEmA`E_D{GdHaqB|{r@}wC{wDuGaBgLkCfLjC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "aurland",
+      "to": "sognefjord",
+      "key": "60.90668,6.87098;61.12368,7.12392",
+      "km": 31.9,
+      "polyline": "wyvrJs~|h@ojCkVwuJcr^{mI~XmfHpeAmLsDwQwN{}B_qMca@w~AcVmkArCrO",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sognefjord",
+      "to": "sogndal",
+      "key": "61.12368,7.12392;61.18213,7.24925",
+      "km": 9.6,
+      "polyline": "_fatJoknj@{Qe_A{}IqvUlClG",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sogndal",
+      "to": "loen",
+      "key": "61.18213,7.24925;61.85082,6.91269",
+      "km": 135.1,
+      "polyline": "isltJyzfk@wql@vi~Amq@fWC@mHdCagAc|@zPgx@xf@rJ`YjZ~PbTgOxTqB`\\yjEuhIsg@w`A|tFhaJDbHaIzg@~Hq`@m@`UakQduS}rPb~WmpRw{@{_E|{Y{eA{lNw~AupDiLgD_~DmwAwtGi{N_gDeEsRu|NrzC}qX{rBmnLndAa|AhVizAlBaB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "loen",
+      "to": "stryn",
+      "key": "61.85082,6.91269;61.88524,6.83359",
+      "km": 10.9,
+      "polyline": "sfoxJicei@kBpA~Get@dSyt@hTao@cs@fqC_CdXqhCduL}cA~e@sK{@qAq]aHJiFdPkBrWr`@mUt@|I",
+      "source": "polarsteps"
+    },
+    {
+      "from": "stryn",
+      "to": "geiranger",
+      "key": "61.88524,6.83359;62.11463,7.1854",
+      "km": 61.1,
+      "polyline": "w}uxJ}tuh@xZoPbh@cRqBbfCqpD~eSvNqg@s\\o^mtBcuRuO_fAyg@w`_@lZ{cA|G_a@aj@eol@atDsJqV|P_pKi}EbLhoAgyCrbByc@wJox@iCc|@|dD__BxkAggCl`FlGkA??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "geiranger",
+      "to": "stranda",
+      "key": "62.11463,7.1854;62.11119,7.17981",
+      "km": 5.5,
+      "polyline": "mwbzJwkzj@OQpnAcbCsHvPtFmHwFjNtS_[oTxY{iArtBvYv[`@gA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "stranda",
+      "to": "sykkylven",
+      "key": "62.11119,7.17981;62.41064,6.54458",
+      "km": 73.5,
+      "polyline": "}abzJyhyj@fdEtqy@aZCiHY|e@rE{Zd]IOLCBy@uX~UhXmUsDra@|CmNawMyjIigStgFsuGwtDjmB|bGsqDzpW{x@zs\\ihMn~Asw@dnEsBxX??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sykkylven",
+      "to": "aalesund",
+      "key": "62.41064,6.54458;62.46891,6.1309",
+      "km": 38.6,
+      "polyline": "oq|{Jsf}f@sBhT}G~k@u{BxbE{~Dzp[wp@xvC`Bla\\ma@taDzl@pcDmC_PoCc|AkEeZwIqFcAh]x@fTvCvSzJfQ`Iju@_G|DJrkAxRbwBfdAaUuOupE_I}pAiYlvEsc@unEaQeyAxKtaArK`~BpGjO{FoO?G",
+      "source": "polarsteps"
+    },
+    {
+      "from": "aalesund",
+      "to": "rauma",
+      "key": "62.46891,6.1309;62.45377,7.6642",
+      "km": 100.8,
+      "polyline": "u}g|Jcmld@pG|OqIkOlAj@mFsc@pEfd@eEoK~Dy{\\b@gq@sBg`@qw@mdZyIg{k@w_@k}BtPe|Vj`EyfQpcBobBdKeQfuHefJrLyjAyAed@`rGkqQrbGsmI{iBi{Xy}DodXn{AizMuyHktOk_@gw@egG{fN}tCg_@{MeJiGcu@pEpk@h@tE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rauma",
+      "to": "molde-jazz-festival",
+      "key": "62.45377,7.6642;62.73459,7.15568",
+      "km": 48.1,
+      "polyline": "a_e|Jg|wm@qxXrrXkJbEzHmDmHx@jH{@cHxAdHwAyGz@_@lQhEcm@yOmi@ma@{KmeBxKecA``@ybG~wEgHeKayAzrCkTvr@aJbu@osAn_EsdF|xUw`@xlSjRvlGo@vV|I|{@dGtDGw@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "molde-jazz-festival",
+      "to": "bud",
+      "key": "62.73459,7.15568;62.90795,6.90546",
+      "km": 35.9,
+      "polyline": "ez{}J_rtj@qJwDfGbF{LiRWadAvDelAwcCm}Oe`N~oEexAv|AnHp|WquGbkTgiAfsIsC`dAdAxa@eQoDgCln@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bud",
+      "to": "atlantic-ocean-road",
+      "key": "62.90795,6.90546;63.0215,7.38054",
+      "km": 30,
+      "polyline": "uu}~Jcvci@vQon@sLgF~E{ZfJs_AzBdQW{RONeFjIcrAifAiyG}kUtx@icGk|BeiKkpDabSy_@g|E@Bwv@q`IqPwyAqJioBKJ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "atlantic-ocean-road",
+      "to": "valsoya",
+      "key": "63.0215,7.38054;63.14213,8.53216",
+      "km": 85.7,
+      "polyline": "k{s_Kko`l@LSbm@oqDjTfeQpmIi{ItIiqB|`JeaOofFglXc~Da`P`HycL|Fk`Acj@mcAwEwfDwtCoeVefBqtKkyFahY_]atFuGolAsx@q}Gsn@cwP}lCqdE{rCrxA}oAkp_@mp@ohFz@|D",
+      "source": "polarsteps"
+    },
+    {
+      "from": "valsoya",
+      "to": "trondheim",
+      "key": "63.14213,8.53216;63.45012,10.20117",
+      "km": 112.8,
+      "polyline": "imk`K_mas@uCrToKbaCtDiSl@_s@dDav@tE{\\g}CmkJaqBq}WucAo|i@wxBwia@|VinD_fBwga@ob@cel@esGs`Jod@{gFmaAatNeuBwf[ujAuhl@zoB{fMmwAu}PyeDjcLupJlfF}zB~}@igCuzGcB}^??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "trondheim",
+      "to": "verdal",
+      "key": "63.45012,10.20117;63.77429,11.45639",
+      "km": 114.3,
+      "polyline": "grgbKilg}@xdCubh@{Or\\jJlMxDhHvAtG_MbGkJdQaM~GpT|XzAkQBrW~@|yAjI|dAgcCdjHhFphXgH{wAM_DpLspVncAupM}EcqKmFwGrUt~AhOzC|FsFzn@qhu@jGqAlOqgCpZcvBt_@}kHsi@ahAwmDe`JkoMrvDoqIiyWosKuiOkgFomGs_Gy}TepGmtb@qj@weIyj@gC^rC??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "verdal",
+      "to": "steinkjer",
+      "key": "63.77429,11.45639;63.99257,11.5287",
+      "km": 44.3,
+      "polyline": "i|fdKmq|dAigBcwB}\\_yIm@w~DkOcWbJ`MtB`ThGloLvo@hrFpLzf@dbAkjAk@rAcG?caL`}G{iBfbAktKc|DmjOa_Mje@}vD|S~D`KhJfHxN??zPgL??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "steinkjer",
+      "to": "namsos",
+      "key": "63.99257,11.5287;64.4754,11.58137",
+      "km": 71,
+      "polyline": "qpqeKkujeAdB}RbZ``@zNq]_EwcAy^c_@u_@cQq[xf@iJf`A{InEp@tRk}BxoGggGmlCutDj{IqyFxm^k_JlnLwgD`N{~O^keKmrY}cK{|YgcDijFyNsu@a{A{kF{C}P??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "namsos",
+      "to": "rorvik",
+      "key": "64.4754,11.58137;64.86007,11.2344",
+      "km": 68.1,
+      "polyline": "gzohKq~teAdF|QpEpw@n[bbLilHswBgoEb`HofI~aGwbBj^qnG}qBsbAfjAu`KajPypEqfRyvDjiFk|CdoOtpAr|Z_rAraDwsCz{NgwArfB~HpHli@}p@ax@xm@q@gDbIoHRjA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rorvik",
+      "to": "bindal",
+      "key": "64.86007,11.2344;65.18295,12.10508",
+      "km": 69,
+      "polyline": "m~zjK_fqcAwTtXbdB_wYqwB{kk@`Ikg@yjG}eUogJouO_vFbHmfGc~QafA{bGooD}rOjdAadDSgUieHanUovJbmIiDyOpHxUuEzy@|AqF",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bindal",
+      "to": "bronnoy",
+      "key": "65.18295,12.10508;65.39378,12.10072",
+      "km": 59.9,
+      "polyline": "m`zlKwg{hA}G~T_`Et{JcZq~@c}LorSyfMwbHqkBt}@idIi_Ly`LwhMrvBhzTpcB|{DprCxgLxwBxtBdsDn]~EdNsGfxAaQ{c@Zl@rTxe@eBwkBkBuH",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bronnoy",
+      "to": "leirfjord",
+      "key": "65.39378,12.10072;66.15284,13.07883",
+      "km": 109.1,
+      "polyline": "cfcnKolzhAqzIwiFouBqkLgwJq`KcpI}kE}CyFw@{dMs{@hYueOalFu{EmsHkqUj~G}pBxhBqFgHetIe~PwpGhuDmoL}s^kyC{cRigD}sh@knImoX}GmDejEu_B_FpgAlIy_A??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "leirfjord",
+      "to": "nesna",
+      "key": "66.15284,13.07883;66.2022,13.02693",
+      "km": 7.8,
+      "polyline": "gnwrKumynAa}Cf|MukC}v@eKuoAjFwK}CoB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nesna",
+      "to": "r-d-y",
+      "key": "66.2022,13.02693;66.49473,13.22986",
+      "km": 75.6,
+      "polyline": "wbasKiionAcCfLdE~ZhM}Uac@elBw|Kuza@}e@wrDq|BkaVgd@kfd@a~GlwVz{DhpW|DnPuq@pta@y_EnhWacA_kFaj@{bEejMuzRgtF{yHcFsFua@oK??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "r-d-y",
+      "to": "crossing-the-arctic-circle",
+      "key": "66.49473,13.22986;66.55318,13.1921",
+      "km": 8.4,
+      "polyline": "agztKs}voAug@m@u|@CcwB`kAymCn`Dwh@hk@vh@ik@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "crossing-the-arctic-circle",
+      "to": "furoy",
+      "key": "66.55318,13.1921;66.73873,13.50155",
+      "km": 34.8,
+      "polyline": "kteuKsqooAm|@n~@{|JcbSrJ}y_@{sH}aNgiHjpIm|B{hF~@naAhBj\\}Dzg@iIj[fBzZ|Adk@^gToDag@vHem@`Cwt@??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "furoy",
+      "to": "mel-y",
+      "key": "66.73873,13.50155;66.70298,13.73484",
+      "km": 12.6,
+      "polyline": "a|ivKu_lqAjjD_jNmiAi{PvCwPjoAweDeAcn@~Kwo@jK_d@jHku@xG_V??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "mel-y",
+      "to": "storvika",
+      "key": "66.70298,13.73484;66.95991,13.8033",
+      "km": 47.1,
+      "polyline": "s|bvKwqyrAmkg@nyQb`Fo`LctKx{Sgi@|^w^opF|EupEiaAm}Y??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "storvika",
+      "to": "saltstraumen",
+      "key": "66.95991,13.8033;67.23204,14.61594",
+      "km": 58.9,
+      "polyline": "mbuwKs}fsAiBv[\\{[tqAogSezF}s_@~t@{_MyhDsuO_rMedQmzH{dFo}D}yJiyEoxf@oqFpd@vLlWtFeIvIua@fHzG{SuTaGnJkKjLgHDxm@wXaQlb@h@h[aFw_@vD|Y??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "saltstraumen",
+      "to": "bodo",
+      "key": "67.23204,14.61594;67.28857,14.38581",
+      "km": 32.2,
+      "polyline": "ggjyKstexAyWoVEkAy@eUuIrCrQuSgEff@m@[qiJguYow@rgI|_Dpif@m|@|cUw@wa@tCxb@bGfVzLlVdKhAcHx_@cHuTiFwa@mQubACE@BrAwu@{AfuBbOhlBcOilB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bodo",
+      "to": "lofoten-in-zicht",
+      "key": "67.28857,14.38581;67.8267,13.21414",
+      "km": 83,
+      "polyline": "qhuyKivxvAzR`hCna@cn@|St}@ywBzpR{dG~cD_rJpeJwlKnmCu}Nved@u`JneZ_qAt`FevF|{TwsJ|r_@ipBptHkmIdtZepGxjS??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "lofoten-in-zicht",
+      "to": "lofoten-beach-camp",
+      "key": "67.8267,13.21414;68.10306,13.29006",
+      "km": 38.6,
+      "polyline": "{k~|Kk{soAkXzz@qlC`oIwaFb}PgmAjhBahEgrIa\\xkAio@anIggB}bC{sBeaBkgApf@qzF}v@miJebJ}bAczJcIbXtGfB??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "lofoten-beach-camp",
+      "to": "nusfjord",
+      "key": "68.10306,13.29006;68.02914,13.35698",
+      "km": 10.8,
+      "polyline": "ckt~K{ubpAGXuAeNqF~IkZwq@xd@ps@Kh@~uGckC`lCuvEbFwLpGnMtRaH|M}QcF{`@Ya@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nusfjord",
+      "to": "vestvagoy",
+      "key": "68.02914,13.35698;68.20452,13.8831",
+      "km": 37.2,
+      "polyline": "c}e~KcxopA{Cjq@{Xr@wJ|HsgC~oA{rJykAowEea_@znAukGwWukKiBlTg`Ba|_@ezGevRhB}ZiB|Z",
+      "source": "polarsteps"
+    },
+    {
+      "from": "vestvagoy",
+      "to": "magic-ice-svolvaer",
+      "key": "68.20452,13.8831;68.2293,14.56483",
+      "km": 37.3,
+      "polyline": "geh_LkpvsArEyXDRmBkAiIyEdWyxRgk@kiKqfCahEahD{hUjjFmaBv^}yc@`K{iAn\\cvFtGpKGg~@_SavAsEdk@dIxcAcEyOugB}kLeU{aEbGyZ\\fH",
+      "source": "polarsteps"
+    },
+    {
+      "from": "magic-ice-svolvaer",
+      "to": "norwegian-sea",
+      "key": "68.2293,14.56483;68.45561,14.83968",
+      "km": 28.6,
+      "polyline": "c`m_Leu{wAuGJmoDqaQwlIumIak@nz@uyI}mOm{IihFk{CegB??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "norwegian-sea",
+      "to": "stokmarknes",
+      "key": "68.45561,14.83968;68.57203,14.92725",
+      "km": 14,
+      "polyline": "qfy`L_kqyAg~J_xQ_rIdy@kDoC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "stokmarknes",
+      "to": "hadsel",
+      "key": "68.57203,14.92725;68.56268,14.61825",
+      "km": 14.3,
+      "polyline": "e~oaLinbzAlVpjIeh@pxLgJbmOw@phKrwBljFm^~A??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "hadsel",
+      "to": "sortland",
+      "key": "68.56268,14.61825;68.68815,15.33746",
+      "km": 45.7,
+      "polyline": "wcnaLacfxA_gAeuCy]_xJlVsuE`S}xObNae@vBwSjt@uaA`]fCbOlCmOehAoR_nD{w@DmFw`EvLaL_^goAxAl]aBs\\vI~NaIoi@~Amy@woGksd@gnFezd@syAyfGo`BouDmCgT{lBhtAfOdMmIxgAlBvt@lFhm@dLji@`G`W|Ej_@`GrTfN`OxOsDDP",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sortland",
+      "to": "andenes",
+      "key": "68.68815,15.33746;69.30506,16.06898",
+      "km": 90.7,
+      "polyline": "}sfbLcrr|AgVcl@kLaZtAwp@dLogAtH}\\rA_e@kZms@yPfHmLpGyGwBtIaoDklBogDgp@aiGyxIyMmyE}{c@}lAqf@cmGljVk_LakMmbLrrCgnHhuOssEy}DwGeAkkBy}AudEitVubKeu^goIe~So`@sPeyFcoDsf@ukMIZoDqI",
+      "source": "polarsteps"
+    },
+    {
+      "from": "andenes",
+      "to": "norwegian-sea-2",
+      "key": "69.30506,16.06898;69.32965,16.27398",
+      "km": 15.2,
+      "polyline": "sc_fLcnaaB|PhfAgQoeAzDvHjKv{@uUy~@yHsGwDwSzS|WWyAMMfEvI_EiH_AqAdLk_@qIf`@??jD~IwEic@^xXlF_LmlCo|JqRyuZ??kDo|BjDn|B",
+      "source": "polarsteps"
+    },
+    {
+      "from": "norwegian-sea-2",
+      "to": "senja",
+      "key": "69.32965,16.27398;69.44391,17.3037",
+      "km": 61.9,
+      "polyline": "i}cfLkoibBuvAsxfAuvBudkArBphBgkAitT}oFe{SrrCud_@qeE{cT_eBv|Zgg@hkJIlBHP??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "senja",
+      "to": "senja-2",
+      "key": "69.44391,17.3037;69.47848,17.38523",
+      "km": 8.8,
+      "polyline": "mgzfLcsrhBKNG?DhGZuFcCdc@fB_d@vFsk@yvFedCtSsbKvBpv@qMk_@pMj_@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "senja-2",
+      "to": "tromso",
+      "key": "69.47848,17.38523;69.65121,18.95518",
+      "km": 85.2,
+      "polyline": "o_agLupbiBsqD}_eBmC~Y`JtJoDwg@w@|\\p@oc@tCfx@i~DavG??eqBszAa{E_hEopF{nb@rrDmbUvyAds@_wDgzKssFqtf@qnD}ob@tY{qBwxAqs\\ztGcuOlAmxDiFzS}\\zlHhM|k@xAc_@yAb_@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "tromso",
+      "to": "troms",
+      "key": "69.65121,18.95518;69.63495,18.99122",
+      "km": 12,
+      "polyline": "awbhL{durBY\\XuEpOu}DvCeqD}D~_@sT`uGxCrd@pVH|X`_AZyAgE_TkNaQ_YmU{W{[ll@mxHgA_ANaBv@~CmAeAu@xVkAvi@vDhs@`Dxf@rb@dUvPy_@vOi^hDl[??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "troms",
+      "to": "troms-2",
+      "key": "69.63495,18.99122;69.66956,19.6487",
+      "km": 58,
+      "polyline": "mq_hLcf|rBfFhKdFi_@|SuW}@if@uR~YyBse@kHmDcFuYqLb@aVjWmZnBkJ}l@q^xtItU~XeJqTAJuy@wo@_JjAuxA_gAg@pZtvArrA|yAdVyG}NqCy}FxQy{A}CrWxv@rxFkPmi@wDuXh`AhuCl}OulH_rC}jf@}uJ_if@gdFwtk@_U}eA@F",
+      "source": "polarsteps"
+    },
+    {
+      "from": "troms-2",
+      "to": "kafjord",
+      "key": "69.66956,19.6487;69.59482,20.41537",
+      "km": 34.6,
+      "polyline": "wifhLks|vBfBmoBdf@km[~dKaxZ`Jm{@leCqcj@z@i|F_g@odXugA_{J_Gct@~Fbt@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kafjord",
+      "to": "nordreisa",
+      "key": "69.59482,20.41537;69.83955,21.20728",
+      "km": 52.1,
+      "polyline": "svwgLakr{BeKyvAma@wmOoh@~^}lOsv@{mMkuDgfHapi@~wCkbb@sOozYk`Bk}JkcEqqK??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nordreisa",
+      "to": "kvaenangen",
+      "key": "69.83955,21.20728;69.89649,21.61964",
+      "km": 20.5,
+      "polyline": "epgiLo`m`C~HnBoI}LyhKqaUxeAupg@oq@edDbQklK??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kvaenangen",
+      "to": "alta",
+      "key": "69.89649,21.61964;69.92994,23.26172",
+      "km": 98.7,
+      "polyline": "atriLwq}bCnfA_wEx~AybXh}Dur]gX}eOeeLqeFqwMz_BgqHi|S}Oi|T|XsmK{nCaiZiyEwd_AdfC}gd@lxZujVcrDgdU`cDgmFpC{]k@dD",
+      "source": "polarsteps"
+    },
+    {
+      "from": "alta",
+      "to": "porsanger",
+      "key": "69.92994,23.26172;70.66818,25.38989",
+      "km": 140,
+      "polyline": "ceyiLwh~lCiAbPmBndEaK|cByfA{b@eRvzDqBx]cE`WqAqVgD_}@wSiN|JtIlX~c@lD_RwfB{wJeRcjCjqAoa@|E`x@ngCr{@fCwT}BnZ_tDvqEaE}`@QoXypA{{Xxc@}~@_tEupTyf@k~Bs_Ny|DkxJmd]{gAg`Fu|Bwg\\u`@eiMa{Oic\\wEaOsJjH_sLspj@ajKcv^aqHcjh@kbBqk{@}eImxL}~Hcs^gjMksVegCwoD??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "porsanger",
+      "to": "nordkapp",
+      "key": "70.66818,25.38989;71.16837,25.77926",
+      "km": 76.4,
+      "polyline": "ckinLy}}yCkIe_CgYq~Hg}HoeYuhKowUu{GahLq`H}rHysNjcY}`EsnH}tAeij@myDfeNxa@dwEghGt_Nm|BeYyDdh@uQrk@{eAznFlB~W_~EizEaqByvB_r@HmHe\\hHxMcEti@oAa{@bGl]FB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nordkapp",
+      "to": "nordkapp-2",
+      "key": "71.16837,25.77926;71.05661,25.76343",
+      "km": 14.3,
+      "polyline": "iakqLk_j|CSaAgGwXbHtMQtLJG~FkGp~GpiMxtCkkJ`|FxK??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nordkapp-2",
+      "to": "alta-2",
+      "key": "71.05661,25.76343;70.02761,22.28442",
+      "km": 237.2,
+      "polyline": "yfupLm|f|C``CoqGds@}cG{Gob@jjCwqSz]w_@jgAb`l@ffVyzOjuOjrXvyGvdOCYh{E`wJtyHvu[v~K|m]fcKht\\fzIh{JppA`qx@rsGfmm@lbGrqR~Iro@|aApkDvvClbLnqCztPgAf@~xCrkRrmRxaRpzFne{@j`L|m^teN~eFlcFjeWf\\vhYlJhmAnrA~qHdMlkGjTlkPwrDyoJutH~dQswEfgEymFiUkcC`gP~`Hv`~@~sFl~w@??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "alta-2",
+      "to": "kvaenangen-2",
+      "key": "70.02761,22.28442;69.85903,21.80155",
+      "km": 46.2,
+      "polyline": "qgljLsl_gC[xG_Fx@fyEaqKuGfj@fAbc@mgB|fB}yBnff@nnCvaQ_Ahy@cHzQ??yQlYhFiK~M_TbFsMc@gj@n~@enAhdDwSrd@mDnjBwV`s@yp@fHD?HjGmH`_LljKt{D~`UgpB`qM@G??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kvaenangen-2",
+      "to": "gaivuotna",
+      "key": "69.85903,21.80155;69.74552,20.49034",
+      "km": 66,
+      "polyline": "}ikiLubadCsoCdfNkSltL}zA~qOtwAhyV_tA`tn@x~Kf`@neDl{I~oDfya@akG`uUdvAfwRrkBtnRluG`e]yA`G",
+      "source": "polarsteps"
+    },
+    {
+      "from": "gaivuotna",
+      "to": "storfjord",
+      "key": "69.74552,20.49034;69.45576,20.31792",
+      "km": 64.2,
+      "polyline": "oduhLs_a|BcTxR_M}Zw`@hj@cB~YyCnx@eGnIlBi\\j@aXn@ua@tEaa@zLwBza@tLjVkPiArA`C{BaC~B~Ggj@fHoj@nn@kiBzd@e]`p@gGfR`FpY_RzfBll@fc@hb@l^x\\vmAb`B`Xrx@jnKiiFhfNow\\dmEec\\_iHd|z@dmKfgc@lqC`~AEA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "storfjord",
+      "to": "narvik",
+      "key": "69.45576,20.31792;68.4313,17.44925",
+      "km": 189.4,
+      "polyline": "oq|fL_j_{BAHz`D`mF|zIdxEtqD~dc@z`BbsCvyLxxZp|K`ga@kcC~rf@\\dgj@l~H`fm@fYl}@~GjAxtAo^bKkCnuC~xSpZjeHop@lf[ChgAqExaBqRdh\\`lKtaOhiBm`B~{GwBhgPtsRrPpP~yAp_Dxk@bjDzZxJ|a@oUf`Bf|@p@bxFf]xcAxWr_Ah|@dmBhtCdiO|kFr_B~j@{@duAzyAnzK~wLjVnuEnMx~FbJ`yIdhAlvIpEnNfo@zpUhb@zmD~n@baKxgBdbBfn@~]z_EjcJnuApoB|Z}]pi@nbC`PhRrs@bk@t`@r}@`d@QvmAyvA|}IjlKnuCfjDtgBtzEv[nOxVqd@cKnMbGkJPE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "narvik",
+      "to": "vestfjord",
+      "key": "68.4313,17.44925;68.23865,16.15859",
+      "km": 80.6,
+      "polyline": "snt`Ly`oiBkFzQgQro@@GeOrSGPcClWkNo\\~DtUvHxc@vAlNlDimAhLsHzD}UnFy]`KiHUhZ[e`@??yi@~cGzi@keGsIhZdIgYoHzUtIwWQVEA{HbWtG{TaDrDkd@zrFzj@ozFcIzVnHgV}GfTtImZoHrOCfARl[q_@_h@qFbK|XlmCiQ}DrG}DlKxFmGrAdgAppNdxClmN|fB`hAzY{Jbt@|zCqV`nAxtAllb@~oDvsh@lj@xwW`Vp|Jt~E`eB_qAjnUxfIb_XbLvmMr[zyAd_@|~DbOnfCuHCqSeRsWhyK`E~r@`Ebe@?@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "vestfjord",
+      "to": "hamar-y",
+      "key": "68.23865,16.15859;67.90655,15.87547",
+      "km": 44.5,
+      "polyline": "qzn_Le~raBtH`}@fvB~gOjZlzAjfI|jRbd@trAzeHx~Hfi@yJ`h@jfA~_Iu_PteI{~Cc@`]zGty@~r@kPx`AsYlgJ|jRpg@dz@jAiF",
+      "source": "polarsteps"
+    },
+    {
+      "from": "hamar-y",
+      "to": "s-rfold",
+      "key": "67.90655,15.87547;67.35178,15.59185",
+      "km": 77,
+      "polyline": "}~m}Kut{_ByAbExl@x|AwEbOfyAwz@pj@ycBhb@y~CxpAymKhlMjqGpxG`zD|gAa^joCvtHdfM_zLnyJhaIzVncErcEdie@fyOlpMzoEgx@bl@anClEe~HxoJ~}Js@rCC@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "s-rfold",
+      "to": "rana",
+      "key": "67.35178,15.59185;66.55247,15.3228",
+      "km": 103.5,
+      "polyline": "ssazKahd~AbaBbyIpuAhuFdlBloGj}EbeLvm@cc@jOnCE_c@}Q__DjWoy@v`@fBt}AjiCryAwVvoDspIfh@}bA|~@aGvfGrgE~r@sC`bD}nC~^tXtGjt@~V`zHhoHdmDf\\bd@pe@xj@|dAbiB~o@sUrcMbpGlb@kc@f`@em@~h@fGtvBtiAzbCjuBfsFymEnOc}@zdAweFfaBssDvEaNn`AyqD`kAiwC|cHw`Clt@`\\bh@|]l_Q|vNvkOpnKsBaZvEhUkGwA??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rana",
+      "to": "mosjoen",
+      "key": "66.55247,15.3228;65.83895,13.18589",
+      "km": 138.2,
+      "polyline": "}oeuKovo|A|{m@|zgF|IwEg@_j@oJciA|@tHeK{o@aCaeAyGcH}F{_AbGtEkA[r@p_AtG~Ivb@vsAfyFtaa@p|J~ia@zxAlb@hrMqyAxcBlZf{Irhb@aZrjFrrJ~nZnnOjvXpsFraTvZbf@dl@zk@llA_e@nGuB|NfW~@bb@bBlXlHxAnG_BcLtJDZ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "mosjoen",
+      "to": "grane",
+      "key": "65.83895,13.18589;65.62498,13.29172",
+      "km": 27.2,
+      "polyline": "mdzpKyjnoAgJok@iNyy@ns@e`Ar|@{dD~nBagAvwAas@d}HwdC|}@rY`v@cqAp`@cBdd@xp@dt@pbAvT|Zf|C~d@`mHcfE`T_VoKxZWL",
+      "source": "polarsteps"
+    },
+    {
+      "from": "grane",
+      "to": "grong",
+      "key": "65.62498,13.29172;64.46044,12.3138",
+      "km": 154.9,
+      "polyline": "ckpoKg`cpAhgBurCdJie@ly@_gCpJk}Fvl@ca@fh@kt@taFb@~}F}mAjlBmGrtBt^lu@sl@ryAoHbZrEpxAr}@tEpI`v@trA`KaAnw@|d@|tA~lAnhCeGlxCxKtbCkv@tw@`qArNn]rwBxrC`nBqH|oBdkB|Udg@dIuA|w@wkAj]wr@vkAosBpXk]d_@kt@tl@{bBhp@p_@z[~NxzA|P~s@bF`zBh{ApvAtg@`\\~n@~o@z[rXtPviBoUvkAdi@~rArcBrt@xkAjKa@lrA`E|v@eGdy@t~Cd^l`@rv@daAheAlt@tpDvuCbGpJff@ny@~dB|yAnxAb|Cn\\f^hu@jaArR`YrKxHqLdeC{Cn@xxIhrLxjO|q\\dcBnyEfx@bz@~q@zl@jGvBviBbiCxqAhyE`a@b]zvAlaB~O`[bfAjpCn{@|kDddAx`H~|A~xEln@tr@tk@jz@raAn|ClrAhc@bpAd|B`E|QbdAxgBf{Anq@fd@|cFx~@xsBxa@t`C~xBfcEjG~l@xCloCzhFlxJftFfjJiEw|@Myl@sCcB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "grong",
+      "to": "steinkjer-2",
+      "key": "64.46044,12.3138;63.86977,10.80044",
+      "km": 122.9,
+      "polyline": "w|lhKg`djAgJl`@dJca@_VuUbVtVmJr_@xJy_@oVmVlVpU{IgO[~p@hNk_@iNh_@BNpJka@uJt`@|Ji`@_Kx`@fKu_@tDnOk\\dC_AkSVPdg@{fCzKn_@{Ayg@teD_RrtDqj@xT_r@~m@vsAfq@vObsCnm@r`@u\\jsBgYzuA{]rnA`@hkAr}@lXdYrHlEtb@|gA|y@f}AjUxb@lTz}Blb@h|Bhd@znFz^tcCrkA`vJft@xgH~`Cz~J`_@zwCxhA~aMxmAzfLkIf_A`DbOlpFvaTnYx}CdSb|BrJjd@vJpxDoL~lBz`F~a`@t`@xiAk_@dwAqQzoDlUhzD`HzrEY`l@_M~eCht@vjEvJnk@n`@|aClu@jnHpZfa@fZkGp~Apq@fyBusAflBj~A~oCntLvFthCcKn`Azj@hYv\\~fA~qDxePta@xx@ttE|`KxnA`}FbWjw@|VfhArfBrjLrGsQ??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "steinkjer-2",
+      "to": "rland",
+      "key": "63.86977,10.80044;63.67218,9.58794",
+      "km": 66.4,
+      "polyline": "aqydKwm|`AqDxOdJrr@fb@hcDp\\dfCb^~zBbIrc@bCxM`]ljB`a@bpBji@bbBnm@`~A~_BjaFfMzw@dE|^`Lvr@fUfp@lp@dyCnXfvAbT`gAxQpnAfD`Njg@nmCns@~zAd~@bcDlcAdfE|L``AdQbp@`|@n~Che@hxAnp@bfAlk@ppE~EbUve@bxBpdE|yhC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rland",
+      "to": "rland-2",
+      "key": "63.67218,9.58794;63.70832,9.72259",
+      "km": 12.5,
+      "polyline": "c~rcKssoy@??^_UqCa[uFca@_DsTcEcYoF_Y`PvbAjKbyAInV`@aVdC`BkMv@m|E}aQ[e`BaVgtAfVmoBk@zb@jGuE[cA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rland-2",
+      "to": "norwegian-sea-3",
+      "key": "63.70832,9.72259;63.06405,8.1838",
+      "km": 176.7,
+      "polyline": "_`zcKe}iz@t@wQuF_G]xaEfA|TGd^hnB`jCbXw_@`E}YpgDuc@bvBwi@jg@wjImk@lIaIoh@eReLhU`UxEt_@pp@iMvYbW~ItTlOrWrc@xz@dw@wuB~yAc~Al[ib@pf@|a@hV{t@fWqnB~jB{yBrFif@jMs_@bSg]jl@ua@bb@go@byAjp@bCxe@dXrh@dY|Xdd@_eAbc@u|@rAu@pYoc@nQud@`q@ip@za@u_AhRwjAtUim@|ZytA~v@}uAjk@a^lh@cB|m@kl@nNWxVwqBrfAmwA`g@mYxc@g`@d_@aEhmBpw@`n@|\\vm@pXvx@~tAr~@|}Axw@`pChDx\\bV~aApz@hmDnZxfAlk@hwBvgBqXre@cu@|eAh_Bb}@jj@v_@hj@`IsBhT|Bp`@x_Av[`eBfm@jR|_Bxm@xyAaj@t^oGrnAzJbMi@`fAzP`A|Gbb@vjAbfAz}Blr@|vEfHztBvk@pwEplA|o@rMbLn_BhsBndApu@`_BdbCsOraDp@~oDgAzmAmMl{D}DpaA`GdlBjTpuCyUhxB_HdjCfDdzDlFj~ArGfjCbE~j@jCti@fMzoB|@rg@{BpoGhdBxkF`g@{JfQbO~UnQrs@beAjjAtiG|Efj@`Nf{ArYjlAx}@t~@bH|CzRroAtFt[va@xsAhK|w@hH|s@dMpu@niA~`Jbc@haG]ftBhE`t@oCbQ~B`mAtBbiBd@du@`GljAzE|_AzEr_AdLzhBxLbdAbW|sBjIhbAzEv_BlF~dHi_@xoAwf@vJch@fQmVdf@uJf[c@bvBwi@pmAgPd`@sTxp@aPdj@gt@{LkFxq@qNoAlK`zAbJ|b@`@`oBq@zn@zFbwBzNdmBzr@x~Di^x~Cmj@rnBmEryCsY~{@sKbYgeAvr@sd@tk@eq@|Kgb@|s@uWpJi]nB}YpKof@~\\oRn~@uKtbCsE~nCbf@|uBhd@pbDpQbvFpW`bG^x^iEgLnUnkEvIfnAg@qH",
+      "source": "polarsteps"
+    },
+    {
+      "from": "norwegian-sea-3",
+      "to": "tingvoll",
+      "key": "63.06405,8.1838;63.06329,7.97968",
+      "km": 11.4,
+      "polyline": "ie|_Kwk}p@vaAxfJrz@`vOwd@drAuuAzvGxAxP??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "tingvoll",
+      "to": "norwegian-sea-4",
+      "key": "63.06329,7.97968;62.69093,7.09142",
+      "km": 68.9,
+      "polyline": "q`|_K_puo@iBcT|kG}|DbmH`rb@hFftEt`Kz_UhgBdTzG~Fv|NxdQp~Cd_NbaAtjGnq@fkI`pCtxb@r`@hqJplAxiJtvC|uBlz@rO??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "norwegian-sea-4",
+      "to": "refviksanden",
+      "key": "62.69093,7.09142;62.00269,5.085",
+      "km": 172.7,
+      "polyline": "iis}Jk`hj@xHv@h|Efb@bdGkb@nqHt|KpuAriJbeLfdZ}\\~`Z_LfpLr[rm[dtGp}Tf|AtpJ`pD~aU~NrpFtiB|{Qfj@psDddE`g^f{G|{Ad_C|{FvnCvrDreEzbP|KrL`Er\\t`BjjTxm@mkJzyBi|@xKdJvhJ_iDrrHxlH{cAfpO~dA~pA~gJfRj{JdzKxnEdud@orBl_ZcaAhVo\\so@o}Fox@yIhyBmyA|gEuIvEr@G",
+      "source": "polarsteps"
+    },
+    {
+      "from": "refviksanden",
+      "to": "kinn",
+      "key": "62.00269,5.085;62.03433,4.99358",
+      "km": 21.2,
+      "polyline": "y{lyJgd`^hFcElH{BuE`t@o@co@pHcEAA}G~DlGmCgGbDxGsE}G`EvHwDaZb_Aq[dq@{AzO`HyQlSgl@BE~GwJ~Fk\\KwSjJkDoG`EnGaEeHpEs@g@xA~o@?@a@an@`@`n@jAeq@kAdq@g@qo@f@no@cAun@bAtn@c@_p@lGyCTOoItBpIqBcH`EpGcDcHrCbrAvuAkgAdqHeyAsz@w}BprFoAtp@nAup@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kinn",
+      "to": "blalidneset",
+      "key": "62.03433,4.99358;61.91501,5.11903",
+      "km": 32.8,
+      "polyline": "qasyJ{hn]fnAcoFb~BdsArkB{aP|uEylDfVj[d`A~aBpa@nhIwfFol@liBpvAvyCgcGqrA{qC|qCV",
+      "source": "polarsteps"
+    },
+    {
+      "from": "blalidneset",
+      "to": "floro",
+      "key": "61.91501,5.11903;61.59361,5.07252",
+      "km": 71.6,
+      "polyline": "yw{xJ}xf^tJmB`|DbkFx\\sfCxUq_\\bxBemMlk@a`JjjLjmHr~@dzDdRvw@}SQnZhuFx`C`jR~aF_~ElzLeyBtm@auTb{Bp|RlN`{DpuAzbV?@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "floro",
+      "to": "h-yanger",
+      "key": "61.59361,5.07252;61.09256,5.49838",
+      "km": 105.1,
+      "polyline": "a_}vJgv}]vAz\\~Bti@sk@fjCLzRwAzXoD`WzH_F`HxGuEmXt`@caGNhC_@nAs`@emEziBmsjAvj@oiDjiLi`f@|nAyfOhtGsqIKm_B??Cvh@mAhaAvnDneFvzCj\\l{BxcCrjExjErlNk~Lf}Jt`CpzIhcc@ldHfxStx@p{B??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "h-yanger",
+      "to": "espeland",
+      "key": "61.09256,5.49838;60.37361,5.45796",
+      "km": 96.8,
+      "polyline": "oc{sJ{{p`@zRrLbGzClLrEh}CoVxVwRvFiFzFkWpC|y@vq@pqAzqDmn@`bDz^nvAaElmL_tFtHE|`AdZhHcNrLyV`zCyeKtuDkR`eDyjClyBqm@z[qQ~iC|ObcEmv@ddFpgQpzLzyKzArO|aGl{S~vBdbCjyCh~NrsIumU|dBtd@|_AkzC|nEy|JboHgSvTpG",
+      "source": "polarsteps"
+    },
+    {
+      "from": "espeland",
+      "to": "bergen-3",
+      "key": "60.37361,5.45796;60.39132,5.31241",
+      "km": 18.6,
+      "polyline": "avnoJg_i`@b@P{Bn_@fL~BlVxGxAa\\eg@lCbD{Tp@sADJp|Bty@heEzpNipKdzHaf@ti@jA{@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bergen-3",
+      "to": "north-sea",
+      "key": "60.39132,5.31241;59.54287,5.20138",
+      "km": 117.5,
+      "polyline": "wdroJqql_@gcAfrHpnp@r\\rbGivFpgBybAnwGkqAf_K{pEfbGyaRhnM_uObn@oMrgAkRhuFvaB|ds@j{~@lzFmTmzFlT",
+      "source": "polarsteps"
+    },
+    {
+      "from": "north-sea",
+      "to": "sola",
+      "key": "59.54287,5.20138;58.92168,5.53955",
+      "km": 78.3,
+      "polyline": "}mljJs{v^dnHg]jfTk|N|N{T|nCkvAheEwnB??llb@mcE~bV{gc@rtJ_n@|zGicF~K|KcOrHvNaS`Fz@_HhrG|IhE}IiE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sola",
+      "to": "skagerrak",
+      "key": "58.92168,5.53955;57.6355,9.7459",
+      "km": 303.2,
+      "polyline": "ocsfJe}x`@|sy@gk@tw~D}nlX~WqtE?@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "skagerrak",
+      "to": "frederikshavn-municipality",
+      "key": "57.6355,9.7459;57.74807,10.6469",
+      "km": 64.7,
+      "polyline": "{|w~I{nnz@|C}i@tqFooj@~xB}vAjfAsgDaC{MgxBc{_@gaCi`_@uyJmdSwvF__KebDe|ItDigGbBkPyo@clBiDmKsCiPyMeZeTez@eAmUaCdRuDx]o@`J",
+      "source": "polarsteps"
+    },
+    {
+      "from": "frederikshavn-municipality",
+      "to": "aalborg",
+      "key": "57.74807,10.6469;57.05018,9.92601",
+      "km": 156,
+      "polyline": "m|m_Jcn~_AhpSjtm@jMibF~AaShCo~@eIoQ}PsDyJY_vBco@eeBcrEuNJg`@`Gqs@et@qcBonCcb@clH_PumAex@qsBlAkZm@q@h@t]`@g\\Y`@f@dBcExLzSzxGriLx}Tt`LhxGpF{GpgO{oD|cB{cKbxH}}Ej|ExgJ|fJnnAbkAm`IrnA|x@tqD|qBfl@_Xj|FqqBlu@~YzeCbyO{bDj_Tjr@`{LrjCp|ElEi]~cBp|AliBdYv`JdqWbf@ts@b{Ad}Ctq@v|EliEf}Kp`@rtHrKksB`]sjDoGb`@IH",
+      "source": "polarsteps"
+    },
+    {
+      "from": "aalborg",
+      "to": "lindholm-hoje",
+      "key": "57.05018,9.92601;57.07754,9.91201",
+      "km": 9.4,
+      "polyline": "sre{Iqtq{@nIsh@pKxXYr]sDjRqPiEdAcN`@cPml@roDrH|pAsI_GiEbSrOoNl@xAcmAktCubAqZtUnKgN}@GF",
+      "source": "polarsteps"
+    },
+    {
+      "from": "lindholm-hoje",
+      "to": "thisted",
+      "key": "57.07754,9.91201;57.15614,9.02701",
+      "km": 64.7,
+      "polyline": "s}j{Ia}n{@aBjJwBaT_p@qu@sMaMaV|Qc_AveFyhBv`NafDrhI`sA~mQxHpL|j@~iCjzCtqQvcAbt`@pCloHh@zoEiEp{EmA|}Dg}E~h_@kz@faHiiCasBuH`PmE_IhDmMnGhElAd@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "thisted",
+      "to": "monsted-kalkgruberne",
+      "key": "57.15614,9.02701;56.45651,9.16622",
+      "km": 131.7,
+      "polyline": "{hz{Iyabv@pne@rc`C`MuLnIpQnE{f@??qCbh@vBq[qBr\\A???m@sAl@rA??????????jJim@{Mpm@bF{\\cDjZANrWut@dGkFqAn@prAsw@pjBjaArsEun\\bzCui_@jgGagPt~AodD|rAsaA~mB}fAr}A{j@tnGstOpdRgkNpkHgxEjrAtn@ft@ad@`u@we@rqAwRt~Buq@zlBenDpMcQzWuWdh@qd@lm@qhIhTmlBlWgd@p@uPnH|EhGaN|@uJmElAl@jUsHpDb@T",
+      "source": "polarsteps"
+    },
+    {
+      "from": "monsted-kalkgruberne",
+      "to": "silkeborg",
+      "key": "56.45651,9.16622;56.17102,9.57559",
+      "km": 51.2,
+      "polyline": "etqwI{g}v@fF~@bzI{uGd{JokGn|Fwa[~gKgiNbaHekQvrBib@gJzc@^hrAdq@`Qpc@a{@nBgO`WaFhDzn@cUpUq~@zz@uUgf@}IkXALsFkFk@sNvV`UrAcZ_Im|A?E",
+      "source": "polarsteps"
+    },
+    {
+      "from": "silkeborg",
+      "to": "himmelbjerg",
+      "key": "56.17102,9.57559;56.10528,9.68502",
+      "km": 16.8,
+      "polyline": "{{yuImfmy@gHz@xGwAyGvAnHoA~AnO`Dxb@f^j_Br~A}Rpp@gZ|cAqTfzA{Nzb@}d@roB{oQqaAa}BiGyAuFhK??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "himmelbjerg",
+      "to": "ebeltoft",
+      "key": "56.10528,9.68502;56.21361,10.67549",
+      "km": 88.2,
+      "polyline": "_amuIkrbz@{MfHoHYgPno@fGvm@zMwXlLee@pDkMlH{_@tk@pQxb@cp@pGsJhh@wRzKseA{Fs_CqNo~Akd@ew@{LwNuJ}d@iNgh@_pCoiCkfC}sA{I}zJqDijF}AirAdDyl@zF_eEo_AuxJuVmkEgt@iOgh@_{@iXyd@idHmb_@m`BmzHwm@oeBsTge@muAerCeoGuvEqLu{@]yC_UwiCoJ}kDbBqyLvvBi~EWyjBeFawA|\\qfBvwAi|B`t@mhAphAwyChg@sr@h\\uf@n`C}gBbSwThCoC|Yo^r]{`@dOw@uYtR@FvIcDp{@uArHjClNcIrGrK_FoH}B}E{KcEcLPoe@w@uZ~T]x@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ebeltoft",
+      "to": "fregatten-jylland",
+      "key": "56.21361,10.67549;56.19945,10.67395",
+      "km": 1.7,
+      "polyline": "afbvIy`d`APU?IpxAnFs@bB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "fregatten-jylland",
+      "to": "aarhus-aros-museum",
+      "key": "56.19945,10.67395;56.15294,10.19578",
+      "km": 68.5,
+      "polyline": "qm_vIewc`Aj\\rMxFqE|hBllDnXmGx`@uwApDoMriAovCdTmo@dD{eAfNmZg[mhA{fCme@eRgPwYoAasAyQ{xCmWyHnc@oFjqD~k@`pDbK}FrOgGiTfQTUjGyElMqIwYpGu_@fj@s}LffQytB~{Ms\\fdQ`z@vpI`lMf~Pf{Gl}KloDnBjN~AbLkJeDaKdD`K",
+      "source": "polarsteps"
+    },
+    {
+      "from": "aarhus-aros-museum",
+      "to": "jelling",
+      "key": "56.15294,10.19578;55.75598,9.41935",
+      "km": 77.8,
+      "polyline": "{jvuIsjf}@_D_c@mCpNdGxRrd@zC~kGnx\\jTv|@j~CzlErv@trCxgArxDtq@jdFpkAd`D|fD`j@jlOf`JfsAdLdwCpgDduEl`H~k@xmBfEhaAnEjuDvF`xLfbE`p\\b}EdzFnvAp{@de@bC|`AtF`l@iUnDnQ}@yPqOzFyGqGyGiSaGtO_Wx\\ke@wF_ScVgBgE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "jelling",
+      "to": "billund",
+      "key": "55.75598,9.41935;55.7308,9.1148",
+      "km": 25.4,
+      "polyline": "{yhsI}unx@jWub@jc@vGv^|H|@lN|VpJbJ|PIKoDqN`T|MpKt]vZvkAf}CroD|JeWnCxxB{TtrIu`Dx~a@wOjf@iKfJjG{Jz@mB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "billund",
+      "to": "oksby",
+      "key": "55.7308,9.1148;55.54551,8.13688",
+      "km": 72.1,
+      "polyline": "o|csIofsv@uOlb@wBfMkmBfz]jB`Y`b@|kCz_Hn~WtCvmZt{JlnZnm@rdOrU~~DreAvs]huIlmNvQvyAzYbu@xk@df@vCiVdF`KeIaCoDmK|DmSzHtLrQdCcBnPCrNeMqBiK}AvAyM??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "oksby",
+      "to": "tirpitz-bunker",
+      "key": "55.54551,8.13688;55.55005,8.1726",
+      "km": 5.5,
+      "polyline": "mv_rIoftp@?RIWyAlM`AbA^cOEN_@g@n@`@gSlObSsO_QhPzP}QELKr@b@WtEbFoJ`Jgd@uYhOcrE{H]rCk@`Am@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "tirpitz-bunker",
+      "to": "ribe",
+      "key": "55.55005,8.1726;55.32962,8.76215",
+      "km": 97.6,
+      "polyline": "yr`rIwe{p@fBlBgCwmFyhCaaB{LkE{pEmCczAwdGmO{s@ra@nyA|q@`rE`c@bT{Flb@wk@biFjF_WzaA{lFrmDny@boAfmHxE~Ut[zdDhY~{CzNrP}@sOzTooCxGiLuDpAgAhAC@wFgFnHjCVCkA|A?@?A?@KF}E~OzHmSkSdM`RkN`@h@\\aDoImEnEvXyhFirQqxC_mQprM}pRl}AsnG~`IawH~tGs}a@vaN{rNdQ~KxH`Fna@bd@dHgIzDgJwFbFvN~AmOgOvRhYfE~NhItWoDmJjGxHeL{AMY",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ribe",
+      "to": "kolding",
+      "key": "55.32962,8.76215;55.41257,9.59527",
+      "km": 60.6,
+      "polyline": "cqupImjnt@tAcMcDaKuRoY{Dwz\\gqE_{YiQcm\\ewH_vQriAe}GqBsfDehDsoQhj@gwOHNly@qFx_BlbAnBed@wl@yyE@AgGaR??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kolding",
+      "to": "kolding-2",
+      "key": "55.41257,9.59527;55.49078,9.47296",
+      "km": 15.6,
+      "polyline": "qweqImaqy@mr@dPra@cEbWzFgA}Cv^rtBoqKpxGczBf~IoEkItBjAxA~F",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kolding-2",
+      "to": "s-nderborg",
+      "key": "55.49078,9.47296;54.90162,9.79742",
+      "km": 68.7,
+      "polyline": "k`uqI_eyx@barBgj~@BS",
+      "source": "polarsteps"
+    },
+    {
+      "from": "s-nderborg",
+      "to": "sonderborg",
+      "key": "54.90162,9.79742;54.91418,9.78354",
+      "km": 1.8,
+      "polyline": "c~anI{pxz@E?Nk@KnBwr@jfAsPjEcIzG`@_A",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sonderborg",
+      "to": "grafstenen-slot",
+      "key": "54.91418,9.78354;54.92668,9.59411",
+      "km": 16.6,
+      "polyline": "sldnIczuz@hMoGvEq^`GjAfWhZzNqc@mq@xQx\\ptEazDpzY|nApxBgItFkHvH?A",
+      "source": "polarsteps"
+    },
+    {
+      "from": "grafstenen-slot",
+      "to": "schleswig",
+      "key": "54.92668,9.59411;54.51013,9.58391",
+      "km": 71.9,
+      "polyline": "wzfnIezpy@uEoJ|JzAbMaGuGiAcqBtw^`wQ~qOdxEbxCztN_xKn_YqnKntIkyAniAcyKdcCqoHyAdRkBxr@nCjOaBdYwEjr@h@vQeEpMqDsJoHyo@qA{OpAsc@xSeWjDkLjC_j@|FeG??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "schleswig",
+      "to": "neu-wulmstorf",
+      "key": "54.51013,9.58391;53.37061,9.80075",
+      "km": 143.1,
+      "polyline": "ioukImzny@wG~GdBfaFvcCot@~vDiwBryI}jJ~|OsqTbmP}sQtjDm|FlqTc_IdgVgoBxiI`}@pk@dHzrO|rArlZijCpqJl~@`hEimA~p@jaB|bBz}@hF`f@vKtr@aClQzEpIfG|AlD~Ibm@|Sf_@q@xyI{`BxyLezAxsDjuEr`@r{@h}Bn_MlEzeAM?",
+      "source": "polarsteps"
+    },
+    {
+      "from": "neu-wulmstorf",
+      "to": "emstek",
+      "key": "53.37061,9.80075;52.84212,8.10809",
+      "km": 136.2,
+      "polyline": "i}vdIueyz@~AlfE`yD|hWbqCdzLbmNxle@|mRpn]z`A~d@xeHdjJhiDfwTbxA~hL`}@`~Gqd@fvA~y@vbLfpDh|b@f_AtiCn~Hb}Y|}E~y_@dvApaHffDjiJvVbUlhAps@fd@xQbTfGlk@rMdl@|Kh_@he@}J~t@uAxi@lBtt@rGzt@~Dbl@sB`dBIdAqNv|@_l@~rAcFdHgKtMek@jn@ak@fk@??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "emstek",
+      "to": "zwartemeer",
+      "key": "52.84212,8.10809;52.73043,7.03832",
+      "km": 77.6,
+      "polyline": "gvoaIqrnp@zeB~wTdgCxiYtkI~_Q|{AvuDdxCvyR`cE~iWeu@rrFgwAl`MgnAp}Tcn@huLtPltFoKrgEwBddBRv}AfFv{EqBz|Ays@duD??",
+      "source": "polarsteps"
+    }
+  ]
+}

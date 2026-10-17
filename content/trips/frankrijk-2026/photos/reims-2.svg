@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffecd2"/><stop offset="1" stop-color="#fcb69f"/></linearGradient></defs>
-<rect width="800" height="533" fill="url(#g)"/>
-<circle cx="661" cy="140" r="54" fill="#fff" opacity=".7"/>
-<path d="M0 313 L180 193 L330 293 L480 153 L640 273 L800 203 V533 H0Z" fill="#7d5a50" opacity=".55"/>
-<path d="M0 447 L220 357 L420 427 L600 377 L800 437 V533 H0Z" fill="#7d5a50"/>
-<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Reims · Camperplaats aan het kanaal</text>
-</svg>

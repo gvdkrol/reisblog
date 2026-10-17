@@ -1,0 +1,751 @@
+{
+  "title": "Denemarken 2019",
+  "slug": "denemarken-2019",
+  "summary": "Exploring the nordics, starting with Danmark",
+  "cover": "photos/vastgelopen-handrem-1.jpg",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "nunspeet",
+      "name": "Nunspeet",
+      "lat": 52.37493,
+      "lng": 5.76852,
+      "date": "2019-08-22",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "vastgelopen-handrem",
+      "name": "Vastgelopen handrem",
+      "lat": 52.71576,
+      "lng": 6.61168,
+      "date": "2019-08-22",
+      "type": "bezienswaardigheid",
+      "text": "Pech in Drenthe. Wachten op de wegenwacht.",
+      "photos": [
+        {
+          "src": "photos/vastgelopen-handrem-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/vastgelopen-handrem-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "camping-a37",
+      "name": "Camping A37",
+      "lat": 52.71565,
+      "lng": 6.64874,
+      "date": "2019-08-22",
+      "type": "camping",
+      "text": "Pitten tussen de truckers.",
+      "photos": [
+        {
+          "src": "photos/camping-a37-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "emmen",
+      "name": "Emmen",
+      "lat": 52.76993,
+      "lng": 6.92874,
+      "date": "2019-08-23",
+      "type": "bezienswaardigheid",
+      "text": "**Garage Wensink, Emmen**: Op de brug om de handrem weer gangbaar te maken.\n\n**Bij de Gamma**: Nog even de moeren aandraaien met de momentsleutel.",
+      "photos": [
+        {
+          "src": "photos/emmen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/emmen-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "lunch",
+      "name": "Lunch",
+      "lat": 52.99239,
+      "lng": 8.65611,
+      "date": "2019-08-23",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/lunch-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ostholstein",
+      "name": "Ostholstein ",
+      "lat": 54.52332,
+      "lng": 11.14865,
+      "date": "2019-08-23",
+      "type": "camping",
+      "text": "Op z'n staart getrapt, aan de Oostzee. Zicht op Denemarken.",
+      "photos": [
+        {
+          "src": "photos/ostholstein-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "gas-vullen",
+      "name": "Gas vullen",
+      "lat": 54.42144,
+      "lng": 11.18863,
+      "date": "2019-08-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/gas-vullen-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ostholstein-2",
+      "name": "Ostholstein ",
+      "lat": 54.49935,
+      "lng": 11.22349,
+      "date": "2019-08-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/ostholstein-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ostholstein-2-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ostholstein-2-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "holstebro",
+      "name": "Holstebro",
+      "lat": 54.85636,
+      "lng": 11.3581,
+      "date": "2019-08-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/holstebro-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nakskov",
+      "name": "Nakskov",
+      "lat": 54.83071,
+      "lng": 11.13581,
+      "date": "2019-08-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nakskov-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/nakskov-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nakskov-fjord-camping",
+      "name": "Nakskov Fjord camping",
+      "lat": 54.83458,
+      "lng": 11.08973,
+      "date": "2019-08-24",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nakskov-fjord-camping-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/nakskov-fjord-camping-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "guldborgsund",
+      "name": "Guldborgsund",
+      "lat": 54.82712,
+      "lng": 11.59606,
+      "date": "2019-08-25",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/guldborgsund-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/guldborgsund-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "camp-m-ns-klint",
+      "name": "Camp Møns Klint",
+      "lat": 54.98046,
+      "lng": 12.52032,
+      "date": "2019-08-25",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/camp-m-ns-klint-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/camp-m-ns-klint-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "jammerbugt",
+      "name": "Jammerbugt",
+      "lat": 54.98839,
+      "lng": 12.53913,
+      "date": "2019-08-26",
+      "type": "camping",
+      "text": "**Jydelejet hike**: Krijtrotsen\n\n**GeoCentre Møns Klint**: Op het fietsje naar het museum.",
+      "photos": [
+        {
+          "src": "photos/jammerbugt-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jammerbugt-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jammerbugt-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jammerbugt-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "klekkende-h-j",
+      "name": "Klekkende Høj",
+      "lat": 54.93824,
+      "lng": 12.16598,
+      "date": "2019-08-27",
+      "type": "bezienswaardigheid",
+      "text": "Grafheuvel met echte botten, tijgerend naar binnen.",
+      "photos": [
+        {
+          "src": "photos/klekkende-h-j-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "camp-adventure",
+      "name": "Camp Adventure",
+      "lat": 55.25324,
+      "lng": 11.97707,
+      "date": "2019-08-27",
+      "type": "bezienswaardigheid",
+      "text": "Boven de boomtoppen, 45 meter hoog.",
+      "photos": [
+        {
+          "src": "photos/camp-adventure-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/camp-adventure-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/camp-adventure-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/camp-adventure-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "k-ge-vall-camping",
+      "name": "Køge & Vallø Camping",
+      "lat": 55.44585,
+      "lng": 12.19054,
+      "date": "2019-08-27",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/k-ge-vall-camping-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/k-ge-vall-camping-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "lat": 55.67277,
+      "lng": 12.43208,
+      "date": "2019-08-28",
+      "type": "camping",
+      "text": "**DCU Camp Copenhagen**: Aangekomen in Kopenhagen. Nu verder met de fiets.",
+      "photos": [
+        {
+          "src": "photos/copenhagen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/copenhagen-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/copenhagen-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "copenhagen-2",
+      "name": "Copenhagen",
+      "lat": 55.67384,
+      "lng": 12.59166,
+      "date": "2019-08-29",
+      "type": "camping",
+      "text": "Lunch",
+      "photos": [
+        {
+          "src": "photos/copenhagen-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "helsingor",
+      "name": "Helsingor",
+      "lat": 56.0405,
+      "lng": 12.61522,
+      "date": "2019-08-30",
+      "type": "bezienswaardigheid",
+      "text": "Kronborg Slot, kasteel van Hamlet",
+      "photos": [
+        {
+          "src": "photos/helsingor-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/helsingor-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "roskilde",
+      "name": "Roskilde",
+      "lat": 55.67518,
+      "lng": 12.07934,
+      "date": "2019-08-30",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/roskilde-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "trelleborg-vikingburcht",
+      "name": "Trelleborg Vikingburcht",
+      "lat": 55.39472,
+      "lng": 11.27196,
+      "date": "2019-08-31",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/trelleborg-vikingburcht-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "nab",
+      "name": "Nab",
+      "lat": 55.0635,
+      "lng": 10.31212,
+      "date": "2019-08-31",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/nab-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/nab-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "b-jden",
+      "name": "Bøjden",
+      "lat": 55.1047,
+      "lng": 10.08311,
+      "date": "2019-09-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/b-jden-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "winsen",
+      "name": "Winsen",
+      "lat": 52.71923,
+      "lng": 9.82448,
+      "date": "2019-09-01",
+      "type": "camping",
+      "text": "Na mega file bij Hamburg eindelijk een biertje.",
+      "photos": [
+        {
+          "src": "photos/winsen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/winsen-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bergen-belsen",
+      "name": "Bergen Belsen",
+      "lat": 52.76117,
+      "lng": 9.91159,
+      "date": "2019-09-02",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bergen-belsen-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rinteln",
+      "name": "Rinteln",
+      "lat": 52.19307,
+      "lng": 9.0856,
+      "date": "2019-09-02",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rinteln-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "amersfoort",
+      "name": "Amersfoort",
+      "lat": 52.20555,
+      "lng": 5.36621,
+      "date": "2019-09-03",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/amersfoort-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "nunspeet",
+      "to": "vastgelopen-handrem",
+      "key": "52.37493,5.76852;52.71576,6.61168",
+      "km": 71.2,
+      "polyline": "int~Hgteb@kJmoAgeQwgh@qw`@e}g@wtL_mkAeQooBAB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "vastgelopen-handrem",
+      "to": "camping-a37",
+      "key": "52.71576,6.61168;52.71565,6.64874",
+      "km": 2.5,
+      "polyline": "o`w`I_jjg@G?CWLseFRG",
+      "source": "polarsteps"
+    },
+    {
+      "from": "camping-a37",
+      "to": "emmen",
+      "key": "52.71565,6.64874;52.76993,6.92874",
+      "km": 20.9,
+      "polyline": "y_w`Isqqg@|@vWiAwWhAvWetIwmv@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "emmen",
+      "to": "lunch",
+      "key": "52.76993,6.92874;52.99239,8.65611",
+      "km": 124.9,
+      "polyline": "asaaIsghi@qIrOxx@tuBdpCwrJzgBsep@a`Y_x}CcuY}~xBOA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "lunch",
+      "to": "ostholstein",
+      "key": "52.99239,8.65611;54.52332,11.14865",
+      "km": 251.7,
+      "polyline": "mambIusys@wpDodX{QinIi|bA}fmEuhCwgXg~Gyj@otCra@a`ApEqeAcVsmCgnAwiE{kSax@{]elBg|Eo_Gw{G_nOiwPiFeOknnCm}|CoiQqwBuFnXIC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ostholstein",
+      "to": "gas-vullen",
+      "key": "54.52332,11.14865;54.42144,11.18863",
+      "km": 13.2,
+      "polyline": "waxkIan`cAxEgf@xBoYY~NRtSqCxRQtH~~Oi}GlvA~b@b@hAc@iA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "gas-vullen",
+      "to": "ostholstein-2",
+      "key": "54.42144,11.18863;54.49935,11.22349",
+      "km": 9.3,
+      "polyline": "_edkI}ghcAiJoQarAql@oaJsbAae@euA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ostholstein-2",
+      "to": "holstebro",
+      "key": "54.49935,11.22349;54.85636,11.3581",
+      "km": 40.6,
+      "polyline": "}kskIyaocAmGeC{mdAcdY",
+      "source": "polarsteps"
+    },
+    {
+      "from": "holstebro",
+      "to": "nakskov",
+      "key": "54.85636,11.3581;54.83071,11.13581",
+      "km": 22.1,
+      "polyline": "gcymIckidA{yHhIdzM~aj@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nakskov",
+      "to": "nakskov-fjord-camping",
+      "key": "54.83071,11.13581;54.83458,11.08973",
+      "km": 3.4,
+      "polyline": "}btmIy}}bAaVfXnHnaG{A?qFhGEaC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nakskov-fjord-camping",
+      "to": "guldborgsund",
+      "key": "54.83458,11.08973;54.82712,11.59606",
+      "km": 48.8,
+      "polyline": "c{tmIy}tbAjK[gK@hGsDlAuzCvSqrB`s@_hCv_A}nIvTwoi@~`BisUlu@|oGcr@sdZit@a_A_cEdoIlWiC??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "guldborgsund",
+      "to": "camp-m-ns-klint",
+      "key": "54.82712,11.59606;54.98046,12.52032",
+      "km": 77,
+      "polyline": "olsmIkzweA~rJ{j~@qqb@imKwpAour@_mB_dt@A`D",
+      "source": "polarsteps"
+    },
+    {
+      "from": "camp-m-ns-klint",
+      "to": "jammerbugt",
+      "key": "54.98046,12.52032;54.98839,12.53913",
+      "km": 1.6,
+      "polyline": "{jqnI_klkALW{v@{gBzD}J",
+      "source": "polarsteps"
+    },
+    {
+      "from": "jammerbugt",
+      "to": "klekkende-h-j",
+      "key": "54.98839,12.53913;54.93824,12.16598",
+      "km": 28.5,
+      "polyline": "m|rnIq`pkAfr@|kB}D~IhCmBfBdS??wCgPgbCa\\fk@`dFl|Bph^zaFdr^",
+      "source": "polarsteps"
+    },
+    {
+      "from": "klekkende-h-j",
+      "to": "camp-adventure",
+      "key": "54.93824,12.16598;55.25324,11.97707",
+      "km": 37.5,
+      "polyline": "_cinIkdgiAhKhIoL`Yqn|@hwb@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "camp-adventure",
+      "to": "k-ge-vall-camping",
+      "key": "55.25324,11.97707;55.44585,12.19054",
+      "km": 27.9,
+      "polyline": "wsfpIugbhAgUCqImhCsfe@sx`@~s@}|BK|I",
+      "source": "polarsteps"
+    },
+    {
+      "from": "k-ge-vall-camping",
+      "to": "copenhagen",
+      "key": "55.44585,12.19054;55.67277,12.43208",
+      "km": 29.5,
+      "polyline": "qglqI{}kiAgik@sdn@??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "copenhagen",
+      "to": "copenhagen-2",
+      "key": "55.67277,12.43208;55.67384,12.59166",
+      "km": 33,
+      "polyline": "yqxrIoc{jAop@qu^_Jx`@sHzVnJ|MzVqBlEtQ`Pti@~Fz]wD~W`J`lKiA`nL|KemRgCqpAoDcdArGed@pB}m@zKsN_Nwc@_J_g@oMg^rMu`@s@mi@{Fr{@Tc@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "copenhagen-2",
+      "to": "helsingor",
+      "key": "55.67384,12.59166;56.0405,12.61522",
+      "km": 55,
+      "polyline": "oxxrI{hzkAtEiImEdIoKhm@j@tSwH}UkW`RsPl\\{@df@qBbj@jEtp@gG|OeJvv@pGl_@}Hlo@zHtb@zZfTrGjCpBjg@d@fo@vAldAhIt}@nXxpImvfAyad@wBdh@JN",
+      "source": "polarsteps"
+    },
+    {
+      "from": "helsingor",
+      "to": "roskilde",
+      "key": "56.0405,12.61522;55.67518,12.07934",
+      "km": 55.6,
+      "polyline": "cl`uIc|~kA`g@zBvFtm@nwp@vzcB`yRzbA`H`BE?",
+      "source": "polarsteps"
+    },
+    {
+      "from": "roskilde",
+      "to": "trelleborg-vikingburcht",
+      "key": "55.67518,12.07934;55.39472,11.27196",
+      "km": 107.5,
+      "polyline": "{`yrI{fvhACDBE}aS}eAx`SzeAn@HeDc@c}RaeAb}RpfAj{CuMheq@b_~C_D}Z",
+      "source": "polarsteps"
+    },
+    {
+      "from": "trelleborg-vikingburcht",
+      "to": "nab",
+      "key": "55.39472,11.27196;55.0635,10.31212",
+      "km": 88.3,
+      "polyline": "_hbqIwpxcApiPlzjAmwEx`sA`|b@~xb@baQqrGxChJ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "nab",
+      "to": "b-jden",
+      "key": "55.0635,10.31212;55.1047,10.08311",
+      "km": 15.3,
+      "polyline": "{qaoIwa}}@u`Gdvk@DB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "b-jden",
+      "to": "winsen",
+      "key": "55.1047,10.08311;52.71923,9.82448",
+      "km": 298.4,
+      "polyline": "ksioImjp|@fn[|haBvf]h`p@hlCoiApaw@e`b@dv{CobrAzcuD`d[fyFuoC??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "winsen",
+      "to": "bergen-belsen",
+      "key": "52.71923,9.82448;52.76117,9.91159",
+      "km": 7.8,
+      "polyline": "evw`I_z}z@EJKJ~CeEmpF_{OaLEaKd@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bergen-belsen",
+      "to": "rinteln",
+      "key": "52.76117,9.91159;52.19307,9.0856",
+      "km": 85,
+      "polyline": "i|_aImzn{@nKtn@p@ob@pomBf}_D??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rinteln",
+      "to": "amersfoort",
+      "key": "52.19307,9.0856;52.20555,5.36621",
+      "km": 254.9,
+      "polyline": "u}p}H_pmv@pTtTxLvEkb@m[??_mAfmuU?A",
+      "source": "polarsteps"
+    }
+  ]
+}

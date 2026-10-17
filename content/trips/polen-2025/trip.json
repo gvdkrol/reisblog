@@ -1,0 +1,891 @@
+{
+  "title": "Polen 2025",
+  "slug": "polen-2025",
+  "summary": "Van 20 juni tot 12 juli 2025.",
+  "cover": "photos/de-lutte-1.jpg",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "de-lutte",
+      "name": "De Lutte",
+      "lat": 52.31133,
+      "lng": 7.02664,
+      "date": "2025-06-20",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/de-lutte-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "vlotho",
+      "name": "Vlotho",
+      "lat": 52.16776,
+      "lng": 8.90196,
+      "date": "2025-06-20",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/vlotho-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "rinteln",
+      "name": "Rinteln",
+      "lat": 52.20201,
+      "lng": 9.20182,
+      "date": "2025-06-21",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/rinteln-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "magdeburg",
+      "name": "Magdeburg",
+      "lat": 52.17622,
+      "lng": 11.64177,
+      "date": "2025-06-21",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/magdeburg-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "magdeburg-2",
+      "name": "Magdeburg",
+      "lat": 52.12691,
+      "lng": 11.63438,
+      "date": "2025-06-22",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/magdeburg-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/magdeburg-2-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/magdeburg-2-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "dresden",
+      "name": "Dresden",
+      "lat": 51.01388,
+      "lng": 13.74659,
+      "date": "2025-06-22",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/dresden-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/dresden-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "dresden-2",
+      "name": "Dresden",
+      "lat": 51.05296,
+      "lng": 13.74356,
+      "date": "2025-06-23",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/dresden-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/dresden-2-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/dresden-2-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bastei-bruecke",
+      "name": "Bastei Bruecke",
+      "lat": 50.96142,
+      "lng": 14.07467,
+      "date": "2025-06-24",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/bastei-bruecke-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bastei-bruecke-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "konigstein",
+      "name": "Königstein",
+      "lat": 50.92443,
+      "lng": 14.09174,
+      "date": "2025-06-24",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/konigstein-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "wroc-aw",
+      "name": "Wrocław",
+      "lat": 51.13478,
+      "lng": 17.00239,
+      "date": "2025-06-25",
+      "type": "camping",
+      "text": "Mooi plekje tussen de spoorbrug en de jachthaven. 15 minuten fietsen van het centrum.",
+      "photos": [
+        {
+          "src": "photos/wroc-aw-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "wroc-aw-2",
+      "name": "Wrocław",
+      "lat": 51.11036,
+      "lng": 17.03081,
+      "date": "2025-06-26",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/wroc-aw-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/wroc-aw-2-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "oswiecim",
+      "name": "Oświęcim",
+      "lat": 50.02313,
+      "lng": 19.19714,
+      "date": "2025-06-27",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/oswiecim-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "auschwitz-birkenau",
+      "name": "Auschwitz - Birkenau",
+      "lat": 50.03468,
+      "lng": 19.17836,
+      "date": "2025-06-28",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/auschwitz-birkenau-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "krakow",
+      "name": "Krakow",
+      "lat": 50.04677,
+      "lng": 19.90285,
+      "date": "2025-06-29",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/krakow-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/krakow-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/krakow-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/krakow-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "krakus-mound",
+      "name": "Krakus Mound",
+      "lat": 50.03796,
+      "lng": 19.95842,
+      "date": "2025-06-30",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/krakus-mound-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "wawel-castle",
+      "name": "Wawel Castle",
+      "lat": 50.05418,
+      "lng": 19.93581,
+      "date": "2025-07-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/wawel-castle-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/wawel-castle-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/wawel-castle-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/wawel-castle-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "salt-mine-in-wieliczka",
+      "name": "Salt Mine in Wieliczka",
+      "lat": 49.98089,
+      "lng": 20.06124,
+      "date": "2025-07-01",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/salt-mine-in-wieliczka-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/salt-mine-in-wieliczka-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "zakopane",
+      "name": "Zakopane",
+      "lat": 49.28447,
+      "lng": 19.96329,
+      "date": "2025-07-02",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/zakopane-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "zakopane-2",
+      "name": "Zakopane",
+      "lat": 49.3063,
+      "lng": 19.93129,
+      "date": "2025-07-03",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/zakopane-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "katowice",
+      "name": "Katowice",
+      "lat": 50.2436,
+      "lng": 19.04859,
+      "date": "2025-07-04",
+      "type": "camping",
+      "text": "Wasdag",
+      "photos": [
+        {
+          "src": "photos/katowice-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/katowice-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/katowice-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "jasna-gora",
+      "name": "Jasna Gora",
+      "lat": 50.81256,
+      "lng": 19.09717,
+      "date": "2025-07-05",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/jasna-gora-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jasna-gora-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "odz",
+      "name": "Łódź",
+      "lat": 51.72332,
+      "lng": 19.5199,
+      "date": "2025-07-05",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/odz-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "odz-2",
+      "name": "Łódź",
+      "lat": 51.72337,
+      "lng": 19.51993,
+      "date": "2025-07-06",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/odz-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/odz-2-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/odz-2-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/odz-2-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/odz-2-5.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/odz-2-6.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/odz-2-7.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "chelmno-kamp",
+      "name": "Chelmno kamp",
+      "lat": 52.15262,
+      "lng": 18.72095,
+      "date": "2025-07-07",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/chelmno-kamp-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/chelmno-kamp-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "poznan",
+      "name": "Poznan",
+      "lat": 52.40821,
+      "lng": 16.93451,
+      "date": "2025-07-07",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/poznan-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/poznan-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kleinmachnow",
+      "name": "Kleinmachnow",
+      "lat": 52.39933,
+      "lng": 13.17585,
+      "date": "2025-07-08",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kleinmachnow-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "wannsee-konferenz-villa",
+      "name": "Wannsee Konferenz Villa",
+      "lat": 52.43299,
+      "lng": 13.16501,
+      "date": "2025-07-08",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/wannsee-konferenz-villa-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/wannsee-konferenz-villa-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "potsdam",
+      "name": "Potsdam",
+      "lat": 52.39562,
+      "lng": 13.05913,
+      "date": "2025-07-09",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/potsdam-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/potsdam-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/potsdam-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/potsdam-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "braunschweig",
+      "name": "Braunschweig",
+      "lat": 52.26444,
+      "lng": 10.52347,
+      "date": "2025-07-10",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/braunschweig-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/braunschweig-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/braunschweig-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ibbenbueren",
+      "name": "Ibbenbueren",
+      "lat": 52.24584,
+      "lng": 7.69818,
+      "date": "2025-07-11",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/ibbenbueren-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ibbenbueren-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ibbenbueren-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ibbenbueren-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ibbenbueren-5.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ibbenbueren-6.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ibbenbueren-7.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "amersfoort",
+      "name": "Amersfoort",
+      "lat": 52.19752,
+      "lng": 5.42865,
+      "date": "2025-07-12",
+      "type": "camping",
+      "text": "",
+      "photos": [],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "de-lutte",
+      "to": "vlotho",
+      "key": "52.31133,7.02664;52.16776,8.90196",
+      "km": 128.7,
+      "polyline": "y`h~Hok{i@h`[wgmJ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "vlotho",
+      "to": "rinteln",
+      "key": "52.16776,8.90196;52.20201,9.20182",
+      "km": 20.8,
+      "polyline": "o_l}Hgtiu@A?kuEasy@J|@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "rinteln",
+      "to": "magdeburg",
+      "key": "52.20201,9.20182;52.17622,11.64177",
+      "km": 166.3,
+      "polyline": "qur}Hkfdw@b`Dup{M@?",
+      "source": "polarsteps"
+    },
+    {
+      "from": "magdeburg",
+      "to": "magdeburg-2",
+      "key": "52.17622,11.64177;52.12691,11.63438",
+      "km": 5.9,
+      "polyline": "ktm}Hax`fAt~Hpu@oJcG?G",
+      "source": "polarsteps"
+    },
+    {
+      "from": "magdeburg-2",
+      "to": "dresden",
+      "key": "52.12691,11.63438;51.01388,13.74659",
+      "km": 191.4,
+      "polyline": "e`d}H{i_fAlkxEip{K",
+      "source": "polarsteps"
+    },
+    {
+      "from": "dresden",
+      "to": "dresden-2",
+      "key": "51.01388,13.74659;51.05296,13.74356",
+      "km": 7.6,
+      "polyline": "wsjvHe{{rAmAZlA[yHsFhF~Gn@wAmBu@?@|@bCIHwAqB|@v@z@gB_@`C}`@yhAocAdj@kZdKu`Ann@gVsWkQpWwB`UlBnK\\tOiL|Lx@}SwA{OnCgK??vCsX",
+      "source": "polarsteps"
+    },
+    {
+      "from": "dresden-2",
+      "to": "bastei-bruecke",
+      "key": "51.05296,13.74356;50.96142,14.07467",
+      "km": 56.4,
+      "polyline": "_hrvHgh{rA{Ff\\o|@s|@zBkRlQvp@iFwEhdAolAtxBzg@teBlQ~GpBoHrCwDcKfGlOaA_@~[[}Xa@|X`@o[hAQkE[F`Aw@lAxCpA~Ioc@jj@sCrl@jhKqad@AydAzkF}rY{Iq}J_AunAlPks@_BvKwIt`@yGnXuCjJgnFfbEqaBf|Gz_Ay^pPcTlF{MjE}G|@oO",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bastei-bruecke",
+      "to": "konigstein",
+      "key": "50.96142,14.07467;50.92443,14.09174",
+      "km": 12.5,
+      "polyline": "{k`vHu}{tA}AxK{C|I??sXt`@xlAgiGxwA{eCnmB}x@oTxlG`Udo@gHmPyBsD",
+      "source": "polarsteps"
+    },
+    {
+      "from": "konigstein",
+      "to": "wroc-aw",
+      "key": "50.92443,14.09174;51.13478,17.00239",
+      "km": 278,
+      "polyline": "udyuHkh_uA\\YCPxGdDoH}CUe@aCsPjGlWyB{DGB@JDa@eAiA~DxGcC{D`@X]UCOlAVy@SM?EC@Z`CjDyBcErKhTyNk^wOq{A~h@amCeCwaAsm@o{Rx@}\\qM{`@c_@kj@fFsf@bj@eFvAqTzPmv@oy@ymAutDdsAosCz`FklBpsAcrL`zEsfLfnF{l@pQosIw{S~o@mkg@oWi{@waAutNfFqba@vYwxDmpKc}HxuFo`Olk@o`BpxHmjVyrG{kh@_lBe`OixF{zVckBgtGawEup^lkFucV~oD}iJbkKmzc@|nFa_c@nd@__FfKeWqE{GdoLglc@~kEa}Y`eAuzGfd@u~b@{YkjN}C{s@oqNuoHo}F_sQPnqBllCjm@lGlAmGmA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "wroc-aw",
+      "to": "wroc-aw-2",
+      "key": "51.13478,17.00239;51.11036,17.03081",
+      "km": 5.3,
+      "polyline": "kgbwH}wwfBUvDvFaE`F{PoLmVJ|h@nGf@cJ~HpGkJLK_D`AfuCorD",
+      "source": "polarsteps"
+    },
+    {
+      "from": "wroc-aw-2",
+      "to": "oswiecim",
+      "key": "51.11036,17.03081;50.02313,19.19714",
+      "km": 223.2,
+      "polyline": "wn}vHqi}fBsxCr_E~F{LwHrJAyqDi`@y[kRwa@mg@}Xcp@f\\gW`cAirBl~@adAdyBsClMmYriBjWlCz~@oi@??jjAciAnqA{uCzRul@bkBoE|PpeDE@t{wE_tkL??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "oswiecim",
+      "to": "auschwitz-birkenau",
+      "key": "50.02313,19.19714;50.03468,19.17836",
+      "km": 1.9,
+      "polyline": "qcipHcmdtBegAjtB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "auschwitz-birkenau",
+      "to": "krakow",
+      "key": "50.03468,19.17836;50.04677,19.90285",
+      "km": 52.3,
+      "polyline": "wkkpHww`tB~fActBqrC}yhC??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "krakow",
+      "to": "krakus-mound",
+      "key": "50.04677,19.90285;50.03796,19.95842",
+      "km": 4.1,
+      "polyline": "iwmpHygnxB`v@izI",
+      "source": "polarsteps"
+    },
+    {
+      "from": "krakus-mound",
+      "to": "wawel-castle",
+      "key": "50.03796,19.95842;50.05418,19.93581",
+      "km": 2.4,
+      "polyline": "g`lpHccyxBkdBhlC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "wawel-castle",
+      "to": "salt-mine-in-wieliczka",
+      "key": "50.05418,19.93581;49.98089,20.06124",
+      "km": 12.1,
+      "polyline": "seopHyutxB`iM}nW",
+      "source": "polarsteps"
+    },
+    {
+      "from": "salt-mine-in-wieliczka",
+      "to": "zakopane",
+      "key": "49.98089,20.06124;49.28447,19.96329",
+      "km": 77.8,
+      "polyline": "q{`pHwemyBj`gChcRWC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "zakopane",
+      "to": "zakopane-2",
+      "key": "49.28447,19.96329;49.3063,19.93129",
+      "km": 3.4,
+      "polyline": "}zxkHqazxBmgC~fE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "zakopane-2",
+      "to": "katowice",
+      "key": "49.3063,19.93129;50.2436,19.04859",
+      "km": 128.6,
+      "polyline": "kc}kHqysxBrgCsfEoizDfsqDGF",
+      "source": "polarsteps"
+    },
+    {
+      "from": "katowice",
+      "to": "jasna-gora",
+      "key": "50.2436,19.04859;50.81256,19.09717",
+      "km": 63.4,
+      "polyline": "oetqHulgsB_cnBsnH",
+      "source": "polarsteps"
+    },
+    {
+      "from": "jasna-gora",
+      "to": "odz",
+      "key": "50.81256,19.09717;51.72332,19.5199",
+      "km": 105.5,
+      "polyline": "oicuHi|psBg{pDaqqA??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "odz",
+      "to": "odz-2",
+      "key": "51.72332,19.5199;51.72337,19.51993",
+      "km": 0,
+      "polyline": "weuzHkncvBIE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "odz-2",
+      "to": "chelmno-kamp",
+      "key": "51.72337,19.51993;52.15262,18.72095",
+      "km": 115,
+      "polyline": "afuzHqncvBu[fv@t[sv@{Rh\\hRm\\yrHniNrrHahNe|@lwAkG|BmFyKP{ZnBqq@t@_T^kNvJiVbHaI~KiMzAaiBiz@myE_kRyfMihJjbUetC`sYok@raOehGvdk@ecKtgg@kFz_@yS|gAu_E~dIqrDfrDosJdxL`KdZ??tPdCe\\o_@BZjJlZ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "chelmno-kamp",
+      "to": "poznan",
+      "key": "52.15262,18.72095;52.40821,16.93451",
+      "km": 126,
+      "polyline": "{`i}H}lgqBcgp@vnrIzGuFaNtAsGnF}B|mCcVlhA??pSrqAfLgBgLfB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "poznan",
+      "to": "kleinmachnow",
+      "key": "52.40821,16.93451;52.39933,13.17585",
+      "km": 284.2,
+      "polyline": "i~z~HuojfBdShEoPlCUt\\o@~`@iEtUdGjBzByOgCkw@b@_ViEsL~Ism@pSiaAtGg}@~AszC}Qbb@{WfLeAhAw@lg@nY~aCjqGc{FxbApzb@e@neN_@x~M_rFvsj@|gCnon@`zE|{l@??|SvfJ??jV`|L??pnDvvR??ccCv{l@pmA~im@caCrjPsv@lwd@hBxmh@dxBdia@zFrwBsk@xff@ufB|o]vN~gN~dChjh@uDx^c_@hyh@~`@f}g@`Ixte@m{JlaV}_Dyz@zBjTPL",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kleinmachnow",
+      "to": "wannsee-konferenz-villa",
+      "key": "52.39933,13.17585;52.43299,13.16501",
+      "km": 4.6,
+      "polyline": "yfy~HalloAtAlKwcAygA_aAfrAis@vj@sXoAKrB",
+      "source": "polarsteps"
+    },
+    {
+      "from": "wannsee-konferenz-villa",
+      "to": "potsdam",
+      "key": "52.43299,13.16501;52.39562,13.05913",
+      "km": 14,
+      "polyline": "ey__IihjoAt}A{x@vwAgNlYdDS[CwAR~A{AiOfBpPIU@DkBoRd@~DbApLoBoRJAxCrQkBmIb@dItBj@cDcNhIp}@y@`{Cp]bnEnG|cAh@t`BaVfhC?AAzM",
+      "source": "polarsteps"
+    },
+    {
+      "from": "potsdam",
+      "to": "braunschweig",
+      "key": "52.39562,13.05913;52.26444,10.52347",
+      "km": 220.1,
+      "polyline": "sox~HqrunAus@dlCVvp@`YhbBbe@ejCiL}h@iXcw@{L{_Ar_@uzBhNaMnJ}MrA{xAcEws@i]e_FkDcfCcNy_ArEqOlD`RyBgSxApRcBqR|BxRMO`@Ac@@??dAFcAG?A?@Hn@gCsToIig@b|Mr_OvoEjbb@mqH~a`@pDphE|\\|gi@raMt_`@bkAbrYndA~_Pvw@xem@nh@ppZn`BrvMfoDpyd@k^pzA{Br@DtJb@tD}yA|qh@ueBpp^_y@rqE{sJxb[ejBft`@rnDvvB|dB|yDvsAjhV~o@tvB}Mnu@S@a{@oJiHb@~\\rGxSjg@gGkBkmBgDuEaWx@mVu@`MsFjM}BdP",
+      "source": "polarsteps"
+    },
+    {
+      "from": "braunschweig",
+      "to": "ibbenbueren",
+      "key": "52.26444,10.52347;52.24584,7.69818",
+      "km": 212.5,
+      "polyline": "w{~}Hujf_Aj_C~F{d@dm@sAfLbJlDuhDhxBa~@hImaIh~PoGhfBw_Czph@mmErmk@suA~vNodCdyVdk@~fGv`@v~Gto@r]|rB|}Dk^|dHwUtkB~Nl{K`a@rm@ffGn~Iz`EfoF`nKtrOhfEr~f@xT|oVhb@`vRpWdy[n|Axtg@iiBbhj@a~Edzf@ilC~mYaB`jErw@tk^`uAfgK{@zA",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ibbenbueren",
+      "to": "amersfoort",
+      "key": "52.24584,7.69818;52.19752,5.42865",
+      "km": 163.6,
+      "polyline": "og{}Hsp~m@t@DusCjaFmqGvne@woAp|EwaA|zUjZdfk@d`C`rInoCjnTuTruAyMhiAkqA~fd@zsDffg@l_CjoIlUdnAxfArzV`c@foZfnFpfVrSd_i@fuApm`@baA~iFjVnzJg_@pzW}yCv|@Cf@hJ}IyI~HH`@",
+      "source": "polarsteps"
+    }
+  ]
+}

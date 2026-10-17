@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbc2eb"/><stop offset="1" stop-color="#a6c1ee"/></linearGradient></defs>
-<rect width="800" height="533" fill="url(#g)"/>
-<circle cx="573" cy="140" r="54" fill="#fff" opacity=".7"/>
-<path d="M0 369 L180 249 L330 349 L480 209 L640 329 L800 259 V533 H0Z" fill="#5a5f8a" opacity=".55"/>
-<path d="M0 451 L220 361 L420 431 L600 381 L800 441 V533 H0Z" fill="#5a5f8a"/>
-<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Carcassonne · De muren van de Cité</text>
-</svg>

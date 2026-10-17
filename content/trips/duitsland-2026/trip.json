@@ -1,0 +1,939 @@
+{
+  "title": "Duitsland 2026",
+  "slug": "duitsland-2026",
+  "summary": "Noord- en Oost-Duitsland. ",
+  "cover": "photos/schwerin-3.jpg",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "amersfoort",
+      "name": "Amersfoort",
+      "lat": 52.15625,
+      "lng": 5.38969,
+      "date": "2026-06-20",
+      "type": "camping",
+      "draft": true,
+      "text": "",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "konigswinter",
+      "name": "Königswinter",
+      "lat": 50.70871,
+      "lng": 7.2662,
+      "date": "2026-06-21",
+      "type": "bezienswaardigheid",
+      "text": "**Oberpleis**: Camping in Oberpleis. 's Avonds rondje door het dorp gelopen.",
+      "photos": [
+        {
+          "src": "photos/konigswinter-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/konigswinter-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/konigswinter-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/konigswinter-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/konigswinter-5.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/konigswinter-6.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/konigswinter-7.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "munster",
+      "name": "Münster",
+      "lat": 51.9393,
+      "lng": 7.56445,
+      "date": "2026-06-21",
+      "type": "camping",
+      "text": "Camping bij manege",
+      "photos": [
+        {
+          "src": "photos/munster-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/munster-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/munster-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/munster-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "bremen",
+      "name": "Bremen",
+      "lat": 53.11447,
+      "lng": 8.83316,
+      "date": "2026-06-22",
+      "type": "camping",
+      "text": "**Park Hotel Bremen**: Stageplek 1989 van Gerhard",
+      "photos": [
+        {
+          "src": "photos/bremen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bremen-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bremen-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bremen-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/bremen-5.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "neuengamme",
+      "name": "Neuengamme",
+      "lat": 53.42766,
+      "lng": 10.22984,
+      "date": "2026-06-23",
+      "type": "bezienswaardigheid",
+      "text": "Neuengamme concentratiekamp",
+      "photos": [
+        {
+          "src": "photos/neuengamme-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/neuengamme-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/neuengamme-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/neuengamme-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/neuengamme-5.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "schnakenbek",
+      "name": "Schnakenbek",
+      "lat": 53.39944,
+      "lng": 10.43466,
+      "date": "2026-06-23",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/schnakenbek-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "schwerin",
+      "name": "Schwerin",
+      "lat": 53.61907,
+      "lng": 11.4144,
+      "date": "2026-06-24",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/schwerin-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/schwerin-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/schwerin-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "schwerin-2",
+      "name": "Schwerin",
+      "lat": 53.61907,
+      "lng": 11.4144,
+      "date": "2026-06-25",
+      "type": "camping",
+      "text": "Schlossfestspiele Schwerin: Die Dreigroschenoper",
+      "photos": [
+        {
+          "src": "photos/schwerin-2-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "binz",
+      "name": "Binz",
+      "lat": 54.44947,
+      "lng": 13.55948,
+      "date": "2026-06-26",
+      "type": "camping",
+      "text": "**Prora**: Schaduw maken",
+      "photos": [
+        {
+          "src": "photos/binz-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-5.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "binz-2",
+      "name": "Binz",
+      "lat": 54.43187,
+      "lng": 13.55761,
+      "date": "2026-06-27",
+      "type": "bezienswaardigheid",
+      "text": "Baumwipfelpfad",
+      "photos": [
+        {
+          "src": "photos/binz-2-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-2-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-2-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-2-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/binz-2-5.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ralswiek",
+      "name": "Ralswiek",
+      "lat": 54.47509,
+      "lng": 13.44645,
+      "date": "2026-06-27",
+      "type": "camping",
+      "text": "Show aan het water: Störtebeker. Eerst vogelshow als voorprogramma. Daarna spektakel met paarden, schepen, vuur en veel figuranten",
+      "photos": [
+        {
+          "src": "photos/ralswiek-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ralswiek-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ralswiek-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ralswiek-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ralswiek-5.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ralswiek-6.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ralswiek-7.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "prora-kraft-durch-freude",
+      "name": "Prora - Kraft durch Freude",
+      "lat": 54.44957,
+      "lng": 13.55961,
+      "date": "2026-06-28",
+      "type": "camping",
+      "text": "Documentatiecentrum over NSDAP propaganda-vakantieoord voor 20.000 mensen, gebouwd in de jaren 30. Nooit in gebruik genomen, vanwege WOII. Nu ruïnes voor herinnering, verder opgeknapt tot (vakantie)appartementen.",
+      "photos": [
+        {
+          "src": "photos/prora-kraft-durch-freude-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/prora-kraft-durch-freude-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "jasmund-nationalpark",
+      "name": "Jasmund Nationalpark",
+      "lat": 54.57325,
+      "lng": 13.65936,
+      "date": "2026-06-29",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/jasmund-nationalpark-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jasmund-nationalpark-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jasmund-nationalpark-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jasmund-nationalpark-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "schaprode",
+      "name": "Schaprode",
+      "lat": 54.51607,
+      "lng": 13.16531,
+      "date": "2026-06-29",
+      "type": "camping",
+      "text": "Camping voor 2 nachten. Morgen met de ferry naar Hiddensee, fietsen mee. Alsof we naar Schiermonnikoog gaan.",
+      "photos": [
+        {
+          "src": "photos/schaprode-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "insel-hiddensee",
+      "name": "Insel Hiddensee",
+      "lat": 54.52461,
+      "lng": 13.08835,
+      "date": "2026-06-30",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/insel-hiddensee-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/insel-hiddensee-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/insel-hiddensee-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/insel-hiddensee-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/insel-hiddensee-5.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "prora",
+      "name": "Prora",
+      "lat": 54.44939,
+      "lng": 13.55865,
+      "date": "2026-07-01",
+      "type": "camping",
+      "text": "Gerhard heeft zijn enkel verstuikt. Dus we zijn weer naar de camping in Prora gegaan, om het even rustig aan te doen. Af en toe ijs op de enkel.",
+      "photos": [
+        {
+          "src": "photos/prora-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "jagdschloss-granitz",
+      "name": "Jagdschloss Granitz",
+      "lat": 54.38296,
+      "lng": 13.62872,
+      "date": "2026-07-02",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/jagdschloss-granitz-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jagdschloss-granitz-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/jagdschloss-granitz-3.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "ravensbruck",
+      "name": "Ravensbrück",
+      "lat": 53.19091,
+      "lng": 13.16148,
+      "date": "2026-07-03",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/ravensbruck-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/ravensbruck-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "sachsenhausen",
+      "name": "Sachsenhausen",
+      "lat": 52.76976,
+      "lng": 13.25993,
+      "date": "2026-07-04",
+      "type": "bezienswaardigheid",
+      "text": "Tweede achtereenvolgende dag een concentratiekamp bekeken. Super indrukwekkend. Ze maken er echt werk van, om alles goed te laten zien.",
+      "photos": [
+        {
+          "src": "photos/sachsenhausen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sachsenhausen-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sachsenhausen-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/sachsenhausen-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "brandenburg-an-der-havel",
+      "name": "Brandenburg an der Havel",
+      "lat": 52.42429,
+      "lng": 12.5541,
+      "date": "2026-07-04",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/brandenburg-an-der-havel-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "quedlinburg",
+      "name": "Quedlinburg",
+      "lat": 51.78868,
+      "lng": 11.14125,
+      "date": "2026-07-05",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/quedlinburg-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/quedlinburg-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/quedlinburg-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/quedlinburg-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/quedlinburg-5.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kassel",
+      "name": "Kassel",
+      "lat": 51.30779,
+      "lng": 9.49947,
+      "date": "2026-07-06",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kassel-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "kassel-wilhelmshohe-bergpark",
+      "name": "Kassel Wilhelmshöhe Bergpark",
+      "lat": 51.31484,
+      "lng": 9.41572,
+      "date": "2026-07-07",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-5.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-6.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-7.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/kassel-wilhelmshohe-bergpark-8.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "hattingen",
+      "name": "Hattingen",
+      "lat": 51.40813,
+      "lng": 7.18708,
+      "date": "2026-07-08",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/hattingen-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/hattingen-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/hattingen-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/hattingen-4.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/hattingen-5.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/hattingen-6.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "essen-zollverein",
+      "name": "Essen - Zollverein",
+      "lat": 51.48585,
+      "lng": 7.04224,
+      "date": "2026-07-09",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/essen-zollverein-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/essen-zollverein-2.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/essen-zollverein-3.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/essen-zollverein-4.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "xanten",
+      "name": "Xanten",
+      "lat": 51.65718,
+      "lng": 6.3928,
+      "date": "2026-07-09",
+      "type": "camping",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/xanten-1.jpg",
+          "caption": ""
+        },
+        {
+          "src": "photos/xanten-2.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "pontje-naar-rees",
+      "name": "Pontje naar Rees",
+      "lat": 51.75174,
+      "lng": 6.3954,
+      "date": "2026-07-10",
+      "type": "camping",
+      "text": "45 km gefietst, 2x pontje",
+      "photos": [
+        {
+          "src": "photos/pontje-naar-rees-1.jpg",
+          "caption": ""
+        }
+      ],
+      "articles": []
+    },
+    {
+      "id": "amersfoort-2",
+      "name": "Amersfoort",
+      "lat": 52.19476,
+      "lng": 5.43286,
+      "date": "2026-07-11",
+      "type": "camping",
+      "text": "",
+      "photos": [],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "amersfoort",
+      "to": "konigswinter",
+      "key": "52.15625,5.38969;50.70871,7.2662",
+      "km": 232,
+      "polyline": "qwi}Hqt{_@`kwGowkJ???????{pDroBnPsoBj_D??????????roBk_Dqe@dgBHct@Glr@NRfFdK~WxyClc@zf@c@xoECd`@~_Bxq@bj@u_AcnEmpL",
+      "source": "polarsteps"
+    },
+    {
+      "from": "konigswinter",
+      "to": "munster",
+      "key": "50.70871,7.2662;51.9393,7.56445",
+      "km": 175.1,
+      "polyline": "m`otHwdjk@bgG~jJ{HeBuG|Ii]vaA``@w}@{Qz~@wTkGaFlHgOmCctDdqBc|J`~EabJrqGymBnJqPcDkRuAwUj@qaA`GmqFf_C_iCl}AqbJ|cGqxEra@sw@vKmyEsrIobAakEitFocHyaI}zO{|KuIipE}k@anDgiBcb@cWo~DmjHqxGohSg~FmjPc`G_yGwx@ykE}cImuMe}Gu{@qmCayA{yLeYykC~WcwFdnC}bNp~BqqJ|cJe{CrO{bB\\qZxb@ioDykAmoAbrBaGpC`GqC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "munster",
+      "to": "bremen",
+      "key": "51.9393,7.56445;53.11447,8.83316",
+      "km": 186.8,
+      "polyline": "sk_|Hyldm@gpCikH|O~{@|n@np@~ZbvAbb@dcAlOj^{EjGxZajAdh@k[dCyKuVkxAxkAff@}zGhpGowLsnJa}IkfIgv@{~BcsAmoCavF{lFocA{wAadH{kRucC}qDgGsB}p@_wAyqJahH}{HclP{kNr@ygCu{@s_GkpEohA{nAqvAo`BolKoc@arMsoIekN_gAi{GirCypDgfA}xI_`Ei~A{kDwbEw`Wi{Cg_VwcAomDgpB}yKiiF{fQa}FrDgPgbBm`BaiKe[eZqcC_l@mpBqhBoj@yxDhDfNvHyOoFcJqFtK",
+      "source": "polarsteps"
+    },
+    {
+      "from": "bremen",
+      "to": "neuengamme",
+      "key": "53.11447,8.83316;53.42766,10.22984",
+      "km": 140.9,
+      "polyline": "m|dcIgf|t@dvFhvDbFwWhEcMwUrDm\\k^we@e_@cm@iRwt@cR_O_P{o@k`@JpP|A~PG_m@YJ{@rZfCu\\gACaDpMzCoKb@vl@iFgc@tUoaC~|D}eJvuF_dMgfBomReNakAamHg_SamGsnEucDq~DgeJw_QupB{xLcxCqcGigG{eUgbAavDebDijQg_BalY_CubD_^qfPuhFg}MqgK|n@sf@u\\BFuaA{n@aGyEil@oRwb@ivB|BogAx_@a_Cv_Cq_Ij{@s_RtuFd}B|`@ov@mEaT~HhG",
+      "source": "polarsteps"
+    },
+    {
+      "from": "neuengamme",
+      "to": "schnakenbek",
+      "key": "53.42766,10.22984;53.39944,10.43466",
+      "km": 17.8,
+      "polyline": "{abeIo_m}@EWRnQ_^ySnCqSuNfOaKse@bqAisBma@}wEwXqlKddA}lEff@kjAxbB_}EzNgc@{Nfc@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "schnakenbek",
+      "to": "schwerin",
+      "key": "53.39944,10.43466;53.61907,11.4144",
+      "km": 101.5,
+      "polyline": "oq|dIs_u~@rNkb@{D|Jii@lj@yj@sn@qWvHoRlIk{CaqIsgD|iDcv@gLciCiv@aMgWlFuE}w@khA_i@y|@y{FkyIvk@u~SdIg_CrmD{mUr}@uuXpsAa`[fYkeIyx@lxDxdB}yEik@j`@bg@_mV}uC_jHgoBgu@qsCyvDi{BolKivBylAgyAmbAuqBxEwSeTas@qgA~[lXrQjEha@n}@~ImSkGlEiKli@li@uG??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "schwerin",
+      "to": "schwerin-2",
+      "key": "53.61907,11.4144;53.61907,11.4144",
+      "km": 34.6,
+      "polyline": "engfI_ktdA_SxSuS_c@c]~KiEbCwOuqAwTuf@@RAFDMTn@_@o@HRzBft@ydAo_@ulBiwBycACex@waFfzByi@hc@sn@sIxE|{BeeAznF`TlG`BzLrvBp@dlDosApoCqm@tj@s@jx@}oAsb@oUum@ba@dhA|N`CvPhWgExTuGm@jEjPmB{LaJzEhNaCdVo[lXiUzE|h@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "schwerin-2",
+      "to": "binz",
+      "key": "53.61907,11.4144;54.44947,13.55948",
+      "km": 211,
+      "polyline": "engfI_ktdAuGoVyw@sQat@}jAxVhc@h@fRyEg\\mNg[rE|S}[fb@eTgCaEgJm{FiyGaeFyfLuoIosJ}nAqf@ehLvbBi_@lx@qQ`dByi@yjHenDqwRyL_o@caA}oIedC__HspIyqTctDmxW_WkeKvBwr@fHqfBf@a}@sBwg@q^svBkyBqjBhRonAz]_a@xv@sdMumAkuIjKkpCh@eMxiDu_TO}pAssCcbUki@}a@eeBm|H{nBcoM{w@emPho@mxH_o@kfW~S{lAya@k|Uao@en@ccLkwFstGt\\skDtoAgaCfwG{r@fwBy~HosDkcFuxKoKmaAfCm`SobDiyF{uB{oGk`AueEk\\ivBdg@spNo`F}wHsi@xe@eE_@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "binz",
+      "to": "binz-2",
+      "key": "54.44947,13.55948;54.43187,13.55761",
+      "km": 16.5,
+      "polyline": "etikIwiwqAxbHucJhCnO}DdJnEaJ`KcYqGxSsBfUgaAx|AuI`Rqh@zu@qcAh`AkZpTa^r{@yY|G}V?dgAsCfThK`NkKmIfFrJ`G",
+      "source": "polarsteps"
+    },
+    {
+      "from": "binz-2",
+      "to": "ralswiek",
+      "key": "54.43187,13.55761;54.47509,13.44645",
+      "km": 21.5,
+      "polyline": "effkIa~vqAiLNrKbAICyNeD}Uy^{U`Om[zHqLq@ebD}q@kdAq{@{`Avq@cZbfGzpEd{K{e@~sDcFqf@fw@q|@iu@|Sv@cQoFrF",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ralswiek",
+      "to": "prora-kraft-durch-freude",
+      "key": "54.47509,13.44645;54.44957,13.55961",
+      "km": 24.9,
+      "polyline": "itnkIigaqAeFvCfKrq@jjAVgiBouJ}`Dk}HdcD{fDjc@xv@tqCph@dJt@rw@}vAiLvBsGjd@fS}g@uI`CpM_Op~@aj@qdC`lC",
+      "source": "polarsteps"
+    },
+    {
+      "from": "prora-kraft-durch-freude",
+      "to": "jasmund-nationalpark",
+      "key": "54.44957,13.55961;54.57325,13.65936",
+      "km": 35.4,
+      "polyline": "ytikIqjwqAfwFm|F}nAlbAdOyLxLgId`@o_@lQsX`ReYtGuK_Rv\\yPtS}MnP{J|JwKhLg]tXkHpHsJvGg]re@ce@jWcc@t_Ax@zQkm@fWni@_s@BvMy_HgpAe|CyhDfBaqAyh@m{Dgq@oAyrEloC{DyQaDk^qEob@mNq]yKg^sGcTgA{M{A_QmGmUaAlO??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "jasmund-nationalpark",
+      "to": "schaprode",
+      "key": "54.57325,13.65936;54.51607,13.16531",
+      "km": 44.4,
+      "polyline": "yyalI_zjrA`HuDvDa\\pCbL{Hz`@|Jtj@nGvQD`OkAfUoBru@pBjVjJyQxJrK|Qr]j@zMey@xkAogAgPfZdrDhv@ppGxUnzAwRlgLmaDn`LapBjcFpt@`aCztBjkEheDpoI~XfKf{D|CoKzcAvg@|uFpZbpDqMxE`Ik@nIoAeFU",
+      "source": "polarsteps"
+    },
+    {
+      "from": "schaprode",
+      "to": "insel-hiddensee",
+      "key": "54.51607,13.16531;54.52461,13.08835",
+      "km": 18.1,
+      "polyline": "mtvkIejjoAqBdAuGz@u@UlI]yHx@\\K|GkAgI`AlI{A}HlBbI{AG@cIbBrI{Ao@E}GzArHuAyHzA?@?A`ImBnKwF~GrLhIwUwJh`@{C{c@ycAhyEi~@rViZiDabDny@}QhdA_@nQaEvUvDxJbt@fLp_Akm@|pC|wB|L{C",
+      "source": "polarsteps"
+    },
+    {
+      "from": "insel-hiddensee",
+      "to": "prora",
+      "key": "54.52461,13.08835;54.44939,13.55865",
+      "km": 58.2,
+      "polyline": "yixkIei{nA_pMg`IlMvPoUn|@kFjJrIcXra@oTlf@n~A|l@vh@`eAfZz@eMl]s}BthAcp@lx@la@zaAzLn`@`CnXkeAna@qoBbYs\\aLcVqFxE`G_F}GyOc`AqlJj{DsqI`hFkaGfRop@dvCcbK`Uew@xUay@t\\olChTwCrh@kxDj@ygKwOii@gzBy~B_{@yvA}A|Sgh@ne@??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "prora",
+      "to": "jagdschloss-granitz",
+      "key": "54.44939,13.55865;54.38296,13.62872",
+      "km": 10.6,
+      "polyline": "usikIqdwqAQGdH}D|q@kNzx@yl@fQo`@`Qi\\jKaQ`r@kx@`Xc[|m@iq@jWsTr\\jj@bOp\\|CalAnZctAlV_j@zMfH{MgH",
+      "source": "polarsteps"
+    },
+    {
+      "from": "jagdschloss-granitz",
+      "to": "ravensbruck",
+      "key": "54.38296,13.62872;53.19091,13.16148",
+      "km": 196.1,
+      "polyline": "ot|jIozdrAkVqu@sYr`@n@rm@e@xWLte@i`Avh@cMyTtC`Ke@vf@wChKapAhhAuHlOekAngAseA`z@gg@vd@_GjD_@FvEcCxAeMrhFblEgI~iNa]v`Bv@hZbl@hm@~w@v_EfoE`gMxoA`kQ`FrhBheDtsK|sErrKp~Ey{CtmBamGblJuoCph@y[zyKvqD~uEacJf`KcgP`lDo}IjtFsoBjyLppBjwBzvAz_@dc@sWkc@ntMf`@pvNjNjtJgrGjuAxQl~Hy}D|sAndItS`|BcDnkF_@|SfmBzbAtgEttBxl@vWzrHtpK~jGdvKjk@fbAnjFroB~nJokAlxIap@xlIweDjw@hx@sEiSei@g{AdAqa@dUis@{FqFjAzM@AzAsTpAjM",
+      "source": "polarsteps"
+    },
+    {
+      "from": "ravensbruck",
+      "to": "sachsenhausen",
+      "key": "53.19091,13.16148;52.76976,13.25993",
+      "km": 56.5,
+      "polyline": "ezscIgrioAoF`Z}KzMxRtpAvOtAvQoAZwRgEry@kChOEfRTS_DaKl[crAhaAl^vzH_sDljEq|AfpBrMv`Goe@`sC|tCpd@rh@vhIb^`cCaWfvDtO~oFw|AzhE{{FpcHkgE~T_JbjAohBu@c[uH_DrBz~@_K{s@_D|Rl@dBiLqC??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "sachsenhausen",
+      "to": "brandenburg-an-der-havel",
+      "key": "52.76976,13.25993;52.42429,12.5541",
+      "km": 74.2,
+      "polyline": "_raaIqy|oAjIh@z@y`@rOxaAiIeiAfH|VE_BtJnEmBvKr`@r]ndAiHhO`Eh_Bl`Bbm@vmApdBl}F[biHy\\t|V~`Mv_DfvMfiCjb@pnFt^lxEhcDbcKn|FveGfrA`jLwA`z@x|@twFt{C~lGbTtv@b{@nlFrp@zeCml@pp@uApJAAvAoJ",
+      "source": "polarsteps"
+    },
+    {
+      "from": "brandenburg-an-der-havel",
+      "to": "quedlinburg",
+      "key": "52.42429,12.5541;51.78868,11.14125",
+      "km": 143.1,
+      "polyline": "yb~~Hc~rkAaBjJ@EyR{WfS|WE?DABFeAqMb@pM`Nc]uLr]CNYOo@fUCod@IFFC~@pMrAmHnM|TlVrbBdeB_t@zg@nHztDniFdkJj{DtwEj}LjjApwL~vAldFsKtiTzjAftQnVnwDoHdoWjw@htTf^njWb}BdmI|yBnrHhcAzeI~iE|e@|tLulA|jG`}EdvBzeBhzFbdHdsBb~Dhe@leHCf`BhiCpmJbQdNvy@jOhr@lC|jFbhFrkFjhFlhE|nIceAyAdGdEwFiGbe@ttAbb@~aAnDdE",
+      "source": "polarsteps"
+    },
+    {
+      "from": "quedlinburg",
+      "to": "kassel",
+      "key": "51.78868,11.14125;51.30779,9.49947",
+      "km": 185.5,
+      "polyline": "g~a{Hy__cAzDnDQdPtI~EeMcKwEkUcKe@_e@weAiV{mAzHjI{FwGr]vbApJtD|DxHexAzlCgd@zFrH`iC|a@hrP_nBfzP|oA~}HhpCz{FpCj`A|bCtjFn`BtaA``@`qGvg@juJ`g@heG~i@bnBz|Di|Ax`Blk@C@tBdLdaBfn@r_@{`@daDk|Bb`A|y@jx@mFvlAnl@pmDlkEfqBuvHpeEg_Dlk@ugC|kCkwEb|Gr}FvWdxCrcCfxTnpBnhVp_@ruUea@flOk]roFn}ArkWig@p|DbQ~hL{FjbBsiJnzN~mI`zJnh@hjCklAt_I`~@n|D`qDprJdwA~mDdzJlwHfw@neNka@_XdPvWqMo\\LEmVoDuLmDo_@cu@mc@_E??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kassel",
+      "to": "kassel-wilhelmshohe-bergpark",
+      "key": "51.30779,9.49947;51.31484,9.41572",
+      "km": 15.4,
+      "polyline": "u`dxHuj~x@wS`@_S~Td@pOlGh@{B_M~EaXbIiA~CmJrFoE|lA~o@|[~i@dExs@oAav@zMj\\sf@nDvW}a@C?iFpWiPjIvW{a@JCnMn\\kq@faAgj@`hA}j@h{Ay[vl@lBhh@yCdw@_F|a@nIzK[vQc@wR~@^",
+      "source": "polarsteps"
+    },
+    {
+      "from": "kassel-wilhelmshohe-bergpark",
+      "to": "hattingen",
+      "key": "51.31484,9.41572;51.40813,7.18708",
+      "km": 198.5,
+      "polyline": "wlexHg_nx@_AjQeGn]fHrLbCnWkBnTbLv@cSnSpO_G_O|KmFpElGg@lHuSEe\\yLc]vSwTiHkb@aEwHuA{KjJyfAn@mXj[ax@bf@aiAve@uhBbXox@tF}Z|C_JkI`b@lKnv@bElIdMnGd}BppEmoDfmQyQrcAwuFpnHc}CbM}vFprR{gB~aC}tHpuHudDr_VcjAp_GkiD~uJmkCj{TcGxx@k_ExpQzAfrAuq@~`NErxD~e@viQt[zpP~r@bkXx~DrkT|LtkAyB|sEhz@b~QvH`cPtGlsG|u@n|MaYhqEhe@`fPxcG~qGf\\bq@biEhmL`GlyKpD`x@waBfyF{Z~kB`Az{RRlfAljAzuKvbDfpAveArfBrtA`jByr@~s@vXs^aLrAkGyA}GqNgFaIvKot@YuGgIfM??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "hattingen",
+      "to": "essen-zollverein",
+      "key": "51.40813,7.18708;51.48585,7.04224",
+      "km": 23.7,
+      "polyline": "yswxHgvzj@lKya@na@rc@~SbNrAzKsc@zg@k\\kL}AeLeRtj@~Ta^DHrKt]??yKo]@BvIgCmL_GlNri@qKe]AGAC`EtHbXt^onA}I}{Be]gZgUaqBjtGuc@hqGi|@`yBs_An~AwM|\\oe@ps@rV~VnOuD??",
+      "source": "polarsteps"
+    },
+    {
+      "from": "essen-zollverein",
+      "to": "xanten",
+      "key": "51.48585,7.04224;51.65718,6.3928",
+      "km": 68.1,
+      "polyline": "qyfyH_m~i@AOfChKiBsYyKkE{Uxh@tSht@vEsUgAyL@cn@cC~J{IzEyG[uXug@{_AwIaJl|Gjx@xkPpApbApdAjhRdKl~@hHnzBtM|iPia@`xCm\\dtOc~E_k@snD`xG_|BzlT{PpnAukDh}Hg`FvZeaByhEiNwX`EuHfHlb@",
+      "source": "polarsteps"
+    },
+    {
+      "from": "xanten",
+      "to": "pontje-naar-rees",
+      "key": "51.65718,6.3928;51.75174,6.3954",
+      "km": 20.8,
+      "polyline": "khhzH_r_f@oFakCtLkeBhIwYz@_M}U_r@_]cj@fMaCsBtMsNt_BzO~X_Dvp@iLfo@da@zjBqGpMsRoyA{iBc`@yhBeR{}@rBcInQglBtuA_[nDmx@nb@in@oTq[rTFD",
+      "source": "polarsteps"
+    },
+    {
+      "from": "pontje-naar-rees",
+      "to": "amersfoort-2",
+      "key": "51.75174,6.3954;52.19476,5.43286",
+      "km": 160,
+      "polyline": "kwzzHgb`f@w_@OqDrOoRktA|Ne~DpsByJyZka@bPypChh@pvBxMnfAjh@yuClm@bVnrAg\\t[yd@~qAqnAlm@an@rkAv^p@hBvPfKjJtTpAl_BqIxgAWneAff@npAkHuIvDttDaFpIaCkKhTmfGv`@d~@mfAeC_}EzwIsbD~hFkcGotGsOih@awFugGui@cm@q}AfwKgdErgTe_D`iPe}@x~@y|AjmCwcA|lC}}@|`Cg|@j~Bs~@haEiS~v@aGpm@wAhu@mYlp@_DlQuFz[{nHpcMasK{_AoqK{lHubHqkDl^nyAkCbmUwu@jpIie@hmJzyBfyVjdAlnJtB~fCjRfdE}`@tySeuCzi@yPtYxPuY",
+      "source": "polarsteps"
+    }
+  ]
+}

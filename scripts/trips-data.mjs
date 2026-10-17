@@ -7,12 +7,15 @@
 // `virtual:trips`:
 //   export const trips  = [ ...inhoud van content/trips/*/trip.json ]
 //   export const photos = { '<slug>/photos/x.webp': '<url van het gebundelde bestand>' }
-// Bij `npm run build` worden concepten (draft: true) en hun foto's weggelaten,
-// zodat ze niet op de gepubliceerde site terechtkomen.
+// Bij `npm run build` worden concept-reizen en concept-stops (draft: true) met hun
+// foto's weggelaten, zodat ze niet op de gepubliceerde site terechtkomen. De
+// trajecten rond een weggelaten stop worden samengevoegd, zodat de route doorloopt.
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_HOME } from './editor-api.mjs';
+import { legKey } from './routing.mjs';
+import { decodePolyline, encodePolyline } from '../src/polyline.js';
 
 const ID = 'virtual:trips';
 const RESOLVED_ID = '\0virtual:trips';
@@ -41,7 +44,8 @@ export function tripsData({ root }) {
       const trips = readdirSync(tripsDir)
         .filter((slug) => existsSync(join(tripsDir, slug, 'trip.json')))
         .map((slug) => JSON.parse(readFileSync(join(tripsDir, slug, 'trip.json'), 'utf8')))
-        .filter((trip) => !(isBuild && trip.draft));
+        .filter((trip) => !(isBuild && trip.draft))
+        .map((trip) => (isBuild ? withoutDraftStops(trip) : trip));
 
       const imports = [];
       const entries = [];
@@ -63,13 +67,53 @@ export const photos = { ${entries.join(', ')} };`;
     // wordt wel ververst, zodat een herladen reispagina de nieuwe inhoud toont.
     handleHotUpdate({ file, server }) {
       if (!normalize(file).startsWith(normalize(contentDir))) return;
-      for (const id of [RESOLVED_ID, RESOLVED_HOME_ID]) {
-        const mod = server.moduleGraph.getModuleById(id);
-        if (mod) server.moduleGraph.invalidateModule(mod);
-      }
+      invalidate(server);
       return [];
     },
+    // Nieuwe of verwijderde bestanden (bijv. een geïmporteerde reis) komen niet altijd
+    // via handleHotUpdate binnen; daarom ook rechtstreeks op de watcher letten.
+    configureServer(server) {
+      const onFile = (file) => {
+        if (normalize(file).startsWith(normalize(contentDir))) invalidate(server);
+      };
+      server.watcher.on('add', onFile);
+      server.watcher.on('unlink', onFile);
+      server.watcher.on('addDir', onFile);
+      server.watcher.on('unlinkDir', onFile);
+    },
   };
+
+  function withoutDraftStops(trip) {
+    if (!trip.stops.some((s) => s.draft)) return trip;
+    const legs = new Map((trip.legs || []).map((l) => [`${l.from}>${l.to}`, l]));
+    const kept = trip.stops.filter((s) => !s.draft);
+    const merged = [];
+    for (let k = 0; k < kept.length - 1; k++) {
+      const a = kept[k];
+      const b = kept[k + 1];
+      const chain = trip.stops.slice(trip.stops.indexOf(a), trip.stops.indexOf(b) + 1);
+      const parts = chain.slice(1).map((s, j) => legs.get(`${chain[j].id}>${s.id}`));
+      if (!parts.every((p) => p?.polyline)) continue; // viewer tekent dan een rechte lijn
+      const points = parts.flatMap((p, j) => (j ? decodePolyline(p.polyline).slice(1) : decodePolyline(p.polyline)));
+      const minutes = parts.every((p) => Number.isFinite(p.minutes)) ? parts.reduce((sum, p) => sum + p.minutes, 0) : undefined;
+      merged.push({
+        from: a.id,
+        to: b.id,
+        key: legKey(a, b),
+        km: Math.round(parts.reduce((sum, p) => sum + p.km, 0) * 10) / 10,
+        ...(minutes !== undefined ? { minutes } : {}),
+        polyline: encodePolyline(points),
+      });
+    }
+    return { ...trip, stops: kept, legs: merged };
+  }
+
+  function invalidate(server) {
+    for (const id of [RESOLVED_ID, RESOLVED_HOME_ID]) {
+      const mod = server.moduleGraph.getModuleById(id);
+      if (mod) server.moduleGraph.invalidateModule(mod);
+    }
+  }
 
   function loadHome() {
     const file = join(homeDir, 'home.json');

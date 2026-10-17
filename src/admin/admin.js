@@ -1,8 +1,8 @@
 import '../style.css';
 import './admin.css';
-import { createMap, stopType, STOP_TYPES, decodePolyline, L } from '../map.js';
+import { createMap, stopType, STOP_TYPES, decodePolyline, isVia, L } from '../map.js';
 import { slugify } from '../slugify.js';
-import { formatDate, formatKm, formatDuration, escapeHtml as esc } from '../format.js';
+import { formatDate, formatKm, formatDuration, formatLeg, escapeHtml as esc } from '../format.js';
 import { stopPanelHtml, bindPanelPhotos } from '../panel.js';
 
 const $ = (id) => document.getElementById(id);
@@ -50,10 +50,15 @@ function updateStats() {
     const b = trip.stops[i + 1];
     if (!b) return;
     const leg = legs.get(legKey(a, b));
-    if (leg?.polyline) { km += leg.km; minutes += leg.minutes; } else missing++;
+    if (leg?.polyline) { km += leg.km; minutes += leg.minutes || 0; } else missing++;
   });
-  const parts = [`${trip.stops.length} stops`];
-  if (km) parts.push(formatKm(km), `${formatDuration(minutes)} rijden`);
+  const vias = trip.stops.filter(isVia).length;
+  const drafts = trip.stops.filter((s) => s.draft).length;
+  const parts = [`${trip.stops.length - vias} stops`];
+  if (vias) parts.push(`${vias} via`);
+  if (drafts) parts.push(`${drafts} concept`);
+  if (km) parts.push(formatKm(km));
+  if (minutes) parts.push(`${formatDuration(minutes)} rijden`);
   if (missing) parts.push(`${missing} traject${missing > 1 ? 'en' : ''} nog te berekenen`);
   $('stats').textContent = parts.join(' · ');
 }
@@ -97,15 +102,85 @@ function renderTripFields() {
   $('f-summary').value = trip.summary || '';
   $('f-draft').checked = !!trip.draft;
   $('cover').innerHTML = trip.cover
-    ? `<img src="${photoUrl(trip.cover)}" alt="Omslagfoto" />`
-    : '<span class="hint">Kies een omslag met ★ bij een foto</span>';
+    ? `<img src="${photoUrl(trip.cover)}" alt="Omslagfoto" /><span class="cover-edit">Wijzigen</span>`
+    : '<span class="hint">Klik om een omslagfoto te kiezen</span>';
   $('view-link').href = `/trip.html?reis=${encodeURIComponent(trip.slug)}`;
 }
+
+// ---------- Omslagfoto kiezen uit alle foto's van de reis ----------
+function openCoverPicker() {
+  const withPhotos = trip.stops.filter((s) => s.photos.length);
+  $('cover-picker-body').innerHTML = withPhotos.length
+    ? withPhotos
+        .map(
+          (s) => `<section>
+            <h4>${esc(s.name)} <small>${s.date ? formatDate(s.date) : ''}</small></h4>
+            <div class="cover-grid">${s.photos
+              .map(
+                (p) => `<button type="button" class="cover-option${p.src === trip.cover ? ' current' : ''}" data-src="${esc(p.src)}" title="${esc(p.caption || s.name)}">
+                  <img src="${photoUrl(p.src)}" alt="" loading="lazy" />
+                  ${p.src === trip.cover ? '<span>Huidige omslag</span>' : ''}
+                </button>`
+              )
+              .join('')}</div>
+          </section>`
+        )
+        .join('')
+    : '<p class="empty">Deze reis heeft nog geen foto\'s. Voeg eerst foto\'s toe aan een stop.</p>';
+  $('cover-picker').hidden = false;
+  $('cover-picker-body').querySelector('.current')?.scrollIntoView({ block: 'center' });
+}
+
+const closeCoverPicker = () => ($('cover-picker').hidden = true);
+
+$('cover').addEventListener('click', () => trip && openCoverPicker());
+$('cover-picker-close').addEventListener('click', closeCoverPicker);
+$('cover-picker').addEventListener('click', (e) => {
+  if (e.target === $('cover-picker')) return closeCoverPicker();
+  const option = e.target.closest('.cover-option');
+  if (!option) return;
+  trip.cover = option.dataset.src;
+  closeCoverPicker();
+  setDirty();
+  renderTripFields();
+  const open = trip.stops.find((s) => s.id === selectedId);
+  if (open) rerenderStop(open); // ★ bij de foto's bijwerken
+  setStatus('Omslagfoto gekozen. Vergeet niet op te slaan.');
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !$('cover-picker').hidden) closeCoverPicker();
+});
 
 $('f-title').addEventListener('input', (e) => { trip.title = e.target.value; setDirty(); });
 $('f-summary').addEventListener('input', (e) => { trip.summary = e.target.value; setDirty(); });
 $('f-draft').addEventListener('change', (e) => { trip.draft = e.target.checked; setDirty(); });
 $('trip-select').addEventListener('change', (e) => openTrip(e.target.value));
+
+$('delete-trip').addEventListener('click', async () => {
+  if (!trip) return;
+  const photoCount = trip.stops.reduce((n, s) => n + s.photos.length, 0);
+  const warning =
+    `Reis "${trip.title}" verwijderen?\n\n` +
+    `Dit verwijdert de reis met alle ${trip.stops.length} stops en ${photoCount} foto's van je computer ` +
+    `(map content/trips/${trip.slug}).\n\n` +
+    `Dit kan niet ongedaan worden gemaakt in de editor. Alleen als de reis al eerder gecommit is, kun je hem via git terughalen.`;
+  if (!confirm(warning)) return;
+  if (prompt(`Typ VERWIJDER om "${trip.title}" definitief te verwijderen:`)?.trim().toUpperCase() !== 'VERWIJDER') {
+    setStatus('Verwijderen geannuleerd.');
+    return;
+  }
+  try {
+    const title = trip.title;
+    await api(`/trips/${trip.slug}`, { method: 'DELETE' });
+    trip = null;
+    dirty = false;
+    history.replaceState(null, '', location.pathname);
+    await loadTripList();
+    setStatus(`Reis "${title}" is verwijderd.`, 'ok');
+  } catch (err) {
+    setStatus(`Verwijderen mislukt: ${err.message}`, 'error');
+  }
+});
 
 $('new-trip').addEventListener('click', async () => {
   if (dirty && !confirm('Je hebt niet-opgeslagen wijzigingen. Toch een nieuwe reis maken?')) return;
@@ -123,13 +198,18 @@ $('new-trip').addEventListener('click', async () => {
 // ---------- Stops: lijst ----------
 const list = $('stops');
 
+// Nummer zoals op de site: via-punten tellen niet mee.
+const stopNumber = (s) => trip.stops.filter((x) => !isVia(x)).indexOf(s) + 1;
+
 function headHtml(s, i) {
   const t = stopType(s.type);
+  const badge = isVia(s) ? '<span class="badge via" title="Via-punt"></span>' : `<span class="badge" style="--c:${t.color}">${stopNumber(s)}</span>`;
+  const flags = `${isVia(s) ? ' · via' : ''}${s.draft ? ' · <em class="draft-flag">concept</em>' : ''}`;
   const photos = s.photos.length === 1 ? '1 foto' : `${s.photos.length} foto's`;
   return `<div class="stop-head" data-action="toggle">
       <span class="handle" title="Sleep om de volgorde te wijzigen">⠿</span>
-      <span class="badge" style="--c:${t.color}">${i + 1}</span>
-      <span class="stop-title"><b>${esc(s.name) || 'Naamloos'}</b><small>${t.icon} ${s.date ? formatDate(s.date) : 'geen datum'} · ${photos}</small></span>
+      ${badge}
+      <span class="stop-title"><b>${esc(s.name) || 'Naamloos'}</b><small>${t.icon} ${s.date ? formatDate(s.date) : 'geen datum'} · ${photos}${flags}</small></span>
       <span class="chev">▾</span>
     </div>`;
 }
@@ -157,6 +237,8 @@ function formHtml(s) {
         <label>Datum<input type="date" data-field="date" value="${esc(s.date)}" /></label>
         <label>Type<select data-field="type">${types}</select></label>
       </div>
+      <label class="check stop-draft"><input type="checkbox" data-field="draft" ${s.draft ? 'checked' : ''} /> Concept<span class="hint">deze stop wordt niet gepubliceerd; de route loopt er gewoon langs</span></label>
+      ${isVia(s) ? `<p class="hint via-hint">Een via-punt is op de site alleen een klein rood stipje op de route (naam bij aanwijzen). Verhaal en foto's worden niet getoond.</p>` : `
       <label>Verhaal <span class="hint">**vet**, *schuin*, lege regel = nieuwe alinea</span>
         <textarea data-field="text" rows="7">${esc(s.text)}</textarea></label>
       <button type="button" class="link" data-action="preview">${previewOpen ? 'Voorbeeld verbergen' : 'Voorbeeld tonen'}</button>
@@ -166,7 +248,7 @@ function formHtml(s) {
         <input type="file" accept="image/*" multiple data-action="upload" hidden />
         📷 Foto's toevoegen
         <span class="hint">klik of sleep foto's hierheen · ze worden verkleind naar max. 1600px</span>
-      </label>
+      </label>`}
       <div class="stop-actions">
         <button type="button" class="btn small" data-action="zoom">Toon op kaart</button>
         <button type="button" class="btn small danger" data-action="delete">Stop verwijderen</button>
@@ -335,7 +417,7 @@ function schedulePreview() {
 
 function renderPreview() {
   const panel = $('preview-panel');
-  const stop = previewOpen && view === 'trips' && trip?.stops.find((s) => s.id === selectedId);
+  const stop = previewOpen && view === 'trips' && trip?.stops.find((s) => s.id === selectedId && !isVia(s));
   if (!stop) {
     panel.classList.remove('open');
     panel.setAttribute('aria-hidden', 'true');
@@ -371,8 +453,14 @@ list.addEventListener('input', (e) => {
   if (!stop) return;
   const field = e.target.dataset.field;
   if (field) {
-    stop[field] = e.target.value;
-    if (field !== 'text') {
+    if (e.target.type === 'checkbox') {
+      if (e.target.checked) stop[field] = true;
+      else delete stop[field];
+    } else stop[field] = e.target.value;
+    if (field === 'type') {
+      renderStops(); // via-punten hebben een korter formulier en tellen niet mee in de nummering
+      renderMap();
+    } else if (field !== 'text') {
       li.querySelector('.stop-head').outerHTML = headHtml(stop, trip.stops.indexOf(stop));
       if (field === 'type') renderMap();
     }
@@ -621,7 +709,7 @@ function renderMap() {
     const leg = legs.get(legKey(a, b));
     if (leg?.polyline) {
       L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', weight: 5, opacity: 0.85 })
-        .bindTooltip(`${formatKm(leg.km)} · ${formatDuration(leg.minutes)}`, { sticky: true })
+        .bindTooltip(formatLeg(leg), { sticky: true })
         .addTo(routeLayer);
     } else {
       L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: '#66727a', weight: 3, dashArray: '6 8' })
@@ -630,18 +718,18 @@ function renderMap() {
     }
   });
 
-  trip.stops.forEach((stop, i) => {
+  trip.stops.forEach((stop) => {
     const t = stopType(stop.type);
-    const marker = L.marker([stop.lat, stop.lng], {
-      draggable: true,
-      title: stop.name,
-      icon: L.divIcon({
-        className: `stop-marker${stop.id === selectedId ? ' active' : ''}`,
-        html: `<div class="stop-pin" style="--c:${t.color}">${t.icon}<span class="num">${i + 1}</span></div>`,
-        iconSize: [34, 34],
-        iconAnchor: [17, 17],
-      }),
-    }).addTo(markerLayer);
+    const classes = `stop-marker${stop.id === selectedId ? ' active' : ''}${stop.draft ? ' draft' : ''}`;
+    const icon = isVia(stop)
+      ? L.divIcon({ className: `${classes} via-marker`, html: '<div class="via-dot"></div>', iconSize: [14, 14], iconAnchor: [7, 7] })
+      : L.divIcon({
+          className: classes,
+          html: `<div class="stop-pin" style="--c:${t.color}">${t.icon}<span class="num">${stopNumber(stop)}</span></div>`,
+          iconSize: [34, 34],
+          iconAnchor: [17, 17],
+        });
+    const marker = L.marker([stop.lat, stop.lng], { draggable: true, title: stop.name, icon }).addTo(markerLayer);
     marker.on('click', () => selectStop(stop.id, { pan: false }));
     marker.on('dragend', () => {
       const ll = marker.getLatLng();

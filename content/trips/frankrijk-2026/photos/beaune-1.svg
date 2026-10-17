@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" width="800" height="533">
-<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#84fab0"/><stop offset="1" stop-color="#8fd3f4"/></linearGradient></defs>
-<rect width="800" height="533" fill="url(#g)"/>
-<circle cx="690" cy="140" r="54" fill="#fff" opacity=".7"/>
-<path d="M0 350 L180 230 L330 330 L480 190 L640 310 L800 240 V533 H0Z" fill="#3d6b4f" opacity=".55"/>
-<path d="M0 430 L220 340 L420 410 L600 360 L800 420 V533 H0Z" fill="#3d6b4f"/>
-<text x="40" y="490" font-family="system-ui,sans-serif" font-size="30" fill="#fff" opacity=".9">Beaune · Het dak van de Hospices</text>
-</svg>

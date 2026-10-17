@@ -146,6 +146,75 @@ label .hint { display: inline; margin-left: 6px; }
   padding: 4px;
 }
 .cover:has(img) { padding: 0; }
+button.cover { border: 0; cursor: pointer; position: relative; font: inherit; }
+button.cover:hover { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cover-edit {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 3px 0;
+  background: rgba(28, 25, 23, 0.65);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+button.cover:hover .cover-edit, button.cover:focus-visible .cover-edit { opacity: 1; }
+
+/* Omslagkiezer */
+.cover-picker {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(28, 25, 23, 0.55);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.cover-picker[hidden] { display: none; }
+.cover-picker-box {
+  position: relative;
+  width: min(980px, 100%);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.cover-picker-box header { padding: 18px 64px 14px 22px; border-bottom: 1px solid var(--line); }
+.cover-picker-box h3 { font: 600 1.4rem/1.2 var(--serif); margin: 0; }
+.cover-picker-body { overflow-y: auto; padding: 8px 22px 22px; }
+.cover-picker-body h4 { margin: 16px 0 8px; font-size: 0.9rem; }
+.cover-picker-body h4 small { color: var(--muted); font-weight: 400; margin-left: 6px; }
+.cover-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.cover-option {
+  position: relative;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--soft);
+  outline: 3px solid transparent;
+  outline-offset: 1px;
+  transition: outline-color 0.12s, transform 0.12s;
+}
+.cover-option img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.cover-option:hover { outline-color: var(--accent); transform: translateY(-1px); }
+.cover-option.current { outline-color: var(--text); }
+.cover-option span {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
 .cover img { width: 100%; height: 100%; object-fit: cover; }
 .check { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0; }
 .check input { width: auto; margin: 0; }
@@ -243,6 +312,16 @@ label .hint { display: inline; margin-left: 6px; }
 .dropzone .hint { display: block; margin: 2px 0 0; }
 .dropzone.busy { opacity: 0.6; pointer-events: none; }
 .stop-actions { display: flex; justify-content: space-between; margin-top: 12px; }
+.stop-draft { margin: 0 0 12px; }
+.stop-draft .hint { padding-left: 0; width: auto; }
+.draft-flag { font-style: normal; color: #8a5a00; font-weight: 600; }
+.via-hint { margin: 0 0 8px; }
+.badge.via { width: 12px; height: 12px; margin: 0 6px; background: #dc2626; border: 2px solid #fff; box-shadow: 0 0 0 1px #dc2626; }
+.via-marker { background: none; border: 0; }
+.via-dot { width: 14px; height: 14px; border-radius: 50%; background: #dc2626; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
+.via-marker.active .via-dot { box-shadow: 0 0 0 5px rgba(220, 38, 38, 0.3); }
+.stop-marker.draft .via-dot { opacity: 0.55; }
+.trip-danger { margin-top: 12px; display: flex; justify-content: flex-end; }
 
 /* Tekst van rondjewereld.nl */
 .wp-box { margin: 12px 0 4px; padding: 10px 12px; border-radius: 10px; background: var(--soft); }

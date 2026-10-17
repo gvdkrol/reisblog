@@ -40,7 +40,9 @@ Elke reis staat in `content/trips/<slug>/`:
 - `trip.json`: titel, samenvatting, omslagfoto, stops en de berekende trajecten (`legs`)
 - `photos/`: foto's, waarnaar `trip.json` verwijst als `photos/<bestand>`
 
-Stop-types: `overnachting`, `bezienswaardigheid`, `eten`, `activiteit`, `highlight` (zie `src/map.js`).
+Stop-types: `camping`, `hotel`, `bezienswaardigheid`, `eten`, `activiteit`, `highlight` en `via` (zie `src/map.js`). Een **via**-punt is op de site alleen een rood stipje op de route, zonder nummer en niet aanklikbaar.
+
+Een stop met het vinkje **Concept** wordt niet gepubliceerd; de trajecten ervoor en erna worden bij het bouwen samengevoegd. Met **🗑 Reis verwijderen** verwijder je een reis met alle stops en foto's (na een waarschuwing).
 
 De editor berekent routes bij het opslaan. Handmatig alles opnieuw berekenen (via OSRM):
 

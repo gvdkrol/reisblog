@@ -46,8 +46,11 @@
           <label>Titel<input id="f-title" /></label>
           <label>Korte omschrijving<textarea id="f-summary" rows="2"></textarea></label>
           <div class="cover-row">
-            <div id="cover" class="cover"></div>
+            <button id="cover" class="cover" type="button" title="Omslagfoto kiezen"></button>
             <label class="check"><input type="checkbox" id="f-draft" /> Concept<span class="hint">wordt niet gepubliceerd</span></label>
+          </div>
+          <div class="trip-danger">
+            <button id="delete-trip" class="btn small danger" type="button">🗑 Reis verwijderen</button>
           </div>
         </section>
 
@@ -82,6 +85,15 @@
         <button class="panel-close" id="preview-close" type="button" aria-label="Voorbeeld sluiten">×</button>
         <div class="panel-scroll" id="preview-content"></div>
       </aside>
+    </div>
+    <div class="cover-picker" id="cover-picker" role="dialog" aria-modal="true" aria-labelledby="cover-picker-title" hidden>
+      <div class="cover-picker-box">
+        <header>
+          <h3 id="cover-picker-title">Omslagfoto kiezen</h3>
+          <button class="panel-close" id="cover-picker-close" type="button" aria-label="Sluiten">×</button>
+        </header>
+        <div class="cover-picker-body" id="cover-picker-body"></div>
+      </div>
     </div>
     <iframe id="home-preview" class="home-preview" title="Voorbeeld van de homepage" hidden></iframe>
 
