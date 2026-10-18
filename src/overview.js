@@ -1,6 +1,6 @@
 import './style.css';
-import { trips, asset, home, homeAsset } from './data.js';
-import { createMap, legLatLngs, L } from './map.js';
+import { trips, asset, home, homeAsset, loadRoutes } from './data.js';
+import { createMap, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, escapeHtml } from './format.js';
 
 const embed = new URLSearchParams(location.search).has('embed');
@@ -97,14 +97,17 @@ document.getElementById('site-footer').textContent = [home.eyebrow, yearLabel].f
 const colors = ['#c2410c', '#0f766e', '#7c3aed', '#b45309', '#15803d'];
 const map = createMap('overview-map', { tiles: 'gray', scrollWheelZoom: false });
 const bounds = L.latLngBounds([]);
+// Grove routes uit een apart bestand, zodat de kaartjes hierboven daar niet op wachten.
+const routes = await loadRoutes();
 
 trips.forEach((trip, i) => {
   const color = colors[i % colors.length];
   const group = L.featureGroup().addTo(map);
+  const { route, points } = routes[trip.slug] || { route: '', points: [] };
 
-  legLatLngs(trip).forEach(({ latlngs }) => L.polyline(latlngs, { color, weight: 4, opacity: 0.9 }).addTo(group));
-  trip.visibleStops.forEach((s) =>
-    L.circleMarker([s.lat, s.lng], { radius: 5, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 }).addTo(group)
+  if (route) L.polyline(decodePolyline(route), { color, weight: 4, opacity: 0.9 }).addTo(group);
+  points.forEach((latlng) =>
+    L.circleMarker(latlng, { radius: 5, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 }).addTo(group)
   );
 
   group.bindTooltip(escapeHtml(trip.title), { sticky: true }).on('click', () => (location.href = tripUrl(trip)));

@@ -1,12 +1,12 @@
 import './style.css';
-import { getTrip, asset } from './data.js';
+import { loadTrip, asset } from './data.js';
 import { createMap, legLatLngs, stopType, isVia, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
 import { stopPanelHtml, bindPanelPhotos } from './panel.js';
 
 const params = new URLSearchParams(location.search);
 const embed = params.has('embed');
-const trip = getTrip(params.get('reis'));
+const trip = await loadTrip(params.get('reis'));
 if (embed) document.body.classList.add('embed');
 
 const $ = (id) => document.getElementById(id);

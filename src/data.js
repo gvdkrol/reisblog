@@ -1,23 +1,33 @@
 // Reizen uit content/trips/*/trip.json, aangeleverd door scripts/trips-data.mjs.
 // Vite bundelt alles bij het bouwen, dus de gepubliceerde site is volledig statisch.
 // Concepten (draft: true) zitten alleen lokaal in de lijst, niet in de build.
-import { trips as rawTrips, photos } from 'virtual:trips';
+// `trips` bevat alleen samenvattingen (voor de homepage); de volledige reis komt
+// pas binnen met loadTrip(slug), de routes voor de overzichtskaart met loadRoutes().
+import { summaries, photos as coverPhotos, loaders, loadRoutes } from 'virtual:trips';
 import { home, images as homeImages } from 'virtual:home';
 import { legInto } from './stops.js';
 
-export { home };
+export { home, loadRoutes };
 
 // URL van een afbeelding uit content/home ("images/x.webp").
 export function homeAsset(path) {
   return homeImages[path] || '';
 }
 
-export const trips = rawTrips
-  .map(enrich)
-  .sort((a, b) => (b.startDate || '').localeCompare(a.startDate || ''));
+export const trips = [...summaries].sort((a, b) => (b.startDate || '').localeCompare(a.startDate || ''));
 
-export function getTrip(slug) {
-  return trips.find((t) => t.slug === slug);
+// Foto-URL's per reis, aangevuld zodra een reis geladen is.
+const photos = { ...coverPhotos };
+
+// Volledige reis (stops, trajecten, teksten); null als de reis niet bestaat.
+export async function loadTrip(slug) {
+  const load = Object.hasOwn(loaders, slug) ? loaders[slug] : null;
+  if (!load) return null;
+  const mod = await load();
+  const trip = await mod.loadTrip();
+  if (!trip) return null;
+  for (const [path, url] of Object.entries(mod.photos)) photos[`${slug}/${path}`] = url;
+  return enrich(trip);
 }
 
 // Zet een pad uit trip.json ("photos/x.webp") om naar de URL van het gebundelde bestand.
