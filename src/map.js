@@ -1,16 +1,20 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { decodePolyline } from './polyline.js';
+import { isVia, onRoute } from './stops.js';
 
-export { decodePolyline };
+export { decodePolyline, isVia, onRoute };
 
 export const STOP_TYPES = {
   camping: { label: 'Camping', icon: '🚐', color: '#2f6f73' },
   hotel: { label: 'Hotel', icon: '🏨', color: '#1d4ed8' },
+  haven: { label: 'Haven / veerboot', icon: '⚓', color: '#0369a1' },
   bezienswaardigheid: { label: 'Bezienswaardigheid', icon: '📍', color: '#be123c' },
   eten: { label: 'Eten & drinken', icon: '🍽️', color: '#b7791f' },
   activiteit: { label: 'Activiteit', icon: '🥾', color: '#4b7a3a' },
   highlight: { label: 'Highlight', icon: '⭐', color: '#7a4bb0' },
+  // Fietstocht: eigen spoor (stop.track) als gestippelde lijn, naast de autoroute.
+  fietstocht: { label: 'Fietstocht', icon: '🚲', color: '#0e7490' },
   // Via: alleen een rood stipje op de route; niet aanklikbaar en zonder nummer.
   via: { label: 'Via (alleen punt op de route)', icon: '•', color: '#dc2626' },
 };
@@ -18,7 +22,6 @@ export const STOP_TYPES = {
 // Oude typenamen die nog in bestaande bestanden kunnen staan.
 const TYPE_ALIASES = { overnachting: 'camping' };
 
-export const isVia = (stop) => stop?.type === 'via';
 
 export function stopType(type) {
   return STOP_TYPES[TYPE_ALIASES[type] || type] || { label: 'Stop', icon: '•', color: '#555' };
@@ -49,10 +52,11 @@ export function createMap(el, { tiles = 'osm', ...options } = {}) {
 // Lijn(en) van een reis: de berekende route per traject, of een rechte lijn als die (nog) ontbreekt.
 export function legLatLngs(trip) {
   const byId = Object.fromEntries(trip.stops.map((s) => [s.id, s]));
+  const route = trip.stops.filter(onRoute); // fietstochten liggen naast de route
   const result = [];
-  for (let i = 0; i < trip.stops.length - 1; i++) {
-    const a = trip.stops[i];
-    const b = trip.stops[i + 1];
+  for (let i = 0; i < route.length - 1; i++) {
+    const a = route[i];
+    const b = route[i + 1];
     const leg = trip.legs.find((l) => l.from === a.id && l.to === b.id);
     const latlngs = leg?.polyline ? decodePolyline(leg.polyline) : [[a.lat, a.lng], [b.lat, b.lng]];
     result.push({ leg, from: byId[a.id], to: byId[b.id], latlngs, routed: !!leg?.polyline });

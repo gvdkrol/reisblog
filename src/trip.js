@@ -1,6 +1,6 @@
 import './style.css';
 import { getTrip, asset } from './data.js';
-import { createMap, legLatLngs, stopType, isVia, L } from './map.js';
+import { createMap, legLatLngs, stopType, isVia, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
 import { stopPanelHtml, bindPanelPhotos } from './panel.js';
 
@@ -40,13 +40,26 @@ const map = createMap('map');
 const legLayers = legLatLngs(trip).map(({ leg, to, latlngs, routed }) => {
   const line = L.polyline(latlngs, {
     color: '#c2410c',
-    weight: 5,
+    weight: leg?.flight ? 2.5 : 5,
     opacity: 0.85,
-    dashArray: routed ? null : '6 8',
+    dashArray: leg?.flight ? '1 9' : routed ? null : '6 8',
+    lineCap: 'round',
   }).addTo(map);
   if (leg?.polyline) line.bindTooltip(formatLeg(leg), { sticky: true, className: 'leg-tip' });
-  return { line, to };
+  return { line, to, base: leg?.flight ? 2.5 : 5 };
 });
+
+// Fietstochten: eigen spoor als gestippelde lijn.
+const tracks = new Map();
+trip.stops
+  .filter((s) => s.track)
+  .forEach((stop) => {
+    const color = stopType(stop.type).color;
+    const line = L.polyline(decodePolyline(stop.track), { color, weight: 4, opacity: 0.85, dashArray: '2 8', lineCap: 'round' })
+      .bindTooltip(`${escapeHtml(stop.name)}${Number.isFinite(stop.km) ? ` · ${formatKm(stop.km)}` : ''}`, { sticky: true, className: 'leg-tip' })
+      .addTo(map);
+    tracks.set(stop.id, line);
+  });
 
 // Via-punten: klein rood stipje op de route, alleen met de naam bij hover.
 trip.stops.filter(isVia).forEach((stop) =>
@@ -71,6 +84,7 @@ const markers = stops.map((stop, i) => {
 
 const allBounds = L.latLngBounds(trip.stops.map((s) => [s.lat, s.lng]));
 legLayers.forEach(({ line }) => allBounds.extend(line.getBounds()));
+tracks.forEach((line) => allBounds.extend(line.getBounds()));
 const fitAll = () => map.fitBounds(allBounds, { padding: [60, 60] });
 if (allBounds.isValid()) fitAll();
 else map.setView([50, 5], 5);
@@ -90,11 +104,12 @@ function openStop(i, { animate = true } = {}) {
   history.replaceState(null, '', `#stop-${stop.id}`);
 
   markers.forEach((m, j) => m.getElement()?.classList.toggle('active', j === i));
-  // Trajecten vanaf de vorige stop (eventueel via via-punten) uitlichten.
-  const from = stop.prevStop ? stop.prevStop.index : stop.index;
-  legLayers.forEach(({ line, to }) => {
+  // Trajecten vanaf de vorige stop op de route (eventueel via via-punten) uitlichten.
+  const from = stop.prevRouteStop ? stop.prevRouteStop.index : stop.index;
+  tracks.forEach((line, id) => line.setStyle({ weight: id === stop.id ? 7 : 4, opacity: id === stop.id ? 1 : 0.85 }));
+  legLayers.forEach(({ line, to, base }) => {
     const active = to.index > from && to.index <= stop.index;
-    line.setStyle({ weight: active ? 8 : 5, opacity: active ? 1 : 0.7 });
+    line.setStyle({ weight: active ? base + 3 : base, opacity: active ? 1 : 0.7 });
   });
 
   focusOn(stop, animate);
@@ -107,7 +122,8 @@ function closePanel() {
   document.body.classList.remove('panel-open');
   history.replaceState(null, '', location.pathname + location.search);
   markers.forEach((m) => m.getElement()?.classList.remove('active'));
-  legLayers.forEach(({ line }) => line.setStyle({ weight: 5, opacity: 0.85 }));
+  legLayers.forEach(({ line, base }) => line.setStyle({ weight: base, opacity: 0.85 }));
+  tracks.forEach((line) => line.setStyle({ weight: 4, opacity: 0.85 }));
 }
 
 // Stop centreren in het zichtbare deel van de kaart (naast of boven het paneel).
@@ -123,14 +139,14 @@ function focusOn(stop, animate = true) {
 
 function renderPanel(stop) {
   const photos = stop.photos || [];
-  const { prevStop, nextStop: next } = stop;
+  const { prevStop, nextStop: next, prevRouteStop } = stop;
   const content = $('panel-content');
 
   content.innerHTML = stopPanelHtml(stop, {
     photoUrl: (src) => asset(trip, src),
     day: stop.day,
     leg: stop.legIn,
-    prevStop,
+    prevStop: prevRouteStop,
   });
   content.scrollTop = 0;
   bindPanelPhotos(content, photos, { onOpen: (index) => openLightbox(photos, index) });

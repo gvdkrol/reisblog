@@ -75,6 +75,8 @@ export function editorApi({ root }) {
         date: String(s.date || ''),
         type: String(s.type || 'bezienswaardigheid'),
         ...(s.draft ? { draft: true } : {}), // concept-stop: niet publiceren
+        ...(typeof s.track === 'string' && s.track ? { track: s.track } : {}), // eigen spoor (fietstocht)
+        ...(Number.isFinite(s.km) ? { km: s.km } : {}),
         text: String(s.text || ''),
         photos: (s.photos || []).map((p) => ({ src: String(p.src), caption: String(p.caption || '') })),
         // Gekoppelde blogberichten op rondjewereld.nl (link onder het verhaal).

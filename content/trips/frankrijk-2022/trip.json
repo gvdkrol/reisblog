@@ -1,0 +1,400 @@
+{
+  "title": "Frankrijk 2022",
+  "slug": "frankrijk-2022",
+  "summary": "Langs de Loire",
+  "cover": "",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "amersfoort",
+      "name": "Amersfoort",
+      "lat": 52.19766,
+      "lng": 5.42864,
+      "date": "2022-08-21",
+      "type": "via",
+      "text": "",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "boiry-notre-dame",
+      "name": "Boiry-Notre-Dame",
+      "lat": 50.27337,
+      "lng": 2.94846,
+      "date": "2022-08-21",
+      "type": "camping",
+      "text": "1 nacht, 21–22 augustus.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "pierrefonds",
+      "name": "Pierrefonds",
+      "lat": 49.3545,
+      "lng": 2.97598,
+      "date": "2022-08-22",
+      "type": "camping",
+      "text": "2 nachten, 22–24 augustus.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-compiegne",
+      "name": "Fietstocht naar Compiègne",
+      "lat": 49.40079,
+      "lng": 2.80741,
+      "date": "2022-08-23",
+      "type": "fietstocht",
+      "track": "amflHmreQfQzJ|H`OaAlTmn@r^`Skm@erA~nD}[xt@q~Alm@y@bPZrQqJ|Kk`@poAjEnlA|Jnp@wY|x@_MaP|rGm|Pa`IrgXgAhUOte@b_@hgAzC`bA`J~^yNpTwDgDhhHg``@ijHl_`@jOoXsHgQolAej@wHyM_Psc@xBxVs@hAm@hFbH_MgIoSxH_L`a@qj@zZcb@fDq_@Ze[ki@}i@yJ`n@nIkj@_HsPbWe|@yIaIuQuQ_IoHwRaRwO{NmLeLmRoQ}Esp@bGe\\eK{MpFkCdkMqzLmfMp|LkCeArFqg@rN}Fvc@xd@pH`IhOqDdh@qA~Sx[sTo\\rCeV~BeShLkEtJTbNaB|IsLbH_Nbh@u_AfKvBbbBk}@tUqg@rz@o`Cpj@iy@fM|KxG}O??`@AqJyN",
+      "km": 46.9,
+      "text": "Fietstocht van 46,9 km, van 11:02 tot 17:41, vanaf Pierrefonds.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "samoreau",
+      "name": "Samoreau",
+      "lat": 48.42298,
+      "lng": 2.74887,
+      "date": "2022-08-24",
+      "type": "camping",
+      "text": "1 nacht, 24–25 augustus.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "vineuil",
+      "name": "Vineuil",
+      "lat": 47.60528,
+      "lng": 1.37451,
+      "date": "2022-08-25",
+      "type": "camping",
+      "text": "2 nachten, 25–27 augustus.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-cour-cheverny",
+      "name": "Fietstocht naar Cour-Cheverny",
+      "lat": 47.51153,
+      "lng": 1.5045,
+      "date": "2022-08-26",
+      "type": "fietstocht",
+      "track": "ciqaHi{kGy`@}h@klAqoBao@_fAcp@k}@c{@okAoBuWwFajCyDs}@kVwbBldAmt@~a@qDfP|]vMoL|YmYd{@eMjRsQzLfD{Eu|@jGs_@fQeP{F`MqNvDlVyRmTfRlTgRoTnUoAzOrOsaAsLnn@_@zXnCiS~FyOd[cHfJo@pVmEvoAsb@dXuK|Z?`hAzmB`GnKdaAwLjf@vNxh@mCj]qKpo@_EdIaHmGh^bArVvf@}TbVvDzdA`Vi@dwA_Qrd@~AxfAbLjKbHrJ~JhF_GfRqGjNRvR`OvVtGoMdd@eI??jK{BjFSpFtOFnk@mRzt@bAdSqd@tqAgRv_ALsPwNjZcBlc@wHta@rI{f@aU_OwLjB{OpImKd[iQle@pAtQr@~`@jApTsSr]??yFbEmj@|Y{B`QuPj]yr@bUmyAop@}T|^yYve@wq@tjAic@|u@gP`XMjDzEoL??kAqTwCkRi[icAaQg\\pLlIap@kdAyGsKa]cLr@oB",
+      "km": 61.8,
+      "text": "Fietstocht van 61,8 km, van 11:06 tot 17:52, vanaf Vineuil.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "saumur",
+      "name": "Saumur",
+      "lat": 47.25753,
+      "lng": -0.06056,
+      "date": "2022-08-27",
+      "type": "camping",
+      "text": "2 nachten, 27–29 augustus.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-montsoreau",
+      "name": "Fietstocht naar Montsoreau",
+      "lat": 47.21668,
+      "lng": 0.05672,
+      "date": "2022-08-28",
+      "type": "fietstocht",
+      "track": "}mm_HdtKw]nn@tX~\\tIuM~Oqf@rP{Z~Hs\\\\ok@zCo\\tJiJbDqQfKsd@vXixAhS{o@`FuTHiAzGkGzZspBuDtR_{CrcLr~CigLuDzQdHlGqAcW|DgQnHgYpLcNbCdQ~WvGu[o`@d]ysB~Mc_A^i@ekFp|SblFocT`EyRzLwj@??a`G`cV~_GebV{@lB{S``Aql@g\\sTlDuc@}RwMlBsN|h@yInd@JpO`DxQ_Bd`@kSlI_[rR{MdBkEnt@mD`OsChOeOhSaDzn@qRvAhCp^tAxRdCvW{H|{BoSzB_H~k@vi@fc@ck@jgCjf@fl@`R{}AkQdzAxH_HjKwAyBmnAkAlqAeJhK}W_TfJmCdO}^`Okp@wW~b@nR}VcQvW`HeP??",
+      "km": 41,
+      "text": "Fietstocht van 41 km, van 11:30 tot 17:16, vanaf Saumur.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "sainte-luce-sur-loire",
+      "name": "Sainte-Luce-sur-Loire",
+      "lat": 47.25078,
+      "lng": -1.4528,
+      "date": "2022-08-29",
+      "type": "camping",
+      "text": "2 nachten, 29–31 augustus.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-nantes",
+      "name": "Fietstocht naar Nantes",
+      "lat": 47.20632,
+      "lng": -1.56453,
+      "date": "2022-08-30",
+      "type": "fietstocht",
+      "track": "}ri_Hjt}Gvq@ls@nOp]|N`T`g@|aCdh@|aCzE`r@hL~E`WrtAqBno@dApObDf]??",
+      "km": 10.8,
+      "text": "Fietstocht van 10,8 km, van 10:51 tot 11:26, vanaf Bellevue.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-thouare-sur-loire",
+      "name": "Fietstocht naar Thouaré-sur-Loire",
+      "lat": 47.26337,
+      "lng": -1.43962,
+      "date": "2022-08-30",
+      "type": "fietstocht",
+      "track": "iec_HzspHuH~GwEoQaBgYyEcMaByR}T}o@??uA`OaH~SfJtNtEiQeB{PoC_Ik@kQj@iDdNkT`B{T_[k{B_Lsc@iEi[sh@uhC{`@au@ooAo{AoRer@akAsyAiObJlH~SyBpUaDtDdCcDbZfo@|@pl@b^qo@nGc@",
+      "km": 16,
+      "text": "Fietstocht van 16 km, van 14:29 tot 17:08, vanaf Nantes.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "saint-martin-de-re",
+      "name": "Saint-Martin-de-Ré",
+      "lat": 46.19917,
+      "lng": -1.36747,
+      "date": "2022-08-31",
+      "type": "camping",
+      "text": "2 nachten, 31 augustus – 2 september.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-le-gillieux",
+      "name": "Fietstocht naar Le Gillieux",
+      "lat": 46.24403,
+      "lng": -1.56063,
+      "date": "2022-09-01",
+      "type": "fietstocht",
+      "track": "{i~xGnmiGiMdT{AtRvDtMrYnMdWkHhJv{ArI~a@eZl`Br@fOmAbc@eFxNqTpe@an@lgB}JkN_KcKaPqJW`RgPiEeKnEe\\iEeGaHnLzEaN}KxGzK??qB~j@zJxe@bKvj@tYtFjO}BdJjh@l\\|ZqGfPne@xqAgFlb@sJpc@WvXwFfK{IxQqOdZ??|GrK{M{KqA~HuO|NkKfJ}I`DcOtXeNbHkZvy@kUwQFeXyFcRQkTwQo]fG{OuOiWiHgSeJ{CiKyEsV{V??kFwH_LiGiLrBsMk@qGyO??JD|ElM|HjPyArd@dLdJbDt^dE|Rfa@lsCuCtyAsDdV??p@hPpEuKzq@}{@hQyQlr@wq@dIuQ{Ry_@nHiXbMwFrKkN~LwR|NsKfJwDdKaNfV{`@zCwMhK{K`Ac[nJa[jFcf@}[ktAKmP_YmSeGmo@|q@g|CvRsp@gJqB{ReBtAisAtFw]R{tAqCu`@gCcjAtS}IiBmP",
+      "km": 51.5,
+      "text": "Fietstocht van 51,5 km, van 11:17 tot 16:32, vanaf Saint-Martin-de-Ré.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "saint-malo",
+      "name": "Saint-Malo",
+      "lat": 48.61498,
+      "lng": -1.98698,
+      "date": "2022-09-02",
+      "type": "camping",
+      "text": "2 nachten, 2–4 september.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-cancale",
+      "name": "Fietstocht naar Cancale",
+      "lat": 48.67554,
+      "lng": -1.85066,
+      "date": "2022-09-03",
+      "type": "fietstocht",
+      "track": "i}|gHh{iKsI}\\wWkmAyJkr@}`@ap@}MwBeRgXao@yXiVsLuMyz@oNmTyJcEpT`UlEeO`OuTsBif@uH}VfE}^nNgK{L_w@sDsZgAeXpc@w}Anf@}d@lQaAaKqpAgJ{p@Tq\\nDeUyLgb@eP_P|@ySmD}b@oFu[tAmPPnGvK~ErL]fC~Ni@sXrJt@_JfUvD~IfH``@eCrZbe@hJ|Qr@~]vSb@n]e@rX?dRt`@fm@bKbHbL`@g@fSt[lH|Rz[QhTyDnZ??jGhH`MsAlUiAfv@`~AvH|IoEbXwTfPKpbAtNF`MlHpEv_@zIfSrVxQ_@z]jA|j@wPdlA",
+      "km": 34.6,
+      "text": "Fietstocht van 34,6 km, van 13:46 tot 17:05, vanaf Saint-Malo.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-pontorson",
+      "name": "Fietstocht naar Pontorson",
+      "lat": 48.55293,
+      "lng": -1.50957,
+      "date": "2022-09-04",
+      "type": "fietstocht",
+      "track": "e|rgHttfHly@tGh`AnT|d@rWp|@o`@|x@oU~BeQq^qHi@nb@??@{@~_@q^??USwZgA",
+      "km": 10.7,
+      "text": "Fietstocht van 10,7 km, van 13:32 tot 14:53, vanaf Beauvoir.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "pontorson",
+      "name": "Pontorson",
+      "lat": 48.55782,
+      "lng": -1.51446,
+      "date": "2022-09-04",
+      "type": "camping",
+      "text": "1 nacht, 4–5 september.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "ravenoville",
+      "name": "Ravenoville",
+      "lat": 49.46614,
+      "lng": -1.23622,
+      "date": "2022-09-05",
+      "type": "camping",
+      "text": "2 nachten, 5–7 september.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "fietstocht-naar-sainte-marie-du-mont",
+      "name": "Fietstocht naar Sainte-Marie-du-Mont",
+      "lat": 49.41529,
+      "lng": -1.1761,
+      "date": "2022-09-06",
+      "type": "fietstocht",
+      "track": "oi|lHrbpF~uA{`Bfj@ac@dGmN??`ImI??|XkNjXwn@nZk\\rGw_@nfA_jAnH}CGtDc\\zPge@di@uP~ZsB`Ps`@pf@yFlKsHdV_e@dZcBtO}fBraB",
+      "km": 14.5,
+      "text": "Fietstocht van 14,5 km, van 09:35 tot 10:37, vanaf Ravenoville.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "les-loges",
+      "name": "Les Loges",
+      "lat": 49.69872,
+      "lng": 0.27576,
+      "date": "2022-09-07",
+      "type": "camping",
+      "text": "1 nacht, 7–8 september.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "boiry-notre-dame-2",
+      "name": "Boiry-Notre-Dame",
+      "lat": 50.27337,
+      "lng": 2.94846,
+      "date": "2022-09-08",
+      "type": "camping",
+      "text": "1 nacht, 8–9 september.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "amersfoort-2",
+      "name": "Amersfoort",
+      "lat": 52.19766,
+      "lng": 5.42864,
+      "date": "2022-09-09",
+      "type": "via",
+      "text": "",
+      "photos": [],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "amersfoort",
+      "to": "boiry-notre-dame",
+      "key": "52.19766,5.42864;50.27337,2.94846",
+      "km": 341.2,
+      "minutes": 287,
+      "polyline": "kzq}H_hc`@?Kxn@_g@aj@}Os}@qyBr~L|iKhdExg]zoA|wMbwLzhFxyHpfEdzBnlMnkRfrKpbErho@rrGduG~AxUvFzs@prFvwBfjA`ChqEuwCsFpLbxD{hDrvA_KlsGeqFdfPwnC`fB~\\uAuAyBe[lC~ZzuE|_Bt}Nd_KzyLd|R~iGxrLxTb~HzuKfOlZrlHqYpy@mt@frHtqEdpQrrB~rAp{BtnMppJb_]~\\pbIgBobBpvFbeg@hgF~fGv{C~tS~yIr`UftI~kNpzFprTfsCnoJoWwp@A?bAvCxG`JjcFrmPtg@jbAxfDhxCzjDlj@psA~j@htD_KveDj~DhNfBzd@mOpObMdZlBbqAcyBjRcKdTBlhJf~HhuDzpCjeCnzFzeGbmBtpAej@pXbHiWpxQtHm^gNtbBrXrnB}JxN_{@lQqu@hvAmGzbDtDxa@p}@f`Cpd@reMqB|[juEmdF|DhUi@d`@tqAebCyuAvyDpCuJu@}u@d@mt@~e@wMlMzC|ZwHnQsNdR~VrtHqqAdl@sQ|JwYtl@clAjVcKnVgd@xOeItw@xE~Cm^`GaMjHmPlH_`@rb@c`@vO|CfOmcAhX}aB`pBqkM_b@owBqe@kgAiTowAoAM^P",
+      "source": "google-timeline"
+    },
+    {
+      "from": "boiry-notre-dame",
+      "to": "pierrefonds",
+      "key": "50.27337,2.94846;49.3545,2.97598",
+      "km": 125.5,
+      "minutes": 128,
+      "polyline": "q_zqH{z~P}A}DpHdWdFhXl}@mQveAhj@hQea@nIxQdJgEhf@`Ap^oPdVfAjQ{J`p@}JpHeIx]sDnnBnnCc@uZrlA|oC~{@nQrmAnqAnMl@bmCf`AxkAxqAx|@vo@zT_`@vq@_f@vqM}oA~yMlbEbqH`c@xwMtmCfuMlwEtlNfzBnkNb~B`sLl{De@fe@dsHcbG~{@kh@dAm`@~D{`@jqB}jCjnAknBtGeVzk@w_@`IvLbR`r@gRnkB|iA~rA~AsWkA`IcEtQnEyWZ|MwMnT`Lo`Av@}WuEqSix@k{ByJqn@qB{TdGcTaKlLkGkMd^`@hOvV`B}k@inCscApkBjmBnBs]d[x`@{h@gPvQeGbVlXiT_m@z@xS{GpKoO\\t@eFjPcEdo@{t@ra@`FjFgVfk@}cE~~DgtL|Eep@rgAu{C??a@q@",
+      "source": "google-timeline"
+    },
+    {
+      "from": "pierrefonds",
+      "to": "samoreau",
+      "key": "49.3545,2.97598;48.42298,2.74887",
+      "km": 144.4,
+      "minutes": 139,
+      "polyline": "spflH{fdQtD}EdNcVvVgPtWwRrp@yM~v@yfBvd@qj@tEeOl@ucCnIyKvUyGbHoJr@kSpXuFdc@mh@|TbGnJ}IbgAyvCh}Aus@pMpAvS|QtiA~rBjb@h|Cn\\b\\lL~}@tBttA`eBx~F~v@zv@jm@hyCpoAfyB`~DxaJr`@`d@t{@rvDfIlfBzKn\\~ObRv{@|SdrCxfEze@`~Bn`KhuJ`bIf{LzvAhlEkF}PtrBs_Ghg@eYv`Gyr@tP{MfsAodDz|Ca^tlBnx@bmBaRfQvkFsDdUBxRdq@h]xQoCzNkQ|Rao@bPiQxUiCjsEnpBvwG~]_i@k\\pp@n|@xc@bWbkBbCdQ|N|sA_HnfAmsA|eCk[|uBeyAx_Mi}AhcAuZeAfY`TvN~QyBzw@qaAlOo@xPiQtJzBlXjKlp@mF??dBkAp|E}fAps@ajApfFkrAlpAojBbN}EhM~HxRiv@hIsFwAmH|T^ePuCrGd@C~p@bDjU{Hj`@db@bcBnIkEzQgXzDeQScFdPee@dAhiAaDkb@gR`Bxf@|b@mJ_KlqE`HaeFi~@_@rRst@ci@mGkkC~lA|tA~ZrfCq\\keA_M|c@aBwCgE{Mgs@{{@mh@_jCmE_UsUeUsRsY}PcDOkS`HoV|ZTpFrEiJiFvFtL",
+      "source": "google-timeline"
+    },
+    {
+      "from": "samoreau",
+      "to": "vineuil",
+      "key": "48.42298,2.74887;47.60528,1.37451",
+      "km": 188.5,
+      "minutes": 135,
+      "polyline": "srpfHm{wOzb@kk@gc@jk@uGei@`Hf\\h@pQpa@_q@cc@nk@`GgKdKuSwZbRnFvLtBsEub@oFqHvWPzWrUp@|DvMz\\zYh^cV|jBqnC`gChwCxg@frBz`@xcBnDbjA||AyXttH~hB|z@eIv@u]pmIelLzmCw~BnzG|bArsCvaCfiA``D`wLt}G]hj@uIdHqKsEw}DhyPtkAdyVwmAtxGeq@h_Nsz@nfW{Xz~Ede@~tEzjBxgE~EnoBmf@baHjqGlkRbcAd_Pn_@~tA~SnBh`KccCrgK`z@dh@pDrQzRpJf\\bh@r_Mn_I|`QrqJn{NdkInuPllHthQjyIvfKfBtOxo@gIni@vo@x|@k`ApYaEnc@mk@gK_JodAogBkLcFqC^p]qAaP|OlXegA}Npk@_I|ZsFeLrPwMwOhPt_@{|@qXfgAeIcDjV`fDcLcaD}An@",
+      "source": "google-timeline"
+    },
+    {
+      "from": "vineuil",
+      "to": "saumur",
+      "key": "47.60528,1.37451;47.25753,-0.06056",
+      "km": 151.5,
+      "minutes": 177,
+      "polyline": "_|paHumkGbBkAsb@hj@zb@oi@EFyd@ry@pTqfAlWnGpz@t~AbKhH~HzQbG~\\n|@lBpStVtVlGnNd[bGxfAjFlQ}l@xFm]~\\yNmVuIrBxCtS??mGzKiUuEqSwYmQrEkTqLsDkYk^rAkb@{p@tB_^te@}m@km@vt@}WcNaTi[cZfAeYhGbLvE~XboUb{AvzTz~GvgQbfAjoFdRwC~H|H~JCfScIr}GgqCrpCpAxj@uTr`Eje@xUpfAzo@pgAdeBnuLtG|qIjg@f~Buw@v`EmGlS`Zrt@}AtQ|OlTniBbc@|EzdJjc@jgCtDh_DhP|FtS|pCp@p~AdrAt`K``@rgD`q@zyFjEpPoGk]??uiGixGpgGljGjNqJ|@`RePsHv@dL~BdS|_BtuEtJzFuXy`@ci@jyDdDpQbY[f^f_FfMnb@lCpOxVb}Arc@nbC|IxPbb@l}@r_B|}CppB|qDdmAzfHtn@hnCt~@n{EaDp`CaJhk@XlStGreD~d@`hBpA`]rI`d@lBlWp^v_IghC`rK{Flh@}KltAeZzr@wIxe@a_@j|@oKr}@mJlU~K`FlIkHrK{M??lIyMzKqQz@cF",
+      "source": "google-timeline"
+    },
+    {
+      "from": "saumur",
+      "to": "sainte-luce-sur-loire",
+      "key": "47.25753,-0.06056;47.25078,-1.4528",
+      "km": 177.1,
+      "minutes": 173,
+      "polyline": "q~l_HnyJw@bFuIdIeE~Mu^te@pYf]xfAutCbHrJzL{NtyA}eBvlAuw@fSu[jh@sXh]ob@jMM~KyG|GmMbXg_Azg@epCtRy_@zQ}rAx`@uKoBwUqHoNwNfJwa@QuNhM~^bWnKJ|JaFkHed@??oPMbT_AoLvN`NmX{QnT|NqJ_B|IjDtN}LbS_NcC_TaUs_Asa@_MjKkz@cB{_@{[gX~dAuwAsf@wLmAcKwKkQuDw{@~^kvEaz@gcAniI_q@v_FiR~Bg\\zNuNvNutAtDwd@|h@akA|mDohB~kAwgBfXmg@`s@{tApoCgxA|s@_kCvvGqi@t\\g}CrlA_{AnkEqc@fwGmrGj|Iwa@`yAgOdMw@zQhjAbRze@nl@zf@`|JmDfhBxYr~@n`@ph@nv@x`FgA~`@yDbPW~eBf_A|bDjBf]{A~Z{ItVwNfPsJnYIt\\~m@r~C]|^wZv|A`^pfH`kGlgMhoAbkOyRhxF`_A~uIuFrlC~~@thNmC|lUtmB~aNr{A`|IlpAneC~lEbtSpy@x}BfmCtpBrbB`wGD~gAlUpZb_FeBqC}OsHaVgRcz@dBiVzYo^hIcBcl@fVbq@y[m@t@",
+      "source": "google-timeline"
+    },
+    {
+      "from": "sainte-luce-sur-loire",
+      "to": "saint-martin-de-re",
+      "key": "47.25078,-1.4528;46.19917,-1.36747",
+      "km": 161.4,
+      "minutes": 141,
+      "polyline": "ktk_H~vzGNi@xh@x~B}g@g|BrNc`AoO|}@iqCylBhqCxlBzBuBgt@|b@u^k`A??rD_Cd\\js@vHtsAlZby@hu@mKbn@lc@tBgTf`@gu@|PkCf|Ah~AzOdEjnAbAr|BliCvl@rc@qOdSrmEeZhiH{bIl~G_pH|sL{dGfaLu}Hn~DwdEfjCer@p}@{fBnc@s~C~aLgnIbkHybDbiLuLriJgwB|jCc}B~KbNhBKhAyMjFeNhsEwnEvT^~TgUdvFxfEnxAvSdw@{O`aFuiAl]kb@jj@nbAxdHucAjMsJbuGos@n|AlQjc@vWbsB}g@`iA{qAfvCiAb_@bVdy@rpHrMrPtJvEzm@hFnk@ru@``@vA~zBjn@hGxSrh@fi@tUbCj{@`eFg[vsChi@~pEdx@doB|M`Cng@lw@{Jvl@wG`z@lCbfBuIvh@uyErcEyTxA}Zzq@mDtUG|R_Oda@|Hf@kk@pFpp@{D",
+      "source": "google-timeline"
+    },
+    {
+      "from": "saint-martin-de-re",
+      "to": "saint-malo",
+      "key": "46.19917,-1.36747;48.61498,-1.98698",
+      "km": 336.2,
+      "minutes": 265,
+      "polyline": "yg~xGtajGMqB_BqQfEiQbC{d@o@iCnFiJ|Tkc@nVuBv}@ykArvCasBbNqfAyAyeB`P_dAwf@w_AyNcDkOel@knAubEj@k`CfV}pAyn@{gFeEwSwd@gDg\\w]eNs\\i|Bml@ePdBcOyGif@kq@ww@qLsLaJmh@sgG_Yev@au@_Xg_CfLqjBvfBemAtOcp@}[enIba@uk@tT}|Gd_Ayj@kfAcn@hq@_qGvpAgbAuKgbGypE{YvVeRaNiGzQsiKpdJczMfoB}iMx}@omLhaIefBbyAyoAx{FosAldAou@xDy@}CcKw@lP~BbAqGiOtA_IvOobD`kCiaH~xGiwB~q@axC|_CqxK`uF}bJftLgkDriCiaE{@}tConDkz@}F}NjEmPuCuvAs{AuMeC{LnGq_@ln@cMdBwq@qPq_GhWcY}W[b^L~zAhTz}@faAtrA`NxbCcBzk@bp@tsB`Fl|BgcH`}Ig_HzzAui@}Wyc@om@kk@gMo}FeKseA}Ou~LfDugI}b@geA~FajFag@y|Gx}EcgGvqF{yJfnAqtBql@u]_l@otCgeAawDrEytArd@ufLivAeaBik@iLcN{Ima@uQuBqAzA_ItL`TuJuKoArAw@yM_OiDhYjEdTesIjrCicMqjBgrBySzOjjBwG~UggCn}BihBdXmRcDo`BqnBmL}i@ujDziBezIhbFqsCt_BklFfnFwg@fUadGhlI}yDj`Bq{Db|EwVpHiwAeUwhDlbBny@u{@ghB`dAanHwtBooKbnCqc@oUmPlIsrA`kC_zChzC{J}NoVwFsU`aAoGfObCbMo@~OlAoH",
+      "source": "google-timeline"
+    },
+    {
+      "from": "saint-malo",
+      "to": "pontorson",
+      "key": "48.61498,-1.98698;48.55782,-1.51446",
+      "km": 41.6,
+      "minutes": 36,
+      "polyline": "sbvgHracK]~A_DqZvJsSbOiy@f[~FvMr]vBsStlF{fHhOkAjc@zUpsAud@~AiVcZamTmbAuyTsq@wiUja@ysHhHwZbS_XdQor@jFaPiT_RwGvEaFrLipJeVzsJ`S",
+      "source": "google-timeline"
+    },
+    {
+      "from": "pontorson",
+      "to": "ravenoville",
+      "key": "48.55782,-1.51446;49.46614,-1.23622",
+      "km": 191.4,
+      "minutes": 194,
+      "polyline": "k}jgHjxfHcA^?ya@sEaFxG~`@iHw_@u@{BnJjJpScPVcl@_mE}dM_oDsaK}aBy{C}oAnYqeAneAwXlt@oz@zp@ojBfNgs@}eCi{DymGcFu[_X_m@yj@mQ}bAyqAguDit@mbAqo@wkGy}B{cAn\\sWeLobAw|C{rCkeMqrGm`MifAsm@ip@ycDcXcx@KgrBa}DynKiGbKer@f^{cA~E}lBrv@aV~\\_e@|vAuaBn|AydAdIi_Hb~IgMhGcOdTgeAniB{VcU`JtYe_@o`AaKBcPpNmJgF{_B{nCymD}`BubFb~@RiPyZpCsu@mSqm@o{BoGo_B}IaOix@~DwfAyq@uf@g_Aq^seAcbBymA{NvBkcCgmBcGiMgGuz@_GsgArJwe@mHqb@}K_NmP@gYaYyXgBuzAoFalAiaA}eAar@vHqa@|v@egBlAySuCaB~~@|u@i~@iv@pE~L|@eHyd@cSaNh@aKgG??yLfHj]jw@g^qXbB{KbIoXhQ[`QvFrTpIzLmE_Jud@sJ}gChD}X`KsCbo@j[ruBoAzx@`_@m|BjaL}nAbzKpQ|~A|D`aCvJrdAw^`~AjLdoD~rBn~ErkAbw@`P|w@vQb~RylFbjKocC~p@gdArpAgqEdxBcNfMohAwW}V{V_zAoaCiKwBgbAynBiRlFgDc`@w_Ae_AgWg{@db@ow@??~E`OuA_J",
+      "source": "google-timeline"
+    },
+    {
+      "from": "ravenoville",
+      "to": "les-loges",
+      "key": "49.46614,-1.23622;49.69872,0.27576",
+      "km": 223.1,
+      "minutes": 194,
+      "polyline": "kj|lHjmpFw\\vy@f^mp@eBgMid@tt@gmBdlBxaAl{EaHjE`KaG??tJfNfLfCzPbu@}B~^mEddBoOdKpIvXvRfO_Dl]hFfWnYtSbKxXeDlNdFxVfsHgkF|k@aHvQsRjXcx@h{D}qBt\\qp@bxCueArbFiyJyOciSiWw|@c`Aui@skAseDqRsQeYcs@sI}nDn^e|Ayb@yyHnaDa~Sx{AazF~RkbBb_CcuIdU{Pj{AmYt_@_n@tOocAhIivDvNqcA}SeuDzaCquLj^ip@|pDcoPpn@{wI{_@i}DiAiuAqb@inAuDir@f`@ugBdpB{sBzjAyvDgLqhM}j@i_Bi}CaxDglDeeRw{BayQ`WciDinBomTsnAi}EcwAur@qj@avAsp@wsNuvAozBwc@`aByNhkCshBlcIyd@nj@go@bK__Aag@etCslFuWwK}WvDuwBiwAs_F`TolA{Ie{Av_Am}Am`@oVcv@wSeN}cHc|ImIuFr^`AiCtYyJg@a]bUqzB`vFqVjSsLfa@gYlj@a_@`CcZvi@wgBkpCgr@bx@su@ry@qrApYwH~H}cCjfDeLrBcZeKcr@tR{U~t@y\\xR_EfTa\\cE}g@`i@bT{ShSx[n\\vOdK_AnJeHzJ@??r@vLpAbV_Bza@wlAmPea@p]iNm@kM{MaFeMqCsPb]{v@bKu_EpA}s@kBk\\`De~AtCj@rBB",
+      "source": "google-timeline"
+    },
+    {
+      "from": "les-loges",
+      "to": "boiry-notre-dame-2",
+      "key": "49.69872,0.27576;50.27337,2.94846",
+      "km": 281.7,
+      "minutes": 212,
+      "polyline": "_xinHozt@uDUeQzmJu^f{@pM|_@|KzKBR?SpUmCbTcU|aA`BrnBlu@|Uai@x_AwfA|jAy]|HkSkUatG`JyKsHcZ??zBnP@uDsFoTaVsnGyIwNuB_p@nMwwChv@jOpEslAwTozAlzAkkCz|DagCvV}d@n}@auBvE`g@}yBgbC}QibAt@k`Dc`AuzDcx@w}Lcd@iaB{lA_sVw^ygHyaAawCA_mA`_@}lCicAglPtS{hA~tAy`Cfv@idO~c@wbPo_BocT}PokCwKiUg`@}[aIu[aAmhBcXijAgt@gjAsq@cyCocEkwFuZgyDoXybAiXkqCgmAofCw_C}lB~dCuiLIkaAsg@ukCzTmtFgaC}tMqIsTAQEWkKgCygAmfAalEkiTs|@gcNbo@oxRyeEqbPiWsmHm~DeyJmA_`@vJ{r@vsA{Nfx@u`ApZoeAwaAweCt@mlI~a@caBuDmtCk|@iiBnA}TjLoRdFeiRnVc|JiZorHjc@akHin@s}Ejr@ihM_]icF~n@snDzIaLyV{XSkhBy{L_wBguF{`@qnK{kDeyNnpAwyNgEatI~kBcuAmc@gPwJkN}Hk`@{SiKaHlEng@leA{zFiLkg@u`@nt@j_@cq@fKdb@|w@gwEiMkBaTuDyl@i^sx@lRyG{`@??}FwLlAnB",
+      "source": "google-timeline"
+    },
+    {
+      "from": "boiry-notre-dame-2",
+      "to": "amersfoort-2",
+      "key": "50.27337,2.94846;52.19766,5.42864",
+      "km": 318.5,
+      "minutes": 292,
+      "polyline": "q_zqH{z~P_AuoC_C~iC~B_jCOjlCNklCKflCvBdBbDlO}]iEua@ml@mi@_]uRmAcLsGki@fp@mKcAsVvNpB~g@{D_S{U`f@gNdf@rCb]_JhImiAaPc_@b@qMmI`@zk@_`IeyI{lFiWc|CrtAclFs~Ac~DwzHamJ{aHaaCmzB}_@^a}An|BwOtFyYyR_m@|KskDo|DqyEdA_aGgdBozCkcDchF{xPopGonSypFm{SiuJwzMemFaqRcgAuzL{dF{pEwqDqcSqsBsmVuc@qlGmbHs`Mg\\caEwaComRqcEaoNwAcBkRy^pNvQzAxCeGuK_{Bg}Ek|@qnCmEye@tCsYl|AkoBpy@m{EmNi`B{Uqa@a`CkdBcSkAkhBrpCqtBCup@gx@{YyhD~DerCwe@mvAoqHkmOq~IymMc|Fm~GydHc~BoqAec@qkAmh@ssAc_@_}@cHas@[oL_NsOs{CikAwqEchAyuDhI|XkPds@ovEsMayHkcJswHeH}[wGupEwu@caCudDi|D_h@ooC_Xo}I}uCe{F{mCgmHqcEeh@aq@c]yyIwtCknE_bK_uEobDep@eoAmpAev@mMcIeYuDmkEaJm\\ya@qj@sJq[yvAaiR_uBmaOqvB}tBsqBsr@qCsYnD_XvH_SgNwGmb@tSiGdNaR{QqWoMw{@hj@mGfR??rC_C",
+      "source": "google-timeline"
+    }
+  ]
+}

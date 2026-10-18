@@ -1,0 +1,123 @@
+{
+  "title": "Verenigde Arabische Emiraten 2018",
+  "slug": "verenigde-arabische-emiraten-2018",
+  "summary": "Van 27 december tot 12 januari 2019.",
+  "cover": "",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "lat": 25.26623,
+      "lng": 55.32573,
+      "date": "2018-12-28",
+      "type": "hotel",
+      "text": "5 nachten, 28 december – 2 januari.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "hatta",
+      "name": "Hatta",
+      "lat": 24.82046,
+      "lng": 56.13568,
+      "date": "2019-01-04",
+      "type": "hotel",
+      "text": "1 nacht, 4–5 januari.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "central-district",
+      "name": "Central District",
+      "lat": 24.22474,
+      "lng": 55.7831,
+      "date": "2019-01-05",
+      "type": "hotel",
+      "text": "2 nachten, 5–7 januari.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "abu-dhabi",
+      "name": "Abu Dhabi",
+      "lat": 24.50069,
+      "lng": 54.3684,
+      "date": "2019-01-07",
+      "type": "hotel",
+      "text": "3 nachten, 7–10 januari.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "al-thanyah-5",
+      "name": "Al Thanyah 5",
+      "lat": 25.06933,
+      "lng": 55.12802,
+      "date": "2019-01-10",
+      "type": "hotel",
+      "text": "1 nacht, 10–11 januari.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "dubai-2",
+      "name": "Dubai",
+      "lat": 25.25669,
+      "lng": 55.36432,
+      "date": "2019-01-11",
+      "type": "hotel",
+      "text": "1 nacht, 11–12 januari.",
+      "photos": [],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "dubai",
+      "to": "hatta",
+      "key": "25.26623,55.32573;24.82046,56.13568",
+      "km": 289.2,
+      "minutes": 623,
+      "polyline": "}xeyCyxtpImb}@c_hEe{AhgEkPdgDaa@cd@vy@ao@oS_Wj`BusFnP{IuHsEl@Gtk[|Gwk[_Hnqv@p|@??Bc@sqv@k{@wmBrrJ|^hqCtAcLoTfq@dAq]eAp]pJoh@uW}lClyBu~IwJeSAGs@r@zh@`b@pzKqfAh}gAnsCbe}@xnf@??_B}@bVvP`d@lPxgAt|At`AdA~YcH_ZbHmMuGmsDu`CdzE~tC??gAyDaUyD`UxDaUyDybAaaB}zB}rAv\\kdB{_@~oChFfFmHnFPwGaBS",
+      "source": "google-timeline"
+    },
+    {
+      "from": "hatta",
+      "to": "central-district",
+      "key": "24.82046,56.13568;24.22474,55.7831",
+      "km": 78.4,
+      "minutes": 170,
+      "polyline": "{vnvC__suIxDdDbIvLke@d{A}IdRwHhJdsvBledAuOu`Ba[k]`JnRsCaY??uAaMgTcCLJ",
+      "source": "google-timeline"
+    },
+    {
+      "from": "central-district",
+      "to": "abu-dhabi",
+      "key": "24.22474,55.7831;24.50069,54.3684",
+      "km": 159.3,
+      "minutes": 272,
+      "polyline": "skzrCkcnsI~D~@`JjUaJkUxLd`@yLe`@fNxmAsTxIoEl]nFx{DnvFrrRhu@vtCu~y@rlxFlRn{@??oQi{@fQt{@GWrC_K~Qq{AoqDovDuBeEDbE",
+      "source": "google-timeline"
+    },
+    {
+      "from": "abu-dhabi",
+      "to": "al-thanyah-5",
+      "key": "24.50069,54.3684;25.06933,55.12802",
+      "km": 170.4,
+      "minutes": 253,
+      "polyline": "ihptCoyyjIxCQqDhLuI_n@rt@cAxwKgy_@gmhB_qwDjIjeE??T]exQ`d_@_g@fz^??ol@{Rnl@zRml@}Rll@|Rkl@_Sjl@~Ryk@oTxk@nTel@eSdl@dSuq@mz@`q@ty@",
+      "source": "google-timeline"
+    },
+    {
+      "from": "al-thanyah-5",
+      "to": "dubai-2",
+      "key": "25.06933,55.12802;25.25669,55.36432",
+      "km": 81,
+      "minutes": 391,
+      "polyline": "ij_xCcenoIJJeJcQfJbQlF{NiFyR@`c@a@ag@`@`g@\\cv@]bv@cyKwdP{zLc~GmLy@qEtI{@^zH}E|OkEeNDS{KmCfQ?HjAkKpN~CjrYxhYqr`@srZlFyNfmP|oMr~D~~Kwf@rlAsTdPqj@s_AaTcfAh{AwkBgwA~xChc@j{@ds@gvE}k@pzEzPnT`ZkRdw@cbBfsFk{@tz@vnA{RrGbIdP??XR}IyP|GnOvBm\\fJwI{hb@qsi@efA~bA|O{iC",
+      "source": "google-timeline"
+    }
+  ]
+}

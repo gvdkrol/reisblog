@@ -1,6 +1,7 @@
 import '../style.css';
 import './admin.css';
-import { createMap, stopType, STOP_TYPES, decodePolyline, isVia, L } from '../map.js';
+import { createMap, stopType, STOP_TYPES, decodePolyline, isVia, onRoute, L } from '../map.js';
+import { legInto } from '../stops.js';
 import { slugify } from '../slugify.js';
 import { formatDate, formatKm, formatDuration, formatLeg, escapeHtml as esc } from '../format.js';
 import { stopPanelHtml, bindPanelPhotos } from '../panel.js';
@@ -46,8 +47,9 @@ function updateStats() {
   if (!trip) return ($('stats').textContent = '');
   const legs = new Map(trip.legs.map((l) => [l.key, l]));
   let km = 0, minutes = 0, missing = 0;
-  trip.stops.forEach((a, i) => {
-    const b = trip.stops[i + 1];
+  const route = trip.stops.filter(onRoute); // fietstochten liggen naast de route
+  route.forEach((a, i) => {
+    const b = route[i + 1];
     if (!b) return;
     const leg = legs.get(legKey(a, b));
     if (leg?.polyline) { km += leg.km; minutes += leg.minutes || 0; } else missing++;
@@ -425,14 +427,16 @@ function renderPreview() {
   }
   const i = trip.stops.indexOf(stop);
   const first = trip.stops[0]?.date;
-  const prevStop = trip.stops[i - 1];
+  const byId = Object.fromEntries(trip.stops.map((s) => [s.id, s]));
+  const currentLegs = trip.legs.filter((l) => byId[l.from] && byId[l.to] && l.key === legKey(byId[l.from], byId[l.to]));
+  const into = legInto(trip.stops, currentLegs, stop);
   const content = $('preview-content');
   const scroll = content.scrollTop;
   content.innerHTML = stopPanelHtml(stop, {
     photoUrl,
     day: first && stop.date ? Math.round((Date.parse(stop.date) - Date.parse(first)) / 86400000) + 1 : null,
-    leg: prevStop ? trip.legs.find((l) => l.key === legKey(prevStop, stop)) : null,
-    prevStop,
+    leg: into?.leg,
+    prevStop: into?.from,
   });
   content.scrollTop = scroll; // tijdens het typen niet terugspringen
   bindPanelPhotos(content, stop.photos);
@@ -703,12 +707,13 @@ function renderMap() {
   if (!trip) return;
   const legs = new Map(trip.legs.map((l) => [l.key, l]));
 
-  trip.stops.forEach((a, i) => {
-    const b = trip.stops[i + 1];
+  const route = trip.stops.filter(onRoute); // fietstochten liggen naast de route
+  route.forEach((a, i) => {
+    const b = route[i + 1];
     if (!b) return;
     const leg = legs.get(legKey(a, b));
     if (leg?.polyline) {
-      L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', weight: 5, opacity: 0.85 })
+      L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', weight: leg.flight ? 2.5 : 5, opacity: 0.85, dashArray: leg.flight ? '1 9' : null, lineCap: 'round' })
         .bindTooltip(formatLeg(leg), { sticky: true })
         .addTo(routeLayer);
     } else {
@@ -717,6 +722,14 @@ function renderMap() {
         .addTo(routeLayer);
     }
   });
+
+  trip.stops
+    .filter((stop) => stop.track)
+    .forEach((stop) =>
+      L.polyline(decodePolyline(stop.track), { color: stopType(stop.type).color, weight: 4, opacity: 0.85, dashArray: '2 8', lineCap: 'round' })
+        .bindTooltip(`${esc(stop.name)}${Number.isFinite(stop.km) ? ` · ${formatKm(stop.km)}` : ''}`, { sticky: true })
+        .addTo(routeLayer)
+    );
 
   trip.stops.forEach((stop) => {
     const t = stopType(stop.type);

@@ -15,6 +15,7 @@ export function formatRange(from, to) {
   if (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth()) {
     return `${a.getDate()} – ${dayMonthYear.format(b)}`;
   }
+  if (a.getFullYear() !== b.getFullYear()) return `${dayMonthYear.format(a)} – ${dayMonthYear.format(b)}`;
   return `${dayMonth.format(a)} – ${dayMonthYear.format(b)}`;
 }
 

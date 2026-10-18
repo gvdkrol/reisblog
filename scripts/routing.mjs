@@ -2,6 +2,8 @@
 // Elk traject krijgt een `key` met de coördinaten van begin en eind, zodat
 // ongewijzigde trajecten bij opnieuw opslaan niet opnieuw berekend hoeven te worden.
 
+import { onRoute } from '../src/stops.js';
+
 const OSRM = 'https://router.project-osrm.org/route/v1';
 
 export const legKey = (a, b) => `${a.lat},${a.lng};${b.lat},${b.lng}`;
@@ -31,9 +33,10 @@ export async function routeLegs(trip, { force = false } = {}) {
   const legs = [];
   const warnings = [];
 
-  for (let i = 0; i < trip.stops.length - 1; i++) {
-    const a = trip.stops[i];
-    const b = trip.stops[i + 1];
+  const route = trip.stops.filter(onRoute); // fietstochten liggen naast de route
+  for (let i = 0; i < route.length - 1; i++) {
+    const a = route[i];
+    const b = route[i + 1];
     const cached = !force && cache.get(legKey(a, b));
     if (cached) {
       legs.push({ ...cached, from: a.id, to: b.id });

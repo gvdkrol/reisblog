@@ -1,0 +1,83 @@
+{
+  "title": "Marokko 2018",
+  "slug": "marokko-2018",
+  "summary": "RoadTrip door Marokko",
+  "cover": "",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "marrakesh",
+      "name": "Marrakesh",
+      "lat": 31.62328,
+      "lng": -7.98809,
+      "date": "2018-03-03",
+      "type": "hotel",
+      "text": "3 nachten, 3–6 maart.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "ifraden",
+      "name": "Ifraden",
+      "lat": 30.54008,
+      "lng": -9.69962,
+      "date": "2018-03-06",
+      "type": "hotel",
+      "text": "3 nachten, 6–9 maart.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "essaouira",
+      "name": "Essaouira",
+      "lat": 31.50857,
+      "lng": -9.76631,
+      "date": "2018-03-09",
+      "type": "hotel",
+      "text": "1 nacht, 9–10 maart.",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "mechouar-kasbah",
+      "name": "Mechouar Kasbah",
+      "lat": 31.5946,
+      "lng": -7.98965,
+      "date": "2018-03-10",
+      "type": "hotel",
+      "text": "1 nacht, 10–11 maart.",
+      "photos": [],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "marrakesh",
+      "to": "ifraden",
+      "key": "31.62328,-7.98809;30.54008,-9.69962",
+      "km": 259.2,
+      "minutes": 331,
+      "polyline": "ol_`Epdwo@??dwCtrF|KcFiLg`@ed@yx@aiCfvAoBz_C}@xdBsBpaEc@pm@{zE`Zq}AvjK_R`{Ah@~pDnVnl@siAp}HbjmDlbgDtn`@tdg@lO`Rf`SafChaShxNp|BtqIvkAdeGbEhgAeoBzrC_IzLqAhb@hBnbC~CtwCkW~Xwj@t_AqXlMwv@tmB~BngAwXnSe]`r@}M~FuNd@mj@xh@aP|g@gnFxzAkd@bZuRmLs[uLsRdC_Efe@{mAds@cH|Gmh@vC_HlLiOjGqPfBcIhMsKzAgIpIwBpR??yBjA",
+      "source": "google-timeline"
+    },
+    {
+      "from": "ifraden",
+      "to": "essaouira",
+      "key": "30.54008,-9.69962;31.50857,-9.76631",
+      "km": 116,
+      "minutes": 189,
+      "polyline": "ozkyDrmez@hCRJaMmQ_OiN|ByJpNnB~c@nM~NmGhLyFle@{DjNjDnn@qJrMwH`^kIpa@af@vJ{K|F}eAhWaTxKsGh\\oTrK}H`GiusA_tNosqAhkIcg@vRwQcCcz@xkCzDjSaVfYk_@wBmUoFsp@fHsYqDegAf`@mTwBwHqJgs@xIiKfF??wGfH",
+      "source": "google-timeline"
+    },
+    {
+      "from": "essaouira",
+      "to": "mechouar-kasbah",
+      "key": "31.50857,-9.76631;31.5946,-7.98965",
+      "km": 194.3,
+      "minutes": 343,
+      "polyline": "q_i_Elnrz@jCoBwIrJzJmTnQwA|p@gIzFwQsKmi@hIo\\z`@e]a@kOsd@ci@gDaNb]{r@Lmi@epI{obAuK_tCy_AsrCmM}hDylDugIaXgt@iNmpNyBwU`v@grM~f@guJ~bDajb@rVkzQ~UiI|hCv[haFwuFvRgi@d_@_QzGoIlb@dAopA_vCoAulAwcOwjk@{e@qRy~BugDeO{GDpZo|Ecd]zTctN|LclJhCo`FVyMAqy@`AimAXku@tAoe@Po`@yQg`Azj@s^nXiP~PoJfKt@~H_O|K}Gdc@qVjw@gd@zTeMmNlDxTl{@uXnPmL`GyS[wUl[l|@y|BaA_B",
+      "source": "google-timeline"
+    }
+  ]
+}

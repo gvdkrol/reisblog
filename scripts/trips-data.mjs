@@ -16,6 +16,7 @@ import { join } from 'node:path';
 import { DEFAULT_HOME } from './editor-api.mjs';
 import { legKey } from './routing.mjs';
 import { decodePolyline, encodePolyline } from '../src/polyline.js';
+import { onRoute } from '../src/stops.js';
 
 const ID = 'virtual:trips';
 const RESOLVED_ID = '\0virtual:trips';
@@ -86,12 +87,13 @@ export const photos = { ${entries.join(', ')} };`;
   function withoutDraftStops(trip) {
     if (!trip.stops.some((s) => s.draft)) return trip;
     const legs = new Map((trip.legs || []).map((l) => [`${l.from}>${l.to}`, l]));
-    const kept = trip.stops.filter((s) => !s.draft);
+    const route = trip.stops.filter(onRoute);
+    const keptRoute = route.filter((s) => !s.draft);
     const merged = [];
-    for (let k = 0; k < kept.length - 1; k++) {
-      const a = kept[k];
-      const b = kept[k + 1];
-      const chain = trip.stops.slice(trip.stops.indexOf(a), trip.stops.indexOf(b) + 1);
+    for (let k = 0; k < keptRoute.length - 1; k++) {
+      const a = keptRoute[k];
+      const b = keptRoute[k + 1];
+      const chain = route.slice(route.indexOf(a), route.indexOf(b) + 1);
       const parts = chain.slice(1).map((s, j) => legs.get(`${chain[j].id}>${s.id}`));
       if (!parts.every((p) => p?.polyline)) continue; // viewer tekent dan een rechte lijn
       const points = parts.flatMap((p, j) => (j ? decodePolyline(p.polyline).slice(1) : decodePolyline(p.polyline)));
@@ -105,7 +107,7 @@ export const photos = { ${entries.join(', ')} };`;
         polyline: encodePolyline(points),
       });
     }
-    return { ...trip, stops: kept, legs: merged };
+    return { ...trip, stops: trip.stops.filter((s) => !s.draft), legs: merged };
   }
 
   function invalidate(server) {

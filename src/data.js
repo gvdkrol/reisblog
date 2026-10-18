@@ -3,6 +3,7 @@
 // Concepten (draft: true) zitten alleen lokaal in de lijst, niet in de build.
 import { trips as rawTrips, photos } from 'virtual:trips';
 import { home, images as homeImages } from 'virtual:home';
+import { legInto } from './stops.js';
 
 export { home };
 
@@ -38,22 +39,16 @@ function enrich(trip) {
 
   // Via-punten zijn alleen stipjes op de route: geen nummer, niet aanklikbaar, en
   // vorige/volgende en "x km vanaf …" slaan ze over.
+  // Fietstochten liggen naast de route: de afstand "vanaf …" loopt van de vorige
+  // stop op de route, niet vanaf de fietstocht.
   const visible = stops.filter((s) => s.type !== 'via');
-  const legByPair = new Map(legs.map((l) => [`${l.from}>${l.to}`, l]));
   visible.forEach((stop, n) => {
     stop.number = n + 1;
     stop.prevStop = visible[n - 1] || null;
     stop.nextStop = visible[n + 1] || null;
-    stop.legIn = null;
-    if (!stop.prevStop) return;
-    const chain = stops.slice(stop.prevStop.index, stop.index + 1);
-    const parts = chain.slice(1).map((s, j) => legByPair.get(`${chain[j].id}>${s.id}`));
-    if (!parts.every((p) => p?.polyline)) return;
-    stop.legIn = {
-      polyline: true,
-      km: parts.reduce((sum, p) => sum + p.km, 0),
-      minutes: parts.every((p) => Number.isFinite(p.minutes)) ? parts.reduce((sum, p) => sum + p.minutes, 0) : undefined,
-    };
+    const into = legInto(stops, legs, stop);
+    stop.legIn = into?.leg || null;
+    stop.prevRouteStop = into?.from || null;
   });
 
   return {
