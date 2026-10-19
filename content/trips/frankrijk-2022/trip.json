@@ -2,7 +2,7 @@
   "title": "Frankrijk 2022",
   "slug": "frankrijk-2022",
   "summary": "Langs de Loire",
-  "cover": "",
+  "cover": "photos/vineuil-flickr-52312115657.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -71,7 +71,13 @@
       "date": "2022-08-25",
       "type": "camping",
       "text": "2 nachten, 25–27 augustus.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/vineuil-flickr-52312115657.jpg",
+          "caption": "Blois - 1",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/52312115657/"
+        }
+      ],
       "articles": []
     },
     {

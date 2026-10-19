@@ -2,7 +2,7 @@
   "title": "The Americas 2015-2016",
   "slug": "the-americas-2015-2016",
   "summary": "Vijftien maanden met onze camperbus van Baltimore tot Panama: door de Verenigde Staten, Canada, Mexico en Midden-Amerika.",
-  "cover": "",
+  "cover": "photos/lost-dutchman-state-park-arizona-usa-flickr-22937257460.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -3380,7 +3380,23 @@
       "date": "2015-11-22",
       "type": "camping",
       "text": "Vandaag gaan we geen dingen bekijken, alleen rijden. Dus hebben we niet al te veel haast. Vanaf de camping rijden we eerst naar McDonald’s voor koffie en skypen. Daarna doen we boodschappen bij Safeway. Er wordt omgeroepen dat er een liefdadigheidsactie loopt, vandaag is de laatste dag.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/lost-dutchman-state-park-arizona-usa-flickr-22605980633.jpg",
+          "caption": "Roper Lake State Park - Gambels Quail",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/22605980633/"
+        },
+        {
+          "src": "photos/lost-dutchman-state-park-arizona-usa-flickr-22937257460.jpg",
+          "caption": "Lost Dutchman State Park - campsite",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/22937257460/"
+        },
+        {
+          "src": "photos/lost-dutchman-state-park-arizona-usa-flickr-22838905067.jpg",
+          "caption": "Lost Dutchman State Park - maan",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/22838905067/"
+        }
+      ],
       "articles": [
         {
           "title": "Valley of the Sun",

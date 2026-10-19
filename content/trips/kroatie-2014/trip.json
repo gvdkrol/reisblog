@@ -2,7 +2,7 @@
   "title": "Kroatië 2014",
   "slug": "kroatie-2014",
   "summary": "Trial run met nieuwe camper bus",
-  "cover": "",
+  "cover": "photos/st-peter-flickr-15421352202.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -212,7 +212,23 @@
       "date": "2014-10-02",
       "type": "camping",
       "text": "1 nacht, 2–3 oktober.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/st-peter-flickr-15421352202.jpg",
+          "caption": "Vaduz - Schloss - 1",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/15421352202/"
+        },
+        {
+          "src": "photos/st-peter-flickr-15235105538.jpg",
+          "caption": "Vaduz - Schloss - 3",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/15235105538/"
+        },
+        {
+          "src": "photos/st-peter-flickr-15235114608.jpg",
+          "caption": "Onderweg naar Konstanz - even checken",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/15235114608/"
+        }
+      ],
       "articles": []
     },
     {

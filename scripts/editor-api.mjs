@@ -12,12 +12,15 @@
 //   PUT  /api/home                   homepage opslaan (+ ongebruikte afbeeldingen opruimen)
 //   POST /api/home/images?name=x.webp          afbeelding voor een link uploaden
 //   GET  /api/wordpress?date=YYYY-MM-DD&days=5  berichten van rondjewereld.nl rond een datum
+//   GET  /api/flickr?date=YYYY-MM-DD              openbare Flickr-foto's genomen op die dag
+//   POST /api/trips/:slug/photos?name=x.jpg&from=<flickr-url>  Flickr-foto downloaden naar de reis
 
 import { readFile, writeFile, readdir, mkdir, unlink, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { routeLegs } from './routing.mjs';
 import { postsAround } from './wordpress.mjs';
+import { photosTakenOn, downloadFlickrPhoto } from './flickr.mjs';
 import { slugify } from '../src/slugify.js';
 
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -78,7 +81,11 @@ export function editorApi({ root }) {
         ...(typeof s.track === 'string' && s.track ? { track: s.track } : {}), // eigen spoor (fietstocht)
         ...(Number.isFinite(s.km) ? { km: s.km } : {}),
         text: String(s.text || ''),
-        photos: (s.photos || []).map((p) => ({ src: String(p.src), caption: String(p.caption || '') })),
+        photos: (s.photos || []).map((p) => ({
+          src: String(p.src),
+          caption: String(p.caption || ''),
+          ...(/^https?:\/\//i.test(p.link || '') ? { link: String(p.link) } : {}), // bron, bijv. de foto op Flickr
+        })),
         // Gekoppelde blogberichten op rondjewereld.nl (link onder het verhaal).
         articles: (s.articles || [])
           .filter((a) => /^https?:\/\//i.test(a.url || ''))
@@ -154,6 +161,9 @@ export function editorApi({ root }) {
   async function handle(req, res) {
     const url = new URL(req.url, 'http://localhost');
     const [, resource, slug, sub] = url.pathname.split('/').filter(Boolean);
+    if (resource === 'flickr' && req.method === 'GET') {
+      return send(res, 200, await photosTakenOn(root, url.searchParams.get('date')));
+    }
     if (resource === 'wordpress' && req.method === 'GET') {
       const days = Math.min(Math.max(Number(url.searchParams.get('days')) || 5, 0), 30);
       return send(res, 200, await postsAround(url.searchParams.get('date'), days));
@@ -182,6 +192,10 @@ export function editorApi({ root }) {
       return send(res, 200, { deleted: slug });
     }
     if (slug && !sub && req.method === 'PUT') return send(res, 200, await saveTrip(slug, JSON.parse(await readBody(req))));
+    if (slug && sub === 'photos' && url.searchParams.get('from') && req.method === 'POST') {
+      // foto van Flickr ophalen en bij de reis opslaan
+      return send(res, 201, await savePhoto(slug, url.searchParams.get('name'), await downloadFlickrPhoto(url.searchParams.get('from'))));
+    }
     if (slug && sub === 'photos' && req.method === 'POST') {
       return send(res, 201, await savePhoto(slug, url.searchParams.get('name'), await readBody(req, MAX_PHOTO_BYTES, true)));
     }

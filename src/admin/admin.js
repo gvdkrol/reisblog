@@ -219,6 +219,7 @@ function headHtml(s, i) {
 function photoHtml(p, j) {
   return `<figure class="photo" data-p="${j}">
       <img src="${photoUrl(p.src)}" alt="" loading="lazy" />
+      ${p.link ? `<a class="photo-source" href="${esc(p.link)}" target="_blank" rel="noopener" title="Bekijk op Flickr">Flickr ↗</a>` : ''}
       <input data-pfield="caption" value="${esc(p.caption)}" placeholder="Onderschrift" />
       <div class="pbtns">
         <button type="button" data-action="pleft" title="Naar voren">◀</button>
@@ -250,7 +251,14 @@ function formHtml(s) {
         <input type="file" accept="image/*" multiple data-action="upload" hidden />
         📷 Foto's toevoegen
         <span class="hint">klik of sleep foto's hierheen · ze worden verkleind naar max. 1600px</span>
-      </label>`}
+      </label>
+      <div class="flickr-box">
+        <div class="wp-head">
+          <button type="button" class="btn small" data-action="flickrfind">📷 Foto's van Flickr</button>
+          <span class="hint">foto's die genomen zijn op de datum van deze stop</span>
+        </div>
+        <div class="flickr-results" hidden></div>
+      </div>`}
       <div class="stop-actions">
         <button type="button" class="btn small" data-action="zoom">Toon op kaart</button>
         <button type="button" class="btn small danger" data-action="delete">Stop verwijderen</button>
@@ -306,6 +314,72 @@ function addStop({ name, lat, lng }) {
   setDirty();
   selectStop(stop.id);
   list.querySelector('.stop.open [data-field="text"]')?.focus();
+}
+
+// ---------- Foto's van Flickr ----------
+const flickrResults = new Map(); // stop-id → opgehaalde foto's
+
+async function findFlickr(li, stop) {
+  const box = li.querySelector('.flickr-results');
+  box.hidden = false;
+  if (!stop.date) {
+    box.innerHTML = '<p class="hint">Vul eerst een datum in.</p>';
+    return;
+  }
+  box.innerHTML = `<p class="hint">Foto's van ${formatDate(stop.date)} ophalen…</p>`;
+  try {
+    const photos = await api(`/flickr?date=${stop.date}`);
+    flickrResults.set(stop.id, photos);
+    const have = new Set(trip.stops.flatMap((s) => s.photos.map((p) => p.link)).filter(Boolean));
+    const close = '<button type="button" class="link" data-action="flickrclose">Sluiten</button>';
+    if (!photos.length) {
+      box.innerHTML = `<p class="hint">Geen openbare foto's op Flickr van ${formatDate(stop.date)}.</p>${close}`;
+      return;
+    }
+    const fmtTime = (t) => (t || '').slice(11, 16);
+    box.innerHTML = `
+      <p class="hint">${photos.length} foto${photos.length === 1 ? '' : "'s"} van ${formatDate(stop.date)}. Vink aan wat je bij deze stop wilt zetten:</p>
+      <div class="flickr-grid">${photos
+        .map((p, k) => {
+          const added = have.has(p.page);
+          return `<label class="flickr-item${added ? ' added' : ''}" title="${esc(p.title)}">
+            <input type="checkbox" data-k="${k}" ${added ? 'disabled' : ''} />
+            <img src="${esc(p.thumb)}" alt="" loading="lazy" />
+            <span>${esc(fmtTime(p.taken))}${p.title ? ` · ${esc(p.title)}` : ''}${added ? ' · al toegevoegd' : ''}</span>
+          </label>`;
+        })
+        .join('')}</div>
+      <div class="wp-actions">
+        <button type="button" class="btn small primary" data-action="flickradd">Toevoegen aan stop</button>
+        <button type="button" class="btn small" data-action="flickrall" data-on="1">Alles selecteren</button>
+        ${close}
+      </div>`;
+  } catch (err) {
+    box.innerHTML = `<p class="hint">Ophalen mislukt: ${esc(err.message)}</p>`;
+  }
+}
+
+async function addFlickr(li, stop) {
+  const photos = flickrResults.get(stop.id) || [];
+  const chosen = [...li.querySelectorAll('.flickr-grid input:checked')].map((c) => photos[Number(c.dataset.k)]);
+  if (!chosen.length) return setStatus('Vink eerst een of meer foto\'s aan.', 'error');
+  const failed = [];
+  for (const [n, p] of chosen.entries()) {
+    setStatus(`Foto ${n + 1} van ${chosen.length} van Flickr ophalen…`);
+    try {
+      const name = `${stop.id}-flickr-${p.id}.jpg`;
+      const { src } = await api(`/trips/${trip.slug}/photos?name=${encodeURIComponent(name)}&from=${encodeURIComponent(p.url)}`, { method: 'POST' });
+      stop.photos.push({ src, caption: p.title || '', link: p.page });
+      if (!trip.cover) trip.cover = src;
+    } catch (err) {
+      failed.push(`${p.title || p.id} (${err.message})`);
+    }
+  }
+  setDirty();
+  rerenderStop(stop);
+  renderTripFields();
+  if (failed.length) setStatus(`Niet gelukt: ${failed.join(', ')}`, 'error');
+  else setStatus(`${chosen.length} foto${chosen.length === 1 ? '' : "'s"} van Flickr toegevoegd. Vergeet niet op te slaan.`);
 }
 
 // ---------- Tekst van rondjewereld.nl ----------
@@ -505,6 +579,20 @@ list.addEventListener('click', (e) => {
       break;
     case 'wpfind':
       findArticles(li, stop);
+      break;
+    case 'flickrfind':
+      findFlickr(li, stop);
+      break;
+    case 'flickradd':
+      addFlickr(li, stop);
+      break;
+    case 'flickrall':
+      li.querySelectorAll('.flickr-grid input:not(:disabled)').forEach((c) => (c.checked = el.dataset.on === '1'));
+      el.dataset.on = el.dataset.on === '1' ? '0' : '1';
+      el.textContent = el.dataset.on === '1' ? 'Alles selecteren' : 'Niets selecteren';
+      break;
+    case 'flickrclose':
+      li.querySelector('.flickr-results').hidden = true;
       break;
     case 'wpapply':
       applyArticles(li, stop, el.dataset.mode);

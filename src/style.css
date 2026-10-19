@@ -268,6 +268,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .panel-thumbs img.current, .panel-thumbs img:hover { opacity: 1; outline: 2px solid var(--accent); outline-offset: 1px; }
 .caption { padding: 8px 28px 0; font-size: 0.9rem; color: var(--muted); }
+.caption a, .lb-caption a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.lb-caption a { color: #fdba74; }
+.caption a:hover, .lb-caption a:hover { text-decoration: underline; }
 .panel-body { padding: 20px 28px 32px; }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--muted); }
 .type-chip {

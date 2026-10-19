@@ -2,7 +2,7 @@ import './style.css';
 import { loadTrip, asset } from './data.js';
 import { createMap, legLatLngs, stopType, isVia, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
-import { stopPanelHtml, bindPanelPhotos } from './panel.js';
+import { stopPanelHtml, bindPanelPhotos, captionHtml } from './panel.js';
 
 const params = new URLSearchParams(location.search);
 const embed = params.has('embed');
@@ -178,7 +178,7 @@ function showLightbox(index) {
   lbIndex = (index + lbPhotos.length) % lbPhotos.length;
   const p = lbPhotos[lbIndex];
   lb.querySelector('img').src = asset(trip, p.src);
-  lb.querySelector('.lb-caption').textContent = p.caption || '';
+  lb.querySelector('.lb-caption').innerHTML = captionHtml(p);
   lb.querySelector('.lb-prev').hidden = lb.querySelector('.lb-next').hidden = lbPhotos.length < 2;
 }
 const closeLightbox = () => lb.classList.remove('open');

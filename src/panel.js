@@ -4,6 +4,14 @@ import { marked } from 'marked';
 import { stopType } from './map.js';
 import { formatDate, formatKm, formatLeg, escapeHtml } from './format.js';
 
+// Onderschrift van een foto, met een link naar de bron (bijv. Flickr) als die er is.
+export function captionHtml(photo) {
+  const text = escapeHtml(photo?.caption || '');
+  if (!photo?.link) return text;
+  const source = /flickr\.com/i.test(photo.link) ? 'Flickr' : 'bron';
+  return `${text}${text ? ' · ' : ''}<a href="${escapeHtml(photo.link)}" target="_blank" rel="noopener">bekijk op ${source} ↗</a>`;
+}
+
 // photoUrl(src) → URL van een foto; day = dagnummer; leg/prevStop = traject vanaf de vorige stop.
 export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
   const t = stopType(stop.type);
@@ -13,7 +21,7 @@ export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
   return `
     ${photos.length ? `<img class="panel-hero" src="${photoUrl(photos[0].src)}" alt="${escapeHtml(photos[0].caption)}" />` : ''}
     ${photos.length > 1 ? `<div class="panel-thumbs">${photos.map((p, j) => `<img data-i="${j}" class="${j === 0 ? 'current' : ''}" src="${photoUrl(p.src)}" alt="${escapeHtml(p.caption)}" loading="lazy" />`).join('')}</div>` : ''}
-    ${photos.length ? `<div class="caption">${escapeHtml(photos[0].caption || '')}</div>` : ''}
+    ${photos.length ? `<div class="caption">${captionHtml(photos[0])}</div>` : ''}
     <div class="panel-body">
       <div class="meta">
         ${day ? `<span>Dag ${day}</span><span>·</span>` : ''}
@@ -51,7 +59,7 @@ export function bindPanelPhotos(container, photos, { onOpen } = {}) {
     img.addEventListener('click', () => {
       index = Number(img.dataset.i);
       hero.src = img.src;
-      if (caption) caption.textContent = photos[index].caption || '';
+      if (caption) caption.innerHTML = captionHtml(photos[index]);
       container.querySelectorAll('.panel-thumbs img').forEach((x) => x.classList.toggle('current', x === img));
     })
   );
