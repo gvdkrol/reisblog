@@ -2,7 +2,7 @@
   "title": "Frankrijk 2021",
   "slug": "frankrijk-2021",
   "summary": "Elzas",
-  "cover": "",
+  "cover": "photos/straatsburg-flickr-51573299591.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -36,7 +36,13 @@
       "date": "2021-10-08",
       "type": "camping",
       "text": "2 nachten, 8–10 oktober.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/straatsburg-flickr-51573299591.jpg",
+          "caption": "Straatsburg - 01",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/51573299591/"
+        }
+      ],
       "articles": []
     },
     {
@@ -84,7 +90,13 @@
       "date": "2021-10-12",
       "type": "camping",
       "text": "1 nacht, 12–13 oktober.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/horbourg-wihr-flickr-51582028648.jpg",
+          "caption": "Chateau du Haut Koenigsbourg - 03",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/51582028648/"
+        }
+      ],
       "articles": []
     },
     {
@@ -119,7 +131,13 @@
       "date": "2021-10-15",
       "type": "camping",
       "text": "2 nachten, 15–17 oktober.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/bouvignes-sur-meuse-flickr-51591839682.jpg",
+          "caption": "Dinant - 02",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/51591839682/"
+        }
+      ],
       "articles": []
     },
     {

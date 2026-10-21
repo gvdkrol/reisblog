@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "route": "node scripts/route.mjs",
     "import:polarsteps": "node scripts/import-polarsteps.mjs",
-    "import:timeline": "node scripts/import-timeline.mjs"
+    "import:timeline": "node scripts/import-timeline.mjs",
+    "launcher": "node tools/launcher/launcher.mjs --open"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

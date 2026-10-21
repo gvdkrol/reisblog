@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reisblog · bediening</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+    <style>
+      :root {
+        --bg: #f5f2ec; --surface: #fff; --soft: #f1ede5; --text: #1c1917; --muted: #57534e;
+        --line: #e7e2d9; --accent: #c2410c; --ok: #15803d; --err: #b42318;
+        --radius: 16px; --shadow: 0 1px 2px rgba(28,25,23,.04), 0 8px 24px -12px rgba(28,25,23,.14);
+        --font: 'Inter', system-ui, sans-serif; --serif: 'Fraunces', Georgia, serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 var(--font); }
+      main { max-width: 880px; margin: 0 auto; padding: 32px 20px 48px; }
+      .eyebrow { font: 600 .75rem var(--font); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+      .eyebrow::before { content: ''; width: 24px; height: 2px; background: currentColor; }
+      h1 { font: 700 2.4rem/1 var(--serif); letter-spacing: -.02em; margin: 12px 0 24px; }
+      h1 em { font-style: normal; color: var(--accent); }
+      .grid { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+      .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px 20px; }
+      .card.wide { grid-column: 1 / -1; }
+      h2 { font: 600 1.2rem var(--serif); margin: 0 0 12px; display: flex; align-items: center; gap: 10px; }
+      .dot { width: 10px; height: 10px; border-radius: 50%; background: #a8a29e; flex: none; }
+      .dot.on { background: var(--ok); box-shadow: 0 0 0 4px rgba(21,128,61,.15); }
+      .dot.busy { background: #d97706; }
+      .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+      .btn { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 8px 16px; font: 600 .9rem var(--font); color: var(--text); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+      .btn:hover:not(:disabled) { border-color: var(--accent); }
+      .btn.primary { background: var(--text); border-color: var(--text); color: #fff; }
+      .btn.primary:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
+      .btn:disabled { opacity: .4; cursor: default; }
+      .links { display: grid; gap: 8px; margin-top: 12px; }
+      .link { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--text); background: var(--bg); }
+      .link:hover { border-color: var(--accent); }
+      .link b { font-weight: 600; }
+      .link small { color: var(--muted); font-size: .78rem; }
+      .link.off { opacity: .45; pointer-events: none; }
+      .hint { color: var(--muted); font-size: .85rem; margin: 6px 0 0; }
+      ul.changes { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 4px; }
+      ul.changes li { display: flex; justify-content: space-between; padding: 6px 10px; background: var(--bg); border-radius: 8px; font-size: .9rem; }
+      ul.changes small { color: var(--muted); }
+      input[type=text] { width: 100%; font: inherit; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; margin-bottom: 10px; }
+      input[type=text]:focus { outline: 2px solid rgba(194,65,12,.35); border-color: var(--accent); }
+      .msg { margin-top: 10px; font-size: .9rem; font-weight: 600; }
+      .msg.ok { color: var(--ok); } .msg.err { color: var(--err); }
+      pre { margin: 0; max-height: 260px; overflow: auto; background: #1c1917; color: #e7e5e4; border-radius: 10px; padding: 12px; font: 12px/1.5 ui-monospace, Consolas, monospace; white-space: pre-wrap; }
+      details summary { cursor: pointer; font-weight: 600; }
+      @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">Reisblog · bediening</div>
+      <h1>Klaar om te <em>reizen</em></h1>
+
+      <div class="grid">
+        <section class="card">
+          <h2><span class="dot" id="dev-dot"></span> Dev-omgeving</h2>
+          <p class="hint" id="dev-text">Status ophalen…</p>
+          <div class="row" style="margin-top:12px">
+            <button class="btn primary" id="dev-start" type="button">▶ Starten</button>
+            <button class="btn" id="dev-stop" type="button">■ Stoppen</button>
+          </div>
+          <div class="links">
+            <a class="link dev-link" id="link-editor" target="_blank" rel="noopener"><b>✏️ Editor</b><small>localhost:5173/admin.html</small></a>
+            <a class="link dev-link" id="link-dev" target="_blank" rel="noopener"><b>🗺️ Site (lokaal)</b><small>localhost:5173</small></a>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2><span class="dot" id="deploy-dot"></span> Gepubliceerd</h2>
+          <p class="hint" id="deploy-text">Status ophalen…</p>
+          <div class="links">
+            <a class="link" id="link-live" target="_blank" rel="noopener"><b>🌍 Live site</b><small>gvdkrol.github.io/reisblog</small></a>
+            <a class="link" id="link-actions" target="_blank" rel="noopener"><b>⚙️ Publicaties op GitHub</b><small>GitHub Actions</small></a>
+          </div>
+        </section>
+
+        <section class="card wide">
+          <h2>Wijzigingen publiceren</h2>
+          <p class="hint" id="last-commit"></p>
+          <ul class="changes" id="changes"></ul>
+          <input type="text" id="message" placeholder="Wat heb je veranderd? Bijv. Foto's toegevoegd aan Frankrijk 2022" />
+          <div class="row">
+            <button class="btn primary" id="publish" type="button">⬆ Commit en push</button>
+            <span class="hint">eerst wordt gecontroleerd of de site goed bouwt</span>
+          </div>
+          <div class="msg" id="publish-msg"></div>
+        </section>
+
+        <section class="card wide">
+          <details id="log-box">
+            <summary>Logboek</summary>
+            <pre id="log" style="margin-top:10px"></pre>
+          </details>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+      const post = (path, body) =>
+        fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Reisblog': '1' }, body: JSON.stringify(body || {}) }).then((r) => r.json());
+      let busy = false;
+
+      function setBusy(on) {
+        busy = on;
+        ['dev-start', 'dev-stop', 'publish'].forEach((id) => ($(id).disabled = on));
+        $('dev-dot').classList.toggle('busy', on);
+      }
+
+      async function refresh() {
+        try {
+          const s = await fetch('/api/status').then((r) => r.json());
+          $('link-editor').href = s.links.editor;
+          $('link-dev').href = s.links.dev;
+          $('link-live').href = s.links.live;
+          $('link-actions').href = `${s.links.repo}/actions`;
+          $('dev-dot').classList.toggle('on', s.dev);
+          $('dev-text').textContent = s.dev ? 'Draait op localhost:5173.' : 'Staat uit.';
+          document.querySelectorAll('.dev-link').forEach((a) => a.classList.toggle('off', !s.dev));
+          if (!busy) {
+            $('dev-start').disabled = s.dev;
+            $('dev-stop').disabled = !s.dev;
+          }
+          const g = s.git;
+          $('last-commit').textContent = g.last.hash ? `Laatste commit: “${g.last.subject}” (${esc(g.last.when)})${g.unpushed ? ` · ${g.unpushed} nog niet gepusht` : ''}` : '';
+          $('changes').innerHTML = g.changes
+            ? g.groups
+                .map((x) => {
+                  const parts = [x.files && `${x.files} bestand${x.files > 1 ? 'en' : ''}`, x.photos && `${x.photos} foto${x.photos > 1 ? "'s" : ''}`, x.deleted && `${x.deleted} verwijderd`].filter(Boolean);
+                  return `<li><span>${esc(x.name)}</span><small>${parts.join(' · ')}</small></li>`;
+                })
+                .join('')
+            : '<li><span>Geen wijzigingen</span><small>alles is gepusht</small></li>';
+          if (!busy) $('publish').disabled = !g.changes && !g.unpushed;
+        } catch {
+          $('dev-text').textContent = 'De bedieningsapp reageert niet. Is het venster nog open?';
+        }
+      }
+
+      async function refreshDeploy() {
+        const d = await fetch('/api/deploy').then((r) => r.json()).catch(() => null);
+        if (!d) return ($('deploy-text').textContent = 'Geen informatie (GitHub CLI niet beschikbaar).');
+        const when = new Date(d.createdAt).toLocaleString('nl-NL', { dateStyle: 'medium', timeStyle: 'short' });
+        const state = d.status !== 'completed' ? '⏳ bezig met publiceren' : d.conclusion === 'success' ? '✅ gelukt' : `❌ ${d.conclusion}`;
+        $('deploy-text').innerHTML = `${state} · ${esc(when)}<br><small>${esc(d.displayTitle)}</small>`;
+        $('deploy-dot').className = `dot ${d.status !== 'completed' ? 'busy' : d.conclusion === 'success' ? 'on' : ''}`;
+        if (d.status !== 'completed') setTimeout(refreshDeploy, 8000);
+      }
+
+      async function refreshLog() {
+        if (!$('log-box').open) return;
+        const lines = await fetch('/api/log').then((r) => r.json()).catch(() => []);
+        const pre = $('log');
+        const atEnd = pre.scrollTop + pre.clientHeight >= pre.scrollHeight - 20;
+        pre.textContent = lines.join('\n');
+        if (atEnd) pre.scrollTop = pre.scrollHeight;
+      }
+
+      async function action(fn) {
+        setBusy(true);
+        try {
+          return await fn();
+        } finally {
+          setBusy(false);
+          refresh();
+          refreshLog();
+        }
+      }
+
+      $('dev-start').onclick = () =>
+        action(async () => {
+          $('dev-text').textContent = 'Starten…';
+          const r = await post('/api/dev/start');
+          $('dev-text').textContent = r.message;
+        });
+      $('dev-stop').onclick = () =>
+        action(async () => {
+          const r = await post('/api/dev/stop');
+          $('dev-text').textContent = r.message;
+        });
+      $('publish').onclick = () =>
+        action(async () => {
+          const message = $('message').value.trim();
+          if (!message) {
+            $('publish-msg').className = 'msg err';
+            $('publish-msg').textContent = 'Vul eerst kort in wat je hebt veranderd.';
+            $('message').focus();
+            return;
+          }
+          $('publish-msg').className = 'msg';
+          $('publish-msg').textContent = 'Bezig: bouwen, committen en pushen…';
+          $('log-box').open = true;
+          const r = await post('/api/publish', { message });
+          $('publish-msg').className = `msg ${r.ok ? 'ok' : 'err'}`;
+          $('publish-msg').textContent = r.message;
+          if (r.ok) {
+            $('message').value = '';
+            setTimeout(refreshDeploy, 5000);
+          }
+        });
+      $('log-box').addEventListener('toggle', refreshLog);
+
+      refresh();
+      refreshDeploy();
+      setInterval(refresh, 5000);
+      setInterval(refreshLog, 2000);
+    </script>
+  </body>
+</html>

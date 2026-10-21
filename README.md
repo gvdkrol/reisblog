@@ -2,6 +2,16 @@
 
 Statische reisblog-site: een overzicht van reizen, en per reis een kaart met de route over de weg. Klik op een stop om rechts het verhaal en de foto's te lezen.
 
+## Bedieningsapp
+
+Dubbelklik op **Reisblog.cmd** (of de snelkoppeling *Reisblog* op het bureaublad). Er opent een venster en http://localhost:5170 in je browser, met:
+
+- **Dev-omgeving** starten en stoppen, en links naar de editor en de lokale site
+- de status van de laatste publicatie en een link naar de live site
+- **Wijzigingen publiceren**: een overzicht van wat er veranderd is per reis, een omschrijving invullen en **Commit en push**. Eerst wordt gecontroleerd of de site goed bouwt; een `.env`-bestand wordt nooit meegecommit.
+
+Sluit het venster om de app (en een door de app gestarte dev-omgeving) te stoppen. Zonder venster kan het ook: `npm run launcher`.
+
 ## Lokaal draaien
 
 ```bash
