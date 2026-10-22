@@ -62,20 +62,10 @@ async function nsidOf(key, user) {
   return nsidCache.get(user);
 }
 
-// Foto's genomen op `date` (JJJJ-MM-DD), oudste eerst.
-export async function photosTakenOn(root, date) {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) throw Object.assign(new Error('Geef de stop eerst een geldige datum'), { status: 400 });
-  const { key, user } = config(root);
-  const nsid = await nsidOf(key, user);
-  const json = await call(key, 'flickr.photos.search', {
-    user_id: nsid,
-    min_taken_date: `${date} 00:00:00`,
-    max_taken_date: `${date} 23:59:59`,
-    extras: 'date_taken,geo,url_q,url_n,url_z,url_c,url_l,url_h',
-    sort: 'date-taken-asc',
-    per_page: '250',
-  });
-  return json.photos.photo.map((p) => ({
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
+
+function toPhoto(p, user) {
+  return {
     id: p.id,
     title: p.title || '',
     taken: p.datetaken,
@@ -85,7 +75,34 @@ export async function photosTakenOn(root, date) {
     page: `https://www.flickr.com/photos/${p.pathalias || user}/${p.id}/`,
     lat: Number(p.latitude) || null,
     lng: Number(p.longitude) || null,
-  }));
+  };
+}
+
+// Foto's genomen tussen `from` en `to` (JJJJ-MM-DD, beide inclusief), oudste eerst,
+// per pagina van `perPage`. Geeft { photos, page, pages, total }.
+export async function photosTakenBetween(root, from, to, { page = 1, perPage = 100 } = {}) {
+  if (!DATE.test(from || '') || !DATE.test(to || '') || from > to) {
+    throw Object.assign(new Error('Ongeldige periode'), { status: 400 });
+  }
+  const { key, user } = config(root);
+  const nsid = await nsidOf(key, user);
+  const json = await call(key, 'flickr.photos.search', {
+    user_id: nsid,
+    min_taken_date: `${from} 00:00:00`,
+    max_taken_date: `${to} 23:59:59`,
+    extras: 'date_taken,geo,url_q,url_n,url_z,url_c,url_l,url_h',
+    sort: 'date-taken-asc',
+    per_page: String(Math.min(Math.max(perPage, 1), 500)),
+    page: String(Math.max(page, 1)),
+  });
+  const { photo, page: current, pages, total } = json.photos;
+  return { photos: photo.map((p) => toPhoto(p, user)), page: Number(current), pages: Number(pages), total: Number(total) };
+}
+
+// Foto's genomen op `date` (JJJJ-MM-DD), oudste eerst.
+export async function photosTakenOn(root, date) {
+  if (!DATE.test(date || '')) throw Object.assign(new Error('Geef de stop eerst een geldige datum'), { status: 400 });
+  return (await photosTakenBetween(root, date, date, { perPage: 250 })).photos;
 }
 
 // URL van de 'Large'-versie (1024 px) van een foto, bijv. om een eerder gedownloade

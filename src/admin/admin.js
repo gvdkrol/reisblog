@@ -3,7 +3,7 @@ import './admin.css';
 import { createMap, stopType, STOP_TYPES, decodePolyline, isVia, onRoute, L } from '../map.js';
 import { legInto } from '../stops.js';
 import { slugify } from '../slugify.js';
-import { formatDate, formatKm, formatDuration, formatLeg, escapeHtml as esc } from '../format.js';
+import { formatDate, formatRange, formatKm, formatDuration, formatLeg, escapeHtml as esc } from '../format.js';
 import { stopPanelHtml, bindPanelPhotos } from '../panel.js';
 
 const $ = (id) => document.getElementById(id);
@@ -255,7 +255,8 @@ function formHtml(s) {
       <div class="flickr-box">
         <div class="wp-head">
           <button type="button" class="btn small" data-action="flickrfind">📷 Foto's van Flickr</button>
-          <span class="hint">foto's die genomen zijn op de datum van deze stop</span>
+          <button type="button" class="btn small" data-action="flickrtrip">🗂️ Hele reis</button>
+          <span class="hint">van de datum van deze stop, of van de hele reisperiode</span>
         </div>
         <div class="flickr-results" hidden></div>
       </div>`}
@@ -363,9 +364,14 @@ async function addFlickr(li, stop) {
   const photos = flickrResults.get(stop.id) || [];
   const chosen = [...li.querySelectorAll('.flickr-grid input:checked')].map((c) => photos[Number(c.dataset.k)]);
   if (!chosen.length) return setStatus('Vink eerst een of meer foto\'s aan.', 'error');
+  await importFlickr(chosen.map((p) => [stop, p]));
+}
+
+// Downloadt de gekozen foto's ([stop, foto]-paren) en zet ze bij hun stop.
+async function importFlickr(pairs) {
   const failed = [];
-  for (const [n, p] of chosen.entries()) {
-    setStatus(`Foto ${n + 1} van ${chosen.length} van Flickr ophalen…`);
+  for (const [n, [stop, p]] of pairs.entries()) {
+    setStatus(`Foto ${n + 1} van ${pairs.length} van Flickr ophalen…`);
     try {
       const name = `${stop.id}-flickr-${p.id}.jpg`;
       const { src } = await api(`/trips/${trip.slug}/photos?name=${encodeURIComponent(name)}&from=${encodeURIComponent(p.url)}`, { method: 'POST' });
@@ -376,11 +382,147 @@ async function addFlickr(li, stop) {
     }
   }
   setDirty();
-  rerenderStop(stop);
+  renderStops();
   renderTripFields();
   if (failed.length) setStatus(`Niet gelukt: ${failed.join(', ')}`, 'error');
-  else setStatus(`${chosen.length} foto${chosen.length === 1 ? '' : "'s"} van Flickr toegevoegd. Vergeet niet op te slaan.`);
+  else setStatus(`${pairs.length} foto${pairs.length === 1 ? '' : "'s"} van Flickr toegevoegd. Vergeet niet op te slaan.`);
 }
+
+// ---------- Flickr-foto's van de hele reis (popup) ----------
+// Alleen thumbnails tonen; pas na "Downloaden en toevoegen" worden de gekozen foto's opgehaald.
+const fp = { stop: null, from: '', to: '', page: 1, pages: 1, total: 0, photos: [], selected: new Map(), loading: false, target: 'stop' };
+
+function tripPeriod() {
+  const dates = trip.stops.map((s) => s.date).filter(Boolean).sort();
+  return [dates[0], dates.at(-1)];
+}
+
+// Stop voor een foto bij plaatsen "op datum": een stop van dezelfde dag (bij meerdere
+// de dichtstbijzijnde als de foto een locatie heeft), anders de laatste stop ervoor.
+function stopForPhoto(p) {
+  const day = (p.taken || '').slice(0, 10);
+  const stops = trip.stops.filter((s) => !isVia(s) && s.date);
+  const sameDay = stops.filter((s) => s.date === day);
+  if (sameDay.length > 1 && p.lat != null) {
+    const d = (s) => (s.lat - p.lat) ** 2 + ((s.lng - p.lng) * Math.cos((p.lat * Math.PI) / 180)) ** 2;
+    return sameDay.reduce((a, b) => (d(b) < d(a) ? b : a));
+  }
+  return sameDay[0] || stops.filter((s) => s.date <= day).at(-1) || stops[0] || fp.stop;
+}
+
+async function openFlickrPicker(stop) {
+  const [from, to] = tripPeriod();
+  if (!from) return setStatus('Geef de stops eerst een datum.', 'error');
+  Object.assign(fp, { stop, from, to, page: 1, pages: 1, total: 0, photos: [], selected: new Map() });
+  $('flickr-picker-title').textContent = `Foto's van Flickr · ${trip.title}`;
+  $('flickr-picker').hidden = false;
+  await loadFlickrPage(1);
+}
+
+async function loadFlickrPage(page) {
+  fp.loading = true;
+  $('flickr-picker-sub').textContent = `${formatRange(fp.from, fp.to)} · pagina ${page} ophalen…`;
+  $('flickr-picker-body').innerHTML = '<p class="empty">Thumbnails ophalen…</p>';
+  renderFlickrFoot();
+  let error = '';
+  try {
+    const r = await api(`/flickr?from=${fp.from}&to=${fp.to}&page=${page}`);
+    Object.assign(fp, { page: r.page, pages: Math.max(r.pages, 1), total: r.total, photos: r.photos });
+  } catch (err) {
+    fp.photos = [];
+    error = err.message;
+  }
+  fp.loading = false;
+  renderFlickrPicker(error);
+}
+
+function renderFlickrPicker(error = '') {
+  const body = $('flickr-picker-body');
+  $('flickr-picker-sub').textContent = `${formatRange(fp.from, fp.to)} · ${fp.total} foto${fp.total === 1 ? '' : "'s"} op Flickr`;
+  if (error) body.innerHTML = `<p class="empty">Ophalen mislukt: ${esc(error)}</p>`;
+  else if (!fp.photos.length) body.innerHTML = '<p class="empty">Geen openbare foto\'s op Flickr in deze periode.</p>';
+  else {
+    const have = new Set(trip.stops.flatMap((s) => s.photos.map((p) => p.link)).filter(Boolean));
+    const byDay = Map.groupBy(fp.photos, (p) => (p.taken || '').slice(0, 10));
+    body.innerHTML = [...byDay]
+      .map(
+        ([day, photos]) => `<section>
+          <h4>${day ? formatDate(day) : 'Zonder datum'} <small>${esc(stopForPhoto(photos[0])?.name || '')}</small></h4>
+          <div class="flickr-grid">${photos
+            .map((p) => {
+              const added = have.has(p.page);
+              return `<label class="flickr-item${added ? ' added' : ''}" title="${esc(p.title)}">
+                <input type="checkbox" data-id="${esc(p.id)}" ${added ? 'disabled' : ''} ${fp.selected.has(p.id) ? 'checked' : ''} />
+                <img src="${esc(p.thumb)}" alt="" loading="lazy" />
+                <span>${esc((p.taken || '').slice(11, 16))}${p.title ? ` · ${esc(p.title)}` : ''}${added ? ' · al toegevoegd' : ''}</span>
+              </label>`;
+            })
+            .join('')}</div>
+        </section>`
+      )
+      .join('');
+  }
+  body.scrollTop = 0;
+  renderFlickrFoot();
+}
+
+function renderFlickrFoot() {
+  const n = fp.selected.size;
+  const busy = fp.loading ? 'disabled' : '';
+  $('flickr-picker-foot').innerHTML = `
+    <div class="pager">
+      <button type="button" class="btn small" data-fp="prev" ${fp.page <= 1 ? 'disabled' : busy}>‹ Vorige</button>
+      <span>pagina ${fp.page} van ${fp.pages}</span>
+      <button type="button" class="btn small" data-fp="next" ${fp.page >= fp.pages ? 'disabled' : busy}>Volgende ›</button>
+    </div>
+    <button type="button" class="link" data-fp="all">Alles op deze pagina</button>
+    ${n ? '<button type="button" class="link" data-fp="none">Selectie wissen</button>' : ''}
+    <span class="grow"></span>
+    <strong>${n} geselecteerd</strong>
+    <select id="fp-target" aria-label="Waar komen de foto's">
+      <option value="stop" ${fp.target === 'stop' ? 'selected' : ''}>bij ${esc(fp.stop?.name || 'deze stop')}</option>
+      <option value="date" ${fp.target === 'date' ? 'selected' : ''}>bij de stop van de fotodatum</option>
+    </select>
+    <button type="button" class="btn small primary" data-fp="add" ${n ? busy : 'disabled'}>Downloaden en toevoegen</button>`;
+}
+
+const closeFlickrPicker = () => ($('flickr-picker').hidden = true);
+
+$('flickr-picker-close').addEventListener('click', closeFlickrPicker);
+$('flickr-picker').addEventListener('click', async (e) => {
+  if (e.target === $('flickr-picker')) return closeFlickrPicker();
+  const action = e.target.closest('[data-fp]')?.dataset.fp;
+  if (action === 'prev' || action === 'next') return loadFlickrPage(fp.page + (action === 'next' ? 1 : -1));
+  if (action === 'all') {
+    for (const box of $('flickr-picker-body').querySelectorAll('input:not(:disabled)')) {
+      box.checked = true;
+      fp.selected.set(box.dataset.id, fp.photos.find((p) => p.id === box.dataset.id));
+    }
+    return renderFlickrFoot();
+  }
+  if (action === 'none') {
+    fp.selected.clear();
+    return renderFlickrPicker();
+  }
+  if (action === 'add') {
+    const pairs = [...fp.selected.values()]
+      .sort((a, b) => (a.taken || '').localeCompare(b.taken || ''))
+      .map((p) => [fp.target === 'date' ? stopForPhoto(p) : fp.stop, p]);
+    closeFlickrPicker();
+    await importFlickr(pairs);
+  }
+});
+$('flickr-picker').addEventListener('change', (e) => {
+  if (e.target.id === 'fp-target') return (fp.target = e.target.value);
+  const id = e.target.dataset.id;
+  if (!id) return;
+  if (e.target.checked) fp.selected.set(id, fp.photos.find((p) => p.id === id));
+  else fp.selected.delete(id);
+  renderFlickrFoot();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !$('flickr-picker').hidden) closeFlickrPicker();
+});
 
 // ---------- Tekst van rondjewereld.nl ----------
 const wpResults = new Map(); // stop-id → opgehaalde berichten
@@ -582,6 +724,9 @@ list.addEventListener('click', (e) => {
       break;
     case 'flickrfind':
       findFlickr(li, stop);
+      break;
+    case 'flickrtrip':
+      openFlickrPicker(stop);
       break;
     case 'flickradd':
       addFlickr(li, stop);

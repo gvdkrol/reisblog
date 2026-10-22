@@ -13,6 +13,7 @@
 //   POST /api/home/images?name=x.webp          afbeelding voor een link uploaden
 //   GET  /api/wordpress?date=YYYY-MM-DD&days=5  berichten van rondjewereld.nl rond een datum
 //   GET  /api/flickr?date=YYYY-MM-DD              openbare Flickr-foto's genomen op die dag
+//   GET  /api/flickr?from=…&to=…&page=n           idem voor een periode, per pagina van 100
 //   POST /api/trips/:slug/photos?name=x.jpg&from=<flickr-url>  Flickr-foto downloaden naar de reis
 
 import { readFile, writeFile, readdir, mkdir, unlink, rm } from 'node:fs/promises';
@@ -20,7 +21,7 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { routeLegs } from './routing.mjs';
 import { postsAround } from './wordpress.mjs';
-import { photosTakenOn, downloadFlickrPhoto } from './flickr.mjs';
+import { photosTakenOn, photosTakenBetween, downloadFlickrPhoto } from './flickr.mjs';
 import { slugify } from '../src/slugify.js';
 
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -162,6 +163,8 @@ export function editorApi({ root }) {
     const url = new URL(req.url, 'http://localhost');
     const [, resource, slug, sub] = url.pathname.split('/').filter(Boolean);
     if (resource === 'flickr' && req.method === 'GET') {
+      const q = url.searchParams;
+      if (q.get('from')) return send(res, 200, await photosTakenBetween(root, q.get('from'), q.get('to'), { page: Number(q.get('page')) || 1 }));
       return send(res, 200, await photosTakenOn(root, url.searchParams.get('date')));
     }
     if (resource === 'wordpress' && req.method === 'GET') {
