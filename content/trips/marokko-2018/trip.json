@@ -2,7 +2,7 @@
   "title": "Marokko 2018",
   "slug": "marokko-2018",
   "summary": "RoadTrip door Marokko",
-  "cover": "",
+  "cover": "photos/marrakesh-flickr-45570731475.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -14,7 +14,13 @@
       "date": "2018-03-03",
       "type": "hotel",
       "text": "3 nachten, 3–6 maart.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/marrakesh-flickr-45570731475.jpg",
+          "caption": "Marrakech - 22",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/45570731475/"
+        }
+      ],
       "articles": []
     },
     {

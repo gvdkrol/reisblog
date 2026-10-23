@@ -2,7 +2,7 @@
   "title": "Kroatië 2014",
   "slug": "kroatie-2014",
   "summary": "Trial run met nieuwe camper bus",
-  "cover": "photos/st-peter-flickr-15421352202.jpg",
+  "cover": "photos/pula-flickr-15371684105.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -146,7 +146,13 @@
       "date": "2014-09-26",
       "type": "camping",
       "text": "1 nacht, 26–27 september.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/pula-flickr-15371684105.jpg",
+          "caption": "Pula - Amphitheatre - 1",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/15371684105/"
+        }
+      ],
       "articles": []
     },
     {
