@@ -31,6 +31,7 @@ import { DEFAULT_HOME } from './editor-api.mjs';
 import { legKey } from './routing.mjs';
 import { decodePolyline, encodePolyline } from '../src/polyline.js';
 import { isVia, onRoute } from '../src/stops.js';
+import { continentDays } from '../src/continents.js';
 
 const ID = 'virtual:trips';
 const RESOLVED_ID = '\0virtual:trips';
@@ -135,7 +136,7 @@ ${jsonLoader(ctx, 'loadRoutes', 'overzicht.json', routes)}`;
 
   function loadTrip(ctx, slug) {
     const trip = readTrip(slug);
-    if (!trip) return 'export const photos = {};\nexport async function loadTrip() { return null; }';
+    if (!trip) return 'export const photos = {};\nexport async function loadTrip() { return null; }\nexport async function loadFlickr() { return null; }';
     // De omslagfoto zit al in `virtual:trips`; niet nog eens importeren, anders maakt de
     // bundler voor elke gedeelde foto een eigen mini-chunk.
     const cover = coverOf(trip);
@@ -150,9 +151,13 @@ ${jsonLoader(ctx, 'loadRoutes', 'overzicht.json', routes)}`;
           legs: (trip.legs || []).map((l) => (l.polyline ? { ...l, polyline: simplifyEncoded(l.polyline, TRIP_TOLERANCE) } : l)),
         }
       : trip;
+    // Lijst van Flickr-foto's (scripts/flickr-index.mjs), apart en pas bij de knop geladen.
+    const flickrFile = join(tripsDir, slug, 'flickr.json');
+    const flickr = existsSync(flickrFile) ? JSON.parse(readFileSync(flickrFile, 'utf8')) : null;
     return `${out.imports.join('\n')}
 export const photos = { ${out.entries.join(', ')} };
-${jsonLoader(ctx, 'loadTrip', `${slug}.json`, data)}`;
+${jsonLoader(ctx, 'loadTrip', `${slug}.json`, data)}
+${jsonLoader(ctx, 'loadFlickr', `${slug}-flickr.json`, flickr)}`;
   }
 
   // Samenvatting voor de homepage: kaartje en kerncijfers.
@@ -169,6 +174,7 @@ ${jsonLoader(ctx, 'loadTrip', `${slug}.json`, data)}`;
       coverSrc: coverOf(trip),
       stopCount: stops.filter((s) => !isVia(s)).length,
       totalKm: legs.reduce((sum, l) => sum + (l.km || 0), 0),
+      continentDays: continentDays(stops), // voor de continentknoppen op de homepage
     };
   }
 
@@ -219,6 +225,8 @@ ${jsonLoader(ctx, 'loadTrip', `${slug}.json`, data)}`;
         key: legKey(a, b),
         km: Math.round(parts.reduce((sum, p) => sum + p.km, 0) * 10) / 10,
         ...(minutes !== undefined ? { minutes } : {}),
+        ...(parts.some((p) => p.flight) ? { flight: true } : {}),
+        ...(parts.some((p) => p.straight) ? { straight: true } : {}),
         polyline: encodePolyline(points),
       });
     }

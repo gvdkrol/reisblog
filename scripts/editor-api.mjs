@@ -79,6 +79,7 @@ export function editorApi({ root }) {
         date: String(s.date || ''),
         type: String(s.type || 'bezienswaardigheid'),
         ...(s.draft ? { draft: true } : {}), // concept-stop: niet publiceren
+        ...(s.straight ? { straight: true } : {}), // route hiernaartoe in een rechte lijn
         ...(typeof s.track === 'string' && s.track ? { track: s.track } : {}), // eigen spoor (fietstocht)
         ...(Number.isFinite(s.km) ? { km: s.km } : {}),
         text: String(s.text || ''),

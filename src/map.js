@@ -49,6 +49,14 @@ export function createMap(el, { tiles = 'osm', ...options } = {}) {
   return map;
 }
 
+// Lijnstijl van een traject: vlucht dun gestippeld, rechte lijn ("volg niet de weg")
+// gestreept, route over de weg doorgetrokken, nog niet berekend grijs-achtig gestreept.
+export function legStyle(leg, routed = !!leg?.polyline) {
+  if (leg?.flight) return { weight: 2.5, dashArray: '1 9' };
+  if (leg?.straight) return { weight: 4, dashArray: '10 8' };
+  return { weight: 5, dashArray: routed ? null : '6 8' };
+}
+
 // Lijn(en) van een reis: de berekende route per traject, of een rechte lijn als die (nog) ontbreekt.
 export function legLatLngs(trip) {
   const byId = Object.fromEntries(trip.stops.map((s) => [s.id, s]));

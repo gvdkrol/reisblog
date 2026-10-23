@@ -13,12 +13,20 @@
     <div class="wrap">
       <header class="site-header" id="site-header"></header>
       <div class="kpis" id="kpis"></div>
-      <div id="overview-map" class="overview-map"></div>
 
-      <div class="section-title"><h2>Reizen</h2><span id="trip-count"></span></div>
-      <main id="trips" class="trip-grid"></main>
+      <nav class="tabs" id="tabs" role="tablist" aria-label="Reizen per decennium"></nav>
 
-      <section id="links" hidden></section>
+      <main>
+        <section class="tab-panel" id="panel-home" role="tabpanel">
+          <div id="overview-map" class="overview-map"></div>
+          <div class="continents" id="continents"></div>
+          <section id="links" hidden></section>
+        </section>
+        <section class="tab-panel" id="panel-decade" role="tabpanel" hidden>
+          <div class="section-title"><h2 id="decade-title"></h2><span id="trip-count"></span></div>
+          <div id="trips" class="trip-grid"></div>
+        </section>
+      </main>
 
       <footer class="site-footer" id="site-footer"></footer>
     </div>

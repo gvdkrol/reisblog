@@ -30,6 +30,13 @@ export async function loadTrip(slug) {
   return enrich(trip);
 }
 
+// Openbare Flickr-foto's uit het tijdvak van de reis: { user, from, to, photos: [[id,
+// server, secret, genomen, titel], …] }, of null als de lijst nog niet gemaakt is.
+export async function loadFlickr(slug) {
+  const load = Object.hasOwn(loaders, slug) ? loaders[slug] : null;
+  return load ? (await load()).loadFlickr() : null;
+}
+
 // Zet een pad uit trip.json ("photos/x.webp") om naar de URL van het gebundelde bestand.
 export function asset(trip, path) {
   return photos[`${trip.slug}/${path}`] || path;

@@ -31,6 +31,7 @@ export function legInto(stops, legs, stop) {
       polyline: true,
       km: parts.reduce((sum, p) => sum + p.km, 0),
       flight: parts.some((p) => p.flight),
+      straight: parts.some((p) => p.straight),
       minutes: parts.every((p) => Number.isFinite(p.minutes)) ? parts.reduce((sum, p) => sum + p.minutes, 0) : undefined,
     },
   };

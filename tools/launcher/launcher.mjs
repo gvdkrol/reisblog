@@ -90,9 +90,26 @@ async function startDev() {
   });
   for (let i = 0; i < 40; i++) {
     await new Promise((r) => setTimeout(r, 500));
-    if (await devRunning()) return { ok: true, message: 'Dev-omgeving gestart.' };
+    if (await devRunning()) {
+      refreshFlickr();
+      return { ok: true, message: 'Dev-omgeving gestart; Flickr-lijsten worden op de achtergrond ververst.' };
+    }
   }
   return { ok: false, message: 'De dev-omgeving start niet; kijk in het logboek.' };
+}
+
+// Flickr-lijsten per reis (flickr.json, voor de knop "Foto's op Flickr") verversen.
+// Op de achtergrond, zodat de dev-omgeving meteen bruikbaar is; de dev-server pikt de
+// nieuwe bestanden zelf op. Mislukt dit (geen sleutel of verbinding), dan blijven de
+// oude lijsten staan.
+let flickrRunning = false;
+async function refreshFlickr() {
+  if (flickrRunning) return;
+  flickrRunning = true;
+  addLog('Flickr-lijsten verversen (npm run flickr)…');
+  const result = await runShell('npm run flickr', { timeout: 600000 });
+  addLog(result.ok ? 'Flickr-lijsten bijgewerkt.' : 'Flickr-lijsten verversen mislukt; de oude lijsten blijven staan.');
+  flickrRunning = false;
 }
 
 async function stopDev() {

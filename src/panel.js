@@ -31,7 +31,7 @@ export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
       </div>
       <h2>${escapeHtml(stop.name)}</h2>
       ${stop.type === 'fietstocht' && Number.isFinite(stop.km) ? `<div class="leg-info">🚲 ${formatKm(stop.km)} gefietst</div>` : ''}
-      ${leg?.polyline && prevStop ? `<div class="leg-info">${leg.flight ? '✈️' : '🛣️'} ${formatLeg(leg)} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
+      ${leg?.polyline && prevStop ? `<div class="leg-info">${leg.flight ? '✈️' : leg.straight ? '📏' : '🛣️'} ${formatLeg(leg)}${leg.straight && !leg.flight ? ' hemelsbreed' : ''} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
       <div class="story">${marked.parse(stop.text || '')}</div>
       ${articles.length ? `
         <div class="articles">

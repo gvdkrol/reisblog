@@ -1,8 +1,9 @@
 import './style.css';
-import { loadTrip, asset } from './data.js';
-import { createMap, legLatLngs, stopType, isVia, decodePolyline, L } from './map.js';
+import { loadTrip, loadFlickr, asset } from './data.js';
+import { createMap, legLatLngs, legStyle, stopType, isVia, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
 import { stopPanelHtml, bindPanelPhotos, captionHtml } from './panel.js';
+import { createFlickrGallery, toFlickrData, flickrThumbHtml, lockBrokenThumbs } from './flickr-gallery.js';
 
 const params = new URLSearchParams(location.search);
 const embed = params.has('embed');
@@ -31,22 +32,29 @@ $('trip-info').innerHTML = `
     ${trip.totalKm ? `<span class="stat">${formatKm(trip.totalKm)}</span>` : ''}
     ${trip.totalMinutes ? `<span class="stat">${formatDuration(trip.totalMinutes)} rijden</span>` : ''}
   </div>
-  ${trip.visibleStops.length ? `<button class="start" id="start">Start bij ${escapeHtml(trip.visibleStops[0].name)} →</button>` : ''}
+  <div class="actions">
+    ${trip.visibleStops.length ? `<button class="start" id="start">Start bij ${escapeHtml(trip.visibleStops[0].name)} →</button>` : ''}
+    <button class="flickr-btn" id="flickr-btn">📷 Foto's op Flickr</button>
+  </div>
 `;
 $('start')?.addEventListener('click', () => openStop(0));
+// Flickr-lijst van de reis: één keer laden, gedeeld door het raster en het stoppaneel.
+let flickrData;
+const flickr = () => (flickrData ||= loadFlickr(trip.slug).then(toFlickrData));
+const flickrGallery = createFlickrGallery({
+  title: trip.title,
+  load: flickr,
+  open: (photos, index) => openLightbox(photos, index),
+});
+$('flickr-btn').addEventListener('click', () => flickrGallery.open());
 
 // ---------- Kaart ----------
 const map = createMap('map');
 const legLayers = legLatLngs(trip).map(({ leg, to, latlngs, routed }) => {
-  const line = L.polyline(latlngs, {
-    color: '#c2410c',
-    weight: leg?.flight ? 2.5 : 5,
-    opacity: 0.85,
-    dashArray: leg?.flight ? '1 9' : routed ? null : '6 8',
-    lineCap: 'round',
-  }).addTo(map);
+  const style = legStyle(leg, routed);
+  const line = L.polyline(latlngs, { color: '#c2410c', opacity: 0.85, lineCap: 'round', ...style }).addTo(map);
   if (leg?.polyline) line.bindTooltip(formatLeg(leg), { sticky: true, className: 'leg-tip' });
-  return { line, to, base: leg?.flight ? 2.5 : 5 };
+  return { line, to, base: style.weight };
 });
 
 // Fietstochten: eigen spoor als gestippelde lijn.
@@ -150,11 +158,45 @@ function renderPanel(stop) {
   });
   content.scrollTop = 0;
   bindPanelPhotos(content, photos, { onOpen: (index) => openLightbox(photos, index) });
+  renderDayFlickr(stop, content).catch(() => {}); // zonder Flickr-lijst gewoon geen raster
 
   $('prev').disabled = !prevStop;
   $('next').disabled = !next;
   $('prev').innerHTML = `<small>← Vorige stop</small><b>${prevStop ? escapeHtml(prevStop.name) : '–'}</b>`;
   $('next').innerHTML = `<small>Volgende stop →</small><b>${next ? escapeHtml(next.name) : 'Einde van de reis'}</b>`;
+}
+
+// Flickr-foto's van de dag van de stop, als raster onder het verhaal. Foto's die al bij
+// de stop staan (overgenomen van Flickr) worden overgeslagen. Niets gedownload: de
+// thumbnails en de vergroting komen rechtstreeks van Flickr.
+const DAY_SHOWN = 9;
+async function renderDayFlickr(stop, content) {
+  if (!stop.date) return;
+  const { photos } = await flickr();
+  if (stops[current] !== stop) return; // intussen een andere stop geopend
+  const own = new Set((stop.photos || []).map((p) => /flickr\.com\/photos\/[^/]+\/(\d+)/.exec(p.link || '')?.[1]).filter(Boolean));
+  const day = photos.filter((p) => p.taken.startsWith(stop.date) && !own.has(p.id));
+  if (!day.length) return;
+  const section = document.createElement('section');
+  section.className = 'day-flickr';
+  const render = (all) => {
+    const shown = all ? day : day.slice(0, DAY_SHOWN);
+    section.innerHTML = `
+      <h4>Foto's van deze dag op Flickr <small>${day.length}</small></h4>
+      <div class="df-grid">${shown
+        .map((p, i) => `<button class="df-item" data-i="${i}" title="${escapeHtml(p.title)}">${flickrThumbHtml(p, '(max-width: 767px) 33vw, 260px')}</button>`)
+        .join('')}</div>
+      ${shown.length < day.length ? `<button class="df-more">Toon alle ${day.length} foto's</button>` : ''}`;
+    lockBrokenThumbs(section, '.df-item');
+  };
+  render(false);
+  section.addEventListener('click', (e) => {
+    if (e.target.closest('.df-more')) return render(true);
+    const item = e.target.closest('.df-item');
+    if (item && !item.classList.contains('locked')) openLightbox(day, Number(item.dataset.i));
+  });
+  const body = content.querySelector('.panel-body');
+  body.insertBefore(section, body.querySelector('.articles'));
 }
 
 $('prev').addEventListener('click', () => openStop(current - 1));
@@ -177,7 +219,7 @@ function openLightbox(photos, index) {
 function showLightbox(index) {
   lbIndex = (index + lbPhotos.length) % lbPhotos.length;
   const p = lbPhotos[lbIndex];
-  lb.querySelector('img').src = asset(trip, p.src);
+  lb.querySelector('img').src = p.url || asset(trip, p.src); // url: foto rechtstreeks van Flickr
   lb.querySelector('.lb-caption').innerHTML = captionHtml(p);
   lb.querySelector('.lb-prev').hidden = lb.querySelector('.lb-next').hidden = lbPhotos.length < 2;
 }
@@ -193,6 +235,10 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft') showLightbox(lbIndex - 1);
     if (e.key === 'ArrowRight') showLightbox(lbIndex + 1);
+    return;
+  }
+  if (flickrGallery.isOpen()) {
+    if (e.key === 'Escape') flickrGallery.close();
     return;
   }
   if (current < 0) return;

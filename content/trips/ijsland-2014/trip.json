@@ -1,0 +1,1543 @@
+{
+  "title": "IJsland 2014",
+  "slug": "ijsland-2014",
+  "summary": "Een week met een gehuurde Jeep en tent rond IJsland: van Reykjavik via de Blue Lagoon en Þingvellir over de Kjölur-route naar het noorden, walvissen bij Dalvík, Mývatn, en via Snæfellsnes terug naar Reykjavik.",
+  "cover": "photos/kerlingarfjoll-5.jpg",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "reykjavik",
+      "name": "Reykjavik",
+      "lat": 64.1332,
+      "lng": -21.9325,
+      "date": "2014-06-21",
+      "type": "hotel",
+      "text": "**Hello Reykjavik**\n\nGisteren kwamen we na een voorspoedige reis rond 2.00 uur ‘s nachts (4.00 uur NL tijd) aan in het hotel. Het was nog steeds behoorlijk licht en er zjn veel mensen op straat. Vanaf het vliegveld namen we de bus. Alles is goed geregeld en iedereen spreekt Engels, lekker makkelijk. Wel moe natuurlijk. Maar we zijn toch vroeg wakker. We hebben een appartementje in het centrum van Reykjavik. Met prive badkamer, maar wel op de gang, dus plassen met de sleutel mee. Warm water onder de douche ruikt naar zwavel, vanuit natuurlijke bronnen. We ontbijten bij een vvv/winkel/ontbijttent. Zalm voor ontbijt. Daarna de stad verkennen. Reykjavik heeft veel laagbouw en is heel gemoedelijk. Veel outdoor-kledingwinkels en koffietentjes. We bekijken eerst de grote kerk met prachtig uitzicht vanaf de toren. De bewolking hangt laag, zodat we de bergtoppen niet zien, maar het is droog. We bekijken een Reykjavik 871 +/-2, een ondergronds museum, gebouwd over de opgravingen van Viking-settlers. Erg interessant. Na een bakkie koffie lunchen we in de oude haven. Je doet een bestelling bij de counter, krijgt een post-it met een nummer, waarna de serveerster rondloopt met de bestelling en je nummer roept. Lekkere kreeftensoep. En een heel klein stukje (want natuurlijk zeer onverantwoord) walvis geproefd. Heerlijk, maar zielig … ‘s Middags bekijken we nog even Harpa, een groot modern concertgebouw. En we doen alvast boodschappen voor als we gaan camperen. De jongen bij de kassa vraagt waar we vandaan komen en zegt fan te zijn van het NL elftal tijdens het WK. In onze kamer slapen we 2 uurtjes, toch nog een beetje bijkomen.’s Avonds eten we heerlijk een een sjiek restautant. Aan de tafel naast ons zit een ouder Nederlands echtpaar, zij hebben er net 2 weken IJsland op zitten en zijn zeer enthousiast. Ze laten wat foto’s op de telefoon zien. Terug in de kamer een beetje buizen. Het is 22.30 geweest en de lucht breekt open, de zon schijnt nog hoog aan de hemel. Eerste indruk: Islande, 12 points.",
+      "photos": [
+        {
+          "src": "photos/reykjavik-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14476010905/"
+        },
+        {
+          "src": "photos/reykjavik-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14452914546/"
+        },
+        {
+          "src": "photos/reykjavik-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496143683/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Hello Reykjavik",
+          "url": "https://rondjewereld.nl/2014/06/08/arrival-in-reykjavik/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "hallgrimskirkja",
+      "name": "Hallgrímskirkja",
+      "lat": 64.1418,
+      "lng": -21.9267,
+      "date": "2014-06-21",
+      "type": "bezienswaardigheid",
+      "text": "We bekijken eerst de grote kerk met prachtig uitzicht vanaf de toren.",
+      "photos": [
+        {
+          "src": "photos/hallgrimskirkja-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14289558427/"
+        },
+        {
+          "src": "photos/hallgrimskirkja-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14289428158/"
+        },
+        {
+          "src": "photos/hallgrimskirkja-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496143523/"
+        },
+        {
+          "src": "photos/hallgrimskirkja-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496144213/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Hello Reykjavik",
+          "url": "https://rondjewereld.nl/2014/06/08/arrival-in-reykjavik/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "reykjavik-871-2",
+      "name": "Reykjavik 871±2",
+      "lat": 64.1474,
+      "lng": -21.9428,
+      "date": "2014-06-21",
+      "type": "bezienswaardigheid",
+      "text": "We bekijken een Reykjavik 871 +/-2, een ondergronds museum, gebouwd over de opgravingen van Viking-settlers.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Hello Reykjavik",
+          "url": "https://rondjewereld.nl/2014/06/08/arrival-in-reykjavik/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "harpa",
+      "name": "Harpa",
+      "lat": 64.1504,
+      "lng": -21.9329,
+      "date": "2014-06-21",
+      "type": "bezienswaardigheid",
+      "text": "‘s Middags bekijken we nog even Harpa, een groot modern concertgebouw.",
+      "photos": [
+        {
+          "src": "photos/harpa-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14289376889/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Hello Reykjavik",
+          "url": "https://rondjewereld.nl/2014/06/08/arrival-in-reykjavik/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "vikingaheimar",
+      "name": "Víkingaheimar",
+      "lat": 63.976,
+      "lng": -22.529,
+      "date": "2014-06-22",
+      "type": "bezienswaardigheid",
+      "text": "Verderop bezoeken we een Viking museum, met een replica van een vikingschip.",
+      "photos": [
+        {
+          "src": "photos/vikingaheimar-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14298184850/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Blue Lagoon",
+          "url": "https://rondjewereld.nl/2014/06/08/kamperen-in-het-licht/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "hafnaberg",
+      "name": "Hafnaberg",
+      "lat": 63.8818,
+      "lng": -22.7387,
+      "date": "2014-06-22",
+      "type": "activiteit",
+      "text": "Bij Hafnaberg doen we een hike van 2 uur door de lavavelden, richting de klippen waar veel meeuwen zijn.",
+      "photos": [
+        {
+          "src": "photos/hafnaberg-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14481436441/"
+        },
+        {
+          "src": "photos/hafnaberg-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14484806175/"
+        },
+        {
+          "src": "photos/hafnaberg-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14481430941/"
+        },
+        {
+          "src": "photos/hafnaberg-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14481432001/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Blue Lagoon",
+          "url": "https://rondjewereld.nl/2014/06/08/kamperen-in-het-licht/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "blue-lagoon",
+      "name": "Blue Lagoon",
+      "lat": 63.8939,
+      "lng": -22.4561,
+      "date": "2014-06-22",
+      "type": "activiteit",
+      "text": "We besluiten dan ook naar de Blue Lagoon te gaan, zodat we de avond iets (warms) te doen hebben. Dit het bekende minerale bad, een enorme tourist trap. Een enorme pool met melkachtig warm water uit een bron en je kunt silica-modder op je gezicht smeren. Heerlijk poedelen na die hike.",
+      "photos": [
+        {
+          "src": "photos/blue-lagoon-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14481433361/"
+        },
+        {
+          "src": "photos/blue-lagoon-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14481434301/"
+        },
+        {
+          "src": "photos/blue-lagoon-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14483562472/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Blue Lagoon",
+          "url": "https://rondjewereld.nl/2014/06/08/kamperen-in-het-licht/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "camping-grindavik",
+      "name": "Camping Grindavík",
+      "lat": 63.8352,
+      "lng": -22.4347,
+      "date": "2014-06-22",
+      "type": "camping",
+      "text": "**Blue Lagoon**\n\nWe slapen heerlijk uit en zijn pas laat wakker. In de hoofdstraat zoeken we naar een ontbijttentje, maar we komen toch bij dezelfde uit als gisteren. Het is bewolkt, maar droog, dus we lopen nog een rondje door Reykjavik. We hebben alle tijd, want de huurauto krijgen we pas om 12.00 uur. Als we in het stadhuis een enorme maquette van Ijsland bekijken gaat opeens de telefoon; net te laat met opnemen, maar het lijkt een nummer van hier. Dus snel terug naar het hotel om de tassen te pakken. We zitten nog maar net beneden als we worden opgehaald. We rijden naar een volgend plaatsje, waar we de auto ophalen, een Jeep. Het gaat lekker snel, dus we zijn zo op weg. Nog wat laatste boodschappen en dan terug naar Reykjavik, want daar hebben we campeerspullen gehuurd. Ze staan al klaar in grote shoppers. We krijgen nog even uitleg over de code om bij de sleutel voor het pand te komen, mochten we laat terugkomen. Klaar voor vertrek. Onderweg naar Reykjanes, het schiereiland onder de hoofdstad, wordt de lucht langzaam blauw. We lunchen uit de achterbak bij Vogar. Best fris nog. Verder zijn we verrast als we denken melk te hebben gekocht, terwijl het ’t midden houdt tussen yoghurt en karnemelk. Van IJslandse woorden kun je niks maken. Verderop bezoeken we een Viking museum, met een replica van een vikingschip. Erg leuk. Bij Hafnaberg doen we een hike van 2 uur door de lavavelden, richting de klippen waar veel meeuwen zijn. Het is nu prachtig weer en zonnig. Eind van de middag checken we in op de camping. Deze staat aangeschreven als een van de beste van IJsland, maar het is vrij eenvoudig. We besluiten dan ook naar de Blue Lagoon te gaan, zodat we de avond iets (warms) te doen hebben. Dit het bekende minerale bad, een enorme tourist trap. Maar wat is het leuk! Een enorme pool met melkachtig warm water uit een bron en je kunt silica-modder op je gezicht smeren. Verder stoombaden, een waterval met zwavelgeur en een bar in het water. Stoere mannen met een wit masker houden hun plastic beker met bier boven het water. Grappig! Heerlijk poedelen na die hike. We zijn er tot 21.00 uur en de zon schijnt nog heerlijk. Terug op de camping zetten we de tent op en maken we een soepje. Het is behoorlijk fris, maar de keuken is al dicht. Dus zitten we nu met een koude neus in de auto te computeren (we hebben bij die tent natuurlijk wel een wifi-dongel gehuurd). De zon verdwijnt net achter de bergen. Het is 23.15 uur en nog helemaal licht. Benieuwd of we kunnen slapen. Maar het was in ieder geval een topdag!",
+      "photos": [
+        {
+          "src": "photos/camping-grindavik-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14519964103/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Blue Lagoon",
+          "url": "https://rondjewereld.nl/2014/06/08/kamperen-in-het-licht/",
+          "date": "2014-06-08"
+        }
+      ]
+    },
+    {
+      "id": "gunnuhver",
+      "name": "Gunnuhver",
+      "lat": 63.8194,
+      "lng": -22.6842,
+      "date": "2014-06-23",
+      "type": "bezienswaardigheid",
+      "text": "Hier hiken we naar Gunnuhver, waar stoom en heet water uit de grond borrelt.",
+      "photos": [
+        {
+          "src": "photos/gunnuhver-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313255268/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Thingvellir National Park",
+          "url": "https://rondjewereld.nl/2014/06/23/thingvellir-national-park/",
+          "date": "2014-06-23"
+        }
+      ]
+    },
+    {
+      "id": "valahnukur",
+      "name": "Valahnúkur",
+      "lat": 63.8122,
+      "lng": -22.716,
+      "date": "2014-06-23",
+      "type": "bezienswaardigheid",
+      "text": "Dan verder naar Valahnukur, langs de vuurtoren een rots op met uitzicht over zee.",
+      "photos": [
+        {
+          "src": "photos/valahnukur-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14499858165/"
+        },
+        {
+          "src": "photos/valahnukur-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496466991/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Thingvellir National Park",
+          "url": "https://rondjewereld.nl/2014/06/23/thingvellir-national-park/",
+          "date": "2014-06-23"
+        }
+      ]
+    },
+    {
+      "id": "hverager-i",
+      "name": "Hveragerði",
+      "lat": 63.9976,
+      "lng": -21.1868,
+      "date": "2014-06-23",
+      "type": "eten",
+      "text": "Daarna rijden we een stuk naar het noorden, na ruim een uur zijn we in Hverageroi voor een late lunch. Bij dit tentje adverteren ze met earth cooking, eten in de hete aarde maken. We maken na de lunch nog een rondje door het geothermische park. Een jongetje kookt een ei in een netje aan een stok in het hete water.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Thingvellir National Park",
+          "url": "https://rondjewereld.nl/2014/06/23/thingvellir-national-park/",
+          "date": "2014-06-23"
+        }
+      ]
+    },
+    {
+      "id": "silfra-snorkelen-tussen-de-continenten",
+      "name": "Silfra – snorkelen tussen de continenten",
+      "lat": 64.2557,
+      "lng": -21.1161,
+      "date": "2014-06-23",
+      "type": "activiteit",
+      "text": "Eind van de middag rijden we naar de plek waar busjes staan met snorkelaars zich klaarmaken om de kloof te gaan. Snel thermisch ondergoed aan, daarna gewatteerd pak en een dry suit, een enorm rubberpak, waar je nauwelijks in kunt bewegen. Met een groepje van 8 mensen gaan we te water, temperatuur 2 graden. We snorkelen zo’n half uur, waarna we eruit klimmen. Dan nog even een sprong in het diepe vanaf een hoge rots.",
+      "photos": [
+        {
+          "src": "photos/silfra-snorkelen-tussen-de-continenten-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313256678/"
+        },
+        {
+          "src": "photos/silfra-snorkelen-tussen-de-continenten-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313400427/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Thingvellir National Park",
+          "url": "https://rondjewereld.nl/2014/06/23/thingvellir-national-park/",
+          "date": "2014-06-23"
+        }
+      ]
+    },
+    {
+      "id": "ingvellir",
+      "name": "Þingvellir",
+      "lat": 64.2583,
+      "lng": -21.0344,
+      "date": "2014-06-23",
+      "type": "camping",
+      "text": "**Thingvellir National Park**\n\nPrima geslapen in de tent en niet koud gehad, want we hebben super goede slaapzakken. Wel was het licht vannacht, dus de slaapmaskers kwamen goed van pas. We ontbijten in de keuken, toch wel lekker om even te kunnen zitten. Bovendien is daar een waterkoker, dus dat scheelt een hoop gedoe. Als we op pad gaan rijden we een stukje terug, naar de punt van het schiereiland. Hier hiken we naar Gunnuhver, waar stoom en heet water uit de grond borrelt. Dan verder naar Valahnukur, langs de vuurtoren een rots op met uitzicht over zee. Prachtig is het hier. Daarna rijden we een stuk naar het noorden, na ruim een uur zijn we in Hverageroi voor een late lunch. De gewoonte is hier te bestellen bij de counter en dan te gaan zitten, waarna het eten wordt gebracht. Bij dit tentje adverteren ze met earth cooking, eten in de hete aarde maken. Wij hebben het in ieder geval niet geproefd. We maken na de lunch nog een rondje door het geothermische park. Ook hier borrelt en stoomt het weer. Een jongetje kookt een ei in een netje aan een stok in het hete water. We rijden nog een stukje verder naar Thingvellir National Park (de eerste letter is een soort P met extra streepje, maar dat zit niet op ons toetsenboard, dan maar phonetisch). Op deze plaats was het eerste parlement van IJsland in 930. Veel vlaggen en gedenkstenen. Verder een prachtig meer, bomen (zeldzaam in IJsland) en een waterval. Maar de echte bezienswaardigheid is de kloof tussen de tectonische platen (Europa en Noord Amerika). Die verwijderen langzaam van elkaar. Normaal gesproken is dat op het land niet zichtbaar, maar hier wel. Je kunt in de kloof lopen, in een diepe spleet zien we sneeuw. We doen weer een flinke hike. Eind van de middag rijden we naar de plek waar busjes staan met snorkelaars zich klaarmaken om de kloof te gaan. We spreken een jongen aan en we kunnen nog mee. Snel thermisch ondergoed aan, daarna gewatteerd pak en een dry suit, een enorm rubberpak, waar je nauwelijks in kunt bewegen. Met een groepje van 8 mensen gaan we te water, temperatuur 2 graden. Alleen je handen en gezicht zijn koud, verder blijf je warm. Onder water is het magisch blauw en kun je de tectonische platen goed zien (soms is het zo smal dat je 2 continenten tegelijk kunt aanraken). Het water is heel diep en helder. Op de rotsen groeien gifgroene slierten. We snorkelen zo’n half uur, waarna we eruit klimmen. Dan nog even een sprong in het diepe vanaf een hoge rots. Geweldige ervaring! Net de tent opgezet, vroeg naar bed.",
+      "photos": [
+        {
+          "src": "photos/ingvellir-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14476749716/"
+        },
+        {
+          "src": "photos/ingvellir-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313402237/"
+        },
+        {
+          "src": "photos/ingvellir-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14476748406/"
+        },
+        {
+          "src": "photos/ingvellir-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313257598/"
+        },
+        {
+          "src": "photos/ingvellir-5.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496465051/"
+        },
+        {
+          "src": "photos/ingvellir-6.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313206100/"
+        },
+        {
+          "src": "photos/ingvellir-7.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14499859605/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Thingvellir National Park",
+          "url": "https://rondjewereld.nl/2014/06/23/thingvellir-national-park/",
+          "date": "2014-06-23"
+        }
+      ]
+    },
+    {
+      "id": "geysir",
+      "name": "Geysir",
+      "lat": 63.9446,
+      "lng": -20.9839,
+      "date": "2014-06-24",
+      "type": "bezienswaardigheid",
+      "text": "Allereerst Geysir, de geiser der geisers, die het inmiddels niet meer zo goed doet, maar zijn buurman wel, al na een paar minuten wachten. Busladingen vol toeristen vanuit Reykjavik komen hier.",
+      "photos": [
+        {
+          "src": "photos/geysir-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313460499/"
+        },
+        {
+          "src": "photos/geysir-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313419200/"
+        },
+        {
+          "src": "photos/geysir-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496678821/"
+        },
+        {
+          "src": "photos/geysir-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14498763084/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Kjölur Route",
+          "url": "https://rondjewereld.nl/2014/06/24/kjoelur-route/",
+          "date": "2014-06-24"
+        }
+      ]
+    },
+    {
+      "id": "gullfoss",
+      "name": "Gullfoss",
+      "lat": 64.328,
+      "lng": -20.1222,
+      "date": "2014-06-24",
+      "type": "bezienswaardigheid",
+      "text": "We drinken een bakkie koffie en rijden 10 minuten verder naar Gullfoss, een grote waterval met 2 verdiepingen.",
+      "photos": [
+        {
+          "src": "photos/gullfoss-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496678081/"
+        },
+        {
+          "src": "photos/gullfoss-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313463479/"
+        },
+        {
+          "src": "photos/gullfoss-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14476959626/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Kjölur Route",
+          "url": "https://rondjewereld.nl/2014/06/24/kjoelur-route/",
+          "date": "2014-06-24"
+        }
+      ]
+    },
+    {
+      "id": "kerlingarfjoll",
+      "name": "Kerlingarfjöll",
+      "lat": 64.689,
+      "lng": -19.3259,
+      "date": "2014-06-24",
+      "type": "bezienswaardigheid",
+      "text": "We vertrekken via de Kjölur Route naar het hoogland. Op een onverharde weg rijden we door een maanlandschap langs rotsen en vulkaanresten en tussen 2 enorme gletsjers. Halverwege ligt Kerlingarfjöll, waar we in de middag aankomen. We waren eigenlijk van plan hier te overnachten, maar het is bitterkoud en je krijgt geen tent opgezet met deze wind. Dus eten we een soepje en klimmen nog even een berg op, met hier en daar nog wat sneeuw.",
+      "photos": [
+        {
+          "src": "photos/kerlingarfjoll-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313471678/"
+        },
+        {
+          "src": "photos/kerlingarfjoll-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14520176143/"
+        },
+        {
+          "src": "photos/kerlingarfjoll-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14313610577/"
+        },
+        {
+          "src": "photos/kerlingarfjoll-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14498887062/"
+        },
+        {
+          "src": "photos/kerlingarfjoll-5.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14496675461/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Kjölur Route",
+          "url": "https://rondjewereld.nl/2014/06/24/kjoelur-route/",
+          "date": "2014-06-24"
+        }
+      ]
+    },
+    {
+      "id": "hveravellir",
+      "name": "Hveravellir",
+      "lat": 64.8664,
+      "lng": -19.5543,
+      "date": "2014-06-24",
+      "type": "via",
+      "text": "",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "blonduos",
+      "name": "Blönduós",
+      "lat": 65.6639,
+      "lng": -20.2955,
+      "date": "2014-06-24",
+      "type": "camping",
+      "text": "**Kjölur Route**\n\nAls we wakker worden regent het zachtjes. Het was voorspeld, dus we zijn er op voorbereid. Na het inpakken van de tent ontbijten we in de coffeeshop. We vragen naar iets IJslands voor erbij en krijgen Happy Marriage cake; een soort taaie, harde koek … maar lekker! Eenmaal in de auto gaat het harder regenen. Gelukkig hebben we een dagje rijden gepland, met hier en daar iets om te bekijken. Allereerst Geysir, de geiser der geisers, die het inmiddels niet meer zo goed doet, maar zijn buurman wel, al na een paar minuten wachten. Busladingen vol toeristen vanuit Reykjavik komen hier. We drinken een bakkie koffie en rijden 10 minuten verder naar Gullfoss, een grote waterval met 2 verdiepingen. Het waait enorm en als je nog niet nat was van de regen, dan word je het wel van de waterval. Maar prachtig. We vertrekken via de Kjölur Route naar het hoogland. Op een onverharde weg rijden we door een maanlandschap langs rotsen en vulkaanresten en tussen 2 enorme gletsjers. We pakken nog een toeristisch parallelpad, waardoor we onverwacht door een riviertje moeten rijden. Altijd weer spectaculair. Halverwege ligt Kerlingarfjöll, waar we in de middag aankomen. We waren eigenlijk van plan hier te overnachten, maar het is bitterkoud en je krijgt geen tent opgezet met deze wind. Wel zijn er peperdure hutten, maar die slaan we over. Dus eten we een soepje en klimmen nog even een berg op, met hier en daar nog wat sneeuw. Op naar een warmere plek. Dus besluiten we door te rijden naar de kust. Onderweg doen we nog een koffiestop bij een soort ski-hutje. Verder weer een uitgestrekt landschap en af en toe een andere auto. Rond 19 uur komen we aan in Blönduos aan de noordkust. Het is hier maar liefst 15 graden en het miezert nog maar een beetje. Inmiddels kunnen we de tent al snel opzetten, waarna we lekker gaan eten in een restaurant. Weer buiten wordt een enorme groep paarden langs de weg door de stad geleid, waarschijnlijk naar een andere wei. Inmiddels is het helemaal droog, dus zetten we een kopje thee en kunnen we buiten zitten. Te gekke dag met mooie ruige route door de IJslandse binnenlanden. Bewijs: blubber op de auto tot op heuphoogte.",
+      "photos": [
+        {
+          "src": "photos/blonduos-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321676837/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Kjölur Route",
+          "url": "https://rondjewereld.nl/2014/06/24/kjoelur-route/",
+          "date": "2014-06-24"
+        }
+      ]
+    },
+    {
+      "id": "holar",
+      "name": "Hólar",
+      "lat": 65.732,
+      "lng": -19.1111,
+      "date": "2014-06-25",
+      "type": "eten",
+      "text": "Bij Holar drinken we koffie, daarna doen we iets verderop een hike op een soort pier van kiezelstenen.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Dalvik",
+          "url": "https://rondjewereld.nl/2014/06/25/dalvik/",
+          "date": "2014-06-25"
+        }
+      ]
+    },
+    {
+      "id": "lonkot",
+      "name": "Lónkot",
+      "lat": 66.0049,
+      "lng": -19.4004,
+      "date": "2014-06-25",
+      "type": "eten",
+      "text": "In de Lonely Planet staat Lonkot aanbevolen, dus lunchen we daar laat en uitgebreid met verse vis en bloemen die je kunt eten.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Dalvik",
+          "url": "https://rondjewereld.nl/2014/06/25/dalvik/",
+          "date": "2014-06-25"
+        }
+      ]
+    },
+    {
+      "id": "trollaskagi",
+      "name": "Tröllaskagi",
+      "lat": 66.1844,
+      "lng": -18.9475,
+      "date": "2014-06-25",
+      "type": "bezienswaardigheid",
+      "text": "We rijden naar Tröllaskagi Peninsula, een schiereiland met een mooie weg langs de rand. Langs het fjord staan bergen met besneeuwde toppen, hoewel het vandaag 18 graden is. Onderweg nog even tanken en gratis de auto wassen; nodig want als je iets pakt hang je steeds met je kleren in de blubber van gisteren. Onderweg is veel te zien en we vergapen ons bij elke bocht aan de prachtige vergezichten. Verder veel lange tunnels, de langste 7 km, waaronder een aantal waar je voor je tegenligger moet uitwijken in parkeerhaventjes, omdat er maar 1 auto door kan.",
+      "photos": [
+        {
+          "src": "photos/trollaskagi-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321526888/"
+        },
+        {
+          "src": "photos/trollaskagi-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14485022506/"
+        },
+        {
+          "src": "photos/trollaskagi-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506990542/"
+        },
+        {
+          "src": "photos/trollaskagi-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321466430/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Dalvik",
+          "url": "https://rondjewereld.nl/2014/06/25/dalvik/",
+          "date": "2014-06-25"
+        }
+      ]
+    },
+    {
+      "id": "dalvik-walvissen-kijken",
+      "name": "Dalvík – walvissen kijken",
+      "lat": 65.9711,
+      "lng": -18.5304,
+      "date": "2014-06-25",
+      "type": "activiteit",
+      "text": "Bij Dalvik kun je een whale watching tour doen en we zijn er precies op tijd om mee te kunnen laat in de middag. Eerst een warme overall aan, dan met 10 mensen op een boot door het fjord. Al snel spotten we humpback whales. Op de terugweg krijgen we nog een warme choco en een koekje en gooien we een hengel uit. Enorme kabeljauw komt er naar boven. De vissen worden aan boord schoongemaakt en terug aan de wal gaan ze op de barbeque.",
+      "photos": [
+        {
+          "src": "photos/dalvik-walvissen-kijken-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321522458/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321671077/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14485017706/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321520228/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-5.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506985552/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-6.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506985612/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-7.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321668427/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-8.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14321522719/"
+        },
+        {
+          "src": "photos/dalvik-walvissen-kijken-9.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506993522/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Dalvik",
+          "url": "https://rondjewereld.nl/2014/06/25/dalvik/",
+          "date": "2014-06-25"
+        }
+      ]
+    },
+    {
+      "id": "camping-dalvik",
+      "name": "Camping Dalvík",
+      "lat": 65.9679,
+      "lng": -18.5344,
+      "date": "2014-06-25",
+      "type": "camping",
+      "text": "**Dalvik**\n\nNa een klein beetje regen vannacht is het vanmorgen weer droog. We slapen prima in de tent en vooral lang. Aan de picknicktafel ontbijten we en we rijden laat weg, vooral omdat het wachten is voordat die ene douche bij de dames vrij is. We rijden naar Tröllaskagi Peninsula, een schiereiland met een mooie weg langs de rand. Bij Holar drinken we koffie, daarna doen we iets verderop een hike op een soort pier van kiezelstenen. Langs het fjord staan bergen met besneeuwde toppen, hoewel het vandaag 18 graden is. In de Lonely Planet staat Lonkot aanbevolen, dus lunchen we daar laat en uitgebreid met verse vis en bloemen die je kunt eten. Onderweg nog even tanken en gratis de auto wassen; nodig want als je iets pakt hang je steeds met je kleren in de blubber van gisteren. Onderweg is veel te zien en we vergapen ons bij elke bocht aan de prachtige vergezichten. Verder veel lange tunnels, de langste 7 km, waaronder een aantal waar je voor je tegenligger moet uitwijken in parkeerhaventjes, omdat er maar 1 auto door kan. Bij Dalvik kun je een whale watching tour doen en we zijn er precies op tijd om mee te kunnen laat in de middag. Eerst een warme overall aan, dan met 10 mensen op een boot door het fjord. Ook hier weer besneeuwde bergtoppen en nu ook watervallen met smeltwater de zee in. Al snel spotten we humpback whales. In de verte springen ze uit het water, dichtbij laten ze hun staart zien. Machtig mooi. Op de terugweg krijgen we nog een warme choco en een koekje en gooien we een hengel uit. De lijn gaat wel 30 meter diep en je hebt meteen beet. Enorme kabeljauw komt er naar boven. Er zijn er zo veel, dat Lesley er zelfs één aan z’n staart vangt; ze hoeven niet eens te bijten om beet te hebben… De vissen worden aan boord schoongemaakt en terug aan de wal gaan ze op de barbeque. Verser kan niet. Nu zitten we op de camping in de keuken al onze apparaten op te laden onder het genot van een wijntje. Was weer een heerlijke dag.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Dalvik",
+          "url": "https://rondjewereld.nl/2014/06/25/dalvik/",
+          "date": "2014-06-25"
+        }
+      ]
+    },
+    {
+      "id": "akureyri",
+      "name": "Akureyri",
+      "lat": 65.6839,
+      "lng": -18.1122,
+      "date": "2014-06-26",
+      "type": "eten",
+      "text": "We vertrekken naar Akureyri, de tweede stad van IJsland (met slechts 17.000 inwoners) en drinken een latte op het terras.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "go-afoss",
+      "name": "Goðafoss",
+      "lat": 65.6828,
+      "lng": -17.5506,
+      "date": "2014-06-26",
+      "type": "bezienswaardigheid",
+      "text": "Daarna verder tot aan Godafoss, een mooie waterval, aan de Ring Road, de hoofdweg die rond het eiland loopt.",
+      "photos": [
+        {
+          "src": "photos/go-afoss-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14514363472/"
+        },
+        {
+          "src": "photos/go-afoss-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14514359322/"
+        },
+        {
+          "src": "photos/go-afoss-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14328873228/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "skutusta-agigar",
+      "name": "Skútustaðagígar",
+      "lat": 65.5714,
+      "lng": -17.0337,
+      "date": "2014-06-26",
+      "type": "bezienswaardigheid",
+      "text": "Doel van vandaag is Myvatn, een meer waar veel geothermische activiteit is. Steeds kun je een paar km verder rijden en een hike doen in een totaal ander landschap.",
+      "photos": [
+        {
+          "src": "photos/skutusta-agigar-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14328869018/"
+        },
+        {
+          "src": "photos/skutusta-agigar-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14535562023/"
+        },
+        {
+          "src": "photos/skutusta-agigar-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14514052324/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "dimmuborgir",
+      "name": "Dimmuborgir",
+      "lat": 65.5881,
+      "lng": -16.9079,
+      "date": "2014-06-26",
+      "type": "bezienswaardigheid",
+      "text": "Van groene “mock vulcanos”, grote lava rotsen naar een enorme krater.",
+      "photos": [
+        {
+          "src": "photos/dimmuborgir-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14535557363/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "hverfjall",
+      "name": "Hverfjall",
+      "lat": 65.6051,
+      "lng": -16.874,
+      "date": "2014-06-26",
+      "type": "activiteit",
+      "text": "We klimmen de krater op en lopen in een uur rond langs de rand.",
+      "photos": [
+        {
+          "src": "photos/hverfjall-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14535555033/"
+        },
+        {
+          "src": "photos/hverfjall-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14328780200/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "myvatn-nature-baths",
+      "name": "Mývatn Nature Baths",
+      "lat": 65.6305,
+      "lng": -16.8476,
+      "date": "2014-06-26",
+      "type": "activiteit",
+      "text": "’s Avonds gaan we naar de Myvatn Nature Baths, een soort Blue Lagoon, maar dan iets kleiner.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "camping-reykjahli",
+      "name": "Camping Reykjahlíð",
+      "lat": 65.6413,
+      "lng": -16.916,
+      "date": "2014-06-26",
+      "type": "camping",
+      "text": "**Myvatn**\n\nWe zijn een beetje lui, dus doen we rustig aan. Het is droog en redelijk warm, dus kunnen we buiten ontbijten. We vertrekken naar Akureyri, de tweede stad van IJsland (met slechts 17.000 inwoners) en drinken een latte op het terras. Daarna verder tot aan Godafoss, een mooie waterval, aan de Ring Road, de hoofdweg die rond het eiland loopt. Doel van vandaag is Myvatn, een meer waar veel geothermische activiteit is. Steeds kun je een paar km verder rijden en een hike doen in een totaal ander landschap. Van groene “mock vulcanos”, grote lava rotsen naar een enorme krater. En alles tegen de achtergrond van het meer en in de verte de besneeuwde bergtoppen. Wat een bizar landschap. We klimmen de krater op en lopen in een uur rond langs de rand. Daarna zoeken we de camping op. Eerst de tent maar opzetten, want er is regen voorspelt en nu is het nog droog. We staan op een stil plekje, met uitzicht op gestolde lava, het meer en een kerkje. We gaan eten bij de Cowshed, een boerderij waar met eigen producten wordt gewerkt. Als we aan tafel zitten krijgen we een slokje vers gemolken melk te proeven; lekker warm van de koe. Verder eten we geysir-brood; een cake-achtig roggebrood, gebakken onder de grond. ’s Avonds gaan we naar de Myvatn Nature Baths, een soort Blue Lagoon, maar dan iets kleiner. Even de spieren relaxen na al dat geklim vandaag, terwijl we nog wel zo lui waren. Nu voor de tent nog wat drinken. Een uitdaging, want er zitten hier midges, mini muggen die niet prikken, maar wel graag bij je gezicht zitten. Gelukkig zijn we daar op voorbereid, dus zitten we met de hoofdnetten op. Af en toe de beker even onder het netje houden voor een slok. Lekker dicht bij de natuur.",
+      "photos": [
+        {
+          "src": "photos/camping-reykjahli-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14514366502/"
+        },
+        {
+          "src": "photos/camping-reykjahli-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14329015697/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Myvatn",
+          "url": "https://rondjewereld.nl/2014/06/26/myvatn/",
+          "date": "2014-06-26"
+        }
+      ]
+    },
+    {
+      "id": "hverir",
+      "name": "Hverir",
+      "lat": 65.6422,
+      "lng": -16.8115,
+      "date": "2014-06-27",
+      "type": "bezienswaardigheid",
+      "text": "Bij Hverir stinkt het weer naar zwavel en zien we stoom en kokende blubber.",
+      "photos": [
+        {
+          "src": "photos/hverir-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14499299066/"
+        },
+        {
+          "src": "photos/hverir-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14335828628/"
+        },
+        {
+          "src": "photos/hverir-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14519015141/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Stykkisholmur",
+          "url": "https://rondjewereld.nl/2014/06/27/stykkisholmur/",
+          "date": "2014-06-27"
+        }
+      ]
+    },
+    {
+      "id": "leirhnjukur",
+      "name": "Leirhnjúkur",
+      "lat": 65.7213,
+      "lng": -16.7935,
+      "date": "2014-06-27",
+      "type": "activiteit",
+      "text": "Verderop bij Leirhnjukur doen we een prachtige hike, lopend door de stoom, geweldige vergezichten en nog een stukje door de sneeuw. Voordat we dit gebied verlaten zetten we de auto nog even bij een uitzichtpunt en koken we water voor een bakje noodles.",
+      "photos": [
+        {
+          "src": "photos/leirhnjukur-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14335827508/"
+        },
+        {
+          "src": "photos/leirhnjukur-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14522395485/"
+        },
+        {
+          "src": "photos/leirhnjukur-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14499296266/"
+        },
+        {
+          "src": "photos/leirhnjukur-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14335825738/"
+        },
+        {
+          "src": "photos/leirhnjukur-5.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14542526673/"
+        },
+        {
+          "src": "photos/leirhnjukur-6.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14520975174/"
+        },
+        {
+          "src": "photos/leirhnjukur-7.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14519018101/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Stykkisholmur",
+          "url": "https://rondjewereld.nl/2014/06/27/stykkisholmur/",
+          "date": "2014-06-27"
+        }
+      ]
+    },
+    {
+      "id": "bu-ardalur",
+      "name": "Búðardalur",
+      "lat": 65.1098,
+      "lng": -21.7668,
+      "date": "2014-06-27",
+      "type": "eten",
+      "text": "In Budardalur eten we in een soort kantine een hamburger; weinig toeristen hier, maar wel IJslanders met hun familie.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Stykkisholmur",
+          "url": "https://rondjewereld.nl/2014/06/27/stykkisholmur/",
+          "date": "2014-06-27"
+        }
+      ]
+    },
+    {
+      "id": "stykkisholmur",
+      "name": "Stykkishólmur",
+      "lat": 65.0686,
+      "lng": -22.7379,
+      "date": "2014-06-27",
+      "type": "camping",
+      "text": "**Stykkisholmur**\n\nPrima geslapen, ontbijten voor de tent met de muggennetten in de aanslag. We kijken op een groep Franse toeristen met campers, die zeer gedetailleerd uitleg krijgen wat ze vandaag gaan doen, waar rechtsaf, waar moet je opletten. Wij pakken de tent in en rijden gewoon weg. ’s Morgens bekijken we nog een paar mooie plekken, waar je de aarde ziet ademen. Bij Hverir stinkt het weer naar zwavel en zien we stoom en kokende blubber. Verderop bij Leirhnjukur doen we een prachtige hike, lopend door de stoom, geweldige vergezichten en nog een stukje door de sneeuw. Voordat we dit gebied verlaten zetten we de auto nog even bij een uitzichtpunt en koken we water voor een bakje noodles. Vandaag gaan we een behoorlijk stuk rijden naar het westen. De Ring Road is prima, maar je mag niet harder dan 90 km. Daarom hebben we voldoende tijd om rond te kijken. IJsland is heel leeg en werkelijk wonderschoon. Bij elke bocht weer een ander uitzicht op bergen, riviertjes en schapen langs de weg. Bij Akureyri drinken we even koffie, maar snel weer verder. Gelukkig is het hier constant licht, dus ’s avonds rijden is geen probleem. De radio heeft maar af en toe ontvangst, dus net als we lekker zitten te swingen moeten we weer scannen naar wat anders. In Budardalur eten we in een soort kantine een hamburger; weinig toeristen hier, maar wel IJslanders met hun familie. Het laatste stuk gaat op de onverharde maar nog steeds goed begaanbare weg op Snaefellsnes Peninsula. De wolken hangen op de zee. Op de camping in Stykkisholmur is het ontzettend druk; er is net een golftoernooi op de naastgelegen golfbaan. Eerst de tent opgezet. Nu zitten we in de golfclub aan de koffie, buiten is het 12 graden. Douchen wordt morgen interessant: 2 douches op een hele camping en deze zijn bovendien buiten. Brrr.",
+      "photos": [
+        {
+          "src": "photos/stykkisholmur-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14521345122/"
+        },
+        {
+          "src": "photos/stykkisholmur-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14520973584/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Stykkisholmur",
+          "url": "https://rondjewereld.nl/2014/06/27/stykkisholmur/",
+          "date": "2014-06-27"
+        }
+      ]
+    },
+    {
+      "id": "bjarnarhofn",
+      "name": "Bjarnarhöfn",
+      "lat": 64.9974,
+      "lng": -22.9633,
+      "date": "2014-06-28",
+      "type": "bezienswaardigheid",
+      "text": "Bij Bjarnarhöfn krijgen we een kleine rondleiding in een boerderij waar een IJslandse lekkernij wordt bereid; gedroogde haai. Na de uitleg mogen we een klein blokje proeven; het ruikt naar ammoniak en smaakt een beetje als oude Franse kaas. We kijken nog even in het drooghuis buiten, waar de stukken haai als Parmahammen te drogen hangen.",
+      "photos": [
+        {
+          "src": "photos/bjarnarhofn-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14529794435/"
+        },
+        {
+          "src": "photos/bjarnarhofn-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14526404301/"
+        },
+        {
+          "src": "photos/bjarnarhofn-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14529791595/"
+        },
+        {
+          "src": "photos/bjarnarhofn-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343221558/"
+        },
+        {
+          "src": "photos/bjarnarhofn-5.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343211759/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "grundarfjor-ur",
+      "name": "Grundarfjörður",
+      "lat": 64.9581,
+      "lng": -23.2707,
+      "date": "2014-06-28",
+      "type": "eten",
+      "text": "Bij Grundarfjördur drinken we koffie en missen we net de bui.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "rif",
+      "name": "Rif",
+      "lat": 64.912,
+      "lng": -23.821,
+      "date": "2014-06-28",
+      "type": "eten",
+      "text": "Verderop bij Rif eten we ambachtelijke vissoep in een klein knus restaurantje.",
+      "photos": [
+        {
+          "src": "photos/rif-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506717496/"
+        },
+        {
+          "src": "photos/rif-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343179000/"
+        },
+        {
+          "src": "photos/rif-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506711366/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "ondver-arnes",
+      "name": "Öndverðarnes",
+      "lat": 64.8835,
+      "lng": -24.0409,
+      "date": "2014-06-28",
+      "type": "bezienswaardigheid",
+      "text": "Dan naar Önderverdarnes, de punt van het schiereiland. Mooi uitzicht over zee; plotseling zien we zwarte vinnen boven de golven; een groep orca’s is niet al te ver van de kust te zien.",
+      "photos": [
+        {
+          "src": "photos/ondver-arnes-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343201549/"
+        },
+        {
+          "src": "photos/ondver-arnes-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14549931003/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "hellnar",
+      "name": "Hellnar",
+      "lat": 64.7509,
+      "lng": -23.6469,
+      "date": "2014-06-28",
+      "type": "activiteit",
+      "text": "Weer opgewarmd met koffie bij Hellnar doen we nog een mooie hike langs de klippen aan de zuidkant van het schiereiland. Het water is ontzettend helder en blauw en veel vogels nesten hier.",
+      "photos": [
+        {
+          "src": "photos/hellnar-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506705236/"
+        },
+        {
+          "src": "photos/hellnar-2.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14506702786/"
+        },
+        {
+          "src": "photos/hellnar-3.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343353857/"
+        },
+        {
+          "src": "photos/hellnar-4.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343352107/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "borgarnes",
+      "name": "Borgarnes",
+      "lat": 64.5609,
+      "lng": -21.8997,
+      "date": "2014-06-28",
+      "type": "eten",
+      "text": "We rijden richting Reykjavik en eten onderweg bij Borgarnes in een redelijk sjieke tent.",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "mosfellsb-r",
+      "name": "Mosfellsbær",
+      "lat": 64.1667,
+      "lng": -21.6989,
+      "date": "2014-06-28",
+      "type": "camping",
+      "text": "**Mosfellsbaer**\n\nVanochtend eerst een buitendouche genomen. Was prima te doen. Vreemd genoeg waren wij op die drukke camping de enigen die het aandurfden. Wel was het te winderig om te ontbijten, dus zijn we daarvoor naar de plaatselijke bakker gegaan. Vandaag verkennen we Snaefellsness, een schiereiland niet al te ver van Reykjavik. Steeds een stukje rijden, dan uitstappen voor een mooi uitzicht of een hike. We beklimmen eerst een heuvel, waarna we een onverhard pad door het lava-landschap nemen. Bij Bjarnarhöfn krijgen we een kleine rondleiding in een boerderij waar een IJslandse lekkernij wordt bereid; gedroogde haai. Na de uitleg mogen we een klein blokje proeven; het ruikt naar ammoniak en smaakt een beetje als oude Franse kaas. Niet slecht, alleen de nasmaak is stevig; de hele ochtend hebben we er nog lol van. We kijken nog even in het drooghuis buiten, waar de stukken haai als Parmahammen te drogen hangen. Het is voor IJslanders wat haring voor ons is. Bij Grundarfjördur drinken we koffie en missen we net de bui. Verderop bij Rif eten we ambachtelijke vissoep in een klein knus restaurantje. Telkens even opwarmen, want het is een graad of 12. Dan naar Önderverdarnes, de punt van het schiereiland. Mooi uitzicht over zee; plotseling zien we zwarte vinnen boven de golven; een groep orca’s is niet al te ver van de kust te zien. Geweldig! Weer opgewarmd met koffie bij Hellnar doen we nog een mooie hike langs de klippen aan de zuidkant van het schiereiland. Het water is ontzettend helder en blauw en veel vogels nesten hier. Langzaam trekken de wolken open en komt de zon door. We rijden richting Reykjavik en eten onderweg bij Borgarnes in een redelijk sjieke tent. Daarna door naar de camping. Reykjavik heeft er één en die is onzettend druk. Dus rijden we na enig overleg een stukje terug naar Mosfellsbaer, een voorstadje van Reykjavik. Prachtige rustige camping, alleen geen douche. Dat lossen we morgen wel op. In de zon uitkijkend over de baai drinken we thee. Nu nog even internetten in de auto en dan naar bed. Voor het eerst weer de wekker zetten…",
+      "photos": [
+        {
+          "src": "photos/mosfellsb-r-1.jpg",
+          "caption": "",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/14343227848/"
+        }
+      ],
+      "articles": [
+        {
+          "title": "Mosfellsbaer",
+          "url": "https://rondjewereld.nl/2014/06/28/mosfellsbaer/",
+          "date": "2014-06-28"
+        }
+      ]
+    },
+    {
+      "id": "keflavik-vliegveld",
+      "name": "Keflavík – vliegveld",
+      "lat": 63.985,
+      "lng": -22.6267,
+      "date": "2014-06-29",
+      "type": "bezienswaardigheid",
+      "text": "**Bye bye, Iceland**\n\nWe staan vroeg op om alle campeerspullen in te pakken. Hoewel het fris is ontbijten we buiten, aan een picknicktafel. De laatste crackers gaan op. Tijdens het tandenpoetsen raken we aan de praat met een Nederlandse vrouw; zij hebben hun eigen camper laten verschepen. Wij willen natuurlijk weten hoe dat in z’n werk gaat. De potten pindakaas en Nutella geven we aan haar. Daarna doen we nog even mee met de IJslandse traditie om te zwemmen. Elk zichzelf respecterend gehucht heeft hier een zwembad. We trekken baantjes in het buitenbad, dan weer opwarmen onder de douche. In Reykjavik leveren we de campeerspullen in. Prima dienstverlening, we kletsen nog wat en dan drinken we een laatste latte in de hoofdstad. Na tanken leveren we de auto in; bijna 2.000 km op de teller in een week tijd. Nu zitten we te hangen op het vliegveld; wat eten, beetje internetten en lezen. Allebei met een gloeiende kop van de kou en het buiten zijn. In het vliegtuig zullen we wel slapen. Wat een geweldig land; see you next time, Iceland!",
+      "photos": [],
+      "articles": [
+        {
+          "title": "Bye bye, Iceland",
+          "url": "https://rondjewereld.nl/2014/06/29/bye-bye-iceland/",
+          "date": "2014-06-29"
+        }
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "from": "reykjavik",
+      "to": "hallgrimskirkja",
+      "key": "64.1332,-21.9325;64.1418,-21.9267",
+      "km": 2.1,
+      "minutes": 5,
+      "polyline": "s_mfK|tzdCDKF]Fs@BQJk@XwA@IXu@XgADM\\eBb@{BZ_B@IH[Hg@DQ@GPaALeAF_@Bg@Di@?E@K@g@@e@?_@?]?_@Ce@AUGYGoAc@}FSkCEc@Ce@e@kHEk@Iq@Q_AAGKg@Mi@INq@`A{@fAsB`C}AjBm@r@gBnBONKHSH}@^YHUBe@@m@CCAYCUGOG[SMMKKaDmDOAI?GBEJEZAFKr@U~@CLKXMVQZuAtBoCdEuBbDW`@EDKPMREF_BdCY^QZMPgA`BYd@OPIHGDMFKDQBI?C?G?IAKCIEGGIKEIEKKUCKIYMo@AOMm@GMGMn@qCFMBIDGFCF?FBFBBFt@iA"
+    },
+    {
+      "from": "hallgrimskirkja",
+      "to": "reykjavik-871-2",
+      "key": "64.1418,-21.9267;64.1474,-21.9428",
+      "km": 1.4,
+      "minutes": 4,
+      "polyline": "svnfKxkydC@Cl@cAO{@m@dA}@xAIRITCHGLo@pCFLFLLl@@NLn@HXBJJTDJDHHJFFHDA\\Cr@Ad@B^@VDV@Hh@fDDXEFi@x@q@fAEDg@t@e@r@MPKPyBdDQVCHAJALC^]fEg@zGYtDKdAKpAWzCBfC@L?N?JG|BA^mBo@i@WECMMCECCq@kAG^G\\AHc@dDG`@EXCPm@hEERALEXMz@WfBMx@CEGGIKw@u@CCo@o@CZE`@DJ@J@J?J?HCZCV"
+    },
+    {
+      "from": "reykjavik-871-2",
+      "to": "harpa",
+      "key": "64.1474,-21.9428;64.1504,-21.9329",
+      "km": 1,
+      "minutes": 3,
+      "polyline": "mwofKhv|dCBWLPdAzANTDUXuB@GLy@VgBL{@DY@MDSl@iEBQDYFa@b@eD@IF]F_@u@uAs@wAMUIOo@eAmBoDACAAOYKUeAyBCGSc@Sa@a@{@O[KUEKSa@ISIOCGcAyBq@gBUs@GWUgAOy@KgAAQGcAWHQDk@JMB]FB^NtC"
+    },
+    {
+      "from": "harpa",
+      "to": "vikingaheimar",
+      "key": "64.1504,-21.9329;63.976,-22.529",
+      "km": 45.3,
+      "minutes": 45,
+      "polyline": "khpfK`tzdC??BF@FBDB@D@B?BCFI?EBI?K?KEgACm@AWCWj@KPEVIAw@A{@@}@Bs@FeAFu@R{Ap@}CPu@Ha@FUViAvBgJd@qBp@wClAiF^}AFUJc@FWj@cCDUx@uDLm@Lk@Lm@ZgBVgBNuA@ONeBLsBDs@Bs@@k@@k@@w@?mB?Q?Q?M?e@Am@A]AKCu@KoBOyBQcBo@cEg@iD_@yCMiAMgBSeDEmAEeAEmAS_MO_QQgQSyPEsBIeCA{A?y@Bo@Jo@Hm@Ne@^W\\UPITENCB?RELCXIPEJExA[r@Qr@Id@Ev@BzALnAJJ@nCVzE`@pDb@D@vBND@D@LBVHZFh@LpATb@Jz@Z|@f@NHB@XLTLNFNJn@`@d@^f@^dCxBjEhDzBdBnB|AnBzAhAz@r@j@FDFFHF`@\\LJ@@LLd@^f@`@nA~@jAz@v@d@`@Rl@Xv@XJDb@Nn@PRF^Fb@F~@LjADB?D?f@?j@C`BIjC[zIeAfIaA~C_@jBQnD_@jEc@z@KpAO|AQzCYvFs@|@An@@t@H~@Xp@^^T\\\\X\\\\b@\\h@\\n@p@|Ab@jAPh@FPRt@Lh@FVJd@n@jCXnAHXbBbHZvAVhARt@Pj@Rl@Rl@Vn@Vj@Xh@Vd@X`@V\\`@d@ZZZXVPZP^NRH\\H^F^Db@@f@A`@Ed@K^O`@Sf@[f@c@lCmC`@g@rAsAvDuDZYX[h@k@j@i@f@e@\\S^S~@]n@MfAIn@?r@Fd@Pz@d@zArAbAjAv@nAx@`Bt@jB^xAl@pChBnLn@pEXjBV|Al@xCd@jCd@fCl@rClA~ERv@f@bBz@lCx@|B^~@xA~Cb@bA|@bBj@|@t@dAzA`Bz@fAr@t@FFhAjAdAjA`DpDpEdFtGrHn@x@^p@`@t@Td@Vh@l@tAx@|BFVJf@Lj@jCvJ@DDJ`@xAvAbF~@~CPn@v@vBL`@JVj@zAp@tAbCnEzBzDbBdDZj@t@|AZt@v@tBl@pBf@pB|@~D^xAZz@b@dBRx@`@fBDLBDBDFFHDD?FADCLQDO\\kARs@N_@PYT[XUp@]dA_@~@U|@S^G^KB?XIfD}@z@Kf@K|HaBf@IJAXGd@I|F_AV@PHDNHJHDH?JGHMFULYHKh@KjCg@bA[xBg@^ILExDw@hDu@tIkBt@OxLeCdAQZ?BNDJFHFFF@FAJKHQ^QFEp@[VCVAl@Bn@HbANbAVlHrArItBxAd@b@TZPbAdAZ^V`@LRNV^t@Zz@X|@Lb@Jb@T`ARdANdALfAJhALpAHvAZ~Gf@tJLrBDv@Fv@VvCTvBVbCzBfRlBnPV`CT`CtDdd@l@pHFx@Fp@~ArRvA~Q\\~Dr@pIb@|E`ArJ\\rD|@rKr@lK^zFjBbVhEnh@RnCtBfXtAfPt@jJp@dIfB|PfBxN~@bHt@fFx@rF`AzFdA`GjA`GhCjMrCbOjH|^hGl[`C`M|AhIh@jCnApHzAzK|@xHx@|Ht@|IJnAf@~Gd@zHd@~Id@tKj@jN|Aj^@^h@xN`@bKb@xJP~CJdBT~Cb@dEd@tDd@xCf@xBl@jCl@~BvAlExBnG\\~@j@hBj@fBl@|B`@hB`@bBVlAPdAZvBXvBj@bEp@vGt@zGB^ZlCTjBVpBn@vETjARnAp@rDb@vBd@rBfAdFpArF`DxMpAtF~A|G|@bFh@~Cf@jD`@`Dd@~E^`FRpDT|D\\tGf@xJ^tHb@vIXlFVbFf@lIThDXpD\\vDj@dF^pCd@~C\\tB`AbFv@zDdA|Ev@dDt@xCjBvHt@`DtA|G|@rEv@jEv@bFn@rEhAvIt@hIv@dJn@vIp@~Lf@hLfA`YlBpe@nBxe@|Ah`@TnFTvEZtEVzC^`Dl@jEn@nDj@pCl@`Cr@dCz@jCt@fBx@hBzAhCzAdCjAxBr@vAh@hAh@nAf@lAp@nBl@tBn@~Bx@rDb@zBh@bDl@~Dt@nFfEb\\lC~TvCjU~C|UnC`TThBbCxRfDjWtAvKzB`QtAnKlBrO|Db]t@vHvA~NnAvNhAtNdA~NxDlm@`Cr`@hApQ^zF^tFz@xKd@vFf@xF|@`J|@zI`ApIt@fGz@`H`AdHbB`L~D`V|DrTzD~SxD`TpDnTxAdJj@xDl@`EhBpMzBlP`BhMnBnO`AnHvAzKhAnInA~I|AjKfAnHzDvVvC~PnLvt@xEtYnB~LbBbKtCjQpCbQ`DzRfExVxAlIv@bErAxG\\`BdAlF|@bE~AbHjAvEx@jDr@tCzAnGpDzNtBlItAjG|@`Ev@vDjAdGbA|FrAdIrArJpA`K~@nI|@rI|@rI|@zInBpRnBzR|@~Jx@dKb@tG\\`GTnDPjDRhFZ~HXtJ^rMb@~Ml@~R|@nZP|FZlId@xMp@zULrEJ~EJpGDzFD`QDfQF`Y@lF?x@AzHEhFKhFOxFQhFSlEW|Da@pF_@hFk@vHm@rIk@pHm@dI{@nL_@lFqAvPUvCe@`He@|FO`Cu@pJ[hFKbAoCr^k@fJ_@pFQdDa@dIi@jLaKn{B[bESfBW`BMp@Qp@o@jBOh@Kh@Mp@ETGNKNEAE@]Bg@B[GUKOQOYIc@IiAAGGi@Ke@MSUGOKECMKCIEIGCI?GFEJCNAR?NBLBLBHDDD@Jb@Ln@XdD`AxKJlAB`ACnBa@zIaAbTo@xMc@P}@j@gBnBq@XGKGEG?GBEHCLCLELEHGFUVy@^y@h@gBtAgBrASNaBvA[p@IbAAd@KvDIhAEBICGIAC"
+    },
+    {
+      "from": "vikingaheimar",
+      "to": "hafnaberg",
+      "key": "63.976,-22.529;63.8818,-22.7387",
+      "km": 15.7,
+      "minutes": 15,
+      "polyline": "sgneK|bohC@BFHHBDCHiAJwD@e@HcAZq@`BwAROfBsAfBuAx@i@x@_@X?D?F@HBDHFBF?PlA~BpXGrAEdAC^KtBK|BE`AAZUzES`F_@|Hi@`KIfB_@nE[pETN\\Th@ZZLpAz@HHDFDH@PDVHRJJHBJCHIlANv@l@XXX^PXNV^z@Z`APn@Pp@Jl@Jl@Jp@Fj@L|ADl@Bl@@l@@l@@v@At@Av@Ar@Q~GClAA`A?fA?dAB~AD|AF~AJ|ALzANtAPtARpAVjAVhA^|Ab@vAxA|Dx@{Ah@cA`@u@lAyBp@cAr@cAvAwAn@c@z@k@nAi@f@Od@O|@Iz@C`A@fANvAb@jAj@b@Vb@ZjAdAjAxAfA~Ap@pAp@vAj@|Aj@|Ah@lBh@pBpAlFxChM`AzDp@rCr@xCp@vCh@|CX~AVlBh@nEpAvKz@`HdAdHnCdQt@tEzDrV`Fv[d@hD^lDx@nIRtBRdBPpAPlA~@rE|Kjh@`ElR|DtRtHp_@`D`P|EhVx@zDx@pDnBtHfJj]pGtUrAxFhAnFfD|Pv@dE\\rB\\vB\\zBd@nD^pDZzCVxCbDnh@fCfa@pFb|@~AxVfB`Xd@rHVhDXhDR|BVpCTpB`@vC`@jCb@jCd@|Bx@xD~@jD`AhDdAvC^`A`@bAx@hBx@`Bt@pAt@lA~@tAnA`B`A|@fB`BjBvAfBrAn@h@n@l@t@~@lAdBfAnB~AzCzA|CnChFlAtBhAhBxB~C~AnB`BfBdB~AdBvAvA~@zAz@XNz@b@rB|@hBr@lCx@jFpAfATt@N|Ad@|An@fD|A^N`@J`AVr@HZBX@`@?R?r@Ax@I|@OrBm@hA]rA_@nBe@nB[hCUbCIxNQvBCF?nAC\\An@Ad@AfBEpDGtJSjBI~AKxAQxCg@nD_AhD}@~`@cKlAYlAMtGc@~VyA`COOl@Gj@"
+    },
+    {
+      "from": "hafnaberg",
+      "to": "blue-lagoon",
+      "key": "63.8818,-22.7387;63.8939,-22.4561",
+      "km": 27.5,
+      "minutes": 32,
+      "polyline": "{g|dKp~niCFk@Nm@xLm@xDYzBSxAWtA]dAc@rAq@fAu@fA{@~D{DtBsBhA_AhA{@lAy@|EgCzIwEpAs@zAy@v@g@f@e@p@u@`AwAbAiBtDmHfAkB~@uAdAoAfAgArAeAfCsBbBqAjAy@pAs@jAe@lA]jAU`BMzAEvS_@jMKrYYpSYfGEzABd@@jAHvATjATxAZ|@Vp@Rv@Zn@^rC|A|BxAzBxAhZnRfAf@dA^`ATdANnBNbB?tL_@xIa@t@Mr@Q~@]bAq@v@s@dAiAfAeBp@uAt@gB^eA\\cAp@cCp@uCj@iCd@mBTy@\\cA\\w@b@{@f@s@^c@XYd@[d@WbAi@b@]TUTYV_@Ra@Tk@X}@XqALu@N_ALqAJ{ARmDRwDV_EPeCNwBHqBDcB@_B?uACsAEyAKiDEsCCgCG_FEuEIcEYgJEiACmAAgA?kA?qA@kADkAPgF@_A?_A?{@C{@Eo@Im@Ii@Mg@Qe@[q@o@oAMa@I]Ki@EYCUGu@SaDMwBQwBQuBKgAW_CSsBKyASqCM_BMsAUwBMqAIiACy@?u@@i@B_ADq@Fs@JqAb@_El@cGF{@By@B}@Ay@?gCA}ABsADiAF_AL{ALeALaAXcB\\wBJ}@FaAN}BLoCLcDH}CFaEFmE?yD?_F?cDBoDJsDNwCJaBZsCb@yDf@_Eh@mDh@iDl@iD^gB~CsOd@aDZyC^eEz@cKvAaPhAyN|@wL\\_E`@mETgBT{Aj@eDd@cCb@aCLmAJuAD}@F_B@iAAwAAaD@oCDuDFmEByDD}EFuEBqAFsBPoEJgCJaFBuB@cC@sJFoUBkL@_G?}BBwBBoADoAViFD{@DkA@wB?qAA_BIkHC}D?_BBiBDyCJgCLaCLqBBw@Bk@?o@Ao@EuAGiAQ{CS_DEm@I[_@oAm@uAK]Kc@Iw@A_@Aq@?m@D}@JaAFm@@y@A{@EcAUuBS_CCqA?oAB}@JcBRuAVcARs@BGv@kB`BsDj@yA\\aA`@yAVoAT}APaBP{BF_BDyB@yBEgCUgFIaDEcD?iC?qACuACiAEiAG{@KeAGk@Mk@Mg@Sg@q@sAQ_@Qe@U}@OeAIu@E{@Cw@C}@AiABoAH{DB{AA_ACu@G_BI}@Ea@QuAUkAG[Mc@Wy@gCwFq@mBW}@a@cBWwAYgBqCkOaByHy@_DcAeDO_@gAeCaBeDkDaFgBcBkA{@cCuAgBa@eCa@cCCeCFaAMaAa@iA_AaAkAe@u@Yw@Y}@UcAAKQaAKaAMcBEsAOeECi@uAic@]iOGmEK}FCgAIoLEkFK_DIuAC[KqAe@qDeAeIUiBQkBM}AGuAEaAc@uQa@cPUkJEeAEeAMuBSaC_@sCg@gCa@iBgAoEYqAUoAYoBW{BM_BAQMgC[{Ig@wJIcBiAiPwA_QgAsLYuC]oCg@oCm@_CwBiGiCmFKSSc@iE}IuE_KeCgFwAgCkAmBiA}Am@o@aAcAqAkAcAw@qAy@}DcBUK_Bm@mBu@s@c@k@e@i@k@a@g@_@m@k@cAg@eAwCwGe@kAeBqE_AeC_@mAWw@KWa@yAYsAQiASoAOcBO_BMcCE_BAcB?w@?s@DyBFoBFyB@WB{@UI}Bw@OE_@E[DWFUNWd@IVOj@QxAQdCYhDKbAe@lDa@rCSlA_@`A]r@q@dAy@dAm@j@m@Nc@Fy@As@Cc@Gk@]w@y@g@{@aAyBo@aCg@iBWqAe@iDwAmKo@kDiAcF_@aBe@yAaAeCcCsFoAqBgAsAW]mAiAuZ{QuA{@q@[wA[g@MeAEy@DiARs@XWHcFjCkA\\_AH{AGoAQe^gMiBUwEEeRn@}DAmCQy@IgBSMAyCa@q@Ci@B[JaA`@s@Z}@j@y@t@kArAmAlBQXYl@a@`AO^MXOZo@fA{@lAmAfAYTi@^Cl@Uj@c@dAYxAm@jDj@lAv@vBr@nCdA|Dl@fDr@nE`@nDNhBnAU@zAVlRw@t@yBd@}BVqBNiDdBg@l@a@HYo@OkAY_AcB{A_DmCy@iA]Ae@ZUbA_@pES`@{@\\Ut@MtB@p@Z|CNfLZhBh@bEEpCKzK"
+    },
+    {
+      "from": "blue-lagoon",
+      "to": "camping-grindavik",
+      "key": "63.8939,-22.4561;63.8352,-22.4347",
+      "km": 8.5,
+      "minutes": 17,
+      "polyline": "m~}dKb`_hCJ{KDqCi@cE[iBOgL[}CAq@LuBTu@z@]Ra@^qETcAd@[\\@x@hA~ClCbBzAX~@NjAXn@`@If@m@hDeBpBO|BWxBe@v@u@WmRA{AoATOiBa@oDs@oEm@gDeA}Ds@oCw@wBk@mAl@kDXyAb@eATk@Bm@h@_@XUlAgAz@mAn@gAN[LYN_@`@aAXm@PYlAmBjAsAx@u@|@k@r@[`Aa@ZKh@Cp@BxC`@L@fBRx@HlCP|D@dRo@vEDhBTd^fMnAPzAF~@IjA]bFkCVIr@YhASx@EdADf@LvAZp@ZtAz@tZzQlAhAV\\fArAnApBbCrF`AdCd@xA^`BhAbFn@jDvAlKd@hDVpAf@hBn@`C`AxBf@z@v@x@j@\\b@Fr@Bx@@b@Gl@Ol@k@x@eAp@eA\\s@^aARmA`@sCd@mDJcAXiDPeCPyANk@HWVe@TOVGZE^DND|Bv@THlM|EPF|DzAj@d@LFLFTHNDRDTBf@FrCx@t@t@FJ@LDHDHFBFADCBGDKf@JTFfAd@d@Rd@RXNn@Vj@Pb@Nb@LjAX^LPFr@VdBl@z@Zn@TNF|Ah@lBp@~Bx@Bc@Ns@r@iCfAwDX}@hBqIdAtBh@t@RXLHLHFADAPKVQLGHCHBPFNLl@WP@XZr@h@n@Hl@?VBT?PF"
+    },
+    {
+      "from": "camping-grindavik",
+      "to": "gunnuhver",
+      "key": "63.8352,-22.4347;63.8194,-22.6842",
+      "km": 13.8,
+      "minutes": 18,
+      "polyline": "eyrdK`z|gC@?Z`A|@tE^zD@`EB~@@l@|@fJTrCDv@Bn@Dn@Hr@Lr@Z|AJp@Hn@Bd@@b@Aj@El@QxBGbAEdAA|BC~B?lA?fDAtAAf@C^APATA^C\\Cf@Eb@Gv@E|@Ef@Gd@o@`Cg@jCu@lE_@|DCp@An@?n@Bn@Dx@Bl@F|@Bn@Bn@?~@CdASfGGbDM`DE|@Ct@?v@@l@FjAHdAD`ABt@AjABx@B`B@rB?~AAbAChAIjAY`DMdCGh@CJCNQ\\MZHbBf@vJZzILfC@PL~AVzBXnBTnAXpAfAnE`@hBf@fC^rCR`CLtBDdADdATjJ`@bPb@tQD`AFtAL|APjBThBdAdId@pDJpABZHtAJ~CDjFHnLBfAJ|FFlE\\hOtAhc@Bh@NdEDrALbBJ`AP`A@JTbAX|@Xv@d@t@`AjAhA~@`A`@`ALdCGbCBdC`@fB`@bCtAjAz@fBbBjD`F`BdDfAdCN^bAdDx@~C`BxHpCjOXfBVvA`@bBV|@p@lBfCvFVx@Lb@FZTjAPtAD`@H|@F~ABt@@~@CzAIzDCnA@hAB|@Bv@Dz@Ht@NdAT|@Pd@P^p@rARf@Lf@Lj@Fj@JdAFz@DhABhABtA?pA?hCDbDH`DTfFDfCAxBExBG~AQzBQ`BU|AWnAa@xA]`Ak@xAaBrDw@jBCFSr@WbAStAKbBC|@?nABpAR~BTtBDbA@z@Ax@Gl@K`AE|@?l@@p@@^Hv@Jb@J\\l@tA^nAHZDl@R~CPzCFhADtA@n@?n@Cj@Cv@MpBM`CKfCExCChB?~AB|DHjH@~A?pAAvBEjAEz@WhFEnACnACvB?|BA~FCjLGnUArJAbCCtBK`FKfCQnEGrBCpAGtEE|ECxDGlEEtDAnC@`D@vAAhAG~AE|@KtAMlAc@`Ce@bCk@dDUzAUfBa@lE]~D}@vLiAxNwA`P{@bK_@dE[xCe@`D_DrO_@fBm@hDi@hDi@lDg@~Dc@xD[rCK`BOvCKrDCnD?bD?~E?xDGlEG`EI|CMbDMnCO|BG`AK|@]vBYbBM`AMdAMzAG~@EhACrA@|A?fC@x@C|@Cx@Gz@m@bGc@~DKpAGr@Ep@C~@Ah@?t@Bx@HhALpATvBLrAL~ARpCJxARrBV~BJfAPtBPvBLvBR`DFt@BTDXJh@H\\L`@n@nAZp@Pd@Lf@Hh@Hl@Dn@Bz@?z@?~@A~@QfFEjAAjA?pA?jA@fABlADhAXfJHbEDtEF~EN?H@FBDFHL^x@L\\Xv@L\\NZZl@HPDLDPF^h@dDRhAHh@Jx@DXFPFNRTDFDFJVLZLZLRh@v@R^JVRp@Ld@J\\Zz@Nh@Hb@BT@T@f@?`A@|A@hABn@Bj@Hr@Fh@DNJd@Nd@LVLPTX\\`@Vh@FRFNDZFp@Bp@@^B`@F`@Hd@\\dAFVHZHd@LxAFd@Jd@Nd@Lh@DZBTBb@DbB@`ADnAFzABlA?X@Z@ZDf@Df@DXDl@Fp@Fp@J`AJh@Lf@n@lBVx@HVDXBJ@J?J@N?N"
+    },
+    {
+      "from": "gunnuhver",
+      "to": "valahnukur",
+      "key": "63.8194,-22.6842;63.8122,-22.716",
+      "km": 6.4,
+      "minutes": 11,
+      "polyline": "ctodKtbmiC?OAO?KAKCKEYIWWy@o@mBMg@Ki@KaAGq@Gq@Em@EYEg@Eg@A[A[?YCmAG{AEoAAaAEcBCc@CUE[Mi@Oe@Ke@Ge@MyAIe@I[GW]eAIe@Ga@Ca@A_@Cq@Gq@E[GOGSWi@]a@UYMQMWOe@Ke@EOGi@Is@Ck@Co@AiAA}A?aAAg@AUCUIc@Oi@[{@K]Me@Sq@KWS_@i@w@MSM[M[KWEGEGSUGOGQEYKy@Ii@SiAi@eDG_@EQEMIQ[m@O[M]Yw@M]_@y@IMEGGCIAO?BfCDrCJhDDxABrA?tAA~AEbBIpBOvBQdCW~DSvDSlDKzAMpAO~@Mt@YpAY|@Uj@S`@W^UXUTc@\\cAh@e@Ve@ZYX_@b@g@r@c@z@]v@]bAUx@e@lBk@hCq@tCq@bC]bA_@dAu@fBq@tAgAdBPdAFh@Dh@Dj@?hA?rA]vx@Ot\\?`@@P@VBXDXHVHPLNLHPBF@T@rHRL@H@BDDF@JBL?T?p@y@fg@Af@?P?L@F@HDJBDDBD@D?HALERITQfBqA^UXMREJAF@NBj@JVFV@V?^E^IVIRIFGHIbAgA|@aArAqAh@m@j@s@bDgEdCoClAqA`@a@dA{@vA_A`BeAl@_@XS\\_@XYzAcBj@i@pB_B~AoAn@g@hAw@ZWHIHMFMFQJ[Ni@d@qBR`@NXNTVXRVRZZj@v@|AP\\JZRl@Rx@b@bBX|@b@xAV`AFXHZ@JBL@L@PJjBJbBJ~AP|AJdANz@TlARjAVrAf@dBNl@BNBNBP@R?R@XAXCVKjAEn@?xA@bANbDPxGJtBJ~@T|BX|CFh@@n@BpE@d@Db@Lf@N^Vb@Td@~A|C@H@JAR??"
+    },
+    {
+      "from": "valahnukur",
+      "to": "hverager-i",
+      "key": "63.8122,-22.716;63.9976,-21.1868",
+      "km": 94.9,
+      "minutes": 84,
+      "polyline": "wkndKltsiC??@SAKAI_B}CUe@Wc@O_@Mg@Ec@Ae@CqEAo@Gi@Y}CU}BK_AKuBQyGOcDAcA?yADo@JkABW@YAY?SASCQCOCOOm@g@eBWsASkAUmAO{@KeAQ}AK_BKcBKkBAQAMCMAKI[GYWaAc@yAY}@c@cBSy@Sm@K[Q]w@}A[k@S[SWWYOUOYSa@e@pBOh@KZGPGLILIH[ViAv@o@f@_BnAqB~Ak@h@{AbBYX]^YRm@^aBdAwA~@eAz@a@`@mApAeCnCcDfEk@r@i@l@sApA}@`AcAfAIHGFSHWH_@H_@DW?WAWGk@KOCGAK@SDYL_@TgBpAUPSHMDI@E?EAECCEEKAIAG?M?Q@g@x@gg@?q@?UCMAKEGCEIAMAsHSUAGAQCMIMOIQIWEYCYAWAQ?a@Nu\\\\wx@?sA?iAEk@Ei@Gi@QeAfAeBp@uAt@gB^eA\\cAp@cCp@uCj@iCd@mBTy@\\cA\\w@b@{@f@s@^c@XYd@[d@WbAi@b@]TUTYV_@Ra@Tk@X}@XqALu@N_ALqAJ{ARmDRwDV_EPeCNwBHqBDcB@_B?uACsAEyAKiDEsCCgCG_FEuEIcEYgJEiACmAAgA?kA?qA@kADkAPgF@_A?_A?{@C{@Eo@Im@Ii@Mg@Qe@[q@o@oAMa@I]Ki@EYCUGu@SaDMwBQwBQuBKgAW_CSsBKyASqCM_BMsAUwBMqAIiACy@?u@@i@B_ADq@Fs@JqAb@_El@cGF{@By@B}@Ay@?gCA}ABsADiAF_AL{ALeALaAXcB\\wBJ}@FaAN}BLoCLcDH}CFaEFmE?yD?_F?cDBoDJsDNwCJaBZsCb@yDf@_Eh@mDh@iDl@iD^gB~CsOd@aDZyC^eEz@cKvAaPhAyN|@wL\\_E`@mETgBT{Aj@eDd@cCb@aCLmAJuAD}@F_B@iAAwAAaD@oCDuDFmEByDD}EFuEBqAFsBPoEJgCJaFBuB@cC@sJFoUBkL@_G?}BBwBBoADoAViFD{@DkA@wB?qAA_BIkHC}D?_BBiBDyCJgCLaCLqBBw@Bk@?o@Ao@EuAGiAQ{CS_DEm@I[_@oAm@uAK]Kc@Iw@A_@Aq@?m@D}@JaAFm@@y@A{@EcAUuBS_CCqA?oAB}@JcBRuAVcARs@BGv@kB`BsDj@yA\\aA`@yAVoAT}APaBP{BF_BDyB@yBEgCUgFIaDEcD?iC?qACuACiAEiAG{@KeAGk@Mk@Mg@Sg@q@sAQ_@Qe@U}@OeAIu@E{@Cw@C}@AiABoAH{DB{AA_ACu@G_BI}@Ea@QuAUkAG[Mc@Wy@gCwFq@mBW}@a@cBWwAYgBqCkOaByHy@_DcAeDO_@gAeCaBeDkDaFgBcBkA{@cCuAgBa@eCa@cCCeCFaAMaAa@iA_AaAkAe@u@Yw@Y}@UcAAKQaAKaAMcBEsAOeECi@uAic@]iOGmEK}FCgAIoLEkFK_DIuAC[KqAe@qDeAeIUiBQkBM}AGuAEaAc@uQa@cPUkJEeAEeAMuBSaC_@sCg@gCa@iBgAoEYqAUoAYoBW{BM_BAQMgC[{Ig@wJIcBiAiPwA_QgAsLYuC]oCg@oCm@_CwBiGiCmFKSSc@iE}IuE_KeCgFwAgCkAmBiA}Am@o@aAcAqAkAcAw@qAy@}DcB@ODYh@mDFo@Da@LeCD@PCPQRo@RJxAf@JAFIB_@ZsGz@yR?G@Qt@uPFYBg@Di@BYFe@BOJm@Ti@GYQs@Ku@C_AAQAm@GiBGeBCk@QgGAc@Ae@MgE]aLE}ACi@CqAGkQCyFCgIGePCyG?_F?]@sD@iE?]?i@@_CDaEBmBBaAHwANiBTkBP{B\\gDXkDTcDRwEFkDDiABoF?eDEwDA{@G}CEmBGiAIiA]cEc@mFq@eIw@wJQoDGyB?_BBmAFkAJoCLaC@_@LkCD{A?iAAoACkAK_BQuBKkACWk@sCi@oBoA}Cq@yAq@mAaBcCY[u@}@s@q@m@e@k@Y[Um@e@g@s@e@oAa@mAWsAqA{Fo@eCeAiDyBeH[kAm@_Cc@qB]gBQiAG_@_@iCUoBMkAeAoLaAkIg@_Dk@qCgByGmBaHg@}B}@cEsAiIkAiIeAwFsAgFeB_FsBkEyBsDoBaEy@aCWu@e@cBe@eCk@cE_@yCs@{GQmAOmAUmAWmAYkAc@wAc@gAy@wAYa@i@g@o@a@i@Uu@MmBU}@Qs@Wu@g@s@q@k@w@a@u@m@iAUo@Uq@c@kBa@sBWuBQuBM_CI{CKmGGqBMyBSgCUyBYmB]sBaAqE{AcFk@eBWcAWkA_@wBU_BSmBQiBMkCEmBEmC?aC@yBFuBHgBLeBN}AViBRwARmAViADSj@iBj@{AzAmDvC}E`BuBzA{AnEiDzEwBrCk@jDYvAAdBJbEj@~ANx@Dt@?j@Il@Mj@Sj@Uj@[h@_@h@a@h@g@h@k@^g@FGd@s@f@u@b@y@b@_A`@_A\\}@\\}@XaAZeAXgAViAVkAToARoARqAPsANsANyAL{AFy@Fy@Dy@H}AFyAFcBD}AD}AB}AAcDAiCEsEKgCMeD_AsNo@gL_@aIMwEKsDImFGuFCwNDgEHeFb@kN^eMH}FF}GByPA_GI}FSeIa@}MYkG_@qGaAiLaAoL_A_J_@cF[eEYeFWqGOsGI{GA_PBqGH{ETsIRkE\\uFj@kHZsDh@aFxAaLbBuKtAsJvAcIhA_G|@cFVkAp@oDx@oFl@mE~@qIb@mERoCNuCN}CRmFJcDF{CDeDBaD?eDAoFGuFSaIKaDg@aKS{FEeDEsECmD?uFD}FNqKBoEA{DAqEEmEO}FUoEY}D}@gL}AiO}ByRk@kEk@mFq@}Ic@oFwA_Rs@aMg@mLm@cRu@mTQiHQ}JO{V@cYNkO\\cRZuNr@cSbB_]lAuQd@gI^cIJsDJgEFmGF{H?iMMqIQ}HW_HW}Ey@eM{@eJyAyNgAcMgA_MYsDsAyQ_BgYw@{Qo@}QWuHSsGG{DKeGMkHEgIMeIEiFAqFBoLC}H?sIDmCFkHFaKH_GJsFP{HPyHRiHTwGNoE`@}KTeFr@cNt@yNtAaTj@oHv@iIr@eHdCuUxBsSb@wETeCRwClA_Sb@gJ`AyUn@_TLuGFuGBsI@kMAyJIyJCoFE{GCeI?gH@gHDqGHsGReQLkLH{L?iLC{EAyEI{MM}Ma@aUu@}VeAoV_AeRwAgSqBmYs@oNo@{Qa@mNIqHCgGEsTKmJW_LQyHO{DOgCm@_Jw@wI{@mIu@sF}@yFiC_NyEyU[}A}DiVaAcHcAmIyAmNE[a@}Dm@mGq@iI{@_LyC}b@y@uKgGwr@mHmx@oCyWuC{WyEwa@}AiNyAqNkBmSaBgTkAuPeAkQ{@mQu@wQ[yJg@oQ]sOS}KYkWEmLA_O?eNHkNf@cf@FaMBcMCkMKsMWqW?sEHwEJsERuEx@qONqDNsFHsF?eFAaC?cBEqCIeCWoGu@mOk@{Ki@_LIaCGcCGkDCkD?qEDyEReJVkJ\\mJ^iJ^mIb@oI`@oHb@kHBg@n@iJx@qKr@iIxAsPpA{LrAyLtAoK|AoL`E}WFa@bA_GfA}FlA_GtA_GfCmJpC_J~DqKbB{DhBwDrB{DxBuDjFeJpD_HvAyCzA{CtEiKhEyK|BkGtA{DPk@Rm@xEkOPg@~CcLfEwPh@yBlIw`@`DeOzC_NvEmRhD{MlEaPhFeQ~BoHbCmHjDgK`G_QhBaGfDyL`DoMt@iDt@eDbAmF~BoMdAgGpAyIdAuHfBgOvAgNdAgMrA}Qj@uKf@uKZ_Jf@sPN{HH{HFsFDuF@eKA}IAcEEcEKiKQuJWqJ]uKY}G[}Ga@kHe@gHm@yIs@sI_@eEa@cEeAaKuAaLsAaKgGi`@cByLoBgOkBkOaAoJaAoJgAyLwAgPmBaX]}FkAkT}@oSc@{K]_La@{NQmIOyIMeKS_XGqUByTh@un@LeWB{O?iSKcSAm@GyJKaIQyNWuNQyHSyHUwHWwH[wJWqGYsGu@aPaA{P{AoVqAiQsAcQu@iIaCuVcAsJgAqJiAcJmB{OgBaO_BqN{BeTgBeRu@aJ_BiRsBgYiAuRk@}Ie@wIw@mPa@iJAWC[GyAi@uNs@}SaA{`@i@wZ[a]SuQEkDMuE[aKa@uIg@uIc@uGk@wGaAeKkBcOsA{ImAeHgA_G[qA]gBaCwJ_@uAc@{Ae@aB{@sCuCwI[u@mDwI}AeDmBsDgGcKy@uAq@cBk@_BY{A]mBIk@OuA_@kDI_B?_@@g@FEFGFQBQ@S?SAOCMCMIMIGK@GBEJELs@d@i@R{@L_A@}@EiASo@MSGo@UUIaAg@kA{@aAy@w@w@aAsAkByCm@mACGa@w@oAmC_B_DgB{CmBqC}AqB}AgBcC_C{C_CaDkBa@SqBw@qBq@eEkAoKuDgEkBsKaG}IaG{HoGoBqBmBuBw@_Ay@gAw@iAu@kAwAiCsAqC}@{By@_C}EkNuAgDu@}Aw@mAcByBs@{@c@e@o@e@q@a@i@Wi@Wk@Wy@UiASqAE{@?_AHcC^oB\\iBHcCKoD]mA?eALoB\\_D|@sFrAy@Lu@BqAG}Ck@{AYc@G_@C]@w@DeBTmE`@mADsA@qAGcAOeASiD_AiAa@kA[}@OgAKo@?w@Dw@L{Ch@qCTeBDgBGuB]sBe@gBw@cBcAuBcBwGqF{GwE{@g@s@[oCu@}A]uBQgDEeCJwAD{A?u@EuB[yAU}@Iy@AcAD}@Lw@Tg@To@^{@h@w@p@kBfBGFs@yD{Dc^_AgJs@sKo@}NSsJGyCG_CKgF[wMOyGKuEWaLy@q^uAgm@g@oKkAcKoBkJiCqI{X{}@yCyJwPaj@sEgOOg@_BkFwGgTwAeEaEcKoI}RaHmPcIeRy@qBMWkDmIoAsCsA{CcCmEkB_CcCeD{@kAeAwAmOkTkCsEc@{@mCkFmCiFOYiBmDuFyKuDmH[u@Ys@gDyJw^ghAcA}Bu@yAmAmBqImLkD}E}CaFgBcDiBkDkEwIqCwFaCyEO[uA{CqAgDiAeDkAwDuB_H_HcUuCgJoJq[yJq[{FiRaLe_@yJu[{B}FaCkE_D{EkPuV_@k@yEcHYy@IW?W?WCMEUIOIIGAE@GBEFEHc@[i@{@c@k@g@q@Yc@EICEIMQWCQuAoBYa@s@cAYc@Ls@ZgBNu@ZiBIOyBcD"
+    },
+    {
+      "from": "hverager-i",
+      "to": "silfra-snorkelen-tussen-de-continenten",
+      "key": "63.9976,-21.1868;64.2557,-21.1161",
+      "km": 56.5,
+      "minutes": 57,
+      "polyline": "kpreKfdi`CxBbDHN[hBOt@[fBMr@Xb@r@bAX`@tAnBBPPVHLBDDHXb@f@p@b@j@h@z@Rt@BL?X@VBTFTHLJDFADCJKBKDOBS?W?WCMLyBdDiRdIec@jJie@b@qBrA{EnEcUrEyUfAeGH]fAeG~AsIlAuFvAgGr@aC`CsHzBiFjBkDhCcErBqC|AuBjF{GnCoDjCiDdAcBbCqDhB_DvCoFfCoFlLqW\\w@pCmGhCyG~@qB~@iCr@yBn@qB^qA~ImXn@eBdCyGbF}LlAqCl@wA`CkF~EoJrI{Nj@aArHkM~AqDjCeHnAwEjBaIx@yEn@iEp@oF`@iERcCXyDTkDJgCJaDJeEFiE?K?m@HoRN_b@BsIFuL@aGNcc@HkNF{IBiCJ}JJeJHmHLyHZ_PTkK^oOp@uTZcIPgF\\yIDaAl@_NjA}VnA_TfBaYjAwP|Csd@pHchALcBFuABy@BYDOLAJIJSDWDY?]C_@G]KUMKO?MHSBSGQKOYOi@m@}Bu@qCMe@So@o@qAi@w@u@_Ak@w@kC{D{CoE{CaFuCkFoGwMmCiG}BaGcDyJaAmC{AkE}B_HiAgDiAmDq@aCy@yCoAoFcBoHm@gCi@uBi@gBi@yA[y@a@y@s@uAkAkBo@}@m@w@eAeAi@e@mA}@qAy@_Bw@wA_@eC]qAOsBUeAQw@S_A_@e@We@]y@w@kAsA{@sA{AcCiAsB_AuAw@cAs@u@s@m@cAu@u@_@cBk@qBc@aCa@{Be@_B[sAS_BO{BI_BC}BCo@Ei@G{@Ow@W{@[oCiAeAg@eA[gAUcAMi@Cw@Ao@C{AD_CXeCXmBXu@Hi@BkADqB@y@Cy@EuBS_AQ_AUiDcAyBw@wBk@yAYaBQqBGkBH_CXgCl@{A^o@Hq@@}@Aa@Ga@Mg@So@[i@[k@c@mEsD}EcEyEyDgB_Bm@m@i@u@_BqCm@oAg@kA_@eA_@eAg@eBe@aBsAkEw@mCm@}BuAmFc@eBuAoFw@uD_@oBYoBSoBOcB_@mFM{AQkBUgBUyA[_Bc@cBe@{Aa@iAi@eAg@y@s@y@cBiB{BoBs@s@o@w@k@{@k@cAw@_Bo@_B}@wC}@gDu@aDcCaLoDkPaBeIyIlGcLhIoBtAqDhCg@^mBrA_GhEiE|CwBzAwEfD}@r@_CbBoFzDqCnB_Aj@q@^WHi@J_AL{APK?cAFkDd@cANu@Ri@Ra@Zi@d@c@d@g@p@oBpCa@d@]Z]Ve@V{EpBsCfA_ItCmEjB{@`@[RWR}AxAmItI_BvAuAbAu@f@o@\\eA`@cAXuJjBkBRq@Bm@@e@Ag@E}@[e@S_@UeLcJkBsA{A}@eBaA}@_@aAY{@Uw@Mw@Eq@AqBFaAJu@Nw@Ni@Ru@\\u@d@}@n@oA`Ak@h@c@j@eJ|L}JnMaPxS{C~DmB~BgChD{@bA}@v@m@`@e@Tq@Ra@H}@Hq@Bm@?w@C}Q}@sBHmBNaBZ{AZ}NpDgBn@iB|@eBnA_BxAuB~BcBbCsBjD}CvF}AnCaAfBoAzBkAfBmA`BmAlAqB`Bs@b@i@TeAb@cAZmAToALw@BcBOqB_@cG{BgAYeAIy@A{@Na@P[Pk@b@}@v@]`@a@j@_@n@_@t@e@jAm@hBo@~B_@hB_@jCQfBI|@_@pGi@bMOlCKhBYbDYpBWvAKh@c@vBqBzHmAlEK`@Qp@k@jB]bA]z@c@`Ac@z@c@z@[h@_@d@e@j@c@`@EDa@\\i@^s@d@o@\\YNwBhA_An@m@d@s@p@g@j@WXSTc@j@c@p@kAlBmAtBsA|BgD~Fi@~@k@|@w@`Ak@t@k@r@s@t@}@z@wAhAyAdAaAx@}@r@q@t@g@l@m@~@g@r@i@|@{@xAkA~BcCbF}AdDEJeFrK_DvG_@p@]j@]b@Y^q@n@w@j@}@d@a@Pe@Nc@Ji@Hw@Fc@?g@?a@Eg@Mm@Sg@S_@Qa@Se@Y{@u@kIeIwGoGkHeH_B{Ag@]a@Wa@Qe@Og@O}@Mo@Ao@?{@Hg@FuBZqGdAqAL_AHiAFy@?w@Aw@As@?{D_@eBUq@Km@Og@Ug@_@m@g@e@i@]a@_@i@e@y@_@y@[s@i@yAW{@[kA]{Ac@}Aa@mA_@eAm@sAi@cAq@_Ac@e@e@c@]Wu@_@m@U]I[Ce@Ck@Ak@Fy@Re@Vq@^k@b@k@n@[d@]h@Ud@]p@_@`AY|@[|@c@xAU~@]|Ak@dCiBdIe@rBi@vB]nAa@nAa@hAo@~Au@vAi@|@m@|@s@z@m@n@s@j@y@h@w@^{Ah@eFdBo@X{Bz@qB~@oQtIwCvAaF`C}LxFe]|NyAn@yGzCy]|OqM~FyGvCe^tOkTtJuB~@{Ab@g@Le@HmAJeB@}ACwAO_AOiA]eAa@qAo@oAw@mA_AwAqAkAqAmA{AoAmBqA}BeAuBcA{BcBaEcB}DeA{BcAgBkAoBgA{AmBwBqAmAeAy@wA}@{As@{@]eA]g@MgAYuBe@aq@oM}Bc@}@M{@G}@AeA@i@DwANg@Fe@C_@G]UUSSUWc@Og@IYGSG[Md@YbA]dAc@pAs@tBs@jB{@nBu@|Ag@`AuA~BgCrDg[tc@gDnEqCxCooAloAqAjAy@l@o@^k@Vi@Vq@Ps@Lq@Fc@Bq@@q@Cc@Gu@M_AS_Dw@uD{@iD{@SEg@MWGkEcAoJ}Bq@Sk@W_@SWSSSOOe@q@[g@We@Ui@Qg@M_@Sq@WeAO{@Oy@Ko@Iq@I{@SwCq@mKo@yKIoAG}@KkAIeAEi@AGIq@QwAQsAO_Ao@eEUgBOiAMeAMsAMmAKwAEaAA]Ac@As@AqA?}@?}B?cACy@Cu@EcACk@Gm@Ei@Is@Km@Gc@Mq@Mq@Me@Mc@Oc@Sm@Q_@Yi@We@SWQQYWa@]cCkBq@e@k@]k@Wa@O]Ii@Ga@C[?]B]Dk@PaAR}@Jg@Fg@Bc@?g@@a@Am@Ge@GeB]y@S{@WoAe@s@[q@_@uA_AmA_AmJ}JgAiA{@y@q@c@w@_@aA[q@Ig@C{AD}BR}@F}@@e@Ee@Om@S_@SKIOOwBuBe@c@c@Uo@Su@OmGgA]AW?_@DSFSHMFYPOLUVQTQ\\OZ}BfGk@nAk@jAg@x@a@n@a@l@e@j@a@`@g@b@i@`@e@\\m@Zg@TwAf@wBv@aA^kAh@i@Zg@^]b@a@l@MXMZOh@Or@Qv@Kp@QxAGv@El@Ar@Ap@?r@@lA@xC?jAAx@Ex@Gp@MhAQjAQbAMj@Od@Up@Ul@Wh@q@bAQ^U`@a@~@WbAOt@S~@Kx@Gp@IfAG~@ChAAv@?z@@|@DvC@lABrCB~B@~CAlCE|BKbCEbAEn@KlAQdBIx@OfAc@hCk@hCk@nBQh@Ul@s@bBg@`A[b@w@hAy@hAaAhAUX]f@cA|AwBzDaAxBy@rBe@pAIV]dAkAnDw@zCmAhE[dAi@dBcA|CaB~D{@hBw@pA_@p@QXaAvAo@v@q@p@uAxAqEdE_AdAY`@[l@MVO^Qd@qAzEUx@w@fCYnAUv@k@rB]jAWp@oAnD[~@[r@a@~@Wf@a@t@c@n@a@f@_@^]Xa@V_@T[LQHYFc@Ba@@WAg@CU?WDYJ]NSNWRUTQVW\\QZS`@O^Ob@Md@Kb@Mp@m@zD{@xFeArHoA~H[xBQnAS`BIx@MnAEp@G`ACz@CjAAjA?hAAxD?hEAdI?xC?|ErApAPTV\\dBdDjB`DHNFJt@pAJP|CnFdBxCR\\\\l@V`@|AlCrAxBp@lAh@jA\\~@Z`AZdAb@nB`@bBTv@Tt@Tp@Th@Xl@Vh@^l@\\h@`@d@`@b@hE`EfEdE|AzAXVVP^Pb@LzMfBf@Lj@PvAdAdC~BjG`G`@\\f@Zb@T`@H^Dl@?jHk@d@?ZBXJVTVXRh@Lh@J\\PbAt@~GNx@Ll@Ll@Nj@Tv@Rh@JVVd@T`@lCjD`AjANL\\Ph@LXB`@?x@Ev@QpAo@r@zEJp@DX"
+    },
+    {
+      "from": "silfra-snorkelen-tussen-de-continenten",
+      "to": "ingvellir",
+      "key": "64.2557,-21.1161;64.2583,-21.0344",
+      "km": 7,
+      "minutes": 10,
+      "polyline": "w~dgKph{_CEYKq@s@{EqAn@w@Py@Da@?YCi@M]QOMaAkAmCkDUa@We@KWSi@Uw@Ok@Mm@Mm@Oy@u@_HQcAK]Mi@Si@WYWUYK[Ce@?kHj@m@?_@Ea@Ic@Ug@[a@]kGaGeC_CwAeAk@Qg@M{MgBc@M_@QWQYW}A{AgEeEiEaEa@c@a@e@]i@_@m@Wi@Ym@Ui@Uq@Uu@Uw@a@cBc@oB[eA[aA]_Ai@kAq@mAsAyB}AmCWa@]m@S]eByC}CoFKQu@qAGKIOkBaDeBeDW]QUsAqA?}E?yC@eI?iE@yD?iA@kABkAB{@FaADq@LoAHy@RaBPoAZyBnA_IdAsHz@yFl@{DLq@Jc@Le@Nc@N_@Ra@P[V]PWTUVSRO\\OXKVET?f@BV@`@Ab@CXGPIZM^U`@W\\Y^_@`@g@b@o@`@u@Vg@`@_AZs@Z_AnAoDVq@\\kAj@sBTw@XoAv@gCTy@pA{EPe@N_@LWZm@Xa@~@eApEeEtAyAp@q@n@w@`AwAPY^q@v@qAz@iB`B_EbA}Ch@eBZeAlAiEv@{CjAoD\\eAHWd@qAx@sB`AyBvB{DbA}A\\g@TY`AiAx@iAv@iAZc@f@aAr@cBTm@Pi@j@oBj@iCb@iCNgAHy@PeBJmADo@DcAJcCD}B@mCA_DC_CCsCAmAEwCA}@?{@@w@BiAF_AHgAFq@Jy@R_ANu@VcA`@_ATa@P_@p@cAVi@Tm@Tq@Ne@Lk@PcAPkAJ_A"
+    },
+    {
+      "from": "ingvellir",
+      "to": "geysir",
+      "key": "64.2583,-21.0344;63.9446,-20.9839",
+      "km": 42,
+      "minutes": 42,
+      "polyline": "_megKhhk_C@IFq@Dy@@y@?kAAyCAmA?s@@q@@s@Dm@Fw@PyAJq@Pw@Ns@Ni@L[LY`@m@\\c@f@_@h@[jAi@`A_@vBw@vAg@f@Ul@[d@]h@a@f@c@`@a@d@k@`@m@`@o@f@y@j@kAj@oA|BgGN[P]PUTWNMXQLGRIRG^EV?\\@lGfAt@Nn@Rb@Td@b@vBtBNNJH^Rl@Rd@Nd@D|@A|@G|BSzAEf@Bp@H`AZv@^p@b@z@x@fAhAlJ|JlA~@tA~@p@^r@ZnAd@z@Vx@RdB\\d@Fl@F`@@f@Ab@?f@Cf@G|@K`ASj@Q\\E\\CZ?`@Bh@F\\H`@Nj@Vj@\\p@d@bCjB`@\\XVPPRVVd@Xh@P^Rl@Nb@Lb@Ld@Lp@Lp@Fb@Jl@Hr@Dh@Fl@Bj@DbABt@Bx@?bA?|B?|@@pA@r@@b@@\\D`AJvALlALrALdANhATfBn@dEN~@PrAPvAHp@@FDh@HdAJjAF|@HnAn@xKp@lKRvCHz@Hp@Jn@Nx@Nz@VdARp@L^Pf@Th@Vd@Zf@d@p@NNRRVR^Rj@Vp@RnJ|BjEbAVFf@LRDhDz@tDz@~Cv@~@Rt@Lb@Fp@Bp@Ab@Cp@Gr@Mp@Qh@Wj@Wn@_@x@m@pAkAnoAmoApCyCfDoEf[uc@fCsDtA_Cf@aAt@}Az@oBr@kBr@uBb@qA\\eAXcANXLRX\\Vb@RTTR\\T^Fd@Bf@GvAOh@EdAA|@@z@F|@L|Bb@`q@nMtBd@fAXf@LdA\\z@\\zAr@vA|@dAx@pAlAlBvBfAzAjAnBbAfBdAzBbB|DbB`EbAzBdAtBpA|BnAlBlAzAjApAvApAlA~@nAv@pAn@dA`@hA\\~@NvAN|ABdBAlAKd@If@MzAc@tB_AjTuJd^uOxGwCpM_Gx]}OxG{CxAo@d]}N|LyF`FaCvCwAnQuIpB_AzB{@n@YdFeBzAi@v@_@x@i@r@k@l@o@r@{@l@}@h@}@t@wAn@_B`@iA`@oA\\oAh@wBd@sBhBeIj@eC\\}AT_Ab@yAZ}@X}@^aA\\q@Te@\\i@Ze@j@o@j@c@p@_@d@Wx@Sj@Gj@@d@BZB\\Hl@Tt@^\\Vd@b@b@d@p@~@h@bAl@rA^dA`@lAb@|A\\zAZjAVz@h@xAZr@^x@d@x@^h@\\`@d@h@l@f@f@^f@Tl@Np@JdBTzD^r@?v@@v@@x@?hAG~@IpAMpGeAtB[f@Gz@In@?n@@|@Lf@Nd@N`@P`@Vf@\\~AzAjHdHvGnGjIdIz@t@d@X`@R^Pf@Rl@Rf@L`@Df@?b@?v@Gh@Ib@Kd@O`@Q|@e@v@k@p@o@X_@\\c@\\k@^q@~CwGdFsKDK|AeDbCcFjA_Cz@yAh@}@f@s@l@_Af@m@p@u@|@s@`Ay@xAeAvAiA|@{@r@u@j@s@j@u@v@aAj@}@h@_AfD_GrA}BlAuBjAmBb@q@b@k@RUVYf@k@r@q@l@e@~@o@vBiAXOn@]r@e@h@_@`@]DEb@a@d@k@^e@Zi@b@{@b@{@b@aA\\{@\\cAj@kBPq@Ja@lAmEpB{Hb@wBJi@VwAXqBXcDJiBNmCh@cM^qGH}@PgB^kC^iBn@_Cl@iBd@kA^u@^o@`@k@\\a@|@w@j@c@ZQ`@Qz@Ox@@dAHfAXbGzBpB^bBNv@CnAMlAUbA[dAc@h@Ur@c@pBaBlAmAlAaBjAgBnA{B`AgB|AoC|CwFrBkDbBcCtB_C~AyAdBoAhB}@fBo@|NqDzA[`B[lBOrBI|Q|@v@Bl@?p@C|@I`@Ip@Sd@Ul@a@|@w@z@cAfCiDlB_CzC_E`PyS|JoMdJ}Lb@k@j@i@nAaA|@o@t@e@t@]h@Sv@Ot@O`AKpBGp@@v@Dv@Lz@T`AX|@^dB`AzA|@jBrAdLbJ^Td@R|@Zf@Dd@@l@Ap@CjBStJkBbAYdAa@n@]t@g@tAcA~AwAlIuI|AyAVSZSz@a@lEkB~HuCrCgAzEqBd@W\\W\\[`@e@nBqCf@q@b@e@h@e@`@[h@St@SbAOjDe@bAGJ?zAQ~@Mh@KVIp@_@~@k@pCoBnF{D~BcB|@s@vEgDvB{AhE}C~FiElBsAf@_@pDiCnBuAbLiIxImG`BdInDjPbC`Lt@`D|@fD|@vCn@~Av@~Aj@bAj@z@n@v@r@r@zBnBbBhBr@x@f@x@h@dA`@hAd@zAb@bBZ~ATxATfBPjBLzA^lFNbBRnBXnB^nBv@tDtAnFb@dBtAlFl@|Bv@lCrAjEd@`Bf@dB^dA^dAf@jAl@nA~ApCh@t@l@l@fB~AxExD|EbElErDj@b@h@Zn@Zf@R`@L`@F|@@p@An@IzA_@fCm@~BYjBIpBF`BPxAXvBj@xBv@hDbA~@T~@PtBRx@Dx@BpBAjAEh@Ct@IlBYdCY~BYzAEn@Bv@@h@BbALfATdAZdAf@nChAz@Zv@Vz@Nh@Fn@D|BB~ABzBH~ANrAR~AZzBd@`C`@pBb@bBj@t@^bAt@r@l@r@t@v@bA~@tAhArBzAbCz@rAjArAx@v@d@\\d@V~@^v@RdAPrBTpANdC\\vA^~Av@pAx@lA|@h@d@dAdAl@v@n@|@jAjBr@tA`@x@Zx@h@xAh@fBh@tBl@fCbBnHnAnFx@xCp@`ChAlDhAfD|B~GzAjE`AlCbDxJ|B`GlChGnGvMtCjFzC`FzCnEjCzDj@v@p@|Ad@r@j@jAb@tAv@hD^|ATv@Td@Vb@R^?XBVHZJRNHLAJIJSTANBLDj@^^RTFTBVE^M`@QLILKP]^q@Rc@Pm@Pu@^oBv@}Fj@_Ed@oCd@aCj@wBj@gBp@eBPWFIHINMB@D@B?DCDEBG@IBG?KDMJa@N_@Ja@b@g@|@gATWn@u@z@aAlA{AlA{A`@g@^c@x@cAPSxBsCb@i@h@q@v@cAp@cA\\m@Pa@Vm@FOjAoD\\w@\\q@\\q@h@s@p@s@ZWVOXOXGZGZAf@Dp@JvA\\d@H`@@PAPCJCHE`@SvC}BlA{@^WRELGJABAD@DBFHDFH@FAFGDKDO@U?UAUCKEKAWA[@g@Bo@JoDB{@JmD?y@?yF?mA@mC@iB?o@@_ABgD?i@?}A@i@?a@DuL?k@?K@mGI@G@sCCGA_B?G?KAqBCIAIIGQMo@gCgNm@mCGYS{@Ma@Og@Uc@KOS[SWOSSSa@c@]Wi@_@i@QDw@@Y??"
+    },
+    {
+      "from": "geysir",
+      "to": "gullfoss",
+      "key": "63.9446,-20.9839;64.328,-20.1222",
+      "km": 70.4,
+      "minutes": 65,
+      "polyline": "gsgeKpta_C??AXEv@h@Ph@^\\V`@b@RRNRRVRZJNTb@Nf@L`@Rz@FXl@lCfCfNLn@FPHHH@pBBJ@F?~A?F@rCBFAAxEAp@?v@A`CEvI?j@AvA?tBA|A?|@Ap@?|AAxCAlA?xF?x@KhDOjFCz@APALCTENEDEHCHCJANKZEJIJIFOR_@VmAz@wC|Ba@RIDKBQBQ@a@Ae@IwA]q@Kg@E[@[FYFYNWN[Vq@r@i@r@]p@]p@]v@kAnDGNWl@Q`@]l@q@bAw@bAi@p@c@h@yBrCQRy@bA_@b@a@f@mAzAmAzA{@`Ao@t@UV}@fAc@f@QHMLKFIDGBECI@GFEJCLAN?NI^ERGTKb@q@dBk@fBk@vBe@`Ce@nCk@~Dw@|Fc@zAc@pAa@z@[f@QVc@V]Pg@FUE[KiAo@SQM[C_@G]KUMKO?MHSBSGQKOYOi@m@}Bu@qCMe@So@o@qAi@w@u@_Ak@w@kC{D{CoE{CaFuCkFoGwMmCiG}BaGcDyJaAmC{AkE}B_HiAgDiAmDq@aCy@yCoAoFcBoHm@gCi@uBi@gBi@yA[y@a@y@s@uAkAkBo@}@m@w@eAeAi@e@mA}@qAy@_Bw@wA_@eC]qAOsBUeAQw@S_A_@e@We@]y@w@kAsA{@sA{AcCiAsB_AuAw@cAs@u@s@m@cAu@u@_@cBk@qBc@aCa@{Be@_B[sAS_BO{BI_BC}BCo@Ei@G{@Ow@W{@[oCiAeAg@eA[gAUcAMi@Cw@Ao@C{AD_CXeCXmBXu@Hi@BkADqB@y@Cy@EuBS_AQ_AUiDcAyBw@wBk@yAYaBQqBGkBH_CXgCl@{A^o@Hq@@}@Aa@Ga@Mg@So@[i@[k@c@mEsD}EcEyEyDgB_Bm@m@i@u@_BqCm@oAg@kA_@eA_@eAg@eBe@aBsAkEw@mCm@}BuAmFc@eBuAoFw@uD_@oBYoBSoBOcB_@mFM{AQkBUgBUyA[_Bc@cBe@{Aa@iAi@eAg@y@s@y@cBiB{BoBs@s@o@w@k@{@k@cAw@_Bo@_B}@wC}@gDu@aDcCaLoDkPaBeIeEsRwCoMuCoKi@}ByAeIw@}Dq@uCwBgHeDwJwBuFi@mAcAgBmB}CYe@k@_A_BeCq@qAm@}Am@eBm@eC[gBg@{Cm@cDOaA[{Ao@qCk@wBm@iB{CcIs@uB_@qAUkAsAwGaDuP_C_LcBaHkBiHeBeG{A{EmAoD_BsEsCuH}@_CkBcE}AsCwZag@wDgGoMgT}AsCsAqC_BsDeByEy@gCwAmFiPqo@Mg@eJ{^s@sCa@mB]eB]yBWqBUqB]gDY{Dw@qMw@uNiBi]eAoSW{Ew@iNa@eHYoDU_Ci@aFm@iEg@eDe@eCo@eD}@_EoBiHsLmb@gGqTeGaToFsRmFsRyFoSgByGeBkH_Pmq@uKod@iE}QgEsQaD_NuAoGq@sDe@eDU_BUqBSiBSmBMcBMkBMuBIwBIuBEsBEqBCyBCkE?iFAiM?mDEyCI_CMiCUsD[kDaB{Oo@kGOcCc@aFIw@OyAWkBO_Ai@{CUwAa@mBs@}Ci@yBc@sBO{@DOBQ?U?SESEMGIGCw@gAy@oAsHgVyCyImAqCaD}F_FqHe@m@{@eAaDaEgAyAeA}AcAeBcAgB}@eBy@cBo@yAq@cBcBuEcEeLuHkTkA}CcBmE{AsD}D_IgEiIsCwEyDkGqCiFeH}MwCyFsAkCiAgC[{@{@sBo@iByAoEyAkFq@oCy@{DiCuMeAgF}@oDGYiAsD_AcCy@eBk@aAu@cAu@w@aA}@eGyEu@u@e@m@i@y@[i@We@]y@a@kAgH{Sg@aBg@gBYiAYqAY}AUoAOgAOoAKcAIw@MkBI{AIcBEu@CaAQoDMyBMkBMwAQcBSgBQuAWqAYuAk@cCgByHWkASgACOYeBY_B]iC]oCUaCUsCeAiNmBcYQeCGuAGwAC{ACyBOkMEmDGkCSsHaAa]c@mOWeMMiEG}BIkBK_Cc@yIs@oNeBu]MgCIiAM}ASaBOmAWaBWuAYqA[mAc@aBq@wBc@uAUy@WeAS{@QcASmAc@aCgAuHkCwPkJwm@QoAc@wC]{BS_BQ}AU}BM_BKkBMwBGqBGsBCgBAmC?sC@qAD}HB{B?aBAsBCsAGoBM{BQ}BGq@WgDMcBIcBGcBEkBEqBCcAOkDIoAMwAMqAOiA[mBa@uBoGsVkGgVqBiIs@cDi@eCm@oDsBaMm@iD]aBUcAo@_CaAcDqWgu@k@}Ac@eAi@iA}A{CuBoDoOwU{CwEwEuHmBwCeBoCcAqAgAgAgAeA{AwAiAkAc@k@i@}@{@iBmA}CuQef@e@{A_@{A]_BWuAq@kEqAgJUsASaA]{Aa@uAc@qAg@oAo@cB_AaCoAaDw@qBa@_AoBcFiAmCm@sAe@y@e@u@c@g@o@m@gAw@q@]u@W_AM}@?m@Fg@JkA\\aAXy@Nu@@cACeAQkA]u@_@y@i@m@k@g@i@g@o@g@s@u@wAe@cA_AeCg@cBc@aBYyA]mBYeBYaCU_CS}Bu@gIYgDUeBQuA[_Bq@{Co@aC[aAm@wAcAsBwUac@aBwCm@oAc@iAoBmFsHkTgVar@uFgPkDqJmD_Kc@sAa@{Am@gC_GoXwDmQo@{CSiAWaBm@iFgCoV}AaOyA_O]eDSgBMsAO_BK_BGsAGoBGiCCoC?yA@wEHqNFwIPqZPaa@J_W@gDAyBC}BGqCGkBYmHUeF[cIKqBIwAM}AOiBIiAOiBQwAMkAW{AO_AScAUaAMk@CMAMAUAY@O?OCYESGOIIG?KEIGIQOY]u@iCmJ}CcLaF{Qa@cBEMAOCQ?S@M?KAWCSGOIGEAWe@O_@Oc@ISK[k@wBcBuG{CuKMu@Mc@AEI[O[GMqGuU_@mAaA_D_AsCoAsDcE}Kc@uA_@oAU}@SgAWyAQmAQ{AOiBMqB}Cof@u@aMSiCOkBQyAa@gDeBsMu@}Fa@gCQgAUkAU_AWeAa@qA_@iAo@_BgA_CiEcJ}EiKmKiUgCyEgCcEiBcCqN}Q_ImKmV{[}GgJgMuRwOkVaCoD}@yAuAkCk@oAe@qAgA}D{BwJwB}JyAaHkAgGu@oEy@oFkCcSuCoTg@mD[uB[cB_@mBc@gBe@iBy@eC}GiReHkScOkb@q@gBu@eB_A{As@mA_AmA{@cA{A}A_Am@_Ag@sPkFToFFsA@aAGeAK_AGWM]Sc@Ui@GKWk@e@w@]c@QSEQAUGcC[sFEcAI]q@}AsBsD_BoDkAsAcBoAmCeBsByAgGsH{EgGyEcHsEsIcFaK_BoDyBiHeDiLqAyEuCsJuAiF}DuNcFgQoEiPk@sBkQao@iIwYiFiRo@}ByAcEyAgC}AeBkBkAiGoC{H_D_FuBiEgBoBgAgBaBcBeCkByDwEgNyEkNgDqK}CcMkA}EmCwKeAqEe@{Bc@cCWsA_@uA_@iAiAsCaBaCwEqFcBkBaB{CaAuCeAyDu@eEMs@]aDOyBKmBYcGq@oNWwFa@yIe@wJUmGq@gNs@sO}@sR[iGg@gL_@}HGeCGgB?iBD}BFwC@sCM?gA?e@E]Gc@KWGUKy@a@{@a@kAi@cA[kASg@Gu@Es@AcGLeJPM@s@@k@?y@Em@Gc@MkAe@kB}@c@MoAWYC[De@JeAVe@Re@T]Va@^g@l@g@x@{EbKiDtGoFxKaF`KsAbCsAjBeAlA]XkDjCmAv@qCnB{@r@u@x@_BnBsAvBgAzBkEdKk@dAo@dAu@~@k@h@o@b@s@^{@Zg@Lm@Fy@DqBAmSkAeASw@[_Ao@_Ay@aAqAa@s@[s@g@mAe@mAUq@eCoJgFaRaAiD]eAa@w@y@}@_@Yc@WoBq@`@iLdAmZJoDf@iPD}@`C}v@VsHnBam@zAud@ZyI\\aJl@iNr@aOp@oN~@yTLwDHwCDoCBaD?mHAeXAgQC{CG}DK_DKyBMeBOkBY}Bi@eD_@mBk@sBe@wA_@{@c@mAcDqHkBoEcIaRcPs_@qCsGmA{CoAqCkFsLS_@M[Si@Qe@Qo@Qk@Q{@Os@QaAQmA]eCm@kE}AiLi@mDW}AWyAUaAOe@Ss@So@Yq@]y@e@}@q@gAg@cA_@}@_@y@Yu@W{@{AcFIWKQS]QWWWSO[GYC]?_@Ba@@_AB{AC{@Mw@Q_A]w@i@}B}BiAoA{AuBcFmHiGuIyFcI}BeD"
+    },
+    {
+      "from": "gullfoss",
+      "to": "kerlingarfjoll",
+      "key": "64.328,-20.1222;64.689,-19.3259",
+      "km": 68.7,
+      "minutes": 93,
+      "polyline": "ghsgK~_zyBaB_Ci@y@w@_AyAwAk@c@k@]cAg@q@Se@KuBOi@@i@BcANi@L[Le@N_C~@o@Vk@Xa@T]Zg@d@uAzAaDnDq@p@a@ZWRUH]Na@J_ATWHSJQL]X[\\U^W`@Sf@Ob@O`@Mf@Kf@Q`AQbAQdAUbASt@Wr@_@z@Uh@[d@QX]^]XYR]NQDIBUD_@B_@A]GcAYkBu@_HiCmGgCu@S_@G]C_@?e@Do@Ji@JaBb@a@Jk@JcALkAEgCu@yAoA}AmBiWkf@oHuNcCkH{AqGgGgYmB}FuUcg@wC}FsCkEwCcDmCqB}GuBmEIkVdCgD@aBi@a@OeCqB}JgN}BgBgCeB_CaC{GiL}BeE{@mBuAiFkAiDkBkCaDgCoBuC_BoE}DoN}CsJqDeGoDgCcDo@kAAcBNoAh@sAt@sUhQm@\\mAp@cEjAyAHcEOkDoAyB_BmBaBiDgFU]qBwEeAqCw@oCiAmEq@kDk@gDi@wDc@mEa@oE]eGOqFIyG?yx@AoWG{DOeDSyBUmB]cCi@_Co@yBo@iBgAaDe@eAw@wAk@o@{H}IkA_Bk@w@_@m@mAeDqAaEq@oCm@yDwBqOmBwLwAmGUgAyCkJ{HuUeDuH}PqW}HaL_Yya@yCcGuCaIiEsLkBeFkAaCg@_Au@mA_AsAiAsAaA{@oBuAwAs@aBq@kScGoBm@cEmAmEqAaAEiANmB|Am@b@u@Vq@Fs@Sy@]sAeAgAa@qDy@}@M_BEcAJ{@~@mBlGiBtEm@v@i@\\wDTmFHeBKwAa@uBaBwAiAcAaA}AcAwA}AqAuAqAgAm@SsAAkA\\eCTu@Iw@S[Qe@k@s@mAqBcEgBgDeAuBgCyEcAyBu@yBeAeDaBaFw@aDeAgFaAgFy@uDs@gBw@uAy@_Ao@o@o@q@]e@k@gAg@iBg@}Bi@kCi@oBw@mB{@uA]c@e@WoAo@oA_@aCy@qByAsAaAiAeA}@y@oA{A{@qA}@cBeAeBu@cAkA{A{@aAc@Yw@i@qA]gBWqBSqAS}BQ}CMw@O]]i@k@{@oA{@iAoAaCWk@Sm@k@cAk@gA_BeBa@[QSOYCSCU@YZeB\\oATaALm@Lm@Hq@Hs@Bi@@o@@]Ce@Cc@Ie@c@cAc@cA]u@Qc@Kc@WoAYgASo@[q@U]O_@Mk@IeAWoCGq@Ek@UcCEs@Gy@YiDGu@Gg@Oe@Oe@k@oBm@iBUi@Ky@QoBUcESwDU_EQqBUcBUiAUaAi@sAkAwC{@sBaAsB_A}As@_Ai@cAw@kBo@cB_AqCg@aCa@_B]_A[k@YKm@Fc@F]I]g@[k@m@qA[}@[iAc@aBUeB_@eBWs@a@aAu@aAuAsAgAw@gAs@cCwAk@e@y@aAk@w@mCqEiByCaEqHyAcEqByHW_AuA{EgB_JeCkMiAyDgA_Cy@sA_@k@_@}@m@gCuA_Iq@aE[kA[{@]q@[_@sAq@sAi@cBo@eL{A_Aa@_@[k@y@cAsAwEmIkFkMiAsBaBiC]_@[Wi@@_@PmA~@_CjB{FpEeAj@k@Bc@Iq@c@s@c@eAs@iCkBoCkBmCqBoBuAeAiAm@yAiBoHyAeFaBwFi@_BeA}BkAmB_@m@q@w@yA{AqEkE{DyDwB}B_@w@]{@g@kB[yAs@gDgAuFa@iC]sCoAgMe@sDwBqP_@oBc@gByAmFwAiFiAwDkAkDcB_Fe@yAm@gCcC_Lc@yBiAwGs@kE_BcJkAmHsB{LUaBYqAWkA]wA{@aD{AqFoBsGwAkEuBmGcCwGu@yBa@qA[yAg@{D[kCUgBYgB[mAg@uAe@iBg@_CWmBSoBO}B]aFW{CSqAQ_Aa@yA_AsBaCeCqFyH{BsC}CqDy@gAm@cAWk@Qk@w@{Ci@iC[}Bc@_FWaDWaCiAwEYy@_@aBOkAk@{GyBeQ_BmK]mAeAmBw@qAa@sAQiCwAsc@FcJCiDKcDK_AUeA_@k@mDcEgH{KmDgCeAoA_AmCwBwIaE_ScEkVaByNQyEDkBVoCVqDRkE?aD?eDUiIEaCCsB^_UJwALoAToBZoBXeB^yBZaB`@eB~DiPtAkFf@mBz@qDh@wB`AaFfA}Fl@aDTqAv@wEZ}BT}BNeBJkBHwBDcBBqB?mBEqBEgBAa@KgCM_COyBQcCI{@i@cHEa@QgBQaB_@oBq@eC{@}AeA{AeAcAqBuAuBeAcC{AiCiCgAsB{@sBgAmBqA{Bo@aA{@cAuAgAyAaAgAyAs@oAm@}@o@w@gAkAcAGoA?yCZ_BNo@?wDb@}Ch@oAD{Bc@oBsAkAsAy@sAm@oAo@_Co@_Ds@uGg@sCs@kCuCiIcBeEmAoCiAeCs@uAm@aAk@o@e@a@g@[g@W]Ig@CaF_@{CSqAIi@Ec@Ik@Uo@[k@c@s@m@}FwFuEkEy@{@i@u@i@}@}@iBgB}DqBgEmBwD{@wAy@iAgAuAgCwCkDgEyC{D_EgFcC{CuAgB_ByBw@cAc@g@c@]g@Ym@Wq@[y@QoCe@u@Sc@Qu@_@y@m@wAuAcEuDqEaE{FmF{JiJ_HiGoAeAu@i@s@a@cB{@eA]y@YgCk@eAYo@Yw@g@c@e@i@s@c@u@c@aAmB}EmEwKu@yAs@aAw@u@y@e@o@Sy@Qy@Ma@Me@Wk@e@i@q@k@oA_@aAi@qA_@q@i@s@c@[s@Ye@Yg@]uE_Gi@g@i@[q@]i@Mo@Iu@Bw@Ce@Ei@Kg@U{DiByAo@_@Wc@m@gC{EuE}Ic@sAmAiEy@sB{@wAaDiEqEqF{D}E}BqCmBsBaBcBmCmCe@m@s@kAcAgB{@gAs@y@_@u@a@wA[qByCkX_@wCq@gE}AmIsBkKaCeL]oAc@_Aw@iAw@_Ae@c@cAs@{Bs@gBq@_Bi@y@IWQWa@M[gEwMi@uBq@eEm@iFe@oDa@aDM{AGwBCeCGyAQcCmByRcA{JS_B_@sBoAaGm@aDSoBi@wHKwBE_BDoE?oDE{BY}MMwFMqEMiBQsBy@}Fu@cEiCcMeAuFKkAIkAKoCOoBUyBw@wEMoASeCQmA[qAuAiD]i@i@M_AA_DkC}EqCq@{@qCgHk@sA_@mA_B}GcBiF{E}Me@qBYcCQmC]uDS_Bo@yDe@cBa@s@uFwFgAeBo@eBaAsDkBwGkAgEq@eEYeAq@kBkB{D{@}Ai@y@]Yo@G_AUeAq@gAoAeByBcAeAe@U_C[_C[}Ag@cAa@w@}@g@cAg@yAyBqIsA_G]mAaAgCmBwD}AwC_AsBsAqEaB_IaDoMmAsF_BiHqA{E}@kB]}@m@oCUkAQsAUaCWyCgAoJw@{Fc@yEc@kCo@sCa@wBWeDU{DU}DI_EIaAWw@g@uAo@aCgBoG}CyGyBeDqCiCiBuBu@gAa@aAu@yCy@yDUcBOyCMyGSgIQmBgAeE]gAS}A]eFUaBUeAi@}Aa@oAs@mFaAyGs@uDe@aC{@wBiCkF{BaGmBiFa@oAUuAM{ASuCYuCg@uBg@iB[gCYeF_@uHg@eG[}Be@iBq@sCa@cD[sDSwAUsAO_@g@w@sD_GgC_DgCkC}CgCwA{@oCaAqAk@sAYc@Uc@w@YsAOuC?aCE{@Q_A[e@_AmAoAgCy@}Bw@sCg@iBY{@_@a@_CmC}E}EuI}HsA}@aAg@kAU_Ac@}@o@}@yAs@mBg@w@]W_@QYMUUu@cBg@mAUeAMeAAu@VoCBiACsAScAYe@}FwHy@qAo@m@mA}@_BwAs@m@w@e@qA{@s@u@_@y@iAsEw@mCaAaEM{@KcACaBBgBFoCAmCK}AUyAmCsJkDsKc@gAUQm@[UCg@]eAgCqAsBs@{Ai@w@}@m@c@c@eAyBuAcCcAyAkAuAiAaAwAw@yAc@s@_@gAoAcB_D}AuBgD}De@i@yAuCeBeCqAqAgAu@s@g@_@e@[_Ak@uCk@eC}@iD_AqCg@{BYeBu@eFWeCUoAc@eAmBcCyHwI}@sAi@{@{@sBm@gBq@sB_AaCc@o@k@m@g@W{@Ky@Yk@[yAoA{@mAq@oAwAkB_DgDwB}CiCsCaB{AeAaAgCyAgBk@a@USa@M_AmAgHeAkFe@_C_@iCQqAUaAg@qB_@oBI{@C{@Cy@Ci@Kq@Oa@S]i@a@}AmBw@w@yAuAcByA_Ay@iAyAy@qAkAmBmB}EcD}KyG_Ww@yCu@mCm@aCcAqBwFaHi@kAaA{B_AkB_@i@UQQEOa@Oe@Ou@Ky@}@}IMeBEeCBmCJ_ELsDFmCHsCLiFPkELiDHqFNsHJyGNeFRsEb@uId@gIjAyOJkAJs@Ts@h@mAbCcF~@uBbAgCbA_Ct@qB\\k@`@}@T[\\Q\\Mf@C\\@~@Hz@Fj@C\\Kb@Qn@g@p@i@t@{@rAcBb@i@n@iAl@yAp@mBbAwCr@iBn@kBz@kBj@_Bd@_BZsATgAV_BPiANoBHgBFsCDwC@qC?eAAcAEcAMwBQ_CGwAAoACmDAkDAoC@cBBmABiAJyAPeCh@_IVsDPuC\\{EZiEZsE^aG^qFb@kHL{ALoAJ}@Lq@XmAZmA`@}Ax@kCXeANaALsAHoADaCFiBDkAPgBTeBNaANs@Re@RYNMPM^ITA`@SJGPST]\\i@N[TY\\Wb@g@Xg@Rc@J]F_@Lq@FMJMNKVST_@Vc@Zo@Pg@ZeAVeAR_ALg@Fe@Z_DLaBLmAh@sDT_BN_BTkCHkAH{@PaBPsAPwAHcABaA@}@?}@EkAGiAMiAg@qDMsAOsAIiAM_AM_ASgAWaAYaA]iAa@kA]}@Y{@Uw@Qw@Ki@Eg@E{@Ci@Ca@EWEOKSM]KYEYC_@?Y?YBWDYJ]Pi@No@Nu@Jo@Jc@RgAJk@Ha@Jg@J]Ni@He@Fg@Di@Bg@?i@Ak@Eg@McAKq@S_BQmAKm@K[GMSa@KWI]CSAU?U@[Di@Hg@Fc@J[L_@NYLWNOPK\\GRETKRSPWXk@Nc@Pm@Nu@Fi@DaA@i@?WCk@G}@QgBMqAGcAEs@As@@q@H}BFyAHwAFcAFc@Ha@FOHONQPOPQNONYTm@LYLSX[p@y@n@_Ad@o@t@eAXg@Re@Ns@Lo@\\}BJy@PkAJ}@Hk@Ha@FWJUJQNKVSRMLIZ[Xe@P]^s@`AkCRg@Zi@^k@Za@Za@x@m@n@a@x@[vCu@nC_AnBa@h@K`AOh@K`@S^S`@Yd@Wn@W`@OZQLI\\c@N]Ts@Xw@t@sBZ_AZs@d@_ALa@BW@SA[AWKk@I[c@{@[u@Oa@K_@Kg@Gk@E]Ks@Ie@SaAUu@Ss@_@sAO_AMm@OaAEm@Eo@CuAAi@AaA?g@Be@J{AFs@Ho@NgALw@RiAToAH_@Nk@d@kBJc@DU@k@@e@@[B]B[Lk@DYFa@BS@[?_@C{@Ew@Cq@Ae@Cs@?e@@_@Bc@Dq@Fs@Fo@H_ANeCF{ADcAB_B@sBBeC@cB@yADaBFcA"
+    },
+    {
+      "from": "kerlingarfjoll",
+      "to": "hveravellir",
+      "key": "64.689,-19.3259;64.8664,-19.5543",
+      "km": 38.4,
+      "minutes": 58,
+      "polyline": "_qyiK~q}tBGbAE`BAxAAbBCdCArBC~AEbAGzAOdCI~@Gn@Gr@Ep@Cb@A^?d@Br@@d@Bp@Dv@Bz@?^AZCRG`@EXMj@CZC\\AZAd@Aj@ETKb@e@jBOj@I^UnAShAMv@OfAIn@Gr@KzACd@?f@@`A@h@BtADn@Dl@N`ALl@N~@^rARr@Tt@R`AHd@Jr@D\\Fj@Jf@J^N`@Zt@b@z@HZJj@@V@ZARCVM`@e@~@[r@[~@u@rBYv@Ur@O\\]b@MH[Pa@No@Ve@Va@X_@Ra@Ri@JaANi@JoB`@oC~@wCt@y@Zo@`@y@l@[`@[`@_@j@[h@Sf@aAjC_@r@Q\\Yd@[ZMHSLWROJKPKTGVI`@Ij@K|@QjAKx@]|BMn@Or@Sd@Yf@u@dAe@n@o@~@q@x@YZMRMXUl@OXONQPQNOPINGNI`@Gb@GbAIvAGxAI|BAp@@r@Dr@FbALpAPfBF|@Bj@?VAh@E`AGh@Ot@Ql@Ob@Yj@QVSRUJSD]FQJONMVOXM^KZGb@If@Eh@AZ?T@TBRH\\JVR`@FLJZJl@PlAR~AJp@LbADf@@j@?h@Cf@Eh@Gf@Id@Oh@K\\Kf@I`@Kj@SfAKb@Kn@Ot@On@Qh@K\\EXCV?X?XB^DXJXL\\JRDNDVB`@Bh@Dz@Df@Jh@Pv@Tv@Xz@\\|@`@jA\\hAX`AV`ARfAL~@L~@HhANrALrAf@pDLhAFhADjA?|@A|@C`AIbAQvAQrAQ`BIz@IjAUjCO~AU~Ai@rDMlAM`B[~CGd@Mf@S~@WdA[dAQf@[n@Wb@U^WROJKLGLMp@G^K\\Sb@Yf@c@f@]VUXOZ]h@U\\QRKFa@RU@_@HQLOLSXSd@Or@O`AUdBQfBEjAGhBE`CInAMrAO`AYdAy@jCa@|A[lAYlAMp@K|@MnAMzAc@jH_@pF_@`G[rE[hE]zEQtCWrDi@~HQdCKxAChAClAAbB@nC@jDBlD@nAFvAP~BLvBDbA@bA?dAApCEvCGrCIfBOnBQhAW~AUfA[rAe@~Ak@~A{@jBo@jBs@hBcAvCq@lBm@xAo@hAc@h@sAbBu@z@q@h@o@f@c@P]Jk@B{@G_AI]Ag@B]L]PUZa@|@]j@u@pBcA~BcAfC_AtBcCbFi@lAUr@Kr@KjAkAxOe@fIc@tISrEOdFKxGOrHIpFMhDQjEMhFIrCGlCMrDK~DClCDdCLdB|@|IEv@Kn@Ol@Q\\YI[]a@eAqCeJk@sAi@{@oAu@gEyBgBo@KMSUoAeCwF{N{AaFa@uAsAsIeA}MaAaGMmAEiA@{@Hs@ZwBFgACaEAeAQqFIwEGiAMiAoA_JW}@_@m@m@q@iCkB}AS_@KY]yAqDsAeCMUOk@E]C_AFiC?qAq@yMSeEEiDCaDBeB\\mBf@qBH{AMoBYwBOyB[wJSyIEsEI}CO_DQgC{@sJEsA?o@PeE?o@AmAG}@Ms@c@g@_@IeBMUCKMKYGq@OeBSo@Wk@yBwDSKQ@e@RqAl@c@B_@OqEgCwDXuAHe@MsAa@cAWkBIaAOuF}CaGgDgFsDoFcDgC}@w@OoBeAqA_A{Ae@yAq@u@i@gAeAy@s@eAq@oAo@}AgAa@We@g@u@gAo@oAk@sAg@eBw@}Ci@gCQuBKgBS{Ai@kCi@eCa@iBi@uB{@{Cg@kBWk@Wc@OOi@e@U?O?Y@WIg@_@]a@oAcCgAcC{@{A{@_Ai@Qq@?k@G_@e@Qy@IsAQgAScA[g@q@cAqEk@aEaBsBkAcBaAw@w@{AaCgAmBu@eBs@w@gBu@}Ak@}@MaAEcADm@JYTo@f@}@f@o@Fu@Eo@Mu@k@a@m@g@q@c@Wg@?}@XQF_BZ_@C]W_@m@]s@]WUG[Qk@EO@YLWNi@Bu@MWKSUq@i@wAgAmAk@wAg@_BgAw@[}A[m@Y]YsGgHmAa@aASg@?UFcAX_CtAaA^m@Nw@BQ?wG_A_Bg@eB_A{Bk@kBa@_Ci@g@Gw@e@s@o@_@Qk@BG?s@Xo@DwAe@mAs@w@[u@?k@Vk@t@]^a@R_@Da@K[e@WcAaCcJoBqFgA}EqEqJoFgNiAwB[[MG_@Ac@Dc@@QGOMQOmBoCoByC{@qAOq@Cy@BkAG}@GWYY_@A_@Ko@_@m@Oc@]{@y@]q@UaA[kBWmCGeAAoCG{BYeBUy@}BqE{AsDm@q@oB}Bq@gAaCcEeBuCWu@Su@IUKOMI]Es@LuDxBqFrEqBxAOJc@PQBgFl@eGaA{CwAaCyA}CeA}Be@qAOg@UoBoBgAeAw@Uw@?i@JuALuMlDqAE{@m@_AkB}BoFwByDgBkCc@_@c@SSCQAQBQHSNQVINe@dAkFvM_IzOuHrO{BpFiEpHwIhPyDxIcG|P_F|HgCbC_HtAiG|AqE|AyEvBuCj@uKzB{DBaFGqF\\aFbAsJZcEqBkVcJyDs@oFbAuGpEmFxB{G^yCzAeBdAeEvCiF`BwGV{Fo@iAEmAJsDj@uC?{@Ws@g@sAq@i@JcA|@]p@a@|A_@nCU~@c@rAKd@MlAYtDg@`HOrCQbCw@vESrAOtAK`BGdBIvKKjCSvA[bAkCrE{C~G{E|QaBhJs@dEeEdKwBbKgA~BaG~DuAPqCCoB`BkHrDqEbHeHpP_@fA_@|Aw@bFm@|EWjCKdC[xT[zFk@bFy@vDoErNcFzTkAtLwAxGuC~I{D|QoBvKGb@Ed@Ad@?b@B`@D`@HZHXr@tBJ^J^H`@ZjCPjATjAnAhFpA~HtAlHlAnFtCrI`AxBXt@H\\JdAFpAZnD\\~BJb@Lb@N^NVNVfApAXl@Pn@D\\Dx@A~A@d@FpALtAt@hEx@~F`ApFnCtNhDbSzCvYIfK@~AHzAdAnGFxBEdFAtJCbSQfJaBfS_A`MBvEPxEBlNw@xRw@nKaBlNy@rFWhCIlA@x@nA|KNrAHxAJtBNpBF`BApBIfD_@jIG~FQbGcArGa@vCIxBE~C@vBLtAXzBPxBBnABzFAlAIx@K\\w@dBOZYz@MZMj@GZU`BCZyAvLC\\A\\?\\?|@?`@?`@C`@C^w@dJMtAMx@Qv@]dAETEZCZ@dD?`@EbAYjF?`@@~@BZFv@ZrBHhATtDZhCHfAFjA@f@?b@?b@?dB?b@B`@Db@H^lDjMbAzDvBlGl@vB`CrMh@dEd@~ET|Ar@hDVr@X`@pBhBbAdAr@|@x@bAXj@HVJ^TfAdEnNj@nBL@PGXSTK`CaAvEiBLIHMd@w@FGFCF?ZFH?FAFGFMDOBQDs@BQ@MBI"
+    },
+    {
+      "from": "hveravellir",
+      "to": "blonduos",
+      "key": "64.8664,-19.5543;65.6639,-20.2955",
+      "km": 109.6,
+      "minutes": 143,
+      "polyline": "ef|jK~djvBCHALCPEr@CPENGLGFG@I?[GG?GBGFe@v@ILMHwEhBaC`AUJYRQFMAk@oBeEoNUgAK_@IWYk@y@cAs@}@cAeAqBiBYa@Ws@s@iDU}Ae@_Fi@eEaCsMm@wBwBmGcA{DmDkMI_@Ec@Ca@?c@?eB?c@?c@Ag@GkAIgA[iCUuDIiA[sBGw@C[A_A?a@XkFDcA?a@AeDB[D[DU\\eAPw@Ly@LuAv@eJB_@Ba@?a@?a@?}@?]@]B]xAwLAy@CgAEWGMk@MmA_@gBkAkC_DW]Sa@Kg@UaBUe@wCaEOWkFsKmF{EqDeCmCoBs@m@k@s@e@eAWq@OiAAuACmAUyBi@cCeDqM}@oH[yG[eEg@wDC}@F}DAiAOm@SOW@eA@gHgBwNuGgNoOaAmAa@oA_@oBUoAe@_Ay@[s@@mB^sA?kAKqA_@s@w@aAwCwCwLoA{DmAyDgAkCq@q@q@YiBWaAAeA@kATUGc@g@Y_@YOe@Eq@FwDu@gB`AsMnMcE~A_HnAkA`@mA~@_AxA{@|@q@p@e@n@c@z@u@nAmA`BeD|Cw@rAs@xA{@x@aA~@gAt@{DdBaBh@wAd@u@n@oDfDe@j@m@^yAd@yAR[DoILcGi@oFj@s@n@k@bBSrA]zCCVw@tHeAxGyAbG}BnFcD~DeDzAkEb@uFnAqOnI}MlKsHjIaAnAaEnGkCnFuBvFk@zAo@lBa@nAkAjEeArEqB`I}BlIkB~FaCrHOl@}AhGgBhJ_AnGIh@{@|Jo@tJ]rJKjGMdGQ~Fe@bHg@zEa@dDc@fCc@rBcAvDeA`DmChGoAlBcA`A_A~@eBjAaCfAaDzAqBdAmAhAkAfAcAhAkAfBy@jAiG~J{ApBcBvBuAtAsBvBuCxBiH`FmD|C_B`B{ArBwCvD_AhAeAlAiAdAcBpAq@XaBz@{@\\q@Ty@Z}D~@qCdAmAv@eBvAiBhBcCjCoCvCaBzAaAx@cBdAsAf@sAb@kBb@gAJgBByCBwA?iBNoDh@gEdAgB`@I?cBLcBCoACoAM}@OiAY_Bq@_B{@sCeBkAq@kBy@cBm@yAUgCYaBAyBHuBVyBj@sB|@eC|AeBrAcBbBmCbCiB|AyAjAgCtA}BpAoAx@_BrAeEfEcBzA}AlAcB`As@d@c@Lq@VkB`@gCZyBTcCNwA`@wBl@aBv@qA`A{AxAeAhAeA|Au@vAaEtGgAnAyAjB}AnAuAz@eA^g@N{CrAe@Zu@f@cAr@s@j@q@x@w@|@aAnAg@z@o@dAwCxFw@tAy@hAiA`ByA`BcA|@wAnAwDhCsDdCiEbDoFvE{BrBmBjB_FpFyA~Ao@dAeC`DiHpKqCjDeAnAiAhAiA~@oAl@yEbCiDvCwBhCmBjCaCdEuEdIyBjEuE|I{BnEaBlC{@jAq@~@y@bA{AnAaAx@oA^sAZoAV_BNcBAiAGoBY{CeAiC_AwASy@Ck@Cq@Ju@@aAVyBn@_ANyANkBLoCDoA\\k@Xi@\\}@r@wC|ByFjFyAdBs@`@gAp@cAZeALcB@uDe@aDMkBG_CFmBUcCm@_FiBcFgBqGqCgAq@mB}@s@U}@m@g@c@o@q@cJqIkHqHsD{CQWgCwB}AcAaBo@yBe@gBQoA@kA@cDX{CNwCHaD]mA@aBB{@@wAAmANsALuAX}Ap@oCjAkC|A{BlBoBbByAbB_BbCgJjOoBbCoKtQeCdEiC`EoAlCkAtCw@xB{@rCwA`FsChK}AdFQb@yAdDiAvCeBrD}AdD{ApC}@fAcCvDuAfCaAdBiBtCkErGoEzF_EdGkDjEiBpBcB~A_BxAwAxAo@n@sAxAeInJyCzDaDtDuIpI_I`IwS|PyGpFeC`B{FvCuDtBu@f@wAr@o@d@k@NgKzBsKbC[Pk@b@kEfFmDhDsAvAc@h@SV[j@]z@gOja@eCzG}C|GkDrGyCbF_F~IeDpKmDxOsAzF}@`Du@xBk@lAo@fAaB|As@j@sAlAiA`By@~AcCzEaD`HyAlDiCrFuDzGuUr`@}CzF{CtGwAdDgFrNiEjLaBvDwAbDwBtDuCnEqBfCcBjByApAsIxHyAzAcBfBmCvC}AnByU~[kRzWMLkA~AyB|CeBxBiApAaA~@kA`AgBbAo@\\g@LwAZmC\\eALeBb@wAl@mAn@y@v@oAzAeA~AgAjB_AxBcA~BuAvCa@t@e@l@sAdBu@l@iBnA{Ap@aA`@oGrBsAd@aBt@qChB{BfBsCvC{CnDgA|AeAlAcAv@{@Zy@Py@Bs@?kAW{@m@m@c@_AgAkBoCoAuBaAqA}@eAiAeAaAw@cB_AkBm@gBOwAI{AHgBLmA`@sAb@sBrA{CpB{Ap@aALiAHqA@iASyAo@sA{@aCkCmBaCwA{AcBuAeAk@qBo@gAYyAK}ACyBJ}BZcDz@uFrBkDnAgD|AoC`AmIpCsElAgFvAsBf@mBZoBR_BKqAQy@]gAq@aAu@oAsAaBkCgBuCwAmBuAgAaBy@{A]qAC}AF}Ar@uAt@wAnAaDxDoA|Aq@r@cAp@}@NcAFsIgAuEm@iAEs@@u@DmALiARuLbDMDu@P[@SG]Us@aAuAiB{@iAiA_AkA{@wBwAgBiAqAoA_AoAo@mAu@gB}@sCeAgEiAoDgAkDaAmCiA}BmC_GiByC}@wAiD_E{AyAkCsBw@e@oCqAiAa@aBi@yAg@wBeAaB}@uAaAyAiAcA}@kBoBw@}@wBoCaAuAaBqCuA_CoAoCoAwCu@iBKSo@gBiNg]uAyDq@uAi@_Ao@gA_AgAo@e@cAk@iAe@m@Mo@GcACaAFwAb@{@b@mA`AmAnAoe@|l@cR~UuIdL}FtIab@ft@_DrF_BvCmAbCgAnCw@|Bu@hCy@bDm@jCm@hDiBhLwAhIcAbEgApDs@zBsA`DqEzJyJ|SaL~UuAvCsHzOyNrZiFxK}AdDw@hBo@|Am@bBo@rBe@fBYfAYfAWrAS~@SdA]pB]zBoBhNu@pFi@xDy@zE}@|E]tAe@nBsAzEcA`DcAjCw@fB{A|C{@rAo@fAkA|A_BjBwBpBgAt@{@f@iAh@_EpAaFlBcDfAeCz@cRtGkE~AyBp@wJjD{@XwBp@{A`@aARy@TsATaAPsBXkAN{ALaAHyCLcBDgA@cBCaDKgBMwBQwC_@cAM_BWwA]eDw@YG}Aa@mJaCqBa@kAMsAEqAF}ARgBb@mBv@mAt@kAx@mAdA{@~@s@|@qAfB_[fc@wUp\\eDhE}A`B}ApAwA`AsBlAuAn@gCv@iB`@cCXo@@sFYmB@yAFgBTcBZgBb@kC|@aEzAyE`A}Cf@yA@wAOcAYeAg@{@o@{A}A_[ie@mA{AcAeAi@c@aAg@gA_@s@Mc@Ek@@o@@g@H_@BWHm@Vw@b@oAhAoLxK_DfCiFnDiC|AuBfAsClA_Cz@kCz@oAX{@VsAV}AT_BT_ALgDb@mANmANg@HiAJiC^u@H}BZgDX{@DsBLw@D{@B_BBmA?y@AkBCgACg@EqBOqIy@aCWiHy@aCUeAIiFm@mCOaCDiAHkANqB\\}Bl@_Bl@eDtA{IpFuAl@cBh@kBb@eCLoBEgBOoHuBiCWiC?eBJwBf@kBl@sBv@cl@~UgRzH{KpEsCxAkAn@aAr@aAp@y@p@qAhAgAjAyC`DcG~FeDpCoAbAwAbAyBzAwBtAuEbCuD`BaDlAuDrAkCd@_Dh@iEf@iBLiAHuGNiBL{ALcBZiB`@kAZoAh@iCxAcQbMeExC}MxJeAn@o@TiAXaAF}@As@Ko@QsAq@w@k@i@g@k@s@}@qA_@q@q@uA}@aCw@iCu@}CMs@a@aC_@mCWsCSqCSaEKeFC}BByCDsCLyDZsEV}Cb@kDl@gDl@mCl@wBt@yBx@iBr@uAv@yAtEuIh@gAj@oAr@cBt@{Br@cCh@uB^oBf@qCZwBL_A@a@A]GWKQMCUBkAHqA@eAIqEc@kEWqCAyBJuK`@mLb@eC?_H?eAJgAXaAd@oAz@qAhAwAjBgCvDcCpD}@bAeBdBkBlAiFnBkCnAuDdBcNrHqNtG{@ZmAd@oA^eAXkATwCd@kBZeBb@u@b@o@`@wBbBuBjByBfBqBlBqArAoAzAaDbEsFdHqFfH}I`LuCxDqC`EsApBoApB_DtFiFnJqGrKuH`KmCtCmCjCiG`G_ExEsAhBuAnBoBxCuElHeCxDcCvDiGpJsOfVwBbD{@jAw@~@u@v@_At@_Ah@mAj@oAj@o@\\m@b@}@`Ao@z@s@lAi@nAk@pAm@dB_GjQwKj\\yHvUyHxU{GfS}E|NqBbG{@dCs@jBe@`Ac@t@o@t@o@h@cA`@w@Ro@Bk@GwAg@]bKs@xKk@fGm@vFc@fDwArJq[dqBeGj^}CtTgB|Q_H|gAo@xFoBhJm`@pqAkArDuHpVy@bCkEhNs@hByCvGm@tAoCdEk@t@oGpIyDrEcB~B}AjBY^qAhBqAjBu@~ASf@Wh@s@vBcDbMcDnM{GtXiAnEyA~Fu@nCcCjJqG~ScEtM{@lCqHfVgEhNaJr[{AdG}BhJoBbHw@hCkArCYr@a@~@m@z@oBtCOT_A|A[n@a@t@[x@Wx@i@nB_AtEa@tBo@zDWlBo@zE]zDq@fH{AbRYlDiAfKqAjGqCdL}EdQyJt^kD`OkA~EkGdXcA`GcAdIq@bLqAvYqAlOk@dEcAlIgCdPgEzVeBhKyAtGgFbNu@xB[lB{@jGy@xJc@lEiCjZsAvOeAjMwCt_@uAzNSfA_AfFgOni@mHxUmBtI{AjKiBtJiDtNaCvJyC~LsD`OyC~IoBzDoGbKaXrb@{FrGsFlDcLtD_i@`PoDnAe@Tg@Ve@\\QLy@p@oBpBuSdWgAvAq@tA[v@i@tBmBhKyAnK_ApJqAlHgMr]uKpYqC~EyCfCONue@hYyEdDiPjQuCrD}JnNgOzUeBrD_BnFoCtNO~@uArHoGj`@}@tIcA~OsAjJmCjIuShh@{GvRcAbEgMfm@{@nFq@nFYjDSvDkA~SgA~M_AjHW~AaAvFyArGa@`BiFtQuF~OwEhJmAzAqAjAcBjAaCpAsYpMaB`AyApA{FnGkDlDiRjSiB|B{@hBm@lAo@|BmAdH_B~JkJrl@_@zBsArIKl@uDrSqBxKyEvUs@pCs@xBoB~Fa@jA[bAq@fCWbAU`Am@`DO~@SrACT_AtI]vDw@dHeA`KIr@Gj@e@hEcBzPU|BkClWWfCUrAC@CBg@g@wA_C]k@wBwD{@wA{BjKI^S`AkAdFQv@qApEwAdEYn@wDpGgDxEmF`IQXYb@a@`@NfE?lAAz@]dFEv@BN"
+    },
+    {
+      "from": "blonduos",
+      "to": "holar",
+      "key": "65.6639,-20.2955;65.732,-19.1111",
+      "km": 77.9,
+      "minutes": 68,
+      "polyline": "q}woK||zzBCODw@\\eF@{@?mAOgE[N{@NkBIo@mGi@wEeBkO_@cDKaA[{BeCqJg@_CYsAyBaQi@wGW}Dk@gOEuAIeBOaBM{@Kg@w@lAq@lAmEfJ}BpD}BrCeDdDcC~AoCxAoCbAmFn@uD?qEw@sCgAg@QqLoFcGyB{EgAeF{@qB]eJo@}P]qBUoDa@gGyA}EmBkGgD}EsD_FwEqEeF_F{GaCuDwKsSkDiG}DsFsEgF_EkDeHsFiDsDwD{EuDqGqDsHmD_JiDeL_EmPESs@qDi@qCYwAyByNsBmPsA_J{A_HgBqGuBoGsFaM_BoE{AyFeAmFq@kEs@eF{BeSo@sEe@qCg@gCi@{BoDwOs@oDm@wDg@{D]uDWgEO{CIuBCwBA{A@_BDkBFuBRoEV{C^eDvAqKx@kHRcCT{CHiCN}DBsCBkF?cCEgEKeDM}Ce@sGc@yEaAiI]cDk@cHg@sLO_JE{HBoI?yBCaBM_FSmDUuC[eCg@sD}@cE}@oDkA_DeAkBs@aAeA}AkBaDgAuBaBoE]gAw@cCu@kC_AaDoA{DmA_DeAcCwBeEcCeDsD}DwA_A{AeAkDuAcD}@}As@cAk@{DiD{BeCkAyAsAqB_BkCaE_IwCgG_BkCwBkDeD}FqBwDuAmCg@oAeE_LeEyNqByJmBcKsAwIe@eDgC}QeBkKeFaVqE_U_CqNgCgQkC}S{BoOsDmQoEcPuFyPeHkSuB_HcA_Di@qBqCaLyAoH_BiIkA}EsAoF}BkHsAoEgBcH{AeI}@{F{@eHmAeL_AwHgB_JgA}DaBkFcAeDcB_HaA}FcAuHyCkVmBiPeA_JkBoMqAmGOq@cByFwBwFgDuHyDgIsByEiD{HyBmGmB}GeBuIcA{F_AmHaAyIMkBw@cLi@gNi@aVu@mNsAcMe@uDUsBoAyG_B{HmDwO{@yEk@_DyA}KcBeOeAmMK_Bk@{Ik@qLg@{N_@kPK}IE{NKkNWyKe@uKs@_K_AiMcAwLcAuLo@cKQiK@oILiHl@gKp@qGx@}Gt@wGr@iJXoJFoMY}Ls@sKkAkL{@iGeAyFwAyGaBcGiBeFaCgGoBoDyBaDmEgFiC_DiBkCwBaDsDyFiBeC{AmBsDuCeC}AgJ{BwDaBqCiCcDaGoFwMsA{CgByCkDgFaD}FwByF{@gDw@}DwCcQmA{EkAwEmBuGeCuGcCgFoB_EmBaEyAkDwAcEkByGc@cBmFcV}AaGIQqAmDaBmD}@uAsBgDaAaBkAwC}@wBgAqDeAsDg@qBqBmIqA{FgAyFy@}EmAuHm@cEcB{LkAoH[eBoBwJ{@aDw@gCs@aCiCiHq@qBs@gCi@sBgAaFk@sD]cDSkBOqCIuBCuAAqAAmC@oBFuBHkCNaCToCP}BLeBVmCLcBH}ADkAF}ADuA@qA@aD@uC@cCFcDJiDFwATaD\\aDb@yCZoBZqAj@mB^mAj@qAl@iAZg@j@w@^a@l@g@j@e@l@[j@OjAS~B]fA[nEgCbAu@bBsBlCuEz@yAbB_DnA_BhBiB|AmA|@k@bBy@pA[fCg@vBg@hA_@xCaAhBo@`DoAvGiB`Ba@|EcAfG_AnEa@`Je@rGU~Yw@hIkBrIsFjH_FjDwBtH{DhCmArC{AhAm@hGaD`G_FbEwFrDsHnIqUtEmKjH{LpCsFpAiDzAkEbAqD|@_E^iBl@wDh@_El@qDzCuTpAqIhA}Ix@iFhAsGz@gExA{Fv@oCdBmFnGaSjFiP|G_SdFaPpAwDhAeEfAiDjCeJrCuJ|BiHdD{MtBaJxB{J|BwJfBcIlAyEdCwKtEcShGmWjBeHdBgH|CiM|BkJbEoPpDkOxCoLtDaO|@mEv@kFd@mFb@uFRiDHkDFkDDqJDgQB}EDqGHaHHyGPoGLwERqER}GPaHJ{I@{IEkDEeEIkFKiDMeE_@wHMuBQuBiAsLi@_Fq@}Eu@uEaAaFuA}Fk@_C[uAe@iCaAwHSuBc@sEi@uHWwDQgDYaHQwHMcDIoDOwEUaEa@gF[sC_@}C_AkGm@qC_@sAa@wAg@{Ae@eBq@wBmAiDkAkDgCqHgCqHcGmQoAoDqAaEqAmEoAoEsAiEq@cBe@aAGOq@kAu@gAq@u@u@s@y@k@s@e@eAq@iAcAcAuA{@mBs@kBk@oBi@}Ba@wCa@mDU}DMaFA_D?YDaDLyCVeD\\mD|@sHb@iE`@cE^iEZ{DPoBJaALaAFi@Jm@?CXuAd@{AXu@d@y@Za@\\Yd@Sd@K`@?LHHHHV?N@LBPDLFHFDF@DAtALZ@j@@n@AdD@lA@lARr@PNHNHv@b@`GlDtAt@h@Nn@Lf@?`@CXEVGTIf@Wb@]~A{AhBsChCaEvB_EnAcCvByF|@gCz@kC~@aDz@_Dz@mDx@sDt@sDh@{Cf@{ClAgIpBoMjAeItBiLx@}Et@kEj@aFT{BjAeRjAcTJ_BXeGXmGRwFRsFNsFL{Fv@w]`@qS\\{NX}NHyEBcDB{D?sGCgCCuCQkJUgKm@kWo@qXs@{ZY}LM_FO_FU}GYuGa@{IYqFaAkOg@gHYuE[kFMyDMwCIwDG_GOaMMaHK{DWoEU}C]_DY_Ce@oCy@yDo@aCa@wAc@qAg@mAg@eAe@u@yA}B}@_A_BuBmA{AeAgBo@wAgAoCq@mBy@wB}@gC{@}BoAaDaBqDuAkDi@qAg@aBgAqDS}@]yAc@uBa@aCe@}CWcCYqCWcDOwBM{BGgCIqCCsCAgE@aEDyCF_DLcDLaCPuCPwB^}Db@uC^gC`@{Bf@wBn@mCj@iBbAoCvBgFhCqFxBaF|AeDvByD`BoCjAeBnAaBxBmClFqGtIcKvBcCtAiBd@s@l@}@h@aAtA_CzAkDrAqDnBkGhAwEp@mCnA{FlAeH`BsKhHud@bC}OnC_R~BiOr@qEn@gDvA{GdBqGx@sCx@cC`BoElAwD`AuDf@iCl@iDr@kFd@_FT{CNiCJcCJaDHsDBuD@oDCoEMmF[kH_@qFm@mHu@oJqDad@_LyuAuK{tAmAaOOmBEi@q@qIGwAIkBEsBCwA?aC@}BFqCJ}BLuBX_D^qCTwA`@uBZmAb@}AjKs[pA_EtAiEb@yA`@{At@_Dn@{Cf@gCj@kDf@gD`@aD\\yCVeCVgDT_DP}CL}BLaDJgDHqDDmDBsDDqGRyb@Ru^{CmAoHcDo\\oMsKkEeZqMcDsAuBcAq@e@qAgAaBqBqA_C_AqCaLo[}@sBwAmC}AqBmLmLsMyLqJgKm@}@c@u@k@mA_CuFmJgTu@kBi@iBiA{EaAwEeC}LiBoJiFoYm@aCwAkEoKgZoFcO_DcHaGuKyB}DkBiDt@mErA{F^aB^cA\\{@Xu@b@_Ax@yA~AqBlAyAtAeBhBuBlEaGvAgCjAsC`CyG~D}KnCsHrCsIx@gDh@uCdAoHrKgt@fBgMzBqPnIkk@rGgd@t@_Gb@aE`@wFT}CLeDJyBXuH`Cmk@tC{w@`Dwv@bBqb@lA}\\dAcV|DocA^cJvBok@X}GFkAJ}BDuCAyDCaACcAEaAGaAIaAUcCs@sFoBsOqBuNm@sE[cCEWOqAKw@KcAIcAGu@IoAA_@EwACwB?Q?cA?gABcAHgCL{BHqAHmAJw@TcCJ_Af@_Dj@{Cz@mEzCyPvAuHfc@s~B`RqcAzAwHnCiN`@gCbCqNj@{CrAiFpCkOpAqGdAwFh@wCz@yGnCaOtMap@l@gDTkAXO`@MROf@u@|BmDCk@M{AI?OP[XIACKEQC]?SBOFOFWDa@Fu@@G"
+    },
+    {
+      "from": "holar",
+      "to": "lonkot",
+      "key": "65.732,-19.1111;66.0049,-19.4004",
+      "km": 39,
+      "minutes": 33,
+      "polyline": "}gepKpsssBAFGt@E`@GVGNCN?RB\\DPBJH@ZYNQH?LzABj@}BlDg@t@SNa@LYNUjAm@fDuM`p@oC`O{@xGi@vCeAvFqApGqCjOsAhFk@zCcCpNa@fCoChN{AvHaRpcAgc@r~BwAtH{CxP{@lEk@zCg@~CK~@UbCKv@IlAIpAMzBIfCCbA?fA?bA?PBvBDvA@^HnAFt@HbAJbAJv@NpADVZbCl@rEpBtNnBrOr@rFTbCH`AF`AD`ABbAB`A@xDEtCK|BGjAY|GwBnk@_@bJ}DncAeAbVmA|\\cBpb@aDvv@uCzw@aClk@YtHKxBMdDU|Ca@vFc@`Eu@~FsGfd@oIjk@{BpPgBfMsKft@eAnHi@tCy@fDsCrIoCrH_E|KaCxGkArCwAfCmE`GiBtBuAdBmAxA_BpBy@xAc@~@Yt@]z@_@bA_@`BsAzFu@lEiCsE}AaCe@m@o@u@yBuBmSaP{AoA{AiAaEeDsDyCuI_HyIiHsEuDaJsHwCaCoDsCiDmCkAaAuBkBaFyDwB}AaAi@s@U}@We@IaAMoA?mAFsAPc@F{Aj@kAh@aAn@e@^m@f@o@x@u@bAi@v@e@x@o@~A}@rBeAlC_BjEuEnMsFjOcE~KyEhM_BlE}@bCm@xBu@xCe@tC_BrLm@nEc@~BeA~Ds@tBy@lB}@hBs@hAcAjAkAnAqChC}H~GcFrEyHtGmGtF}OjNgD~CmAfAq@nA}@fBeAxBk@pAg@zBg@fBq@bEu@vEa@|Co@hFq@rDe@jCy@lDw@lCeA~Cy@rB}@jBgHhKoExGwAnBgCtDkApAaBrB}@z@y@b@cCnAeBt@y@\\sAhAcA`Ay@fAgCbEkBnCsAvAuAx@uAZwALoAIwBi@mAQuAQg@EeA?uAHu@LmA^mAp@oAn@sAz@mA|@}@p@kBtBsB`CmG~HuGxIaG`IiV|ZqBvC{@~Aw@zAqC~GkA|B}AdCkBxBeCvBeDnCsDlCyBjAiB`AkALu@Hy@?}@Iw@MmAWsA_@{AQmA@wADc]fEw_@hAyJVuFV{Bb@eA`@eD|AwC|Awv@p`@wF|Co@`@m@b@o@r@i@l@s@bBgBbDoDlHkBzCw@~@k@p@gA|@_At@kBp@cG`BsBr@iB~@_Bt@c@^wSjSkA|@gAl@qAb@{A^yANaA@aAS{AYgBa@uC{@{Cu@s@Qc@AoB_@iDY}BFyBXm@JgBVyFzA}Cx@iCr@uDfAkCh@_E`@gDAsAH}AJ{ALsBn@{B~@oBjAeAr@sBlB_CrCuBlCqBdD{CbFmC`EcDfFwD~F}BvCsAhA_BbAmAd@yARiA@eAIqCu@mHoCeEsA{A[oBOiBLaBTuAZgEhBkEbBcExAoC|@uAb@}EtAcHrBcHxBeHlBwEzAgGbBwFdBwDfAuEnAkD~@aCNqDMoDIaDM{DGgEKkESeDIoDMwDI_DA{DTqDXcBD}AIgAY_Bk@g@[WOqAgAsBwBiAgAgA{@yA{@wB_AeDmAiDoAaEwA_Cu@qBo@oBe@oAQaAC_ALw@RqCn@mF`B{AZiBb@}ARgAH}@CeAKaAMqAYqDeA}DsAuDeAqBc@{AKy@A_AJ_AL{@`@q@XaB~AyAdBa@d@q@z@aCtCgGzHwBfCkC`DwA~AaAr@{@d@eA\\eAD{@?uAUaA_@cAk@oBkAaCyA_BaAcA_@qA]iA[sAq@yAaA{AmAcBuAmAsAkA}AkAcBmAeBiAoB_ByC_BkDkAyCkA}DwAkD}@wBaAeBy@iAkAeAiAw@eA_@kF_BoEuAmEsAkE}AyDgAaFaBcDcAkC}@iBg@aC{@gAa@y@YQIuBaAK|ME~G"
+    },
+    {
+      "from": "lonkot",
+      "to": "trollaskagi",
+      "key": "66.0049,-19.4004;66.1844,-18.9475",
+      "km": 42.2,
+      "minutes": 36,
+      "polyline": "uqzqKncluBD_HJ}M}CsBiDcCoCuCqBeCw@uAcFkK{J}TaTke@wB}EqCgGeAuBoA{BeA{Ak@y@EGmAwAeBgBUW_C{Ba@]{PuO_DwCyw@_u@kHwGsGsGeAkAu@cAu@eAgAkBuAmCuEeJsYsk@uUe]sKqQoSeYsSyZ_@m@GIyDaFuHaJgIsJeEgFeEiFgIgJkEyFgCkEqA{CiAuCmA{DiAaFiA}F_BwJwCkS{D_XsDgWaDaUy@}HYuCs@eIqA{QmBsXu@wM{@wSw@uSC_Aq@oOi@qNa@iLW_PQiPGcPKyXGuQ?u@EkOMwYAsd@GaEGsCQoCE_@Gy@_@{Ca@uCsAaJq@mEu@eFwDkVqGgd@iAuIw@mFy@eG_@_DU}CMeDEwCAkDN_E^cHnAeTbCy]h@uI\\aGzCmd@`AqIjDiW~d@k{Ct@aFbBeK|Oe{@zQoaAt@_Ev@{E|B}Ml@iDlC}NvCgPr@gE`B_N\\iEl@mIXwGTaJTmRh@w`@FmHb@}Y^m[|BgdB\\oYj@s`@TsOLcLj@e`@l@}b@X}PDsBBoALiBNsBToBXaC^iBnD_P|TibAp@gDTmAT}AJiAV_DPgDJeDDmC?}DAe@A]GuA{@eOg@{HKcBmEiw@cC}^y@sMMFABqAfAm@p@sAnB{@bBgD|JaBjE_CfEyArB}IfM}G~JoFjHqFtHsAbBq@jAq@~Ag@~AQp@e@dCSdAcApFaDdPgFxWqBzJ}BvKaAbEiApDm@|A[p@y@vAw@fAsGrIeFjH}BzCk@d@c@Rm@HaBPUBkCViEb@sGx@yMlAWDgEd@wCZcCd@_Cr@gClAeFxCaAr@qC`CsEhDuAhAe@`@yBbBmBxAqDlCqFdE_ExC}KrI}FzEuEzDyEzDuEnDiGhFq@d@kDfCs@t@{@bAg@p@}@fA_BhC_AlBkCvFw@|A_A|AeAzAiB~AmCzBsBnBoBtBKLcAjA_@f@k@l@k@\\o@Lu@Fq@Im@S{A}@kC}AwBeAiBw@QImDeBaE}By@]e@KKCm@Eq@Bm@Ho@P}Az@_CfB}BbBg@\\a@R_AV{@Ju@EsAMeAW]GwAQoA[g@W_@YiA}AmCyFuAiCwAwCcAqBeA_Bk@i@USWMSIYCW?YBQFYNSRWXOXSd@i@rAq@fBm@~Ac@`Ao@p@c@^[Vi@NmBFkBEq@Co@EoAK}Bq@qB{@_Ai@cAm@}@i@_Ai@gAg@SMYIq@Se@Mw@B_@?[@]@K?{AHaAAeAQmAi@yAq@{A{@}C_BgA{@eBsCy@uA}@cBwAeCs@gBYy@Y_Aw@yC}AoF]gAWu@MSQWW[c@c@[Oc@G]DYLSLMH[VYX_@`@}@`Ag@`@QJQHc@Fc@C]K_@Ue@k@s@oAm@{Ai@oAQYW_@Y[_@Y[MWGWAWB]HWHw@n@mAzAiDzEsBjBa@NcALm@Ak@Kw@U{@u@g@i@]c@c@o@c@_A{@sByAwEcBwEi@kAe@_Ai@aAcBsA}CiAsBKuBFsBPmBBm@Ic@K_Am@_A{@kAeAmAoAq@aAu@eBqBwFaCuGgCkGeAqCKWcA{Cc@yAk@uBu@sCw@gEk@wDa@sE[gFk@uGWgDKgBIqAI_DGwF?eDCaGKyE[uEY}D}@oFgAwE{AsDkAsDyAaGcAkD}@yCy@aCS{@UgAk@iDe@wD_A}GmAoJuA_J_BkHqBmH{AyD_@oAe@uBs@gFm@yF}@kH_@yCYyCUiCQuCIkCAwDByDHmCRuDXuCx@uEh@}BjAeDpAgCpAwCN[lA_Eb@gBf@cCXkBZoBJkAJgBBwA?oBAuAIoBSkCWsA[_B]cA]eAc@}@i@m@m@]s@Qc@CYCiDOuCGeC?gCFgEGqCGcCGkBc@_BYkDuB_A_AcCmCsCaDaA{AsE{IgB{D{@eCo@cCgAeG}@yG{@wGa@kCyBgLiCcSsB}QoCmW_A_HoEuW_@oC{@cGkAsH{BgP{AqLkAkJYoCq@USC"
+    },
+    {
+      "from": "trollaskagi",
+      "to": "dalvik-walvissen-kijken",
+      "key": "66.1844,-18.9475;65.9711,-18.5304",
+      "km": 39.4,
+      "minutes": 46,
+      "polyline": "qs}rKbwsrBRBp@TWmC]wDUwDQgDg@yLa@iPi@sRQkHMwGQwLOeM?]?]@qAB_AF_BTwCDuABmA?_A?iAEwACg@?o@Bm@H}@VwB\\wCFUba@qkAr@sAh@qATUvMgOhJ}J`B{@|A[b[gHhBW|FcAzEc@~DP|D`@zNjBf@Ft@Lx@FRFfAV~Az@tAzAJFzB`Cp@t@d@j@lApAt@|@pCbDn@t@lGnEfAp@DFHDhDzBTP|@NfACj@AJAXcDjAfAvCxBVRnE`DDDVNp@^HABA\\OVE\\DRPPTRf@\\v@b@z@T\\r@fAd@b@VVFDJFXPJHXJXHdATlAV|@RdATTHTTlAlBZX^Tn@Vx@RpGtAtFnAhAVb@Hj@LvB`@j@LrAr@v@l@jDdEbS|VjC`DrA|@\\Dj@Fn@@hAKp@Yt@m@r@{@RYb@s@JUNWl@qBh@sBd@iC\\mCXyCPmDDcCDcDFwJJuPFeJBwCHyCLuDR_En@uH\\eDVcCZqCh@_Dl@mClAaEtAgD`GyMrC{Gt@cCTq@bAkEjA}FXyAPiANmANoALqALqAJqALqALqALqALqALoALqANoANoANmANmAPmAPkAPkAPkARiARiARiARgATgARgARgATgARgATgAReATgARgATgARgATgARgATgARgATeARgATgARgATgARgATgARgATeARgATgARgATgARgATgARgATeARgATgARgATgARgATgARgATeARgATgARgATgARgATgARgATeARgATgARgATgARgATgAReATgARgATgARgATgARgATgAReATgARgATgARgATgATgAReATgARgATgARgATgARgATgAReATgARgATgARgATgARgATeARgATgARgATgARgATgAReATgARgATgARgATgARgATeARgATgARgATgARgATgAReATgARgATgARgATgAReATgARgATgARgATgARgATeARgATgARgATgARgATgAReATgARgATgARgATgAReATgARgATgARgATgARgATeARgATgARgATgARgATeATgARgATgARgATgAReATgARgATgARgATgARgATeARgATgATeAReATeAVeATcAPs@DMTeAT_APk@Nc@xAeEjAgDRg@b@kAb@cAxA{ClAaC`DuFrAcCpBaEv@cBj@{Af@mAf@uAjAaE~@cEd@gCl@aDlCeONmAPmANoANmANoANmANoANmANmANoANmAPoANmANoANmANoANmANoANmANoANmANmAPoANmANoANmANoANmANoANmANoANmANoAPmANmANoANmANoANmANoANmANoANmANoAPmANmANoANmANoANmANoANmANoANmANmAPoANmANoANmANoANmANoANmANoANmANmAPoANmANoANmANoANmANoANmANmANoAPmANoANmANoANmANoANmANmANoANmAPoANmANoANmANoANmANmANoANmANoANmAPoANmANoANmANmANoANmANoANmANoAPmANmANoANmANoANmANoANmANoANmAPmANoANmANoANmANoANmANmANoANmAPoANmANoANmANmANoANmANoANmANoAPmANmANoANmANoANmANoANmANoANmAPmANoANmANoANmANoANmANmANoAPmANoANmANmANoANmANoANmANoANmAPmANoANmANoANmANoANmANmANoAPmANoANmANoANmANmANoANmANoANmAPmANoANmANoANmANoANmANmANoAPmANoANmANmANoANmANoANmANoAPmANmANoANmANoANmANmANoANmAPoANmANmANoANmANoANmANoANmANmAPoANmANoANmANmANoANmANoAPmANmANoANmANoANmANmANoANmAPoANmANmANoANmANoANmANmANoAPmANoANmANoANmANmANoANmANoAPmANmANoANmANoANmANmANoANmAPmANoANmANoANmANoANmANmANoAPmANmANoANmANoANmANmANoAPmANoANmANmANoANmANoANmANmAPoANmANoANmANmANoANmANoAPmANmANoANmANmANoANmANoANmAPmANoANmANoANmANmANoANmANoANoANoALoALoALqALqALqAJqAJsAJsAJsAHsAHsAHsAHuAFuAHuAFuA@c@PkF\\uLNwEPqCDq@XgDPeBD[D[DWBUBOFg@He@Hm@P_ABSf@yCrBkMFi@BQNaALmAJqABm@@c@@o@@o@@y@@aG@eA?eB@cE?{@?iD?e@BgG?kBA[AYCa@CWCUEWGSI[qAiEW}@gAwDc@{AgAwDkAcEIYqAoEw@oCGQMa@c@}AqAuE]iAiA}Ds@iCc@{AgC{IwEmPI]Ok@[iAa@{A_AwC_@uB_@uCOsBM_CA]QyDWwHQmF[oFKwBq@kIcAyJ}AeLmAcHsAkGsAaG_D_MsA{FsCgMcD}Ra@gCYaBQkAOoAKqAIuAEuAAwA@wABwAFuAJsAz`@qhEt^y{DNmAPkATgAV_AZy@Ti@Ra@b@k@j@a@r@]f@IhAOr@Ir@Uv@i@l@m@n@{@`@_Ad@kAhAkDz@gCh@kAj@gAt@iA~@}@~@m@v@Wj@EjAAbBJdB?^EVCjAYbAWvAQ`BQ~AKvAUhC}@rBk@dBk@dBu@dB}@bDaAjD{@hCo@lCw@jE}AjEsBnImEtFuCtFyC|EgD`FqDdBsAdBgA|@c@z@Wj@Qz@OzFi@lGg@fGc@~BIbAFjAHpARtAXhDdApIlCpIjChD`AnAXrAPzADtAGzAGrAQnFmBvFcBv@a@v@i@zAuA`B_Bl@i@t@i@lEgClBiAtAu@nAe@rAM`DEnJEjw@KtA?rAHhARn@Tn@ZxAt@xD`C|DrBzD`BtCjA`DnAvH|Cx@\\z@h@hA|@jD~CpDjDrDfD`JxIjCtCp@v@j@t@jB|Bt@t@x@p@rBvAdB`AnA`AnBjBfAz@jAt@jA^hALhAGfAU|@e@tAeApIkHfEoDjB{Ap@k@p@e@~A}@jA_@n@Kl@Gx@CdAF`@Dt@N~AXpB`@`B\\l@JpGjAlGlAfDr@pAVpAPzBNfCDxB?fAElCC^?|@Ed@?hANjA^fJtBB@\\L|@b@NBP@JCLENIHCHC|@Mb@G^E?L@J@JBHBDDBD?vBw@Vf@HD`Bx@fAj@FBTL@SBSBQ@IBGBGBGxAiB"
+    },
+    {
+      "from": "dalvik-walvissen-kijken",
+      "to": "camping-dalvik",
+      "key": "65.9711,-18.5304;65.9679,-18.5344",
+      "km": 0.7,
+      "minutes": 2,
+      "polyline": "q}sqK~ibpBlCgDJSnBiCfBkCPOL@NHNHP_CtExF\\d@Gn@u@pGCRIx@CPE^EZCb@@h@Fh@hAtF"
+    },
+    {
+      "from": "camping-dalvik",
+      "to": "akureyri",
+      "key": "65.9679,-18.5344;65.6839,-18.1122",
+      "km": 43.1,
+      "minutes": 40,
+      "polyline": "ehsqK~zbpBiAuFGi@Ai@Bc@D[D_@BQHy@BSt@qGFo@V\\DF\\f@RVRZHLjAlBpDpHPZRXLNNLlCzBdBzA\\`@b@j@|@fBbAxCfAhEr@rBp@jBj@vAXh@V`@VZVVXTXNXJZFZBZ?XEZI\\Un@k@lA_BhA{Az@i@`Aa@hA[fDaBt@q@x@_A~BmDrAgCxAmDnBaG|@sDjByIhBaLnB}PbB}PpCgXpKqdATaCfLahAr@_IJsARgCJyAFyAH{AD{AH}D@_E?cBCaBAo@Ao@GeBGuAEy@Ca@OcCUkCOwAa@gDyDqUkBmMkAsH_AcGyByMqAaJeAsIy@gJ_@wGO_EEaBCaBC}AAcBAaB?aB@}AB_BBaBJ}DVyGx@kKz@iHpA{ItUemAjGm]fIwe@x@oE~F_Xl@uC|EcWlAuHvCoTjCuWbIqaA`CmVtDc\\fBcNdByL~BaPzAyIRgAbEeVzByKbBeIf@aCbAsEfA}EpAsFdC{J|EeRNi@rE_QnBuG|BuIFU`AuDz@{CtBmH`AeC`AwBfAyAvA}ArByAtBuAtAeAt@aAt@gAdAwBxA_DrByEbBwEnBgGv@gCdBqHdAmEbAaFx@_En@cEx@kF??z@wG`A_Ih@uFfAkNdAoN|BkZ\\cEnA{O`@kG|B_Z~@uLr@{H~@yHbAwH`AeG`@{BtCwOdEyPhBkGlAeDjAkDrGiPbDmIbA{BbBiDnAoBdBuC`CyCTWnC_D|CuDvFcGnEaFrC{ChFyFdIqIrHsIRU~FiGlGaHvAaB|BcCfCoCbD{DrBgC`B{BvCyEfIkMpF_J~DmGl@u@t@q@f@Yh@Gl@Eb@?L?vANt@?|@I|@Kv@Yp@U`B_A`BoAbBiAfBg@bBMlEAfC[dC}@jHsAbSiD~Da@fDk@`QaC`H_BdOmD`FsAfBc@hEeAfI}BpEuAxEuA`HsBvb@gMdRuFxCy@xAm@lB}@hGiDpi@wZd{@sf@TMhBkAzPwJpB}ArHiG\\Y~EgE|CoCHGtD}B`o@_Z`NeGpFsChDaA`Dg@pBH|B`@zOnC`Dj@bOfDnKpBVH~Dr@jk@xLfc@hJpKxBtXxFdJlBdCf@\\J|D`AlCRnCExDeAdCmAbYsR`EqCf@]nD{A~A[`C[pEm@`@Kb@MnBcA|@u@TQlDmDlAyAjBwAt@WbAKtBAdA^fAz@rCzC~@hAjAv@~@P|@IhA]|@aAhAmA|@cC|AqDrCyHzCoIXe@V_@v@y@h@Gt@DjAz@`@wE`@oGLkCJqE@{EAkCIyEEiJFwEFoCR}ERaC`@{Db@gDt@kEnD_PdCaLlCwLfAsEVaAt@kCtA{Dv@oB`AqBzFuJxAgD|AoD`CqFnBuDp@iAnA}ADIjAcAjByAf@_@lb@gZfJsGf@]dBsArBwAdCeBxAeAtFyD|DaDjAaAxBmBjAgAjAsAvCcDh@o@x@cA~@kAtAmBfBcCvBeDfAgBd@q@hHiLjHoL|DkGzBoDjEcHvDeGtD_GfFmIdDkFrBcDbGoJbBiCrAqBxAqBrBkCtC_ErAeBpBwClBaDzByEp@uAn@{A^{@Vq@R_@P]NYBABCD?FHH@HAHIFODU@Y?YCYBSBSD[Hc@j@iCpAoFt@gDp@qDfDgRx@iGTaAPy@HYLSFAHIDKDMBQ@S?O?OAMCO@i@Di@D[Hi@LgA|E}\\hCiQdHgf@\\gBf@uDBM@GHk@LTp@`An@z@Vr@j@lBf@`BHXX|@Vt@`@|@Xf@`BhCX`@|A`CX`@\\\\TRZT^R^J`@Dd@@j@?P?hKIZAhH@\\HXBJDJHBHBFFBD?DEDIBM@M?MAMAMEKEi@Aa@?Q?{A?WA}M@yD?w@?u@?a@BsADcBDmABsAB_ABaC@iC?[Ak@CkAEaBA}@B_A?aAHoALiAL}@XaA`@oAf@gAp@cA\\u@Rq@T_ARc@LMTC`@d@p@p@b@ZJHx@\\Be@@]@K?{@Ci@GuATIXKX@VCDO?S?a@Ai@IiAGm@"
+    },
+    {
+      "from": "akureyri",
+      "to": "go-afoss",
+      "key": "65.6839,-18.1122;65.6828,-17.5506",
+      "km": 36.3,
+      "minutes": 37,
+      "polyline": "k}{oK|tpmBFl@HhA@h@?`@?RENWBYAYJUHFtABh@?z@AJA\\Cd@y@]KIc@[q@q@a@e@Ke@Ca@?qAFmABuA?{@?y@GqAMqASgASqAYoAe@sA_AeBo@sAe@cA_@cAg@eB_@uAWqA[kBUoBE_CBK?U?WA[Ga@ESGQEEACGAMsAMyASiCKkAMeACOCe@Ac@?Y@e@Dm@Dc@Lm@^eBX}AT{ARiABOH_@DYJi@XeBXgBXeB^}BrBwLl@cDXmAZiA`@oAN]\\{@`@w@\\m@TWtAyARQ`BsBbAmAFGRWLMNSjAqAnAiAlCcBtAm@t@SFC`@GLEPCLEz@Uf@MJGHEPAH@ZBn@Hp@Hh@Jn@N`Ad@h@^NL^THBLHJDPHb@L`@D^Bf@@^CdAOf@Ef@Id@Il@Sh@Wd@WPOHIvAmAVUbBkBxF_HX]vB_ChAeApAiAxA{@t@i@fA{@l@a@NKAg@Au@C}@AmCCgCC_RCsA@oCLkLFeBXyHDoAJkBh@{KhAsO|AiRj@qITuFLaI?sF?eBCwBEyCY_ISmDSkCc@gEe@yD}@{F}@}Dc@aBa@uAq@gBm@yAo@cAg@w@e@s@KMaBiAUMk@Yy@Ui@Im@Cg@?s@Ho@Ly@T{@ZqBv@kBp@_Cx@gBn@{Al@w@\\gDvAeDdBkBdAoCbBqAv@uAv@aBt@mAd@gBb@yAXiB\\uAVmCr@gHzBqDlAqA`@wAb@iBh@eEhAw@Da@P_@\\OHI@IGGKEUIOGGKAIDGLGPERENOXW`@Wd@e@f@MLYToBtAqAZgANeBCoAg@_Ac@oCeBsBkBkBqCgBsDyAqEcAsDcAqDmAoFy@}Ek@uEo@aHm@cIgEyg@}Pk}A}Fqd@kEw\\kIwf@}Gia@}Gkb@uOgv@gI{d@cHs^qLgv@oJqs@iLi~@{Gsp@cE}b@cB_UsAgJqBeKuD{MuCsGuBaDcBgByAiAgAo@mA_@gBWqBF_AHgCf@sAh@gAp@yC`CcCbBqBxA{AbAyBt@_B^aBJ[Cy@IuAc@yAi@{BwAkCoAmBcAuAw@uCcA{CkB_CeAuA{@gDgBmCuB}A_CcBmD}@eCe@_Ba@}AS{@Mo@My@S{A]aC[mCIaAK{AKyBIiBIwBE}Aa@iMMyDAg@K{CcCqv@IkECiAAwA?y@?sCBsCHsCLoCFkARiCTgCf@aE~@oFxBeJfD{MhDcNtIc]`H_ZnCiNX_BxCcR~BeQtByR|B{ZzAiUxA{OpAwJhA{GjCwMjDwLjEsL|DuIhCaHpCgLtBsM|YqcClBaNpCwPtDoQpIyZbAyDnDaU`BcUf@gRVy`@FmDVwO~@uPvAaNlBuNjIuh@ZoBJi@rJam@jAkLf@kKPqJGoHc@wMc@kHaAuPaAyWMoOC_EB{MD{Ff@sQvAqN`BaJbGsShA}Et@{Eb@mDXuCv@ePp@_W?MBo@H_DJ{BJkBDsAJaAL_CPgCPyAVeCZgCTwA\\cC`@qCT_BRuA^aC`@sDPwCLmBFkAF_BFoBDgC?wB?iBEgCEeBE}BIkFE_E?gB@sCD_ELkELuDLgBHaA\\eE`@{Db@kD^uBv@sEd@iC^oBVqAt@aEl@qDz@cG^wBTyBVmB^_EVsCRcC\\oEPmDTaEJgDLeDL{FDqCHwGLqJJoEFeDL{DP_EZsFNaENiDVqHN}ILuLLoFNeGXuILeDJgCJyBFwAFiBFsCBmCHkO@_DBsGBqMHaMBqF@iD?y@@iBBaCFeDDiCJkDDqADwAh@qKnBm^t@_Ml@}Mn@{LfAgOpA}MpBiPxQ{nA|@}FfGya@~DkX~AiKnGgi@jAqLh@wE|@{HLoAj@eFV{Bb@mDd@aEVyBt@wGz@cGr@}DhBoIl@mCnAmErBqFzH}Qn@kBj@mBVsANaAv@fABDF@FEFMf@aBBGDEBAbA@`@@\\?A`E"
+    },
+    {
+      "from": "go-afoss",
+      "to": "skutusta-agigar",
+      "key": "65.6828,-17.5506;65.5714,-17.0337",
+      "km": 38.1,
+      "minutes": 34,
+      "polyline": "ie|oKx}ajB@aE]?a@AcAAC@EDCFg@`BGLGDGACEw@gAJ}@LqADy@D{@BeA@yD?o@@cC@sH@wFByG@sGDkPPwg@IoPSqIq@}I]oDe@yEqA{IqAeHoAmEqBkGoAoCiAyBiBwCiC}C_IcI}EyEaFcFsEgFuEoGu@gAyB}DyAkCmEuJ_DcIgEuM}BkIkL_i@}DsOqEmNeFkM}CiGmDaGgD{EmDqEyD{D}DeDaEeCiEmBqDkAgVsFcHoDkDqDaD_EoEsImCkH}BqIqBmJmBeMkBiQcAgLmA}MkAyKwCiPcD}JyC}FcDwDgEkCgFcCaDoCcBgCeAoCy@qDu@yE]gEUmEAW?}FNwGX{DXiCv@oEr@cCt@qBjG_NtAcFZoBj@qEVkDPkDFwEEuCKaE[uEe@uEq@kDyA}Ek@}AaCmDuCsBoEcCgC{Aw@u@q@aAe@}@GOo@wAg@oAa@}@o@}@s@kA[k@Sk@GOQg@YkAI_@~@aCbA}BJUt@sAj@{@V[RYZc@f@y@j@iAZq@l@sAl@qAz@aCj@mB^}At@oClAsErJy`@rH{YJa@vKkd@rIc]vB{GjAwCjAcChAeBnCsDdEyDtCeCn@k@rGmFbB}AtEeEnBeB|BkBpC{BnA_AfImGdIcFde@}WfBcAxFsC`KaGdJiFzCaC~BgCpAcB~CqE~NkWbFcF`Aq@lAs@fAi@hBc@jEo@~E@`JAjDg@`G_Btc@cNvBo@pB{@~Ay@lA_AjBiBZ[X]NSd@k@Za@r@iAZg@Xe@Vi@r@sAn@{An@}Al@aB~@gCtAaEnA{DrAuDvA_EzQki@zNac@jIoVfDyJrA_EpA_EjB{GhBkHfBcItB}IbBkHhHw[p@cDj@{Cb@oCPsANsAZgC`@_E`AoM`@mF^sEVgDf@wENcBTmBRyAT}An@wDZiBX{A|@_Et@yCtAwEv@{BhAeDdAyB~AkDtAcCtDaHvEoIvAoClBeDjC{E`CyElHwMlA}Bz@kB\\s@Ti@^q@\\_A`AkCx@cC|@wCv@mCp@oB|@mCt@kBlAiC`A{BtA}BxAoBtAmBbAy@rAkAfAu@jB}@rAq@dBg@rBg@|Bm@xBs@|CoAz@e@~AyAhBsBvDsEpIqKfKoMpEmF`DsCpDaCtJeFlMyG~J_FlDiBxCkBdA}@bAeAp@qAp@yAl@gBj@mBl@cCb@cDZaDRsCJsCF_F?iDGwFMaGEyDC{C?yD?yCDuCFcDLoDRsDf@iHn@}GxAmJpAuGtAqFlAiDtByEzByDnCaDzC_ChDwArDmApD}AzCqB~BsBtBsClBmCjBeDfBqDhDkHxC}G~A}ClCcEbCoD`DuC~CoChCgDlCkEbDuGxB}D`AqA`AeA|CcCfJyFzAaAZYZ[^_@v@_At@gAn@oAVi@Vm@Vk@To@To@Ts@ZeA\\oAZoAj@qCV}AHm@PsAPoANwAZkDVsEHmCBgABgARaLJ}ERqF\\{FRmCl@gGp@{FbBcLlAwIr@gJJ_CD_ADaAT}FD}@D_AF}@F}@F_AF}@H}@J}@J{@J{@L{@L{@\\oBNu@`@mBPu@Pw@~FmWpDmONu@fAcF`AyCfAcCp@mAXe@jAqBVi@Vk@FOL_@To@Rs@Rs@TaANq@N{@N}@L_AX_CHaAHcAFeAFeADeABeABgA@eA?gA?qC?gA?wE@oCBgABgABeADgANmCLcBLiBJcAh@gFZgDRgCNcCRwEJwEFmGDmDLsFT{ELwBFm@Fy@Hw@RoBTgBVkBjAkI\\aCJy@J{@J{@H}@Hw@JeAF_AHaAFaAFaAHqADu@FcARoDvAkXlCke@`AeOn@aHTeCfBgLnA}F~@iEZqAhGmU`Mqc@vBcGvCeGvIsM~@wAjAuBfA{BdA_DrA{E~AkKv@{LRoKAgFM{Eg@aKEaAcAeSc@{MGkCE{DIyI?kG?eGCaH?i@?cKHgERiFTiC`@uDf@gC|@aDhCuGh@gBPw@VcBBYJ_AHgABs@FcAH{BHsBTmC\\_CdDmTNgAz@mJi@M{@W?MAKCKCEEANyB@Q??"
+    },
+    {
+      "from": "skutusta-agigar",
+      "to": "dimmuborgir",
+      "key": "65.5714,-17.0337;65.5881,-16.9079",
+      "km": 11.4,
+      "minutes": 14,
+      "polyline": "_jeoK`y~fBFGFAXAP?RGn@ULEP_CZgEP}BRqCVyDf@{IbAsQBc@B_@FcAPkCFeAHeAJcAJcAJcAPqAHm@D]V_BN}@Ny@P{@Py@Ry@T_Al@sB^_Bd@kBR}@`@sB^_C\\aCf@eERcCJaAPiCVoE`D{n@t@_MhAgMnAkL|@_HJy@NcAH_@dCaOxCoMrD}MzEwNtZi{@x@_CpAcFV{ANaA^iCVwCRoDD}@DsABmA@sEGuECiAEgAGcAIeAIcAIcAIy@AICKIs@_@}BO{@Qy@Qw@Su@Uu@Uq@Uq@Wm@m@sAeBsCeFaJgCgG{AuFa@_ByKqe@eCsKoKwd@aCiJqBeFuBmC}AiAwAe@aBMaAFaA^gAn@[T[Z[Z[^WZkCjDw@x@[V]N]H[D]A]E]G[I{A[]C]@KBQDQHKDMJMJGFSRYb@Yf@Ul@Sp@St@Qv@O|@]xBO~@Q|@Qz@Sv@Wp@Wl@_@p@UV]X[T]J]D]@a@GWI{@]mDqB}CcAGAeAYi@Nm@`@k@n@}@~AcAvBkBlCg@Xo@HmDJeE?yBCuAKyA_@wA}@y@u@u@aAcC{DaCeEkBcCoB_B_G_EmByByCuEaCoFeCiG{CgGgE{FsA}A_GsEeDeDcEkGsBmCgCkC_KsHaDuCeAkAU]]e@a@q@_@m@q@kAcA{A_@k@QYSW[_@[_@o@q@Fy@JkBh@yHHy@Js@Ni@Pg@LUNSRQPGRCPGTGRSZYVa@Vi@R[TMPCPA^ATCZIVI^WT]Ri@F_@Dc@D_AF{@BYH_@RYRUn@c@j@i@V]Re@Ls@Jy@D_AAoA@o@@m@DyA?uA?iABm@Fi@H[Re@NMPEVDb@F\\A\\OVSZ[XSZId@M~@QtB]t@IRIVURa@FQFUJk@LmADo@Bu@H{CBQDIBCBCDAJCBGBI@M@E?O?IAWF?FABCDE"
+    },
+    {
+      "from": "dimmuborgir",
+      "to": "hverfjall",
+      "key": "65.5881,-16.9079;65.6051,-16.874",
+      "km": 4.3,
+      "minutes": 9,
+      "polyline": "kyioKzfffBEDCBG@G?@V?H?NADALCHCFKBE@CBCBEHCPIzCCt@En@MlAKj@GTGPS`@WTSHu@HuB\\_APe@L[HYR[ZWR]N]@c@GWEQDOLSd@IZGh@Cl@?hA?tAExAAl@An@@nAE~@Kx@Mr@Sd@W\\k@h@o@b@STSXI^CXGz@E~@Eb@G^Sh@U\\_@VWH[HUB_@@Q@QBULSZWh@W`@[XSRUFQFSBQFSPORMTQf@Oh@Kr@Ix@i@xHKjBGx@m@k@eC_CkDaDe\\}Ym\\a[N_ABSP}@Vy@Vo@Vo@Ry@Ns@Hw@Fq@NwCJuDDw@Ji@Ja@NYHWDS@U?_@KcIIqHCoDIqHAeABo@Da@Jw@ToAPsAPqALy@Lm@Lm@t@yBd@{AH_@De@b@mE`@uDLuABQF[BMHOP]HWHWXyANo@H]\\eDDi@B}@Bg@BYJ_@XkALq@Jm@d@sBRo@Ha@Da@?aABc@F]VaADg@?c@Ci@CYGOMQWOSSOYQa@]iAYoAS_AKq@QkAeAuDi@oAu@eA_A}A"
+    },
+    {
+      "from": "hverfjall",
+      "to": "myvatn-nature-baths",
+      "key": "65.6051,-16.874;65.6305,-16.8476",
+      "km": 8.9,
+      "minutes": 13,
+      "polyline": "odmoKzkafB~@|At@dAh@nAdAtDPjAJp@R~@XnA\\hAP`@NXRRVNLPFNBXBh@?b@Ef@W`AG\\Cb@?`AE`@I`@Sn@e@rBKl@Mp@YjAK^CXCf@C|@Eh@]dDI\\On@YxAIVIVQ\\INCLGZCPMtAa@tDc@lEEd@I^e@zAu@xBMl@Ml@Mx@QpAQrAUnAKv@E`@Cn@@dAHpHBnDHpHJbI?^ATERIVOXK`@Kh@Ev@KtDOvCGp@Iv@Or@Sx@Wn@Wn@Wx@Q|@CRO~@uHwGoBcAiB[kAImAByMzB_BPk@Pg@^sCtDu@`A[^[\\[Xk@f@yAhASLUN[Py@b@u@X_@H_@J]D]B]?]A]C}@MuAKs@EK@Y?_@@aCNsADaAAw@Ai@GcAMiAUs@UiAc@{E}BcEsBi@Me@Ce@@UH[L]Xk@f@qGbHmAj@gAFiB[qMsB_Bw@}@iAi@iAq@aCo@mD]sAK[MWUa@_CyEeAyB_AwBi@yAKY}A_FWo@O]QY][]]i@]a@MWC[BwAZ@gAHgD`C{nAFeD`@uVJ_MAqHGiHsAuoAOgNOuNEsIAgCAiC?gF?aAPcjAPELI\\UPOPSNWP[`@aAd@oA`@_AP_@R]R[RYbAcAd@i@\\i@Ta@Tg@Tm@\\cAXy@Xw@N[Te@Tc@V]n@s@XSb@SNGXGFAf@CX@|@BT@Z?nAEzAOx@CpAFjAPhAPt@Nd@Np@Zb@LHiCVJ??"
+    },
+    {
+      "from": "myvatn-nature-baths",
+      "to": "camping-reykjahli",
+      "key": "65.6305,-16.8476;65.6413,-16.916",
+      "km": 3.9,
+      "minutes": 5,
+      "polyline": "cqqoKtiyeB??WKIhCc@Mq@[e@Ou@OiAQkAQqAGy@B{ANoAD[?UA}@CYAg@BG@YFOFc@RYRo@r@W\\Ub@Ud@OZYv@Yx@]bAUl@Uf@U`@]h@e@h@cAbASXSZS\\Q^a@~@e@nAa@`AQZOVQRQN]TMHQDQbjA?`A?fF@hC@fCDrINtNNfNrAtoAFhH@pHK~La@tVGdDaCznAIfDAfA{CdBBf@?n@?n@Ah@Ad@?JCLK\\Y|@"
+    },
+    {
+      "from": "camping-reykjahli",
+      "to": "hverir",
+      "key": "65.6413,-16.916;65.6422,-16.8115",
+      "km": 5.5,
+      "minutes": 5,
+      "polyline": "wnsoKnhffBX}@J]BM?K@e@@i@?o@?o@Cg@zCeB@gAHgD`C{nAFeD`@uVJ_MAqHGiHsAuoAOgNOuNEsIAgCAiC?gF?aAPcjAFsPDyDJiFVgJDoD@kCEcDGgCM_COeCYuCYkCc@_D_@cBQm@IWIYWo@[s@aAwA{@cAgC{CQ[S_@O_@Ma@Oe@Ok@Ki@Kk@QuAMqAOkBO{AKs@Ko@Mi@Qm@Qa@Q_@OUQUQQYUcN{Hw@o@u@iA{@oCc@sB]oCM{AI}B?}B@qAJ_CNkBd@mCx@wEf@{D\\_E`@gLHeCFyBJaBNkBTyA\\gAb@aAh@m@\\YhAm@f@Yf@g@Zg@Xq@`@_BVmAP{AFw@DmA"
+    },
+    {
+      "from": "hverir",
+      "to": "leirhnjukur",
+      "key": "65.6422,-16.8115;65.7213,-16.7935",
+      "km": 8.7,
+      "minutes": 10,
+      "polyline": "}_toKxjreB@U@o@?s@Ao@Cs@EeAIyAaAsOu@sL{Bm^e@cImB}AcX}UcBsAgAu@gAg@}Ao@uAYuAQoE?sDr@iBp@wA|@eExCoNzK{D|CuDjCs@Ti@@s@@a@KQIi@Ug@c@o@cAi@oAwDgK}AsDaBeE}@sBu@sA_AkAgB{A}B}A}@m@g@[aQyLcEyC{CwBwDkCgAw@yJaH{DkDgEqEyFoHeGiImCsD}BeDaCoDMQaIuKi@w@aDsDwCmB_Bk@_AYwAUwAQqA@eCL_Bh@q@Tm@TmAp@iB`AsEjCcCz@aBXm@Lk@BuONmLPmDk@sCmAqAe@aDgBsLcGi@YaBi@{@Sw@@u@NcAHmDjBmBt@eAR{@HcA@}@E{Cq@oAUwBg@{Bi@e@Ak@DWJOJSZS^y@pCYv@e@n@e@h@i@b@iAh@SHUHSDU@SASEUISOUQg@i@SWQ]Kd@ITSf@IPKNGHQRi@h@]dAQbA"
+    },
+    {
+      "from": "leirhnjukur",
+      "to": "bu-ardalur",
+      "key": "65.7213,-16.7935;65.1098,-21.7668",
+      "km": 363.2,
+      "minutes": 322,
+      "polyline": "crapKfhkeBPcA\\eAh@i@PSFIJOHQRg@HUJe@P\\RVf@h@TPRNTHRDR@TARETIRIhAi@h@c@d@i@d@o@Xw@x@qCR_@R[NKVKj@Ed@@zBh@vBf@nATzCp@|@DbAAz@IdASlBu@lDkBbAIt@Ov@Az@R`Bh@h@XrLbG`DfBpAd@rClAlDj@lLQtOOj@Cl@M`BYbC{@rEkChBaAlAq@l@Up@U~Ai@dCMpAAvAPvAT~@X~Aj@vClB`DrDh@v@`ItKLP`CnD|BdDlCrDdGhIxFnHfEpEzDjDxJ`HfAv@vDjCzCvBbExC`QxLf@Z|@l@|B|AfBzA~@jAt@rA|@rB`BdE|ArDvDfKh@nAn@bAf@b@h@TPH`@Jr@Ah@Ar@UtDkCzD}CnN{KdEyCvA}@hBq@rDs@nE?tAPtAX|An@fAf@fAt@bBrAbX|UlB|Ad@bIzBl^t@rL`ArOHxADdABr@@n@?r@An@GbBGv@QzAWlAa@~AYp@[f@g@f@g@XiAl@]Xi@l@c@`A]fAUxAOjBK`BGxBIdCa@fL]~Dg@zDy@vEe@lCOjBK~BApA?|BH|BLzA\\nCb@rBz@nCt@hAv@n@bNzHXTPPPTNTP^P`@Pl@Lh@Jn@Jr@NzANjBLpAPtAJj@Jh@Nj@Nd@L`@N^R^PZfCzCz@bA`AvAZr@Vn@HXHVPl@^bBb@~CXjCXtCNdCL~BFfCDbDAjCEnDWfJKhFExDGrPQbjA?`A?fF@hC@fCDrINtNNfNrAtoAFhH@pHK~La@tVGdDaCznAIfDAfA{CdBe@VeB`Aa@VgAl@iBjAe@V_@REBcCrAs@l@i@v@Wj@e@|AUhAQhAC^sBfUGf@CVMz@Ox@Qt@Sr@Sn@Ul@}@rBaIdSsS~g@yLrZ{DpL_BdIiAlIwCp`@eApOk@fIYjEeCf^y@xLYfEYdD_@rDo@nFaB~K{AzJkCbRaBpOq@hGq@fGn@^PFjA`@`Bj@nDfAtAt@zAhA|@`Ar@v@hA`BjAtBhApC~@dDz@hDd@bC`@zBbAzHbArK`@~E`@jD^hC`@bCl@rCxApE~AlDj@bAz@hA|BzBxBvBzBfChA|AtAfCzCxF`DbGlAbBn@v@zAzA|@l@|@f@pAp@h@Rz@PxATnAJdV^rITfBT`A`@v@d@pAfAnA|A~@~AtAxCpAdEnKtb@Pf@Th@Vb@Xd@X\\nAlArAhAxDhD`B~BhBjEh@vB~BlLvAjEzF`NzBbJnBpH`AdCV~@v@dBjCjCrBfAnGd@vJn@hBJpGi@hAT`A`Av@~At@fCd@zDRpCTrGn@rO^|ITlGDxCDdE@xEGnIK~FIzHBdGL~Gh@bJ`@jFf@|E~@|HrAfKx@rGl@pFn@pHZ|Df@xL^hNTdFXlE|@|Id@vEPpBTnDLrD\\|KLtEN~Cp@|JVrDHdAFbAFdAD`AF~@BfABjABbABnA@x@?^@n@DjCBzABr@BfAFfAFdAJbAL~@N|@Px@Rt@Tn@Vl@Xf@X`@Z^ZXZVv@f@z@`@pBbA\\N\\TZRv@j@ZVZXZXZ\\Z\\X^X^Z`@Xb@Xb@Vb@p@lAr@vAdAvB~AjDdJdShAfCzAtDh@`Bh@fBRt@Pt@Px@b@vB\\zBX~BL`AJ~@V`CXdCL~@J`ABJJp@L|@Nz@b@vBPx@Px@Rv@lAzEPv@Px@Nx@Pz@Lz@N~@J~@J~@Df@BXHbAHbAFdAFdADdAFdALlCFdAFdAFdAHdAHbAHbAJ`AL`AL~@L|@N|@N|@Px@Px@Pv@Rv@Tr@Rp@j@`Bn@zAVh@Vd@PX`@n@Zb@X\\v@x@ZX\\TXT\\P\\Nx@Tz@PxAH|D^l@Pz@Xv@d@x@h@XXZXZ\\nA|Ar@jAXf@d@~@`@~@Vj@Tn@Tp@Tp@Tp@Rt@Rt@d@lBt@fDRx@Pv@d@jBf@hBTr@Vv@Pj@Tn@Vj@Vl@Vj@p@vApAvBfAxAt@z@tAlAv@j@`Af@pE`BvAb@x@VGlGKvESvEObCSfC[fDi@fFKbAMhBMbBOlCEfACdACfACfAAnC?vE?fA?pC?fAAdACfACdAEdAGdAGdAIbAI`AY~BM~@O|@Oz@Op@U`ASr@Sr@Un@M^GNWj@Wh@kApBYd@q@lAgAbCaAxCgAbFOt@qDlO_GlWQv@Qt@a@lBOt@]nBMz@Mz@Kz@Kz@K|@I|@G|@G~@G|@G|@E~@E|@U|FE`AE~@K~Bs@fJmAvIcBbLq@zFm@fGSlC]zFSpFK|ES`LCfACfAIlCWrE[jDOvAQnAQrAIl@W|Ak@pC[nA]nA[dAUr@Un@Un@Wj@Wl@Wh@o@nAu@fAw@~@_@^[Z[X{A`AgJxF}CbCaAdAaApAyB|DcDtGmCjEiCfD_DnCaDtCcCnDmCbE_B|CyC|GiDjHgBpDkBdDmBlCuBrC_CrB{CpBqD|AsDlAiDvA{C~BoC`D{BxDuBxEmAhDuApFqAtGyAlJo@|Gg@hHSrDMnDGbDEtC?xC?xDBzCDxDL`GFvF?hDG~EKrCSrC[`Dc@bDm@bCk@lBm@fBq@xAq@pAcAdAeA|@yCjBmDhB_K~EmMxGuJdFqD`CaDrCqElFgKnMqIpKwDrEiBrB_BxA{@d@}CnAyBr@}Bl@sBf@eBf@sAp@kB|@gAt@sAjAcAx@uAlByAnBuA|BaAzBmAhCu@jB}@lCq@nBw@lC}@vCy@bCaAjC]~@_@p@Uh@]r@{@jBmA|BmHvMaCxEkCzEmBdDwAnCwEnIuD`HuAbC_BjDeAxBiAdDw@zBuAvEu@xC}@~DYzA[hBo@vDU|ASxAUlBObBg@vEWfD_@rEa@lFaAnMa@~D[fCOrAQrAc@nCk@zCq@bDiHv[cBjHuB|IgBbIiBjHkBzGqA~DsA~DgDxJkInV{N`c@{Qji@wA~DsAtDoAzDuA`E_AfCm@`Bo@|Ao@zAs@rAWh@Yd@[f@s@hA[`@e@j@ORY\\[ZkBhBmA~@_Bx@qBz@wBn@uc@bNaG~AkDf@aJ@_FAkEn@iBb@gAh@mAr@aAp@cFbF_OjW_DpEqAbB_CfC{C`CeJhFaK`GyFrCgBbAee@|WeIbFgIlGoA~@qCzB}BjBoBdBuEdEcB|AsGlFo@j@uCdCeExDoCrDiAdBkAbCkAvCwBzGsIb]wKjd@K`@sHzYsJx`@mArEu@nC_@|Ak@lB{@`Cm@pAm@rA[p@k@hAg@x@[b@SXWZk@z@u@rAKTcA|B_A`CH^XjAPf@FNRj@Zj@r@jAn@|@`@|@f@nAn@vAFNd@|@p@`Av@t@fCzAnEbCtCrB`ClDj@|AxA|Ep@jDd@tEZtEJ`EDtCGvEQjDWjDk@pE[nBuAbFkG~Mu@pBs@bCw@nEYhCYzDOvG?|F@VTlE\\fEt@xEx@pDdAnCbBfC`DnCfFbCfEjCbDvDxC|FbD|JvChPjAxKlA|MbAfLjBhQlBdMpBlJ|BpIlCjHnErI`D~DjDpDbHnDfVrFpDjAhElB`EdC|DdDxDzDlDpEfDzElD`G|ChGdFjMpElN|DrOjL~h@|BjIfEtM~CbIlEtJxAjCxB|Dt@fAtEnGrEfF`FbF|ExE~HbIhC|ChBvChAxBnAnCpBjGnAlEpAdHpAzId@xE\\nDp@|IRpIHnPQvg@EjPArGCxGAvFArHAbC?n@AxDCdAEz@Ex@MpAK|@O`AWrAk@lBo@jB{H|QsBpFoAlEm@lCiBnIs@|D{@bGu@vGWxBe@`Ec@lDWzBk@dFMnA}@zHi@vEkApLoGfi@_BhK_EjXgGxa@}@|FyQznAqBhPqA|MgAfOo@zLm@|Mu@~LoBl^i@pKEvAEpAKjDEhCGdDC`CAhB?x@AhDCpFI`MCpMCrGA~CIjOClCGrCGhBGvAKxBKfCMdDYtIOdGMnFMtLO|IWpHOhDO`E[rFQ~DMzDGdDKnEMpJIvGEpCMzFMdDKfDU`EQlD]nESbCWrC_@~DWlBUxB_@vB{@bGm@pDu@`EWpA_@nBe@hCw@rE_@tBc@jDa@zD]dEI`AMfBMtDMjEE~DArC?fBD~DHjFD|BDdBDfC?hB?vBEfCGnBG~AGjAMlBQvCa@rD_@`CStAU~Aa@pC]bCUvA[fCWdCQxAQfCM~BK`AErAKjBKzBI~CCn@?Lq@~Vw@dPYtCc@lDu@zEiA|EcGrSaB`JwApNg@rQEzFCzMB~DLnO`AxW`AtPb@jHb@vMFnHQpJg@jKkAjLsJ`m@Kh@[nBkIth@mBtNwA`N_AtPWvOGlDWx`@g@fRaBbUoD`UcAxDqIxZuDnQqCvPmB`N}YpcCuBrMqCfLiC`H}DtIkErLkDvLkCvMiAzGqAvJyAzO{AhU}BzZuBxR_CdQyCbRY~AoChNaH~YuIb]iDbNgDzMyBdJ_AnFg@`EUfCShCGjAMnCIrCCrC?rC?x@@vABhAHjEbCpv@JzC@f@LxD`@hMD|AHvBHhBJxBJzAH`AZlC\\`CRzALx@Ln@Rz@`@|Ad@~A|@dCbBlD|A~BlCtBfDfBtAz@~BdAzCjBtCbAtAv@lBbAjCnAzBvAxAh@tAb@x@HZB`BK~A_@xBu@zAcApByAbCcBxCaCfAq@rAi@fCg@~@IpBGfBVlA^fAn@xAhAbBfBtB`DtCrGtDzMpBdKrAfJbB~TbE|b@zGrp@hLh~@nJps@pLfv@bHr^fIzd@tOfv@|Gjb@|Gha@jIvf@jEv\\|Fpd@|Pj}AfExg@l@bIn@`Hj@tEx@|ElAnFbApDbArDxApEfBrDjBpCrBjBnCdB~@b@nAf@dBBfAOpA[nBuAXULMd@g@PKNONS@ADAD?D@DDDLDJHHH@JEDGZi@Z_@^[`@Uv@YdEiAhBi@vAc@pAa@pDmAfH{BlCs@tAWhB]xAYfBc@lAe@`Bu@tAw@pAw@nCcBjBeAdDeBfDwAv@]zAm@fBo@~By@jBq@pBw@z@[x@Un@Mr@If@?l@Bh@Hx@Tj@XTL`BhAJLd@r@f@v@n@bAl@xAp@fB`@tAb@`B|@|D|@zFd@xDb@fERjCRlDX~HDxCBvB?dB?rFM`IUtFk@pI}AhRiArOi@zKKjBEnAYxHGdBMjLAnCI|AA~B@hF@lFFnG@fA@z@e@^m@d@gBvAg@d@_@f@qAhAiAdAwB~BY\\yF~GcBjBWTwAlAIHQNe@Vi@Vm@Re@Hg@Hg@DmACw@Ge@Iy@SOGKEKEOGq@]c@Qo@Sa@Co@Oi@Kq@Io@I[CIAQ@WEKAMAK?[?k@HGBWBKBWDeBf@cBr@}A|@iAbA[\\s@v@GFOPONSVmDhEQTqA~A]f@OVQZWj@a@bAQb@c@vAi@lBSbAe@dCe@lCYdB_@zBW|AAH}@tFe@jCCNKl@GVEVADQdAYlBObAS|@Kd@i@nBCLI^Mb@Kb@]jAq@vBEPCLi@tBEPsEzOK^St@g@nBy@zCEPILGJSNE?KDIHGPETAX?XA\\ALANIj@Mx@EZOx@a@zBaAtDuArEsAzEm@jCYzAI^c@pCg@bDkAbImBrMObAWjAUdASnAs@jFCPId@EZIj@AH_@tC]dDeHff@iChQ}E|\\U~@Q`AKZOZE?GBEFEJENCPAP?R@PBPAZA`@I`AQvAy@hGgDfRq@pDu@fDqAnFO^IRGPGPI\\Kb@CLCHCDCHEFMGIBGHGLERAVAVE\\GVEV]rAWp@_@z@o@zAq@tA{BxEmB`DqBvCsAdBuC~DsBjCyApBsApBcBhCcGnJsBbDeDjFgFlIuD~FwDdGkEbH{BnD}DjGkHnLiHhLe@p@gAfBwBdDgBbCuAlB_AjAy@bAi@n@wCbDkArAkAfAyBlBkA`A}D`DuFxDyAdAeCdBsBvAeBrAg@\\gJrGmb@fZg@^kBxAkAbAEHoA|Aq@hAoBtDaCpF}AnDyAfD{FtJaApBw@nBuAzDu@jCW`AgArEmCvLeC`LoD~Ou@jEc@fDa@zDS`CS|EGnCGvEDhJHxE@jCAzEKpEMjCa@nGa@vEe@jG_@~IIzECzFDhFPrG`@fIfAbRnAvSfAxR\\`GLtDHnC@fGB~KBhPBpHVlL^vIj@bMp@hJx@~Ix@xGv@xEr@lElAdGpBdJhBnHrAbHt@pEv@nEdAdHdAnG`@xC`@zBBLdAlFj@lChAzEjAhEh@nBn@pBnD`LxAzEnBjHdD`MlBtGlBlGtAbEx@~BhA|CrAjD~GtPlBvEpCvGTh@pA~ChC~GnAtDpGnRlCxHnBxFlBjFrFfNxCxHjDnIjDjJfClHhChI|BrH`CfIzBdIjChKlC`LbCfLxBrKx@|D`FzVpA|GzBhLvBtK~BdK~CrMdA|Dj@vB|FbStCnI~CvI|CtHb@hArBbF~BdFxNxY|@bBNX~EbJ~L~VlEhJrEjKnEtKrErL~K`YhJfV|A~DvLb[jMx[hFfMfChFjAxBnBhDtAtBv@fAhAbBvDjEnEfEtBbBvA|@xDvBvB`AzAf@nBh@vDr@vBVtBHpCFnGMfBLnAHnAXz@PhBr@bBfAlAn@rAlAnAnAnAdBxEtHfMlTlEbInFfJ`HfMR`@nE`I|CxFlDpIpCfJnBrHd@nBnBzIl@jCvAtFdAbDz@fCdAdC|@rBrAdChAjBv@hAlCbD`B|AbFxEtDpE~A|BlAjB`AlBjDxGhEpIlB`DrAhB|AlBfApAnC`DhCpC`BvBpAjBl@`AhAtB|A~ClBtEbAvCfCxG|CjHxAbDrE|HnCjE`EfHpB|D~B~EdEjKnG~QzD`K`BxDbChFvHtLtDbF`ObOrChCxD~DlDdEnDnEzBzCvBhDhAfBzDbHhEzHxGhN`FjKtCzFjElHxFpHvEdFpBbBbChBdE`C~CnAfDdAjD|@rCj@|Ct@jC~@xAp@dAd@jC~AbDrCzF~EvBnBhIlHdOnMhDnCzF~C~EhDLLnD`D`CnClDpFtClFdCxFtBpFhBlGfDhL|CxKtCbIpCzGnCtFzBtDnD|EpHlJhCtDtBhDnHxN~AvC`AxA|@tArA~Al@j@jBvAvBnAxBr@nCd@fCF`G_@pB@x@HtAPpA\\lBx@l@XHDzClB~A~@JFPFTJ^LrA`@bBZfBLdC@fDElB@xAHvB^dG~AlCj@x@FhWh@jG`AdD|@tA^hGtB~FxClIhFdHdGfHdH`HnInEpGdE~GrFhKpRvb@jDlHtDhGrDzFfEjF|DzDjExDzE`D`FzBdLpElEpChE|DnE~FlE`I|C`IbDxJhCzKdFhVdEdQdDtKd@rAPb@`CnGpAzC|AdD|@|AzClFv@hArAjBrA`B|@bA`A`A`CzBdBrAlBjApAz@|@f@vFnCfF`Cl@VxBdB~FdGdF|GnDjHxNb^nCxF~CvFpApBxBnCfDnDnCnCfEvDtCbDxBrCzBlDjCvE|ChH`BlEjBnFbBfGdAjEtBlJlBvIlAfF~@~Dp@fCt@dCr@xBdAvCvA|Dz@jBz@~A~@vA~@nAX\\hHxJvBdDzGzJpC|D`CjDpBvCrB|CnG~InEjHj@dA`AvBvApDz@xBbFrPdBtFn@~Ax@lBdAvBhB|Cr@nAhAhBv@bB~@lCn@lB|AzGfAvDz@dC`AzBhBrCtArBpBbDjAnCdAjD|@jEb@tCb@tD\\`GZdHZzH^nG\\zDt@pFt@hEbA|DtAxF~@tDbAtEv@fFp@rFl@tFXnDRdFR~FJvFD|D@~EAzBGrEIvCIvB_@|JUtGKnFEjD?zCBdBTfJd@jPHdEDxFDpIGnK_AdzAi@ho@I~NC`ECjFApMFdE?rCBfCBhCPbLNvIRlIZhI|@nSbCpg@XvFV`HPpFPfFLrHZrUNtHVnH^vGb@rFdB`Sd@rF^lFVzERxEP`FP|GLzFRlGJrDPtEz@bPPbEN|DJfENdLLlJLfFLrDV|Ed@lFZhD~A|NN|BTxCNlDJlEF~BH|APbCj@tHPvDHjC?`DCxBIjDKtB[~E]bFSjDKxDElDGfJC~GGhDG`Fm@zUQpIYpMQlHWpKi@vNw@hSc@tKc@vNYhLIxEEtGIvHCvI@pEBlGD|EJdGHbEXbJ^dIf@`If@`JR~D\\xIT~HNzFV`H^nKt@pOX|FnBla@VbGThHD|EBbFEvEGdESrFSbFs@hNAZUzHE~DAbDBlEJbFX~IRzEp@rK`ArL\\rD`@dE\\~BbDpUbB`M^xCt@hH^fEr@|Jt@`NbAxUX`EVbD^dEXhCpB|Pb@vE\\|ERvDZhHl@lOTlEj@|GlDtUt@lGd@|GVxHX~LNlGl@dV^|Ib@hGb@bHpAfKdB`LtBhK`CdJ`CvGfD|HhCfG`DfJpBzHfBbJr@zGn@hHdAhPfAvLpArIrHd\\t@zDx@pFx@xHd@nGd@rHZbHd@zIv@zKbAtKrAdK|@~FlAdH~BjKnBlH`C~Hf@bBpB|GvA|GhArF|@jFtBtM`BtJxAzGbBpGdDpKdCnHfCnIzBdJzAdHhBhKbBpLbBnMdBlK`B`JnCdO\\xB\\|Bf@zDb@`Ej@hGPfCVnELjCJjCHlCL|GD~KUzTQ~P?~QFhOL`RJ|PCzQM|RYnMa@|Ns@fO}@rPoAlOcBtRiChZ{@rKkA~OiB~ZkA`Wu@tRSnHmCj`AWdHa@tI_@hHc@zF}@|LQrBmAnKeAlMcEfi@_CdXuAhMmAbK_BfLwAhK_ClOoEzVeCjMkC~LeCrKiDtMeDvLoDnLkGxQCHkGxPCHwC~H}F`Q_IvVyEdPiDrMuBvHkEbQm@`CcDrMkApEuB`ImDvLcFfPqDlKmCrH{DtJcEtJ}EpKcD|GuCxFmDnH{EnKsDnIyClHsDzJqBhF}EpNcEpMaDzJ{EzNeCvGoBfF}B~EeDhHkEpIuCtEoE`HiDxE{DvEgFtF_GhFqFdEcGlDyDfBsEbBkEvAyE`AuEj@wDNyDPwGIwD?{DXyDt@}Bx@aC~@_DjByCfC}BrBcA`AyFtFaA`AEDe@`@{BrBwBlA_DfAcEj@yD^gFh@gEt@a@La@Lc@Rq@\\{@h@mA|@sD~CiB`BgA`AoBhBcEpDkHjGwFnFkGjGeEfEoGpGkEpEiLpLgCxCwBxCm@|@cD~EkBjCgCtCcFlFkM`NcMbNeEnEWZa@d@mAfBgBdDgAnC{AbEsAxDaBlEqAzCwBhE{BdDiRjTaAfAuAzA{HlI}EpFgG`HyIlJmDxD}BjCkBjCwApCkArC{@~Bm@bBi@hBa@zAi@bCe@bCY`B[nBWhBQ|ASjBQtBS`COfCKdCOtEItEAnC?hA@dA@nCHtENpEb@xI^tGLvB`BzXXdFrCff@FdABh@jDbn@T|Dz@fOxAlWR|EPlELvDH|DDtDDxF?jGChECfDGzDKlDOjEYvFSlDYdE]~D_@bEs@jG}A|LeE~[{Jjw@}Eb`@_ArJ[jFSzFEdBEjD?zB@`EBnBFnCFhCBf@l@rPH`CRrFFzBF`DH|CH|BHvAF|@LfAHx@Hn@LQ^c@PUh@g@l@c@`@Y`A{@n@i@l@g@pBeBh@i@t@u@dAqAhAwAlAuAj@k@d@Yh@Wn@Sh@GtA@PLbAl@p@n@t@x@x@xAj@`B~@lDt@fE\\hCXvCn@~K\\xIvDfpA\\jM@tAB~ABbB?pAAbBCpBC`AGtAGtAGdAMvAW`CKrAQ~@SjAc@|AYfAW|@Yz@sA`DmDvG}BfEwAnCu@jBg@~Aa@xAUbASdAQfAQjAMhAMlAMlAIpAIpAGpACrAErAAhD@hDBlADvAFrAHrAFlALrAJjANpAZhBXpAZvAx@rCz@xBjAfChDrGxFvKlr@bsAjBvC`B|B~A~AbBxArDlChExCxDtCv@~@~@fAp@hAt@tAp@dBbAlDbAbEp@|Dp@rEpHfm@jBnNv@fFv@tElJpa@l@bDb@nCb@pC^tC\\vCXvCl@zHR`DP~C`@lJr@vO\\dGPhCx@zJ`AjJfAnJrAvK|AzK`BlKfBjKvFpZtBfMvAbMtDt\\f@zEjEp`@~@jJRvCPdEH|BBvB@zB?fA?fAARClCSdJc@hKy@~M_AtKw@fHa@~Cg@pDCJmAjHy@xEoDdPiB~Hi@hCc@`Cc@vCq@~E[~Ca@lFYlFU`IGfDCtF@dDB|FHnNDlDL~KV`NzApt@hDreBJlH@fGChHM~FUdI[bMInGCxHF|GRxHZhGb@tGn@fHn@xFfAjHrArGvAzF|AfFnArCrAtCdAnBtAzBvAhBrB|BlD`DdDrC`BxApAbBxAhCz@tBz@|Cv@hDp@rDr@fG\\rGLpF?~FIhFSbFi@~FqBnPe@`F[lFUfF]|O}Axy@eBpbAe@lX[hR]xPI|IBdGHnFRjFVhEd@zFl@nEt@|Fz@nFd@`FZzFNzFBdEC`BCjBIlCKvBQzBSxBa@bD]rB_@lBg@rBi@hB{@~B_AnBuCvG_BbFgAzDkAhFcAzF_ChQk@rEq@`Es@~Dy@zDw@jD}@fDaA~CkAjDoAtDqAbE}@jDw@hDm@nCm@|BmApEs@|Bw@vBkBpFyAbFwAnFsBfIsAxEeA|CkAbD}AnEg@dBe@xB]~BSlBO|AOjCEdAChAEnC?hA?hABfABjABbAVvE`@rE\\fEZlEVtEPpEJvCNrLVjQj@rTr@pVT|KDbLAjOBhCF|DDrBRlE`@zGRxEFjD@lCCtDGjCa@vHWbGEfB?nB@~BFdBL|BT~BZdBv@bGP~AJnBPlDBbC?bEAvEMdHGtEAlBBlCDhBHpBN|BXdFJhCDnB@xA@|BE`BElBOfD[dDc@bD[dB[|Ai@pBu@rC}CxLNd@`@tAb@rAl@nB`@rA`@pAj@pAl@n@v@`@`AH|Sa@pJIfECjOSdGC`GK`AGz@MvBg@bAa@dAi@jC}A~BcB~BoBbB_B`BoBz@oA~@{AhAqBjBmDhB_DrHaLzImMrH}KlAeBjGwH`GaIb@e@n@i@r@a@n@Ml@GvBG~@OtF{BxAm@r@UXE\\?j@b@\\d@Vl@Lh@Lv@L|AJ~AN`M?lCGpAUdBY~Aa@xAyDzMu@tCe@`Cm@hDa@lC_@`D_@rDYnDQpDMhDIbDGfDEhECrEEjGK`IO`G]bKs@xKk@fGm@vFc@fDwArJq[dqBeGj^}CtTgB|Q_H|gAo@xFoBhJm`@pqAp^tt@hKzSlDfHz@bBNZPb@Ll@Dr@At@Iv@S~Aep@jvFcKxk@qDfSUvAKrAGbBCvCOvY?vC?pC@fBF|ALjBP|A`@vBh@|BlAfGvAnGlBnJnEbT~A~HZvBVzBP~ARjCdBhZ`Cn[rBrWZlDb@lDj@jBr@tAxAhBnLdL^b@\\l@Z~@VfAPhAXfDN`CH`BZrHfF`hA\\|IT~IrHvfDcBjAyFdEsEjDwDnC{@n@WPaHhFmGrEsBzA}EzDi@`@yA|@w@^i@Nq@HeADg@EUCy@M}@WcAa@_A]gA[iAQoAA{@Fc@Haa@vO_CbAyB|A_ArAeClDaAhB{B~EQj@eEhOaHhYyB~IgCpKeE|OqGlTs@rD_CfQkD`VyCjSs@tEa@lD[xDOxDm@pPcBvX{@~LKrAOvAKx@k@pDaClO}D~XiDdW{Gze@oBdIoEzNq@fCKpBAvBk@lXq@f\\sBxiAUfL_Avf@SvJG~Be@dVe@jUuD~iBy@b`@gExtBaAne@WxKWlH[hFQzBOjBcAtIcJfp@mSvyAeBdOaAfMu@bLg@|GQfBk@bFyA`KkMpz@cF~XqBpKaAzEk@hBoAfDwDnHqDtG_AtBw@|Ba@rAUhAe@jCe@pDQpBQfCKdCIjC?dB?zA@zAFpBLxBNxBFt@N|APfATrAn@zCj@vCZtBP|ANlBHfAF|AB`BnBGdAFpAThAXvAf@~C~@xExAtEvAjAf@bA^xA|@vArAPNr@v@vBvBrBjAfAb@|@NfAD~@MbAQdAa@pA_AzA{AtC{C~BqBrCoBdD{BjBaA|B{@zB_AxAi@jAWhBO`BArBNtBb@tExAxFbBrC`AhDfApBn@|Bp@lBd@~ANjA?hBWtAe@bB{@fBeAbB}@~@_@rAc@fCS|@EtASdAWbAe@fAo@bDeDxBiC~AeB|AgAtAk@~@YlAMlB?pBH|APtBKpAUjA_@zAy@vA_AdAg@|@a@~Bg@dBO`DKfDMjAHdANjAf@jAt@fAnAbA|At@vA~AzEXdAd@tBf@dChArGfBpK~AnJrBdMjE`WhApG|@rFnG~_@h@`DdAjGl@fD|Hpd@f@~Cj@tDh@fFP|BNfC@VHrCB`D@jCE|CIrDYfGc@vJUdHIxD?hEHvDVjFVnD^xC\\~BzAhIjEtT~DxSlB`Jn@dChAjDhBnElClEhGtKlGvKtA|BvAfChBdEvAzDxApFpApF~AlHvAjGbArExAhG`C`LtAfGfCpKvAvFzD|NpDhLvEfM`EvJpExJhB`EtBbG|A~EjAhFbA`GbAlHp@bIDh@LtBZjFZrFdApONjCHzAj@`Jn@~Jd@dGn@lGp@nF`AtG|@zEnAxFdA`ETx@xCzIxBfFdJnQdA`Cl@xAl@`BdBrFfAzEdAjGf@dDh@lFVdDl@jI`BpZJnB`Ff|@zEr{@d@|Ip@tKl@zI|@zJf@~Eh@jFtAvKxApJ|@nFnA`Hp@fDhEnSlE~Rp]`aBdEpR`ElR`Ht[lChLrBbH`AbDnCdItFlOdFhNjGvPlFtNp@hBpBtFxBjGbAfCTj@lA~CvAtDt@fBdAhC~@rBjAxBbDdGrHrMzCrFpChFbF`JtAbCpAvBnA`BfA`BtAbBzAhBlAjAdAhA~AxAbA~@nA`AfAt@jAr@fD|A|B|@jAZfATlANfANlD\\bB^dBh@hBhAjBtA~AxAt@v@~AtBdBvCn@`Ar@zAnAfDp@fBr@hCpAdFjAfF`A|En@tDrAvGvAzGlA`Gj@zB`AjDv@hCj@~Az@rBpAtC|D|I`KnThSnc@Xn@zA~CxBhFjBdEhB|D`DzGXj@JPlAxBxAvB`E|DhF`EpOlLdO`L|B|ArBvAlD~AfFhBpGlBtEdBz@`@hEdCr@n@`D~CjGzGbHtHvIxIfEzBfEjAlERpFm@vKwCtJyBlFk@NAzCUN?dBIrBGzBI|CIdEOpFOxCA|AAhAJvCTpCp@dDhArDzA`GjE`CtBpDhEhEbGrAvBnA~BfChFjCbGzGtPdCrHdCpInAdFnAlF~AjJtAnIz@xGvBnQfFrc@dCfTDb@lAhMxA|QjA`SdC~b@`@|G`Cp`@~Bn`@~Bz_@tAdUhAzQbBvXLnB^~Ff@|L\\`NJvJ@~OEdKQjKg@bOaAvQiC~^QfCI~AInBEhACzAAzAAnA@bB?^@f@BnAFfBJdCNjBHbAXfCl@xDpAnG`EfQnBnItAbGzC~M`CfKvN~n@`AxEvAfIxAjKr@nHJpAd@bGd@hJTnGL~FJnLJn[Rnd@Rja@DdMDlI@hF?hDCdDEfDGfDKbD]fI]rFu@tLu@hLaBrV_Ftu@yC`f@oGv_A_AvL_AdIeAxIgBrMmB|MyEl\\iEj[_@|DQvB_@`GMxDIlFAlDBdDF|ETrEZbFV`DZvC^tCbAxG`ArFx@|DvAdG`AxDn@|Bp@vBxAhEl@`B|@|B|@tBtArCbBxCnBvCv@hAbAlAtAzAdB|AdDpCrDfBnC`AdCp@`CThCHpDSfC[jCk@nFoAxFqA`Cq@xA]bBS~@Al@Dz@Nd@NB?r@PnB`AhBfBh@h@x@lAxA~BdBlCpCpE|KpQtQ`ZrBdDdB|CjBbEr@`Bf@nAp@bBr@xBn@lBl@hBzAdFbA`EfBbI~@|Ev@rEl@fEtBzN|@`Gz@jF|@dF`AjFz@fEbAxEhBrHlA|ErAzElApEnAlEzCtLlD|NdDfOrApGpAtGtC|OhE|TpC|MtClMtE~QjHlXdAfEbAdEp@nCn@tCvAzG~A`I`B~I`C|MzBzMrFt\\~AxIdB|Iv@tDv@dDdB`Hv@xCz@vCdCbInCxI~BxHnClJv@|CbAfE`ApEzBpLn@vDn@dEr@~EjB~N\\|CdInw@pEjd@dB|PhBdPxFfc@pCxQjCzQj@rCd@xBv@zC|@hDbAbDpAfDdEvIhCpGp@vBrA~El@`Cl@nCr@|DbA~Fl@hDx@bE~@nDx@lCbDzJ`BtFvAvGp@vDf@pDVfCl@nGj@fGt@|GXzB\\|Bn@pDl@|Cj@|Bp@`Cv@nCbCxGvCdHnLtX~AvDlCfGZx@Xl@p@|A|BrFjFdLvBtDxAdCrApBbBrBfAhArAjA`BjAfBbAfA^l@NrAXvAPjAHbAAfAI`AKbAQlBk@nBs@xBs@tBs@pBa@xA[bBWpBSnD]tDe@fDW~BWtCW|BS`DCtB@jAFh@JtARnB`@vBb@bAVhB`@zAXbC`@bCNv@Br@@xAAvAEnAMfAIpAUbB_@lA_@jAa@xAo@vAq@~AaAnByAlB{A~A_BjBoBbBqBhEeFfFmGnFqGtM}OzImK|BoCfEeFtBeCnAqAnAiAdA{@lAy@n@[lAe@bA[jA[zCe@tH_AnEe@lFm@nDa@nFm@bDc@NERCrDy@jEeA~CaARIj_@qNpAg@bHaCtG}CdCyAhBiA`BmAhJoInDcDdBwA`BwAFAnCeBbDyArBo@tBq@rAU|A[dBO|EQ|EQ|DGbDClAI`DI|EMnDE|BDxDZxBNhD\\xC^rCZvBRnANjBPjBDfACpACvAOdBY`B_@jEaBpCw@rBg@xHaCfBk@lBc@p@OtAOlCMtDBlFNtHTzEHvDLbELnCDhBHhC@xC@~CKbFK|GYvCIxC@fBJdCTxC^rCd@rHvAdDj@vCt@zAn@bBv@xC~BtAvArBpBpCzDbChE`CdFnA`DdA|CfAvDdArDxAdGtDtQ`AxE|DxR]t@yCdGy@tAgA~AeAdA}@t@uAx@{An@_Et@}Cb@kBf@KBgBdAaA|@}@fAeA`BsApCa@fAy@fCc@fBaAfFUxA{AdLi@zCe@zBu@lCg@~A_@dAu@zA_AlBkA~Ay@|@yApAcAd@eBj@sAJgACw@IwC]iACs@Fg@Bg@LMD}@Zy@`@kCrBmAz@oAl@kAp@eAb@wA\\eARkAJoBJgBBiCDeDJiDDmEAgCLkEBwBFkBHsDBmDHgED_HJkGNgC?gAUm@G]Mc@Q_CeAaAYs@Q_AKgAAq@Hq@N_AZe@Pm@\\mAl@_AZq@Nu@F_A@_AKm@OsCe@cAGq@EgAGe@Fa@Fw@HcAVwALm@F_@@s@Cq@IgABo@@o@Bg@Jq@No@\\m@`@i@b@c@f@q@~@g@`AqAxBe@n@{@z@u@n@u@^k@R}Br@aAn@o@j@u@h@y@r@gA~@k@b@{Ar@y@XcALmATeDj@cEd@oC`@cEh@_BNoBLuBBwAGuAE{BQsAK{AW_BYwA]mAYw@[iCy@oA[iAOiBCaA@sAHy@Nw@TqA`@cBn@o@Ri@LaAFo@?g@AeBAw@Bm@D}@Ni@Lq@Vi@\\i@\\w@n@cAdAqAzA{@`A}@pA{@pAw@rAm@dAS\\iApBQZu@tAm@hAo@hAi@rAc@jAm@hBg@hBqApFkArEkAdEs@`Ci@|AgApCcB~DyAnDeA|BYj@LnADx@Dv@?~@Az@ChAGf@G^Kb@Mb@}@vBe@dA_@~@Up@Ql@mAzEgAxFiA`HcAfGu@lGs@dH]vEa@pH[nIiBdq@e@jRUjLGzOB|RAbMO~JsBny@G~CE~D@bEDxDpBx{@fD|qAzCllAbHtyCFjCD|AJfEBjA\\~OJpDLpDRjDTrDXtCf@lDl@dDnArFpHpYvRvu@zAtF|ApFt@rBx@rBvBhFxBzFx@|Bn@fBnAtEdAzE^lB^vBz@xF~AdLrKtv@zFva@xEr\\\\tCVrCPzCDbAF|ADtC@zDEjS@nFDfDLtDPnCVjCvA`L|AhL`@vDTbDNdDFzC@nCEfDGbDq@vRWtIU|HEpG?nG@`SEdFIxDMnDGv@UbD[~Dk@~EcAdHg@`DuYtgB{@xFi@vEg@fFa@tEcAjNI|CGvJA`JBtDDxCRbF\\~ETrC^|C`@pCl@xCj@tB~@pCjAnCrDtGjCzFpAdEZpAlA|Gv@jFl@vE^jETfEXnKZxNBjAzA~q@tAtn@PbIf@h|@NhX\\lLl@|JhAtLzAlJzGb\\jErTbClSpC`l@v@~JrArKx@`Fj@vCbAfEjAhEhBxGnAnEnA~DnAnD~AtDdArBfApB`A~AfDpElI~JdGxHVXbHnInChE`AxBfAlCz@`Cn@zBt@nCjKza@nFlSn@jCzEdSlAlFrCdMtAlG~BjL`Jzd@Jd@dCbKbDrLjPzi@hBjF|[|u@lUhi@hJdTxD~JZz@L\\nBfGbBfInAbGhAvFx@fC^dAx@hBxBnCdI|JvArBhAxBfCdHzBfHjBzGnCpLzB|LhFr]hI`h@`DpSvDlVnA|Jp@rJh@`J`@pFf@xDhCtQlI|h@l@vDj@dDp@hDl@`Cl@xBh@xAh@rA~@lB|AdCHJrAdBlRlSrAtAfCtCn@hAh@jAz@|BZhA\\vAbI~c@hA`Hp@pDbAtD|@xB|@fBf@|@dCnEdChFtDjHvAjDrAbFlFtWhCtMf@`D\\vCZnDNjCL|CZdSPdENjBTbCh@pEx@fG`BzKhDdVbEbZf@tDZvCRlC\\|Hn@tNNdCR~BV|BpE|`@d@|EfA|LZ~Cd@~Df@`Dp@xCbB~FdI~WpKr]dFtPpn@tsB|A`Gr@`DnCrMrAfGtAfG`BbGhBpFpM~[rKtVpLjWpBxDXf@zQdZdDpFz@|Al@xAv@tB|BhHdIjVbB~EzAvEv@dC\\vAXxANbANfA\\xDlEle@PpCHxBDnABfBB`C?hFDtHo@Fc@Lk@Vo@d@q@n@m@t@cAjAaBpBkB~BqBdCcAnAwCnD_CrCq@~@eAtA_AtA}BtD_BnC_BnCuChFEJcRr\\yEvIeCnEiCzEqAvBs@jAa@l@k@j@]V]R_AXm@FW@g@?u@Ka@K[Si@c@w@_A_AiAg@o@WWc@k@sA_BUlAYdBOt@Kf@AJQz@Or@_@jBUlAWjAi@rC"
+    },
+    {
+      "from": "bu-ardalur",
+      "to": "stykkisholmur",
+      "key": "65.1098,-21.7668;65.0686,-22.7379",
+      "km": 85.6,
+      "minutes": 78,
+      "polyline": "svklKnjzcCh@sCVkATmA^kBNs@P{@@KJg@Nu@XeBTmArA~Ab@j@VVf@n@~@hAv@~@h@b@ZR`@Jt@Jf@?VAl@G~@Y\\S\\Wj@k@`@m@r@kApAwBhC{EdCoExEwIbRs\\DKtCiF~AoC~AoC|BuD~@uAdAuAp@_A~BsCvCoDbAoApBeCjB_C`BqBbAkAl@u@p@o@n@e@j@Wb@Mn@Gl@Az@P^Nv@`@r@p@`@f@^j@v@zAjJ`UfCpGxCdItA|DrEhOn_@zuA~GnWdA|Ch@nAr@jAT^^\\n@j@t@^fAVj@?j@Ep@O|@c@pDqClEyCjKqG|@u@dAq@h@s@j@k@jEuFhFiHbLePn@cA`@y@j@}AZeAXkA`@iC^uCZcEDs@RuCnAiQTyCl@gIb@gFn@iHt@qHx@cIvA_LlAoKpCoVjBkQ`BsOlBsQt@cIt@_Ml@yJz@sM\\gGLwCL_DNeKBqA?w@VuI\\aId@gH^aEhAwKfCmTt@oGJq@zAwMt@mGn@oFz@kFn@}Bn@{At@gAn@k@n@i@j@[`A]zAu@bAe@hBy@rAg@bKcDrJuC`FeBfDcAB^Fh@tAzFvAzFfo@hmCd@hBjKnc@r@zCvo@boC\\vA`@jAVb@VVX@ZEdAq@`C}AfFmDt@c@f@O`@Mh@Ap@Fv@d@XXb@l@b@jAb@vA`@rBt@xFdShhBtS`jBzB`S`@tDzBhSxEvb@zAdObAhNThGNhFBxECtEw@pR}Ab]mBtc@qBle@i@jLa@dKExEBhHx@rm@d@jWNnH~@fSTdKJxDT`PZ~Rl@zRjAzSnB~UdAnJxApLrA~JxDdWn@lE^|Cf@nE\\vDRrBV`D^bGDp@\\tGV~GXjOJbUAhH?zBGtGMjHYpK[tIi@~JqBl\\aF`w@cArPIdAUlCa@dEe@nE_AbIE`@eBnPo@rGc@dFm@rH]rEWrDOnC]`F]rGQjCMjCGnAQ`EQfEi@hOS`GSpJ[rPc@pQi@zOa@dJ?Di@hJsIfsAc@lGm@vJmEtp@kDti@Gx@KvAMxBE|AAbABbCDzAv@fXbAj]h@xSJbJDvHMrQUjTAlEMxIS~GY~H{Cpt@OvEMbEMvDE`DIvGOnOGjIK|LMzGOjBMnBWnC]bCiAhIo@xEYtBShCa@lFi@tI]zFQ`DUxFIxCQvESbHEtBKjCWdESdCmBbTiCrZ}AvP_@~Fm@xI_@fHe@pKg@rOQpFK~GCdGAlD@tIPlUBvBFpLG|EKfDc@pFqAjJgB|LkCtPO`AQbASvAO|@OrBI`CChCBzHHnL|@ju@Zn^Iz^G~dAg@js@}@nYs@jT_@|KMbJFlHLnGNvETdEd@jFtB|OpAjJf@|E\\xFNhGMnJWzEe@nF}@`Ig@vFWpFKhG?|BCzSTzSp@pPnAnSxCh[B^fAdJhCxL~CtIfC`GhGpNFPHX@XE`@G^{@bD}Mpf@Mf@WdA_@lAmCzIgBxDuAvBuA|AmFfFmAfAyAdBsAvBkA~ByAdDk[paAKV}GrSaFbJmClFgAzB}AvDy@zCg@hCi@|C]`DuDp]EZgApI[fBQ|@W`AOr@kAxDo@~AgHpNsAzCk@hB_@fBy@nDe@fC]nCUrBM|AI`AeAjP}D|p@OdCO`CQpBW|BiEr^iGvf@mCfT_@nCi@|BkF|Oq@fC[lBUtBQvCyAdZSbIEhI@lGPfGTfD\\|C~@jGdAtFpFbThAnG|@zGvBdTv@vNRvDt@rSD`Ax@~SFpFCvEg@lf@A~LVzHh@`HbE`a@h@~Cn@nCtIbY~@bEx@tExK~}@~@~Jp@~I`@lJNjEjBxi@@VjDxbATrQa@rv@GhXd@dm@b@nNhBv\\ZdNDlSqA~s@}Ap|@M`Dq@lNUlOMjq@Pho@EhJCdJ]j`@[pHIbB_BpMiLxo@m@jEg@rIyAje@AnVZhY`@nJbAbSdD~g@lAvJtBpItCtK|EtQfOlm@`DnLxAnC`Bn@jBm@bBuCjBqGxG_UbDsH|AsB`BiArB]vBf@jA\\hAhAhA|AdAvBpBbHl@~Bf@rBhAfEt@`Br@b@bABpAq@lI}HzA}@bAQ|A^vA|AbAnB~@xCxApHj@vCb@bCzSffAvAnId@jFhBpu@pBb|@Zb^Jl`@T`H~@zF`ErP~FxQ|AtDdB`DhItKbHfFbGdC|H|CbIvAbFu@lD_B\\ObAgApDeGtFkKlDsH^eAlBcIj@oA`AkA~EaD\\WP_@Po@Rw@bAoI\\eB`@w@V]z@e@t@Cf@g@x@m@fAwArAuBdC}E~CkCn@}@b@iBP_F?aCDkAR_Aj@q@bEwBtBiBvEwDpE{HzKsTjCsBfCw@`HiIn@oAZqAh@gDt@sGPy@d@qBb@uAXi@vFwHjGuHtAgA|K{EbDeDxEmGbBkBj@u@\\[^D`@LRVJPJVJf@Hb@Hj@nAlMLnA|Ghr@FbAHpA@hBEpBQ`FqCrg@a@~Ec@zCaAtDu@jBeAlBiBnCyB`CoQrOm@p@g@t@[t@WbA_@fBk@~DcHdj@m@bEo@|CaAbC_A~AeAlAmAl@kF|BoBt@qAXq@BUB_AKc@A[@]NcAf@cAj@uCtBoEhDmAtAmOpR]t@m@zBUxA]lDSrCIvBEx@AvADvBBdBtA`b@^hIZtFPxBTnCrC`W^zCrA|KXxCT`EHdBD|@@`@DbHAhDCbEShHk@~KYtDsB`QiAzHoA~FyApFkGvUy@nD]jBKj@y@fDg@pAi@jAeBpBiAfAw@~A_@z@Qd@g@nBm@hCu@~Bg@zAo@xBa@xBY|BOjBGzACpBAfCDrF?bIC~CIlCUdCSzBUpBa@vBk@bCo@vBcAxC}B~GwBpGeAzDyBdJwExSyGlYUxAOzAGnAEbACbAA|C?`E?dE?lCEvBGzBMhBKnAwAjKUvAmCfPu@jFe@rCe@~COpAIdBClBBnCJtBV|BlAhLpDp\\\\|Cb@nET`FT`IJdFLfCFnAVtCl@lEt@pEzBbMjAlGn@vCdBhGzCjJ~A~GdAdEnA|Hd@nDV`C\\fEHfB?bBApAMbCOhBe@jDc@fDoApJaBtLs@hGSrCe@fHQvFMjEI~B[`EUdB[hBi@rBUz@]~@{CdH{@{Be@gAmAcCe@y@}@iAwAyAoH}FgIiGkBkA_C{@cE_@wCNeQ|@y\\vAmOn@wAEiBe@q@e@qA_AkCqCaEiEgFcEoCmAsCa@eH?uOdDqJb@S@eNuAaA]cBk@]C[E[AuAEiA?}@DcAJKBg@Hu@PcA`@m@Tw@b@}@p@o@d@e@^yA|AkAtAaKpMqCnDm@r@k@h@eAx@sAr@eAZoAPgABaAKgAWcAg@cAs@{CeCq@a@m@[{@[u@Mk@Ai@Fq@V{@l@{@dAs@rAm@`Be@hB_@rB_A~H{AzP}@vHwAvFsAxC_BxBwBtAyBZ_BIsAe@m@m@s@{@Wc@Q_@[w@Wm@g@yA{@kCiDqLiE}OsEgPu@sCw@oDs@oDkAcG]eB_@gBQw@Qo@o@iCYcA[_Ay@{Bq@uAk@iAs@mAeAcBeAaBeA_BgA}A}@oA}@mA_AiA}@iA_AgAmEsEmAmAeCgCc@a@mBuBc@e@i@u@i@y@_@u@c@_AaEsIM[wAeD[w@GKSg@Yy@[cAOo@"
+    },
+    {
+      "from": "stykkisholmur",
+      "to": "bjarnarhofn",
+      "key": "65.0686,-22.7379;64.9974,-22.9633",
+      "km": 21.1,
+      "minutes": 21,
+      "polyline": "}uclKf_xiCNn@ZbAXx@Rf@FJZv@vAdDLZ`ErIb@~@^t@h@x@h@t@b@d@lBtBb@`@dCfClAlAlErE~@fA|@hA~@hA|@lA|@nAfA|AdA~AdA`BdAbBr@lAj@hAp@tAx@zBZ~@XbAn@hCPn@Pv@^fB\\dBjAbGr@nDv@nDt@rCrEfPhE|OhDpLz@jCf@xAVl@Zv@P^Vb@r@z@l@l@rAd@~AHxB[vBuA~AyBrAyCvAwF|@wHzA{P~@_I^sBd@iBl@aBr@sAz@eAz@m@p@Wh@Gj@@t@Lz@Zl@Zp@`@zCdCbAr@bAf@fAV`AJfACnAQdA[rAs@dAy@j@i@l@s@pCoD`KqMjAuAxA}Ad@_@n@e@|@q@v@c@l@UbAa@t@Qf@IJCbAK|@EhA?tADZ@ZD\\BbBj@`A\\dNtARApJc@tOeDdH?rC`@nClAfFbE`EhEjCpCpA~@p@d@hBd@vADlOo@x\\wAdQ}@vCObE^~Bz@jBjAfIhGnH|FvAxA|@hAd@x@lAbCd@fAz@zBlApEb@hBXpA|@nFJb@f@tC\\hB\\tBOd@W~@]pA[fBa@dC{@hHmBhVoAnPWfD]dDuAzIKl@sAjHaApDg@vAy@xBe@~@y@rAu@|@w@|@s@`@gCbAqJpCcBlAuAbCwC`JmHrScCrHu@zCa@~CYzF_AzVA`DFhCn@zE`CzJ|EbQdBjGhF|RtJ|]rDdOnHt^tA|EdB|DlB~EhApFp@fFV|BXrDFlB?vBCvCY|Ea@lEO|AMlBG~BArBFdEtArh@DvECpF]pM_@~LKlIDtId@xe@`@jQf@vHzAvKFb@vEnWZ~A|A~HhArEtCxHvBlE|A~A`BfAvBb@|EH|IPxA\\`Bv@`AnAzAvCd@nA\\jA|@xEfBrLjIhi@DTdE~WjAbHzBlNtBrMj@rEPxBTnDT~DLhEFnG?lFEjDGtCaAjRwBra@QdEK~CCnC@fCNhENjD]VYj@[nAKh@Gp@G~@IfCMdHMbDs@~JuWp`CYfB[tA]dA_@r@sA`Bmg@pm@k@vBSd@SPcAH"
+    },
+    {
+      "from": "bjarnarhofn",
+      "to": "grundarfjor-ur",
+      "key": "64.9974,-22.9633;64.9581,-23.2707",
+      "km": 20.8,
+      "minutes": 22,
+      "polyline": "yxukKz|ckCbAIRQRe@j@wBlg@qm@rAaB^s@\\eAZuAXgBtWq`Cr@_KLcDLeHHgCF_AFq@Ji@ZoAXk@\\WZtCj@`Ed@pBj@pBd@nAh@jAjCjEpG`KbJfOz@hBjBzDvI~RdCrFpInPfEjH|InPxAfCPTVBZWTSxKzr@bKpk@tClObCvQ~@|KXlFRpFJhGBvFEhHMlGU`H]`Gm@dH{@hHaA~GsBvJoBxIy@dFi@zF_@fF]lKCrI@|GTn[VhPNrLRbJ\\jK\\bIZbE`@nEp@`F\\vCZdBlAvFf@tB`BjFr@pBxAfD~CpFvMxR`BdCbG`KhApBvC~FpAzCnA~C~@`Dd@`BfAfFv@bFVzB\\lENzBL|CJ|E?rDEnDQ`FYdEg@lFy@tGaAdHy@fHkAlMEf@m@dIe@|G_@xF_A|P[|GOpCe@nKcApQw@dMs@`Mc@rK_@tKO~KIdMG~LEdIUdKU~GYfGg@zI[tFeBjWgBzRuEle@yDr^sA~NkApNaAfOcAxNwAb]a@`LG~HCrFTzLZfId@zGr@~FPrAr@~Et@nEt@fEhAfFfA|E|BpIrB~G`DfJ|DtJ|BxEhE|HfDvExDtDfEhCdFzBtCtAvBxA`ClCdBnCnBdEbBpE`@pA`@bBtAxGlAvHp@vGb@tH^~K\\hK\\|Hf@pH^jEf@vElAfJfAnFhAlFvAjFlA`E~B~IXfAjAvEbDxPx@tFp@|Ex@~FRxAuC|AwErBwGzCsBpA_CvB_CzC_CxE_DdHsCvHiDjKqDpKgC~GqCfG_BrC}A`CaBxB_ChC_BtAs@j@yBhB[\\oIpIoC|AgE~@kGDsM?[HNnEr@fFZbB"
+    },
+    {
+      "from": "grundarfjor-ur",
+      "to": "rif",
+      "key": "64.9581,-23.2707;64.912,-23.821",
+      "km": 40.7,
+      "minutes": 42,
+      "polyline": "}nokKreulC[cBs@gFOoEZIrM?jGEfE_AnC}AnIqIZ]xBiBr@k@~AuA~BiC`ByB|AaC~AsCpCgGfC_HpDqKhDkKrCwH~CeH~ByE~B{C~BwBrBqAvG{CvEsBtC}AhAlHhDjOfDpJlEdJT`@nArB|GzHlGjEjItFhCfBbB`AhBdAvBlAbKrDhCZxD^xHZj@LnBj@rDzC~@~Aj@x@b@|@hAhCnAlDrAtEzA|F|BzKb@dC~@vG|@bIr@tGl@pIZtEh@|OTfIN~LN|GVfJPdEHhBN~BZ`EJnAl@vHb@vHHrCDxC@hEUpUCvAAf@?h@A`AG~DA^A`ACrCK|LC~AAlBEhBEp@Gd@It@YfAeAxBgAjBkDzFoD~FSb@Un@Ob@Qz@Kn@Gn@Ef@E~@SvDEr@E`AQnCElAEvAAl@@l@H|AHrALhBNfBv@vJJlAb@lFl@|GZrDPtBJhADn@ZlDj@fHl@vFZnB`AhEPn@Nz@b@tCJlAHtALrCJjCn@dOFzGBhD?NBhHMfHK~Ci@rKShCUpCSxBW|Bg@hEYhBWbBk@zDi@nCm@tCgAbEoAjEyA`EeBjE{BrGa@bA_BjEm@hBo@hCy@|Do@bDs@hEiAlJi@jFOzA[jEg@rG[vD_@xDYjCUdBQpA{@|EeAjFoBvKm@rDi@rDk@`E_@rCyAjLuA|Iq@lDs@tC}@~CaAbD{@tDs@bEg@tDa@bEeAjNq@nIcBhVe@zFq@bIwAvPeAxLu@|Ji@nHc@`Hk@nLc@pIUnE}@|Qo@dLg@lJs@xJy@hKo@lHm@pHm@rFo@|Em@vDw@fE{@tD{AlFAFcD|L{@tD_ArEaAdGk@~Do@jFe@|Ea@vF_@hGUrEMnGG`HA`GApGAfCCjEIvESxG_@dJk@nKoAvTe@jI]|Fe@`Jm@hLo@fOKpCAh@A^IxDCrH?vHFnILfNFbNLbPRxP@~CFdFFhM?dCAtCO`G{@zQg@lKk@rLo@bMq@dM]fHQnEIlFBnFLxFb@vKFjFA|CItBUtD{@hFw@lCoA`Fi@lCi@|D]bDQzCMnFBjBH`CXvDz@|J^tGXdGXtGb@xEd@tCz@jDdAzBvBdEpBrDdBlDx@`CpDbOrBlGhB`D`@j@jDbDxD~CzSpXxGrGzGtFlQ|KxJlHJJtP`P|TvWzIjO~IvQxFfNdH`T|Ib\\h@|BxDxP`Gf[pDrVfAxJnBfSlD~[zCvU~I|i@j@hDj@nD`FnZhA`HfFd[lJb\\`GlM~IxRrJpS~HhPrClFvDfGhNfTzCxEtBjEVv@Tx@R|@R|@P`ANbANdAJfAJhAJhAFhADjADjABjA@jA?jAAlACjACjAEhAGhAa@vHeAdP{@jPS~EG`CIlDGvGC|GJxGVxG`@bGl@vGhBdPhBzOrAlP~@hQd@`QLfQChJEzEU|G[dFa@bFu@|F{@tEkC`Lo@dDi@zDq@|Gg@`HSvFIhF?dHH|HXtH~@~OVxGHpF?vA@pBEhEIlCKtCYzFYrFKnDCjB?bC@nA@nAFpBJjBPfDZfGL|BFrAL`DHtDF|G@hC?lA?x@CfBEzBKxDYpFw@fMQjCCVs@hM_@dFi@rGGj@UfBOlAM`A]fCa@vB}@dFUlAmAjFaAjDKZM`@Yz@GTo@~Au@`Bc@v@e@p@SZi@l@ABWTGHURaBrAIFGHGJCLCPAXEj@Cl@Eh@SrDc@vIC\\ATAR]rGMrBMnCm@nJSfDOjBObBQ~AU`BU`BUzA]tBaAjFIb@iCvOq@`Ec@bDc@dD[zC[hDCTa@dFW|DE|@MdBUvEi@fNQfFOfESvGYjKWbHKhEGrAMdDUdEo@|KMpCOpCItBGbCC~BA~C@lC?fCB~DFrDB`E@jDA|C?z@C|AA`AMlGUlGWxHS|EOxEM|DInEIxDE|DMvISfGO`DK~B}@xOa@|HStCYfDW`CSdBS|Ao@dEy@|EoAvGy@hDq@jCs@jCuB|G}B`H}B|GaBfFm@dBQf@_@jAOb@k@~AgBdEcAtBkNzYmBbEgBrDyBzEsBjE{CtGmAhCk@nAk@rAi@tAe@|AcAjDo@vBg@~Aa@fB_@jB_@jB]lB[pBYpBYtBQzAEXUvBSxBQzBQzBM|BM|BK~BI`Ck@|SAj@h@R^Nl@RxCr@xF~AhBBn@ClAWzA[`@[hA{@v@y@j@y@jAmB`AyBh@}Av@wCnAaD"
+    },
+    {
+      "from": "rif",
+      "to": "ondver-arnes",
+      "key": "64.912,-23.821;64.8835,-24.0409",
+      "km": 15,
+      "minutes": 20,
+      "polyline": "ogekKrkkpCoA`Dw@vCi@|AaAxBkAlBk@x@w@x@iAz@a@Z{AZmAVo@BiBCyF_ByCs@m@S_@Oi@Sc@~Pa@`QWbKEtACtACvAAtA?hA?hA@fAB|AB|AF|AFzAHzAJxAJtAh@dFfAbK`AbKjBbTfCvXr@|H`ArKXvDJhBFlAJ|CFhDBbD?dFDnDTh\\FlFHpDPdGd@rK\\~G~Az[^nHZnGd@zJJfBFlADx@LbCVfFLjCF`Ab@rHvAnR@RdB|VZ~DPjBb@nDDX^zB^tBf@zBf@pBp@rBj@~AFNjArCrGfO~A`Ep@hBl@`Bn@tBj@~B^pBb@bCf@nDbCfRr@bFhAvHf@~CbB|IxAzGnBpIfAlEf@zBj@~Bl@~Cl@jDt@~EnAbIz@xEzApGVhAnCtMxAvGhDzOjGnYdAhFtBfLl@bDxCfPzCrPzCpP~CzPhAdGbAhFh@xBn@tBx@zBp@tA~@~A`ArAnAjAQfD@dB@lAFrANzBTjC\\pELvDAjC@f@Fb@dA|DRbAP^TV`@FHD\\Nv@l@fC`CfAzAl@~@b@hAL`@j@fBj@pAHVj@nBj@~BXp@|AjBhA`AhBlA`Aj@^Xb@j@\\h@rBlFr@hBPb@RVZ^Pj@d@rBRv@T^XZ`@r@ZtAv@xDDRLj@\\t@VRl@PLPZh@h@|ARv@HfAJ`@V\\XTRd@XNNKPYLEHDFPB\\?h@Av@Bt@Lf@f@~@z@~Ab@r@d@xAZj@Rf@N|@X~@LTNPL^DZDb@Av@?b@?\\Jt@Nn@ZpAt@rCL^f@n@XJZ`@|@fDt@dCtA~FzAjFLl@LdAFl@Hd@Tr@\\|@`@nAb@hB^lBh@~B~A`Fr@vDHv@`@dFFn@ZhAdAtEXzBVxATv@Nr@Fp@@nBJpBGr@S|Ae@lCe@hEEr@@d@Lf@NLPTHh@@f@EfDIzCI~@O`Ac@|AC^@b@VpAFl@?l@GfBSfAIfA?~@F`ADd@?f@QrBGfA?b@F^Td@VjADLTDRGLEHLr@`GDf@?|@Av@Dh@F^Xl@j@n@Zh@Nf@Fd@FzAJlARxA\\fBR`BRjCFhBDt@bArJj@nDNrBvAzGXtALv@LvBJt@VfAJf@NxAVv@b@d@`An@Z`@Lf@J|@?fAKv@[|As@dFEl@AbABdATxF?z@wBbCo@`AS^g@~BIRKJe@VMN]n@a@d@s@d@M@q@Yc@]UCWDe@RWGw@_@c@OYDSPMVWr@Yd@UNM@MAe@YyByBk@_Aq@g@WAk@NMLQ`@g@bAgAfAKB[MQDIRSbAOXIHi@GULOZKf@QbBMd@ST}@n@_@p@QRuAx@O?WUWq@UiAQUQEyAPoAUGIY_Aa@kAC_@?s@G]O_@OIa@GkAAOFe@v@SPMDYGSSUc@]kAY_@_@S[IWBQP"
+    },
+    {
+      "from": "ondver-arnes",
+      "to": "hellnar",
+      "key": "64.8835,-24.0409;64.7509,-23.6469",
+      "km": 38,
+      "minutes": 37,
+      "polyline": "an_kKrxvqCPQVCZH^RX^\\jATb@RRXFLERQd@w@NGjA@`@FNHN^F\\?r@B^`@jAX~@FHnATxAQPDPTThAVp@VTN?tAy@PS^q@|@o@RULe@PcBJg@N[TMh@FHINYRcAHSPEZLJCfAgAf@cAPa@LMj@OV@p@f@j@~@xBxBd@XL@LATOXe@Vs@LWRQXEb@Nv@^VFd@SVETBb@\\p@XLAr@e@`@e@\\o@LOd@WJKHSf@_CR_@n@aAvBcC?{@UyFCeA@cADm@r@eFZ}AJw@?gAK}@Mg@[a@aAo@c@e@Ww@OyAKg@WgAKu@MwBMw@YuAwA{GOsBk@oDcAsJEu@GiBSkCSaB]gBSyAKmAG{AGe@Og@[i@k@o@Ym@G_@Ei@@w@?}@Eg@s@aGIMMDSFUEEMWkAUe@G_@?c@FgAPsB?g@Ee@GaA?_AHgARgAFgB?m@Gm@WqAAc@B_@b@}ANaAH_AH{CDgDAg@Ii@QUOMMg@Ae@Ds@d@iEd@mCR}AFs@KqBAoBGq@Os@Uw@WyAY{BeAuE[iAGo@a@eFIw@s@wD_BaFi@_C_@mBc@iBa@oA]}@Us@Ie@Gm@MeAMm@{AkFuA_Gu@eC}@gD[a@YKg@o@M_@u@sC[qAOo@Ku@?]?c@@w@Ec@E[M_@OQMUY_AO}@Sg@[k@e@yAc@s@{@_Bg@_AMg@Cu@@w@?i@C]GQIEMDQXOJYOSe@YUW]Ka@IgASw@i@}A[i@MQm@QWS]u@Mk@ESw@yD[uAa@s@Y[U_@Sw@e@sBQk@[_@SWQc@s@iBsBmF]i@c@k@_@YaAk@iBmAiAaA}AkBYq@k@_Ck@oBIWk@qAk@gBMa@c@iAm@_AgA{AgCaCw@m@]OIEa@GUWQ_@ScAeA}DGc@Ag@@kCMwD]qEUkCO{BGsAAmAAeBPgDl@^v@`@v@V~@NnADpAMlA[zEkBdASx@C~@FbATdF|AvAVjBHbBFbOUjBS`A[`BkAjAuAdA}A|A{CvAmDhAeD~@eDdAoEz@eE|@kFhRazArBuPx@iIj@_Hb@_HXsFdA}T@_@t@_Qt@yNXkETcCXuBRsAVoAb@iB^wAh@{AjAmCpGkMlGyLrBiEhE}HnA}Bn@}@dAcAn@e@v@Yx@Ut@@nAJ|@NtDtAvA`@`AP~@HdBBV?bACl@AfAAnANt@Tr@^z@p@bAhArBpChAbAbAv@jAh@jAX`AJnAApASv@Q|Bs@bAWj@Ez@?n@Hj@Nx@Zv@h@`A|@|@dA`A|AbAvBJTh@pAv@lC|@nDxBfJ|@bDnAxDhAtCj@hA`@v@dAbC`s@dzAjCjGlBxFdB`GjDjOxAtG~AnFlBnFrB~ErHlPjGlNlGvN~F`N~EpN|EvOvBzFfBvCvApA`At@fAj@v@Vz@Pz@Dp@Al@Gx@Qn@Sp@]z@m@t@s@tAiBzTaZxFuJv@{AbGuMty@olBrNg\\nG{NvGyMlHkNhvAe}BhK}PdBuCnDqFdBkClA{Az@eAdAqAhCmCbBiB|@iAl@}@n@eAl@gAlAoCv@uBh@gBz@uCfAoEfAgEvB{IbAaEj@_ChBiHbBiHx@gDr@_DfAgF~AqIjCaOr@sD\\wAl@}Bz@kCl@sA\\}@Zg@JSf@y@f@s@f@i@x@{@j@m@fAeAfH{H|DcFfBoCrA}BjC}EtBkE`A}BfAqC|@eCv@_CfAoEhDeN~CaMz@cD~AqFnEcP`BgHtBeJjCuMrCsNbDyOzCuNbAkEbAaEx@iC|@yCdCsIf@wAjG_TxCyJtAqFnAwFtCmOlBcKl@}C`AoF`AiF`@uBdD{P~BaMf@wBj@kB|@kC`FoKpAaDbAiCxAmE|ByHl@eCd@_Cd@kC^oCZaCfAkL|@sKrHoz@xDac@ZiELgCJsCD_CBoECsDGcCG_CU}Dm@qN_Bs[cBg]gBs[o@oI_@eEs@cG{B}O}CiSkDcScFoXy@qEwQybA_H_`@_@sBeIid@kNqv@aMkr@qGo^oBwKqAiGi@iBc@gA{A_DoDkIuDeI]}@o@}Am@sB]kAYsAm@qCc@uCMiAMsAm@sHy@oLQgCtAuA`AyBdDyJrEmMr@mBx@sAbA{@dA]lFEpBE~@C|@[x@q@bA}ArA_C|@mCt@_DdAqFpC_OzAmHrAyFnBmF`C}Fv@oCb@uBVeBNaBL_BHeCDmA@mAIeICgAAeAGcCK_GG{DWuGUiHGCSN"
+    },
+    {
+      "from": "hellnar",
+      "to": "borgarnes",
+      "key": "64.7509,-23.6469;64.5609,-21.8997",
+      "km": 120.2,
+      "minutes": 102,
+      "polyline": "itejKrnioCROFBThHVtGFzDJ~FFbC@dABfAHdIAlAElAIdCM~AO`BWdBc@tBw@nCaC|FoBlFsAxF{AlHqC~NeApFu@~C}@lCsA~BcA|Ay@p@}@Z_ABqBDmFDeA\\cAz@y@rAs@lBsElMeDxJaAxBuAtAcAgOW_EU}EMwCGyCEcI?kG@aGC{DCqBIaBGeAKqAUuBUmAo@}BW{@gA{B{@wAcA_Ba@y@a@qAUw@S_AY{AUeBQeCMqBKoCg@oPm@ePWeHQgES}DiAwNg@iEm@_Ey@{CcA{CsAwB_BuAwASiAFyAn@{FpDkDvAaFtAwCjAcChBmDxBcDjAgAR}ANcCGaCo@kBEsBPaBZ_Bj@oA^gC`AiAViBXyADyAAaAIiCk@y@[}@_@aB_AgBwAqFmFkE{D{AoAoJmHiE_CsKuEcCgAuFyCqCuBeBcBoBsByCyD_J{LwCsEeA{B{@iCg@kBe@iB_B}J_@gC}@yDqA}DcGcOyAkFaAsFo@yGa@mJy@aOSkCkAmKqGgg@mLg~@aBkMmAkHyAwGsBuHeXkv@uDeK_@eAcAeD{@yEu@wGWiFGwBKsHSqE_@iE]gCgCkPuDeTwFw]{AmKeAwH}Iss@sBmQkBoPeBwP_BqQeAaLoCyWq@wFiEc]YiCYaDa@yF}@eQ_Cwe@sA_Yy@uOc@kIW}F[eJW}Q?aFFaGLmGhEuyAz@aXv@qSpA{Yr@cPXgGj@wGb@yDn@}Cf@iBtA_F~AwFp@_CrDiOzCkQhBwO\\oFJcDBeDWiHc@oFY}Bm@eDk@{Bq@yB{@mBuAaCcDcFyCqEuEwFkCoEg@kAe@{Ai@oBo@gCc@yBw@gG]eFwAmUyB{ToAsJmAoIy@uEmAqG{AeH}@cFKm@QqAW{Bg@sGY{DWcDYiC_@cCe@cCi@sBk@aBs@{A}@uA_A_AaAw@u@[y@Qq@?i@Js@^m@h@i@v@Yh@[n@Ul@mBsEwEsLgEeKsAoDwAoEqAoFgAoGw@cGo@aI]wGs@qQu@iRs@aRc@yQQuQBeQXgRh@kPBo@xBqq@~Eu}AhIoiCj@eP^{Hf@{HpAyNvAiLHm@n@{E~CiQnR__AxQi|@rDcQhAgGzAeIbBaPx@yPFqBLuGxAei@`@qP?}ECcDM}DSqIGmCCwB@wCF{CReGv@aPLmCHkBVuGF_BH{DBaE@cBUae@CmT`@_Od@sGz@_HfAwGv@gDVaA\\aBdIg_@`CsPnA{Qp@oRlEenAfA_RvAiQ|A}P~AuP|AwP~@oKx@cJ|@oJ~AyPhBoP~BoOtC}QfBuOtAaPjAmPv@_QXwJF}BrBow@TmHXaG`@mFt@qHdBmN\\}Cd@uFPgDHaDB}BAgGIqGEsFDsGJaHXwHl@}Hn@yFx@kF~@sDd@oBd@}ArSki@`GiOj@aB`@qB^yBXyBVmCLgCF_C?aCCmCI}BQmCUiCiGid@gB{Ms@gIa@_HS_IAyH@{BF_Or@k`A\\mu@J{OVuR~@o^p@sXDuFMuR@sJTeRj@uQ|@iQbA}PfAgQ\\eHPcH@mHCeDCkCSyQWeRi@eRgAsQkB{PiC{OwAqHeBeJ}C_PiDcOcBkEc@eAaCqDwJgLsJsLkBcC{D}Fg@s@uH_Nc@u@{GsLeHkMiEqHo@eAi@o@i@q@}@k@sBy@aBKq@Fq@P}GtBiA^cABw@Eo@Qi@Q{@g@q@o@w@gAqIyLaBcCc@o@g@{@kBoDmBaFaQyf@a@_B{@oC]gB_@_CUwAWyCOuBMeCUoHe@iPq@iRy@uQ_A_QcAmPeAuOUmHGkHZaIj@uFvAoHdBoFbCcGvCaF`I_NvBcGHQhBaHdAeHd@{FT}EFqADeHO{x@]oRw@wQkAcQaBcQqBkPkB{Oa@gHKsGFoH^yGvKybB~BuZ~@_MToEFwD@_EGoD]wGc@eDo@kDoAoEuAgEiAmEOo@sA}GgC}QmAwJe@wEUmDMyCGeEDgEPoENmD~@mQhEiw@jAcSjAoQVwHBgCA{BEsE[_HyBwTkBcQ{AmQYuHGiHD}PZeSVyQFaIAaKEmCSkImD}iA_@iHg@oHi@eGu@yGs@qFeAwF[gBqD_PqCuJgAaDkT{m@uDgJg@wAkHsSyDiNi@eCcAuEcAgH[mCkAgMs@}MGeCQ{IE_EM{QAUO}HGiDOkG_Bm^{@qQi@oNCaACyAMmHIoEEuGAm@CyGHmR@mAFcEHwFPiHPgHhByh@nAy^|@aXb@uMJkHFaIAcHImIMqHIiI@}HJoHFkB\\kKd@eHt@_IXiCp@gFv@uEj@iDLo@hA_FhB}GlAmD~AyDn@sBhA{DrAyErAsGdAaGXwBpAuLtAgQnAkRdAwRj@aSFeSDcS?mC@oNAyRQwRkCo_CCiCYaSMuSCuBC_FHcHR_IZ}HR{C^}Dl@gGnFab@Hq@zBgPrBwPfBwPbBkP~@iJLaA`@wDDg@jAiKz@eG`BgKzC{QfCyPvBmQfOkuAbCuTpAuKBOxCuUhAwHpCgQx@{FdAoIp@aGt@iHn@uHn@mJf@qIT_FT}FXgITyGRsF`@sG`@cFr@oGjA}Hn@qDf@kC|AuG|BmJrBqIt@}Cp@kD^iC\\eDLyBH{BDeC@sCEiESkFUoFq@{Oa@uHe@gGi@mFm@_Fc@oDkBkNc@yDi@cGe@uFoA_Pk@gHgAsH_AiFuA_FaAsCkBgDmX{`@mCuG{DaN}Oyg@yCmI_AmBm@oAsYyf@uByDoAuCw@yBu@aCm@wBa@_Ci@cDq@wF{@{HeDc[UwBkAaLoAmQgAwQy@uPs@oSc@sQU}QKsQAeQJaQRgP^{Pf@wOt@oPhAiRf@qKRkE@sHMiGs@cPYoG[uGKaDSoLAuOr@ew@A}QYyQk@qQ[sQHsJViJt@uKtOo_A~EaVxDmO`AmEvA_H`AeFx@eFx@sFtByQ`Jgt@`DeX~@}Gb@wCn@iDb@{Bd@gBjD}MpCeKh@sBfBuGnHcYtE}Pf@{AjEgLnCeG|CwFlDkErJgK~QeRhKsK`KkKnLyLlCmClEmDhBoAjCaAhAUdCU~EFtQhB`P~AvIfAbH~@dK`AlPjB~Q`ChO|AfMbBlCPdP`@dIC|CBx@?tENbC?hF@dD?jI?l@?nGAtH?hA?xNDxOB~ORbHAzBi@lBaB|BmDpB}E`GwNdG}NbG_ObCkGbDeIpEgKhCmGrB}EzFkNxFcNtGyOx@gBlGeP|CeKvE}NvEsLhA{Ct@{BdAkDpBqHpFsSdGqVv@qE^qCZsC\\oEl@uKz@kPfAwMj@uEvAwI`EwQnAsFrCeMnA_Gp@oDZyApEqVjAkG|@iE|@aEnBwHhDsKjAeDr@oBp@aBt@sBb@kA~@uBdDoH~@mBzBkEzAsCrD_GzC}D|CaDlFcErMcJhEoEjDiFfCiGpByGtEyOvEePtE}OvEePtEePpEqOjFgNtHeMjLwJ|MeHxMcHnKaK~H{NhF}OtD_QzBuOrB{O|AsPd@yJT_LDeLTkR\\{Hh@{Gz@{GfAaG`BkGxB}FfHiMdGeP~EoNxFwOxAgDfD{FvCeFdD{HbFmNbFsNnEqLx@qBvG{N`AuBrEuJnGwMdHgObHiOxCgFjDqDfEiBdDQbHpA|B^rBJdBE`I{@tCSpPmAzPoApPqAbHiC~LsIdNuJ~DiCzBaAlC_AvCc@rCYhIv@lEbBxE|CjDvCdFjFRPt@p@`BvA`DzA~Fz@~CETGvCw@lOgDzC[vCLbNzAjBMhBe@x@a@l@]hA{@x@}@|@iAz@oAt@yAt@_BbAoCnByFhAcDv@kBt@cBJQxAoCfDiFtHmMfFkKp@qApCeFrBmCp@{@vF{CxI[h@CbFm@|EeDnJwKhEoC^UvBWzBPjC~@lChBxBb@vBOnBcAfD}ElCsJjAoLz@qIlA_I~CmLbCuLj@wCpByPTaChAeNnBwQzCuO`CsIX_AnAoEzDaNzEqP|EyPlEcQpKkf@f@gCVuBRmBToCLiCJ}CVgRDuADeAHiAHgAJeAJcAL_AXoBRuAXiB~AyKd@mCf@kCLe@^wAX}@Xy@Zw@x@eB\\m@^i@^g@^c@`@a@VSh@_@b@U`@Sb@K~AUfBEhESnAOpAe@`Ao@pAuAv@mAhAqCbAsE\\{AXsCXmCVmFTuJd@aKRmD\\kCZmCd@kCl@uCl@{Bv@yCnBsFdBcEhAeC`BeDbIeNxHgNjG_NhG{OxE{NfEmOrBiIhAoE|DkOxCeK~@uCVq@vEuMbGwNpHiN|KwShCmF|BkFxByFfAuCj@iBZwAf@wCb@yD^gHFuHKqd@C_SC{DG{Q?eA?SAw@CiMKaYA{AOAUEEC}@_@m@W"
+    },
+    {
+      "from": "borgarnes",
+      "to": "mosfellsb-r",
+      "key": "64.5609,-21.8997;64.1667,-21.6989",
+      "km": 61.4,
+      "minutes": 57,
+      "polyline": "qp`iKngtdCl@V|@^DBTDN@Ai@A{CBoBDq@BYBSBIDKPKVGT?\\DPLPN`@d@Tb@Td@Tj@Vd@DFPXb@h@v@r@nB~Az@t@|@v@t@`AfApBz@`Bx@nBhAjCd@bAZ|@\\j@Zd@b@h@nAhAxArAn@Z~ClDfE~EdBvB`BnBVh@Zb@b@h@z@hAjArAj@h@j@^PP\\ZXPXLj@Nj@DTAXE\\K\\MbCaAv@Y\\Kb@Md@IXDT@X?z@DTBf@Px@f@z@`AJLFa@DWPgAb@eC^qBNw@Le@L_@T[RQXMZGhBRr@Bt@A`AG`AMt@Sp@YP?RCf@S`@Sh@a@n@e@POb@e@b@e@\\e@d@o@v@wAt@yAt@_Br@aBx@sBf@wAf@yAr@yBn@{Bf@cBf@kBl@}Bn@eCl@cCl@_Cj@mCLo@Ju@Lg@z@cDfA_E`AiDbAkDx@gCx@kCbA}CdBcFjBeFDONOFQp@wA`AaCr@aBl@kAz@}Av@iAt@}@t@{@r@o@`@_@t@i@b@Wb@U^Sf@Sp@Sj@K^EZCv@En@?J?t@?r@F`BVR@P@jAh@fAn@tInGjAl@lAh@l@R|@N`@FrANhFj@f@@zANzA\\dA^tAj@x@f@nAx@bAt@dA`ApC|C~@zAhA|BbBjEr@bCTz@|@fDhAzEfAtFp@`ExBzU\\nE~Cdc@lBhXj@zGbAhIz@bF`A~DbA|CjAdDzCjGhMdWjw@~}AbLvSdHpKhCdDnCfDrJhJzK~JTTn`BjzApDpC`DzAbDt@|DDhD_@rG{AxCeAn@SfE{ApLkDdGsA`d@}GjIoAJAxQiBjr@aG|WqBz|@yHbBa@v@_@zBeAdCwBxBmC|BqEp@_Bv@gB|A}FrA_GpBgLnAsH|AoH|AgGlEoNhBeG~AyGrAkHxDoZfAyHrBgL`ByHbCmJxB_HdCaHjB_E~B{EdC_ExCgEzBeCdC}BhCoBbDqBfFoCtCmBbBsAfBeBlBuBfDqE|JoNhB_D~AoDxA_EbAkElA}FpD}XfEa\\tA}LZ{DVkF|DyhA~@gX`@eLLkC`@sIl@aI`BeQ`A}JjBgSnC}XTgBVsBl@yDn@eDdAqDrAwDzAsCjAkBlA{Ax@k@`Am@pCkA`@SdBo@h@]n@i@t@k@X[r@_Ax@_AjAmBt@_Ad@c@h@c@\\UXMt@[n@QXGp@In@Ar@FxA\\l@VfAp@lArAtAjBxAhCl@bAN\\z@rAn@z@^f@TVr@v@v@r@rB`BvB|@rBd@TDdA@rAGbAOpAa@p@Yr@a@n@k@n@o@`AgA`AsAz@{Av@gBfAsCp@sBl@{BhEuRfC}KhAqExAmFvAyEnBgGrA{DtCsHxBeFrHaPjEgK~BoGjCyH`CyHdEkOtF{TfCkJrBaHdDeKtDyJnCwGnBgE|BuDfAqAdAiAlA_A~@k@`@SbA]xAWtAG~AF~A^v@XfAf@pAz@~AdBz@fAhBfDnAxBh@v@dArAdApA`@`@rBzBtAtAv@l@dAx@XP|@l@vAdApFfE~ExDpDnDjDdEjCxD~BpDbCzE~BlF|BzFnAnDxArEh@hBb@~A|@hDdAbE~AjH~AvHbBvHdA~E`B`HlAlEv@tCjAbEbB`GdBhFxD|KtB~FlBhG~BtI~ApGdAbFxAnH~ApIfAxF|AxGtCfKRp@vDnNlA`Gt@dEz@`Gj@pFj@jGd@tEj@nFR~ALbAdAbGt@fDx@bDxAjFlCrJnC~KdFvRfEvLn@rAxAnCdBvCrBxCzBlCzBlCrBjC~@vA`A`B~@hB|@jBd@rAf@tAnArDlAbE`AvDz@vDHb@f@lCf@fDh@zD^|CZzCl@zGdBxQh@dFn@dFpBrL~AvIn@tCdBdG\\jA`@nAJ\\X~@Xx@T`@V`@^p@NPPPNNNHXNRJJJHHFHBRDNDJFDHBHCHIDODO@S?U?S@W@QD_@D_@Dk@B]B]BcA?eA?eA?eACcAEaAGaAG_AI}@K}@My@Ig@Mi@QaASaAS_AW{@U{@[_A]}@]y@_@u@_@u@_Vme@Yi@Ym@Yq@Ws@Uu@Uy@S{@Q}@Q_AMaAOeAKgAKkAIkAGkAEoACmAAoA?mA?oABoABmAFmAFkAhFuv@JeAJcANaAN_AP}@R{@Ry@Tw@Ts@Vq@Xo@Xi@Xi@Zc@Za@Z]\\[\\W^SrVcOXSVWXWV[V_@T_@Ta@Te@lx@_vBxs@emBfAeCz@wA~@iAbAw@dAe@r@OfACfALdA^dAl@`Av@`AbA~@lAjAlBv@bBt@jBrAvDPp@Rl@Tl@N^N\\NZNZPXNXVb@V^V^XXXVZRXNZJXHRBF@X@^?p@?bBMl@El@Al@@l@Dl@Fl@Ll@N~B`@b@Fd@Bd@@b@Af@Ef@Id@Kf@Od@Ed@OnAu@fA_AjAmAZa@h@w@f@w@JO~@}AnAsBrAiBn@u@d@g@h@q@~@s@n@a@vAw@l@YbA[|@Yx@S`AWdCi@tBc@v@QpCo@xDo@zEq@fJw@hHm@pEa@fGg@r@GdBS~B]tBc@jA]jAc@RG~Aw@rC}AtGoD|CoApB_@fAI`AGnBCZAxHB`KD|LBbE@dCA`BKt@GN?N?XGx@Sz@]HCTIz@g@`@Wl@e@b@_@b@a@f@g@f@k@R]LWl@{@rCmEfJ}OhAkB`@k@nDoFjBwBhD}DnDkDvAmAb@YfAu@t@i@v@k@x@k@jAw@rA{@rBuAhAs@|@g@bAk@xCcBxAu@lAs@t@c@p@_@r@g@l@a@ZUp@g@p@i@v@s@d@c@d@g@x@}@TYl@u@h@o@t@eAZe@X_@p@cAh@_Al@gAn@kAlAaCbA{Bl@yAnAeD|@kC~@uCt@eCj@uBr@iCj@aCr@}CvAyGjAwFv@aEf@uC^oBl@gDbAyFvEyWpC{O|BoMfDiR`@}BRiAH_@BMHWJ[FUBELQLCDEBEHQDWB[A[BYBUBOFa@V_BVeCRyARuANaANaAv@uEpB}Kp@iDz@cEj@_CnAyE~AqFzAgFpBwGv@iC`EaNlA}Df@eB`@}AlB{GdAuDBGf@oBt@sC~@wDf@aCl@eD`@kC^uC`@uD\\kFZqIJiE?eFCeEI{DY{Fa@gGqAsMg@aG[mGcAeV_@iJ[eGm@qKq@eLoAwRm@mK[sGMyEI_ECsD@kCB_ENuEPcDVkCb@sDRaBn@sDH_@TaAPs@^wAl@qBx@oBl@{Ar@kAx@qA|@iA`A{@bAq@z@c@l@U~@QdAIn@Cn@BrAT`Dt@tBXzCCjCq@|BiA`C}BzBsCrBuDbFuL~@yCnBmGdCeJz@sC\\aADKHKHEF@F?HEHKFQDU@S?SFc@B[Hk@RqAr@sDt@aDhA_EfDqLvCmIdBqD|@mBnBuDlAmBd@q@RYLOxBoC|@}@t@s@~@u@dAs@rB}AlB{Ax@}@xAeBj@q@|@sAbD}EbB_C`BmBzA{AjA_Ax@k@f@Yr@Yr@Wx@Wj@SXKnCaAdA]hE_BbAOt@Qb@QdDgA|AUV@LDHDNRFXJPLHLAJKHUZ]T[Z[`@Mb@Mh@Q|@GbC?nBVvBt@vAx@tAjAvAzAPTz@tApAvBf@|@rGfLz@~AhAvBPb@J\\F\\DZ@b@C\\?^D\\FVJNLFV`APdAHnAFrA@tA@pADpAJlCJlAJhALxAPtAPhA\\hBRx@f@`Bd@lArA~CpA|BDJ@L@TAX@ZKf@a@fBu@~Bg@~ACHGJOTA?GBCFEHALANGZIZI^Kn@G\\Mr@g@`DYfBW`BKj@EXX\\@EH]HL^j@@@B@BAFU@_@"
+    },
+    {
+      "from": "mosfellsb-r",
+      "to": "keflavik-vliegveld",
+      "key": "64.1667,-21.6989;63.985,-22.6267",
+      "km": 60.9,
+      "minutes": 60,
+      "polyline": "_ssfKramcCA^GTC@CAAA_@k@IMI\\ADY]DYJk@VaBXgBf@aDLs@F]^y@JQHGB@D@FADGDMBQ?I?KJq@BKx@oChA_DFGDEHCHDJ@TZP`@Pj@Pl@RfANfARbBPpBPhCHtBDvBBbCAfFEjEIdEKrE]nKIhBETG^KFGLGPEXA\\@\\BVDR@t@?r@A|EA~B@dBH`CPdD\\lDRrATxAbAnFp@lDx@lDr@fC`@lAh@lArA|BpC~CrA|A~BlCd@p@HL`@v@r@jBl@xBl@hCXzARz@`@zAp@`CFVBN@T?XARAZBZDVFPJLJDJNJTJ\\v@dDx@nCjAjEhDpMpCzJn@xBz@fCrAtDp@`BbA|BrA|C`@`AL`@DTDZBd@@R@PBVFRHLJDF@DARLPLn@j@l@p@b@l@t@hAfG`L`H`MxCnGpBtEjBbFbCpGjDbKjBrEfDbI|BnDbCxD~DvEtDhDtErCxBlAnBn@RFNJPP?PBRBNFPHLHFH@FCFCT?TBb@HxAn@rAf@vA|@tExCv@t@j@d@`Az@lA`A|C`DhArAn@v@vB~CvBlD`AlBbA~Bz@nBj@|A`CzHJ^rEzOnFfStBfH~BvIn@bCl@rC`@pBp@zDh@fDd@jD^bDf@pE\\nDJ~Ab@|FV|E@n@RbGJpCF~DDdC@nC?|CJzT@vCD~IFvOBpF@hDDhUL|S@|GJp[FjOBjEDzMDlMB`DLx\\@hJ?`GI`LIpGG~CGnDMzDS~GKjCOjDo@`M[hFe@rGa@lFW|Ca@pBUv@Q\\WRQDQESMOYWe@Oc@Gc@Eg@?k@Bg@Ha@J[PYHKX[fCk@rFmArEoAvD_ApF_Bv@UhAa@NGz@c@tBsA|GwEf@_@f@[vBwAhAs@rBaAh@U~Be@t@G~@?`ABzB^pLbCxCdAfBv@|CjCpBbCVVPRV\\`AdBdA`CZbAvAlEx@hD|@`EnA|I^vDZhEXtELbDPzDJvFDfCf@xRTlIPnELbCh@jIb@fE`@|Db@hDt@vEbAvFvAlG~BtIjCtIRp@p@hBn@dBnCxGtA`D`AlBvArCzA~C~A~CbAhBbBrCvBjDnCzD`C~C|CpDdBrB~CxCv@|@zAhAv@j@n@d@l@Z`@Vn@VXNf@TjBt@l@Nh@N`@Df@FrBX|BR|DHzABtAJn@H|@PbAPtBp@hA\\dB`AdAz@`AhAbAvA~@dBv@xA\\t@^x@v@jB~@jCx@hC\\lAVpAZnAl@dChBdIzApGp@dD|B|LvAvHnBfLfAjH^|BrBbNj@fEb@pDd@rDf@fEVbCPxAZ|CN|AL~AL~AL`BLfBTrEN|DJzD@|AFpJ@|@?z@BxBHdJF`EBzA?HD`AN`EPlCTlCRpBTpBh@jEPpA^pCr@|EFd@Jx@LExDw@hDu@tIkBt@OxLeCdAQZ?BNDJFHFFF@FAJKHQ^QFEp@[VCVAl@Bn@HbANbAVlHrArItBxAd@b@TZPbAdAZ^V`@LRNV^t@Zz@X|@Lb@Jb@T`ARdANdALfAJhALpAHvAZ~Gf@tJLrBDv@Fv@VvCTvBVbCzBfRlBnPV`CT`CtDdd@l@pHFx@Fp@~ArRvA~Q\\~Dr@pIb@|E`ArJ\\rD|@rKr@lK^zFjBbVhEnh@RnCtBfXtAfPt@jJp@dIfB|PfBxN~@bHt@fFx@rF`AzFdA`GjA`GhCjMrCbOjH|^hGl[`C`M|AhIh@jCnApHzAzK|@xHx@|Ht@|IJnAf@~Gd@zHd@~Id@tKj@jN|Aj^@^h@xN`@bKb@xJP~CJdBT~Cb@dEd@tDd@xCf@xBl@jCl@~BvAlExBnG\\~@j@hBj@fBl@|B`@hB`@bBVlAPdAZvBXvBj@bEp@vGt@zGB^ZlCTjBVpBn@vETjARnAp@rDb@vBd@rBfAdFpArF`DxMpAtF~A|G|@bFh@~Cf@jD`@`Dd@~E^`FRpDT|D\\tGf@xJ^tHb@vIXlFVbFf@lIThDXpD\\vDj@dF^pCd@~C\\tB`AbFv@zDdA|Ev@dDt@xCjBvHt@`DtA|G|@rEv@jEv@bFn@rEhAvIt@hIv@dJn@vIp@~Lf@hLfA`YlBpe@nBxe@|Ah`@TnFTvEZtEVzC^`Dl@jEn@nDj@pCl@`Cr@dCz@jCt@fBx@hBzAhCzAdCjAxBr@vAh@hAh@nAf@lAp@nBl@tBn@~Bx@rDb@zBh@bDl@~Dt@nFfEb\\lC~TvCjU~C|UnC`TThBbCxRfDjWtAvKzB`QtAnKlBrO|Db]t@vHvA~NnAvNhAtNdA~NxDlm@`Cr`@hApQ^zF^tFz@xKd@vFf@xF|@`J|@zI`ApIt@fGz@`H`AdHbB`L~D`V|DrTzD~SxD`TpDnTxAdJj@xDl@`EhBpMzBlP`BhMnBnO`AnHvAzKhAnInA~I|AjKfAnHzDvVvC~PnLvt@xEtYnB~LbBbKtCjQpCbQ`DzRfExVxAlIv@bErAxG\\`BdAlF|@bE~AbHjAvEx@jDr@tCzAnGpDzNtBlItAjG|@`Ev@vDjAdGbA|FrAdIrArJpA`K~@nI|@rI|@rI|@zInBpRnBzR|@~Jx@dKb@tG\\`GTnDPjDRhFZ~HXtJ^rMb@~Ml@~R|@nZP|FZlId@xMp@zULrEJ~EJpGDzFD`QDfQF`Y@lF?x@AzHEhFKhFOxFQhFSlEW|Da@pF_@hFk@vHm@rIk@pHm@dI{@nL_@lFqAvPUvCe@`He@|FO`Cu@pJ[hFKbAoCr^k@fJ_@pFQdDa@dIi@jLaKn{BkAvVWjGi@`M}@rRg@`LsCxm@iB~_@y@hQMzCK~COtFIpBO~@Sh@IJGNEVCX?Z@P@vAGdBYjF_@vG]nF[pDa@nDg@lDu@hE{@fEu@vCu@xCu@nBy@pBeBfD{FjJaMdSy@v@wAjBe@x@Yr@[t@Q^EFEFQFICG@GDGJENCNKh@IXWz@k@|AcBdGcAfF_@rAq@pBu@nBwAbDmEfJiBtDsDpGuCzEoC~DaOfTQNYX]f@_@h@Yj@S`@IPEDEBG@MCGGKCG?IFGHGLERCTOd@IRIPYf@m@~@q@dAMVKTiBpCoCpEy@tAgB~CkBjDyBdEeG`MkAxCaAnB_@l@YTOGOBKLKXE\\O`AQr@iAxD_CbGmCnHyCzI{BhI_B|Gy@jDuAxEc@pA]pAY`AQ^Kb@W|@GXILGDG@EEIAGBIHENAFCR?T@RBPDHJpAFv@JfABh@DjBBhA?nACzBKnHAvB@pB@bBDxBDhBHpBTpErAhVlAvRjAnSv@dMPhCNvAPxANbARdAT~@Zz@f@|@`@j@XTTNPHRFLBL@V@AzFArA@jB?zF?bA?zE?T@N@LBJDHDBF?F@xBAT?pBAxAA`B?R?N?vCANVHZHh@Hf@Hr@?NA|@Al@W~DAf@Aj@@jC?vA?pE?fF?dA?P?bJlC@lIC`ECj@AF?B{d@"
+    }
+  ]
+}

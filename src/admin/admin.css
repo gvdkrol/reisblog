@@ -312,8 +312,8 @@ button.cover:hover .cover-edit, button.cover:focus-visible .cover-edit { opacity
 .dropzone .hint { display: block; margin: 2px 0 0; }
 .dropzone.busy { opacity: 0.6; pointer-events: none; }
 .stop-actions { display: flex; justify-content: space-between; margin-top: 12px; }
-.stop-draft { margin: 0 0 12px; }
-.stop-draft .hint { padding-left: 0; width: auto; }
+.stop-draft, .stop-straight { margin: 0 0 12px; }
+.stop-draft .hint, .stop-straight .hint { padding-left: 0; width: auto; }
 .draft-flag { font-style: normal; color: #8a5a00; font-weight: 600; }
 .via-hint { margin: 0 0 8px; }
 .badge.via { width: 12px; height: 12px; margin: 0 6px; background: #dc2626; border: 2px solid #fff; box-shadow: 0 0 0 1px #dc2626; }

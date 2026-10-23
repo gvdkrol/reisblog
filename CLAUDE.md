@@ -21,6 +21,7 @@ Aanwijzingen voor Claude bij het werken aan deze repo. Gebruik en bediening staa
 - `scripts/routing.mjs`: OSRM-routes per traject, gecachet op `key` = `"lat,lng;lat,lng"`. Trajecten met `flight: true` blijven altijd staan, ook bij `npm run route` (dat rekent verder alles opnieuw).
 - `src/panel.js` is gedeeld door site en editor-voorbeeld; `src/stops.js` bepaalt via-punten en fietstochten (die liggen naast de route met een eigen `track`).
 - Stop-types: `camping`, `hotel`, `haven`, `bezienswaardigheid`, `eten`, `activiteit`, `highlight`, `fietstocht`, `via` (`overnachting` is een alias van `camping`).
+- Knop "Foto's op Flickr" op de reispagina (`src/flickr-gallery.js`): toont de openbare Flickr-foto's uit het tijdvak van de reis, rechtstreeks van Flickr (niet gedownload). De lijst staat per reis in `content/trips/<slug>/flickr.json`, gemaakt met `npm run flickr -- [slug]` (lokaal, met de sleutel uit `.env.local`; de build in GitHub Actions heeft geen sleutel). De bedieningsapp ververst de lijsten automatisch op de achtergrond na "Starten" van de dev-omgeving; `flickr.json` meecommitten.
 - `tools/launcher/`: bedieningsapp op http://localhost:5170 (start/stop dev, commit en push).
 
 ## Een reis maken van de blog + Google My Maps

@@ -1,6 +1,6 @@
 import '../style.css';
 import './admin.css';
-import { createMap, stopType, STOP_TYPES, decodePolyline, isVia, onRoute, L } from '../map.js';
+import { createMap, legStyle, stopType, STOP_TYPES, decodePolyline, isVia, onRoute, L } from '../map.js';
 import { legInto } from '../stops.js';
 import { slugify } from '../slugify.js';
 import { formatDate, formatRange, formatKm, formatDuration, formatLeg, escapeHtml as esc } from '../format.js';
@@ -241,6 +241,7 @@ function formHtml(s) {
         <label>Type<select data-field="type">${types}</select></label>
       </div>
       <label class="check stop-draft"><input type="checkbox" data-field="draft" ${s.draft ? 'checked' : ''} /> Concept<span class="hint">deze stop wordt niet gepubliceerd; de route loopt er gewoon langs</span></label>
+      <label class="check stop-straight"><input type="checkbox" data-field="straight" ${s.straight ? 'checked' : ''} /> Volg niet de weg<span class="hint">de route naar deze stop is een rechte lijn, bijv. een boottocht of een stuk door het terrein</span></label>
       ${isVia(s) ? `<p class="hint via-hint">Een via-punt is op de site alleen een klein rood stipje op de route (naam bij aanwijzen). Verhaal en foto's worden niet getoond.</p>` : `
       <label>Verhaal <span class="hint">**vet**, *schuin*, lege regel = nieuwe alinea</span>
         <textarea data-field="text" rows="7">${esc(s.text)}</textarea></label>
@@ -677,6 +678,7 @@ list.addEventListener('input', (e) => {
       if (e.target.checked) stop[field] = true;
       else delete stop[field];
     } else stop[field] = e.target.value;
+    if (field === 'straight') renderMap();
     if (field === 'type') {
       renderStops(); // via-punten hebben een korter formulier en tellen niet mee in de nummering
       renderMap();
@@ -945,8 +947,13 @@ function renderMap() {
     const b = route[i + 1];
     if (!b) return;
     const leg = legs.get(legKey(a, b));
-    if (leg?.polyline) {
-      L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', weight: leg.flight ? 2.5 : 5, opacity: 0.85, dashArray: leg.flight ? '1 9' : null, lineCap: 'round' })
+    if (b.straight && !leg?.flight) {
+      // rechte lijn; afstand pas na opslaan bekend als het vinkje net is gezet
+      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: '#c2410c', opacity: 0.85, lineCap: 'round', ...legStyle({ straight: true }) })
+        .bindTooltip(leg?.straight ? formatLeg(leg) : 'Rechte lijn (afstand na opslaan)', { sticky: true })
+        .addTo(routeLayer);
+    } else if (leg?.polyline && !leg.straight) {
+      L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', opacity: 0.85, lineCap: 'round', ...legStyle(leg) })
         .bindTooltip(formatLeg(leg), { sticky: true })
         .addTo(routeLayer);
     } else {

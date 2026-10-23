@@ -3,6 +3,7 @@
 // ongewijzigde trajecten bij opnieuw opslaan niet opnieuw berekend hoeven te worden.
 
 import { onRoute } from '../src/stops.js';
+import { encodePolyline } from '../src/polyline.js';
 
 const OSRM = 'https://router.project-osrm.org/route/v1';
 
@@ -25,10 +26,26 @@ export async function routeLeg(profile, a, b) {
   };
 }
 
+// Traject in een rechte lijn, voor een stop met `straight: true` ("volg niet de weg"),
+// bijv. een boottocht of een stuk door het terrein. Afstand hemelsbreed, zonder reistijd.
+export function straightLeg(a, b) {
+  const rad = (d) => (d * Math.PI) / 180;
+  const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lng - a.lng) / 2) ** 2;
+  return {
+    from: a.id,
+    to: b.id,
+    key: legKey(a, b),
+    km: Math.round(12742 * Math.asin(Math.sqrt(h)) * 10) / 10,
+    straight: true,
+    polyline: encodePolyline([[a.lat, a.lng], [b.lat, b.lng]]),
+  };
+}
+
 // Geeft { legs, warnings }. Een traject dat niet berekend kan worden, wordt
 // zonder geometrie opgeslagen (de viewer tekent dan een gestippelde rechte lijn).
 // Vluchttrajecten (flight: true) blijven altijd staan, ook met `force`, zolang
-// begin en eind niet verplaatst zijn; die gaan niet over de weg.
+// begin en eind niet verplaatst zijn; die gaan niet over de weg. Naar een stop met
+// `straight: true` loopt altijd een rechte lijn.
 export async function routeLegs(trip, { force = false } = {}) {
   const profile = trip.profile || 'driving';
   const cache = new Map((trip.legs || []).filter((l) => l.key && (l.polyline || l.flight)).map((l) => [l.key, l]));
@@ -40,7 +57,11 @@ export async function routeLegs(trip, { force = false } = {}) {
     const a = route[i];
     const b = route[i + 1];
     const hit = cache.get(legKey(a, b));
-    const cached = hit && (!force || hit.flight) ? hit : null;
+    if (b.straight && !hit?.flight) {
+      legs.push(straightLeg(a, b));
+      continue;
+    }
+    const cached = hit && !hit.straight && (!force || hit.flight) ? hit : null;
     if (cached) {
       legs.push({ ...cached, from: a.id, to: b.id });
       continue;
