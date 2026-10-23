@@ -2,7 +2,7 @@
   "title": "Verenigde Arabische Emiraten 2018",
   "slug": "verenigde-arabische-emiraten-2018",
   "summary": "Van 27 december tot 12 januari 2019.",
-  "cover": "",
+  "cover": "photos/dubai-flickr-44699312750.jpg",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -14,7 +14,13 @@
       "date": "2018-12-28",
       "type": "hotel",
       "text": "5 nachten, 28 december – 2 januari.",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/dubai-flickr-44699312750.jpg",
+          "caption": "Burj Khalifa",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/44699312750/"
+        }
+      ],
       "articles": []
     },
     {

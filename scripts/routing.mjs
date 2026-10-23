@@ -27,9 +27,11 @@ export async function routeLeg(profile, a, b) {
 
 // Geeft { legs, warnings }. Een traject dat niet berekend kan worden, wordt
 // zonder geometrie opgeslagen (de viewer tekent dan een gestippelde rechte lijn).
+// Vluchttrajecten (flight: true) blijven altijd staan, ook met `force`, zolang
+// begin en eind niet verplaatst zijn; die gaan niet over de weg.
 export async function routeLegs(trip, { force = false } = {}) {
   const profile = trip.profile || 'driving';
-  const cache = new Map((trip.legs || []).filter((l) => l.key && l.polyline).map((l) => [l.key, l]));
+  const cache = new Map((trip.legs || []).filter((l) => l.key && (l.polyline || l.flight)).map((l) => [l.key, l]));
   const legs = [];
   const warnings = [];
 
@@ -37,7 +39,8 @@ export async function routeLegs(trip, { force = false } = {}) {
   for (let i = 0; i < route.length - 1; i++) {
     const a = route[i];
     const b = route[i + 1];
-    const cached = !force && cache.get(legKey(a, b));
+    const hit = cache.get(legKey(a, b));
+    const cached = hit && (!force || hit.flight) ? hit : null;
     if (cached) {
       legs.push({ ...cached, from: a.id, to: b.id });
       continue;

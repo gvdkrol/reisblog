@@ -16,7 +16,8 @@ async function routeTrip(slug) {
   const trip = JSON.parse(await readFile(file, 'utf8'));
   const { legs, warnings } = await routeLegs(trip, { force: true });
   for (const leg of legs) {
-    console.log(`  ${leg.from} → ${leg.to}: ${leg.polyline ? `${leg.km} km, ${leg.minutes} min` : 'geen route'}`);
+    const info = leg.flight ? `vlucht, ${leg.km} km (ongewijzigd)` : leg.polyline ? `${leg.km} km, ${leg.minutes} min` : 'geen route';
+    console.log(`  ${leg.from} → ${leg.to}: ${info}`);
   }
   warnings.forEach((w) => console.warn(`  ⚠ ${w}`));
   trip.legs = legs;
