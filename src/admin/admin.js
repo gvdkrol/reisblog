@@ -949,11 +949,11 @@ function renderMap() {
     const leg = legs.get(legKey(a, b));
     if (b.straight && !leg?.flight) {
       // rechte lijn; afstand pas na opslaan bekend als het vinkje net is gezet
-      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: '#c2410c', opacity: 0.85, lineCap: 'round', ...legStyle({ straight: true }) })
+      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { color: '#a95558', opacity: 0.85, lineCap: 'round', ...legStyle({ straight: true }) })
         .bindTooltip(leg?.straight ? formatLeg(leg) : 'Rechte lijn (afstand na opslaan)', { sticky: true })
         .addTo(routeLayer);
     } else if (leg?.polyline && !leg.straight) {
-      L.polyline(decodePolyline(leg.polyline), { color: '#c2410c', opacity: 0.85, lineCap: 'round', ...legStyle(leg) })
+      L.polyline(decodePolyline(leg.polyline), { color: '#a95558', opacity: 0.85, lineCap: 'round', ...legStyle(leg) })
         .bindTooltip(formatLeg(leg), { sticky: true })
         .addTo(routeLayer);
     } else {

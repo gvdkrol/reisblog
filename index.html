@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reisblog</title>
+    <title>routes.rondjewereld.nl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" />
+    <link rel="icon" type="image/png" href="./src/img/favicon.png" />
   </head>
   <body>
+    <header class="site-bar">
+      <div class="wrap">
+        <a class="site-logo" href="./"><img src="./src/img/logo-rw.png" alt="Rondjewereld.nl" width="206" height="36" /></a>
+        <a class="site-ext" href="https://rondjewereld.nl/" target="_blank" rel="noopener">rondjewereld.nl <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
     <div class="wrap">
       <header class="site-header" id="site-header"></header>
       <div class="kpis" id="kpis"></div>
 
       <main>
+        <div class="decades" id="decades" aria-label="Filter op periode"></div>
         <div id="overview-map" class="overview-map"></div>
-        <div class="filters">
-          <div class="filter-buttons" id="decades" aria-label="Filter op periode"></div>
-          <div class="filter-buttons" id="continents" aria-label="Filter op continent"></div>
-        </div>
-        <div class="section-title"><h2>Reizen</h2><span id="trip-count"></span></div>
+        <div class="filter-buttons" id="continents" aria-label="Filter op continent"></div>
+        <p class="trip-count" id="trip-count"></p>
         <div id="trips" class="trip-grid"></div>
         <section id="links" hidden></section>
       </main>

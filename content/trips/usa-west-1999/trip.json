@@ -2,7 +2,7 @@
   "title": "USA West 1999",
   "slug": "usa-west-1999",
   "summary": "",
-  "cover": "",
+  "cover": "photos/san-francisco-mvnpgx5eome.webp",
   "draft": false,
   "profile": "driving",
   "stops": [
@@ -14,7 +14,12 @@
       "date": "1999-08-01",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
+      "photos": [
+        {
+          "src": "photos/san-francisco-mvnpgx5eome.webp",
+          "caption": ""
+        }
+      ],
       "articles": []
     },
     {

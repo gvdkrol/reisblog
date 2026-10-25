@@ -4,6 +4,7 @@ import { createMap, legLatLngs, legStyle, stopType, isVia, decodePolyline, L } f
 import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
 import { stopPanelHtml, bindPanelPhotos, captionHtml } from './panel.js';
 import { createFlickrGallery, toFlickrData, flickrThumbHtml, lockBrokenThumbs } from './flickr-gallery.js';
+import logoUrl from './img/logo-rw.png';
 
 const params = new URLSearchParams(location.search);
 const embed = params.has('embed');
@@ -20,11 +21,14 @@ if (!trip) {
   throw new Error('Reis niet gevonden');
 }
 
-document.title = `${trip.title} · Reisblog`;
+document.title = `${trip.title} · routes.rondjewereld.nl`;
 
 // ---------- Infokaart linksboven ----------
 $('trip-info').innerHTML = `
-  <a class="back" href="./${embed ? '?embed=1' : ''}">← Alle reizen</a>
+  <div class="top">
+    <a class="site-logo" href="./${embed ? '?embed=1' : ''}"><img src="${logoUrl}" alt="Rondjewereld.nl" width="149" height="26" /></a>
+    <a class="back" href="./${embed ? '?embed=1' : ''}">← Alle reizen</a>
+  </div>
   <h1>${escapeHtml(trip.title)}</h1>
   <div class="dates">${formatRange(trip.startDate, trip.endDate)}</div>
   <div class="stats">
@@ -52,7 +56,7 @@ $('flickr-btn').addEventListener('click', () => flickrGallery.open());
 const map = createMap('map');
 const legLayers = legLatLngs(trip).map(({ leg, to, latlngs, routed }) => {
   const style = legStyle(leg, routed);
-  const line = L.polyline(latlngs, { color: '#c2410c', opacity: 0.85, lineCap: 'round', ...style }).addTo(map);
+  const line = L.polyline(latlngs, { color: '#a95558', opacity: 0.85, lineCap: 'round', ...style }).addTo(map);
   if (leg?.polyline) line.bindTooltip(formatLeg(leg), { sticky: true, className: 'leg-tip' });
   return { line, to, base: style.weight };
 });

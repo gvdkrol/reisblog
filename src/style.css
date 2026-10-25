@@ -1,21 +1,22 @@
-/* Stijl afgeleid van gvdkrol.github.io/route-the-americas */
 :root {
-  --bg: #f5f2ec;
+  /* Kleuren en letters van rondjewereld.nl (WordPress-thema Apostrophe 2) */
+  --bg: #f3f1ee;
   --surface: #ffffff;
-  --soft: #f1ede5;
-  --text: #1c1917;
-  --muted: #57534e;
-  --faint: #a8a29e;
-  --line: #e7e2d9;
-  --accent: #c2410c;
-  --route: #c2410c;
-  --shadow: 0 1px 2px rgba(28, 25, 23, 0.04), 0 8px 24px -12px rgba(28, 25, 23, 0.12);
-  --shadow-lg: 0 2px 4px rgba(28, 25, 23, 0.05), 0 18px 40px -16px rgba(28, 25, 23, 0.25);
-  --radius: 18px;
+  --soft: #eeeae7;
+  --text: #1d2627;
+  --muted: #565d5e;
+  --faint: #9a9fa0;
+  --line: #e2dedb;
+  --brand: #002528;
+  --accent: #7e5f6a;
+  --route: #a95558;
+  --shadow: 0 1px 2px rgba(0, 37, 40, 0.05), 0 8px 24px -12px rgba(0, 37, 40, 0.16);
+  --shadow-lg: 0 2px 4px rgba(0, 37, 40, 0.06), 0 18px 40px -16px rgba(0, 37, 40, 0.3);
+  --radius: 14px;
   --gutter: clamp(16px, 3.5vw, 44px);
   --page: 1180px;
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --serif: 'Fraunces', Georgia, serif;
+  --font: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --serif: 'PT Serif', Georgia, serif;
   /* Zijpaneel: zo breed als een tekstregel (68ch + marge), maar er blijft altijd een stuk kaart zichtbaar. */
   --panel-w: clamp(440px, calc(100vw - 360px), 780px);
 }
@@ -46,7 +47,28 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ---------- Overzicht ---------- */
 .wrap { max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter); }
 
-.site-header { padding-top: clamp(18px, 3vw, 28px); }
+/* Balk met logo en link naar rondjewereld.nl */
+.site-bar { background: var(--surface); border-bottom: 3px solid var(--brand); }
+.site-bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.site-logo img { display: block; height: 36px; width: auto; }
+.site-ext {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--brand);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.site-ext:hover { background: var(--brand); border-color: var(--brand); color: #fff; }
+.embed .site-bar, .embed .site-ext-float { display: none; }
+@media (max-width: 480px) {
+  .site-logo img { height: 28px; }
+  .site-ext { padding: 5px 10px; font-size: 0.82rem; }
+}
+
+.site-header { padding-top: clamp(16px, 2.5vw, 24px); }
 .site-header h1 {
   font: 700 clamp(1.9rem, 4.5vw, 2.6rem)/1 var(--serif);
   letter-spacing: -0.025em;
@@ -74,16 +96,61 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .overview-map {
   height: 60vh; /* voorlopig; overview.js rekent de echte hoogte uit */
-  margin-top: 20px;
+  margin-top: 8px;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
 }
 
-/* Filterknoppen onder de overzichtskaart: periode en continent */
-.filters { display: grid; gap: 8px; margin-top: 14px; }
-.filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+/* Periodefilter boven de overzichtskaart: tekstknoppen over de volle breedte */
+.decades { display: flex; margin-top: 18px; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+.decades button {
+  flex: 1;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: none;
+  padding: 8px 6px 7px;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.decades button span { margin-left: 7px; font-weight: 400; font-size: 0.82rem; color: var(--faint); }
+.decades button:hover { color: var(--text); }
+.decades button[aria-pressed='true'] { color: var(--accent); border-bottom-color: var(--accent); }
+@media (max-width: 600px) {
+  .decades button { display: flex; flex-direction: column; align-items: center; font-size: 0.92rem; padding: 6px 4px; }
+  .decades button span { margin-left: 0; font-size: 0.72rem; }
+}
+
+/* Pop-up met een reis op de overzichtskaart */
+.trip-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
+.trip-popup .leaflet-popup-content { margin: 0; width: 270px !important; font: 15px/1.45 var(--font); color: var(--text); }
+.trip-pop img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--soft); }
+.trip-pop .body { padding: 12px 14px 14px; }
+.trip-pop h3 { font: 700 1.1rem/1.2 var(--serif); margin: 0 0 2px; }
+.trip-pop .dates { color: var(--muted); font-size: 0.8rem; }
+.trip-pop .summary { margin: 6px 0 10px; color: var(--muted); font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.trip-pop .stats { margin-top: 8px; }
+.trip-pop .open {
+  display: block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.trip-pop .open:hover { background: var(--accent); }
+.trip-popup a.leaflet-popup-close-button { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); font-size: 22px; }
+
+/* Continentknoppen onder de overzichtskaart */
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .filter-buttons button {
   flex: 1 1 96px;
   display: flex;
@@ -100,13 +167,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .filter-buttons button span { font-weight: 500; font-size: 0.76rem; color: var(--muted); }
 .filter-buttons button:hover { border-color: var(--accent); }
-.filter-buttons button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filter-buttons button[aria-pressed='true'] { background: var(--brand); border-color: var(--brand); color: #fff; }
 .filter-buttons button[aria-pressed='true'] span { color: rgba(255, 255, 255, 0.85); }
 .filter-buttons button:first-child { justify-content: center; }
 @media (max-width: 600px) {
   .filter-buttons button { flex-basis: 100px; padding: 7px 8px 6px; font-size: 0.85rem; }
 }
 .empty { color: var(--muted); }
+.trip-count { margin: 28px 0 14px; color: var(--muted); font-size: 0.9rem; }
+.trip-count:empty { display: none; }
 
 .section-title {
   display: flex;
@@ -169,7 +238,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   place-items: center;
   font: 700 2.6rem var(--serif);
   color: var(--accent);
-  background: linear-gradient(135deg, var(--soft), #ece4d6);
+  background: linear-gradient(135deg, var(--soft), #e4dbde);
 }
 .link-card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
 .link-card h3 { font: 600 1.15rem/1.2 var(--serif); margin: 0 0 4px; }
@@ -204,12 +273,18 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .trip-card-float .start {
   margin-top: 12px;
   border: 0;
-  background: var(--text);
+  background: var(--brand);
   color: #fff;
   padding: 8px 14px;
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.9rem;
+}
+.trip-card-float .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.trip-card-float .site-logo img { height: 26px; }
+.site-ext-float { position: absolute; top: 16px; right: 16px; z-index: 500; background: var(--surface); box-shadow: var(--shadow); }
+@media (max-width: 600px) {
+  .site-ext-float { top: auto; bottom: 28px; right: 12px; }
 }
 .embed .trip-card-float .back { display: none; }
 .trip-card-float .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
@@ -397,7 +472,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .panel-thumbs img.current, .panel-thumbs img:hover { opacity: 1; outline: 2px solid var(--accent); outline-offset: 1px; }
 .caption { padding: 8px 28px 0; font-size: 0.9rem; color: var(--muted); }
 .caption a, .lb-caption a { color: var(--accent); font-weight: 600; text-decoration: none; }
-.lb-caption a { color: #fdba74; }
+.lb-caption a { color: #e8c5c7; }
 .caption a:hover, .lb-caption a:hover { text-decoration: underline; }
 .panel-body { padding: 20px 28px 32px; }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--muted); }
@@ -499,7 +574,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.panel-nav button.next { text-align: right; align-items: flex-end; background: var(--text); color: #fff; }
+.panel-nav button.next { text-align: right; align-items: flex-end; background: var(--brand); color: #fff; }
 .panel-nav button:hover:not(:disabled) { transform: translateY(-1px); }
 .panel-nav button.prev:hover:not(:disabled) { background: var(--soft); }
 .panel-nav button.next:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }

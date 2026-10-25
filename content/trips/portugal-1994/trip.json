@@ -1,0 +1,63 @@
+{
+  "title": "Portugal 1994",
+  "slug": "portugal-1994",
+  "summary": "",
+  "cover": "photos/faro-flickr-11501420856.jpg",
+  "draft": false,
+  "profile": "driving",
+  "stops": [
+    {
+      "id": "portimao",
+      "name": "Portimão",
+      "lat": 37.13758,
+      "lng": -8.53684,
+      "date": "1994-10-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [],
+      "articles": []
+    },
+    {
+      "id": "faro",
+      "name": "Faro",
+      "lat": 37.01629,
+      "lng": -7.93518,
+      "date": "1994-10-01",
+      "type": "bezienswaardigheid",
+      "text": "",
+      "photos": [
+        {
+          "src": "photos/faro-flickr-11501445023.jpg",
+          "caption": "Portugal 1994",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501445023/"
+        },
+        {
+          "src": "photos/faro-flickr-11501420856.jpg",
+          "caption": "Portugal 1994",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501420856/"
+        },
+        {
+          "src": "photos/faro-flickr-11501384774.jpg",
+          "caption": "Portugal 1994",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501384774/"
+        },
+        {
+          "src": "photos/faro-flickr-11501384074.jpg",
+          "caption": "Portugal 1994",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501384074/"
+        }
+      ],
+      "articles": []
+    }
+  ],
+  "legs": [
+    {
+      "from": "portimao",
+      "to": "faro",
+      "key": "37.13758,-8.53684;37.01629,-7.93518",
+      "km": 69.9,
+      "minutes": 52,
+      "polyline": "_mtaFxkbs@??NTLTLV@BFB?JBJPx@`@jBBPQDcARM@O?PfBBPNxAFj@TvCXfDB\\?DF~@?LAd@ADIFKFCBc@Hs@Jc@DkALYAIAGEEKCGCEGCEAG?CBK?K?WA}@BILCR?NE`@GPC?EBEDADI@UDSBa@D}@J[BwAPQ@[B[BI@O@G?G?I@C?E?G@_@@u@DAH?rA?@@dE?NCRELCFADEDKHIFIDCAEAE?E@QSGGKIMK]Y_@[i@a@{B_ByBaByCwBkA}@WQa@WsA_A[SSQ]_@]Y{A{AmB_BoAeAGGQMIGa@Qg@MsAUa@K]Ig@So@Uo@Mi@OOEUGs@YiFoBmAe@y@Yq@Se@Ma@KYGOGQKMKCGCEEEECGAEAG@EBGDKBIB[CoCWaCYi@KYGm@U_@Oe@SkAe@aBs@qCqAgAk@iFuCe@Wk@Yi@WeBs@WMSMSQMQCGCI?Q?[AUGQMMMGQAOD[JIBI?SAc@Kg@Mg@Oe@Om@Ue@Wy@g@eAq@{@m@wCoBuByAw@g@}@a@q@Uk@Oc@IICIEQ[CEEEKEMAKBKFMBOAOAMEg@Mk@Mm@Gy@Ew@?s@Dy@Lm@Nq@T}@b@{@h@w@h@k@b@a@To@\\o@Va@Nm@Rs@Nq@Fs@Fs@DoAB_ABgA?w@CiAGYEGCEGMSEQIQMMIEGAGCM?[GOMSYSa@_@m@]k@c@o@e@m@i@i@yAwAq@u@QUMSQ_@K]Kc@Gm@Ak@@e@Ba@Dm@j@eBZw@Xu@x@mB`BwDp@{Ap@uA|@oB|LgXv@gBh@iAl@qAjA{Bn@kA~@}Ap@cAv@gAr@aAx@_Ab@g@d@i@d@e@f@g@j@g@pAiA|@s@l@a@h@_@`Aq@pBkAvA}@xA}@TSj@a@f@_@j@i@x@w@x@}@v@aAr@eAb@o@`@q@\\q@\\q@\\u@Xu@f@qAb@uA^uAd@sBR}@j@qCzIec@nBmJrDuQnDcQhDwPt@sDVyAV{AT{AR}ATyBNaBF}@D{@HcBD_ADaBB}A@_BA{AA_BC_BGaBIyBc@oL}A{a@K_DE}AA}@?}@?{A@mABw@@i@FoAH{AL}AN}AR}AR{AVyAZ{AZwA\\uAb@uAn@oBp@mBhM{]vCiIl@_Bf@wA\\eA\\gAV}@T}@^aB`@kBp@kE^aDXaDNcCL_DJqEAwB?kACmAEeAEaAO_DOkBOkB}@oLq@{Ik@kH}AkSWoDGcAGeAI{AGkBCeAAqA@aBB_BD_BF{AJkBFy@JcAPsARyALy@Nw@XuAd@oBRy@Z_A`@kAd@kA^cAf@gAd@aAd@}@f@}@`@m@j@}@p@_AjB}BxBcCfCmCtByBxB_ChBoBtB{BfEmE~AeBrAuArB}Bx@aAf@k@b@k@d@o@r@cAt@iA`@q@p@kAn@mAl@mAl@qAh@oAh@sAf@sAb@uAb@sAd@_BPq@^_BXqAX{AX}AT}ARyAPaBP_BL_BJcBH_BFaBDaBD_B?aB?aBAaBEcBG}BI{AMkBSgCYmDk@_GU{BG}@IaAEaAE_AC}@A}A@gBBaBFwAD{@L}AJ}@LeAToALs@Ps@XuAd@{BX_BVcBNaARmBJ_BHyAD}AB}A?aBCaBEiAIuAIcAIaAK}@U{AW{A]yAS{@W{@eAmDy@oCm@sB]uA]yAS}@WyAUyAS{AQ}AMaBIaAE}@GeBEaBA_AAaA@_A@aA@_AB_AF_BFcAF}@H_AJ}@J_AL}@T}AXyAP}@ZwAT{@Ty@X}@b@sA|@kC`DqIzAcEp@qBp@uBp@eCXuAXoAZ}AL}@L}@JiANaBJqAHoAFoALuD?gCAsAKoCMsCAOGy@M}AY}CcAyJc@iEcDe[gB{Pe@oEqAmKuA_K]oC[mCQeBMwAO{BQqCIkCI}BCcCAeC?iCBwBD}BFoBFsB\\}JJaEHaDDqCDiNAsEGoE_@oUC{FB}CHaDJ}BNwC^yEf@wE|@yGj@{Dl@mEzCeTv@wGJoALuANcDLgEBaC?aCAuBGoBIsBMsB_@aFgB_Pe@_Ee@_EkByOkAcKQ_BYeC_@cFIcBG}ACqD@kBBoBTgG^qIN_FDgFCeFQaGQ}EIoCEmCCyBAeC@oA@wABmADiALeCNsBR{BZcC\\cCVyAX}At@cD^{A^qA^oA^mAf@aBn@kCRy@`@kBTgATgANaAXwBLiAR{BLaBL}BPqCBiA?wB?gAAuBCyAE_BG{AI_BKsBMeBMwA_Dsa@mCk]MmAMkAMcAOcA[mB]eBg@qBi@qBwAcE_BoDgFsJuB_EqBeEwA}CsA}C_BuD{AwD_CiFe@aA}@aBcBuCgCqDoCgDkB{BcBmB_AkAaAoAaCaDiAcBuAsBs@gAq@iAs@oAq@oAkBuCuCyDuAiBwAiBcBsBsDiEcK{L_CyC{AgBq@y@k@y@s@eA_@o@m@iAg@cA_@}@_@_AkAeDmEcMwA{Dq@qBe@_B[kAWoASmAQwAQ{AI{AG}AEcB?gBFkCLwBNcBVqBV_Bb@sBfAaFn@}Cl@uCp@qDlCcP\\qB`@aBPs@Tq@l@cBr@cBp@wA`@u@n@{@`AwAzBmCvBeCfDqDn@w@j@w@hA_B^m@b@s@l@mAd@cAb@eAz@yBtAuD~@aCzAsD|@yB`BqDfBsDzCiGvAwCh@uAd@qAt@qCl@oCd@}CLaAJeAPqCFkB@iB?eBCiBEyAI{AwCi\\uBsUs@aJK}AIcBKwCIiE?kE?cEByE?}CCyDI}FIyCOwES{DKuB[iEMmBIeBIyBA}@Ay@@gCDoBHiBJwANcBRgBNy@PiARaANu@Ru@b@{Ad@{Af@qA`@aAr@{At@wA~@wAp@}@r@}@x@cAl@y@z@gA`FcG~AgBV]`BsB`BqBvCoDpJkLnBgCbBaC~@wAz@{AnAcCh@kAl@wAtAaDjA_DtA{Dr@iBl@{Ah@iAd@gAh@cAjAyBjAiBjAeBd@k@d@i@zCoD`CsCrA_Bv@cAz@kAz@oAfAgBR]l@iAz@gBx@gBt@iBZu@p@oBn@oBj@qBh@{B`@iB`@oBx@_FrAoHb@uBb@uBz@qDh@sB|@gDl@sBj@oBdDiKrBwGdAiDfAiDl@oBj@oBz@mDb@uB^sBh@yDVyBR{BPwCNsDDcD@kCCiCEuBIyBM}BO{Ba@yFMqBG}AE{ACmA?gB@wAB}ADqAHsBLeBRmBTmBXiB\\qB`@mBdCuKbGkW|AyG|A{Gb@uBb@}B\\qBXqB\\}CJ{ALyAFyAF}@DwADiB@{BA{CEmCGcBGcB]sF_@eF[uEYeFY}DKeBIkAEwACgA?yA@iA@_@@cAD_AFgAFuAL{ATsBNaAXqAXoANu@Rw@`@uAn@yB`@mAZ}@ZcAPm@\\qAfAeEl@}Bv@kDv@gD\\cBj@wBn@{BV{@X{@n@eBl@}AhB}D|BeE~C}EpHeLrD}Fb@u@jAaBd@m@v@_A~@}@bAaAlA{@v@i@p@a@`JeFxKgG|KkGbCyAn@a@p@e@p@k@p@q@j@o@f@q@t@mAp@qAf@oAf@yAd@gBXcBXqBReCj@gIJsANuANsARqATuAToAXiA`@cBh@gBh@aBl@cB|D{JdAqCd@yAV{@XaA^{Af@uBd@yBj@sBTy@j@wAd@{@z@oAz@iAx@gAt@_Aj@m@x@q@bAu@|@a@p@_@n@Yr@Y^Sb@Uh@_@TQTUTSRUXYT[X_@Va@Va@Xm@Pc@L_@FQRi@Nk@Po@Nw@XoATkAPy@Pu@Rs@Po@Rk@Tm@Vo@Re@Vi@Vg@Xg@Xe@^k@f@s@zAqB`AqA`AsAv@cA~@kAp@_A`AuAz@gAnAcBnAeB`BwBx@gAb@g@b@g@^a@\\[`@]`@Y\\Wd@W`@Sj@Wd@Od@Md@Mj@Kf@Gj@Gb@C`@C`@?l@@d@Dl@Dd@Fj@Hr@LzEfAh@Jr@Rh@Jf@JTDx@Lf@Df@?n@Gf@In@S^Od@S|@a@lAg@h@Sf@Op@On@Il@Cn@Al@Gh@I`@M\\KXO|@a@xC_BrAo@fBu@lEeBh@U\\QLG^YXS\\WtD{CZY`@c@`@e@h@q@HIxAqBvDeFbB_CrCwDvAqB~@uAt@kAh@eA^s@fAuBjBoDr@sAxAuC\\o@xGkMnEwIZm@nD}GjG_K`DgFlE}GPY^i@h@w@f@k@b@c@d@_@j@_@v@c@n@_@p@]vC}A|@c@JCv@[x@S|@M~@IT?`@AbDGx@A|ACdAEr@CB?bAGH?fAK~@Mz@M|@Q~Dw@~Be@|A]vCm@bCcAnHqCrB{@z@Yz@U|@Qr@KpAGPA~@@fDTzB^tDR^?`@Af@Gf@On@UvAg@f@OvDuADAfFiBp@Yf@Wx@g@xB{A`Ao@bAm@JGVOLI|@k@bBgAZSNMZYDEJIFEFCNKJAPCRCPAHEJI\\a@b@y@HMNSDKJQNQRMXSXOv@e@VOVSt@o@rAgATSPILEB?PAZ?DBF?L?LEJIDGDK@KJEJMJIHCJGNOLOTW`@k@rBqCHMdDiEpBkCtBqCPSBEHGHIJ@HBRd@P`@@BZt@Vl@hD{Cl@i@l@k@h@e@n@|AHRFLd@_@LCJDJAFEh@c@FGFODOJcADOJa@DOl@eBVq@?AJYHUDK\\cARi@Pe@JWrAeCJ]J]@MBO?I?EAECECEEAEAE@C@EDCDGR???@@@??@@@@D@BBD@D???"
+    }
+  ]
+}

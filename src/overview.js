@@ -5,6 +5,7 @@ import { formatRange, formatKm, escapeHtml } from './format.js';
 import { CONTINENTS, continentOf } from './continents.js';
 
 const embed = new URLSearchParams(location.search).has('embed');
+if (embed) document.body.classList.add('embed');
 const tripUrl = (trip) => `trip.html?reis=${encodeURIComponent(trip.slug)}${embed ? '&embed=1' : ''}`;
 const num = new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 0 });
 
@@ -12,7 +13,7 @@ const num = new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 0 });
 const years = [...new Set(trips.flatMap((t) => [t.startDate, t.endDate]).filter(Boolean).map((d) => d.slice(0, 4)))].sort();
 const yearLabel = years.length > 1 ? `${years[0]}–${years.at(-1)}` : years[0] || '';
 
-document.title = home.title;
+document.title = home.eyebrow || home.title;
 document.getElementById('site-header').innerHTML = home.eyebrow || yearLabel
   ? `<div class="eyebrow">${escapeHtml([home.eyebrow, yearLabel].filter(Boolean).join(' · '))}</div>`
   : '';
@@ -123,6 +124,23 @@ function cardHtml(trip) {
     </a>`;
 }
 
+function popupHtml(trip) {
+  return `
+    <div class="trip-pop">
+      ${trip.coverSrc ? `<img src="${asset(trip, trip.coverSrc)}" alt="" />` : ''}
+      <div class="body">
+        <h3>${escapeHtml(trip.title)}</h3>
+        <div class="dates">${formatRange(trip.startDate, trip.endDate)}</div>
+        ${trip.summary ? `<p class="summary">${escapeHtml(trip.summary)}</p>` : ''}
+        <div class="stats">
+          <span class="stat">${trip.stopCount} stops</span>
+          ${trip.totalKm ? `<span class="stat">${formatKm(trip.totalKm)}</span>` : ''}
+        </div>
+        <a class="open" href="${tripUrl(trip)}">Reis bekijken →</a>
+      </div>
+    </div>`;
+}
+
 // ---------- Links ----------
 const links = home.links
   .map((link) => {
@@ -169,6 +187,32 @@ bounds = L.latLngBounds([]);
 // Grove routes uit een apart bestand, zodat de kaartjes hierboven daar niet op wachten.
 const routes = await loadRoutes();
 
+// Pop-up met de reis bij hoveren (op een touchscreen: bij tikken), met een knop naar de reis.
+const canHover = matchMedia('(hover: hover)').matches;
+const popup = L.popup({ className: 'trip-popup', maxWidth: 280, minWidth: 260, autoPan: !canHover, closeButton: !canHover, offset: [0, -6] });
+let popupTrip = null, popupOff = null, hideTimer;
+function showTripPopup(trip, latlng, highlight) {
+  clearTimeout(hideTimer);
+  if (popupTrip === trip && map.hasLayer(popup)) return;
+  popupOff?.(false);
+  popupTrip = trip;
+  popupOff = highlight;
+  popup.setLatLng(latlng).setContent(popupHtml(trip)).openOn(map);
+}
+function hideTripPopupSoon() {
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(() => map.closePopup(popup), 250);
+}
+popup.once('add', () => {
+  // Muis van de route naar de pop-up: open laten, zodat de knop bereikbaar is.
+  popup.getElement().addEventListener('mouseenter', () => clearTimeout(hideTimer));
+  popup.getElement().addEventListener('mouseleave', hideTripPopupSoon);
+});
+popup.on('remove', () => {
+  popupOff?.(false);
+  popupTrip = popupOff = null;
+});
+
 trips.forEach((trip, i) => {
   const color = colorOf(i);
   const group = L.featureGroup().addTo(map);
@@ -179,11 +223,15 @@ trips.forEach((trip, i) => {
     L.circleMarker(latlng, { radius: 5, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 }).addTo(group)
   );
 
+  const highlight = (on) => line?.setStyle(on ? { weight: 7, opacity: 1 } : { weight: 4, opacity: 0.9 });
   group
-    .bindTooltip(escapeHtml(trip.title), { sticky: true })
-    .on('click', () => (location.href = tripUrl(trip)))
-    .on('mouseover', () => (group.bringToFront(), line?.setStyle({ weight: 7, opacity: 1 })))
-    .on('mouseout', () => line?.setStyle({ weight: 4, opacity: 0.9 }));
+    .on('mouseover', (e) => {
+      group.bringToFront();
+      highlight(true);
+      if (canHover) showTripPopup(trip, e.latlng, highlight);
+    })
+    .on('mouseout', () => (canHover ? hideTripPopupSoon() : highlight(false)))
+    .on('click', (e) => (canHover ? (location.href = tripUrl(trip)) : showTripPopup(trip, e.latlng, highlight)));
   if (group.getLayers().length) bounds.extend(group.getBounds());
   tripLayers.push({ trip, group, points });
 });
