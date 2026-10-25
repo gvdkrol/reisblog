@@ -11,15 +11,11 @@ const num = new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 0 });
 // ---------- Kop ----------
 const years = [...new Set(trips.flatMap((t) => [t.startDate, t.endDate]).filter(Boolean).map((d) => d.slice(0, 4)))].sort();
 const yearLabel = years.length > 1 ? `${years[0]}–${years.at(-1)}` : years[0] || '';
-const words = home.title.trim().split(/\s+/);
-const lastWord = words.pop();
 
 document.title = home.title;
-document.getElementById('site-header').innerHTML = `
-  ${home.eyebrow || yearLabel ? `<div class="eyebrow">${escapeHtml([home.eyebrow, yearLabel].filter(Boolean).join(' · '))}</div>` : ''}
-  <h1>${words.length ? `${escapeHtml(words.join(' '))} ` : ''}<em>${escapeHtml(lastWord)}</em></h1>
-  ${home.subtitle ? `<p class="lede">${escapeHtml(home.subtitle)}</p>` : ''}
-`;
+document.getElementById('site-header').innerHTML = home.eyebrow || yearLabel
+  ? `<div class="eyebrow">${escapeHtml([home.eyebrow, yearLabel].filter(Boolean).join(' · '))}</div>`
+  : '';
 
 // ---------- Kerncijfers ----------
 const totalStops = trips.reduce((n, t) => n + t.stopCount, 0);
@@ -37,38 +33,54 @@ document.getElementById('kpis').innerHTML = [
   .map(([value, label]) => `<div class="kpi"><b>${value}</b><span>${label}</span></div>`)
   .join('');
 
-// ---------- Tabs: Home en de reizen per decennium ----------
+// ---------- Filters: periode (decennium) en continent ----------
 const decadeOf = (trip) => Math.floor(Number((trip.startDate || '').slice(0, 4)) / 10) * 10;
-const decadeLabel = (decade) => `${String(decade % 100).padStart(2, '0')}'s`;
 const found = trips.map(decadeOf).filter(Boolean);
 const decades = [];
-for (let d = Math.max(2020, ...found); d >= Math.min(1990, ...found); d -= 10) decades.push(d);
+for (let d = Math.max(...found); d >= Math.min(...found); d -= 10) decades.push(d);
+const filter = { decade: 0, continent: '' };
+const matches = (trip) =>
+  (!filter.decade || decadeOf(trip) === filter.decade) && (!filter.continent || trip.continentDays?.[filter.continent]);
+const newestFirst = [...trips].sort((a, b) => (b.startDate || '').localeCompare(a.startDate || ''));
+const plural = (n) => `${n} ${n === 1 ? 'reis' : 'reizen'}`;
+
+const decadesEl = document.getElementById('decades');
+decadesEl.innerHTML = [
+  `<button type="button" data-decade="" aria-pressed="true">Alle jaren<span>${plural(trips.length)}</span></button>`,
+  ...decades.map((d) => {
+    const count = trips.filter((t) => decadeOf(t) === d).length;
+    return `<button type="button" data-decade="${d}" aria-pressed="false">${d}–${d + 9}<span>${plural(count)}</span></button>`;
+  }),
+].join('');
+decadesEl.addEventListener('click', (e) => {
+  const button = e.target.closest('button');
+  if (!button) return;
+  decadesEl.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+  filter.decade = Number(button.dataset.decade) || 0;
+  applyFilter();
+});
+
 let map, bounds; // overzichtskaart (onderaan opgebouwd)
-const tripsIn = (decade) =>
-  trips.filter((t) => decadeOf(t) === decade).sort((a, b) => (b.startDate || '').localeCompare(a.startDate || ''));
+const tripLayers = []; // per reis: { trip, group, points }
 
-const tabs = [{ id: 'home', label: 'Home' }, ...decades.map((d) => ({ id: `${d % 100}s`.padStart(3, '0'), label: decadeLabel(d), decade: d }))];
-const tabsEl = document.getElementById('tabs');
-tabsEl.innerHTML = tabs
-  .map((tab) => {
-    const count = tab.decade ? tripsIn(tab.decade).length : trips.length;
-    return `<a role="tab" href="#${tab.id}" data-tab="${tab.id}">${escapeHtml(tab.label)}<span class="count">${count} ${count === 1 ? 'reis' : 'reizen'}</span></a>`;
-  })
-  .join('');
+// Reiskaarten, routes op de kaart en kaartuitsnede volgen het filter.
+function applyFilter() {
+  const list = newestFirst.filter(matches);
+  document.getElementById('trip-count').textContent = list.length ? `${plural(list.length)} · klik op een reis voor de kaart en de verhalen` : '';
+  document.getElementById('trips').innerHTML = list.length ? list.map(cardHtml).join('') : '<p class="empty">Geen reizen met dit filter.</p>';
+  if (!map) return;
 
-function showTab(id) {
-  const tab = tabs.find((t) => t.id === id) || tabs[0];
-  tabsEl.querySelectorAll('[role="tab"]').forEach((el) => el.setAttribute('aria-selected', String(el.dataset.tab === tab.id)));
-  document.getElementById('panel-home').hidden = !!tab.decade;
-  document.getElementById('panel-decade').hidden = !tab.decade;
-  if (tab.decade) {
-    const list = tripsIn(tab.decade);
-    document.getElementById('decade-title').textContent = `Reizen ${tab.decade}–${tab.decade + 9}`;
-    document.getElementById('trip-count').textContent = list.length
-      ? `${list.length} ${list.length === 1 ? 'reis' : 'reizen'} · klik op een reis voor de kaart en de verhalen`
-      : '';
-    document.getElementById('trips').innerHTML = list.length ? list.map(cardHtml).join('') : '<p class="empty">Nog geen reizen uit deze jaren.</p>';
-  } else if (map) fitMap(); // kaart was mogelijk verborgen
+  const view = L.latLngBounds([]);
+  tripLayers.forEach(({ trip, group, points }) => {
+    const show = matches(trip);
+    if (show !== map.hasLayer(group)) show ? group.addTo(map) : group.remove();
+    if (!show) return;
+    points
+      .filter(([lat, lng]) => !filter.continent || continentOf(lat, lng) === filter.continent)
+      .forEach((p) => view.extend(p));
+  });
+  if (!filter.decade && !filter.continent) map.flyToBounds(bounds, { padding: [MAP_PAD, MAP_PAD], duration: 0.8 });
+  else if (view.isValid()) map.flyToBounds(view, { padding: [40, 40], maxZoom: 7, duration: 0.8 });
 }
 
 // Hoogte van de kaart volgt uit de bestemmingen: de breedte van de kaart bepaalt de
@@ -91,9 +103,8 @@ function fitMap() {
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => map && !document.getElementById('panel-home').hidden && fitMap(), 150);
+  resizeTimer = setTimeout(() => map && fitMap(), 150);
 });
-window.addEventListener('hashchange', () => showTab(location.hash.slice(1)));
 
 // ---------- Reizen ----------
 function cardHtml(trip) {
@@ -150,30 +161,36 @@ if (links.length) {
 document.getElementById('site-footer').textContent = [home.eyebrow, yearLabel].filter(Boolean).join(' · ');
 
 // ---------- Overzichtskaart met alle routes ----------
-const colors = ['#c2410c', '#0f766e', '#7c3aed', '#b45309', '#15803d'];
-showTab(location.hash.slice(1));
+// Kleur per reis: tint telkens een 'gulden hoek' verder, zodat opeenvolgende (vaak naburige) reizen duidelijk verschillen.
+const colorOf = (i) => `hsl(${Math.round((i * 137.5) % 360)}, ${i % 2 ? 85 : 70}%, ${[38, 48, 30][i % 3]}%)`;
+applyFilter();
 map = createMap('overview-map', { tiles: 'gray', scrollWheelZoom: false, zoomSnap: 0.1 }); // fijne zoomstappen: kaart sluit precies aan
 bounds = L.latLngBounds([]);
 // Grove routes uit een apart bestand, zodat de kaartjes hierboven daar niet op wachten.
 const routes = await loadRoutes();
 
 trips.forEach((trip, i) => {
-  const color = colors[i % colors.length];
+  const color = colorOf(i);
   const group = L.featureGroup().addTo(map);
   const { route, points } = routes[trip.slug] || { route: '', points: [] };
 
-  if (route) L.polyline(decodePolyline(route), { color, weight: 4, opacity: 0.9 }).addTo(group);
+  const line = route ? L.polyline(decodePolyline(route), { color, weight: 4, opacity: 0.9 }).addTo(group) : null;
   points.forEach((latlng) =>
     L.circleMarker(latlng, { radius: 5, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 }).addTo(group)
   );
 
-  group.bindTooltip(escapeHtml(trip.title), { sticky: true }).on('click', () => (location.href = tripUrl(trip)));
+  group
+    .bindTooltip(escapeHtml(trip.title), { sticky: true })
+    .on('click', () => (location.href = tripUrl(trip)))
+    .on('mouseover', () => (group.bringToFront(), line?.setStyle({ weight: 7, opacity: 1 })))
+    .on('mouseout', () => line?.setStyle({ weight: 4, opacity: 0.9 }));
   if (group.getLayers().length) bounds.extend(group.getBounds());
+  tripLayers.push({ trip, group, points });
 });
 
 fitMap();
 
-// ---------- Continentknoppen: inzoomen op de bezochte plekken per continent ----------
+// ---------- Continentknoppen ----------
 const continentDays = {};
 trips.forEach((t) => Object.entries(t.continentDays || {}).forEach(([c, n]) => (continentDays[c] = (continentDays[c] || 0) + n)));
 const continentBounds = {};
@@ -192,7 +209,6 @@ continentsEl.addEventListener('click', (e) => {
   const button = e.target.closest('button');
   if (!button) return;
   continentsEl.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
-  const id = button.dataset.continent;
-  if (id) map.flyToBounds(continentBounds[id], { padding: [40, 40], maxZoom: 7, duration: 0.8 });
-  else map.flyToBounds(bounds, { padding: [30, 30], duration: 0.8 });
+  filter.continent = button.dataset.continent;
+  applyFilter();
 });

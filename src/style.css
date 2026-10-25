@@ -81,49 +81,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border: 1px solid var(--line);
 }
 
-/* Tabs: Home en de reizen per decennium */
-.tabs {
-  display: flex;
-  gap: 0;
-  margin-top: 22px;
-  border-bottom: 1px solid var(--line);
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.tabs a {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-  padding: 10px 16px 9px;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--muted);
-  text-decoration: none;
-  white-space: nowrap;
-}
-.tabs a:hover { color: var(--text); }
-.tabs a[aria-selected='true'] { color: var(--accent); border-bottom-color: var(--accent); }
-.tabs .count {
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: var(--soft);
-  color: var(--muted);
-}
-.tabs a[aria-selected='true'] .count { background: var(--accent); color: #fff; }
-@media (max-width: 600px) {
-  .tabs a { flex-direction: column; gap: 3px; padding: 8px 4px 7px; font-size: 0.9rem; }
-  .tabs .count { padding: 0 6px; font-size: 0.66rem; }
-}
-
-/* Continentknoppen onder de overzichtskaart */
-.continents { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.continents button {
+/* Filterknoppen onder de overzichtskaart: periode en continent */
+.filters { display: grid; gap: 8px; margin-top: 14px; }
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-buttons button {
   flex: 1 1 96px;
   display: flex;
   flex-direction: column;
@@ -137,15 +98,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font-size: 0.92rem;
   box-shadow: var(--shadow);
 }
-.continents button span { font-weight: 500; font-size: 0.76rem; color: var(--muted); }
-.continents button:hover { border-color: var(--accent); }
-.continents button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: #fff; }
-.continents button[aria-pressed='true'] span { color: rgba(255, 255, 255, 0.85); }
-.continents button:first-child { justify-content: center; }
+.filter-buttons button span { font-weight: 500; font-size: 0.76rem; color: var(--muted); }
+.filter-buttons button:hover { border-color: var(--accent); }
+.filter-buttons button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filter-buttons button[aria-pressed='true'] span { color: rgba(255, 255, 255, 0.85); }
+.filter-buttons button:first-child { justify-content: center; }
 @media (max-width: 600px) {
-  .continents button { flex-basis: 100px; padding: 7px 8px 6px; font-size: 0.85rem; }
+  .filter-buttons button { flex-basis: 100px; padding: 7px 8px 6px; font-size: 0.85rem; }
 }
-.tab-panel .section-title:first-child { margin-top: 26px; }
 .empty { color: var(--muted); }
 
 .section-title {
@@ -160,9 +120,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .trip-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
 }
+@media (max-width: 1000px) { .trip-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px) { .trip-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+@media (max-width: 440px) { .trip-grid { grid-template-columns: 1fr; } }
+.trip-grid .empty { grid-column: 1 / -1; }
 .trip-card, .link-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -178,10 +142,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .trip-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--soft); }
 .trip-card .no-cover { aspect-ratio: 3 / 2; display: grid; place-items: center; font-size: 3rem; background: var(--soft); }
 .trip-card .draft { font: 600 0.65rem var(--font); text-transform: uppercase; letter-spacing: 0.08em; background: #fdf0d5; color: #8a5a00; padding: 3px 8px; border-radius: 999px; vertical-align: middle; }
-.trip-card .body { padding: 18px 20px 20px; }
-.trip-card h2, .trip-card h3 { font: 600 1.4rem/1.15 var(--serif); letter-spacing: -0.01em; margin: 0 0 4px; }
-.trip-card .dates { color: var(--muted); font-size: 0.88rem; }
-.trip-card .summary { margin: 10px 0 14px; color: var(--muted); }
+.trip-card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
+.trip-card h2, .trip-card h3 { font: 600 1.15rem/1.2 var(--serif); letter-spacing: -0.01em; margin: 0 0 4px; }
+.trip-card .dates { color: var(--muted); font-size: 0.8rem; }
+.trip-card .summary { margin: 8px 0 12px; color: var(--muted); font-size: 0.86rem; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.trip-card .stats { margin-top: auto; }
 .stats { display: flex; flex-wrap: wrap; gap: 6px; }
 .stat {
   font-size: 0.78rem;
