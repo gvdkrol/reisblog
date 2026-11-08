@@ -15,8 +15,7 @@
       "type": "camping",
       "draft": true,
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "konigswinter",
@@ -55,8 +54,7 @@
           "src": "photos/konigswinter-7.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "munster",
@@ -83,8 +81,7 @@
           "src": "photos/munster-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "bremen",
@@ -115,8 +112,7 @@
           "src": "photos/bremen-5.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "neuengamme",
@@ -147,8 +143,7 @@
           "src": "photos/neuengamme-5.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "schnakenbek",
@@ -163,8 +158,7 @@
           "src": "photos/schnakenbek-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "schwerin",
@@ -187,8 +181,7 @@
           "src": "photos/schwerin-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "schwerin-2",
@@ -203,8 +196,7 @@
           "src": "photos/schwerin-2-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "binz",
@@ -235,8 +227,7 @@
           "src": "photos/binz-5.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "binz-2",
@@ -267,8 +258,7 @@
           "src": "photos/binz-2-5.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ralswiek",
@@ -307,8 +297,7 @@
           "src": "photos/ralswiek-7.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "prora-kraft-durch-freude",
@@ -327,8 +316,7 @@
           "src": "photos/prora-kraft-durch-freude-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "jasmund-nationalpark",
@@ -355,8 +343,7 @@
           "src": "photos/jasmund-nationalpark-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "schaprode",
@@ -371,8 +358,7 @@
           "src": "photos/schaprode-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "insel-hiddensee",
@@ -403,8 +389,7 @@
           "src": "photos/insel-hiddensee-5.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "prora",
@@ -419,8 +404,7 @@
           "src": "photos/prora-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "jagdschloss-granitz",
@@ -443,8 +427,7 @@
           "src": "photos/jagdschloss-granitz-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ravensbruck",
@@ -463,8 +446,7 @@
           "src": "photos/ravensbruck-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "sachsenhausen",
@@ -491,8 +473,7 @@
           "src": "photos/sachsenhausen-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "brandenburg-an-der-havel",
@@ -507,8 +488,7 @@
           "src": "photos/brandenburg-an-der-havel-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "quedlinburg",
@@ -539,8 +519,7 @@
           "src": "photos/quedlinburg-5.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "kassel",
@@ -559,8 +538,7 @@
           "src": "photos/kassel-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "kassel-wilhelmshohe-bergpark",
@@ -603,8 +581,7 @@
           "src": "photos/kassel-wilhelmshohe-bergpark-8.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "hattingen",
@@ -639,8 +616,7 @@
           "src": "photos/hattingen-6.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "essen-zollverein",
@@ -667,8 +643,7 @@
           "src": "photos/essen-zollverein-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "xanten",
@@ -687,8 +662,7 @@
           "src": "photos/xanten-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "pontje-naar-rees",
@@ -703,8 +677,7 @@
           "src": "photos/pontje-naar-rees-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "amersfoort-2",
@@ -714,8 +687,7 @@
       "date": "2026-07-11",
       "type": "camping",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

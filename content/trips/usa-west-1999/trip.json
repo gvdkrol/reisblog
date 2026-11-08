@@ -19,8 +19,7 @@
           "src": "photos/san-francisco-mvnpgx5eome.webp",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "sacramento",
@@ -30,8 +29,7 @@
       "date": "1999-08-05",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "nevada-city",
@@ -41,8 +39,7 @@
       "date": "1999-08-08",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "yosemite-national-park",
@@ -52,8 +49,7 @@
       "date": "1999-08-12",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "bodie",
@@ -63,8 +59,7 @@
       "date": "1999-08-14",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "death-valley",
@@ -74,8 +69,7 @@
       "date": "1999-08-16",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "las-vegas",
@@ -85,8 +79,7 @@
       "date": "1999-08-18",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "zion-national-park",
@@ -96,8 +89,7 @@
       "date": "1999-08-20",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "bryce-canyon-national-park-visitors-center",
@@ -107,8 +99,7 @@
       "date": "1999-08-21",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "grand-canyon-national-park",
@@ -118,8 +109,7 @@
       "date": "1999-08-22",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "barringer-crater",
@@ -129,8 +119,7 @@
       "date": "1999-08-23",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "joshua-tree-national-park",
@@ -140,8 +129,7 @@
       "date": "1999-08-24",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "palm-springs",
@@ -151,8 +139,7 @@
       "date": "1999-08-26",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "universal-studios-hollywood",
@@ -162,8 +149,7 @@
       "date": "1999-08-28",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "disneyland",
@@ -173,8 +159,7 @@
       "date": "1999-08-29",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "hearst-castle",
@@ -184,8 +169,7 @@
       "date": "1999-08-31",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "san-jose",
@@ -195,8 +179,7 @@
       "date": "1999-09-04",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

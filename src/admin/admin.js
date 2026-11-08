@@ -246,7 +246,6 @@ function formHtml(s) {
       <label>Verhaal <span class="hint">**vet**, *schuin*, lege regel = nieuwe alinea</span>
         <textarea data-field="text" rows="7">${esc(s.text)}</textarea></label>
       <button type="button" class="link" data-action="preview">${previewOpen ? 'Voorbeeld verbergen' : 'Voorbeeld tonen'}</button>
-      ${wpHtml(s)}
       <div class="photos">${s.photos.map(photoHtml).join('')}</div>
       <label class="dropzone">
         <input type="file" accept="image/*" multiple data-action="upload" hidden />
@@ -310,7 +309,6 @@ function addStop({ name, lat, lng }) {
     type: 'bezienswaardigheid',
     text: '',
     photos: [],
-    articles: [],
   };
   trip.stops.push(stop);
   setDirty();
@@ -525,101 +523,6 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !$('flickr-picker').hidden) closeFlickrPicker();
 });
 
-// ---------- Tekst van rondjewereld.nl ----------
-const wpResults = new Map(); // stop-id → opgehaalde berichten
-
-function articlesHtml(s) {
-  const articles = s.articles || [];
-  if (!articles.length) return '';
-  return `<ul class="wp-articles">${articles
-    .map(
-      (a, k) => `<li>
-        <a href="${esc(a.url)}" target="_blank" rel="noopener">🔗 ${esc(a.title)}</a>
-        <small>${a.date ? formatDate(a.date) : ''}</small>
-        <button type="button" data-action="wpremove" data-a="${k}" title="Link verwijderen">✕</button>
-      </li>`
-    )
-    .join('')}</ul>`;
-}
-
-function wpHtml(s) {
-  return `<div class="wp-box">
-      <div class="wp-head">
-        <button type="button" class="btn small" data-action="wpfind">📰 Tekst van rondjewereld.nl</button>
-        <span class="hint">berichten tot 5 dagen voor of na de datum</span>
-      </div>
-      <div class="wp-results" hidden></div>
-      <div class="wp-linked">${articlesHtml(s)}</div>
-    </div>`;
-}
-
-async function findArticles(li, stop) {
-  const box = li.querySelector('.wp-results');
-  box.hidden = false;
-  if (!stop.date) {
-    box.innerHTML = '<p class="hint">Vul eerst een datum in.</p>';
-    return;
-  }
-  box.innerHTML = '<p class="hint">Berichten ophalen…</p>';
-  try {
-    const posts = await api(`/wordpress?date=${stop.date}&days=5`);
-    wpResults.set(stop.id, posts);
-    const linked = new Set((stop.articles || []).map((a) => a.url));
-    const close = '<button type="button" class="link" data-action="wpclose">Sluiten</button>';
-    if (!posts.length) {
-      box.innerHTML = `<p class="hint">Geen berichten gevonden rond ${formatDate(stop.date)}.</p>${close}`;
-      return;
-    }
-    box.innerHTML = `
-      <p class="hint">${posts.length} bericht${posts.length === 1 ? '' : 'en'} rond ${formatDate(stop.date)}. Vink aan wat je wilt overnemen:</p>
-      <ul class="wp-list">${posts
-        .map(
-          (p, k) => `<li class="${p.date === stop.date ? 'same-day' : ''}">
-            <label>
-              <input type="checkbox" data-k="${k}" ${p.date === stop.date && !linked.has(p.url) ? 'checked' : ''} />
-              <span>
-                <b>${esc(p.title)}</b>
-                <small>${formatDate(p.date)} · ${p.words} woorden${linked.has(p.url) ? ' · al gekoppeld' : ''}</small>
-                <em>${esc(p.excerpt)}</em>
-              </span>
-            </label>
-            <a href="${esc(p.url)}" target="_blank" rel="noopener" title="Openen op rondjewereld.nl">↗</a>
-          </li>`
-        )
-        .join('')}</ul>
-      <div class="wp-actions">
-        <button type="button" class="btn small primary" data-action="wpapply" data-mode="append">Tekst toevoegen</button>
-        <button type="button" class="btn small" data-action="wpapply" data-mode="replace">Verhaal vervangen</button>
-        <button type="button" class="btn small" data-action="wpapply" data-mode="link">Alleen link</button>
-        ${close}
-      </div>`;
-  } catch (err) {
-    box.innerHTML = `<p class="hint">Ophalen mislukt: ${esc(err.message)}</p>`;
-  }
-}
-
-// mode: 'append' (tekst erbij), 'replace' (verhaal vervangen) of 'link' (alleen de link koppelen)
-function applyArticles(li, stop, mode) {
-  const posts = wpResults.get(stop.id) || [];
-  const chosen = [...li.querySelectorAll('.wp-list input:checked')].map((input) => posts[Number(input.dataset.k)]);
-  if (!chosen.length) return setStatus('Vink eerst een of meer berichten aan.', 'error');
-
-  if (mode !== 'link') {
-    const text = chosen.map((p) => (chosen.length > 1 ? `### ${p.title}\n\n${p.markdown}` : p.markdown)).join('\n\n');
-    const current = (stop.text || '').trim();
-    if (mode === 'replace' && current && !confirm('Het huidige verhaal vervangen door de tekst van rondjewereld.nl?')) return;
-    stop.text = mode === 'replace' || !current ? text : `${current}\n\n${text}`;
-  }
-  stop.articles ||= [];
-  for (const p of chosen) {
-    if (!stop.articles.some((a) => a.url === p.url)) stop.articles.push({ title: p.title, url: p.url, date: p.date });
-  }
-  setDirty();
-  rerenderStop(stop);
-  const what = mode === 'link' ? 'gekoppeld' : 'overgenomen';
-  setStatus(`${chosen.length} bericht${chosen.length === 1 ? '' : 'en'} ${what}. Vergeet niet op te slaan.`);
-}
-
 const stopOf = (el) => {
   const li = el.closest('.stop');
   return li ? { li, stop: trip.stops.find((s) => s.id === li.dataset.id) } : {};
@@ -721,9 +624,6 @@ list.addEventListener('click', (e) => {
     case 'zoom':
       map.flyTo([stop.lat, stop.lng], 13);
       break;
-    case 'wpfind':
-      findArticles(li, stop);
-      break;
     case 'flickrfind':
       findFlickr(li, stop);
       break;
@@ -740,17 +640,6 @@ list.addEventListener('click', (e) => {
       break;
     case 'flickrclose':
       li.querySelector('.flickr-results').hidden = true;
-      break;
-    case 'wpapply':
-      applyArticles(li, stop, el.dataset.mode);
-      break;
-    case 'wpclose':
-      li.querySelector('.wp-results').hidden = true;
-      break;
-    case 'wpremove':
-      stop.articles.splice(Number(el.dataset.a), 1);
-      setDirty();
-      li.querySelector('.wp-linked').innerHTML = articlesHtml(stop);
       break;
     case 'delete':
       if (!confirm(`Stop "${stop.name}" met ${stop.photos.length} foto('s) verwijderen?`)) return;

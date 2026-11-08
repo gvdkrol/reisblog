@@ -20,8 +20,7 @@
           "caption": "Burj Khalifa",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/44699312750/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "hatta",
@@ -31,8 +30,7 @@
       "date": "2019-01-04",
       "type": "hotel",
       "text": "1 nacht, 4–5 januari.",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "central-district",
@@ -42,8 +40,7 @@
       "date": "2019-01-05",
       "type": "hotel",
       "text": "2 nachten, 5–7 januari.",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "abu-dhabi",
@@ -53,8 +50,7 @@
       "date": "2019-01-07",
       "type": "hotel",
       "text": "3 nachten, 7–10 januari.",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "al-thanyah-5",
@@ -64,8 +60,7 @@
       "date": "2019-01-10",
       "type": "hotel",
       "text": "1 nacht, 10–11 januari.",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "dubai-2",
@@ -75,8 +70,7 @@
       "date": "2019-01-11",
       "type": "hotel",
       "text": "1 nacht, 11–12 januari.",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

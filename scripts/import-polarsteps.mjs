@@ -106,7 +106,6 @@ const stops = groups.map((group, i) => {
     type: date !== nextDate ? 'camping' : 'bezienswaardigheid',
     text,
     photos,
-    articles: [],
     // alleen nodig om het GPS-spoor te knippen
     _from: first.start_time,
     _to: group.steps.at(-1).start_time,

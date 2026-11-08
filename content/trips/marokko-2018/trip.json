@@ -20,8 +20,7 @@
           "caption": "Marrakech - 22",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/45570731475/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ifraden",
@@ -31,8 +30,7 @@
       "date": "2018-03-06",
       "type": "hotel",
       "text": "3 nachten, 6–9 maart.",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "essaouira",
@@ -42,8 +40,7 @@
       "date": "2018-03-09",
       "type": "hotel",
       "text": "1 nacht, 9–10 maart.",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "mechouar-kasbah",
@@ -53,8 +50,7 @@
       "date": "2018-03-10",
       "type": "hotel",
       "text": "1 nacht, 10–11 maart.",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

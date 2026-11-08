@@ -19,8 +19,7 @@
           "src": "photos/de-lutte-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "vlotho",
@@ -35,8 +34,7 @@
           "src": "photos/vlotho-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "rinteln",
@@ -51,8 +49,7 @@
           "src": "photos/rinteln-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "magdeburg",
@@ -67,8 +64,7 @@
           "src": "photos/magdeburg-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "magdeburg-2",
@@ -91,8 +87,7 @@
           "src": "photos/magdeburg-2-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "dresden",
@@ -111,8 +106,7 @@
           "src": "photos/dresden-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "dresden-2",
@@ -135,8 +129,7 @@
           "src": "photos/dresden-2-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "bastei-bruecke",
@@ -155,8 +148,7 @@
           "src": "photos/bastei-bruecke-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "konigstein",
@@ -171,8 +163,7 @@
           "src": "photos/konigstein-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "wroc-aw",
@@ -187,8 +178,7 @@
           "src": "photos/wroc-aw-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "wroc-aw-2",
@@ -207,8 +197,7 @@
           "src": "photos/wroc-aw-2-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "oswiecim",
@@ -223,8 +212,7 @@
           "src": "photos/oswiecim-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "auschwitz-birkenau",
@@ -239,8 +227,7 @@
           "src": "photos/auschwitz-birkenau-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "krakow",
@@ -267,8 +254,7 @@
           "src": "photos/krakow-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "krakus-mound",
@@ -283,8 +269,7 @@
           "src": "photos/krakus-mound-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "wawel-castle",
@@ -311,8 +296,7 @@
           "src": "photos/wawel-castle-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "salt-mine-in-wieliczka",
@@ -331,8 +315,7 @@
           "src": "photos/salt-mine-in-wieliczka-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "zakopane",
@@ -347,8 +330,7 @@
           "src": "photos/zakopane-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "zakopane-2",
@@ -363,8 +345,7 @@
           "src": "photos/zakopane-2-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "katowice",
@@ -387,8 +368,7 @@
           "src": "photos/katowice-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "jasna-gora",
@@ -407,8 +387,7 @@
           "src": "photos/jasna-gora-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "odz",
@@ -423,8 +402,7 @@
           "src": "photos/odz-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "odz-2",
@@ -463,8 +441,7 @@
           "src": "photos/odz-2-7.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "chelmno-kamp",
@@ -483,8 +460,7 @@
           "src": "photos/chelmno-kamp-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "poznan",
@@ -503,8 +479,7 @@
           "src": "photos/poznan-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "kleinmachnow",
@@ -519,8 +494,7 @@
           "src": "photos/kleinmachnow-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "wannsee-konferenz-villa",
@@ -539,8 +513,7 @@
           "src": "photos/wannsee-konferenz-villa-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "potsdam",
@@ -567,8 +540,7 @@
           "src": "photos/potsdam-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "braunschweig",
@@ -591,8 +563,7 @@
           "src": "photos/braunschweig-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ibbenbueren",
@@ -631,8 +602,7 @@
           "src": "photos/ibbenbueren-7.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "amersfoort",
@@ -642,8 +612,7 @@
       "date": "2025-07-12",
       "type": "camping",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

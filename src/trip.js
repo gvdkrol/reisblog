@@ -170,7 +170,7 @@ function renderPanel(stop) {
   $('next').innerHTML = `<small>Volgende stop →</small><b>${next ? escapeHtml(next.name) : 'Einde van de reis'}</b>`;
 }
 
-// Flickr-foto's van de dag van de stop, als raster onder het verhaal. Foto's die al bij
+// Flickr-foto's van de dag van de stop, als raster boven het verhaal. Foto's die al bij
 // de stop staan (overgenomen van Flickr) worden overgeslagen. Niets gedownload: de
 // thumbnails en de vergroting komen rechtstreeks van Flickr.
 const DAY_SHOWN = 9;
@@ -199,8 +199,7 @@ async function renderDayFlickr(stop, content) {
     const item = e.target.closest('.df-item');
     if (item && !item.classList.contains('locked')) openLightbox(day, Number(item.dataset.i));
   });
-  const body = content.querySelector('.panel-body');
-  body.insertBefore(section, body.querySelector('.articles'));
+  content.querySelector('.day-flickr-slot')?.replaceWith(section);
 }
 
 $('prev').addEventListener('click', () => openStop(current - 1));

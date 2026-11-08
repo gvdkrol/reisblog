@@ -14,8 +14,7 @@
       "date": "2024-06-22",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "hoge-heide",
@@ -30,8 +29,7 @@
           "src": "photos/hoge-heide-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "bergues",
@@ -50,8 +48,7 @@
           "src": "photos/bergues-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "north-sea",
@@ -66,8 +63,7 @@
           "src": "photos/north-sea-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "dover",
@@ -90,8 +86,7 @@
           "src": "photos/dover-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "willingdon-and-jevington",
@@ -110,8 +105,7 @@
           "src": "photos/willingdon-and-jevington-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "wealden",
@@ -126,8 +120,7 @@
           "src": "photos/wealden-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "brighton",
@@ -142,8 +135,7 @@
           "src": "photos/brighton-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "southampton",
@@ -158,8 +150,7 @@
           "src": "photos/southampton-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "isle-of-wight",
@@ -174,8 +165,7 @@
           "src": "photos/isle-of-wight-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "totland",
@@ -190,8 +180,7 @@
           "src": "photos/totland-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "east-cowes",
@@ -206,8 +195,7 @@
           "src": "photos/east-cowes-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "new-forest",
@@ -222,8 +210,7 @@
           "src": "photos/new-forest-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "winterborne-monkton",
@@ -238,8 +225,7 @@
           "src": "photos/winterborne-monkton-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "weymouth",
@@ -254,8 +240,7 @@
           "src": "photos/weymouth-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "south-hams",
@@ -270,8 +255,7 @@
           "src": "photos/south-hams-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "berry-pomeroy-castle",
@@ -290,8 +274,7 @@
           "src": "photos/berry-pomeroy-castle-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "totnes",
@@ -310,8 +293,7 @@
           "src": "photos/totnes-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "plymouth",
@@ -326,8 +308,7 @@
           "src": "photos/plymouth-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "eden-project",
@@ -342,8 +323,7 @@
           "src": "photos/eden-project-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "budock",
@@ -358,8 +338,7 @@
           "src": "photos/budock-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "st-michael-s-mount",
@@ -378,8 +357,7 @@
           "src": "photos/st-michael-s-mount-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "land-s-end",
@@ -398,8 +376,7 @@
           "src": "photos/land-s-end-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "st-ives",
@@ -414,8 +391,7 @@
           "src": "photos/st-ives-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "delabole",
@@ -430,8 +406,7 @@
           "src": "photos/delabole-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "tintagel",
@@ -450,8 +425,7 @@
           "src": "photos/tintagel-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "launceston",
@@ -466,8 +440,7 @@
           "src": "photos/launceston-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "teignbridge",
@@ -477,8 +450,7 @@
       "date": "2024-07-06",
       "type": "camping",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "exeter",
@@ -497,8 +469,7 @@
           "src": "photos/exeter-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "muchelney",
@@ -513,8 +484,7 @@
           "src": "photos/muchelney-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "muchelney-2",
@@ -533,8 +503,7 @@
           "src": "photos/muchelney-2-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "stonehenge",
@@ -549,8 +518,7 @@
           "src": "photos/stonehenge-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "blenheim-palace",
@@ -573,8 +541,7 @@
           "src": "photos/blenheim-palace-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "bletchley-park",
@@ -593,8 +560,7 @@
           "src": "photos/bletchley-park-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "stoke-hammond",
@@ -609,8 +575,7 @@
           "src": "photos/stoke-hammond-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "audrey-end-house",
@@ -625,8 +590,7 @@
           "src": "photos/audrey-end-house-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "brentwood",
@@ -636,8 +600,7 @@
       "date": "2024-07-11",
       "type": "camping",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "secret-nuclear-bunker",
@@ -652,8 +615,7 @@
           "src": "photos/secret-nuclear-bunker-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "dover-2",
@@ -663,8 +625,7 @@
       "date": "2024-07-12",
       "type": "camping",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "amersfoort-2",
@@ -674,8 +635,7 @@
       "date": "2024-07-13",
       "type": "camping",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

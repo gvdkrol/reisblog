@@ -17,20 +17,21 @@ Aanwijzingen voor Claude bij het werken aan deze repo. Gebruik en bediening staa
 
 - Vite + vanilla JS + Leaflet; GitHub Pages via Actions bij push naar `main` (relatieve base `./`).
 - `scripts/trips-data.mjs`: virtuele modules `virtual:trips` (samenvattingen, per-reis loaders, routes) en `virtual:home`. Concepten (reizen én stops) vallen eruit bij het bouwen; trajecten rond concept-stops worden samengevoegd.
-- `scripts/editor-api.mjs`: alleen in dev (`/api/...`) voor de editor: reizen, foto's, homepage, WordPress-teksten, Flickr.
+- `scripts/editor-api.mjs`: alleen in dev (`/api/...`) voor de editor: reizen, foto's, homepage, Flickr. (De WordPress-koppeling is eruit: de teksten staan in de stops.)
 - `scripts/routing.mjs`: OSRM-routes per traject, gecachet op `key` = `"lat,lng;lat,lng"`. Trajecten met `flight: true` blijven altijd staan, ook bij `npm run route` (dat rekent verder alles opnieuw).
 - `src/panel.js` is gedeeld door site en editor-voorbeeld; `src/stops.js` bepaalt via-punten en fietstochten (die liggen naast de route met een eigen `track`).
 - Stop-types: `camping`, `hotel`, `haven`, `bezienswaardigheid`, `eten`, `activiteit`, `highlight`, `fietstocht`, `via` (`overnachting` is een alias van `camping`).
 - Knop "Foto's op Flickr" op de reispagina (`src/flickr-gallery.js`): toont de openbare Flickr-foto's uit het tijdvak van de reis, rechtstreeks van Flickr (niet gedownload). De lijst staat per reis in `content/trips/<slug>/flickr.json`, gemaakt met `npm run flickr -- [slug]` (lokaal, met de sleutel uit `.env.local`; de build in GitHub Actions heeft geen sleutel). De bedieningsapp ververst de lijsten automatisch op de achtergrond na "Starten" van de dev-omgeving; `flickr.json` meecommitten.
+- Stopteksten: per overnachting de volledige posts van die dag(en) als `**titel** · datum` + tekst; eigen notities (bijv. "2 nachten", hoteladres) staan erboven. Bezienswaardigheden houden hun eigen zinnen. In het zijpaneel staan de Flickr-foto's van de dag boven het verhaal.
 - `tools/launcher/`: bedieningsapp op http://localhost:5170 (start/stop dev, commit en push).
 
 ## Een reis maken van de blog + Google My Maps
 
 Gerhard vraagt vaak: *"maak een reis van rondjewereld.nl categorie X en deze kaart(en) …"*. Werkwijze die goed werkt (een tijdelijk build-script per reis dat de helpers uit `scripts/` en `src/` importeert):
 
-1. **Posts**: categorie-id via `https://public-api.wordpress.com/wp/v2/sites/rondjewereld.nl/categories?search=…` (de WordPress-MCP kan geen categorieën opvragen), dan `…/posts?categories=<id>&per_page=100&order=asc` (pagina 2 bij meer dan 100). HTML strippen en `{flickr …}`/`{mosmap …}`-codes verwijderen.
+1. **Posts**: staan lokaal in de export `C:\Claude\Claude-code\RondjewereldExport\site-content\content\posts\<jaar>\*.md` (frontmatter met `date`, `title`, `url`, `trip` = categorie; Markdown-tekst). Gebruik die in plaats van de API; afbeeldingen, iframes en HTML eruit halen. Anders: categorie-id via `https://public-api.wordpress.com/wp/v2/sites/rondjewereld.nl/categories?search=…` (de WordPress-MCP kan geen categorieën opvragen), dan `…/posts?categories=<id>&per_page=100&order=asc` (pagina 2 bij meer dan 100). HTML strippen en `{flickr …}`/`{mosmap …}`-codes verwijderen.
 2. **Kaart**: KML via `https://www.google.com/maps/d/kml?mid=<mid>&forcekml=1`. Alleen punten gebruiken, geen routelijnen of de A/B/C-punten van routebeschrijvingen. Iconen: `icon-81` hotel, `icon-31` camping, `icon-67`/`icon-177` bezienswaardigheid.
-3. **Stops**: één overnachting per verblijf (kaartpunt), met de teksten van alle dagen daar (`**titel** · datum` + tekst) en `articles`-links naar de posts. Bezienswaardigheden uit de tekst als eigen stops op hun datum, met de zinnen die erover gaan; controleer daarna of de gekozen zin echt over die plek gaat.
+3. **Stops**: één overnachting per verblijf (kaartpunt), met de teksten van alle dagen daar (`**titel** · datum` + tekst); geen links naar rondjewereld.nl. Bezienswaardigheden uit de tekst als eigen stops op hun datum, met de zinnen die erover gaan; controleer daarna of de gekozen zin echt over die plek gaat.
 4. **Datums controleren**: postdatums zijn soms publicatiedatums of een dag verschoven; check met weekdagen in de tekst ("het is zondag" e.d.).
 5. **Vluchten**: zet ze vooraf in `legs` als `{ from, to, key, km, flight: true, polyline }` (rechte lijn via `encodePolyline`), zodat `routeLegs` ze niet over de weg berekent. Veerboten routeert OSRM zelf. Een stop op het water (boottocht) eerst naar de steiger verplaatsen, anders maakt OSRM een enorme omweg.
 6. **Foto's**: Flickr-foto's via `largeUrlOf` + `downloadFlickrPhoto` (`scripts/flickr.mjs`, max. 1000 px) met `link` naar de Flickr-pagina. Oude Blogger-afbeeldingen bestaan in groot formaat als `/s1600/`. Andere afbeeldingen verkleinen met `shrinkPhoto`.

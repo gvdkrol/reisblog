@@ -209,7 +209,6 @@ for (const s of stays) {
       type: stayType,
       text: `${plural(s.nights.length, 'nacht', 'nachten')}, ${dayRange(s.nights[0], addDays(last, 1))}.`,
       photos: [],
-      articles: [],
     },
   });
 }
@@ -232,7 +231,6 @@ for (const t of rides) {
       track: encodePolyline(t.points),
       text: `Fietstocht van ${String(Math.round(t.km * 10) / 10).replace('.', ',')} km, van ${fmtTime(t.t0, offset)} tot ${fmtTime(t.t1, offset)}${startName ? `, vanaf ${startName}` : ''}.`,
       photos: [],
-      articles: [],
     },
   });
 }
@@ -240,7 +238,7 @@ events.sort((a, b) => a.t - b.t);
 
 if (homeVisit) {
   const homeName = (await placeName(homeVisit.ll)) || 'Thuis';
-  const home = (date) => ({ name: homeName, lat: round(homeVisit.ll[0]), lng: round(homeVisit.ll[1]), date, type: 'via', text: '', photos: [], articles: [] });
+  const home = (date) => ({ name: homeName, lat: round(homeVisit.ll[0]), lng: round(homeVisit.ll[1]), date, type: 'via', text: '', photos: [] });
   events.unshift({ t: -Infinity, stop: home(start), home: 'out' });
   events.push({ t: Infinity, stop: home(end), home: 'in' });
 }

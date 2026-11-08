@@ -11,7 +11,6 @@
 //   GET  /api/home                   homepage (titel, intro, links)
 //   PUT  /api/home                   homepage opslaan (+ ongebruikte afbeeldingen opruimen)
 //   POST /api/home/images?name=x.webp          afbeelding voor een link uploaden
-//   GET  /api/wordpress?date=YYYY-MM-DD&days=5  berichten van rondjewereld.nl rond een datum
 //   GET  /api/flickr?date=YYYY-MM-DD              openbare Flickr-foto's genomen op die dag
 //   GET  /api/flickr?from=…&to=…&page=n           idem voor een periode, per pagina van 100
 //   POST /api/trips/:slug/photos?name=x.jpg&from=<flickr-url>  Flickr-foto downloaden naar de reis
@@ -20,7 +19,6 @@ import { readFile, writeFile, readdir, mkdir, unlink, rm } from 'node:fs/promise
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { routeLegs } from './routing.mjs';
-import { postsAround } from './wordpress.mjs';
 import { photosTakenOn, photosTakenBetween, downloadFlickrPhoto } from './flickr.mjs';
 import { slugify } from '../src/slugify.js';
 
@@ -88,10 +86,6 @@ export function editorApi({ root }) {
           caption: String(p.caption || ''),
           ...(/^https?:\/\//i.test(p.link || '') ? { link: String(p.link) } : {}), // bron, bijv. de foto op Flickr
         })),
-        // Gekoppelde blogberichten op rondjewereld.nl (link onder het verhaal).
-        articles: (s.articles || [])
-          .filter((a) => /^https?:\/\//i.test(a.url || ''))
-          .map((a) => ({ title: String(a.title || ''), url: String(a.url), date: String(a.date || '') })),
       })),
       legs: Array.isArray(input.legs) ? input.legs : [],
     };
@@ -167,10 +161,6 @@ export function editorApi({ root }) {
       const q = url.searchParams;
       if (q.get('from')) return send(res, 200, await photosTakenBetween(root, q.get('from'), q.get('to'), { page: Number(q.get('page')) || 1 }));
       return send(res, 200, await photosTakenOn(root, url.searchParams.get('date')));
-    }
-    if (resource === 'wordpress' && req.method === 'GET') {
-      const days = Math.min(Math.max(Number(url.searchParams.get('days')) || 5, 0), 30);
-      return send(res, 200, await postsAround(url.searchParams.get('date'), days));
     }
     if (resource === 'home') {
       if (!slug && req.method === 'GET') return send(res, 200, await readHome());

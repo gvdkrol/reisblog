@@ -20,8 +20,7 @@
           "caption": "New York NY",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/381998052/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ohiopyle",
@@ -37,8 +36,7 @@
           "caption": "Frank Lloyd Wright - Fallingwater PA, USA",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/382931987/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "pittsburg",
@@ -54,8 +52,7 @@
           "caption": "Andy Warhol Museum - Pittsburgh PA",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/385258561/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "niagara-falls",
@@ -71,8 +68,7 @@
           "caption": "Niagara Falls NY",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/381998097/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "new-london",
@@ -83,8 +79,7 @@
       "type": "bezienswaardigheid",
       "draft": true,
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "orient-point",
@@ -101,8 +96,7 @@
           "caption": "Orient Point - Long Island NY",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/381998157/"
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "new-york-2",
@@ -112,8 +106,7 @@
       "date": "2004-09-16",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     }
   ],
   "legs": [

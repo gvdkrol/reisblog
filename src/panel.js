@@ -16,7 +16,6 @@ export function captionHtml(photo) {
 export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
   const t = stopType(stop.type);
   const photos = stop.photos || [];
-  const articles = stop.articles || [];
 
   return `
     ${photos.length ? `<img class="panel-hero" src="${photoUrl(photos[0].src)}" alt="${escapeHtml(photos[0].caption)}" />` : ''}
@@ -32,19 +31,8 @@ export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
       <h2>${escapeHtml(stop.name)}</h2>
       ${stop.type === 'fietstocht' && Number.isFinite(stop.km) ? `<div class="leg-info">🚲 ${formatKm(stop.km)} gefietst</div>` : ''}
       ${leg?.polyline && prevStop ? `<div class="leg-info">${leg.flight ? '✈️' : leg.straight ? '📏' : '🛣️'} ${formatLeg(leg)}${leg.straight && !leg.flight ? ' hemelsbreed' : ''} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
+      <div class="day-flickr-slot"></div>
       <div class="story">${marked.parse(stop.text || '')}</div>
-      ${articles.length ? `
-        <div class="articles">
-          <h4>Lees meer op rondjewereld.nl</h4>
-          ${articles
-            .map(
-              (a) => `<a class="article-link" href="${escapeHtml(a.url)}" target="_blank" rel="noopener">
-                <span>${escapeHtml(a.title)}</span>
-                <small>${a.date ? formatDate(a.date) : 'rondjewereld.nl'} ↗</small>
-              </a>`
-            )
-            .join('')}
-        </div>` : ''}
     </div>
   `;
 }

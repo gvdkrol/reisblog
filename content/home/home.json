@@ -3,18 +3,5 @@
   "title": "25 jaar reizen",
   "subtitle": "Waar we geweest zijn, stop voor stop: met de route op de kaart en bij elke plek een kort verhaal en foto's.",
   "linksTitle": "Ook interessant",
-  "links": [
-    {
-      "title": "Route The Americas",
-      "url": "https://gvdkrol.github.io/route-the-americas/",
-      "description": "Vijftien maanden onderweg van Baltimore tot Panama.",
-      "image": "images/link-mvcbukvuxib.webp"
-    },
-    {
-      "title": "Rondjewereld.nl",
-      "url": "https://rondjewereld.nl/",
-      "description": "Ons reisblog.",
-      "image": "images/link-mvcdtrms0us.webp"
-    }
-  ]
+  "links": []
 }

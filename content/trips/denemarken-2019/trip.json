@@ -14,8 +14,7 @@
       "date": "2019-08-22",
       "type": "bezienswaardigheid",
       "text": "",
-      "photos": [],
-      "articles": []
+      "photos": []
     },
     {
       "id": "vastgelopen-handrem",
@@ -34,8 +33,7 @@
           "src": "photos/vastgelopen-handrem-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "camping-a37",
@@ -50,8 +48,7 @@
           "src": "photos/camping-a37-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "emmen",
@@ -70,8 +67,7 @@
           "src": "photos/emmen-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "lunch",
@@ -86,8 +82,7 @@
           "src": "photos/lunch-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ostholstein",
@@ -102,8 +97,7 @@
           "src": "photos/ostholstein-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "gas-vullen",
@@ -118,8 +112,7 @@
           "src": "photos/gas-vullen-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "ostholstein-2",
@@ -142,8 +135,7 @@
           "src": "photos/ostholstein-2-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "holstebro",
@@ -158,8 +150,7 @@
           "src": "photos/holstebro-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "nakskov",
@@ -178,8 +169,7 @@
           "src": "photos/nakskov-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "nakskov-fjord-camping",
@@ -198,8 +188,7 @@
           "src": "photos/nakskov-fjord-camping-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "guldborgsund",
@@ -218,8 +207,7 @@
           "src": "photos/guldborgsund-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "camp-m-ns-klint",
@@ -238,8 +226,7 @@
           "src": "photos/camp-m-ns-klint-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "jammerbugt",
@@ -266,8 +253,7 @@
           "src": "photos/jammerbugt-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "klekkende-h-j",
@@ -282,8 +268,7 @@
           "src": "photos/klekkende-h-j-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "camp-adventure",
@@ -310,8 +295,7 @@
           "src": "photos/camp-adventure-4.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "k-ge-vall-camping",
@@ -330,8 +314,7 @@
           "src": "photos/k-ge-vall-camping-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "copenhagen",
@@ -354,8 +337,7 @@
           "src": "photos/copenhagen-3.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "copenhagen-2",
@@ -370,8 +352,7 @@
           "src": "photos/copenhagen-2-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "helsingor",
@@ -390,8 +371,7 @@
           "src": "photos/helsingor-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "roskilde",
@@ -406,8 +386,7 @@
           "src": "photos/roskilde-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "trelleborg-vikingburcht",
@@ -422,8 +401,7 @@
           "src": "photos/trelleborg-vikingburcht-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "nab",
@@ -442,8 +420,7 @@
           "src": "photos/nab-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "b-jden",
@@ -458,8 +435,7 @@
           "src": "photos/b-jden-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "winsen",
@@ -478,8 +454,7 @@
           "src": "photos/winsen-2.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "bergen-belsen",
@@ -494,8 +469,7 @@
           "src": "photos/bergen-belsen-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "rinteln",
@@ -510,8 +484,7 @@
           "src": "photos/rinteln-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     },
     {
       "id": "amersfoort",
@@ -526,8 +499,7 @@
           "src": "photos/amersfoort-1.jpg",
           "caption": ""
         }
-      ],
-      "articles": []
+      ]
     }
   ],
   "legs": [
