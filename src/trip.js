@@ -21,7 +21,7 @@ if (!trip) {
   throw new Error('Reis niet gevonden');
 }
 
-document.title = `${trip.title} · routes.rondjewereld.nl`;
+document.title = `${trip.title} · rondjewereld.nl`;
 
 // ---------- Infokaart linksboven ----------
 $('trip-info').innerHTML = `

@@ -47,25 +47,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ---------- Overzicht ---------- */
 .wrap { max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter); }
 
-/* Balk met logo en link naar rondjewereld.nl */
+/* Balk met logo */
 .site-bar { background: var(--surface); border-bottom: 3px solid var(--brand); }
 .site-bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
 .site-logo img { display: block; height: 36px; width: auto; }
-.site-ext {
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--brand);
-  text-decoration: none;
-  white-space: nowrap;
-  padding: 6px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-}
-.site-ext:hover { background: var(--brand); border-color: var(--brand); color: #fff; }
-.embed .site-bar, .embed .site-ext-float { display: none; }
+.embed .site-bar { display: none; }
 @media (max-width: 480px) {
   .site-logo img { height: 28px; }
-  .site-ext { padding: 5px 10px; font-size: 0.82rem; }
 }
 
 .site-header { padding-top: clamp(16px, 2.5vw, 24px); }
@@ -282,10 +270,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .trip-card-float .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
 .trip-card-float .site-logo img { height: 26px; }
-.site-ext-float { position: absolute; top: 16px; right: 16px; z-index: 500; background: var(--surface); box-shadow: var(--shadow); }
-@media (max-width: 600px) {
-  .site-ext-float { top: auto; bottom: 28px; right: 12px; }
-}
 .embed .trip-card-float .back { display: none; }
 .trip-card-float .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .trip-card-float .actions .start { margin-top: 0; }
