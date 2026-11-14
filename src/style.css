@@ -113,9 +113,43 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .decades button span { margin-left: 0; font-size: 0.72rem; }
 }
 
-/* Pop-up met een reis op de overzichtskaart */
-.trip-popup .leaflet-popup-content-wrapper { padding: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
-.trip-popup .leaflet-popup-content { margin: 0; width: 270px !important; font: 15px/1.45 var(--font); color: var(--text); }
+/* Pop-up met een reis op de overzichtskaart (zweeft in <body>, boven alles) */
+.trip-float {
+  position: absolute;
+  z-index: 5000;
+  width: 270px;
+  max-width: calc(100vw - 16px);
+  background: var(--surface, #fff);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  font: 15px/1.45 var(--font);
+  color: var(--text);
+}
+.trip-float[hidden] { display: none; }
+.trip-float .trip-pop { border-radius: inherit; overflow: hidden; }
+.trip-float::after { /* puntje naar de route */
+  content: '';
+  position: absolute;
+  left: var(--tip-x, 50%);
+  top: 100%;
+  margin-left: -9px;
+  border: 9px solid transparent;
+  border-top-color: var(--surface, #fff);
+  border-bottom-width: 0;
+}
+.trip-float.below::after { top: auto; bottom: 100%; border-top-width: 0; border-bottom-width: 9px; border-top-color: transparent; border-bottom-color: var(--surface, #fff); }
+.trip-float .close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  border: 0;
+  background: none;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
 .trip-pop img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--soft); }
 .trip-pop .body { padding: 12px 14px 14px; }
 .trip-pop h3 { font: 700 1.1rem/1.2 var(--serif); margin: 0 0 2px; }
@@ -135,7 +169,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
   text-decoration: none;
 }
 .trip-pop .open:hover { background: var(--accent); }
-.trip-popup a.leaflet-popup-close-button { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); font-size: 22px; }
 
 /* Continentknoppen onder de overzichtskaart */
 .filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }

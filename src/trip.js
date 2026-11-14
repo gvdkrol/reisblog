@@ -38,7 +38,7 @@ $('trip-info').innerHTML = `
   </div>
   <div class="actions">
     ${trip.visibleStops.length ? `<button class="start" id="start">Start bij ${escapeHtml(trip.visibleStops[0].name)} →</button>` : ''}
-    <button class="flickr-btn" id="flickr-btn">📷 Foto's op Flickr</button>
+    <button class="flickr-btn" id="flickr-btn">📷 Foto's</button>
   </div>
 `;
 $('start')?.addEventListener('click', () => openStop(0));
@@ -186,7 +186,7 @@ async function renderDayFlickr(stop, content) {
   const render = (all) => {
     const shown = all ? day : day.slice(0, DAY_SHOWN);
     section.innerHTML = `
-      <h4>Foto's van deze dag op Flickr <small>${day.length}</small></h4>
+      <h4>Foto's van deze dag <small>${day.length}</small></h4>
       <div class="df-grid">${shown
         .map((p, i) => `<button class="df-item" data-i="${i}" title="${escapeHtml(p.title)}">${flickrThumbHtml(p, '(max-width: 767px) 33vw, 260px')}</button>`)
         .join('')}</div>

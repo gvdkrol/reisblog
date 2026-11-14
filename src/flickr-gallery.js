@@ -4,7 +4,6 @@
 import { formatRange, escapeHtml } from './format.js';
 
 const PAGE_SIZE = 48;
-const monthFmt = new Intl.DateTimeFormat('nl-NL', { month: 'long', year: 'numeric' });
 const dateFmt = new Intl.DateTimeFormat('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
 
 // URL van een foto in een bepaalde maat: w = 400 px, z = 640 px, b = 1024 px.
@@ -60,7 +59,7 @@ export function createFlickrGallery({ title, load, open }) {
     <div class="fg-window">
       <header class="fg-head">
         <div>
-          <h2>Foto's op Flickr</h2>
+          <h2>Foto's</h2>
           <div class="fg-sub"></div>
         </div>
         <button class="fg-close" aria-label="Sluiten">×</button>
@@ -80,22 +79,11 @@ export function createFlickrGallery({ title, load, open }) {
   el.querySelector('.fg-close').addEventListener('click', close);
   el.addEventListener('click', (e) => e.target === el && close());
 
-  // Link naar het Flickr-archief van de maand waarin de reis begon; wie is ingelogd
-  // en toegang heeft, ziet daar ook de afgeschermde foto's.
-  const archiveUrl = () => {
-    const [y, m] = (data?.from || '').split('-');
-    const user = data?.user || 'gerhardvandekrol';
-    return y ? `https://www.flickr.com/photos/${user}/archives/date-taken/${y}/${m}/` : `https://www.flickr.com/photos/${user}/`;
-  };
-  const accessHtml = (lead) => `
-    <p>${lead} Mogelijk zijn ze alleen zichtbaar voor vrienden en familie: log in op Flickr of vraag Gerhard of Lesley om toegang.</p>
-    <p><a href="${archiveUrl()}" target="_blank" rel="noopener">Open het Flickr-archief${data?.from ? ` van ${monthFmt.format(new Date(data.from))}` : ''} ↗</a></p>`;
-
   function render() {
     const photos = data.photos;
     sub.textContent = `${title} · ${formatRange(data.from, data.to)}${photos.length ? ` · ${photos.length} foto's` : ''}`;
     if (!photos.length) {
-      body.innerHTML = `<div class="fg-message"><div class="fg-lock">🔒</div>${accessHtml('Er zijn geen openbare foto\'s van deze reis te zien.')}</div>`;
+      body.innerHTML = `<div class="fg-message"><p>Er zijn geen foto's van deze reis te zien.</p></div>`;
       foot.innerHTML = '';
       return;
     }
@@ -122,8 +110,7 @@ export function createFlickrGallery({ title, load, open }) {
           <button data-page="${page - 1}" ${page === 0 ? 'disabled' : ''}>‹ Vorige</button>
           <span>Pagina ${page + 1} van ${pages} · ${escapeHtml(formatRange(first, last))}</span>
           <button data-page="${page + 1}" ${page === pages - 1 ? 'disabled' : ''}>Volgende ›</button>
-        </div>` : ''}
-      <p class="fg-note">Je ziet hier de openbare foto's. Meer zien? Log in op Flickr of vraag Gerhard of Lesley om toegang. <a href="${archiveUrl()}" target="_blank" rel="noopener">Naar Flickr ↗</a></p>`;
+        </div>` : ''}`;
   }
 
   body.addEventListener('click', (e) => {
@@ -147,7 +134,7 @@ export function createFlickrGallery({ title, load, open }) {
       render();
     } catch {
       data = null;
-      body.innerHTML = `<div class="fg-message"><div class="fg-lock">🔒</div>${accessHtml('De foto\'s konden niet worden geladen.')}</div>`;
+      body.innerHTML = `<div class="fg-message"><p>De foto's konden niet worden geladen.</p></div>`;
     }
   }
 

@@ -188,30 +188,59 @@ bounds = L.latLngBounds([]);
 const routes = await loadRoutes();
 
 // Pop-up met de reis bij hoveren (op een touchscreen: bij tikken), met een knop naar de reis.
+// Geen Leaflet-popup: die staat binnen de kaart (overflow: hidden) en wordt aan de rand afgeknipt.
+// Deze zwevende kaart staat direct in <body>, boven alle andere elementen.
 const canHover = matchMedia('(hover: hover)').matches;
-const popup = L.popup({ className: 'trip-popup', maxWidth: 280, minWidth: 260, autoPan: !canHover, closeButton: !canHover, offset: [0, -6] });
-let popupTrip = null, popupOff = null, hideTimer;
+const popupEl = document.createElement('div');
+popupEl.className = 'trip-float';
+popupEl.hidden = true;
+document.body.append(popupEl);
+let popupTrip = null, popupOff = null, popupLatLng = null, hideTimer;
+
+function placeTripPopup() {
+  if (popupEl.hidden || !popupLatLng) return;
+  const mapRect = map.getContainer().getBoundingClientRect();
+  const pt = map.latLngToContainerPoint(popupLatLng);
+  const x = mapRect.left + pt.x, y = mapRect.top + pt.y; // viewport-coördinaten van het punt
+  const w = popupEl.offsetWidth, h = popupEl.offsetHeight, gap = 12, margin = 8;
+  const left = Math.min(Math.max(x - w / 2, margin), window.innerWidth - w - margin);
+  const below = y - h - gap < margin && y + gap + h <= window.innerHeight - margin; // boven geen ruimte: eronder
+  const top = below ? y + gap : y - h - gap;
+  popupEl.classList.toggle('below', below);
+  popupEl.style.left = `${left + window.scrollX}px`;
+  popupEl.style.top = `${top + window.scrollY}px`;
+  popupEl.style.setProperty('--tip-x', `${Math.min(Math.max(x - left, 18), w - 18)}px`);
+}
 function showTripPopup(trip, latlng, highlight) {
   clearTimeout(hideTimer);
-  if (popupTrip === trip && map.hasLayer(popup)) return;
+  if (popupTrip === trip && !popupEl.hidden) return;
   popupOff?.(false);
   popupTrip = trip;
   popupOff = highlight;
-  popup.setLatLng(latlng).setContent(popupHtml(trip)).openOn(map);
+  popupLatLng = latlng;
+  popupEl.innerHTML = popupHtml(trip) + (canHover ? '' : '<button type="button" class="close" aria-label="Sluiten">×</button>');
+  popupEl.hidden = false;
+  placeTripPopup();
+  popupEl.querySelector('img')?.addEventListener('load', placeTripPopup, { once: true });
+}
+function hideTripPopup() {
+  clearTimeout(hideTimer);
+  if (popupEl.hidden) return;
+  popupEl.hidden = true;
+  popupOff?.(false);
+  popupTrip = popupOff = popupLatLng = null;
 }
 function hideTripPopupSoon() {
   clearTimeout(hideTimer);
-  hideTimer = setTimeout(() => map.closePopup(popup), 250);
+  hideTimer = setTimeout(hideTripPopup, 250);
 }
-popup.once('add', () => {
-  // Muis van de route naar de pop-up: open laten, zodat de knop bereikbaar is.
-  popup.getElement().addEventListener('mouseenter', () => clearTimeout(hideTimer));
-  popup.getElement().addEventListener('mouseleave', hideTripPopupSoon);
-});
-popup.on('remove', () => {
-  popupOff?.(false);
-  popupTrip = popupOff = null;
-});
+// Muis van de route naar de pop-up: open laten, zodat de knop bereikbaar is.
+popupEl.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+popupEl.addEventListener('mouseleave', hideTripPopupSoon);
+popupEl.addEventListener('click', (e) => e.target.closest('.close') && hideTripPopup());
+map.on('move zoom', placeTripPopup);
+map.on('click', hideTripPopup); // klik op een route zelf stopt de propagatie (zie hieronder)
+window.addEventListener('resize', placeTripPopup);
 
 trips.forEach((trip, i) => {
   const color = colorOf(i);
@@ -231,7 +260,11 @@ trips.forEach((trip, i) => {
       if (canHover) showTripPopup(trip, e.latlng, highlight);
     })
     .on('mouseout', () => (canHover ? hideTripPopupSoon() : highlight(false)))
-    .on('click', (e) => (canHover ? (location.href = tripUrl(trip)) : showTripPopup(trip, e.latlng, highlight)));
+    .on('click', (e) => {
+      L.DomEvent.stopPropagation(e);
+      if (canHover) location.href = tripUrl(trip);
+      else showTripPopup(trip, e.latlng, highlight);
+    });
   if (group.getLayers().length) bounds.extend(group.getBounds());
   tripLayers.push({ trip, group, points });
 });

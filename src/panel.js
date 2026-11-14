@@ -4,13 +4,20 @@ import { marked } from 'marked';
 import { stopType } from './map.js';
 import { formatDate, formatKm, formatLeg, escapeHtml } from './format.js';
 
-// Onderschrift van een foto, met een link naar de bron (bijv. Flickr) als die er is.
+// Onderschrift van een foto, met een link naar de bron als die er is. Flickr-links
+// worden bewust niet getoond: bezoekers hoeven niet te zien waar de foto's vandaan komen.
 export function captionHtml(photo) {
   const text = escapeHtml(photo?.caption || '');
-  if (!photo?.link) return text;
-  const source = /flickr\.com/i.test(photo.link) ? 'Flickr' : 'bron';
-  return `${text}${text ? ' · ' : ''}<a href="${escapeHtml(photo.link)}" target="_blank" rel="noopener">bekijk op ${source} ↗</a>`;
+  if (!photo?.link || /flickr\.com/i.test(photo.link)) return text;
+  return `${text}${text ? ' · ' : ''}<a href="${escapeHtml(photo.link)}" target="_blank" rel="noopener">bekijk bron ↗</a>`;
 }
+
+// Alinea's met een Flickr-link ("Alle foto's van …", losse foto-links uit de blog) weglaten.
+const withoutFlickrLinks = (text) =>
+  text
+    .split(/\n{2,}/)
+    .filter((para) => !/flickr\.com/i.test(para))
+    .join('\n\n');
 
 // photoUrl(src) → URL van een foto; day = dagnummer; leg/prevStop = traject vanaf de vorige stop.
 export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
@@ -32,7 +39,7 @@ export function stopPanelHtml(stop, { photoUrl, day, leg, prevStop }) {
       ${stop.type === 'fietstocht' && Number.isFinite(stop.km) ? `<div class="leg-info">🚲 ${formatKm(stop.km)} gefietst</div>` : ''}
       ${leg?.polyline && prevStop ? `<div class="leg-info">${leg.flight ? '✈️' : leg.straight ? '📏' : '🛣️'} ${formatLeg(leg)}${leg.straight && !leg.flight ? ' hemelsbreed' : ''} vanaf ${escapeHtml(prevStop.name)}</div>` : ''}
       <div class="day-flickr-slot"></div>
-      <div class="story">${marked.parse(stop.text || '')}</div>
+      <div class="story">${marked.parse(withoutFlickrLinks(stop.text || ''))}</div>
     </div>
   `;
 }
