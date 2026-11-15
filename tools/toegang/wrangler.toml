@@ -1,0 +1,29 @@
+# Toegang aanvragen voor rondjewereld.nl (worker.js). Publiceren: npx wrangler@4 deploy (in deze map).
+# Alleen deze paden gaan langs de Worker; de rest van de site komt van GitHub Pages.
+name = "rondjewereld-toegang"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+routes = [
+  { pattern = "rondjewereld.nl/aanvragen*", zone_name = "rondjewereld.nl" },
+  { pattern = "rondjewereld.nl/beheer/*", zone_name = "rondjewereld.nl" },
+  { pattern = "www.rondjewereld.nl/aanvragen*", zone_name = "rondjewereld.nl" }
+]
+
+[vars]
+ACCOUNT_ID = "3c4e7d0a515e07a1a125ea2b6a8040c7"
+POLICY_NAME = "Toegestaan"
+
+# Email Routing (rondjewereld.fyi): mag alleen naar geverifieerde adressen sturen
+[[send_email]]
+name = "MAIL"
+
+# max. 3 aanvragen per minuut per IP
+[[ratelimits]]
+name = "LIMIT"
+namespace_id = "1002"
+simple = { limit = 3, period = 60 }
+
+# Geheimen (niet in dit bestand, de repo is openbaar), via npx wrangler@4 secret put <NAAM>:
+#   OWNER         e-mailadres van de beheerder (ontvangt aanvragen, mag goedkeuren)
+#   CF_API_TOKEN  token met "Access: Apps and Policies – Edit"
