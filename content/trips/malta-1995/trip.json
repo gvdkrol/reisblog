@@ -14,7 +14,28 @@
       "date": "1995-11-01",
       "type": "hotel",
       "text": "",
-      "photos": []
+      "photos": [
+        {
+          "src": "photos/valletta-flickr-11501781303.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501781303/"
+        },
+        {
+          "src": "photos/valletta-flickr-11501781243.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501781243/"
+        },
+        {
+          "src": "photos/valletta-flickr-11501780423.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501780423/"
+        },
+        {
+          "src": "photos/valletta-flickr-11501779653.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501779653/"
+        }
+      ]
     },
     {
       "id": "il-qrendi",
@@ -29,6 +50,26 @@
           "src": "photos/il-qrendi-flickr-11501756336.jpg",
           "caption": "Malta 1995",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/11501756336/"
+        },
+        {
+          "src": "photos/il-qrendi-flickr-11501779173.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501779173/"
+        },
+        {
+          "src": "photos/il-qrendi-flickr-11501779113.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501779113/"
+        },
+        {
+          "src": "photos/il-qrendi-flickr-11501779093.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501779093/"
+        },
+        {
+          "src": "photos/il-qrendi-flickr-11501756226.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501756226/"
         }
       ]
     },
@@ -45,6 +86,41 @@
           "src": "photos/il-mellie-a-flickr-11501718374.jpg",
           "caption": "Malta 1995",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/11501718374/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501755746.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501755746/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501720174.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501720174/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501719804.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501719804/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501719784.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501719784/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501719594.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501719594/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501718674.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501718674/"
+        },
+        {
+          "src": "photos/il-mellie-a-flickr-11501718594.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501718594/"
         }
       ]
     },
@@ -61,6 +137,41 @@
           "src": "photos/tas-sliema-flickr-11501718574.jpg",
           "caption": "Malta 1995",
           "link": "https://www.flickr.com/photos/gerhardvandekrol/11501718574/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501717974.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501717974/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501717684.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501717684/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501687935.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501687935/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501687235.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501687235/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501686145.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501686145/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501685575.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501685575/"
+        },
+        {
+          "src": "photos/tas-sliema-flickr-11501685165.jpg",
+          "caption": "Malta 1995",
+          "link": "https://www.flickr.com/photos/gerhardvandekrol/11501685165/"
         }
       ]
     }

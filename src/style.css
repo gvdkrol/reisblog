@@ -17,7 +17,7 @@
   --page: 1180px;
   --font: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --serif: 'PT Serif', Georgia, serif;
-  /* Zijpaneel: zo breed als een tekstregel (68ch + marge), maar er blijft altijd een stuk kaart zichtbaar. */
+  /* Zijpaneel: hooguit 780 px breed, maar er blijft altijd een stuk kaart zichtbaar. */
   --panel-w: clamp(440px, calc(100vw - 360px), 780px);
 }
 
@@ -47,16 +47,61 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ---------- Overzicht ---------- */
 .wrap { max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter); }
 
-/* Balk met logo */
-.site-bar { background: var(--surface); border-bottom: 3px solid var(--brand); }
-.site-bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
-.site-logo img { display: block; height: 36px; width: auto; }
-.embed .site-bar { display: none; }
-@media (max-width: 480px) {
-  .site-logo img { height: 28px; }
+/* Titel links, zoekveld rechts */
+.site-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding-top: clamp(14px, 2vw, 22px); }
+.search { position: relative; flex: 0 1 320px; }
+.search input {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+.search-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 3000; /* boven de kaart */
+  width: min(560px, calc(100vw - 2 * var(--gutter)));
+  max-height: min(70vh, 640px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+.search-results[hidden] { display: none; }
+.sr-note { margin: 0; padding: 8px 12px; color: var(--muted); font-size: 0.85rem; }
+.sr-item { display: flex; flex-direction: column; gap: 1px; padding: 9px 12px; border-radius: 10px; text-decoration: none; }
+.sr-item:hover, .sr-item:focus { background: var(--soft); outline: none; }
+.sr-item b { font: 600 1.02rem/1.25 var(--serif); }
+.sr-meta { color: var(--accent); font-size: 0.78rem; font-weight: 600; }
+.sr-text { margin-top: 3px; color: var(--muted); font-size: 0.86rem; line-height: 1.45; }
+.sr-item mark, mark.hit { background: #fbe7a1; color: inherit; border-radius: 3px; padding: 0 1px; }
+.sr-more {
+  display: block;
+  margin: 6px auto 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.sr-more:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 600px) {
+  .search { flex-basis: 100%; }
+  .search-results { left: 0; right: auto; }
 }
 
-.site-header { padding-top: clamp(16px, 2.5vw, 24px); }
+.site-header .eyebrow { font-size: 0.95rem; }
+.site-header .eyebrow::before { content: none; } /* geen voorlooplijn */
 .site-header h1 {
   font: 700 clamp(1.9rem, 4.5vw, 2.6rem)/1 var(--serif);
   letter-spacing: -0.025em;
@@ -272,49 +317,52 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .trip-page { height: 100dvh; overflow: hidden; }
 #map { position: absolute; inset: 0; background: #e8eef0; }
 
-.trip-card-float {
+/* Linksboven: de reiskaart van de homepage (.trip-card), met de knoppen eronder */
+.trip-side {
   position: absolute;
   top: 16px;
   left: 16px;
   z-index: 500;
-  max-width: min(360px, calc(100% - 32px));
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 14px 16px 16px;
+  width: 300px;
+  max-width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.trip-card-float .back {
-  font-size: 0.85rem;
-  color: var(--muted);
+.trip-side .trip-card { position: relative; box-shadow: var(--shadow-lg); }
+.trip-side .trip-card:hover { transform: none; }
+.trip-side .trip-card h1 { font: 600 1.15rem/1.2 var(--serif); letter-spacing: -0.01em; margin: 0 0 4px; }
+.trip-side .back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 0.8rem;
+  font-weight: 600;
   text-decoration: none;
 }
-.trip-card-float .back:hover { color: var(--text); }
-.trip-card-float h1 { font: 700 1.5rem/1.1 var(--serif); letter-spacing: -0.015em; margin: 8px 0 4px; }
-.trip-card-float .dates { color: var(--muted); font-size: 0.9rem; margin-bottom: 10px; }
-.trip-card-float .start {
-  margin-top: 12px;
-  border: 0;
-  background: var(--brand);
-  color: #fff;
-  padding: 8px 14px;
+.trip-side .back:hover { background: #fff; color: var(--accent); }
+.side-actions { display: flex; gap: 8px; }
+.side-actions button {
+  flex: none;
+  padding: 8px 12px;
   border-radius: 999px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
 }
-.trip-card-float .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
-.trip-card-float .site-logo img { height: 26px; }
-.embed .trip-card-float .back { display: none; }
-.trip-card-float .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-.trip-card-float .actions .start { margin-top: 0; }
-.trip-card-float .flickr-btn {
-  border: 1px solid var(--line);
-  background: var(--surface);
-  padding: 7px 13px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.9rem;
+.side-actions .start { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; } /* lange plaatsnaam: afkappen */
+.side-actions .start { border: 1px solid var(--brand); background: var(--brand); color: #fff; }
+.side-actions .start:hover { background: var(--accent); border-color: var(--accent); }
+.side-actions .flickr-btn { border: 1px solid var(--line); background: var(--surface); }
+.side-actions .flickr-btn:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-height: 640px) {
+  .trip-side .summary { display: none; }
 }
-.trip-card-float .flickr-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Raster met Flickr-foto's */
 .fg-open { overflow: hidden; }
@@ -505,7 +553,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .panel-body h2 { font: 700 2.3rem/1.1 var(--serif); letter-spacing: -0.02em; margin: 12px 0 8px; }
 .leg-info { font-size: 0.95rem; color: var(--muted); margin-bottom: 18px; }
-.story { font-size: 1.05rem; line-height: 1.7; max-width: 68ch; }
+.story { font-size: 1.05rem; line-height: 1.7; }
 .story p { margin: 0 0 1em; }
 .story h3 { font: 600 1.25rem/1.25 var(--serif); margin: 1.4em 0 0.4em; }
 
@@ -561,16 +609,36 @@ button { font: inherit; color: inherit; cursor: pointer; }
   opacity: 0.7;
 }
 .panel-nav button b {
-  font: 600 1.2rem/1.2 var(--serif);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  font: 600 1.05rem/1.2 var(--serif);
+  overflow-wrap: anywhere; /* lange naam: over meer regels, de knoppen groeien mee */
 }
 .panel-nav button.next { text-align: right; align-items: flex-end; background: var(--brand); color: #fff; }
 .panel-nav button:hover:not(:disabled) { transform: translateY(-1px); }
 .panel-nav button.prev:hover:not(:disabled) { background: var(--soft); }
 .panel-nav button.next:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
 .panel-nav button:disabled { opacity: 0.3; cursor: default; }
+
+/* Dezelfde knoppen links onder de reiskaart: alleen zichtbaar als er een stop open is */
+.panel-nav.side-nav { display: none; gap: 8px; padding: 0; border: 0; background: none; }
+.panel-open .panel-nav.side-nav { display: flex; }
+.side-nav button { padding: 8px 12px; border-radius: 12px; box-shadow: var(--shadow); }
+.side-nav button b { font-size: 0.92rem; }
+.side-nav button:disabled { opacity: 0.55; }
+
+/* Reispagina, breed scherm: het paneel zweeft los van de rand, net als de kaart linksboven */
+@media (min-width: 768px) {
+  .trip-page .panel {
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: calc(100% - 32px);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(calc(100% + 32px));
+  }
+  .trip-page .panel.open { transform: none; }
+}
 
 /* Mobiel: paneel als sheet van onderen */
 @media (max-width: 767px) {
@@ -584,9 +652,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
   }
   .panel.open { transform: none; }
   .panel-hero { aspect-ratio: 16 / 9; border-radius: 18px 18px 0 0; }
-  .trip-card-float { top: 10px; left: 10px; padding: 10px 14px 12px; }
-  .trip-card-float h1 { font-size: 1.15rem; }
-  .panel-open .trip-card-float { display: none; }
+  /* Reiskaart compact: zonder foto en samenvatting, zodat de kaart zichtbaar blijft */
+  .trip-side { top: 10px; left: 10px; width: 300px; max-width: calc(100% - 20px); gap: 8px; }
+  .trip-side .trip-card img, .trip-side .trip-card .no-cover, .trip-side .summary { display: none; }
+  .trip-side .trip-card .body { padding: 6px 14px 12px; }
+  .trip-side .back { position: static; align-self: flex-start; margin: 10px 0 0 12px; padding: 0; background: none; box-shadow: none; color: var(--muted); }
+  .panel-open .trip-side { display: none; }
 }
 
 /* Lightbox */

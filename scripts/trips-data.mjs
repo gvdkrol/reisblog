@@ -17,6 +17,10 @@
 //   export const photos = { 'photos/x.webp': '<url van het gebundelde bestand>' }
 //   export function loadTrip() → Promise<inhoud van trip.json>
 //
+// `virtual:search` (zoekindex, pas geladen als het zoekveld op de homepage gebruikt wordt):
+//   export function loadSearch() → Promise<[[slug, stop-id, stopnaam, datum, item, titel, tekst], ...]>
+//     één regel per stop (item 0: eigen notities) en per blogbericht in de stoptekst (item 1, 2, …)
+//
 // Bij `npm run build` staan de reis en de routes voor de overzichtskaart in aparte
 // JSON-bestanden (met vereenvoudigde route-geometrie) die pas worden opgehaald als ze
 // nodig zijn; zo blijft elke JS-chunk klein. Tijdens `npm run dev` zit alles inline.
@@ -32,6 +36,7 @@ import { legKey } from './routing.mjs';
 import { decodePolyline, encodePolyline } from '../src/polyline.js';
 import { isVia, onRoute } from '../src/stops.js';
 import { continentDays } from '../src/continents.js';
+import { splitPosts } from '../src/search.js';
 
 const ID = 'virtual:trips';
 const RESOLVED_ID = '\0virtual:trips';
@@ -39,6 +44,8 @@ const TRIP_PREFIX = 'virtual:trip/';
 const RESOLVED_TRIP_PREFIX = '\0virtual:trip/';
 const HOME_ID = 'virtual:home';
 const RESOLVED_HOME_ID = '\0virtual:home';
+const SEARCH_ID = 'virtual:search';
+const RESOLVED_SEARCH_ID = '\0virtual:search';
 
 // Toleranties (in graden) voor het vereenvoudigen van routes: ±3 m op de reispagina
 // (niet te zien), ±1 km op de overzichtskaart met alle reizen (daar is 1 pixel al
@@ -61,10 +68,12 @@ export function tripsData({ root }) {
     resolveId(id) {
       if (id === ID) return RESOLVED_ID;
       if (id === HOME_ID) return RESOLVED_HOME_ID;
+      if (id === SEARCH_ID) return RESOLVED_SEARCH_ID;
       if (id.startsWith(TRIP_PREFIX)) return `\0${id}`;
     },
     load(id) {
       if (id === RESOLVED_HOME_ID) return loadHome();
+      if (id === RESOLVED_SEARCH_ID) return jsonLoader(this, 'loadSearch', 'zoek.json', searchIndex());
       if (id === RESOLVED_ID) return loadSummaries(this);
       if (id.startsWith(RESOLVED_TRIP_PREFIX)) return loadTrip(this, id.slice(RESOLVED_TRIP_PREFIX.length));
     },
@@ -160,6 +169,20 @@ ${jsonLoader(ctx, 'loadTrip', `${slug}.json`, data)}
 ${jsonLoader(ctx, 'loadFlickr', `${slug}-flickr.json`, flickr)}`;
   }
 
+  // Zoekindex: per zichtbare stop de eigen notities en elk blogbericht als platte tekst.
+  function searchIndex() {
+    const rows = [];
+    for (const trip of readdirSync(tripsDir).map(readTrip).filter(Boolean)) {
+      for (const stop of trip.stops) {
+        if (isVia(stop)) continue;
+        splitPosts(stop.text).forEach((post, item) => {
+          if (item === 0 || post.title || post.text) rows.push([trip.slug, stop.id, stop.name, stop.date || '', item, post.title, post.text]);
+        });
+      }
+    }
+    return rows;
+  }
+
   // Samenvatting voor de homepage: kaartje en kerncijfers.
   function summarize(trip) {
     const stops = trip.stops || [];
@@ -235,7 +258,7 @@ ${jsonLoader(ctx, 'loadFlickr', `${slug}-flickr.json`, flickr)}`;
 
   function invalidate(server) {
     for (const mod of server.moduleGraph.idToModuleMap.values()) {
-      if (mod.id === RESOLVED_ID || mod.id === RESOLVED_HOME_ID || mod.id?.startsWith(RESOLVED_TRIP_PREFIX)) {
+      if (mod.id === RESOLVED_ID || mod.id === RESOLVED_HOME_ID || mod.id === RESOLVED_SEARCH_ID || mod.id?.startsWith(RESOLVED_TRIP_PREFIX)) {
         server.moduleGraph.invalidateModule(mod);
       }
     }

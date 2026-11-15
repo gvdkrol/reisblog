@@ -1,10 +1,10 @@
 import './style.css';
 import { loadTrip, loadFlickr, asset } from './data.js';
 import { createMap, legLatLngs, legStyle, stopType, isVia, decodePolyline, L } from './map.js';
-import { formatRange, formatKm, formatDuration, formatLeg, escapeHtml } from './format.js';
+import { formatRange, formatKm, formatLeg, escapeHtml } from './format.js';
 import { stopPanelHtml, bindPanelPhotos, captionHtml } from './panel.js';
+import { queryTerms, highlightIn, postHeadings } from './search.js';
 import { createFlickrGallery, toFlickrData, flickrThumbHtml, lockBrokenThumbs } from './flickr-gallery.js';
-import logoUrl from './img/logo-rw.png';
 
 const params = new URLSearchParams(location.search);
 const embed = params.has('embed');
@@ -23,23 +23,30 @@ if (!trip) {
 
 document.title = `${trip.title} · rondjewereld.nl`;
 
-// ---------- Infokaart linksboven ----------
-$('trip-info').innerHTML = `
-  <div class="top">
-    <a class="site-logo" href="./${embed ? '?embed=1' : ''}"><img src="${logoUrl}" alt="Rondjewereld.nl" width="149" height="26" /></a>
+// ---------- Linksboven: dezelfde reiskaart als op de homepage, met de knoppen eronder ----------
+const side = $('trip-info');
+side.innerHTML = `
+  <div class="trip-card">
     <a class="back" href="./${embed ? '?embed=1' : ''}">← Alle reizen</a>
+    ${trip.coverSrc ? `<img src="${asset(trip, trip.coverSrc)}" alt="" />` : '<div class="no-cover">🗺️</div>'}
+    <div class="body">
+      <h1>${escapeHtml(trip.title)}${trip.draft ? ' <span class="draft">concept</span>' : ''}</h1>
+      <div class="dates">${formatRange(trip.startDate, trip.endDate)}</div>
+      ${trip.summary ? `<p class="summary">${escapeHtml(trip.summary)}</p>` : ''}
+      <div class="stats">
+        <span class="stat">${trip.stopCount} stops</span>
+        ${trip.totalKm ? `<span class="stat">${formatKm(trip.totalKm)}</span>` : ''}
+      </div>
+    </div>
   </div>
-  <h1>${escapeHtml(trip.title)}</h1>
-  <div class="dates">${formatRange(trip.startDate, trip.endDate)}</div>
-  <div class="stats">
-    <span class="stat">${trip.stopCount} stops</span>
-    ${trip.totalKm ? `<span class="stat">${formatKm(trip.totalKm)}</span>` : ''}
-    ${trip.totalMinutes ? `<span class="stat">${formatDuration(trip.totalMinutes)} rijden</span>` : ''}
-  </div>
-  <div class="actions">
+  <div class="side-actions">
     ${trip.visibleStops.length ? `<button class="start" id="start">Start bij ${escapeHtml(trip.visibleStops[0].name)} →</button>` : ''}
-    <button class="flickr-btn" id="flickr-btn">📷 Foto's</button>
+    <button class="flickr-btn" id="flickr-btn">Foto's van de reis</button>
   </div>
+  <nav class="panel-nav side-nav">
+    <button class="prev" id="side-prev"></button>
+    <button class="next" id="side-next"></button>
+  </nav>
 `;
 $('start')?.addEventListener('click', () => openStop(0));
 // Flickr-lijst van de reis: één keer laden, gedeeld door het raster en het stoppaneel.
@@ -97,7 +104,9 @@ const markers = stops.map((stop, i) => {
 const allBounds = L.latLngBounds(trip.stops.map((s) => [s.lat, s.lng]));
 legLayers.forEach(({ line }) => allBounds.extend(line.getBounds()));
 tracks.forEach((line) => allBounds.extend(line.getBounds()));
-const fitAll = () => map.fitBounds(allBounds, { padding: [60, 60] });
+// Op een breed scherm de reis naast de kaart linksboven passen, niet eronder.
+const fitAll = () =>
+  map.fitBounds(allBounds, { paddingTopLeft: [isMobile() ? 60 : side.offsetWidth + 48, 60], paddingBottomRight: [60, 60] });
 if (allBounds.isValid()) fitAll();
 else map.setView([50, 5], 5);
 
@@ -138,12 +147,13 @@ function closePanel() {
   tracks.forEach((line) => line.setStyle({ weight: 4, opacity: 0.85 }));
 }
 
-// Stop centreren in het zichtbare deel van de kaart (naast of boven het paneel).
+// Stop centreren in het zichtbare deel van de kaart (boven het paneel, of tussen de
+// kaart linksboven en het paneel rechts).
 function focusOn(stop, animate = true) {
   const zoom = Math.max(map.getZoom(), 9);
   const point = map.project([stop.lat, stop.lng], zoom);
   const size = map.getSize();
-  const offset = isMobile() ? L.point(0, (size.y * 0.72) / 2) : L.point(Math.min(panel.offsetWidth, size.x) / 2, 0);
+  const offset = isMobile() ? L.point(0, (size.y * 0.72) / 2) : L.point(Math.max(panel.offsetWidth - side.offsetWidth, 0) / 2, 0);
   const center = map.unproject(point.add(offset), zoom);
   if (animate) map.flyTo(center, zoom, { duration: 0.8 });
   else map.setView(center, zoom, { animate: false });
@@ -162,12 +172,46 @@ function renderPanel(stop) {
   });
   content.scrollTop = 0;
   bindPanelPhotos(content, photos, { onOpen: (index) => openLightbox(photos, index) });
-  renderDayFlickr(stop, content).catch(() => {}); // zonder Flickr-lijst gewoon geen raster
+  // Vanuit het zoeken: zoekwoorden uitlichten en (alleen bij de gevonden stop) naar het bericht scrollen.
+  const hit = searchHit?.stop === stop ? hitTarget(content) : null;
+  highlightIn(content.querySelector('.panel-body'), searchTerms);
+  scrollToHit(content, hit);
+  renderDayFlickr(stop, content)
+    .catch(() => {}) // zonder Flickr-lijst gewoon geen raster
+    .then(() => stops[current] === stop && scrollToHit(content, hit)); // het fotoraster schuift de tekst op
 
-  $('prev').disabled = !prevStop;
-  $('next').disabled = !next;
-  $('prev').innerHTML = `<small>← Vorige stop</small><b>${prevStop ? escapeHtml(prevStop.name) : '–'}</b>`;
-  $('next').innerHTML = `<small>Volgende stop →</small><b>${next ? escapeHtml(next.name) : 'Einde van de reis'}</b>`;
+  // Dezelfde knoppen onder in het paneel en links onder de reiskaart.
+  for (const id of ['prev', 'side-prev']) {
+    $(id).disabled = !prevStop;
+    $(id).innerHTML = `<small>← Vorige stop</small><b>${prevStop ? escapeHtml(prevStop.name) : '–'}</b>`;
+  }
+  for (const id of ['next', 'side-next']) {
+    $(id).disabled = !next;
+    $(id).innerHTML = `<small>Volgende stop →</small><b>${next ? escapeHtml(next.name) : 'Einde van de reis'}</b>`;
+  }
+}
+
+// ---------- Zoekresultaat (trip.html?reis=…&zoek=<woorden>&item=<n>#stop-<id>) ----------
+const searchTerms = queryTerms(params.get('zoek') || '');
+let searchHit = null; // { stop, item }: de stop en het blogbericht waar het zoeken naartoe wees
+
+// Kop van het gevonden bericht (item 0 = de notities boven het eerste bericht: geen kop).
+function hitTarget(content) {
+  const heading = postHeadings(content.querySelector('.story'))[searchHit.item - 1] || null;
+  return { heading };
+}
+// Scrolt naar de eerste treffer in het gevonden bericht; zonder treffer naar de kop ervan.
+function scrollToHit(content, hit) {
+  if (!hit) return;
+  const marks = [...content.querySelectorAll('.story mark.hit')];
+  const { heading } = hit;
+  const inPost = heading
+    ? marks.find((m) => heading.contains(m) || heading.compareDocumentPosition(m) & Node.DOCUMENT_POSITION_FOLLOWING)
+    : marks[0];
+  const target = inPost || heading;
+  if (!target) return; // alleen de naam van de stop gevonden: bovenaan blijven
+  const top = target.getBoundingClientRect().top - content.getBoundingClientRect().top;
+  content.scrollTop += top - content.clientHeight / 3;
 }
 
 // Flickr-foto's van de dag van de stop, als raster boven het verhaal. Foto's die al bij
@@ -202,8 +246,8 @@ async function renderDayFlickr(stop, content) {
   content.querySelector('.day-flickr-slot')?.replaceWith(section);
 }
 
-$('prev').addEventListener('click', () => openStop(current - 1));
-$('next').addEventListener('click', () => openStop(current + 1));
+for (const id of ['prev', 'side-prev']) $(id).addEventListener('click', () => openStop(current - 1));
+for (const id of ['next', 'side-next']) $(id).addEventListener('click', () => openStop(current + 1));
 $('panel-close').addEventListener('click', () => {
   closePanel();
   fitAll();
@@ -252,4 +296,7 @@ document.addEventListener('keydown', (e) => {
 
 // ---------- Deeplink #stop-<id> ----------
 const fromHash = stops.findIndex((s) => `#stop-${s.id}` === location.hash);
-if (fromHash >= 0) openStop(fromHash, { animate: false });
+if (fromHash >= 0) {
+  if (searchTerms.length) searchHit = { stop: stops[fromHash], item: Number(params.get('item')) || 0 };
+  openStop(fromHash, { animate: false });
+}

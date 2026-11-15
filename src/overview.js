@@ -3,6 +3,7 @@ import { trips, asset, home, homeAsset, loadRoutes } from './data.js';
 import { createMap, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, escapeHtml } from './format.js';
 import { CONTINENTS, continentOf } from './continents.js';
+import { initSearch } from './home-search.js';
 
 const embed = new URLSearchParams(location.search).has('embed');
 if (embed) document.body.classList.add('embed');
@@ -175,6 +176,8 @@ if (links.length) {
         .join('')}
     </div>`;
 }
+
+initSearch({ trips, tripUrl });
 
 document.getElementById('site-footer').textContent = [home.eyebrow, yearLabel].filter(Boolean).join(' · ');
 

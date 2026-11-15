@@ -17,6 +17,7 @@ Aanwijzingen voor Claude bij het werken aan deze repo. Gebruik en bediening staa
 
 - Vite + vanilla JS + Leaflet; GitHub Pages via Actions bij push naar `main` (relatieve base `./`).
 - `scripts/trips-data.mjs`: virtuele modules `virtual:trips` (samenvattingen, per-reis loaders, routes) en `virtual:home`. Concepten (reizen én stops) vallen eruit bij het bouwen; trajecten rond concept-stops worden samengevoegd.
+- Zoeken (homepage, `src/home-search.js` + `src/search.js`): `virtual:search` levert een index van alle stopteksten (bij build `zoek.json`, pas geladen bij het zoeken), één regel per stop en per blogbericht (`**titel** · datum`). Een resultaat opent `trip.html?reis=…&zoek=…&item=<n>#stop-<id>`; de reispagina licht de woorden uit en scrolt naar het bericht.
 - `scripts/editor-api.mjs`: alleen in dev (`/api/...`) voor de editor: reizen, foto's, homepage, Flickr. (De WordPress-koppeling is eruit: de teksten staan in de stops.)
 - `scripts/routing.mjs`: OSRM-routes per traject, gecachet op `key` = `"lat,lng;lat,lng"`. Trajecten met `flight: true` blijven altijd staan, ook bij `npm run route` (dat rekent verder alles opnieuw).
 - `src/panel.js` is gedeeld door site en editor-voorbeeld; `src/stops.js` bepaalt via-punten en fietstochten (die liggen naast de route met een eigen `track`).

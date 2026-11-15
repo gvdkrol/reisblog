@@ -10,13 +10,14 @@
     <link rel="icon" type="image/png" href="./src/img/favicon.png" />
   </head>
   <body>
-    <header class="site-bar">
-      <div class="wrap">
-        <a class="site-logo" href="./"><img src="./src/img/logo-rw.png" alt="Rondjewereld.nl" width="206" height="36" /></a>
-      </div>
-    </header>
     <div class="wrap">
-      <header class="site-header" id="site-header"></header>
+      <div class="site-top">
+        <header class="site-header" id="site-header"></header>
+        <div class="search" id="search" role="search">
+          <input type="search" id="search-input" placeholder="Zoek in alle verhalen…" aria-label="Zoek in alle verhalen" autocomplete="off" />
+          <div class="search-results" id="search-results" hidden></div>
+        </div>
+      </div>
       <div class="kpis" id="kpis"></div>
 
       <main>

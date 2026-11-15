@@ -37,6 +37,10 @@ export async function loadFlickr(slug) {
   return load ? (await load()).loadFlickr() : null;
 }
 
+// Zoekindex van alle stopteksten (apart bestand, pas geladen bij het zoeken):
+// [[slug, stop-id, stopnaam, datum, item, titel van het bericht, tekst], …].
+export const loadSearch = () => import('virtual:search').then((m) => m.loadSearch());
+
 // Zet een pad uit trip.json ("photos/x.webp") om naar de URL van het gebundelde bestand.
 export function asset(trip, path) {
   return photos[`${trip.slug}/${path}`] || path;
