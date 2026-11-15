@@ -14,12 +14,15 @@
 //   GET  /api/flickr?date=YYYY-MM-DD              openbare Flickr-foto's genomen op die dag
 //   GET  /api/flickr?from=…&to=…&page=n           idem voor een periode, per pagina van 100
 //   POST /api/trips/:slug/photos?name=x.jpg&from=<flickr-url>  Flickr-foto downloaden naar de reis
+//   GET  /api/notion                  notities in Notion met Area "Rondjewereld.nl"
+//   GET  /api/notion/:id              tekst van één Notion-pagina
 
 import { readFile, writeFile, readdir, mkdir, unlink, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { routeLegs } from './routing.mjs';
 import { photosTakenOn, photosTakenBetween, downloadFlickrPhoto } from './flickr.mjs';
+import { notionPages, notionPageText } from './notion.mjs';
 import { slugify } from '../src/slugify.js';
 
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -161,6 +164,9 @@ export function editorApi({ root }) {
       const q = url.searchParams;
       if (q.get('from')) return send(res, 200, await photosTakenBetween(root, q.get('from'), q.get('to'), { page: Number(q.get('page')) || 1 }));
       return send(res, 200, await photosTakenOn(root, url.searchParams.get('date')));
+    }
+    if (resource === 'notion' && req.method === 'GET') {
+      return send(res, 200, slug ? await notionPageText(root, slug) : await notionPages(root));
     }
     if (resource === 'home') {
       if (!slug && req.method === 'GET') return send(res, 200, await readHome());

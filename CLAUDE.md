@@ -7,7 +7,7 @@ Aanwijzingen voor Claude bij het werken aan deze repo. Gebruik en bediening staa
 - Communiceer in het Nederlands.
 - **Commit en push alleen als Gerhard "commit en push" zegt.** Bouw eerst (`npx vite build`) en commit nooit een `.env`-bestand of `Reisblog.cmd - Shortcut.lnk`.
 - Nieuwe of geïmporteerde reizen altijd met `draft: true`; Gerhard zet het concept zelf uit.
-- Geheimen staan alleen in `.env.local` (gitignored), bijv. `FLICKR_API_KEY` en `FLICKR_USER=gerhardvandekrol`. Nooit tonen, nooit committen; laat Gerhard sleutels zelf invullen.
+- Geheimen staan alleen in `.env.local` (gitignored), bijv. `FLICKR_API_KEY`, `FLICKR_USER=gerhardvandekrol` en `NOTION_TOKEN`. Nooit tonen, nooit committen; laat Gerhard sleutels zelf invullen.
 - Geen Strava-koppeling (bewust verwijderd: alleen met betaald abonnement).
 - De reizen uit 2011–2013 uit Google Timeline hoeven niet; reizen uit die jaren worden wel gemaakt vanuit de blog (zie hieronder).
 - WordPress (rondjewereld.nl) alleen lezen, tenzij Gerhard expliciet om een wijziging vraagt.
@@ -18,7 +18,8 @@ Aanwijzingen voor Claude bij het werken aan deze repo. Gebruik en bediening staa
 - Vite + vanilla JS + Leaflet; GitHub Pages via Actions bij push naar `main` (relatieve base `./`).
 - `scripts/trips-data.mjs`: virtuele modules `virtual:trips` (samenvattingen, per-reis loaders, routes) en `virtual:home`. Concepten (reizen én stops) vallen eruit bij het bouwen; trajecten rond concept-stops worden samengevoegd.
 - Zoeken (homepage, `src/home-search.js` + `src/search.js`): `virtual:search` levert een index van alle stopteksten (bij build `zoek.json`, pas geladen bij het zoeken), één regel per stop en per blogbericht (`**titel** · datum`). Een resultaat opent `trip.html?reis=…&zoek=…&item=<n>#stop-<id>`; de reispagina licht de woorden uit en scrolt naar het bericht.
-- `scripts/editor-api.mjs`: alleen in dev (`/api/...`) voor de editor: reizen, foto's, homepage, Flickr. (De WordPress-koppeling is eruit: de teksten staan in de stops.)
+- `scripts/editor-api.mjs`: alleen in dev (`/api/...`) voor de editor: reizen, foto's, homepage, Flickr, Notion. (De WordPress-koppeling is eruit: de teksten staan in de stops.)
+- Knop "Tekst uit Notion" bij een stop (`scripts/notion.mjs`): toont de notities uit de Notion-database "Notes" met Area "Rondjewereld.nl" en zet de tekst van de gekozen pagina onder in het Verhaal. Vraagt een Notion-integratie (`NOTION_TOKEN`) die via Connections toegang heeft tot "Notes".
 - `scripts/routing.mjs`: OSRM-routes per traject, gecachet op `key` = `"lat,lng;lat,lng"`. Trajecten met `flight: true` blijven altijd staan, ook bij `npm run route` (dat rekent verder alles opnieuw).
 - `src/panel.js` is gedeeld door site en editor-voorbeeld; `src/stops.js` bepaalt via-punten en fietstochten (die liggen naast de route met een eigen `track`).
 - Stop-types: `camping`, `hotel`, `haven`, `bezienswaardigheid`, `eten`, `activiteit`, `highlight`, `fietstocht`, `via` (`overnachting` is een alias van `camping`).

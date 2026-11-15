@@ -245,7 +245,13 @@ function formHtml(s) {
       ${isVia(s) ? `<p class="hint via-hint">Een via-punt is op de site alleen een klein rood stipje op de route (naam bij aanwijzen). Verhaal en foto's worden niet getoond.</p>` : `
       <label>Verhaal <span class="hint">**vet**, *schuin*, lege regel = nieuwe alinea</span>
         <textarea data-field="text" rows="7">${esc(s.text)}</textarea></label>
-      <button type="button" class="link" data-action="preview">${previewOpen ? 'Voorbeeld verbergen' : 'Voorbeeld tonen'}</button>
+      <div class="notion-box">
+        <div class="wp-head">
+          <button type="button" class="btn small" data-action="notionfind">📝 Tekst uit Notion</button>
+          <button type="button" class="link" data-action="preview">${previewOpen ? 'Voorbeeld verbergen' : 'Voorbeeld tonen'}</button>
+        </div>
+        <div class="notion-results" hidden></div>
+      </div>
       <div class="photos">${s.photos.map(photoHtml).join('')}</div>
       <label class="dropzone">
         <input type="file" accept="image/*" multiple data-action="upload" hidden />
@@ -314,6 +320,54 @@ function addStop({ name, lat, lng }) {
   setDirty();
   selectStop(stop.id);
   list.querySelector('.stop.open [data-field="text"]')?.focus();
+}
+
+// ---------- Tekst uit Notion ----------
+// Lijst van de notities in de Area "Rondjewereld.nl"; een klik zet de tekst in het verhaal.
+async function findNotion(li) {
+  const box = li.querySelector('.notion-results');
+  box.hidden = false;
+  box.innerHTML = `<p class="hint">Pagina's uit Notion ophalen…</p>`;
+  const close = '<button type="button" class="link" data-action="notionclose">Sluiten</button>';
+  try {
+    const pages = await api('/notion');
+    if (!pages.length) {
+      box.innerHTML = `<p class="hint">Geen pagina's in Notion met Area "Rondjewereld.nl".</p>${close}`;
+      return;
+    }
+    box.innerHTML = `
+      <p class="hint">Kies een pagina; de tekst komt in het verhaal${li.querySelector('[data-field="text"]').value.trim() ? ', onder wat er al staat' : ''}.</p>
+      <ul class="notion-list">${pages
+        .map((p) => `<li><button type="button" data-action="notionpick" data-page="${esc(p.id)}"><b>${esc(p.title)}</b><span>${esc(formatDate(p.date))}</span></button></li>`)
+        .join('')}</ul>
+      <div class="wp-actions">${close}</div>`;
+  } catch (err) {
+    box.innerHTML = `<p class="hint">Ophalen mislukt: ${esc(err.message)}</p>${close}`;
+  }
+}
+
+async function pickNotion(li, stop, el) {
+  const box = li.querySelector('.notion-results');
+  box.querySelectorAll('button').forEach((b) => (b.disabled = true));
+  setStatus('Tekst uit Notion ophalen…');
+  try {
+    const page = await api(`/notion/${el.dataset.page}`);
+    if (!page.text.trim()) {
+      box.querySelectorAll('button').forEach((b) => (b.disabled = false));
+      return setStatus(`"${page.title}" bevat geen tekst.`, 'error');
+    }
+    const area = li.querySelector('[data-field="text"]');
+    stop.text = [area.value.trimEnd(), page.text].filter(Boolean).join('\n\n');
+    area.value = stop.text;
+    box.hidden = true;
+    setDirty();
+    schedulePreview();
+    setStatus(`Tekst van "${page.title}" in het verhaal gezet. Vergeet niet op te slaan.`);
+    area.focus();
+  } catch (err) {
+    box.querySelectorAll('button').forEach((b) => (b.disabled = false));
+    setStatus(`Notion: ${err.message}`, 'error');
+  }
 }
 
 // ---------- Foto's van Flickr ----------
@@ -623,6 +677,15 @@ list.addEventListener('click', (e) => {
       break;
     case 'zoom':
       map.flyTo([stop.lat, stop.lng], 13);
+      break;
+    case 'notionfind':
+      findNotion(li);
+      break;
+    case 'notionpick':
+      pickNotion(li, stop, el);
+      break;
+    case 'notionclose':
+      li.querySelector('.notion-results').hidden = true;
       break;
     case 'flickrfind':
       findFlickr(li, stop);
