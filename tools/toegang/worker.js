@@ -73,11 +73,13 @@ async function approve(req, env, url) {
 
   const pol = await getPolicy(env);
   const has = pol.include.some(r => r.email?.email?.toLowerCase() === email);
-  const invite = `mailto:${encodeURIComponent(email)}?` + new URLSearchParams({
-    subject: "Toegang tot rondjewereld.nl",
+  // opstelvenster van Gmail, in het account van de beheerder (authuser)
+  const invite = "https://mail.google.com/mail/?" + new URLSearchParams({
+    authuser: env.OWNER, view: "cm", fs: "1", to: email,
+    su: "Toegang tot rondjewereld.nl",
     body: `Hoi ${naam || ""},\n\nJe hebt nu toegang tot rondjewereld.nl: ${SITE}\nLog in met dit e-mailadres (${email}); je krijgt dan een code per mail.\n\nGroet,\nGerhard`
   }).toString().replace(/\+/g, "%20");
-  const done = `<p><a class="btn" href="${esc(invite)}">Mail ${esc(naam || email)} dat het gelukt is</a></p>`;
+  const done = `<p><a class="btn" href="${esc(invite)}" target="_blank" rel="noopener">Mail ${esc(naam || email)} dat het gelukt is</a></p>`;
 
   if (req.method !== "POST") {
     if (has) return page("Al toegestaan", `<p><b>${esc(email)}</b> staat al in de policy “${esc(pol.name)}”.</p>${done}`);
