@@ -77,7 +77,7 @@ async function approve(req, env, url) {
   const invite = "https://mail.google.com/mail/?" + new URLSearchParams({
     authuser: env.OWNER, view: "cm", fs: "1", to: email,
     su: "Toegang tot rondjewereld.nl",
-    body: `Hoi ${naam || ""},\n\nJe hebt nu toegang tot rondjewereld.nl: ${SITE}\nLog in met dit e-mailadres (${email}); je krijgt dan een code per mail.\n\nGroet,\nGerhard`
+    body: `Hoi ${naam || ""},\n\nJe hebt nu toegang tot rondjewereld.nl: ${SITE}/reizen/\nLog in met dit e-mailadres (${email}); je krijgt dan een code per mail.\n\nGroet,\nGerhard`
   }).toString().replace(/\+/g, "%20");
   const done = `<p><a class="btn" href="${esc(invite)}" target="_blank" rel="noopener">Mail ${esc(naam || email)} dat het gelukt is</a></p>`;
 
@@ -140,7 +140,7 @@ ${err ? `<p class="err">${esc(err)}</p>` : ""}
 </form>
 <p class="muted">Je gegevens worden alleen gebruikt om je aanvraag te beoordelen.</p>`;
 }
-const sentHTML = () => `<p>Bedankt! Je aanvraag is verstuurd. Na goedkeuring krijg je een mail; daarna log je op <a href="${SITE}">rondjewereld.nl</a> in met je e-mailadres.</p>`;
+const sentHTML = () => `<p>Bedankt! Je aanvraag is verstuurd. Na goedkeuring krijg je een mail; daarna log je op <a href="${SITE}/reizen/">rondjewereld.nl/reizen</a> in met je e-mailadres.</p>`;
 function page(title, body, status = 200) {
   return new Response(`<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)} · rondjewereld.nl</title>

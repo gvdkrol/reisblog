@@ -1,0 +1,183 @@
+<!doctype html>
+<!--
+  Openbare welkomspagina van rondjewereld.nl (de reizen zelf staan achter Cloudflare Access onder /reizen/).
+  Bij `npm run build` maakt scripts/welkom.mjs hier dist/index.html van: {{…}} worden ingevuld en de
+  foto's uit ../content/ gaan verkleind naar dist/welkom/. Lokaal te bekijken op http://localhost:5173/welkom/.
+-->
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rondjewereld.nl · {{jaren}} jaar reizen</title>
+    <meta name="description" content="Reisverhalen van rondjewereld.nl: waar we geweest zijn, stop voor stop." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" />
+    <link rel="icon" type="image/png" href="../src/img/favicon.png" />
+    <style>
+      :root {
+        --bg: #f3f1ee;
+        --surface: #fff;
+        --text: #1d2627;
+        --muted: #565d5e;
+        --line: #e2dedb;
+        --brand: #002528;
+        --accent: #7e5f6a;
+        --route: #a95558;
+        --radius: 14px;
+        --gutter: clamp(16px, 3.5vw, 44px);
+        --page: 1180px;
+        --font: 'Source Sans 3', -apple-system, 'Segoe UI', Roboto, sans-serif;
+        --serif: 'PT Serif', Georgia, serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 400 1.0625rem/1.6 var(--font); }
+      a { color: inherit; }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        position: relative; min-height: min(92vh, 860px); display: flex; flex-direction: column;
+        color: #fff; background: #0b1f22 url('../content/trips/noorwegen-2023/photos/loen-3.jpg') center 40% / cover no-repeat;
+      }
+      .hero::before {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(180deg, rgba(0, 37, 40, 0.55) 0%, rgba(0, 37, 40, 0.1) 35%, rgba(0, 37, 40, 0.25) 60%, rgba(0, 37, 40, 0.88) 100%);
+      }
+      .hero > * { position: relative; }
+      .top { display: flex; justify-content: space-between; align-items: center; padding: 22px var(--gutter); max-width: var(--page); width: 100%; margin: 0 auto; }
+      .wordmark { font: 700 1.25rem var(--serif); letter-spacing: 0.01em; text-decoration: none; }
+      .wordmark span { color: #e7c9cf; }
+      .top .login { font: 600 0.95rem var(--font); text-decoration: none; opacity: 0.9; }
+      .top .login:hover { opacity: 1; text-decoration: underline; }
+
+      .hero-body { margin-top: auto; padding: 0 var(--gutter) clamp(40px, 8vh, 80px); max-width: var(--page); width: 100%; margin-left: auto; margin-right: auto; }
+      .eyebrow { font: 600 0.8rem var(--font); letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.85; }
+      h1 { font: 700 clamp(2.4rem, 6vw, 4.4rem)/1.05 var(--serif); margin: 10px 0 14px; max-width: 14ch; }
+      h1 em { font-style: italic; font-weight: 400; color: #e7c9cf; }
+      .lead { font-size: clamp(1.05rem, 1.6vw, 1.25rem); max-width: 40ch; margin: 0 0 28px; opacity: 0.95; }
+
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px;
+        font: 600 1rem var(--font); text-decoration: none; transition: transform 0.15s, background 0.15s;
+      }
+      .btn:hover { transform: translateY(-1px); }
+      .btn-primary { background: #fff; color: var(--brand); }
+      .btn-primary:hover { background: #f3e6e9; }
+      .btn-ghost { border: 1.5px solid rgba(255, 255, 255, 0.7); color: #fff; backdrop-filter: blur(4px); background: rgba(0, 37, 40, 0.2); }
+      .btn-ghost:hover { background: rgba(255, 255, 255, 0.14); }
+      .btn small { display: block; font-weight: 400; font-size: 0.8rem; opacity: 0.75; line-height: 1.1; }
+      .btn .arrow { font-size: 1.2rem; }
+
+      .stats { display: flex; gap: clamp(20px, 4vw, 48px); margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.25); max-width: 560px; }
+      .stats b { display: block; font: 700 1.7rem/1.1 var(--serif); }
+      .stats span { font: 600 0.7rem var(--font); letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; }
+
+      /* ---------- Secties ---------- */
+      section { max-width: var(--page); margin: 0 auto; padding: clamp(48px, 8vw, 96px) var(--gutter) 0; }
+      h2 { font: 700 clamp(1.6rem, 3vw, 2.2rem)/1.15 var(--serif); margin: 0 0 8px; color: var(--brand); }
+      .intro { color: var(--muted); max-width: 60ch; margin: 0 0 32px; }
+
+      /* Bestemmingen */
+      .mosaic { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 12px; }
+      .mosaic figure { margin: 0; position: relative; overflow: hidden; border-radius: var(--radius); background: #ccc; }
+      .mosaic figure:first-child { grid-column: span 2; grid-row: span 2; }
+      .mosaic img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s; }
+      .mosaic figure:hover img { transform: scale(1.04); }
+      .mosaic figcaption {
+        position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; color: #fff;
+        background: linear-gradient(transparent, rgba(0, 37, 40, 0.8)); font: 600 0.95rem var(--font);
+      }
+      .mosaic figcaption span { display: block; font: 400 0.8rem var(--font); opacity: 0.85; }
+
+      /* Stappen */
+      .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: stap; }
+      .step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 24px; }
+      .step::before {
+        counter-increment: stap; content: counter(stap); display: grid; place-items: center;
+        width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: #fff; font: 700 1rem var(--serif); margin-bottom: 14px;
+      }
+      .step h3 { margin: 0 0 6px; font: 700 1.1rem var(--font); color: var(--brand); }
+      .step p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+
+      /* Afsluiter */
+      .cta {
+        margin-top: clamp(48px, 8vw, 96px); background: var(--brand); color: #fff; border-radius: var(--radius);
+        padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between;
+      }
+      .cta h2 { color: #fff; }
+      .cta p { margin: 0; opacity: 0.85; max-width: 46ch; }
+      .cta .btn-ghost { background: transparent; }
+
+      footer { max-width: var(--page); margin: 0 auto; padding: 40px var(--gutter) 48px; color: var(--muted); font-size: 0.9rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+      @media (max-width: 760px) {
+        .mosaic { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
+        .steps { grid-template-columns: 1fr; }
+        .top .login { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="top">
+        <a class="wordmark" href="./">rondjewereld<span>.nl</span></a>
+        <a class="login" href="./reizen/">Inloggen →</a>
+      </div>
+      <div class="hero-body">
+        <div class="eyebrow">Reisverhalen · {{eersteJaar}}–{{laatsteJaar}}</div>
+        <h1>{{jaren}} jaar reizen, <em>stop voor stop</em></h1>
+        <p class="lead">Waar we geweest zijn: met de route op de kaart en bij elke plek een kort verhaal en foto's. Voor familie, vrienden en medereizigers.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="./reizen/"><span>Naar de reizen<small>Ik heb al toegang</small></span><span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="/aanvragen"><span>Toegang aanvragen<small>Nog geen toegang</small></span></a>
+        </div>
+        <div class="stats">
+          <div><b>{{reizen}}</b><span>Reizen</span></div>
+          <div><b>{{continenten}}</b><span>Continenten</span></div>
+          <div><b>{{eersteJaar}}</b><span>Eerste reis</span></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Van fjord tot woestijn</h2>
+        <p class="intro">Met de camper door Europa en rondreizen door Amerika, Azië, Afrika en Oceanië. Een greep uit de reizen.</p>
+        <div class="mosaic">
+          <figure><img src="../content/trips/argentinie-chili-2011/photos/perito-moreno-gletsjer-flickr-5594126384.jpg" alt="" loading="lazy" /><figcaption>Perito Moreno<span>Argentinië · 2011</span></figcaption></figure>
+          <figure><img src="../content/trips/vietnam-cambodja-nepal-2012/photos/sarangkot-zonsopkomst-flickr-6799579886.jpg" alt="" loading="lazy" /><figcaption>Sarangkot<span>Nepal · 2012</span></figcaption></figure>
+          <figure><img src="../content/trips/namibie-2013/photos/walvisbaai-lagune-flickr-10727089505.jpg" alt="" loading="lazy" /><figcaption>Walvisbaai<span>Namibië · 2013</span></figcaption></figure>
+          <figure><img src="../content/trips/marokko-2018/photos/marrakesh-flickr-45570731475.jpg" alt="" loading="lazy" /><figcaption>Marrakesh<span>Marokko · 2018</span></figcaption></figure>
+          <figure><img src="../content/trips/the-americas-2015-2016/photos/lost-dutchman-state-park-arizona-usa-flickr-22937257460.jpg" alt="" loading="lazy" /><figcaption>Lost Dutchman<span>Arizona · 2016</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Zo krijg je toegang</h2>
+        <p class="intro">De reisverhalen zijn alleen te lezen met toegang. Die vraag je één keer aan; daarna log je in met je e-mailadres.</p>
+        <div class="steps">
+          <div class="step"><h3>Vraag toegang aan</h3><p>Vul je naam en e-mailadres in op de aanvraagpagina.</p></div>
+          <div class="step"><h3>Wacht op goedkeuring</h3><p>Je krijgt een mail zodra je aanvraag is goedgekeurd.</p></div>
+          <div class="step"><h3>Log in met een code</h3><p>Klik op "Naar de reizen", vul je e-mailadres in en gebruik de code die je per mail krijgt.</p></div>
+        </div>
+
+        <div class="cta">
+          <div>
+            <h2>Klaar om mee te reizen?</h2>
+            <p>Al toegang? Dan ga je direct naar de reizen. Anders vraag je het hier aan.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="./reizen/">Naar de reizen <span class="arrow">→</span></a>
+            <a class="btn btn-ghost" href="/aanvragen">Toegang aanvragen</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© rondjewereld.nl</span>
+      <span>Problemen met inloggen? Vraag opnieuw toegang aan.</span>
+    </footer>
+  </body>
+</html>
