@@ -27,3 +27,8 @@ simple = { limit = 3, period = 60 }
 # Geheimen (niet in dit bestand, de repo is openbaar), via npx wrangler@4 secret put <NAAM>:
 #   OWNER         e-mailadres van de beheerder (ontvangt aanvragen, mag goedkeuren)
 #   CF_API_TOKEN  token met "Access: Apps and Policies – Edit"
+
+# logo.png wordt als binaire data in de Worker meegenomen (import LOGO from "./logo.png")
+[[rules]]
+type = "Data"
+globs = ["**/*.png"]

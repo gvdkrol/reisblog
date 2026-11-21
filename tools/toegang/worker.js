@@ -1,8 +1,10 @@
 // Toegang aanvragen voor rondjewereld.nl (de site zelf staat achter Cloudflare Access).
 // /aanvragen          openbaar (Access-bypass): formulier → mail naar de beheerder met knop "Goedkeuren"
+// /aanvragen/logo.png logo voor de Access-inlogpagina (openbaar)
 // /beheer/goedkeuren  achter Access, alleen OWNER: bevestigen → e-mailadres in de Access-policy "Toegestaan"
 // Andere paden komen hier niet langs (zie routes in wrangler.toml); die gaan gewoon naar GitHub Pages.
 import { EmailMessage } from "cloudflare:email";
+import LOGO from "./logo.png"; // geel bord "✈ RONDJEWERELD.NL", ook voor de Access-inlogpagina
 
 const SITE = "https://rondjewereld.nl";
 const FROM = "toegang@rondjewereld.fyi";
@@ -17,6 +19,8 @@ export default {
         if (req.method === "POST") return await submit(req, env);
         return page("Toegang aanvragen", formHTML());
       }
+      if (url.pathname === "/aanvragen/logo.png")
+        return new Response(LOGO, { headers: { "content-type": "image/png", "cache-control": "public, max-age=86400" } });
       if (url.pathname === "/beheer/goedkeuren") return await approve(req, env, url);
     } catch (e) {
       return page("Er ging iets mis", `<p>${esc(e.message || e)}</p><p><a href="${esc(req.url)}">Probeer opnieuw</a></p>`, 500);
