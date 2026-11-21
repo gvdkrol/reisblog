@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "route": "node scripts/route.mjs",
     "flickr": "node scripts/flickr-index.mjs",
+    "welkom:fotos": "node scripts/welkom-fotos.mjs",
     "import:polarsteps": "node scripts/import-polarsteps.mjs",
     "import:timeline": "node scripts/import-timeline.mjs",
     "launcher": "node tools/launcher/launcher.mjs --open"

@@ -2,11 +2,12 @@
 // dist/reizen/ komt en daar achter Cloudflare Access staat. Alles wat de welkomspagina
 // gebruikt moet dus buiten /reizen/ staan:
 //   dist/index.html   de welkomspagina, met {{…}} ingevuld
-//   dist/welkom/      verkleinde kopieën van de gebruikte foto's en het favicon
+//   dist/welkom/      album.js + foto/ (de foto's van de pagina, zie scripts/welkom-fotos.mjs),
+//                     verkleinde kopieën van andere gebruikte afbeeldingen en het favicon
 //   dist/trip.html    doorverwijzing van oude links (trip.html?reis=…) naar reizen/trip.html
 // Tijdens dev serveert Vite welkom/index.html zelf op /welkom/; deze plugin vult dan
 // alleen de {{…}} in.
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
 import sharp from 'sharp';
 import { continentDays } from '../src/continents.js';
@@ -30,7 +31,7 @@ export function welkom({ root }) {
       if (isBuild && basename(outDir) === 'dist') rmSync(outDir, { recursive: true, force: true });
     },
     transformIndexHtml(html, ctx) {
-      if (!ctx.filename.replaceAll('\\', '/').endsWith('/welkom/index.html')) return html;
+      if (!ctx.filename.replaceAll('\\', '/').includes('/welkom/')) return html; // ook de ontwerpen
       // Lokaal staat de reisblog op / en niet op /reizen/.
       return fill(html, stats()).replaceAll('href="./reizen/"', 'href="/"');
     },
@@ -56,6 +57,12 @@ export function welkom({ root }) {
           html = html.replaceAll(ref, `./welkom/${name}`);
         }
       }
+      // Foto's van de welkomspagina (npm run welkom:fotos) en hun lijst: zo meekopiëren.
+      // De pagina staat straks in dist/ i.p.v. in welkom/, dus de paden krijgen welkom/ ervoor.
+      cpSync(join(root, 'welkom', 'foto'), join(assets, 'foto'), { recursive: true });
+      cpSync(join(root, 'welkom', 'album.js'), join(assets, 'album.js'));
+      html = html.replaceAll('"./album.js"', '"./welkom/album.js"').replaceAll("'./foto/'", "'./welkom/foto/'");
+
       writeFileSync(join(outDir, 'index.html'), html);
       writeFileSync(join(outDir, 'trip.html'), REDIRECT);
     },
@@ -72,7 +79,8 @@ export function welkom({ root }) {
     const continents = new Set(trips.flatMap((t) => Object.keys(continentDays((t.stops || []).filter((s) => !s.draft)))));
     const eersteJaar = Math.min(...years);
     const laatsteJaar = Math.max(...years);
-    return { reizen: trips.length, continenten: continents.size, eersteJaar, laatsteJaar, jaren: laatsteJaar - eersteJaar };
+    const kilometers = Math.round(trips.reduce((sum, t) => sum + (t.legs || []).reduce((s, l) => s + (l.km || 0), 0), 0));
+    return { reizen: trips.length, continenten: continents.size, eersteJaar, laatsteJaar, jaren: laatsteJaar - eersteJaar, kilometers };
   }
 }
 
