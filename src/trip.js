@@ -1,4 +1,5 @@
 import './style.css';
+import './vertrek.css';
 import { loadTrip, loadFlickr, asset } from './data.js';
 import { createMap, legLatLngs, legStyle, stopType, isVia, decodePolyline, L } from './map.js';
 import { formatRange, formatKm, formatLeg, escapeHtml } from './format.js';
