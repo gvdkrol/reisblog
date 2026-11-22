@@ -1,0 +1,165 @@
+/*
+  Thema "vertrekbord" voor de editor, in de stijl van de site (src/vertrek.css) en de welkomspagina.
+  Laadt na style.css, vertrek.css en admin.css. Terug naar de oude editor: de imports van
+  vertrek.css en dit bestand in admin.js weghalen (en de lettertypen in admin.html).
+*/
+.admin { color-scheme: dark; }
+.admin .panel, .admin .cover-picker-box .panel { color-scheme: light; }
+
+/* ---------- Kop en voettekst van de zijbalk ---------- */
+.sidebar { background: var(--bg); border-right: 1px solid var(--line); }
+.side-head { background: var(--board); border-bottom: 2px solid var(--sign); }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 800 1.7rem/1 var(--cond);
+  text-transform: uppercase;
+  color: #fff;
+}
+.brand::before {
+  content: '✈';
+  display: grid;
+  place-items: center;
+  width: 1.05em;
+  height: 1.05em;
+  background: var(--sign);
+  color: var(--sign-ink);
+  font-size: 0.7em;
+}
+.brand span { font: 500 0.75rem var(--mono); color: var(--sign); letter-spacing: 0.02em; margin-left: 0; }
+
+.tabs { gap: 6px; }
+.tab {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--text);
+  padding: 6px 14px 5px;
+  font: 700 1rem/1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.tab:hover { border-color: var(--sign); }
+.tab.active { background: var(--sign); border-color: var(--sign); color: var(--sign-ink); }
+
+.side-foot { background: var(--board); border-top: 2px solid var(--sign); }
+.stats-line { font: 500 0.78rem var(--mono); color: var(--sign); }
+.status { font: 500 0.72rem var(--mono); }
+.status.error { color: #ff7a6e; }
+.status.ok { color: #3ddc84; }
+
+/* ---------- Blokken, labels en velden ---------- */
+.block h3 {
+  font: 700 1.05rem/1 var(--cond);
+  letter-spacing: 0.12em;
+  color: #fff;
+  margin: 22px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.block h3::before { content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 8px; background: var(--sign); vertical-align: 1px; }
+
+label { font: 700 0.8rem var(--cond); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+input, select, textarea {
+  font: 400 0.95rem/1.4 var(--font);
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+textarea { line-height: 1.5; }
+input::placeholder, textarea::placeholder { color: var(--faint); }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--sign); outline-offset: -1px; border-color: var(--sign); }
+input[type='checkbox'] { accent-color: var(--sign); }
+.hint, label .hint { font: 400 0.8rem var(--font); text-transform: none; letter-spacing: normal; color: var(--faint); }
+.empty { color: var(--faint); }
+.check { color: var(--text); }
+
+/* ---------- Knoppen ---------- */
+.btn {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--text);
+  font: 700 0.95rem/1.1 var(--cond);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.btn.small { font-size: 0.88rem; }
+.btn:hover:not(:disabled) { border-color: var(--sign); color: #fff; }
+.btn.primary { background: var(--sign); border-color: var(--sign); color: var(--sign-ink); padding: 9px 18px; font-size: 1.05rem; }
+.btn.primary:hover:not(:disabled) { background: #ffd83d; border-color: #ffd83d; color: var(--sign-ink); }
+.btn.danger { color: #ff7a6e; }
+.btn.danger:hover:not(:disabled) { border-color: #ff7a6e; color: #ff7a6e; }
+.link { color: var(--sign); }
+
+/* ---------- Omslag ---------- */
+.cover { border-radius: 0; background: var(--soft); color: var(--faint); font: 600 0.8rem var(--cond); text-transform: uppercase; letter-spacing: 0.06em; }
+button.cover:hover { outline-color: var(--sign); }
+.cover-edit { background: rgba(8, 9, 10, 0.8); color: var(--sign); font-family: var(--cond); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ---------- Plaatsen zoeken ---------- */
+.search-results { background: var(--board); border: 1px solid var(--line); border-top: 2px solid var(--sign); border-radius: 0; }
+.search-results button { border-radius: 0; color: var(--text); }
+.search-results button:hover { background: var(--soft); }
+
+/* ---------- Stops ---------- */
+.stop { background: var(--surface); border: 1px solid var(--line); border-radius: 0; }
+.stop:hover { border-color: #3a3c3e; }
+.stop.open { border-color: var(--sign); box-shadow: 0 10px 28px -14px rgba(0, 0, 0, 0.9); }
+.stop.drop-before::before, .stop.drop-after::after { background: var(--sign); border-radius: 0; }
+.handle, .chev { color: var(--faint); }
+.badge { font: 700 12px/24px var(--mono); }
+.stop-title b { font: 700 1.15rem/1.15 var(--cond); text-transform: uppercase; letter-spacing: 0.01em; }
+.stop-title small { font: 500 0.72rem var(--mono); color: var(--faint); }
+.stop-form { border-top: 1px dashed var(--line); }
+.preview { border: 1px dashed var(--line); border-radius: 0; color: var(--muted); }
+.draft-flag { color: var(--sign); }
+
+.photo { background: var(--board); border-radius: 0; }
+.photo input { border-radius: 0; }
+.pbtns button { color: var(--faint); font: 600 0.8rem var(--cond); text-transform: uppercase; letter-spacing: 0.04em; }
+.pbtns button:hover { background: var(--soft); color: #fff; }
+.pbtns button.on { color: var(--sign); }
+.photo-source { border-radius: 0; background: rgba(8, 9, 10, 0.8); color: var(--sign); font-family: var(--mono); font-weight: 500; }
+
+.dropzone { border: 2px dashed var(--line); border-radius: 0; font: 700 0.95rem var(--cond); text-transform: uppercase; letter-spacing: 0.05em; color: var(--text); }
+.dropzone:hover, .stop-form.dragover .dropzone { border-color: var(--sign); background: rgba(255, 204, 0, 0.06); }
+
+/* Notion en Flickr in een stop */
+.notion-results, .flickr-box { border-radius: 0; background: var(--board); border: 1px solid var(--line); }
+.notion-list button { border-radius: 0; background: var(--surface); color: var(--text); }
+.notion-list button:hover:not(:disabled) { border-color: var(--sign); }
+.notion-list span { font: 500 0.72rem var(--mono); color: var(--faint); }
+.flickr-item { border-radius: 0; background: var(--surface); }
+.flickr-item:has(input:checked) { border-color: var(--sign); }
+.flickr-item span { font: 500 0.68rem var(--mono); color: var(--faint); }
+
+/* Links op de homepage */
+.link-item { border-radius: 0; background: var(--surface); }
+.link-image img, .link-image > .hint { border-radius: 0; }
+
+/* ---------- Omslag- en Flickrkiezer ---------- */
+.cover-picker { background: rgba(8, 9, 10, 0.8); }
+.cover-picker-box { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); }
+.cover-picker-box header { background: var(--board); border-bottom: 2px solid var(--sign); }
+.cover-picker-box h3 { font: 800 1.7rem/1 var(--cond); text-transform: uppercase; }
+.cover-picker-body h4 { font: 700 0.9rem var(--cond); text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+.cover-picker-body h4 small { font: 500 0.72rem var(--mono); text-transform: none; letter-spacing: 0; color: var(--faint); }
+.cover-option { border-radius: 0; }
+.cover-option:hover { outline-color: var(--sign); }
+.cover-option.current { outline-color: #fff; }
+.cover-option span { border-radius: 0; background: var(--sign); color: var(--sign-ink); font: 700 0.75rem var(--cond); text-transform: uppercase; letter-spacing: 0.04em; }
+.cover-picker-box > header .panel-close { border-radius: 0; background: var(--sign); color: var(--sign-ink); }
+.flickr-picker-foot { background: var(--board); border-top: 1px solid var(--line); }
+
+/* ---------- Voorbeeld van het zijpaneel (crème, zoals op de site) ---------- */
+.preview-badge { border-radius: 0; background: var(--sign); color: var(--sign-ink); font: 700 0.8rem var(--cond); letter-spacing: 0.12em; }
+.preview-panel { border-top: 3px solid var(--sign); }
+
+/* Pop-ups op de kaart */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { border-radius: 0; }
+.leaflet-popup-content-wrapper { border-top: 2px solid var(--sign); }

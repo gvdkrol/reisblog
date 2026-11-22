@@ -27,19 +27,20 @@ export function stopType(type) {
   return STOP_TYPES[TYPE_ALIASES[type] || type] || { label: 'Stop', icon: '•', color: '#555' };
 }
 
-// tiles: 'osm' (OpenStreetMap, veel detail) of 'gray' (lichtgrijs, zoals route-the-americas).
+// tiles: 'osm' (OpenStreetMap, veel detail), 'gray' (lichtgrijs, zoals route-the-americas) of 'dark' (donkergrijs).
 export function createMap(el, { tiles = 'osm', ...options } = {}) {
   const map = L.map(el, { zoomControl: false, ...options });
   L.control.zoom({ position: 'bottomleft' }).addTo(map);
   map.attributionControl.setPosition('bottomleft'); // rechtsonder valt hij onder het zijpaneel
-  if (tiles === 'gray') {
+  if (tiles === 'gray' || tiles === 'dark') {
     const esri = (layer) => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${layer}/MapServer/tile/{z}/{y}/{x}`;
-    L.tileLayer(esri('World_Light_Gray_Base'), {
+    const shade = tiles === 'dark' ? 'Dark' : 'Light';
+    L.tileLayer(esri(`World_${shade}_Gray_Base`), {
       maxZoom: 18,
       maxNativeZoom: 16,
       attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
     }).addTo(map);
-    L.tileLayer(esri('World_Light_Gray_Reference'), { maxZoom: 18, maxNativeZoom: 16 }).addTo(map);
+    L.tileLayer(esri(`World_${shade}_Gray_Reference`), { maxZoom: 18, maxNativeZoom: 16 }).addTo(map);
   } else {
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,

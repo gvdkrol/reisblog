@@ -1,5 +1,7 @@
 import '../style.css';
+import '../vertrek.css';
 import './admin.css';
+import './admin-vertrek.css';
 import { createMap, legStyle, stopType, STOP_TYPES, decodePolyline, isVia, onRoute, L } from '../map.js';
 import { legInto } from '../stops.js';
 import { slugify } from '../slugify.js';

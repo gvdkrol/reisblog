@@ -184,9 +184,10 @@ document.getElementById('site-footer').textContent = [home.eyebrow, yearLabel].f
 
 // ---------- Overzichtskaart met alle routes ----------
 // Kleur per reis: tint telkens een 'gulden hoek' verder, zodat opeenvolgende (vaak naburige) reizen duidelijk verschillen.
-const colorOf = (i) => `hsl(${Math.round((i * 137.5) % 360)}, ${i % 2 ? 85 : 70}%, ${[38, 48, 30][i % 3]}%)`;
+// Lichte tinten, want de kaart is donker.
+const colorOf = (i) => `hsl(${Math.round((i * 137.5) % 360)}, ${i % 2 ? 90 : 75}%, ${[58, 66, 50][i % 3]}%)`;
 applyFilter();
-map = createMap('overview-map', { tiles: 'gray', scrollWheelZoom: false, zoomSnap: 0.1 }); // fijne zoomstappen: kaart sluit precies aan
+map = createMap('overview-map', { tiles: 'dark', scrollWheelZoom: false, zoomSnap: 0.1 }); // fijne zoomstappen: kaart sluit precies aan
 bounds = L.latLngBounds([]);
 // Grove routes uit een apart bestand, zodat de kaartjes hierboven daar niet op wachten.
 const routes = await loadRoutes();
@@ -253,7 +254,7 @@ trips.forEach((trip, i) => {
 
   const line = route ? L.polyline(decodePolyline(route), { color, weight: 4, opacity: 0.9 }).addTo(group) : null;
   points.forEach((latlng) =>
-    L.circleMarker(latlng, { radius: 5, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 }).addTo(group)
+    L.circleMarker(latlng, { radius: 5, color: '#08090a', weight: 1.5, fillColor: color, fillOpacity: 1 }).addTo(group)
   );
 
   const highlight = (on) => line?.setStyle(on ? { weight: 7, opacity: 1 } : { weight: 4, opacity: 0.9 });
