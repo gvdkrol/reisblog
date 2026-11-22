@@ -7,17 +7,6 @@
   "profile": "driving",
   "stops": [
     {
-      "id": "amersfoort",
-      "name": "Amersfoort",
-      "lat": 52.15625,
-      "lng": 5.38969,
-      "date": "2026-06-20",
-      "type": "camping",
-      "draft": true,
-      "text": "**Hallo**\nDit is een nieuwe regel.",
-      "photos": []
-    },
-    {
       "id": "konigswinter",
       "name": "Königswinter",
       "lat": 50.70871,
@@ -691,14 +680,6 @@
     }
   ],
   "legs": [
-    {
-      "from": "amersfoort",
-      "to": "konigswinter",
-      "key": "52.15625,5.38969;50.70871,7.2662",
-      "km": 232,
-      "polyline": "qwi}Hqt{_@`kwGowkJ???????{pDroBnPsoBj_D??????????roBk_Dqe@dgBHct@Glr@NRfFdK~WxyClc@zf@c@xoECd`@~_Bxq@bj@u_AcnEmpL",
-      "source": "polarsteps"
-    },
     {
       "from": "konigswinter",
       "to": "munster",
